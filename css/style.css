@@ -1,0 +1,914 @@
+/* ============================================================
+   ContinuousReader — Promotional Site Stylesheet
+   Warm, pastel, airy, elegant. Reading doesn't tolerate fuss.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. Custom Properties
+   ------------------------------------------------------------ */
+
+:root {
+    /* Brand */
+    --color-primary: #4A90D9;
+    --color-primary-hover: #3A7BC8;
+    --color-primary-light: rgba(74, 144, 217, 0.08);
+    --color-accent: #E8834A;
+    --color-accent-hover: #D6723B;
+
+    /* Surfaces */
+    --color-bg: #FAFBFD;
+    --color-card: #FFFFFF;
+    --color-border: #E8ECF1;
+    --color-sepia: #F5F0E8;
+
+    /* Text */
+    --color-text: #2C3E50;
+    --color-text-secondary: #7B8A9E;
+    --color-text-inverse: #FAFBFD;
+
+    /* Footer */
+    --color-footer-bg: #2C3E50;
+    --color-footer-text: #C8D1DC;
+    --color-footer-heading: #FFFFFF;
+
+    /* Shadows */
+    --shadow-card: 0 2px 12px rgba(44, 62, 80, 0.06);
+    --shadow-card-hover: 0 8px 28px rgba(44, 62, 80, 0.12);
+    --shadow-nav: 0 1px 8px rgba(44, 62, 80, 0.08);
+    --shadow-device: 0 12px 40px rgba(44, 62, 80, 0.14);
+
+    /* Layout */
+    --container-width: 1140px;
+    --section-padding: 80px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+
+    /* Fonts */
+    --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-content: Georgia, "Times New Roman", Times, serif;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+
+/* ------------------------------------------------------------
+   2. Reset & Base
+   ------------------------------------------------------------ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-ui);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+/* ------------------------------------------------------------
+   3. Typography
+   ------------------------------------------------------------ */
+
+h1, h2, h3, h4 {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: 2.75rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: -0.015em;
+}
+
+h3 {
+    font-size: 1.375rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+p {
+    margin-bottom: 1em;
+    color: var(--color-text-secondary);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.section-subtitle {
+    font-size: 1.125rem;
+    text-align: center;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.content-text {
+    font-family: var(--font-content);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+}
+
+
+/* ------------------------------------------------------------
+   4. Layout Utilities
+   ------------------------------------------------------------ */
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.section {
+    padding: var(--section-padding) 0;
+}
+
+.section--sepia {
+    background-color: var(--color-sepia);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------------
+   5. Navigation
+   ------------------------------------------------------------ */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 16px 0;
+    transition: background-color var(--transition-base),
+                box-shadow var(--transition-base),
+                padding var(--transition-base);
+}
+
+.nav--transparent {
+    background-color: transparent;
+}
+
+.nav.scrolled {
+    background-color: rgba(250, 251, 253, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-nav);
+    padding: 10px 0;
+}
+
+.nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.nav__logo img {
+    width: 32px;
+    height: 32px;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav__links a {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.nav__links a:hover {
+    color: var(--color-text);
+}
+
+.nav--transparent .nav__links a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.nav--transparent .nav__links a:hover {
+    color: #FFFFFF;
+}
+
+.nav--transparent .nav__logo {
+    color: #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------
+   6. Language Picker
+   ------------------------------------------------------------ */
+
+.lang-picker {
+    position: relative;
+}
+
+.lang-picker__button {
+    background: none;
+    border: 1px solid transparent;
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    transition: border-color var(--transition-fast),
+                color var(--transition-fast);
+}
+
+.lang-picker__button:hover {
+    border-color: var(--color-border);
+    color: var(--color-text);
+}
+
+.nav--transparent .lang-picker__button {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav--transparent .lang-picker__button:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+}
+
+.lang-picker__dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card-hover);
+    min-width: 140px;
+    padding: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity var(--transition-fast),
+                visibility var(--transition-fast),
+                transform var(--transition-fast);
+}
+
+.lang-picker__dropdown.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-picker__dropdown a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    color: var(--color-text);
+    border-radius: 6px;
+    transition: background-color var(--transition-fast);
+}
+
+.lang-picker__dropdown a:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+
+/* ------------------------------------------------------------
+   7. Hero Section
+   ------------------------------------------------------------ */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 24px 80px;
+    background: linear-gradient(135deg, #4A90D9 0%, #6BA4E0 40%, #E8834A 100%);
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.05) 0%,
+        rgba(0, 0, 0, 0.15) 100%);
+    pointer-events: none;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+}
+
+.hero__title {
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.025em;
+}
+
+.hero__subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2em;
+    line-height: 1.6;
+}
+
+.hero__actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* ------------------------------------------------------------
+   8. Buttons
+   ------------------------------------------------------------ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    font-family: var(--font-ui);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: background-color var(--transition-fast),
+                border-color var(--transition-fast),
+                transform var(--transition-fast),
+                box-shadow var(--transition-fast);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    color: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(74, 144, 217, 0.35);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-hover);
+}
+
+.btn--hero-secondary {
+    color: #FFFFFF;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn--hero-secondary:hover {
+    border-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #FFFFFF;
+}
+
+
+/* ------------------------------------------------------------
+   9. Cards
+   ------------------------------------------------------------ */
+
+.card {
+    background: var(--color-card);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-card);
+    padding: 32px;
+    transition: box-shadow var(--transition-base),
+                transform var(--transition-base);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-4px);
+}
+
+
+/* ------------------------------------------------------------
+   10. Feature Highlights (Card Grid)
+   ------------------------------------------------------------ */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 40px 28px;
+}
+
+.feature-card__icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+
+.feature-card__icon--accent {
+    background-color: rgba(232, 131, 74, 0.1);
+    color: var(--color-accent);
+}
+
+.feature-card__title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5em;
+}
+
+.feature-card__desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------------------------------------
+   11. Feature Detail (Alternating Layout)
+   ------------------------------------------------------------ */
+
+.feature-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.feature-detail--reverse {
+    flex-direction: column;
+}
+
+.feature-detail__media {
+    flex: 1;
+    max-width: 560px;
+}
+
+.feature-detail__content {
+    flex: 1;
+    max-width: 480px;
+}
+
+.feature-detail__content h2 {
+    margin-bottom: 0.75em;
+}
+
+.feature-detail__content p {
+    font-family: var(--font-content);
+    line-height: 1.75;
+}
+
+
+/* ------------------------------------------------------------
+   12. Platform Comparison
+   ------------------------------------------------------------ */
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.platform-card {
+    text-align: center;
+    padding: 36px 24px;
+}
+
+.platform-card__name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.platform-card__features {
+    text-align: left;
+}
+
+.platform-card__features li {
+    padding: 8px 0;
+    font-size: 0.9375rem;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.platform-card__features li::before {
+    content: "\2713";
+    color: var(--color-primary);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.platform-card__features li:last-child {
+    border-bottom: none;
+}
+
+
+/* ------------------------------------------------------------
+   13. CTA Section
+   ------------------------------------------------------------ */
+
+.cta {
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-sepia) 0%, #FAFBFD 100%);
+}
+
+.cta h2 {
+    margin-bottom: 0.5em;
+}
+
+.cta .subtitle {
+    margin-bottom: 2em;
+}
+
+.cta__actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* ------------------------------------------------------------
+   14. App Store Badge
+   ------------------------------------------------------------ */
+
+.appstore-badge {
+    display: inline-block;
+    transition: opacity var(--transition-fast),
+                transform var(--transition-fast);
+}
+
+.appstore-badge img {
+    height: 48px;
+    width: auto;
+}
+
+.appstore-badge:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+
+
+/* ------------------------------------------------------------
+   15. Device Frames (Screenshot Wrappers)
+   ------------------------------------------------------------ */
+
+.device-frame {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-device);
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+}
+
+.device-frame img {
+    display: block;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.device-frame--mac {
+    border-radius: 8px;
+}
+
+.device-frame--mac::before {
+    content: "";
+    display: block;
+    height: 28px;
+    background: linear-gradient(180deg, #F0F0F0 0%, #E0E0E0 100%);
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 8px 8px 0 0;
+}
+
+.device-frame--mac img {
+    border-radius: 0 0 8px 8px;
+}
+
+.device-frame--phone {
+    max-width: 280px;
+    border-radius: 32px;
+    padding: 8px;
+    background: #1A1A1A;
+    border-color: #333;
+}
+
+.device-frame--phone img {
+    border-radius: 24px;
+}
+
+
+/* ------------------------------------------------------------
+   16. Footer
+   ------------------------------------------------------------ */
+
+.footer {
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    padding: 60px 0 32px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-bottom: 48px;
+}
+
+.footer__brand p {
+    color: var(--color-footer-text);
+    font-size: 0.875rem;
+    margin-top: 8px;
+}
+
+.footer h4 {
+    color: var(--color-footer-heading);
+    font-size: 0.9375rem;
+    margin-bottom: 16px;
+}
+
+.footer__links a {
+    display: block;
+    padding: 4px 0;
+    font-size: 0.875rem;
+    color: var(--color-footer-text);
+    transition: color var(--transition-fast);
+}
+
+.footer__links a:hover {
+    color: #FFFFFF;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.8125rem;
+    color: var(--color-footer-text);
+}
+
+.footer .lang-picker__button {
+    color: var(--color-footer-text);
+}
+
+.footer .lang-picker__button:hover {
+    color: #FFFFFF;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ------------------------------------------------------------
+   17. Scroll Animations
+   ------------------------------------------------------------ */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition-slow),
+                transform var(--transition-slow);
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ------------------------------------------------------------
+   18. Responsive — Tablet (768px+)
+   ------------------------------------------------------------ */
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-detail {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .feature-detail--reverse {
+        flex-direction: row-reverse;
+    }
+
+    .platform-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__inner {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   19. Responsive — Desktop (1200px+)
+   ------------------------------------------------------------ */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero__title {
+        font-size: 4rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.375rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-detail {
+        gap: 80px;
+    }
+
+    .footer__inner {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+
+/* ------------------------------------------------------------
+   20. Dark Mode
+   ------------------------------------------------------------ */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #1A1D23;
+        --color-card: #22262E;
+        --color-border: #2E3440;
+        --color-text: #E4E8EE;
+        --color-text-secondary: #8B95A5;
+        --color-text-inverse: #1A1D23;
+        --color-sepia: #252830;
+        --color-primary-light: rgba(74, 144, 217, 0.12);
+
+        --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.2);
+        --shadow-card-hover: 0 8px 28px rgba(0, 0, 0, 0.35);
+        --shadow-nav: 0 1px 8px rgba(0, 0, 0, 0.3);
+        --shadow-device: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav.scrolled {
+        background-color: rgba(26, 29, 35, 0.92);
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #3A6FA8 0%, #4A7DB5 40%, #C06A38 100%);
+    }
+
+    .cta {
+        background: linear-gradient(135deg, #252830 0%, #1A1D23 100%);
+    }
+
+    .device-frame--mac::before {
+        background: linear-gradient(180deg, #2E3440 0%, #252830 100%);
+    }
+
+    .device-frame {
+        border-color: #333;
+    }
+}

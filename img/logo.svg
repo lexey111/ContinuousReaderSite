@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Butterfly wing mark — blue left wing, orange right wing -->
+  <g transform="translate(60,60)">
+    <!-- Left wing (blue) -->
+    <path d="M-8,-5 C-25,-35 -45,-30 -42,-8 C-40,8 -25,15 -8,5 Z" fill="#4A90D9" opacity="0.85"/>
+    <path d="M-8,5 C-25,15 -40,35 -30,38 C-18,40 -10,20 -8,5 Z" fill="#4A90D9" opacity="0.65"/>
+    <!-- Right wing (orange) -->
+    <path d="M8,-5 C25,-35 45,-30 42,-8 C40,8 25,15 8,5 Z" fill="#E8834A" opacity="0.85"/>
+    <path d="M8,5 C25,15 40,35 30,38 C18,40 10,20 8,5 Z" fill="#E8834A" opacity="0.65"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="3" ry="18" fill="#2C3E50" opacity="0.7"/>
+    <!-- Antennae -->
+    <path d="M-1,-18 C-5,-28 -12,-32 -15,-30" stroke="#2C3E50" stroke-width="1.2" fill="none" opacity="0.5" stroke-linecap="round"/>
+    <path d="M1,-18 C5,-28 12,-32 15,-30" stroke="#2C3E50" stroke-width="1.2" fill="none" opacity="0.5" stroke-linecap="round"/>
+  </g>
+</svg>
