@@ -1,169 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download — ContinuousReader</title>
-    <meta name="description" content="Download ContinuousReader for macOS, iPad, and iPhone. Free to try with up to 5 books.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download — ContinuousReader</title>
+<meta name="description" content="ContinuousReader and JustReader for Mac, iPad, and iPhone. One-time purchase or free. Universal Purchase, iCloud sync, no subscription.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="main-nav">
-    <div class="container nav-inner">
-        <a href="index.html" class="nav-logo">
-            <img src="img/logo.svg" alt="ContinuousReader" width="32" height="32">
-            <span>ContinuousReader</span>
-        </a>
-        <button class="nav-toggle" aria-label="Menu">
-            <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links">
-            <a href="features.html" data-i18n="nav.features">Features</a>
-            <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-            <a href="download.html" data-i18n="nav.download">Download</a>
-            <div class="language-picker">
-                <select aria-label="Language">
-                    <option value="en">English</option>
-                    <option value="ru">Русский</option>
-                    <option value="uk">Українська</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="de">Deutsch</option>
-                </select>
-            </div>
-        </div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-logo" aria-hidden="true">
+        <svg viewBox="-165 -97 330 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -22,44 -78,62 -92,38 C -106,14 -80,-16 -55,-13 C -36,-10 -16,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -18,36 -64,52 -76,32 C -88,12 -66,-12 -45,-10 C -28,-8 -12,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -12,28 -50,42 -60,24 C -70,8 -52,-8 -34,-6 C -20,-5 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 22,44 78,62 92,38 C 106,14 80,-16 55,-13 C 36,-10 16,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 18,36 64,52 76,32 C 88,12 66,-12 45,-10 C 28,-8 12,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 12,28 50,42 60,24 C 70,8 52,-8 34,-6 C 20,-5 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -30,-62 -120,-92 -140,-52 C -160,-12 -120,38 -80,33 C -50,28 -20,13 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -25,-52 -105,-77 -122,-42 C -138,-7 -103,36 -68,30 C -42,25 -16,11 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -18,-40 -88,-60 -102,-30 C -116,-2 -85,28 -56,24 C -34,20 -12,9 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 30,-62 120,-92 140,-52 C 160,-12 120,38 80,33 C 50,28 20,13 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 25,-52 105,-77 122,-42 C 138,-7 103,36 68,30 C 42,25 16,11 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 18,-38 88,-58 102,-28 C 116,0 85,30 56,26 C 34,22 12,11 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+      </span>
+      <span>ContinuousReader</span>
+    </a>
+    <div class="nav-links">
+      <a href="features.html">Features</a>
+      <a href="platforms.html">Platforms</a>
+      <a href="download.html" class="active">Download</a>
+      <button class="nav-lang" type="button">EN</button>
     </div>
+  </div>
 </nav>
 
-<!-- Page Header -->
-<section class="hero" style="min-height: auto; padding: 140px 24px 60px;">
-    <div class="container hero-content" style="max-width: 720px;">
-        <div class="hero-text" style="text-align: center;">
-            <h1 data-i18n="downloadPage.title">Get ContinuousReader</h1>
-            <p class="hero-subtitle" data-i18n="downloadPage.subtitle">Available on the App Store</p>
-        </div>
+<header class="page-header">
+  <div class="container-narrow">
+    <div class="page-eyebrow">Available on the App Store</div>
+    <h1 class="page-title">Get <em>ContinuousReader</em>.</h1>
+    <p class="page-subtitle">
+      One-time purchase. Three platforms. Free updates for the lifetime of
+      the current major version.
+    </p>
+  </div>
+</header>
+
+<section class="two-paths reveal">
+  <div class="container">
+    <div class="paths-grid">
+      <div class="path-card paid">
+        <div class="path-name">ContinuousReader</div>
+        <div class="path-price">$19.99</div>
+        <div class="path-price-sub">once, not monthly</div>
+        <p class="path-desc">
+          Full reading workspace. Library with thousands of books. iCloud
+          sync across <strong>every Apple device you own</strong>.
+          Bookmarks, notes, translation statistics, reading stats. OPDS
+          catalogs with watchers. Backup and restore. Every feature, on
+          every device.
+        </p>
+        <a href="#" class="path-store-button">Download on the App Store</a>
+        <div class="path-store-button-note">App Store badge placeholder</div>
+      </div>
+      <div class="path-card">
+        <div class="path-name">JustReader</div>
+        <div class="path-price free">Free</div>
+        <div class="path-price-sub">truly free, no tricks</div>
+        <p class="path-desc">
+          Single-book reader. Same engine, same typography, same 17 themes,
+          same translation, same Read Aloud. <strong>No library, no sync,
+          no bookmarks</strong> — you open a file, you read it, you move
+          on. Available on Mac, iPad, and iPhone.
+        </p>
+        <a href="#" class="path-store-button">Download on the App Store</a>
+        <div class="path-store-button-note">App Store badge placeholder</div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- App Icon + App Store Badge -->
-<section class="section" style="text-align: center;">
-    <div class="container">
-        <div class="reveal" style="margin-bottom: 48px;">
-            <img src="img/logo.svg" alt="ContinuousReader" width="128" height="128" style="margin: 0 auto 32px; filter: drop-shadow(0 8px 24px rgba(74, 144, 217, 0.2));">
-            <div>
-                <a href="#" class="btn btn-primary btn-large" style="padding: 16px 40px; font-size: 1.125rem;" data-i18n="hero.cta">Download on the App Store</a>
-            </div>
-        </div>
+<section class="section alt-bg reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow">In the box</div>
+      <h2 class="section-h2">What's <em>included</em>.</h2>
+      <p class="section-intro">
+        ContinuousReader is one purchase, no extras, no hidden costs.
+      </p>
     </div>
+    <ul class="included-list">
+      <li><strong>Universal Purchase</strong> — buy on any platform, use on all three (Mac, iPad, iPhone).</li>
+      <li><strong>iCloud sync across every Apple device you own</strong> — reading positions, bookmarks, notes, and library metadata synchronize between all devices signed into the same Apple ID. Home Mac mini, work MacBook Pro, travel Air, iPad, iPhone — they all share the same library and the same reading position. Book files sync through iCloud Drive when you have space; if not, you can keep files local and still sync your reading state.</li>
+      <li><strong>Free updates for the lifetime of the current major version</strong> — bug fixes, new themes, new features.</li>
+      <li><strong>No subscription</strong>, no recurring charges, no tier lockouts.</li>
+      <li><strong>No ads, no telemetry, no analytics</strong> sold to anyone.</li>
+    </ul>
+    <p class="included-note">
+      When a major version requires a paid upgrade (<em>not planned for a
+      long time</em>), <strong>you'll know well in advance</strong> and it
+      will be optional — your current version keeps working.
+    </p>
+  </div>
 </section>
 
-<!-- System Requirements -->
-<section class="section" style="background-color: var(--color-sepia);">
-    <div class="container">
-        <h2 class="section-title reveal" data-i18n="downloadPage.requirements">System requirements</h2>
-        <div class="highlights-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto;">
-
-            <!-- macOS -->
-            <div class="card reveal" style="text-align: center; padding: 36px 28px;">
-                <div class="card-icon" style="margin-bottom: 16px;">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="8" width="40" height="26" rx="3" stroke="#4A90D9" stroke-width="2"/>
-                        <line x1="4" y1="28" x2="44" y2="28" stroke="#4A90D9" stroke-width="1.5"/>
-                        <path d="M18 38 L30 38" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M22 34 L18 38 M26 34 L30 38" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 style="margin-bottom: 0.5em;">macOS</h3>
-                <p data-i18n="downloadPage.req.mac">macOS 15.0 Sequoia or later</p>
-            </div>
-
-            <!-- iPad -->
-            <div class="card reveal" style="text-align: center; padding: 36px 28px;">
-                <div class="card-icon" style="margin-bottom: 16px;">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8" y="4" width="32" height="40" rx="4" stroke="#E8834A" stroke-width="2"/>
-                        <rect x="12" y="8" width="24" height="28" rx="1" stroke="#E8834A" stroke-width="1" opacity="0.3"/>
-                        <circle cx="24" cy="40" r="2" stroke="#E8834A" stroke-width="1.5"/>
-                    </svg>
-                </div>
-                <h3 style="margin-bottom: 0.5em;">iPad</h3>
-                <p data-i18n="downloadPage.req.ipad">iPadOS 18.0 or later</p>
-            </div>
-
-            <!-- iPhone -->
-            <div class="card reveal" style="text-align: center; padding: 36px 28px;">
-                <div class="card-icon" style="margin-bottom: 16px;">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="14" y="4" width="20" height="40" rx="4" stroke="#4A90D9" stroke-width="2"/>
-                        <line x1="20" y1="6" x2="28" y2="6" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="20" y1="40" x2="28" y2="40" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 style="margin-bottom: 0.5em;">iPhone</h3>
-                <p data-i18n="downloadPage.req.iphone">iOS 18.0 or later</p>
-            </div>
-
-        </div>
+<section class="section reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow">Compatibility</div>
+      <h2 class="section-h2">System <em>requirements</em>.</h2>
     </div>
+    <div class="requirements-table">
+      <table>
+        <tbody>
+          <tr><td>macOS</td><td>15.0 Sequoia or later</td></tr>
+          <tr><td>iPadOS</td><td>18.0 or later</td></tr>
+          <tr><td>iOS</td><td>18.0 or later</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="requirements-note">
+      Universal Purchase works with any Apple ID that owns either app.
+      iCloud sync requires iCloud Drive enabled on all devices you want to
+      sync (free tier is sufficient for reading state; see the
+      <a href="#faq">FAQ below</a> for storage guidance).
+    </p>
+  </div>
 </section>
 
-<!-- Pricing -->
-<section class="section">
-    <div class="container" style="text-align: center; max-width: 600px;">
-        <div class="reveal">
-            <h2 class="section-title" data-i18n="downloadPage.free">Free to try</h2>
-            <p style="font-size: 1.125rem; line-height: 1.7;" data-i18n="downloadPage.freeDesc">Up to 5 books in your library. Upgrade anytime for unlimited access.</p>
-        </div>
+<section class="section alt-bg reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow">Side by side</div>
+      <h2 class="section-h2">ContinuousReader <em>or</em> JustReader?</h2>
     </div>
+    <div class="comparison-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr><th>Feature</th><th>JustReader</th><th>ContinuousReader</th></tr>
+        </thead>
+        <tbody>
+          <tr class="intro-row"><td>Price</td><td><strong>Free</strong></td><td><strong>$19.99</strong> once</td></tr>
+          <tr class="intro-row"><td>Platforms</td><td>Mac, iPad, iPhone</td><td>Mac, iPad, iPhone</td></tr>
+          <tr><td>All 17 themes</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>All 9 typefaces</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Full typography control</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Scroll / Page / Two-page modes</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Translation (inline, non-disruptive)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Read Aloud with word highlighting</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Chapter navigation</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>In-book search</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Fullscreen with pixel-art clock</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Welcome wizard + Features toggle</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>All supported formats (EPUB, FB2, MOBI, HTML, TXT, RTF)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr class="divider"><td colspan="3">Only in ContinuousReader</td></tr>
+          <tr><td>Book library (multiple books)</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>iCloud sync across devices</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Bookmarks with colors and notes</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Per-book notes (rich text editor)</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Translation statistics and reports</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Reading statistics per book</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>OPDS browser with shortcuts and watchers</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Folders, color tags, genre management</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Backup and restore to ZIP</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Custom library location (Mac)</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Drag URL from browser to library</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="comparison-footer">
+      <strong>Both apps receive bug fixes and compatibility updates.</strong>
+      Feature updates go to ContinuousReader.
+    </p>
+  </div>
 </section>
 
-<!-- iCloud Coming Soon -->
-<section class="section" style="background-color: var(--color-sepia);">
-    <div class="container" style="text-align: center; max-width: 600px;">
-        <div class="reveal">
-            <div style="display: inline-block; padding: 6px 16px; background-color: var(--color-primary); color: #fff; border-radius: 20px; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.03em; margin-bottom: 20px;" data-i18n="common.comingSoon">Coming soon</div>
-            <h3 style="font-size: 1.5rem; margin-bottom: 0.5em;">iCloud Sync</h3>
-            <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--color-text-secondary);">Reading positions, bookmarks, and your library — synced across all your devices via iCloud.</p>
-        </div>
+<section class="section reveal" id="faq">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow">FAQ</div>
+      <h2 class="section-h2"><em>Questions</em>.</h2>
     </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h3 class="faq-question">Is JustReader a <em>trial</em>?</h3>
+        <div class="faq-answer">
+          <p>No. It's a separate, standalone app — free, fully functional for its scope, no time limits, no feature teasers. It reads one book at a time and does that well.</p>
+          <p>If you want a library, sync, bookmarks, or OPDS — upgrade to ContinuousReader. Otherwise, use JustReader forever without paying.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Can I try ContinuousReader before <em>buying</em>?</h3>
+        <div class="faq-answer">
+          <p>JustReader is the closest thing to a trial — same reader engine, same typography, same translation and Read Aloud. If you like how JustReader handles reading, ContinuousReader will feel identical, just with a library and sync added.</p>
+          <p>For library-specific features (OPDS, folders, bookmarks), there's no trial — but Apple's standard App Store refund policy applies within 14 days.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Do I have to pay again for <em>each device</em>?</h3>
+        <div class="faq-answer">
+          <p>No. Universal Purchase means one payment unlocks Mac, iPad, and iPhone versions under the same Apple ID. Install on as many of your devices as you want.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">How many devices can I <em>sync</em>?</h3>
+        <div class="faq-answer">
+          <p>As many as you own — <em>all of them</em>. Sync runs across every Apple device signed into your Apple ID. Home Mac, work Mac, travel laptop, iPad, iPhone — if it runs ContinuousReader and your iCloud account is there, it's in sync.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">How much iCloud storage do I <em>need</em>?</h3>
+        <div class="faq-answer">
+          <p>iCloud sync has two parts, and they use different storage.</p>
+          <p><strong>Reading state</strong> — your position, bookmarks, notes, library metadata — syncs through iCloud's Key-Value Store. This is separate from your iCloud storage quota and works the same on any tier, including the free 5 GB.</p>
+          <p><strong>Book files</strong> — the actual content of your books — sync through iCloud Drive. These count against your iCloud storage like any other files. Books with embedded images typically run around 2–4 MB each; plain text books are under 1 MB.</p>
+          <p>On the free 5 GB tier (shared with iCloud backups, photos, and other files), a modest library of a few hundred books fits comfortably. For thousands of books — especially illustrated ones — an iCloud+ plan (50 GB for about $1 a month, or 200 GB for around $3) is worth considering.</p>
+          <p>If you prefer to keep book files off iCloud entirely, you can turn off file sync and keep only reading state synced — your positions and bookmarks still travel between devices, but book files live only on each device's local storage. Alternatively, the Mac app's built-in backup feature can export your entire library to a ZIP file, which you can store on any cloud service or external drive.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">What about <em>family sharing</em>?</h3>
+        <div class="faq-answer">
+          <p>Family Sharing is supported — up to six members in your family group can install ContinuousReader under their own Apple IDs without paying again.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Will there be a <em>subscription</em>?</h3>
+        <div class="faq-answer">
+          <p>No. Subscription doesn't fit this class of app, and selling the same software every month isn't the right model here. Future major versions may be paid upgrades, but your current version keeps working as long as Apple supports the OS it runs on.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Where is my data <em>stored</em>?</h3>
+        <div class="faq-answer">
+          <p>Locally on your device. If iCloud sync is enabled, also in your own iCloud — under your Apple ID, not on any server controlled by the developer.</p>
+          <p>Book content is readable as plain HTML files if you browse your library folder in Finder. <strong>Nothing leaves your devices unless you explicitly export it.</strong></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">What happens if I stop using <em>iCloud</em>?</h3>
+        <div class="faq-answer">
+          <p>Your library keeps working locally. Without iCloud, devices just don't sync — each one maintains its own state. You can use ContinuousReader entirely offline.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">What about <em>privacy</em>?</h3>
+        <div class="faq-answer">
+          <p>No analytics, no telemetry, no tracking. Translation runs on-device through Apple's framework. No network access during reading. <em>Your reading habits are your own.</em></p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question"><em>Support</em>?</h3>
+        <div class="faq-answer">
+          <p>Email: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. One developer handles everything, so response time runs in days rather than hours — but every message gets a real reply.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- CTA Section -->
-<section class="section cta-section">
-    <div class="container">
-        <div class="cta-content reveal">
-            <h2 data-i18n="cta.title">Start reading today</h2>
-            <p data-i18n="cta.subtitle">Free to try. No subscription required.</p>
-            <a href="#" class="btn btn-primary btn-large" data-i18n="cta.button">Get ContinuousReader</a>
-        </div>
+<section class="about-section reveal">
+  <div class="container-narrow">
+    <div class="about-card">
+      <div class="about-eyebrow">About</div>
+      <h2 class="about-title">A note <em>before you download</em>.</h2>
+      <p class="about-body">
+        ContinuousReader is independently developed — not a product of a
+        studio, a startup, or an investor deck. <strong>Every feature
+        exists because someone</strong> (usually the developer,
+        occasionally a reader) <strong>actually needed it while reading a
+        book.</strong>
+      </p>
+      <p class="about-body">
+        Buying ContinuousReader supports that approach: careful software
+        built slowly, for a small audience of people who take reading
+        seriously. JustReader is the same philosophy given away — because
+        a reading app should help people read, even if they never pay.
+      </p>
+      <p class="about-body">
+        For questions, suggestions, or bug reports:
+        <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.
+      </p>
     </div>
+  </div>
 </section>
 
-<!-- Footer -->
-<footer class="main-footer">
-    <div class="container footer-content">
-        <div class="footer-brand">
-            <img src="img/logo.svg" alt="ContinuousReader" width="28" height="28">
-            <span data-i18n="footer.tagline">Read without limits</span>
-        </div>
-        <div class="footer-links">
-            <a href="features.html" data-i18n="nav.features">Features</a>
-            <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-            <a href="download.html" data-i18n="nav.download">Download</a>
-            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-            <a href="mailto:lexey111@gmail.com" data-i18n="footer.contact">Contact</a>
-        </div>
-        <div class="footer-bottom">
-            <span data-i18n="footer.developer">Developed by Oleksii Koshkin</span>
-            <span data-i18n="footer.copyright">© 2026 ContinuousReader. All rights reserved.</span>
-        </div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-line">
+        <span class="nav-logo" aria-hidden="true">
+          <svg viewBox="-165 -97 330 164" xmlns="http://www.w3.org/2000/svg">
+            <path d="M -8,4 C -22,44 -78,62 -92,38 C -106,14 -80,-16 -55,-13 C -36,-10 -16,-4 -8,0 Z" fill="#2D5573"/>
+            <path d="M -6,3 C -18,36 -64,52 -76,32 C -88,12 -66,-12 -45,-10 C -28,-8 -12,-3 -6,0 Z" fill="#3A6A8E"/>
+            <path d="M -4,2 C -12,28 -50,42 -60,24 C -70,8 -52,-8 -34,-6 C -20,-5 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+            <path d="M 8,4 C 22,44 78,62 92,38 C 106,14 80,-16 55,-13 C 36,-10 16,-4 8,0 Z" fill="#C05C38"/>
+            <path d="M 6,3 C 18,36 64,52 76,32 C 88,12 66,-12 45,-10 C 28,-8 12,-3 6,0 Z" fill="#D4704A"/>
+            <path d="M 4,2 C 12,28 50,42 60,24 C 70,8 52,-8 34,-6 C 20,-5 8,-2 4,0 Z" fill="#E8845A"/>
+            <path d="M -8,-2 C -30,-62 -120,-92 -140,-52 C -160,-12 -120,38 -80,33 C -50,28 -20,13 -8,0 Z" fill="#2D5573"/>
+            <path d="M -6,-2 C -25,-52 -105,-77 -122,-42 C -138,-7 -103,36 -68,30 C -42,25 -16,11 -6,0 Z" fill="#3A6A8E"/>
+            <path d="M -4,-2 C -18,-40 -88,-60 -102,-30 C -116,-2 -85,28 -56,24 C -34,20 -12,9 -4,0 Z" fill="#4A7FA5"/>
+            <path d="M 8,-2 C 30,-62 120,-92 140,-52 C 160,-12 120,38 80,33 C 50,28 20,13 8,0 Z" fill="#C05C38"/>
+            <path d="M 6,-2 C 25,-52 105,-77 122,-42 C 138,-7 103,36 68,30 C 42,25 16,11 6,0 Z" fill="#D4704A"/>
+            <path d="M 4,-2 C 18,-38 88,-58 102,-28 C 116,0 85,30 56,26 C 34,22 12,11 4,0 Z" fill="#E8845A"/>
+            <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+            <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+            <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+          </svg>
+        </span>
+        <span>ContinuousReader</span>
+      </div>
+      <p class="footer-tagline">Built for readers who don't just browse.</p>
     </div>
+    <div class="footer-col">
+      <h5>Product</h5>
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="platforms.html">Platforms</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="mailto:hello@continuousreader.app">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Language</h5>
+      <ul>
+        <li><a href="#">English</a></li>
+        <li><a href="#">Русский</a></li>
+        <li><a href="#">Українська</a></li>
+        <li><a href="#">Español</a></li>
+        <li><a href="#">Français</a></li>
+        <li><a href="#">Deutsch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span>A reader's reader.</span>
+  </div>
 </footer>
 
-<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

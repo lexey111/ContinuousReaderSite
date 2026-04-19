@@ -1,202 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Platforms — ContinuousReader</title>
-    <meta name="description" content="ContinuousReader runs natively on macOS, iPad, and iPhone. See what each platform offers.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Platforms — ContinuousReader</title>
+<meta name="description" content="One app, one library, one purchase. Adapted to Mac, iPad, and iPhone — not a compromise that ignores all three.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="main-nav">
-    <div class="container nav-inner">
-        <a href="index.html" class="nav-logo">
-            <img src="img/logo.svg" alt="ContinuousReader" width="32" height="32">
-            <span>ContinuousReader</span>
-        </a>
-        <button class="nav-toggle" aria-label="Menu">
-            <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links">
-            <a href="features.html" data-i18n="nav.features">Features</a>
-            <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-            <a href="download.html" data-i18n="nav.download">Download</a>
-            <div class="language-picker">
-                <select aria-label="Language">
-                    <option value="en">English</option>
-                    <option value="ru">Русский</option>
-                    <option value="uk">Українська</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="de">Deutsch</option>
-                </select>
-            </div>
-        </div>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-logo" aria-hidden="true">
+        <svg viewBox="-165 -97 330 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -22,44 -78,62 -92,38 C -106,14 -80,-16 -55,-13 C -36,-10 -16,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -18,36 -64,52 -76,32 C -88,12 -66,-12 -45,-10 C -28,-8 -12,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -12,28 -50,42 -60,24 C -70,8 -52,-8 -34,-6 C -20,-5 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 22,44 78,62 92,38 C 106,14 80,-16 55,-13 C 36,-10 16,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 18,36 64,52 76,32 C 88,12 66,-12 45,-10 C 28,-8 12,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 12,28 50,42 60,24 C 70,8 52,-8 34,-6 C 20,-5 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -30,-62 -120,-92 -140,-52 C -160,-12 -120,38 -80,33 C -50,28 -20,13 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -25,-52 -105,-77 -122,-42 C -138,-7 -103,36 -68,30 C -42,25 -16,11 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -18,-40 -88,-60 -102,-30 C -116,-2 -85,28 -56,24 C -34,20 -12,9 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 30,-62 120,-92 140,-52 C 160,-12 120,38 80,33 C 50,28 20,13 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 25,-52 105,-77 122,-42 C 138,-7 103,36 68,30 C 42,25 16,11 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 18,-38 88,-58 102,-28 C 116,0 85,30 56,26 C 34,22 12,11 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+      </span>
+      <span>ContinuousReader</span>
+    </a>
+    <div class="nav-links">
+      <a href="features.html">Features</a>
+      <a href="platforms.html" class="active">Platforms</a>
+      <a href="download.html">Download</a>
+      <button class="nav-lang" type="button">EN</button>
     </div>
+  </div>
 </nav>
 
-<!-- Page Header -->
-<section class="hero" style="min-height: auto; padding: 140px 24px 60px;">
-    <div class="container hero-content" style="max-width: 720px;">
-        <div class="hero-text" style="text-align: center;">
-            <h1 data-i18n="platformsPage.title">One app, three platforms</h1>
-            <p class="hero-subtitle" data-i18n="platformsPage.subtitle">Native experience tailored for each device</p>
-        </div>
+<header class="page-header">
+  <div class="container-narrow">
+    <div class="page-eyebrow">Mac · iPad · iPhone</div>
+    <h1 class="page-title">Three platforms, three <em>experiences</em>.</h1>
+    <p class="page-subtitle">
+      One app, one library, one purchase. Adapted to each device's way of
+      working — not a compromise that ignores all three.
+    </p>
+    <div class="page-intro">
+      <p>
+        Cross-platform apps usually land in one of two places. Either they
+        look the same everywhere — which means they look wrong somewhere. Or
+        they're three separate apps held together by the same name and a
+        cloud icon.
+      </p>
+      <p>
+        ContinuousReader is neither. <strong>The reader engine, the library
+        model, the typography controls, the themes, the translation, the
+        Read Aloud — all shared, all identical in behavior.</strong> What
+        changes is how you interact with them: with a keyboard and trackpad
+        on a Mac, with taps and swipes on an iPad, with one thumb on an
+        iPhone.
+      </p>
     </div>
+  </div>
+</header>
+
+<section class="platform-block reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-eyebrow">macOS</div>
+        <h2 class="platform-title">The full <em>workspace</em>.</h2>
+        <p class="platform-intro">
+          The Mac version gets everything the platform invites: keyboard
+          shortcuts for every frequent action, resizable panels,
+          drag-and-drop everywhere, floating Book Card windows that hover
+          above the app, and an <em>island design</em> inspired by Apple's
+          System Settings — rounded floating containers on a recessed window
+          background.
+        </p>
+        <div class="platform-list-label">What Mac gets uniquely</div>
+        <ul class="platform-list">
+          <li><strong>Table view</strong>Sortable columns, column customization, two-level hierarchy, full-width actions toolbar above the table</li>
+          <li><strong>Chapter map</strong>A proportional track where taller chapters are literally taller, with a sliding viewport indicator. If you've used the minimap in a code editor, you already know the idea — applied to a book instead of a source file.</li>
+          <li><strong>Two-page spread</strong>For a classic book layout when reading long-form</li>
+          <li><strong>Keyboard shortcuts</strong>For everything: Cmd+B to bookmark, Cmd+F to search, Cmd+G for the progress drawer, F2/F3/F4 for panels, Space for quick preview</li>
+          <li><strong>Resizable info panel</strong>Three-island layout that remembers its width between sessions</li>
+          <li><strong>Custom library location</strong>Point the app at any folder on your Mac or external drive</li>
+          <li><strong>Backup and restore</strong>Export the full library to ZIP, restore from any snapshot</li>
+        </ul>
+        <p class="platform-closing">
+          The version to use when you have a keyboard, a chair, and time.
+        </p>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame">
+          <span class="screenshot-label">Screenshot</span>
+          Mac library with info panel<br>open, table view
+          <div class="screenshot-caption">UI in <span class="lang-tag">Українська</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Platform Cards -->
-<section class="section">
-    <div class="container">
-        <div class="highlights-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+<div class="platform-divider"></div>
 
-            <!-- macOS -->
-            <div class="card reveal" style="padding: 40px 32px;">
-                <div class="card-icon" style="margin-bottom: 16px;">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="4" y="8" width="40" height="26" rx="3" stroke="#4A90D9" stroke-width="2"/>
-                        <line x1="4" y1="28" x2="44" y2="28" stroke="#4A90D9" stroke-width="1.5"/>
-                        <path d="M18 38 L30 38" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M22 34 L18 38 M26 34 L30 38" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <circle cx="8" cy="11" r="1.5" fill="#E8834A"/>
-                        <circle cx="13" cy="11" r="1.5" fill="#E8834A" opacity="0.5"/>
-                        <circle cx="18" cy="11" r="1.5" fill="#4A90D9" opacity="0.5"/>
-                    </svg>
-                </div>
-                <h3 style="font-size: 1.375rem; margin-bottom: 0.5em;" data-i18n="platformsPage.mac.title">macOS</h3>
-                <p style="margin-bottom: 1.5em;" data-i18n="platformsPage.mac.desc">The full experience. Table view, keyboard shortcuts, floating panels, multi-window support.</p>
-                <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">&#10003;</span> Table view
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">&#10003;</span> Keyboard shortcuts
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">&#10003;</span> Floating panels
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">&#10003;</span> Multi-window
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">&#10003;</span> Custom library location
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">&#10003;</span> Drag &amp; drop
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-primary); font-weight: 600; flex-shrink: 0;">&#10003;</span> Settings dialog
-                    </li>
-                </ul>
-            </div>
-
-            <!-- iPad -->
-            <div class="card reveal" style="padding: 40px 32px;">
-                <div class="card-icon" style="margin-bottom: 16px;">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8" y="4" width="32" height="40" rx="4" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="12" y="8" width="24" height="28" rx="1" stroke="#4A90D9" stroke-width="1" opacity="0.3"/>
-                        <circle cx="24" cy="40" r="2" stroke="#E8834A" stroke-width="1.5"/>
-                    </svg>
-                </div>
-                <h3 style="font-size: 1.375rem; margin-bottom: 0.5em;" data-i18n="platformsPage.ipad.title">iPad</h3>
-                <p style="margin-bottom: 1.5em;" data-i18n="platformsPage.ipad.desc">Touch-optimized with swipe actions, side panel, and split view. Perfect for focused reading.</p>
-                <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Swipe actions
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Side panel
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Touch-optimized
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Split view ready
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Card columns picker
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> OPDS browser
-                    </li>
-                </ul>
-            </div>
-
-            <!-- iPhone -->
-            <div class="card reveal" style="padding: 40px 32px;">
-                <div class="card-icon" style="margin-bottom: 16px;">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="14" y="4" width="20" height="40" rx="4" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="18" y="8" width="12" height="28" rx="1" stroke="#4A90D9" stroke-width="1" opacity="0.3"/>
-                        <line x1="20" y1="6" x2="28" y2="6" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="20" y1="40" x2="28" y2="40" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3 style="font-size: 1.375rem; margin-bottom: 0.5em;" data-i18n="platformsPage.iphone.title">iPhone</h3>
-                <p style="margin-bottom: 1.5em;" data-i18n="platformsPage.iphone.desc">Streamlined for one-hand use. Compact UI, gesture navigation, quick access to your library.</p>
-                <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Compact UI
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Gesture navigation
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Bottom sheets
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Quick settings
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> Fullscreen reading
-                    </li>
-                    <li style="padding: 10px 0; font-size: 0.9375rem; color: var(--color-text-secondary); display: flex; align-items: baseline; gap: 10px;">
-                        <span style="color: var(--color-accent); font-weight: 600; flex-shrink: 0;">&#10003;</span> One-hand friendly
-                    </li>
-                </ul>
-            </div>
-
+<section class="platform-block reverse reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-eyebrow">iPadOS</div>
+        <h2 class="platform-title">The reading <em>surface</em>.</h2>
+        <p class="platform-intro">
+          iPad sits between Mac and iPhone — more room than a phone, more
+          touch than a laptop. ContinuousReader takes advantage of both.
+        </p>
+        <div class="platform-list-label">What iPad does uniquely well</div>
+        <ul class="platform-list">
+          <li><strong>Native swipe actions</strong>On books for quick actions (pin, color, delete)</li>
+          <li><strong>Side panel</strong>With bookmarks, chapters, and comments — same data as Mac, adapted to touch</li>
+          <li><strong>Split view ready</strong>Read alongside any other iPad app</li>
+          <li><strong>Two-column settings</strong>Layout that uses the wider screen instead of pretending to be an iPhone</li>
+          <li><strong>Card view with column picker</strong>In quick settings — choose 2, 3, or 4 columns depending on how dense you want the grid</li>
+          <li><strong>Page-sized OPDS browser</strong>Not a narrow sheet, not a separate window, but a focused dialog the size of the page</li>
+        </ul>
+        <p class="platform-closing">
+          Same island design as Mac, same fonts, same themes. The library
+          looks like it belongs to the same app — because it does.
+        </p>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame">
+          <span class="screenshot-label">Screenshot</span>
+          iPad library with side panel
+          <div class="screenshot-caption">UI in <span class="lang-tag">English</span></div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- CTA Section -->
-<section class="section cta-section">
-    <div class="container">
-        <div class="cta-content reveal">
-            <h2 data-i18n="cta.title">Start reading today</h2>
-            <p data-i18n="cta.subtitle">Free to try. No subscription required.</p>
-            <a href="download.html" class="btn btn-primary btn-large" data-i18n="cta.button">Get ContinuousReader</a>
+<div class="platform-divider"></div>
+
+<section class="platform-block reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-eyebrow">iOS</div>
+        <h2 class="platform-title">The pocket <em>reader</em>.</h2>
+        <p class="platform-intro">
+          The iPhone version is <strong>streamlined, not stripped</strong>.
+          Every feature that makes sense on a small screen is there. The
+          ones that don't — the table view, the floating panels, the
+          two-page spread — are quietly absent, because forcing them would
+          make the app worse.
+        </p>
+        <div class="platform-list-label">What iPhone does differently</div>
+        <ul class="platform-list">
+          <li><strong>One-hand friendly</strong>Touch targets, swipe zones, and reachable controls within thumb's reach</li>
+          <li><strong>Bottom sheets</strong>Instead of popovers — half-sheet folders, settings, filters. Natural iOS interaction.</li>
+          <li><strong>Double-tap fullscreen</strong>The reading area expands under the Dynamic Island, bottom bar hides, text fills the screen. Double-tap again to exit.</li>
+          <li><strong>Pixel-art clock</strong>Optional dotted clock shows the time as part of the page background during fullscreen reading. For anyone who's ever lost track of time and missed their stop.</li>
+          <li><strong>Compact library</strong>5-level adaptive row layout that trims information as space shrinks</li>
+          <li><strong>Fixed 2-column card grid</strong>Not responsive, always 2. Because on a phone, 3 is too many and 1 is too few.</li>
+          <li><strong>Gesture navigation</strong>Edge swipes, pull-to-refresh, swipe-to-dismiss sheets. iOS the way iOS should work.</li>
+        </ul>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame tall">
+          <span class="screenshot-label">Screenshot</span>
+          iPhone in device frame,<br>fullscreen reading mode<br>with pixel-art clock
+          <div class="screenshot-caption">UI in <span class="lang-tag">Русский</span></div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Footer -->
-<footer class="main-footer">
-    <div class="container footer-content">
-        <div class="footer-brand">
-            <img src="img/logo.svg" alt="ContinuousReader" width="28" height="28">
-            <span data-i18n="footer.tagline">Read without limits</span>
-        </div>
-        <div class="footer-links">
-            <a href="features.html" data-i18n="nav.features">Features</a>
-            <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-            <a href="download.html" data-i18n="nav.download">Download</a>
-            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-            <a href="mailto:lexey111@gmail.com" data-i18n="footer.contact">Contact</a>
-        </div>
-        <div class="footer-bottom">
-            <span data-i18n="footer.developer">Developed by Oleksii Koshkin</span>
-            <span data-i18n="footer.copyright">© 2026 ContinuousReader. All rights reserved.</span>
-        </div>
+<section class="table-section reveal">
+  <div class="container">
+    <div class="table-header">
+      <div class="table-eyebrow">Side by side</div>
+      <h2 class="table-title">Feature availability by <em>platform</em>.</h2>
+      <p class="table-intro">Not every feature is on every platform. Here's what's where.</p>
     </div>
+    <div class="feature-table-wrap">
+      <table class="feature-table">
+        <thead>
+          <tr><th></th><th>Mac</th><th>iPad</th><th>iPhone</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Library layout</td><td>Island design, resizable, hover effects</td><td>Island design, swipe actions</td><td>Compact list, swipe actions</td></tr>
+          <tr><td>View modes</td><td>List, Card, Table</td><td>List, Card</td><td>List, Card</td></tr>
+          <tr><td>Folders</td><td>Collapsible sidebar (F4)</td><td>Collapsible sidebar</td><td>Bottom sheet</td></tr>
+          <tr><td>Info panel</td><td>Resizable side panel</td><td>Resizable side panel</td><td>Push detail view</td></tr>
+          <tr><td>Reader side panel</td><td>Integrated left panel</td><td>Integrated left panel</td><td>Overlay drawer</td></tr>
+          <tr><td>Themes</td><td>All 17</td><td>All 17</td><td>All 17</td></tr>
+          <tr><td>Fonts</td><td>All 9</td><td>All 9</td><td>All 9</td></tr>
+          <tr><td>Typography controls</td><td>Full</td><td>Full</td><td>Full</td></tr>
+          <tr><td>Settings</td><td>Popover + Cmd+, dialog</td><td>Popover, two-column</td><td>Sheet with detents</td></tr>
+          <tr><td>Page modes</td><td>Scroll, Page, Two pages</td><td>Scroll, Page</td><td>Scroll, Page</td></tr>
+          <tr><td>Chapter map</td><td><span class="check">✓</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
+          <tr><td>Fullscreen reading</td><td><span class="dash">—</span></td><td>Double-tap</td><td>Double-tap</td></tr>
+          <tr><td>Pixel-art clock</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td>Navigation</td><td>Keyboard + trackpad</td><td>Keyboard + touch</td><td>Edge swipes + touch</td></tr>
+          <tr><td>OPDS</td><td>Floating window</td><td>Page-sized dialog</td><td>Sheet</td></tr>
+          <tr><td>Filters</td><td>Unified popover</td><td>Unified popover</td><td>Unified half-sheet</td></tr>
+          <tr><td>Backup / Restore</td><td><span class="check">✓</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
+          <tr><td>Custom library location</td><td><span class="check">✓</span></td><td><span class="dash">—</span></td><td><span class="dash">—</span></td></tr>
+          <tr><td>Drag URL from browser</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="dash">—</span></td></tr>
+          <tr><td>Keyboard shortcuts</td><td>Full set</td><td>Most</td><td>Some</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-footer">
+      <strong>All platforms share:</strong> the reader engine, position
+      tracking, bookmarks, notes, translation, Read Aloud, sync, all 17
+      themes, all 9 fonts, all file format support.
+    </p>
+  </div>
+</section>
+
+<section class="purchase-section reveal">
+  <div class="container-narrow">
+    <div class="purchase-card">
+      <div class="purchase-eyebrow">One purchase</div>
+      <h2 class="purchase-title">Buy once. <em>Use everywhere.</em></h2>
+      <p class="purchase-body">
+        Everything above is included in ContinuousReader for
+        <strong>$19.99</strong>. Universal Purchase — buy once on any
+        platform, install on all three, sync turned on.
+      </p>
+      <p class="purchase-body">
+        Or try <a href="download.html">JustReader</a> for free — a
+        single-book version of the reader with the same engine, the same
+        themes, the same translation. Available on all three platforms too.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta reveal">
+  <div class="container-narrow">
+    <h2>Start <em>reading.</em></h2>
+    <p>Two apps. Free or full. One download away.</p>
+    <div class="final-cta-buttons">
+      <a href="download.html" class="cta-primary">Get ContinuousReader<span class="price">$19.99</span></a>
+      <a href="download.html" class="cta-secondary">Get JustReader, free</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-line">
+        <span class="nav-logo" aria-hidden="true">
+          <svg viewBox="-165 -97 330 164" xmlns="http://www.w3.org/2000/svg">
+            <path d="M -8,4 C -22,44 -78,62 -92,38 C -106,14 -80,-16 -55,-13 C -36,-10 -16,-4 -8,0 Z" fill="#2D5573"/>
+            <path d="M -6,3 C -18,36 -64,52 -76,32 C -88,12 -66,-12 -45,-10 C -28,-8 -12,-3 -6,0 Z" fill="#3A6A8E"/>
+            <path d="M -4,2 C -12,28 -50,42 -60,24 C -70,8 -52,-8 -34,-6 C -20,-5 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+            <path d="M 8,4 C 22,44 78,62 92,38 C 106,14 80,-16 55,-13 C 36,-10 16,-4 8,0 Z" fill="#C05C38"/>
+            <path d="M 6,3 C 18,36 64,52 76,32 C 88,12 66,-12 45,-10 C 28,-8 12,-3 6,0 Z" fill="#D4704A"/>
+            <path d="M 4,2 C 12,28 50,42 60,24 C 70,8 52,-8 34,-6 C 20,-5 8,-2 4,0 Z" fill="#E8845A"/>
+            <path d="M -8,-2 C -30,-62 -120,-92 -140,-52 C -160,-12 -120,38 -80,33 C -50,28 -20,13 -8,0 Z" fill="#2D5573"/>
+            <path d="M -6,-2 C -25,-52 -105,-77 -122,-42 C -138,-7 -103,36 -68,30 C -42,25 -16,11 -6,0 Z" fill="#3A6A8E"/>
+            <path d="M -4,-2 C -18,-40 -88,-60 -102,-30 C -116,-2 -85,28 -56,24 C -34,20 -12,9 -4,0 Z" fill="#4A7FA5"/>
+            <path d="M 8,-2 C 30,-62 120,-92 140,-52 C 160,-12 120,38 80,33 C 50,28 20,13 8,0 Z" fill="#C05C38"/>
+            <path d="M 6,-2 C 25,-52 105,-77 122,-42 C 138,-7 103,36 68,30 C 42,25 16,11 6,0 Z" fill="#D4704A"/>
+            <path d="M 4,-2 C 18,-38 88,-58 102,-28 C 116,0 85,30 56,26 C 34,22 12,11 4,0 Z" fill="#E8845A"/>
+            <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+            <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+            <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+          </svg>
+        </span>
+        <span>ContinuousReader</span>
+      </div>
+      <p class="footer-tagline">Built for readers who don't just browse.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Product</h5>
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="platforms.html">Platforms</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="mailto:hello@continuousreader.app">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Language</h5>
+      <ul>
+        <li><a href="#">English</a></li>
+        <li><a href="#">Русский</a></li>
+        <li><a href="#">Українська</a></li>
+        <li><a href="#">Español</a></li>
+        <li><a href="#">Français</a></li>
+        <li><a href="#">Deutsch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span>A reader's reader.</span>
+  </div>
 </footer>
 
-<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

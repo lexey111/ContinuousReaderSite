@@ -1,146 +1,115 @@
-/**
- * ContinuousReader — Promotional Site
- * Navigation, scroll animations, language switching, mobile menu.
- * No dependencies. Expects i18n.js globals: translations, t(), setLanguage(), getCurrentLanguage(), applyLanguage().
- */
+/* ==========================================================
+   ContinuousReader site — main JS
+   Vanilla, no dependencies
+   ========================================================== */
 
 (function () {
-    'use strict';
+  'use strict';
 
-    // --- Navigation scroll behavior ---
-
-    const nav = document.querySelector('nav');
-    const SCROLL_THRESHOLD = 50;
-
-    const updateNavScroll = () => {
-        if (!nav) return;
-        nav.classList.toggle('scrolled', window.scrollY > SCROLL_THRESHOLD);
+  // ----------------------------------------------------------
+  // Sticky nav border on scroll
+  // ----------------------------------------------------------
+  const nav = document.getElementById('nav');
+  if (nav) {
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
     };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 
-    // --- Scroll reveal animations (IntersectionObserver) ---
+  // ----------------------------------------------------------
+  // Reveal sections on scroll
+  // ----------------------------------------------------------
+  const reveals = document.querySelectorAll('.reveal');
+  if (reveals.length && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.05, rootMargin: '0px 0px -50px 0px' }
+    );
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    // Fallback for older browsers — show everything immediately
+    reveals.forEach((el) => el.classList.add('in-view'));
+  }
 
-    const initScrollReveal = () => {
-        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // ----------------------------------------------------------
+  // Lightbox for screenshots
+  //
+  // Triggered by clicking on any .screenshot or .screenshot-frame
+  // that contains an <img>. Uses native <dialog> element.
+  // Empty placeholders (no img) are skipped.
+  // ----------------------------------------------------------
+  function setupLightbox() {
+    let dialog = document.getElementById('lightbox-dialog');
 
-        const revealElements = document.querySelectorAll('.reveal');
-        if (!revealElements.length) return;
+    // Create dialog once, lazily
+    if (!dialog) {
+      dialog = document.createElement('dialog');
+      dialog.id = 'lightbox-dialog';
+      dialog.className = 'lightbox';
+      dialog.innerHTML = `
+        <button type="button" class="lightbox-close" aria-label="Close">Close (Esc)</button>
+        <div class="lightbox-content">
+          <img alt="" />
+        </div>
+      `;
+      document.body.appendChild(dialog);
 
-        if (prefersReducedMotion) {
-            revealElements.forEach(el => el.classList.add('revealed'));
-            return;
+      const closeBtn = dialog.querySelector('.lightbox-close');
+      const content = dialog.querySelector('.lightbox-content');
+
+      closeBtn.addEventListener('click', () => dialog.close());
+      content.addEventListener('click', (e) => {
+        // Click outside the image (on the padded area) closes
+        if (e.target === content) dialog.close();
+      });
+
+      // Close on backdrop click (native dialog behavior)
+      dialog.addEventListener('click', (e) => {
+        if (e.target === dialog) dialog.close();
+      });
+    }
+
+    const dialogImg = dialog.querySelector('img');
+
+    // Bind handlers to all screenshot containers
+    const screenshots = document.querySelectorAll('.screenshot, .screenshot-frame');
+    screenshots.forEach((frame) => {
+      const img = frame.querySelector('img');
+      if (!img) {
+        // Empty placeholder — disable cursor cue and click
+        frame.style.cursor = 'default';
+        return;
+      }
+
+      frame.addEventListener('click', (e) => {
+        e.preventDefault();
+        // Use highest-res version: prefer data-full src, fall back to img.src
+        dialogImg.src = img.dataset.full || img.src;
+        dialogImg.alt = img.alt || '';
+        if (typeof dialog.showModal === 'function') {
+          dialog.showModal();
+        } else {
+          // Very old browser fallback — open image in new tab
+          window.open(dialogImg.src, '_blank');
         }
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.15 });
-
-        revealElements.forEach(el => observer.observe(el));
-    };
-
-    // --- Language switching ---
-
-    const initLanguagePicker = () => {
-        const picker = document.querySelector('.language-picker select');
-        if (!picker) return;
-
-        const savedLang = typeof getCurrentLanguage === 'function' ? getCurrentLanguage() : 'en';
-        picker.value = savedLang;
-
-        picker.addEventListener('change', (e) => {
-            const lang = e.target.value;
-            if (typeof setLanguage === 'function') setLanguage(lang);
-            document.documentElement.lang = lang;
-            translatePage(lang);
-        });
-    };
-
-    const translatePage = (lang) => {
-        if (typeof translations === 'undefined') return;
-
-        const dict = translations[lang] ?? translations['en'] ?? {};
-
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (dict[key] != null) {
-                el.textContent = dict[key];
-            }
-        });
-    };
-
-    // --- Mobile menu toggle ---
-
-    const initMobileMenu = () => {
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        if (!hamburger || !navLinks) return;
-
-        hamburger.addEventListener('click', (e) => {
-            e.stopPropagation();
-            navLinks.classList.toggle('open');
-        });
-
-        navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => navLinks.classList.remove('open'));
-        });
-
-        document.addEventListener('click', (e) => {
-            if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
-                navLinks.classList.remove('open');
-            }
-        });
-    };
-
-    // --- Active nav link highlighting ---
-
-    const setActiveNavLink = () => {
-        const currentPage = location.pathname.split('/').pop() || 'index.html';
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            const href = link.getAttribute('href');
-            if (!href) return;
-            const linkPage = href.split('/').pop();
-            link.classList.toggle('active', linkPage === currentPage);
-        });
-    };
-
-    // --- Smooth scroll for anchor links ---
-
-    const initSmoothScroll = () => {
-        document.addEventListener('click', (e) => {
-            const link = e.target.closest('a[href^="#"]');
-            if (!link) return;
-
-            const targetId = link.getAttribute('href').slice(1);
-            const target = document.getElementById(targetId);
-            if (!target) return;
-
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
-        });
-    };
-
-    // --- Page initialization ---
-
-    document.addEventListener('DOMContentLoaded', () => {
-        // Apply detected/saved language
-        const lang = typeof getCurrentLanguage === 'function' ? getCurrentLanguage() : 'en';
-        document.documentElement.lang = lang;
-        translatePage(lang);
-
-        // Init all modules
-        updateNavScroll();
-        initScrollReveal();
-        initLanguagePicker();
-        initMobileMenu();
-        setActiveNavLink();
-        initSmoothScroll();
+      });
     });
+  }
 
-    // Scroll listener (passive for performance)
-    window.addEventListener('scroll', updateNavScroll, { passive: true });
+  // Initialize after DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupLightbox);
+  } else {
+    setupLightbox();
+  }
+
 })();

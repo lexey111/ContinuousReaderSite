@@ -1,314 +1,1160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features — ContinuousReader</title>
-    <meta name="description" content="Explore all ContinuousReader features: themes, fonts, navigation modes, library management, OPDS catalogs, translation, Read Aloud, and more.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features — ContinuousReader</title>
+<meta name="description" content="A closer look at how ContinuousReader is built and what it can do. Themes, typography, translation, library, sync, and more.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="main-nav">
-    <div class="container nav-inner">
-        <a href="index.html" class="nav-logo">
-            <img src="img/logo.svg" alt="ContinuousReader" width="32" height="32">
-            <span>ContinuousReader</span>
-        </a>
-        <button class="nav-toggle" aria-label="Menu">
-            <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links">
-            <a href="features.html" data-i18n="nav.features">Features</a>
-            <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-            <a href="download.html" data-i18n="nav.download">Download</a>
-            <div class="language-picker">
-                <select aria-label="Language">
-                    <option value="en">English</option>
-                    <option value="ru">Русский</option>
-                    <option value="uk">Українська</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="de">Deutsch</option>
-                </select>
-            </div>
-        </div>
+<!-- ============================================================ -->
+<!-- NAV                                                           -->
+<!-- ============================================================ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-logo" aria-hidden="true">
+        <svg viewBox="-165 -97 330 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -22,44 -78,62 -92,38 C -106,14 -80,-16 -55,-13 C -36,-10 -16,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -18,36 -64,52 -76,32 C -88,12 -66,-12 -45,-10 C -28,-8 -12,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -12,28 -50,42 -60,24 C -70,8 -52,-8 -34,-6 C -20,-5 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 22,44 78,62 92,38 C 106,14 80,-16 55,-13 C 36,-10 16,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 18,36 64,52 76,32 C 88,12 66,-12 45,-10 C 28,-8 12,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 12,28 50,42 60,24 C 70,8 52,-8 34,-6 C 20,-5 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -30,-62 -120,-92 -140,-52 C -160,-12 -120,38 -80,33 C -50,28 -20,13 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -25,-52 -105,-77 -122,-42 C -138,-7 -103,36 -68,30 C -42,25 -16,11 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -18,-40 -88,-60 -102,-30 C -116,-2 -85,28 -56,24 C -34,20 -12,9 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 30,-62 120,-92 140,-52 C 160,-12 120,38 80,33 C 50,28 20,13 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 25,-52 105,-77 122,-42 C 138,-7 103,36 68,30 C 42,25 16,11 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 18,-38 88,-58 102,-28 C 116,0 85,30 56,26 C 34,22 12,11 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+      </span>
+      <span>ContinuousReader</span>
+    </a>
+    <div class="nav-links">
+      <a href="features.html" class="active">Features</a>
+      <a href="platforms.html">Platforms</a>
+      <a href="download.html">Download</a>
+      <button class="nav-lang" type="button">EN</button>
     </div>
+  </div>
 </nav>
 
-<!-- Page Header -->
-<section class="hero" style="min-height: auto; padding: 140px 24px 60px;">
-    <div class="container hero-content" style="max-width: 720px;">
-        <div class="hero-text" style="text-align: center;">
-            <h1 data-i18n="featuresPage.title">Features</h1>
-            <p class="hero-subtitle" data-i18n="featuresPage.subtitle">Everything for a perfect reading experience</p>
-        </div>
+<!-- ============================================================ -->
+<!-- PAGE HEADER                                                   -->
+<!-- ============================================================ -->
+<header class="page-header">
+  <div class="container-narrow">
+    <div class="page-eyebrow">A closer look</div>
+    <h1 class="page-title">Features</h1>
+    <p class="page-subtitle">
+      A closer look at how ContinuousReader is built and what it can do.
+    </p>
+    <div class="page-intro">
+      This page is a tour, not a spec sheet. If you're comparing reading apps
+      on specific capabilities — formats, sync behavior, theming, translation
+      — you'll find them organized below. If you want a shorter overview,
+      start with <a href="index.html">the home page</a>. If there's something
+      specific you need to know that isn't here,
+      <a href="mailto:hello@continuousreader.app">get in touch</a>.
     </div>
+    <div class="legend">
+      Features marked
+      <span class="badge-inline cr">ContinuousReader</span>
+      are part of the full app. Features marked
+      <span class="badge-inline jr">JustReader</span>
+      are also in the free single-book reader. <strong>Most of the reading
+      experience is shared</strong>; the library, sync, and OPDS browser are
+      ContinuousReader only.
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- SECTION 1 — THE READER                                        -->
+<!-- ============================================================ -->
+<section class="feature-section reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="section-number">01</span>Section one</div>
+      <h2 class="section-h2">The <em>reader</em>.</h2>
+      <p class="section-intro">
+        The reading experience itself. Typography, themes, navigation, and the
+        small things you interact with while reading a book.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Seventeen themes, organized in seven groups</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Themes are more than color schemes. Each defines background, text
+          color, progress bar tint, bookmark marker palette, and — for some
+          — the reading font itself.
+        </p>
+        <ul class="feature-list">
+          <li><strong>System</strong>Light, Dark, Auto (follows macOS/iOS appearance)</li>
+          <li><strong>Pastel</strong>Sepia, Celestial, Lemon — for long daytime sessions</li>
+          <li><strong>Neutral</strong>Grey</li>
+          <li><strong>Dark</strong>Dark Grey, Hacker, Terminal</li>
+          <li><strong>Vintage</strong>Typewriter, Typewriter Dark — ivory and dark brown, with forced American Typewriter font</li>
+          <li><strong>Extreme</strong>Midday, Midnight — pure black-on-white and white-on-black, four contrast levels, font-weight boost up to bold at the highest level. Built for full sun on a beach or pitch-dark bedrooms.</li>
+          <li><strong>Custom</strong>Three user-defined slots with full color picker control</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          The <em>Terminal</em> theme deserves a note of its own: white
+          monospace text on deep blue, with a dedicated monospace font picker
+          (Menlo or American Typewriter). If the palette looks familiar, you
+          already know why it's there.
+        </p>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Theme picker dropdown showing live "Aa" previews in current font
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Nine typefaces, three groups</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>All system fonts — no downloads, no licensing, no rendering differences between devices.</p>
+        <ul class="feature-list">
+          <li><strong>Serif</strong>Georgia, Palatino, Charter, Iowan Old Style</li>
+          <li><strong>Sans-serif</strong>Helvetica Neue, SF Pro, Avenir Next</li>
+          <li><strong>Monospace</strong>Menlo on Mac, Courier New on iOS; American Typewriter everywhere</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          The font picker groups them with labeled sections and shows live
+          "Aa" previews in the theme you're currently using.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Full typography control</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <ul class="feature-list">
+          <li><strong>Size</strong>12 to 48 pixels</li>
+          <li><strong>Line height</strong>Continuously adjustable, from tight to spacious</li>
+          <li><strong>Paragraph spacing</strong>Small, default, or generous</li>
+          <li><strong>Text indent</strong>Toggle first-line indentation</li>
+          <li><strong>Alignment</strong>Left, justified, or right</li>
+          <li><strong>Hyphenation</strong>Automatic when justified, with content-based language detection for Latin, Cyrillic, CJK, Arabic, and Greek scripts</li>
+          <li><strong>Page padding</strong>Continuous slider from edge-to-edge to generous margins</li>
+          <li><strong>Image display</strong>Show, mask (reveal on hover), or hide entirely</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Every setting applies instantly — <em>no page reload, no position lost.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Continuous scroll, page, or two-page spread</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          The default reader renders the book as a single continuous page —
+          no artificial breaks, just smooth vertical scrolling.
+        </p>
+        <p>
+          Switch to <strong>Page</strong> mode for a paginated experience
+          with animated or instant page turns and page separators. On Mac,
+          <strong>Two pages</strong> mode renders a classic book spread. All
+          three modes preserve your exact position when switching.
+        </p>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Two-page spread on Mac with progress bar and chapter map
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Position that survives anything</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Your reading position is tracked more precisely than most readers
+          bother with — which means it survives:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Font changes</strong>Size, family, line height</li>
+          <li><strong>Window resizes</strong>Full layout reflow</li>
+          <li><strong>Device switches</strong>Mac to iPad, iPad to iPhone — ContinuousReader with sync enabled</li>
+          <li><strong>Mode switches</strong>Scroll to page, page to spread</li>
+          <li><strong>Long absences</strong>Reopening the book weeks later with different settings</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          When you return to a book, the reader fades in at the
+          <em>exact paragraph</em> you left, not the nearest chapter.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Progress drawer and markers</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          A slim progress bar along the bottom expands on hover (Mac) or tap
+          (iOS) to reveal reading position. Click or double-tap to open the
+          progress drawer:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Tapered slider</strong>A custom track that's thick for the part you've read and hair-thin for what's ahead, with a smooth S-curve at your current position</li>
+          <li><strong>Drag-to-seek</strong>And tap-to-seek with debounced scrolling</li>
+          <li><strong>Entry marker</strong>A filled dot with a dashed ring showing where you started this session</li>
+          <li><strong>Marker modes</strong>Switch the track to show chapters, images, or nothing. Chapter markers show titles on hover. Image markers show thumbnail previews.</li>
+          <li><strong>Go To</strong>Jump to any page number or percentage, with a sliding pill mode switch</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          In ContinuousReader, an additional marker mode shows
+          <strong>color-coded bookmarks</strong> along the track, each with
+          its preview text and page number on hover.
+        </p>
+        <p>
+          All marker positions are computed live from the document — not
+          stored estimates, always matching where things actually are.
+        </p>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Progress drawer with tapered slider, markers, and Go To input
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Chapter navigation</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Chapter structure is extracted on import from EPUB spine items, FB2
+          sections, and HTML headings, with proper heading priority and
+          scene-break separator filtering (<code>* * *</code>, <code>---</code>, etc.).
+        </p>
+        <p>
+          The <strong>Chapters</strong> tab in the side panel lets you jump
+          to any chapter with one click. On Mac, you can switch between two
+          display modes:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Chapter list</strong>A static list with the current chapter highlighted and bolded</li>
+          <li><strong>Chapter map</strong>Proportional variable-height rows — taller rows for longer chapters — with a thin left rail track, a sliding thumb, and a viewport-proportional indicator. Page numbers are hidden in map mode for a cleaner spatial view.</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          If you've used the minimap in a code editor, you'll recognize the
+          shape — <em>the book as a page of structure, not just text.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Bookmarks</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Add a bookmark with <code>Cmd+B</code> or via the text selection
+          context menu. The app captures your selected text as a preview, or
+          — if nothing is selected — the first visible paragraph.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Seven colors</strong>To categorize bookmarks (last-used color is remembered)</li>
+          <li><strong>Notes</strong>Attached to any bookmark</li>
+          <li><strong>Color filter bar</strong>When you have two or more colors in a book</li>
+          <li><strong>Text highlighting</strong>Per-color tints, multi-paragraph for long selections, inline for short ones</li>
+          <li><strong>Live markers</strong>On the progress bar, with tooltip previews</li>
+          <li><strong>Nearest bookmark</strong>Highlighted in bold in the side panel as you read</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Bookmarks belong to the library. JustReader, which reads one book
+          at a time without storage, doesn't retain them.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">In-book search</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Open in-book search from the <strong>Search</strong> tab in the
+          reader's bottom toolbar, or press <code>Cmd+F</code>. Match counter,
+          previous/next navigation, case-sensitive toggle, and yellow/orange
+          highlights in the text. Position markers appear along the scrollbar
+          so you can see matches at a glance.
+        </p>
+        <p>
+          Search works the same way as translation, settings, and navigation
+          — as a tab in the reader's bottom toolbar, <em>not a floating
+          window that covers the text.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Notes</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Each book has a personal notes field with a <strong>rich text editor</strong>.
+          The formatting toolbar supports bold, italic, underline,
+          strikethrough, H1–H3 headings, bullet and numbered lists,
+          blockquotes, horizontal rules, and four highlight colors (yellow,
+          green, blue, pink). On iPhone, the toolbar splits into two rows to
+          fit everything without scrolling.
+        </p>
+        <p>
+          Notes are stored with full formatting and rendered the same way in
+          the side panel and in exported reports.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Fullscreen <em>(iOS)</em></h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Double-tap the reading area to hide the bottom bar and enter
+          fullscreen. The top safe area is ignored so content extends under
+          the Dynamic Island or camera housing. Double-tap again to exit. The
+          mode auto-exits when you open settings, search, or the side panel.
+        </p>
+        <p>
+          Optional <strong>pixel-art clock</strong> shows the time as dotted
+          numerals on the background of the page — adjustable position and
+          contrast, visible enough to check at a glance, unobtrusive enough
+          to ignore while reading. <em>For anyone who's ever lost track of
+          time in a book and missed their stop.</em>
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Reading Experience -->
-<section class="section">
-    <div class="container">
-        <h2 class="section-title reveal" data-i18n="featuresPage.reading.title">Reading experience</h2>
-        <div class="highlights-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8" y="8" width="32" height="32" rx="4" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="12" y="12" width="10" height="10" rx="2" fill="#E8834A" opacity="0.3"/>
-                        <rect x="26" y="12" width="10" height="10" rx="2" fill="#4A90D9" opacity="0.3"/>
-                        <rect x="12" y="26" width="10" height="10" rx="2" fill="#4A90D9" opacity="0.2"/>
-                        <rect x="26" y="26" width="10" height="10" rx="2" fill="#E8834A" opacity="0.2"/>
-                    </svg>
-                </div>
-                <h3>Themes</h3>
-                <p data-i18n="featuresPage.reading.themes">17 themes in 7 groups — from pastel to dark, vintage to custom</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <text x="8" y="34" font-family="Georgia, serif" font-size="28" fill="#4A90D9" opacity="0.8">Aa</text>
-                        <line x1="36" y1="12" x2="36" y2="36" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="32" y1="16" x2="40" y2="16" stroke="#E8834A" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="32" y1="32" x2="40" y2="32" stroke="#E8834A" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>Fonts</h3>
-                <p data-i18n="featuresPage.reading.fonts">9 font families with weight and width variants</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="6" y="10" width="16" height="28" rx="2" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="26" y="10" width="16" height="28" rx="2" stroke="#E8834A" stroke-width="2"/>
-                        <path d="M22 24 L26 24" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
-                    </svg>
-                </div>
-                <h3>Navigation</h3>
-                <p data-i18n="featuresPage.reading.modes">Smooth scroll, page turn, or two-page spread (macOS)</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="8" y1="16" x2="40" y2="16" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="8" y1="24" x2="40" y2="24" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="8" y1="32" x2="32" y2="32" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="34" y1="30" x2="34" y2="34" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>Hyphenation</h3>
-                <p data-i18n="featuresPage.reading.hyphenation">Smart hyphenation with content language detection</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="6" y="6" width="36" height="36" rx="4" stroke="#4A90D9" stroke-width="2"/>
-                        <circle cx="24" cy="24" r="8" stroke="#E8834A" stroke-width="2"/>
-                        <line x1="24" y1="18" x2="24" y2="24" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="24" y1="24" x2="28" y2="28" stroke="#E8834A" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>Fullscreen</h3>
-                <p data-i18n="featuresPage.reading.fullscreen">Fullscreen with optional pixel-art clock</p>
-            </div>
-        </div>
+<!-- ============================================================ -->
+<!-- SECTION 2 — TRANSLATION & READ ALOUD                          -->
+<!-- ============================================================ -->
+<section class="feature-section reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="section-number">02</span>Section two</div>
+      <h2 class="section-h2">Translation and <em>Read Aloud</em>.</h2>
+      <p class="section-intro">
+        Two features that shape how you engage with a book, beyond just
+        reading it visually. Both integrate with the reader's position
+        tracking, so you never lose your place when switching modes.
+      </p>
     </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Translation — inline, non-disruptive</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Highlight any word or phrase. The translation appears in a panel at
+          the bottom of the screen that stays out of the way while you keep
+          reading. <strong>No popup, no modal, no context switch.</strong>
+        </p>
+        <p>Three display modes in the panel:</p>
+        <ul class="feature-list">
+          <li><strong>Translation only</strong>Just the translated text, maximally compact</li>
+          <li><strong>Side by side</strong>Source and translation next to each other</li>
+          <li><strong>Interlinear</strong>The translation directly under the original, word alignment preserved</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Switch modes in the toolbar, or set your preferred default in
+          settings.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Many target languages</strong>Provided by Apple's on-device Translation framework</li>
+          <li><strong>Nothing leaves your Mac</strong>All translation happens locally</li>
+          <li><strong>Selection menu reordering</strong>Translate and Bookmark sit at the top of the right-click / long-press menu by default. Reorder them in settings — whichever you reach for more often goes first.</li>
+        </ul>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Reader with selected word and interlinear translation panel
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Translation statistics</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Every word you look up can be remembered. ContinuousReader tracks:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Languages</strong>The languages you translate between, with frequencies</li>
+          <li><strong>Words seen before</strong>With counts</li>
+          <li><strong>Books</strong>Where you translated the most</li>
+          <li><strong>Time-based activity</strong>When and how often you reach for translation</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Tracking can be toggled any time. Turn it off and nothing is
+          recorded. Turn it on and export the full history as an HTML report
+          — useful for language learners, researchers, and translators.
+        </p>
+        <p style="font-size: 14px; font-style: italic; color: var(--ink-fade); margin-top: 16px;">
+          Future: export to Anki or other flash-card formats, if there's demand.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Read Aloud</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          Built-in text-to-speech that reads from your current position. Not
+          a separate mode — <em>an extension of the same reading session.</em>
+        </p>
+        <ul class="feature-list">
+          <li><strong>Position sync on open</strong>The voice reader matches the paragraph you were visually on</li>
+          <li><strong>Position sync on close</strong>The visual reader scrolls to the paragraph the voice finished</li>
+          <li><strong>Word-by-word highlighting</strong>A soft rounded indicator glides from word to word, automatically keeping the current paragraph scrolled into view</li>
+          <li><strong>Transport controls</strong>Play/pause, skip forward/back, elapsed time (monospaced digital timer), paragraph counter</li>
+          <li><strong>Adjustable speed</strong>Continuous slider with real-time effect — change speed mid-sentence and playback picks up from the exact word, not the nearest paragraph</li>
+          <li><strong>Pitch and voice</strong>Inline pitch slider, voice picker with Auto language detection or manual selection. Disabled during playback to prevent disruption — pause, adjust, resume.</li>
+          <li><strong>Theme integration</strong>All controls, progress bar, and word highlight use your current reader theme colors</li>
+        </ul>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Read Aloud view with scrolling paragraphs, current word highlighted, transport controls
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Library Management -->
-<section class="section" style="background-color: var(--color-sepia);">
-    <div class="container">
-        <h2 class="section-title reveal" data-i18n="featuresPage.library.title">Library management</h2>
-        <div class="highlights-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="6" y="10" width="12" height="28" rx="2" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="22" y="10" width="20" height="12" rx="2" stroke="#E8834A" stroke-width="2"/>
-                        <rect x="22" y="26" width="20" height="12" rx="2" stroke="#E8834A" stroke-width="2"/>
-                    </svg>
-                </div>
-                <h3>Views</h3>
-                <p data-i18n="featuresPage.library.views">Three view modes: detailed list, cover cards, sortable table</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 14 L24 10 L36 14 L36 38 L24 34 L12 38 Z" stroke="#4A90D9" stroke-width="2" stroke-linejoin="round"/>
-                        <line x1="24" y1="10" x2="24" y2="34" stroke="#4A90D9" stroke-width="2"/>
-                        <circle cx="18" cy="22" r="3" fill="#E8834A" opacity="0.5"/>
-                        <circle cx="30" cy="26" r="3" fill="#4A90D9" opacity="0.5"/>
-                    </svg>
-                </div>
-                <h3>Organize</h3>
-                <p data-i18n="featuresPage.library.organize">Folders, genres, color tags, pinning, smart search with 6 scopes</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="10" y1="14" x2="38" y2="14" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="10" y1="24" x2="38" y2="24" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="10" y1="34" x2="38" y2="34" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <polygon points="40,10 44,14 40,18" fill="#E8834A"/>
-                        <polygon points="40,30 44,34 40,38" fill="#E8834A" opacity="0.5"/>
-                    </svg>
-                </div>
-                <h3>Sort</h3>
-                <p data-i18n="featuresPage.library.sort">8 sort options including published date and reading progress</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8" y="12" width="10" height="14" rx="2" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="22" y="12" width="10" height="14" rx="2" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="36" y="12" width="6" height="14" rx="2" stroke="#4A90D9" stroke-width="2" stroke-dasharray="3 3"/>
-                        <path d="M14 32 L24 36 L34 32" stroke="#E8834A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <h3>Bulk</h3>
-                <p data-i18n="featuresPage.library.bulk">Bulk operations on multiple books at once</p>
-            </div>
-        </div>
+<!-- ============================================================ -->
+<!-- SECTION 3 — THE LIBRARY (CR-only)                             -->
+<!-- ============================================================ -->
+<section class="feature-section cr-only reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="section-number">03</span>Section three</div>
+      <h2 class="section-h2">The <em>library</em>.</h2>
+      <p class="section-intro">
+        How ContinuousReader organizes, displays, and manages your collection.
+        The library is where you spend time between books — it should be
+        fast, flexible, and stay out of your way.
+      </p>
+      <div class="cr-only-banner">
+        <span class="marker">CR ONLY</span>
+        <span>JustReader reads one book at a time and skips library management entirely. Everything below is ContinuousReader territory.</span>
+      </div>
     </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Three tabs</h3>
+      </div>
+      <div class="feature-body">
+        <p>The library is organized into three tabs, each with its own purpose:</p>
+        <ul class="feature-list">
+          <li><strong>Library</strong>The complete collection, with all filtering, sorting, and folder scoping applied</li>
+          <li><strong>Latest</strong>Recently opened or recently imported books (switchable), ignoring folder filters</li>
+          <li><strong>Pinned</strong>Your favorites, also ignoring folder filters</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Latest and Pinned work as shortcuts — the books you want fast
+          access to, without fiddling with filters.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Three view modes</h3>
+      </div>
+      <div class="feature-body">
+        <ul class="feature-list">
+          <li><strong>List view</strong>Adaptive row layout with five detail levels (full, compact, minimal, essential, mobile). Shows cover, title, author, series, progress, genre chips, and a context menu.</li>
+          <li><strong>Card view</strong>Responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, fixed 2-column grid.</li>
+          <li><strong>Table view</strong>(Mac only) Sortable columns, column customization, two-level hierarchy, inline color dots in the title column, annotation sheet, and a full-width actions toolbar above the table.</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          All three support <strong>multi-mode grouping</strong>: none,
+          author, series, or author &amp; series — with collapsible sections
+          and shared section headers.
+        </p>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Three view modes side by side on Mac
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Search, sort, filter</h3>
+      </div>
+      <div class="feature-body">
+        <ul class="feature-list">
+          <li><strong>Scoped search</strong>Filter by title, author, series, comment, annotation, or genre. Instant debounced results.</li>
+          <li><strong>Eight sort options</strong>Title, author, series, date added, date opened, date published, reading progress, and file size. Each cycles through ascending, descending, and cleared states.</li>
+          <li><strong>Unified filter popover</strong>Color and genre filters combined in one place. Active filters show inline badges — up to 3 color dots then a count, genre name with ellipsis then a count.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Color tags</h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          Seven Finder-style colored dots that can be assigned to any book
+          via context menu, edit dialog, import dialog, or info panel.
+          Optional color highlighting shows faint background tints in list
+          and card views, and colored titles in table view.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Genres and tags</h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          Genre tags are auto-extracted from FB2 genre codes (around 170
+          mapped) and EPUB <code>dc:subject</code> metadata. A
+          <strong>genre chip picker</strong> allows manual editing per book,
+          and a full <strong>genre management sheet</strong> handles bulk
+          operations across the library.
+        </p>
+        <p>
+          When a book has more genres than fit on a row, a
+          <strong>+N badge</strong> shows the remainder with a hover popover
+          showing the full list.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Virtual folders</h3>
+      </div>
+      <div class="feature-body">
+        <p>Flat user-created categories that work across all your books.</p>
+        <ul class="feature-list">
+          <li><strong>Collapsible sidebar</strong>On Mac and iPad (F4 to toggle)</li>
+          <li><strong>Folder bottom sheet</strong>On iPhone with create, rename, delete, and swipe actions</li>
+          <li><strong>Drag and drop</strong>Books onto folders to assign them</li>
+          <li><strong>Bulk folder assignment</strong>In selection mode</li>
+          <li><strong>Default folder</strong>For new imports — set via context menu, indicated with a star</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Folders are flat (not hierarchical) by design — most users don't
+          need tree depth, and flat folders are faster to navigate.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Info panel</h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          A resizable detail panel (<code>F2</code> to toggle) organized in a
+          <strong>three-island layout</strong> inspired by Apple's System
+          Settings:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Island 1 — Editable metadata</strong>Title, author, series, action toolbar (Read / Book Card / Quick Look / Pin / Delete), color tag, genre chips, folder picker</li>
+          <li><strong>Island 2 — Preview content</strong>Annotation, notes, and bookmarks with links back to the Book Card</li>
+          <li><strong>Island 3 — Cover image</strong>Displayed when available</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          The last visible island stretches to fill remaining vertical space.
+          The panel remembers its width between sessions.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Selection mode and bulk operations</h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          Select multiple books and apply operations to all of them at once:
+          color tag, genre assignment, author / series bulk edit, move to
+          folder, delete.
+        </p>
+        <p>
+          Available in all view modes on all platforms. Swipe actions and
+          the Read button are disabled during selection mode to prevent
+          accidents.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Quick preview</h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          Press <code>Space</code> in any view to see 2–3 paragraphs from
+          your current reading position in a sheet, with async loading. Skips
+          title-page content. Dismiss with Space or Esc.
+        </p>
+        <p>
+          Useful when scrolling through the library and wondering
+          <em>"where was I in this one"</em> without opening the book.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Unified Book Card</h3>
+      </div>
+      <div class="feature-body">
+        <p>A tab-based modal that consolidates every piece of data about a book.</p>
+        <ul class="feature-list">
+          <li><strong>Cover</strong>Display, replace, or delete. Drag-and-drop on Mac.</li>
+          <li><strong>Info</strong>All editable metadata in one place, 600ms debounced auto-save</li>
+          <li><strong>Notes</strong>Rich text editor with full formatting toolbar</li>
+          <li><strong>Marks</strong>All bookmarks with color filter, swipe-to-edit on iOS, inline editor on Mac</li>
+          <li><strong>Stats</strong>Reading progress, pages, opens, dates, file size, translation insights. Exportable as an HTML report.</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          On Mac, the Book Card floats above the app window as a separate
+          panel. On iPad, it's a page-sized sheet. On iPhone, it's a full
+          sheet with native segmented control — swipe down to dismiss.
+        </p>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Book Card open on Mac showing the Stats tab with inline translation insights
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Import & Catalogs -->
-<section class="section">
-    <div class="container">
-        <h2 class="section-title reveal" data-i18n="featuresPage.import.title">Import & catalogs</h2>
-        <div class="highlights-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="10" y="8" width="12" height="16" rx="2" stroke="#4A90D9" stroke-width="2"/>
-                        <rect x="26" y="8" width="12" height="16" rx="2" stroke="#E8834A" stroke-width="2"/>
-                        <rect x="18" y="24" width="12" height="16" rx="2" stroke="#4A90D9" stroke-width="2" opacity="0.6"/>
-                        <line x1="22" y1="30" x2="26" y2="30" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                        <line x1="22" y1="34" x2="26" y2="34" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-                    </svg>
-                </div>
-                <h3>Formats</h3>
-                <p data-i18n="featuresPage.import.formats">EPUB, FB2, MOBI, HTML, TXT, RTF — and their ZIP variants</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="24" cy="24" r="14" stroke="#4A90D9" stroke-width="2"/>
-                        <path d="M24 10 C30 18, 30 30, 24 38" stroke="#E8834A" stroke-width="1.5" stroke-linecap="round"/>
-                        <path d="M24 10 C18 18, 18 30, 24 38" stroke="#E8834A" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-                        <line x1="10" y1="24" x2="38" y2="24" stroke="#4A90D9" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>OPDS</h3>
-                <p data-i18n="featuresPage.import.opds">Browse OPDS catalogs: Standard Ebooks, Gutenberg, Feedbooks, custom servers</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 30 L12 18 C12 14, 16 10, 24 10 C32 10, 36 14, 36 18 L36 30" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M24 30 L24 22" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M20 26 L24 22 L28 26" stroke="#E8834A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <line x1="8" y1="36" x2="40" y2="36" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>URL</h3>
-                <p data-i18n="featuresPage.import.url">Import directly from URL with automatic format detection</p>
-            </div>
-        </div>
+<!-- ============================================================ -->
+<!-- SECTION 4 — IMPORT                                            -->
+<!-- ============================================================ -->
+<section class="feature-section reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="section-number">04</span>Section four</div>
+      <h2 class="section-h2"><em>Import</em>.</h2>
+      <p class="section-intro">
+        Ways to add books, the formats supported, and the controls you have
+        when a new book enters the library.
+      </p>
     </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Supported formats</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <ul class="feature-list">
+          <li><strong>EPUB</strong>With chapter extraction and embedded image handling</li>
+          <li><strong>FB2 / FB2.ZIP</strong>With automatic genre code mapping (~170 codes)</li>
+          <li><strong>MOBI</strong>Via a native decompressor</li>
+          <li><strong>HTML / HTML.ZIP</strong>With HTML sanitization and encoding detection</li>
+          <li><strong>TXT / TXT.ZIP</strong>With encoding detection</li>
+          <li><strong>RTF / RTF.ZIP</strong>Streaming parser</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Embedded images are extracted, compressed to JPEG under 500KB at
+          max 1200px, and stored alongside the content. Importing images is
+          your choice, per book — on by default, off if the author overdoes
+          it or you want to save space (the choice is remembered). Once
+          imported, images in the reader can be <em>shown, masked
+          (revealed on hover), or hidden entirely.</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Three ways to import</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <ul class="feature-list">
+          <li><strong>Browse</strong>Native file picker with filter for all supported extensions</li>
+          <li><strong>URL</strong>Paste a download link and the app fetches, validates, and imports the file</li>
+          <li><strong>Drag and drop</strong>Drop a file onto the library. Or drag a URL straight from your browser's address bar — the book is fetched and the import dialog opens with metadata, cover, and author already filled in. You skip the copy-paste-open-import-paste-fetch dance, but you still see the book before it joins the library.</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          On Mac, the import dialog has a persistent tab switcher (This Mac
+          / URL / Drop) remembered between sessions.
+        </p>
+        <p>
+          In JustReader, importing replaces the current book. In
+          ContinuousReader, books join the library.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Import dialog</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>
+          When you import a book into ContinuousReader, you can set its
+          metadata before it enters the library:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Duplicate detection</strong>Against existing library</li>
+          <li><strong>Cover preview</strong>Shown from the book's own metadata — replaceable later from the Book Card</li>
+          <li><strong>Metadata preview</strong>Detected title, author, series, publication date, language</li>
+          <li><strong>Color tag</strong>Assignment</li>
+          <li><strong>Genre chip picker</strong>Manual genre editing</li>
+          <li><strong>Folder assignment</strong>Context-aware — uses the current folder when browsing a folder, falls back to your default setting</li>
+          <li><strong>Origin URL</strong>Stored for later "In Library" detection in OPDS</li>
+          <li><strong>Image inclusion toggle</strong>For FB2/EPUB/MOBI (strip images if you prefer text-only)</li>
+          <li><strong>Open after import</strong>Checkbox</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          JustReader skips this dialog — pick a file, start reading.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">File size protection</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge jr">JR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <ul class="feature-list">
+          <li><strong>5 MB</strong>Warning banner, import proceeds</li>
+          <li><strong>50 MB</strong>Hard limit, import rejected</li>
+          <li><strong>100 MB</strong>Hard limit on decompressed size for ZIP/EPUB archives</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">OPDS browser</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>Browse online book catalogs with a native interface.</p>
+        <ul class="feature-list">
+          <li><strong>Default catalogs</strong>Standard Ebooks, Project Gutenberg, Feedbooks — ready to use</li>
+          <li><strong>Custom catalogs</strong>Add your own OPDS server with Basic Auth support</li>
+          <li><strong>Feed navigation</strong>With breadcrumb trail and middle truncation for long paths</li>
+          <li><strong>Server-side search</strong>Using the catalog's OpenSearch template when available</li>
+          <li><strong>Local filter</strong>At the bottom of every feed — instantly filters visible items by title, author, or summary as you type</li>
+          <li><strong>Cover thumbnails</strong>With native caching</li>
+          <li><strong>"In Library" badge</strong>For books already imported</li>
+          <li><strong>Batch import queue</strong>With folder assignment, color tags, and format selection</li>
+          <li><strong>Single import</strong>With post-import options</li>
+        </ul>
+      </div>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        OPDS browser showing Standard Ebooks root with cover thumbnails and filter bar
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">OPDS shortcuts and watchers</h3>
+        <span class="badge-group">
+          <span class="badge cr">CR</span>
+        </span>
+      </div>
+      <div class="feature-body">
+        <p>Two features that make OPDS browsing more than a one-time lookup.</p>
+        <ul class="feature-list">
+          <li><strong>Shortcuts</strong>Bookmark any feed for one-click navigation. Useful for favorite author pages, series, or collections.</li>
+          <li><strong>Watchers</strong>Track series or author feeds for new entries. Toggle an eye icon on any acquisition feed to start watching. "Check" detects new additions manually. Color-coded status: green when all entries are in your library, orange when new ones appear. Delete a catalog, and all its shortcuts and watchers are cleaned up.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Smart Features -->
-<section class="section" style="background-color: var(--color-sepia);">
-    <div class="container">
-        <h2 class="section-title reveal" data-i18n="featuresPage.smart.title">Smart features</h2>
-        <div class="highlights-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 36 L24 12 L36 36" stroke="#4A90D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M17 28 L31 28" stroke="#E8834A" stroke-width="2" stroke-linecap="round"/>
-                        <circle cx="36" cy="14" r="6" stroke="#E8834A" stroke-width="2"/>
-                        <path d="M34 14 L38 14 M36 12 L36 16" stroke="#E8834A" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <h3>Translation</h3>
-                <p data-i18n="featuresPage.smart.translate">Built-in translation powered by Apple Translation — 17 languages</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 34 C16 34 16 28 16 24 C16 18 20 14 24 14 C28 14 32 18 32 24 C32 28 32 34 32 34" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
-                        <line x1="12" y1="34" x2="36" y2="34" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M20 24 L22 22 L24 26 L26 20 L28 24" stroke="#E8834A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <h3>Read Aloud</h3>
-                <p data-i18n="featuresPage.smart.tts">Read Aloud with animated word-by-word highlighting</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14 8 L14 40" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M14 8 L34 14 L14 20" stroke="#E8834A" stroke-width="2" stroke-linejoin="round" fill="#E8834A" fill-opacity="0.2"/>
-                        <circle cx="32" cy="30" r="6" stroke="#4A90D9" stroke-width="2"/>
-                        <circle cx="32" cy="30" r="2" fill="#4A90D9"/>
-                    </svg>
-                </div>
-                <h3>Bookmarks</h3>
-                <p data-i18n="featuresPage.smart.bookmarks">Color-coded bookmarks with notes and text highlighting</p>
-            </div>
-            <div class="card reveal">
-                <div class="card-icon">
-                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="8" y="28" width="6" height="10" rx="1" fill="#4A90D9" opacity="0.4"/>
-                        <rect x="17" y="22" width="6" height="16" rx="1" fill="#4A90D9" opacity="0.6"/>
-                        <rect x="26" y="16" width="6" height="22" rx="1" fill="#E8834A" opacity="0.6"/>
-                        <rect x="35" y="10" width="6" height="28" rx="1" fill="#E8834A" opacity="0.8"/>
-                    </svg>
-                </div>
-                <h3>Statistics</h3>
-                <p data-i18n="featuresPage.smart.stats">Reading statistics: streaks, monthly activity, top authors, HTML reports</p>
-            </div>
-        </div>
+<!-- ============================================================ -->
+<!-- SECTION 5 — SYNC AND DATA (CR-only)                           -->
+<!-- ============================================================ -->
+<section class="feature-section cr-only reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="section-number">05</span>Section five</div>
+      <h2 class="section-h2">Sync and <em>data</em>.</h2>
+      <p class="section-intro">
+        How your library travels between devices, how it's stored, and what
+        happens when you want to move it, back it up, or walk away.
+      </p>
+      <div class="cr-only-banner">
+        <span class="marker">CR ONLY</span>
+        <span>Sync, backup, and library management require ContinuousReader. JustReader has no library to sync.</span>
+      </div>
     </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">iCloud sync</h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          Included in ContinuousReader, works across <strong>every Apple
+          device signed into the same Apple ID</strong> — home Mac, work
+          Mac, travel laptop, iPad, iPhone.
+        </p>
+        <ul class="feature-list">
+          <li><strong>Reading positions</strong>Down to the exact paragraph</li>
+          <li><strong>Bookmarks</strong>With colors, notes, and text highlights</li>
+          <li><strong>Notes</strong>The full rich-text content per book</li>
+          <li><strong>Library metadata</strong>Titles, authors, folders, color tags, genres</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          <strong>What doesn't sync:</strong> your per-device reading
+          settings. Each device keeps its own font, size, theme, and padding
+          — because a comfortable setup on a 27-inch Mac is rarely a
+          comfortable setup on an iPhone held in one hand at midnight.
+        </p>
+        <p>
+          If you want, per-device settings can also be synced — it's an
+          opt-in switch in preferences.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Readable book storage</h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          Book content is stored as clean HTML on disk. Files are named with
+          readable slugs — <code>strugatskie-trudno-byt-bogom.html</code>
+          rather than UUIDs or hashes. You can navigate your library folder
+          in Finder, open any book with a text editor, and the content is
+          just there.
+        </p>
+      </div>
+      <blockquote class="callout">
+        Your library is a folder of files. Read it with <code>cat</code> if
+        you want to.
+      </blockquote>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Backup and restore</h3>
+      </div>
+      <div class="feature-body">
+        <ul class="feature-list">
+          <li><strong>Backup</strong>Export the entire library (books, metadata, bookmarks, notes) to a single ZIP file. Size and filename shown in status.</li>
+          <li><strong>Restore</strong>Import from backup with validation — book count check, version compatibility, and a confirmation dialog before overwriting.</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Use this to move to a new Mac, keep a second library on an
+          external drive, or just archive a point-in-time snapshot before
+          reorganizing.
+        </p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3">Custom library location <em>(Mac)</em></h3>
+      </div>
+      <div class="feature-body">
+        <p>
+          By default, your library lives inside the app's sandbox. You can
+          move it anywhere:
+        </p>
+        <ul class="feature-list">
+          <li><strong>Any folder</strong>On your Mac, including external drives</li>
+          <li><strong>When moving</strong>Choose to move existing data or use the new folder as-is (for multiple libraries)</li>
+          <li><strong>Reset</strong>Any time to return to the default location</li>
+        </ul>
+        <p style="margin-top: 24px;">
+          Multiple libraries work through this mechanism — point at
+          different folders for different purposes (work books / novels /
+          research / whatever).
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- CTA Section -->
-<section class="section cta-section">
-    <div class="container">
-        <div class="cta-content reveal">
-            <h2 data-i18n="cta.title">Start reading today</h2>
-            <p data-i18n="cta.subtitle">Free to try. No subscription required.</p>
-            <a href="download.html" class="btn btn-primary btn-large" data-i18n="cta.button">Get ContinuousReader</a>
-        </div>
+<!-- ============================================================ -->
+<!-- SECTION 6 — PLATFORM DETAILS                                  -->
+<!-- ============================================================ -->
+<section class="feature-section reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="section-number">06</span>Section six</div>
+      <h2 class="section-h2">Platform <em>details</em>.</h2>
+      <p class="section-intro">
+        For a full platform-by-platform comparison — what's available on
+        Mac, iPad, and iPhone, and how each platform adapts the interface to
+        its conventions — see the platforms page.
+      </p>
     </div>
+
+    <div class="platforms-summary">
+      <div class="platform-summary-card">
+        <h4>Mac</h4>
+        <p>The most feature-rich. <strong>Table view</strong>, keyboard shortcuts, floating panels, island design, drag-and-drop everywhere.</p>
+      </div>
+      <div class="platform-summary-card">
+        <h4>iPad</h4>
+        <p>Touch-optimized. <strong>Native swipe actions</strong>, side panel, split view, two-column settings layout.</p>
+      </div>
+      <div class="platform-summary-card">
+        <h4>iPhone</h4>
+        <p>Streamlined for one-hand use. <strong>Compact UI</strong>, gesture navigation, bottom sheets, half-sheet folders.</p>
+      </div>
+    </div>
+
+    <p style="font-family: var(--serif); font-size: 17px; color: var(--ink-soft); line-height: 1.6; max-width: 60ch; margin-top: 32px;">
+      All three share the same reader, same themes, same typography
+      controls, same translation and Read Aloud.
+    </p>
+
+    <a href="platforms.html" class="platforms-link">See the full platforms page</a>
+  </div>
 </section>
 
-<!-- Footer -->
-<footer class="main-footer">
-    <div class="container footer-content">
-        <div class="footer-brand">
-            <img src="img/logo.svg" alt="ContinuousReader" width="28" height="28">
-            <span data-i18n="footer.tagline">Read without limits</span>
-        </div>
-        <div class="footer-links">
-            <a href="features.html" data-i18n="nav.features">Features</a>
-            <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-            <a href="download.html" data-i18n="nav.download">Download</a>
-            <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-            <a href="mailto:lexey111@gmail.com" data-i18n="footer.contact">Contact</a>
-        </div>
-        <div class="footer-bottom">
-            <span data-i18n="footer.developer">Developed by Oleksii Koshkin</span>
-            <span data-i18n="footer.copyright">© 2026 ContinuousReader. All rights reserved.</span>
-        </div>
+<!-- ============================================================ -->
+<!-- SECTION 7 — INTERFACE THAT FITS                               -->
+<!-- ============================================================ -->
+<section class="interface-fits reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="section-number">07</span>Closing</div>
+      <h2 class="section-h2">Interface that <em>fits</em>.</h2>
+      <p class="section-intro">
+        Not every reader needs every feature. ContinuousReader is built to
+        adapt — <em>twice</em>.
+      </p>
     </div>
+
+    <div class="interface-fits-block">
+      <h4>On first launch — the <em>Welcome wizard</em>.</h4>
+      <p>
+        Before you import your first book, a short setup walks you through
+        the choices that matter: language, interface theme, library view
+        (list, cards, or table), and which features you want visible. Four
+        or five screens, all skippable, all changeable later. <strong>You
+        start with an app that already looks the way you want.</strong>
+      </p>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Welcome wizard "Choose library view" step with List / Cards / Table options
+      </div>
+    </div>
+
+    <div class="interface-fits-block">
+      <h4>Any time after — the <em>Features panel</em>.</h4>
+      <p>
+        If you never use Read Aloud, turn it off and the button disappears
+        from the bottom toolbar. Same for OPDS, Translation, and Statistics.
+        Found in Settings → Features. Each toggle removes the feature from
+        the UI cleanly — <strong>no dimmed buttons, no empty placeholders,
+        no menu items that never apply to you.</strong>
+      </p>
+      <div class="screenshot">
+        <span class="screenshot-label">Screenshot</span>
+        Settings → Features panel with toggle switches
+      </div>
+    </div>
+
+    <p style="font-family: var(--serif); font-size: 19px; font-style: italic; color: var(--ink); line-height: 1.55; max-width: 50ch; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--rule);">
+      Change your mind, relaunch the wizard from Settings. Your app should
+      reflect how you read, not how we expect everyone to read.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FINAL CTA                                                     -->
+<!-- ============================================================ -->
+<section class="final-cta reveal">
+  <div class="container-narrow">
+    <h2>Start <em>reading.</em></h2>
+    <p>Two apps. Free or full. One download away.</p>
+    <div class="final-cta-buttons">
+      <a href="download.html" class="cta-primary">
+        Get ContinuousReader
+        <span class="price">$19.99</span>
+      </a>
+      <a href="download.html" class="cta-secondary">Get JustReader, free</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-line">
+        <span class="nav-logo" aria-hidden="true">
+          <svg viewBox="-165 -97 330 164" xmlns="http://www.w3.org/2000/svg">
+            <path d="M -8,4 C -22,44 -78,62 -92,38 C -106,14 -80,-16 -55,-13 C -36,-10 -16,-4 -8,0 Z" fill="#2D5573"/>
+            <path d="M -6,3 C -18,36 -64,52 -76,32 C -88,12 -66,-12 -45,-10 C -28,-8 -12,-3 -6,0 Z" fill="#3A6A8E"/>
+            <path d="M -4,2 C -12,28 -50,42 -60,24 C -70,8 -52,-8 -34,-6 C -20,-5 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+            <path d="M 8,4 C 22,44 78,62 92,38 C 106,14 80,-16 55,-13 C 36,-10 16,-4 8,0 Z" fill="#C05C38"/>
+            <path d="M 6,3 C 18,36 64,52 76,32 C 88,12 66,-12 45,-10 C 28,-8 12,-3 6,0 Z" fill="#D4704A"/>
+            <path d="M 4,2 C 12,28 50,42 60,24 C 70,8 52,-8 34,-6 C 20,-5 8,-2 4,0 Z" fill="#E8845A"/>
+            <path d="M -8,-2 C -30,-62 -120,-92 -140,-52 C -160,-12 -120,38 -80,33 C -50,28 -20,13 -8,0 Z" fill="#2D5573"/>
+            <path d="M -6,-2 C -25,-52 -105,-77 -122,-42 C -138,-7 -103,36 -68,30 C -42,25 -16,11 -6,0 Z" fill="#3A6A8E"/>
+            <path d="M -4,-2 C -18,-40 -88,-60 -102,-30 C -116,-2 -85,28 -56,24 C -34,20 -12,9 -4,0 Z" fill="#4A7FA5"/>
+            <path d="M 8,-2 C 30,-62 120,-92 140,-52 C 160,-12 120,38 80,33 C 50,28 20,13 8,0 Z" fill="#C05C38"/>
+            <path d="M 6,-2 C 25,-52 105,-77 122,-42 C 138,-7 103,36 68,30 C 42,25 16,11 6,0 Z" fill="#D4704A"/>
+            <path d="M 4,-2 C 18,-38 88,-58 102,-28 C 116,0 85,30 56,26 C 34,22 12,11 4,0 Z" fill="#E8845A"/>
+            <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+            <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+            <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+          </svg>
+        </span>
+        <span>ContinuousReader</span>
+      </div>
+      <p class="footer-tagline">Built for readers who don't just browse.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Product</h5>
+      <ul>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="platforms.html">Platforms</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Info</h5>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="mailto:hello@continuousreader.app">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Language</h5>
+      <ul>
+        <li><a href="#">English</a></li>
+        <li><a href="#">Русский</a></li>
+        <li><a href="#">Українська</a></li>
+        <li><a href="#">Español</a></li>
+        <li><a href="#">Français</a></li>
+        <li><a href="#">Deutsch</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span>A reader's reader.</span>
+  </div>
 </footer>
 
-<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

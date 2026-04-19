@@ -1,154 +1,119 @@
-# ContinuousReader — Promotional Website
+# ContinuousReader site — Pack 1 (English draft)
 
-## What this is
+A static, English-only draft of the ContinuousReader promo site. Designed
+to be deployed to GitHub Pages or any static host with zero build step.
 
-Static promotional website for ContinuousReader — a native multiplatform reading app for macOS, iPadOS, and iPhone. The site is designed to be warm, inviting, and elegant — reflecting the calm, focused experience of reading.
-
-## Design philosophy
-
-- **Pastel tones, airy design** — reading doesn't tolerate fuss
-- **Restrained but elegant** — clean typography, generous whitespace, subtle animations
-- **Blue/orange butterfly** brand colors from the app icon
-- **No heavy frameworks** — pure HTML/CSS/JS, minimal dependencies
-- **Responsive** — looks great on desktop, tablet, and mobile
-
-## Color palette
-
-From the app's butterfly wing icon:
-- Primary blue: `#4A90D9` (trust, calm)
-- Accent orange: `#E8834A` (warmth, creativity)
-- Background: `#FAFBFD` (almost white, slight warm tint)
-- Text: `#2C3E50` (deep navy, not harsh black)
-- Secondary text: `#7B8A9E`
-- Card backgrounds: `#FFFFFF`
-- Subtle borders: `#E8ECF1`
-- Sepia accent: `#F5F0E8` (reading warmth)
-
-## Site structure
+## What's in here
 
 ```
-ContinuousReaderSite/
-  index.html          — Landing page (hero, highlights, CTA)
-  features.html       — Detailed feature breakdown
-  platforms.html      — Platform comparison (macOS / iPad / iPhone)
-  download.html       — Download links, App Store badge (placeholder for now)
-  css/
-    style.css         — All styles (single file, sections marked with comments)
-  js/
-    main.js           — Navigation, scroll effects, language switching
-    i18n.js           — All translations (EN, RU, UK, ES, FR, DE)
-  img/
-    logo.svg          — Butterfly wing mark
-    hero/             — Hero section images/illustrations
-    features/         — Feature section illustrations
-    screenshots/      — App screenshots (real or placeholder)
-  favicon.ico         — Browser tab icon
+.
+├── index.html          # Home page
+├── features.html       # Detailed feature tour
+├── platforms.html      # Mac / iPad / iPhone breakdown
+├── download.html       # Pricing, comparison, FAQ
+├── css/
+│   └── style.css       # All styles, shared across pages
+├── js/
+│   └── main.js         # Sticky nav, scroll reveals, lightbox
+├── img/
+│   ├── logo.svg        # Butterfly logo (used in nav + footer)
+│   └── favicon.svg     # Same as logo
+├── fonts/              # Self-hosted variable fonts
+│   └── *.woff2         # Source Serif 4, Inter, JetBrains Mono
+├── README.md           # This file
+└── TODO.md             # Punch list before going live + later
 ```
 
-## Localization approach
+## How to deploy
 
-All translatable text uses `data-i18n="key"` attributes. The `i18n.js` file contains translations for all 6 languages. Language switching is instant via JS — no page reload. Selected language is saved to `localStorage`.
+This is a pure static site. No build step.
 
-```html
-<h1 data-i18n="hero.title">Your books, everywhere</h1>
+1. Replace the contents of your `lexey111/ContinuousReaderSite` repo with
+   the files in this package (or merge — see "What this replaces" below).
+2. Commit and push.
+3. GitHub Pages will serve the new version within a minute or two at
+   https://lexey111.github.io/ContinuousReaderSite/
+
+## What this replaces vs preserves
+
+**Replaces** (these are the new versions):
+
+- `index.html`, `features.html`, `platforms.html`, `download.html`
+- `css/style.css` (your previous CSS, if any)
+- `js/main.js`
+- `img/logo.svg`, `img/favicon.svg`
+- All fonts in `fonts/`
+
+**Preserves** (left untouched, you decide):
+
+- `js/i18n.js` — your existing translation file. The new HTML doesn't
+  use `data-i18n` attributes yet (Pack 2 will add them); your existing
+  i18n file won't break anything but also won't do anything until then.
+- Anything else in the repo not listed above (CNAME, README, etc.).
+
+## How to test locally
+
+The site uses no build tooling, so any static file server works. Three
+easy options:
+
+```sh
+# Python
+cd site-package && python3 -m http.server 8000
+
+# Node
+cd site-package && npx serve
+
+# VS Code with Live Server extension — right-click index.html → "Open with Live Server"
 ```
 
-```js
-// i18n.js
-const translations = {
-  en: { "hero.title": "Your books, everywhere" },
-  ru: { "hero.title": "Ваши книги — везде" },
-  ...
-};
-```
+Then visit http://localhost:8000.
 
-## Pages overview
+## What still needs to happen
 
-### index.html (Landing)
-- **Hero**: Large headline + subtitle + butterfly illustration + CTA button
-- **Highlights**: 3-4 key selling points with icons (multi-format, cross-platform, beautiful reading, smart features)
-- **Feature previews**: Brief cards linking to features.html
-- **Testimonials/quotes area**: Placeholder for future reviews
-- **Footer**: Links, language picker, copyright
+See `TODO.md` for the full punch list. The short version:
 
-### features.html (Features)
-Detailed breakdown organized by category:
-- **Reading experience**: Themes (17!), fonts, pagination, fullscreen clock
-- **Library management**: Views (list/card/table), folders, search, sort, grouping
-- **Import**: File picker, URL, OPDS catalogs, supported formats
-- **Smart features**: Translation, Read Aloud, bookmarks, statistics
-- **Sync**: iCloud (coming soon badge)
+- Replace placeholder App Store buttons on `download.html` with real
+  Apple-provided badges and real App Store URLs (after publishing apps)
+- Add real screenshots in `img/screenshots/` and replace placeholder
+  divs (lightbox already wired up)
+- Register the email address used in the footer (or change it)
+- Create a `privacy.html` page (App Store will require this anyway)
 
-### platforms.html (Platforms)
-Side-by-side comparison showing what's available on each platform:
-- macOS: Full experience (table view, keyboard shortcuts, NSPanel windows, Settings dialog)
-- iPad: Mid-tier (swipe actions, side panel, split view)
-- iPhone: Streamlined (compact UI, bottom sheets, gesture navigation)
+Ask Claude for Pack 2 (full localization to RU/UK/ES/FR/DE) when you're
+ready.
 
-### download.html (Download)
-- App Store badge (placeholder URL until published)
-- System requirements
-- What's included in free tier vs paid (when monetization is implemented)
+## Browser support
 
-## Key selling points to emphasize
+Targets evergreen browsers:
 
-1. **Multi-format**: EPUB, FB2, MOBI, HTML, TXT, RTF — plus ZIP variants
-2. **Native & fast**: Pure SwiftUI, no Electron, no web views (except reader itself)
-3. **Beautiful reading**: 17 themes, 9 fonts with variants, hyphenation, pagination
-4. **Cross-platform**: One purchase, all your Apple devices
-5. **OPDS catalogs**: Browse Standard Ebooks, Gutenberg, Feedbooks, custom servers
-6. **Translation**: Built-in Apple Translation, word-level lookup
-7. **Read Aloud**: TTS with animated word highlighting
-8. **Statistics**: Track your reading habits and streaks
-9. **Privacy**: Your data stays on your devices (iCloud opt-in)
-10. **No subscriptions**: Buy once, use forever
+- Safari 16.4+ (March 2023)
+- Chrome 113+ (May 2023)
+- Firefox 121+ (December 2023)
+- Edge 113+ (May 2023)
 
-## Typography
+Older browsers will get a slightly degraded experience (no scroll-reveal
+animations, no native dialog lightbox) but everything will still be
+readable and navigable.
 
-- Headlines: System font stack (SF Pro on Apple, -apple-system fallback)
-- Body: Georgia or similar serif for that "reading" feel in content sections
-- UI text: System sans-serif
-- Monospace: Not used on the site
+## Performance
 
-## Animation guidelines
+First paint should be quick:
 
-- Subtle fade-in on scroll (IntersectionObserver)
-- Smooth parallax on hero section (optional, respect prefers-reduced-motion)
-- Language switch: gentle crossfade
-- Hover effects on cards and buttons: soft shadow lift
-- NO: auto-playing videos, carousels, popups, cookie banners
+- HTML: ~10–25 KB per page (uncompressed)
+- CSS: ~25 KB
+- JS: ~3 KB
+- Fonts: ~850 KB total, but only relevant subsets load (Latin pages
+  load ~250 KB, Cyrillic adds ~140 KB on top)
+- No external dependencies, no CDN, no analytics
 
-## Screenshots strategy
+Total page weight on first load (cold cache) for an English visitor:
+about 300 KB. After that, fonts are cached and pages are 30–50 KB each.
 
-For the initial version, use placeholder colored rectangles styled to look like app windows. Later, replace with real screenshots. Important: use fake book data to avoid copyright issues with real book covers/titles.
+## Credits
 
-Fake book suggestions for screenshots:
-- "The Wandering Stars" by Elena Voss
-- "Gardens of Tomorrow" by Marcus Chen
-- "Silver Bells" by Anna Petrova
-- "The Last Lighthouse" by James O'Brien
-- "Whispers in the Rain" by Sofia Garcia
-
-## Domain considerations
-
-Domain TBD. There's a planned free version "JustReader" that needs a paired domain. Possible patterns:
-- continuousreader.app / justreader.app
-- continuousreader.com / justreader.com
-- getreader.app (shared domain with /continuous and /just paths)
-
-Currently deployed without a domain — can be tested locally or via GitHub Pages.
-
-## Build & Deploy
-
-No build step needed — pure static files. To preview locally:
-```bash
-cd ContinuousReaderSite
-python3 -m http.server 8000
-# Open http://localhost:8000
-```
-
-Future deployment: GitHub Pages, Netlify, or Cloudflare Pages.
-
-## Developer
-
-Oleksii Koshkin — lexey111@gmail.com
+- Fonts: [Source Serif 4](https://github.com/adobe-fonts/source-serif)
+  by Adobe (OFL),
+  [Inter](https://rsms.me/inter/) by Rasmus Andersson (OFL),
+  [JetBrains Mono](https://www.jetbrains.com/mono/) (OFL).
+- Self-hosted via [Fontsource](https://fontsource.org).
+- Logo, design, and copy: by Oleksii Koshkin, with assistance from Claude.
