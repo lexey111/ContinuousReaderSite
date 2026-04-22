@@ -212,8 +212,8 @@ a { color: inherit; }
 /* Real butterfly logo SVG inlined; dimensions controlled here */
 .nav-logo {
   display: inline-block;
-  width: 32px;
-  height: 16px;
+  width: 28px;
+  height: 19px;
   flex-shrink: 0;
 }
 

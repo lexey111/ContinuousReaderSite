@@ -1,0 +1,11 @@
+<svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <!-- Contour wings — compact proportions matching the app icon -->
+  <g fill="none" stroke="#1F3A52" stroke-width="4" stroke-linejoin="round">
+    <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z"/>
+    <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z"/>
+    <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z"/>
+    <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z"/>
+  </g>
+  <!-- Orange accent dot at the body -->
+  <circle cx="0" cy="0" r="8" fill="#C45D38"/>
+</svg>
