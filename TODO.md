@@ -23,33 +23,6 @@ badges with download / branding guidelines:
   these are fine to leave as page links, but the actual final purchase link
   on `download.html` is the one that matters.
 
-### Register email and (optionally) domain
-
-Several places use `hello@continuousreader.app` as a contact email:
-
-- Footer "Contact" link
-- "Get in touch" link in features.html intro
-- Support FAQ on download.html
-- About section on download.html
-
-If you want to use this email, register the `continuousreader.app` domain
-(or alternative — `.app` is Google-owned, requires HTTPS, costs ~$15/year).
-Alternatives: `continuousreader.com`, `continuousreader.io`, or use a
-personal domain. If you'd rather skip a domain for now, replace these
-links with your existing contact email.
-
-### Add the privacy page
-
-The footer links to `privacy.html` which doesn't exist yet. Either:
-
-- Create a simple privacy page (you have plenty of source material — the
-  About section on `download.html` and the Privacy FAQ are already strong
-  starting points)
-- Or remove the link from the footer until you have one
-
-App Store submission will require a public privacy policy URL anyway, so
-this needs to happen before submission.
-
 ### Smoke test
 
 - Open each page in a browser locally to verify they render correctly
@@ -120,19 +93,34 @@ If you want help generating a fake library, ask Claude — it can produce
 20–30 plausible book metadata records (title, author, year, genre, file
 size) in a few seconds.
 
-## When you're ready for localization
+## Localization
 
-Pack 2 of this site delivery will include:
+### Done
 
-- Full translations for all 4 pages into Russian, Ukrainian, Spanish,
-  French, German
-- `data-i18n` attribute markup added throughout HTML
-- A new `js/i18n.js` with all translation strings (your existing one in
-  the repo will be replaced)
-- Language picker logic wired up so the EN button at the top right actually
-  cycles languages
+- `js/i18n.js` rebuilt as the EN source of truth — 626 keys covering all
+  6 pages (index, features, platforms, download, contact, privacy).
+  Other languages (ru, uk, es, fr, de) declared as empty objects;
+  missing keys fall back to English, so the page stays usable while
+  translations are filled in incrementally.
+- `js/main.js` wires up: browser language detection, localStorage
+  persistence (`cr-lang`), `<html lang>` attribute, `<title>` and
+  `<meta description>` updates via `data-i18n` / `data-i18n-attr`.
+- Top-right `EN` button became a dropdown listing all 6 languages.
+  Footer "Language" column anchors are also live switchers via
+  `data-lang="…"`.
+- All 6 HTML pages: nav links, footer columns, `<title>`, og: meta tags
+  carry `data-i18n` attributes; `js/i18n.js` is loaded before
+  `js/main.js`.
+- `index.html`: full content marked up with `data-i18n` (88 attrs).
 
-Tell Claude when you want this and it'll be done in one delivery.
+### Still to do
+
+- `data-i18n` markup on the bodies of features, platforms, download,
+  contact, privacy. The keys exist in `js/i18n.js`; the HTML just needs
+  the attributes added — like `index.html` already has.
+- Translations for ru, uk, es, fr, de (5 languages × ~626 keys). Each
+  language can be filled in one page at a time; partial coverage is
+  fine.
 
 ## Future / nice to have
 

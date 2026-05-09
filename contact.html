@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — ContinuousReader</title>
-<meta name="description" content="Get in touch with the developer of ContinuousReader. Bug reports, feature requests, or just say hello.">
+<title data-i18n="meta.contact.title">Contact — ContinuousReader</title>
+<meta name="description" data-i18n-attr="content:meta.contact.desc" content="Get in touch with the developer of ContinuousReader. Bug reports, feature requests, or just say hello.">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-<meta property="og:title" content="Contact — ContinuousReader">
-<meta property="og:description" content="Bug reports, feature requests, or just say hello.">
+<meta property="og:title" data-i18n-attr="content:meta.contact.ogTitle" content="Contact — ContinuousReader">
+<meta property="og:description" data-i18n-attr="content:meta.contact.ogDesc" content="Bug reports, feature requests, or just say hello.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="img/logo.svg">
 <link rel="stylesheet" href="css/style.css?v=2">
@@ -39,9 +39,9 @@
       <span>ContinuousReader</span>
     </a>
     <div class="nav-links">
-      <a href="features.html">Features</a>
-      <a href="platforms.html">Platforms</a>
-      <a href="download.html">Download</a>
+      <a href="features.html" data-i18n="nav.features">Features</a>
+      <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
+      <a href="download.html" data-i18n="nav.download">Download</a>
       <button class="nav-lang" type="button">EN</button>
     </div>
   </div>
@@ -119,30 +119,42 @@
         </span>
         <span>ContinuousReader</span>
       </div>
-      <p class="footer-tagline">Built for readers who don't just browse.</p>
+      <p class="footer-tagline" data-i18n="foot.tagline">Built for readers who don't just browse.</p>
     </div>
     <div class="footer-col">
-      <h5>Product</h5>
+      <h5 data-i18n="foot.col.product">Product</h5>
       <ul>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="platforms.html">Platforms</a></li>
-        <li><a href="download.html">Download</a></li>
+        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+        <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+        <li><a href="download.html" data-i18n="nav.download">Download</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h5>Info</h5>
+      <h5 data-i18n="foot.col.info">Info</h5>
       <ul>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
+        <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.language">Language</h5>
+      <ul>
+        <li><a href="#" data-lang="en">English</a></li>
+        <li><a href="#" data-lang="ru">Русский</a></li>
+        <li><a href="#" data-lang="uk">Українська</a></li>
+        <li><a href="#" data-lang="es">Español</a></li>
+        <li><a href="#" data-lang="fr">Français</a></li>
+        <li><a href="#" data-lang="de">Deutsch</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
-    <span>A reader's reader.</span>
+    <span data-i18n="foot.copy">&copy; 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span data-i18n="foot.signoff">A reader's reader.</span>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 
 </body>
