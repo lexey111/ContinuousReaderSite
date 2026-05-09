@@ -1,0 +1,72 @@
+# ContinuousReader
+
+> A native multiplatform reading app for macOS, iPadOS, and iPhone. One codebase, three platform-adapted experiences. Built in Swift and SwiftUI.
+
+ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB, FB2, MOBI, HTML, TXT, RTF files (and their ZIP variants). The core value proposition is seamless reading position sync across all Apple devices via iCloud.
+
+## Two products
+
+- **ContinuousReader** ($19.99, one-time) — full reading workspace with library, iCloud sync, bookmarks, OPDS catalogs, reading statistics, translation tracking
+- **JustReader** (free) — single-book reader with the same engine, typography, themes, translation, and Read Aloud. No library, no sync, no bookmarks.
+
+Both share the ReaderCore engine (local Swift Package).
+
+## Key features
+
+### Reading engine
+- WKWebView-based renderer with PositionTracker.js for precise position tracking
+- Three navigation modes: continuous scroll, single page, two-page spread (Mac)
+- 34 reading themes (5 palette families x 5 tones + featured + extreme + 3 custom)
+- 9 system fonts (serif, sans, monospace), full typography control
+- Day & Night mode (automatic theme switching based on system appearance)
+- Reading position survives font changes, window resizes, device switches, mode switches
+
+### Translation
+- Apple Translation framework (on-device, nothing leaves the device)
+- Non-disruptive inline panel, auto-translate mode
+- Translation statistics and history tracking (optional)
+
+### Voice Reader (Read Aloud)
+- Text-to-speech with real-time word highlighting
+- Adjustable rate, pitch, volume
+- Seamless handoff between reading and listening (same position)
+
+### Library (ContinuousReader only)
+- Three view modes: list, cards, table
+- Virtual folders, color tags (7 colors), genres
+- OPDS catalog browser with shortcuts and watchers
+- Book Card with 5 tabs (Cover/Info/Notes/Marks/Stats)
+- Rich text notes editor per book
+- Backup/restore to ZIP, custom library location (Mac)
+
+### iCloud sync (ContinuousReader only)
+- Reading positions, bookmarks, notes, library metadata via iCloud KV Store
+- Book files via iCloud Drive
+- Master/slave model for concurrent reading (one device owns position per book)
+- Works with free iCloud tier for reading state; file sync uses iCloud Drive storage
+
+### Platform adaptations
+- **Mac**: keyboard shortcuts (F1-F10), floating panels, island design, drag-and-drop, two-page spread
+- **iPad**: swipe gestures, native sheets, external keyboard support
+- **iPhone**: one-hand-friendly, bottom tap zones, compact layouts, Dynamic Island support
+
+## Technical details
+
+- **Stack**: Swift, SwiftUI, WKWebView, SwiftData
+- **Minimum OS**: iOS 17.0, macOS 14.0
+- **Storage**: SwiftData (local), iCloud KV Store + iCloud Drive (sync)
+- **Book storage**: Clean HTML files on disk with readable slug-based folder names
+- **Privacy**: No analytics, no telemetry, no tracking. Translation is on-device.
+- **Localization**: English + Russian, Ukrainian, Spanish, French, German (930+ keys)
+- **Bundle ID**: com.lexey111.ContinuousReader
+
+## Formats supported
+
+EPUB, FB2, FB2.ZIP, MOBI, HTML, TXT, RTF, and ZIP variants of HTML/TXT/RTF.
+Footnote extraction from EPUB and FB2. Chapter extraction. Cover detection. Encoding auto-detection.
+
+## Links
+
+- Website: https://continuousreader.app
+- Contact: hello@continuousreader.app
+- Developer: Oleksii Koshkin
