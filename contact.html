@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — ContinuousReader</title>
-<meta name="description" content="ContinuousReader privacy policy. No analytics, no tracking, no telemetry. Your reading habits are your own.">
+<title>Contact — ContinuousReader</title>
+<meta name="description" content="Get in touch with the developer of ContinuousReader. Bug reports, feature requests, or just say hello.">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-<meta property="og:title" content="Privacy Policy — ContinuousReader">
-<meta property="og:description" content="No analytics, no tracking, no telemetry. Your reading habits are your own.">
+<meta property="og:title" content="Contact — ContinuousReader">
+<meta property="og:description" content="Bug reports, feature requests, or just say hello.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="img/logo.svg">
 <link rel="stylesheet" href="css/style.css">
@@ -49,103 +49,60 @@
 
 <header class="page-header">
   <div class="container-narrow">
-    <div class="page-eyebrow">Your data, your devices</div>
-    <h1 class="page-title">Privacy <em>Policy</em></h1>
+    <div class="page-eyebrow">One developer, real replies</div>
+    <h1 class="page-title">Get in <em>touch</em>.</h1>
     <p class="page-subtitle">
-      Last updated: May 2026
+      Bug report, feature request, or just a note about a book you're reading.
     </p>
   </div>
 </header>
 
 <section class="section reveal">
   <div class="container-narrow">
-    <div class="feature-body">
+    <div class="contact-grid">
 
-      <h3>The short version</h3>
-      <p>
-        ContinuousReader and JustReader do not collect, transmit, or store any
-        personal data on external servers. <strong>No analytics, no telemetry,
-        no tracking, no advertising.</strong> Your reading habits are your own.
-      </p>
+      <div class="contact-form-wrap">
+        <!-- Replace ACTION with your Formspree endpoint: https://formspree.io/f/YOUR_FORM_ID -->
+        <form action="https://formspree.io/f/PLACEHOLDER" method="POST" class="contact-form">
+          <label class="form-label">
+            <span>Name</span>
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label class="form-label">
+            <span>Email</span>
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label class="form-label">
+            <span>Subject</span>
+            <select name="subject">
+              <option value="bug">Bug report</option>
+              <option value="feature">Feature request</option>
+              <option value="question">Question</option>
+              <option value="other" selected>Other</option>
+            </select>
+          </label>
+          <label class="form-label">
+            <span>Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button type="submit" class="form-submit">Send message</button>
+        </form>
+      </div>
 
-      <h3>Data stored on your device</h2>
-      <p>
-        All app data is stored locally on your device:
-      </p>
-      <ul class="feature-list">
-        <li><strong>Books</strong> — converted to HTML and stored in your app's
-          Documents directory. You can browse these files in Finder.</li>
-        <li><strong>Reading positions, bookmarks, notes</strong> — stored in a
-          local SwiftData database within the app sandbox.</li>
-        <li><strong>Reader settings</strong> — font, theme, layout preferences,
-          stored in UserDefaults on each device.</li>
-        <li><strong>Translation history</strong> — if translation statistics
-          tracking is enabled, looked-up words are stored locally. You can
-          disable tracking or clear the history at any time.</li>
-      </ul>
+      <div class="contact-aside">
+        <h3>Prefer email?</h3>
+        <p>
+          Write directly to
+          <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>
+        </p>
+        <h3>Response time</h3>
+        <p>
+          One developer handles everything, so replies usually take a day or
+          two — but every message gets a real answer.
+        </p>
+      </div>
 
-      <h3>iCloud sync (optional)</h2>
-      <p>
-        When you enable iCloud sync in ContinuousReader, the following data is
-        synchronized through your personal iCloud account:
-      </p>
-      <ul class="feature-list">
-        <li><strong>Reading state</strong> — positions, bookmarks, notes, library
-          metadata (via iCloud Key-Value Store)</li>
-        <li><strong>Book files</strong> — converted HTML, cover images, and
-          metadata (via iCloud Drive)</li>
-        <li><strong>Translation records</strong> — if tracking is enabled
-          (via iCloud Drive)</li>
-      </ul>
-      <p>
-        This data travels between your devices through Apple's iCloud
-        infrastructure, under your Apple ID. <strong>The developer has no
-        access to your iCloud data.</strong> You can disable iCloud sync at
-        any time; your library continues to work locally.
-      </p>
-
-      <h3>Network access</h2>
-      <p>The apps access the network only when:</p>
-      <ul class="feature-list">
-        <li><strong>iCloud sync</strong> is enabled (Apple's iCloud servers)</li>
-        <li><strong>OPDS catalog browsing</strong> — you connect to third-party
-          book catalogs you configure yourself (ContinuousReader only)</li>
-        <li><strong>URL import</strong> — when you drag a URL into the import
-          dialog to download a book file</li>
-      </ul>
-      <p>
-        No network access occurs during reading. Translation uses Apple's
-        on-device Translation framework — <strong>nothing leaves your
-        device</strong>.
-      </p>
-
-      <h3>Third-party services</h2>
-      <p>
-        The apps do not integrate any third-party analytics, crash reporting,
-        advertising, or tracking services. The only external dependency is
-        Apple's own frameworks (iCloud, Translation).
-      </p>
-
-      <h3>Children's privacy</h2>
-      <p>
-        The apps do not collect personal information from anyone, including
-        children under 13.
-      </p>
-
-      <h3>Changes to this policy</h2>
-      <p>
-        If this policy changes, the updated version will be posted here with
-        a new "Last updated" date. The apps themselves do not collect data, so
-        changes would only reflect new features (like optional cloud services).
-      </p>
-
-      <h3>Contact</h2>
-      <p>
-        Questions about privacy:
-        <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>
-      </p>
-
-    </div><!-- .feature-body -->
+    </div>
   </div>
 </section>
 
@@ -178,7 +135,7 @@
     </div>
     <div class="footer-col">
       <h5>Product</h5>
-      <ul class="feature-list">
+      <ul>
         <li><a href="features.html">Features</a></li>
         <li><a href="platforms.html">Platforms</a></li>
         <li><a href="download.html">Download</a></li>
@@ -186,7 +143,7 @@
     </div>
     <div class="footer-col">
       <h5>Info</h5>
-      <ul class="feature-list">
+      <ul>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>

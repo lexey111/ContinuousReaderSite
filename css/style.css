@@ -611,8 +611,46 @@ section { position: relative; z-index: 2; }
   max-width: 54ch;
 }
 
-.prose p strong { color: var(--ink); font-weight: 500; }
-.prose p em { font-style: italic; color: var(--ink); }
+.prose p strong, .prose li strong { color: var(--ink); font-weight: 500; }
+.prose p em, .prose li em { font-style: italic; color: var(--ink); }
+
+.prose h2 {
+  font-family: var(--sans);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.prose h2:first-child { margin-top: 0; }
+
+.prose ul {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.prose li {
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  padding: 6px 0 6px 18px;
+  position: relative;
+  max-width: 54ch;
+}
+
+.prose li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 16px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
 
 /* ==========================================================
    INDEX-SPECIFIC SECTIONS
@@ -979,6 +1017,17 @@ section.feature-section { padding: 80px 0; }
   color: var(--ink-soft);
   max-width: 64ch;
 }
+
+.feature-body h3 {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.feature-body h3:first-child { margin-top: 0; }
 
 .feature-body p { margin-bottom: 16px; }
 .feature-body p:last-child { margin-bottom: 0; }
@@ -1979,6 +2028,116 @@ code {
 }
 
 /* ==========================================================
+   CONTACT FORM
+   ========================================================== */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 64px;
+  align-items: start;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label span {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.form-label input,
+.form-label select,
+.form-label textarea {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 10px 14px;
+  transition: border-color 0.15s ease;
+}
+
+.form-label input:focus,
+.form-label select:focus,
+.form-label textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-label textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-label select {
+  cursor: pointer;
+}
+
+.form-submit {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: opacity 0.15s ease;
+}
+
+.form-submit:hover { opacity: 0.85; }
+
+.contact-aside {
+  padding-top: 8px;
+}
+
+.contact-aside h3 {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-top: 28px;
+  margin-bottom: 8px;
+}
+
+.contact-aside h3:first-child { margin-top: 0; }
+
+.contact-aside p {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.contact-aside a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-soft);
+}
+
+.contact-aside a:hover { border-bottom-color: var(--accent); }
+
+/* ==========================================================
    FOOTER
    ========================================================== */
 .footer {
@@ -2151,6 +2310,8 @@ code {
    RESPONSIVE
    ========================================================== */
 @media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-aside { order: -1; }
   .nav-inner { padding: 18px 24px; }
   .container, .container-narrow, .platform-divider {
     padding: 0 24px;
@@ -2169,7 +2330,8 @@ code {
   .feature-h3 { font-size: 22px; }
   .feature-body, .feature-list li { font-size: 16px; }
   .h2 { font-size: 40px; margin-bottom: 32px; }
-  .prose p { font-size: 18px; max-width: none; }
+  .prose p, .prose li { font-size: 18px; max-width: none; }
+  .prose h2 { font-size: 20px; }
   .spec-list { grid-template-columns: 1fr; gap: 4px; }
   .spec-list dt { padding-top: 20px; }
   .device-setup { grid-template-columns: 1fr; gap: 32px; }
