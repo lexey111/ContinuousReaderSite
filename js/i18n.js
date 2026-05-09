@@ -110,8 +110,9 @@ const translations = {
     'index.s4.h2':      'Typography that <em>respects</em> the text.',
     'index.s4.p1':      'Most reading apps get typography wrong. Either they pretend the screen is a book, with skeuomorphic page turns and fake paper, or they treat text as a data dump — browser defaults, ragged columns, no hyphenation.',
     'index.s4.p2':      '<strong>ContinuousReader does neither.</strong>',
-    'index.s4.p3':      'Thirty-four reading themes across five palette families, each with five tonal variations from light to dark. A <em>Typewriter</em> theme in ivory and dark brown. A <em>Terminal</em> theme in white monospace on deep blue — if you recognize the palette, you’ll know why it’s there. Three custom slots where you define your own colors.',
-    'index.s4.p4':      'And <em>Extreme</em> themes — pure black-on-white and white-on-black with four contrast levels and adjustable font weight, built for reading <strong>in full sun on a beach</strong> or <strong>in bed with the lights off</strong>, without burning your eyes either way.',
+    'index.s4.p3':      'Five core palettes — Neutral, Sepia, Celestial, Lime, Rose — each with five tonal variations from light to dark. Plus two featured themes for the old-school crowd: <em>Typewriter</em> in ivory and dark brown, and <em>Terminal</em> in white monospace on deep blue (if you recognize the palette, you already know why it’s there). Plus two extreme variants. Plus three custom slots where the colors are yours. <strong>Thirty-three variants in total.</strong>',
+    'index.s4.p4':      '<em>Midday</em> and <em>Midnight</em> — pure black-on-white and white-on-black with four contrast levels and adjustable font weight, built for reading <strong>in full sun on a beach</strong> or <strong>in bed with the lights off</strong>, without burning your eyes either way.',
+    'index.s4.picker':  'Three ways to pick. <strong>Fixed</strong> — one theme, always. <strong>Day &amp; Night</strong> — pair a light theme with a dark one and the app switches when your system does. <strong>Manual override</strong> — force any theme regardless of schedule, for a session that doesn’t fit the rhythm.',
     'index.s4.dt1':     'Typefaces',
     'index.s4.dd1':     'Nine system fonts across <em>serif, sans, and monospace.</em> Georgia, Palatino, Charter, Iowan Old Style, Helvetica Neue, SF Pro, Avenir Next, Menlo, American Typewriter.',
     'index.s4.dt2':     'Hyphenation',
@@ -785,10 +786,135 @@ const translations = {
   },
 
   // ============================================================
-  // OTHER LANGUAGES — start empty; missing keys fall back to EN
-  // Filled in incrementally; see TODO.md.
+  // RUSSIAN — index.html complete; other pages fall back to EN
+  //
+  // Register: formal «вы» throughout, matching the app's existing
+  // RU localization (Localizable.xcstrings).
+  // Glossary:
+  //   ContinuousReader / JustReader — kept as-is (brand)
+  //   Read Aloud → «Чтение вслух»
+  //   Bookmark → «Закладка»
+  //   Side panel → «Боковая панель»
+  //   Cover → «Обложка»
+  //   Theme → «Тема»
+  //   Library → «Библиотека»
+  //   Sync → «Синхронизация»
+  //   Family Sharing → «Семейный доступ» (Apple-canonical)
+  //   Universal Purchase → «Универсальная покупка» (Apple-canonical)
   // ============================================================
-  ru: {},
+  ru: {
+    // ---------- Navigation ----------
+    'nav.features':  'Возможности',
+    'nav.platforms': 'Платформы',
+    'nav.download':  'Загрузка',
+
+    // ---------- Footer ----------
+    'foot.tagline':       'Для тех, кто не пролистывает.',
+    'foot.col.product':   'Продукт',
+    'foot.col.info':      'Информация',
+    'foot.col.language':  'Язык',
+    'foot.link.privacy':  'Приватность',
+    'foot.link.contact':  'Связаться',
+    'foot.copy':          '© 2026 ContinuousReader. Разработка — Алексей Кошкин.',
+    'foot.signoff':       'Читалка для читателей.',
+
+    // ---------- Common ----------
+    'common.finalCta.title':    'Начните <em>читать.</em>',
+    'common.finalCta.subtitle': 'Два приложения. Бесплатно или полностью. Одна загрузка — и всё.',
+    'common.cta.getCR':         'Загрузить ContinuousReader',
+    'common.cta.getJR':         'Загрузить JustReader, бесплатно',
+    'common.cta.tryJR':         'Или попробуйте JustReader, бесплатно',
+
+    // ---------- Meta (index) ----------
+    'meta.index.title':    'ContinuousReader — Книга — продолжается.',
+    'meta.index.desc':     'Нативная читалка для Mac, iPad и iPhone. Закройте на Mac в полночь, откройте на iPhone утром. Та же книга. Тот же абзац. Сделано для тех, кто читает, а не пролистывает.',
+    'meta.index.ogTitle':  'ContinuousReader — Книга — продолжается.',
+    'meta.index.ogDesc':   'Нативная читалка для Mac, iPad и iPhone. Закройте на Mac в полночь, откройте на iPhone утром. Та же книга. Тот же абзац.',
+
+    // ---------- Hero ----------
+    'index.hero.eyebrow':  'Нативная читалка для Mac, iPad и iPhone',
+    'index.hero.headline': '<span class="dropcap">К</span>нига <span class="punct">—</span> <em>продолжается.</em>',
+    'index.hero.sub':      'Закройте на Mac в полночь. Откройте на iPhone утром по дороге на работу. <strong>Та же книга. Та же страница. Тот же абзац.</strong>',
+
+    // ---------- Reading strip ----------
+    'index.strip.label':    'Непрерывно',
+    'index.strip.caption':  'одна библиотека, в синхроне',
+
+    // ---------- Section 2 — Across your devices ----------
+    'index.s2.eyebrow': 'Непрерывно',
+    'index.s2.h2':      'На всех ваших <em>устройствах.</em>',
+    'index.s2.p1':      'Позиция чтения едет с вами — до того самого слова, на котором вы остановились. До конкретного абзаца, а не до ближайшей главы или начала страницы.',
+    'index.s2.p2':      '<strong>Что синхронизируется:</strong> позиция, закладки, заметки, библиотека. <strong>Что нет:</strong> то, как каждое устройство настроено для чтения.',
+    'index.s2.mac.h':   'Mac',
+    'index.s2.mac.p':   'Кресло. <em>Разворот в две страницы,</em> 32 pt с засечками.',
+    'index.s2.ipad.h':  'iPad',
+    'index.s2.ipad.p':  'Одна страница, удобный размер, <em>иногда сепия.</em>',
+    'index.s2.iph.h':   'iPhone',
+    'index.s2.iph.p':   '<em>Режим скролла,</em> тёмная тема, мелкий шрифт, одна рука.',
+    'index.s2.outro':   'У каждого экрана — своя идеальная настройка. ContinuousReader помнит их по отдельности и держит в синхроне само чтение.',
+
+    // ---------- Section 3 — Across how you read ----------
+    'index.s3.eyebrow':   'Непрерывно',
+    'index.s3.h2':        'Как бы вы ни <em>читали.</em>',
+    'index.s3.p1':        'Начните главу вечером, глазами по странице. Сядьте в машину утром, переключитесь на «Чтение вслух». Голос подхватит с того самого абзаца, на котором вы остановились глазами, — а не с ближайшей главы или начала файла.',
+    'index.s3.callout':   'Чтение глазами и слушание ушами — одна сессия, одна позиция, одна книга.',
+    'index.s3.p2':        'Послушайте полчаса. Приехали. Сели за Mac. Книга уже прокручена к тому абзацу, на котором голос только что закончил. Продолжайте читать с того места, где остановилось слушание.',
+    'index.s3.p3':        'Подсветка слово за словом — мягкий округлый указатель, скользящий вместе с голосом. Регулируемые скорость, высота тона и голос. Меняйте скорость посреди фразы — воспроизведение подхватит с конкретного слова, а не с ближайшего абзаца.',
+
+    // ---------- Section 4 — Typography ----------
+    'index.s4.eyebrow': 'Чтение',
+    'index.s4.h2':      'Типографика, <em>уважающая</em> текст.',
+    'index.s4.p1':      'Большинство читалок промахивается с типографикой. Либо они притворяются книгой — с неуклюжими перелистываниями и псевдобумагой с поддельной текстурой, либо относятся к тексту как к свалке данных — браузерные дефолты, рваные колонки, без переносов.',
+    'index.s4.p2':      '<strong>ContinuousReader не делает ни того, ни другого.</strong>',
+    'index.s4.p3':      'Пять основных палитр — Neutral, Sepia, Celestial, Lime, Rose — каждая с пятью тональными вариациями от светлой до тёмной. Плюс две особые темы для любителей олдскула: <em>Typewriter</em> в цвете слоновой кости и тёмно-коричневом и <em>Terminal</em> — белый моноширинный на глубоком синем (если палитра кажется знакомой, вы уже знаете, откуда). Плюс две экстремальные. Плюс три кастомных слота, где цвета задаёте вы. <strong>Всего тридцать три варианта.</strong>',
+    'index.s4.p4':      '<em>Midday</em> и <em>Midnight</em> — чистый чёрный по белому и белый по чёрному, с четырьмя уровнями контраста и регулируемой жирностью шрифта. Сделано для чтения <strong>под полным солнцем на пляже</strong> или <strong>в постели с выключенным светом</strong>, без ущерба для глаз ни в одном из режимов.',
+    'index.s4.picker':  'Три способа выбора. <strong>Фиксированно</strong> — одна тема всегда. <strong>День и ночь</strong> — связка светлой и тёмной, переключаются вслед за системой. <strong>Ручной оверрайд</strong> — любая тема поверх расписания, когда сессия выбивается из ритма.',
+    'index.s4.dt1':     'Шрифты',
+    'index.s4.dd1':     'Девять системных шрифтов: <em>с засечками, без засечек и моноширинные.</em> Georgia, Palatino, Charter, Iowan Old Style, Helvetica Neue, SF Pro, Avenir Next, Menlo, American Typewriter.',
+    'index.s4.dt2':     'Переносы',
+    'index.s4.dd2':     'Настоящие переносы для <em>латиницы, кириллицы, CJK, арабского и греческого</em>. Определяются по содержимому, а не по настройкам.',
+    'index.s4.dt3':     'Раскладка',
+    'index.s4.dd3':     'Непрерывный скролл, одна страница или <em>разворот в две страницы</em> на Mac. Регулируются размер, межстрочный интервал, отступы между абзацами, выравнивание, красная строка, поля и отображение картинок.',
+    'index.s4.dt4':     'Мгновенно',
+    'index.s4.dd4':     'Любая настройка применяется сразу — <em>без перезагрузки страницы, без потери позиции.</em>',
+
+    // ---------- Section 5 — Translation ----------
+    'index.s5.eyebrow': 'Перевод',
+    'index.s5.h2':      'Читайте на одном языке, <em>думайте</em> на другом.',
+    'index.s5.p1':      'Выделите слово. Перевод появляется в панели внизу — не во всплывающем окне поверх текста и не в модалке, которую надо закрывать. Продолжайте читать. Перевод обновляется по мере выделения.',
+    'index.s5.p2':      '«Перевод» и «Закладка» стоят в самом верху меню выделения — а не похоронены под пятью другими пунктами, которыми вы не пользуетесь. Поменяйте их местами в настройках, в зависимости от того, что чаще нужно.',
+    'index.s5.p3':      'Множество целевых языков, обеспечиваются движком Apple Translation, работающим прямо на устройстве. <strong>Ничего не уходит за пределы Mac.</strong>',
+    'index.s5.p4':      'Каждое слово, которое вы перевели, можно запомнить. ContinuousReader отслеживает: между какими языками вы переводите, какие слова уже встречали, и в каких книгах помощь нужна была чаще всего — пригодится тем, кто учит язык, исследователям и всем, кто читает на разных языках. Выключите отслеживание — и ничего не записывается. Включите — и выгрузите полную историю в HTML-отчёт.',
+
+    // ---------- Section 6 — Library ----------
+    'index.s6.eyebrow': 'Библиотека',
+    'index.s6.h2':      'Тысячи книг. <em>Все ваши.</em>',
+    'index.s6.p1':      'Вся библиотека в трёх режимах: подробный список — для просмотра, обложки в сетке — для перелистывания, сортируемая таблица — для библиотекаря в вас. Группировка по автору, циклу или папке. Цветные метки. Фильтр по жанру. Закрепите книги, которые активно читаете.',
+    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — включая ZIP-варианты. Перетащите файл. Или перетащите URL прямо из браузера — книга скачается, а диалог импорта откроется уже с заполненными метаданными, обложкой и автором. Или откройте каталоги OPDS — Standard Ebooks, Project Gutenberg, Feedbooks или собственный сервер. Следите за фидами на новые поступления в цикле, который читаете.',
+    'index.s6.p3':      'Считайте время чтения по каждой книге, смотрите стрики и закономерности, выгружайте HTML-отчёт. Закладки в семи цветах с заметками и подсветкой текста. Заметки с форматированием — на каждую книгу. Всё ищется, всё экспортируется.',
+    'index.s6.p4':      'Содержимое книги хранится на диске как чистый HTML, с читаемыми именами файлов. Никакой облачно-залоченной БД, никакого проприетарного формата, никакого vendor lock-in. Резервная копия всей библиотеки в один ZIP-файл — когда захотите. Укажите приложению любую папку как корень библиотеки.',
+    'index.s6.callout': 'Ваша библиотека — это папка с файлами. Прочитайте её хоть через <code>cat</code>, если захочется.',
+
+    // ---------- Section 7 — Native ----------
+    'index.s7.eyebrow': 'Нативно',
+    'index.s7.h2':      'Не веб-приложение и не Electron. <em>Без компромиссов.</em>',
+    'index.s7.p1':      'ContinuousReader написан на Swift и SwiftUI — родных языках Apple. Это значит мгновенный запуск, плавный скролл при любой скорости, нативные горячие клавиши на Mac, правильные свайпы на iPhone, системное выделение текста и бинарник в разы меньше, чем у конкурентов в обёртке Electron.',
+    'index.s7.p2':      'На Mac — <em>островной дизайн</em> в духе системных Настроек: округлые плавающие контейнеры на утопленном фоне, горячие клавиши, плавающие панели, Карточка книги поверх приложения, drag-and-drop повсюду. На iPad — нативные свайпы и готовность к Split View. На iPhone — жесты, удобные для одной руки, и нижние шторки, ощущающиеся как iOS, <strong>а не как веб-форма.</strong>',
+
+    // ---------- Section 8 — Two apps ----------
+    'index.s8.eyebrow':  'Два приложения',
+    'index.s8.h2':       'ContinuousReader <em>или</em> JustReader?',
+    'index.s8.intro':    'Две читалки. Одна основа. <strong>Ваш выбор.</strong>',
+    'index.s8.cr.name':  'ContinuousReader',
+    'index.s8.cr.price': '<strong>$9.99</strong> на старте · $19.99 потом. Один раз, не ежемесячно.',
+    'index.s8.cr.desc':  'Полноценное рабочее место для чтения. Соберите библиотеку из тысяч книг. Синхронизируйте позицию, закладки и настройки чтения между Mac, iPad и iPhone. Каталоги OPDS. Закладки, заметки, статистика. Все возможности, на всех устройствах, навсегда.',
+    'index.s8.cr.cta':   'Загрузить ContinuousReader',
+    'index.s8.jr.name':  'JustReader',
+    'index.s8.jr.price': '<strong>Бесплатно.</strong> По-настоящему бесплатно.',
+    'index.s8.jr.desc':  'Читалка для одной книги. Открыли файл, прочитали, пошли дальше. Та же типографика, тот же перевод, то же чтение вслух — в сфокусированном приложении на одну книгу. Без библиотеки, без синхронизации, без закладок. Только чтение.',
+    'index.s8.jr.cta':   'Загрузить JustReader',
+  },
+
   uk: {},
   es: {},
   fr: {},

@@ -63,38 +63,49 @@
     return null;
   }
 
+  // Brand-name highlighter. Wraps Apple device + platform names in a span
+  // so they stand out in body text — particularly important in Cyrillic
+  // languages where "Mac" reads as "Мас" with the brain locked into the
+  // alphabet of the surrounding text. Listed longest-first so JS regex
+  // alternation prefers compound forms.
+  const DEVICE_RE = /\b(MacBook Pro|MacBook Air|MacBook|Mac mini|Mac Studio|Mac Pro|macOS|iPadOS|iOS|Mac|iPad|iPhone)\b/g;
+  function wrapDevices(html) {
+    return html.replace(DEVICE_RE, '<span class="dev">$1</span>');
+  }
+  function stripTags(html) {
+    return html.replace(/<[^>]+>/g, '');
+  }
+
   function applyLanguage(lang) {
     if (!i18nReady()) return;
 
     document.documentElement.setAttribute('lang', lang);
 
-    // Replace text content / innerHTML for all marked elements
+    // Replace innerHTML (or document.title for <title>) for all marked
+    // elements. Wrap device names so they get the brand accent everywhere.
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const key = el.getAttribute('data-i18n');
       const val = lookup(lang, key);
-      if (val !== null) {
-        el.innerHTML = val;
+      if (val === null) return;
+      if (el.tagName === 'TITLE') {
+        document.title = stripTags(val);
+      } else {
+        el.innerHTML = wrapDevices(val);
       }
     });
 
-    // Replace specific attributes: data-i18n-attr="attr:key,attr2:key2"
+    // Replace specific attributes: data-i18n-attr="attr:key,attr2:key2".
+    // Attribute values are plain text — strip any inline HTML from the
+    // translation before applying.
     document.querySelectorAll('[data-i18n-attr]').forEach((el) => {
       const spec = el.getAttribute('data-i18n-attr');
       spec.split(',').forEach((pair) => {
         const [attr, key] = pair.split(':').map((s) => s.trim());
         if (!attr || !key) return;
         const val = lookup(lang, key);
-        if (val !== null) el.setAttribute(attr, val);
+        if (val !== null) el.setAttribute(attr, stripTags(val));
       });
     });
-
-    // Update <title> if it has a data-i18n key (innerHTML works for
-    // <title> too, but normalize entities by setting textContent).
-    const titleEl = document.querySelector('title[data-i18n]');
-    if (titleEl) {
-      const val = lookup(lang, titleEl.getAttribute('data-i18n'));
-      if (val !== null) document.title = val.replace(/<[^>]+>/g, '');
-    }
 
     // Reflect current language in the picker label + footer state
     const labels = window.CR_I18N.labels;

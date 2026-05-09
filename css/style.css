@@ -537,6 +537,15 @@ a { color: inherit; }
   font-weight: 400;
 }
 
+/* Inline brand-name accent. Applied automatically by main.js to occurrences
+   of Mac, iPad, iPhone, MacBook, macOS, iPadOS, iOS in body prose — solves
+   the visual collision between Latin "Mac" and Cyrillic "Мас", and gives
+   device names a consistent visual presence across all six languages. */
+.dev {
+  color: var(--accent);
+  font-weight: 500;
+}
+
 .device-rule {
   flex: 1;
   height: 1px;
@@ -808,23 +817,27 @@ section { position: relative; z-index: 2; }
   max-width: 38ch;
 }
 
-/* Theme strip on index typography section */
+/* Theme strip on index typography section.
+   Vertical column showing the available palettes + featured + extreme
+   themes. Some chips carry a .callout-dot that opens a sample screenshot
+   in the lightbox. */
 .theme-strip {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-direction: column;
+  gap: 8px;
   margin: 48px 0;
+  max-width: 320px;
 }
 
 .theme-chip {
   font-family: var(--serif);
   font-size: 14px;
-  padding: 16px 20px;
+  padding: 14px 20px;
   border: 1px solid var(--rule);
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: var(--bg);
 }
 
@@ -833,6 +846,15 @@ section { position: relative; z-index: 2; }
   height: 14px;
   border-radius: 4px;
   border: 1px solid var(--rule);
+  flex-shrink: 0;
+}
+
+.theme-chip .chip-name {
+  flex: 1;
+}
+
+.theme-chip .callout-dot {
+  margin-left: 8px;
 }
 
 .theme-chip.terminal {
@@ -852,13 +874,15 @@ section { position: relative; z-index: 2; }
 .theme-chip.midnight   { background: #000000; color: #FFFFFF; border-color: #000000; font-weight: 700; }
 .theme-chip.midnight   .swatch { background: #000000; border-color: #FFFFFF; }
 
+/* Palette family swatches — sampled from the actual app theme colors
+   (ReaderTheme `*Light` / mid-tone backgrounds in ReaderSettings.swift). */
+.theme-chip.neutral    .swatch { background: #FAFAFA; }
 .theme-chip.sepia      .swatch { background: #F0E5D0; }
-.theme-chip.light      .swatch { background: #FAFAFA; }
-.theme-chip.dark       .swatch { background: #1A1A1A; }
+.theme-chip.celestial  .swatch { background: #D6E4F5; }
+.theme-chip.lime       .swatch { background: #F4F7D1; }
+.theme-chip.rose       .swatch { background: #F3E0E7; }
 .theme-chip.typewriter .swatch { background: #F5E8D5; border-color: #8B5A3C; }
 .theme-chip.hacker     .swatch { background: #001A00; }
-.theme-chip.pastel     .swatch { background: #E8D5F0; }
-.theme-chip.grey       .swatch { background: #C8C8C8; }
 
 /* Spec list pattern */
 .spec-list {
