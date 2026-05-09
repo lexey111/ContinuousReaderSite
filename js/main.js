@@ -67,10 +67,7 @@
       const content = dialog.querySelector('.lightbox-content');
 
       closeBtn.addEventListener('click', () => dialog.close());
-      content.addEventListener('click', (e) => {
-        // Click outside the image (on the padded area) closes
-        if (e.target === content) dialog.close();
-      });
+      content.addEventListener('click', () => dialog.close());
 
       // Close on backdrop click (native dialog behavior)
       dialog.addEventListener('click', (e) => {
@@ -99,6 +96,20 @@
           dialog.showModal();
         } else {
           // Very old browser fallback — open image in new tab
+          window.open(dialogImg.src, '_blank');
+        }
+      });
+    });
+
+    // Callout dots — open screenshot in lightbox
+    document.querySelectorAll('.callout-dot[data-screenshot]').forEach((dot) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        dialogImg.src = dot.dataset.screenshot;
+        dialogImg.alt = dot.dataset.alt || '';
+        if (typeof dialog.showModal === 'function') {
+          dialog.showModal();
+        } else {
           window.open(dialogImg.src, '_blank');
         }
       });

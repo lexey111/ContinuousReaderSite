@@ -689,6 +689,56 @@ section { position: relative; z-index: 2; }
   color: var(--ink);
 }
 
+/* Callout dot — "click to see screenshot" indicator */
+.device-setup-item h4 {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.callout-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  margin-left: auto;
+  padding: 0;
+  border: 1.5px solid var(--accent);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  transition: background 180ms, border-color 180ms;
+  animation: callout-pulse 2.4s ease-in-out infinite;
+}
+
+.callout-dot::before {
+  content: '';
+  position: absolute;
+  right: calc(100% + 4px);
+  top: 50%;
+  width: 32px;
+  height: 1px;
+  background: var(--accent-soft);
+}
+
+.callout-dot:hover {
+  background: var(--accent);
+  animation: none;
+}
+
+.callout-dot:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@keyframes callout-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(196, 93, 56, 0.3); }
+  50%      { box-shadow: 0 0 0 5px rgba(196, 93, 56, 0); }
+}
+
 /* Pull-quote callout */
 .callout {
   font-family: var(--serif);
@@ -986,15 +1036,29 @@ section.feature-section { padding: 80px 0; }
 }
 
 .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-family: var(--sans);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  padding: 4px 11px;
+  padding: 4px 11px 4px 6px;
   border-radius: 100px;
   line-height: 1.4;
   white-space: nowrap;
   text-transform: uppercase;
+}
+
+.badge::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
 }
 
 .badge.cr {
@@ -1003,10 +1067,18 @@ section.feature-section { padding: 80px 0; }
   border: 1px solid #B8CCDD;
 }
 
+.badge.cr::before {
+  background-image: url('../img/icon-cr.svg');
+}
+
 .badge.jr {
   background: #F5DDD0;
   color: #A84B28;
   border: 1px solid #E8BFA8;
+}
+
+.badge.jr::before {
+  background-image: url('../img/icon-jr.svg');
 }
 
 /* Feature body */
@@ -1251,22 +1323,35 @@ code {
   font-family: var(--serif);
   font-size: 15px;
   color: var(--ink-soft);
-  line-height: 1.6;
+  line-height: 2.2;
   max-width: 60ch;
 }
 
 .legend strong { color: var(--ink); font-weight: 500; }
 
 .legend .badge-inline {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   font-family: var(--sans);
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 3px 10px;
+  padding: 3px 10px 3px 6px;
   border-radius: 100px;
   vertical-align: middle;
+}
+
+.legend .badge-inline::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
 }
 
 .legend .badge-inline.cr {
@@ -1275,10 +1360,18 @@ code {
   border: 1px solid #B8CCDD;
 }
 
+.legend .badge-inline.cr::before {
+  background-image: url('../img/icon-cr.svg');
+}
+
 .legend .badge-inline.jr {
   background: #F5DDD0;
   color: #A84B28;
   border: 1px solid #E8BFA8;
+}
+
+.legend .badge-inline.jr::before {
+  background-image: url('../img/icon-jr.svg');
 }
 
 /* ==========================================================
