@@ -2031,26 +2031,20 @@ code {
    CONTACT FORM
    ========================================================== */
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 64px;
-  align-items: start;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 520px;
 }
 
-.form-label {
+.form-field {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.form-label span {
+.form-field label {
   font-family: var(--sans);
   font-size: 13px;
   font-weight: 600;
@@ -2059,34 +2053,40 @@ code {
   color: var(--ink-soft);
 }
 
-.form-label input,
-.form-label select,
-.form-label textarea {
+.form-field input,
+.form-field select,
+.form-field textarea {
   font-family: var(--serif);
   font-size: 17px;
   line-height: 1.5;
   color: var(--ink);
-  background: var(--bg);
-  border: 1px solid var(--rule);
+  background: var(--bg-deeper);
+  border: 1px solid var(--rule-strong);
   border-radius: 8px;
   padding: 10px 14px;
+  width: 100%;
+  box-sizing: border-box;
   transition: border-color 0.15s ease;
 }
 
-.form-label input:focus,
-.form-label select:focus,
-.form-label textarea:focus {
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
   outline: none;
   border-color: var(--accent);
 }
 
-.form-label textarea {
-  resize: vertical;
-  min-height: 120px;
+.form-field select {
+  height: 46px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 8px;
 }
 
-.form-label select {
-  cursor: pointer;
+.form-field textarea {
+  resize: vertical;
+  min-height: 140px;
 }
 
 .form-submit {
@@ -2097,7 +2097,7 @@ code {
   background: var(--accent);
   border: none;
   border-radius: 8px;
-  padding: 12px 28px;
+  padding: 12px 32px;
   cursor: pointer;
   align-self: flex-start;
   transition: opacity 0.15s ease;
@@ -2105,37 +2105,22 @@ code {
 
 .form-submit:hover { opacity: 0.85; }
 
-.contact-aside {
-  padding-top: 8px;
-}
-
-.contact-aside h3 {
-  font-family: var(--sans);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--ink);
-  margin-top: 28px;
-  margin-bottom: 8px;
-}
-
-.contact-aside h3:first-child { margin-top: 0; }
-
-.contact-aside p {
+.contact-note {
   font-family: var(--serif);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.65;
   color: var(--ink-soft);
+  margin-top: 40px;
+  max-width: 520px;
 }
 
-.contact-aside a {
+.contact-note a {
   color: var(--accent);
   text-decoration: none;
   border-bottom: 1px solid var(--accent-soft);
 }
 
-.contact-aside a:hover { border-bottom-color: var(--accent); }
+.contact-note a:hover { border-bottom-color: var(--accent); }
 
 /* ==========================================================
    FOOTER
@@ -2310,8 +2295,6 @@ code {
    RESPONSIVE
    ========================================================== */
 @media (max-width: 900px) {
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
-  .contact-aside { order: -1; }
   .nav-inner { padding: 18px 24px; }
   .container, .container-narrow, .platform-divider {
     padding: 0 24px;

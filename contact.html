@@ -10,7 +10,7 @@
 <meta property="og:description" content="Bug reports, feature requests, or just say hello.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="img/logo.svg">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
 
@@ -57,52 +57,40 @@
   </div>
 </header>
 
-<section class="section reveal">
+<section class="section reveal" style="padding-top: 0;">
   <div class="container-narrow">
-    <div class="contact-grid">
-
-      <div class="contact-form-wrap">
-        <!-- Replace ACTION with your Formspree endpoint: https://formspree.io/f/YOUR_FORM_ID -->
-        <form action="https://formspree.io/f/PLACEHOLDER" method="POST" class="contact-form">
-          <label class="form-label">
-            <span>Name</span>
-            <input type="text" name="name" required autocomplete="name">
-          </label>
-          <label class="form-label">
-            <span>Email</span>
-            <input type="email" name="email" required autocomplete="email">
-          </label>
-          <label class="form-label">
-            <span>Subject</span>
-            <select name="subject">
-              <option value="bug">Bug report</option>
-              <option value="feature">Feature request</option>
-              <option value="question">Question</option>
-              <option value="other" selected>Other</option>
-            </select>
-          </label>
-          <label class="form-label">
-            <span>Message</span>
-            <textarea name="message" rows="6" required></textarea>
-          </label>
-          <button type="submit" class="form-submit">Send message</button>
-        </form>
+    <!-- Replace ACTION with your Formspree endpoint: https://formspree.io/f/YOUR_FORM_ID -->
+    <form action="https://formspree.io/f/PLACEHOLDER" method="POST" class="contact-form">
+      <div class="form-field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name">
       </div>
-
-      <div class="contact-aside">
-        <h3>Prefer email?</h3>
-        <p>
-          Write directly to
-          <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>
-        </p>
-        <h3>Response time</h3>
-        <p>
-          One developer handles everything, so replies usually take a day or
-          two — but every message gets a real answer.
-        </p>
+      <div class="form-field">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" required autocomplete="email">
       </div>
+      <div class="form-field">
+        <label for="cf-subject">Subject</label>
+        <select id="cf-subject" name="subject">
+          <option value="bug">Bug report</option>
+          <option value="feature">Feature request</option>
+          <option value="question">Question</option>
+          <option value="other" selected>Other</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send message</button>
+    </form>
 
-    </div>
+    <p class="contact-note">
+      You can also write directly to
+      <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.
+      One developer handles everything, so replies usually take a day or
+      two — but every message gets a real answer.
+    </p>
   </div>
 </section>
 
