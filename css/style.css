@@ -419,9 +419,30 @@ a { color: inherit; }
    HERO (index.html only)
    ========================================================== */
 .hero {
-  padding: 80px 0 80px;
+  padding: 64px 0 24px;
   position: relative;
   z-index: 2;
+}
+
+/* Hero is a two-column grid on desktop: text on the left, the line-art
+   illustration on the right. Stacks below 920px so the illustration goes
+   under the CTAs on tablets and phones. */
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 48px;
+  align-items: center;
+}
+.hero-content { min-width: 0; }
+.hero-devices { width: 100%; max-width: 320px; justify-self: end; }
+.hero-devices svg { width: 100%; height: auto; display: block; }
+
+@media (max-width: 920px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .hero-devices { justify-self: center; max-width: 280px; }
 }
 
 .hero-eyebrow {
@@ -545,6 +566,7 @@ a { color: inherit; }
   color: var(--accent);
   font-weight: 500;
 }
+
 
 .device-rule {
   flex: 1;

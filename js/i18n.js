@@ -89,7 +89,7 @@ const translations = {
 
     'index.s2.eyebrow': 'Continuous',
     'index.s2.h2':      'Across your <em>devices.</em>',
-    'index.s2.p1':      'Your reading position travels with you — down to the word you stopped at. Not the nearest chapter. Not the beginning of the page. The exact paragraph.',
+    'index.s2.p1':      'Your reading position travels with you — down to the exact paragraph you were reading, not the nearest chapter or the beginning of the page.',
     'index.s2.p2':      '<strong>What syncs:</strong> your position, your bookmarks, your notes, your library. <strong>What doesn’t:</strong> the way each device is set up to read.',
     'index.s2.mac.h':   'Mac',
     'index.s2.mac.p':   'A chair. <em>Two-page spread,</em> 32 pt serif.',
@@ -110,7 +110,7 @@ const translations = {
     'index.s4.h2':      'Typography that <em>respects</em> the text.',
     'index.s4.p1':      'Most reading apps get typography wrong. Either they pretend the screen is a book, with skeuomorphic page turns and fake paper, or they treat text as a data dump — browser defaults, ragged columns, no hyphenation.',
     'index.s4.p2':      '<strong>ContinuousReader does neither.</strong>',
-    'index.s4.p3':      'Five core palettes — Neutral, Sepia, Celestial, Lime, Rose — each with five tonal variations from light to dark. Plus two featured themes for the old-school crowd: <em>Typewriter</em> in ivory and dark brown, and <em>Terminal</em> in white monospace on deep blue (if you recognize the palette, you already know why it’s there). Plus two extreme variants. Plus three custom slots where the colors are yours. <strong>Thirty-three variants in total.</strong>',
+    'index.s4.p3':      'Five core palettes — Neutral, Sepia, Celestial, Lime, Rose — each with five tonal variations from light to dark. Plus two featured themes for the old-school crowd: <em>Typewriter</em> in ivory and dark brown, and <em>Terminal</em> in white monospace on deep blue (if you recognize the palette, you already know why it’s there). Two more for extreme contrast. Three custom slots where the colors are yours. <strong>Thirty-three variants in total.</strong>',
     'index.s4.p4':      '<em>Midday</em> and <em>Midnight</em> — pure black-on-white and white-on-black with four contrast levels and adjustable font weight, built for reading <strong>in full sun on a beach</strong> or <strong>in bed with the lights off</strong>, without burning your eyes either way.',
     'index.s4.picker':  'Three ways to pick. <strong>Fixed</strong> — one theme, always. <strong>Day &amp; Night</strong> — pair a light theme with a dark one and the app switches when your system does. <strong>Manual override</strong> — force any theme regardless of schedule, for a session that doesn’t fit the rhythm.',
     'index.s4.dt1':     'Typefaces',
@@ -134,11 +134,11 @@ const translations = {
     'index.s6.p1':      'Your entire library in three views: a detailed list for scanning, covers in a grid for browsing, or a sortable table for the librarian in you. Group by author, by series, or by folder. Tag with color dots. Filter by genre. Pin the books you’re actively reading.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — including ZIP variants. Drag and drop a file. Or drag a URL straight from your browser — the book is fetched and the import dialog opens with metadata, cover, and author already filled in. Or browse OPDS catalogs — Standard Ebooks, Project Gutenberg, Feedbooks, or your own server. Watch feeds for new entries in a series you follow.',
     'index.s6.p3':      'Track your reading time per book, see streaks and patterns, export an HTML report. Bookmarks in seven colors with notes and text highlights. Rich text notes per book. Everything searchable, everything exportable.',
-    'index.s6.p4':      'Book content is stored as clean HTML on disk, with readable filenames. No cloud-locked database, no proprietary format, no vendor lock-in. Back up the whole library to a ZIP file whenever you want. Point the app at any folder as your library root.',
+    'index.s6.p4':      'Book content is stored as clean HTML on disk, with readable filenames. No cloud-locked database, no proprietary format, no DRM, no vendor lock-in. Back up the whole library to a ZIP file whenever you want. Point the app at any folder as your library root.',
     'index.s6.callout': 'Your library is a folder of files. Read it with <code>cat</code> if you want to.',
 
     'index.s7.eyebrow': 'Native',
-    'index.s7.h2':      'Not a web app. Not Electron. <em>Not compromise.</em>',
+    'index.s7.h2':      'Not a web app, not Electron. <em>No compromise.</em>',
     'index.s7.p1':      'ContinuousReader is built in Swift and SwiftUI — Apple’s native languages. That means instant launch, smooth scroll at any scroll speed, native keyboard shortcuts on Mac, proper swipe gestures on iPhone, system-level text selection, and a binary that’s a fraction of the size of its Electron-wrapped competitors.',
     'index.s7.p2':      'On Mac, an <em>island design</em> inspired by System Settings — rounded floating containers on a recessed background — with keyboard shortcuts, floating panels, a Book Card that hovers above the app, and drag-and-drop everywhere. On iPad, native swipe actions and split-view readiness. On iPhone, one-hand-friendly gestures and bottom sheets that feel like iOS, <strong>not like a web form.</strong>',
 
@@ -151,7 +151,7 @@ const translations = {
     'index.s8.cr.cta':   'Get ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Free.</strong> Truly free.',
-    'index.s8.jr.desc':  'A single-book reader. Open a file, read it, move on. The same typography, the same translation, the same Read Aloud — in a focused, single-file app. No library, no sync, no bookmarks. Just reading.',
+    'index.s8.jr.desc':  'A single-book reader. Open a file, read it, move on. The same typography, the same translation, the same Read Aloud — in a focused, single-file app. No library, no sync, no bookmarks — just reading.',
     'index.s8.jr.cta':   'Get JustReader',
 
     // ============================================================
@@ -458,7 +458,7 @@ const translations = {
     'features.s7.wizard.h':       'On first launch — the <em>Welcome wizard</em>.',
     'features.s7.wizard.p':       'Before you import your first book, a short setup walks you through the choices that matter: language, interface theme, library view (list, cards, or table), and which features you want visible. Four or five screens, all skippable, all changeable later. <strong>You start with an app that already looks the way you want.</strong>',
     'features.s7.toggles.h':      'Any time after — the <em>Features panel</em>.',
-    'features.s7.toggles.p':      'If you never use Read Aloud, turn it off and the button disappears from the bottom toolbar. Same for OPDS, Translation, and Statistics. Found in Settings → Features. Each toggle removes the feature from the UI cleanly — <strong>no dimmed buttons, no empty placeholders, no menu items that never apply to you.</strong>',
+    'features.s7.toggles.p':      'If you never use Read Aloud, turn it off and the button disappears from the bottom toolbar. Same for OPDS, Translation, and Statistics. Found in Settings → Features. Each toggle removes the feature from the UI cleanly — <strong>no dimmed buttons, no empty placeholders, no orphan shortcuts, no menu items that never apply to you.</strong>',
     'features.s7.outro':          'Change your mind, relaunch the wizard from Settings. Your app should reflect how you read, not how we expect everyone to read.',
 
     // ============================================================
@@ -838,12 +838,12 @@ const translations = {
 
     // ---------- Reading strip ----------
     'index.strip.label':    'Непрерывно',
-    'index.strip.caption':  'одна библиотека, в синхроне',
+    'index.strip.caption':  'сквозное чтение',
 
     // ---------- Section 2 — Across your devices ----------
     'index.s2.eyebrow': 'Непрерывно',
     'index.s2.h2':      'На всех ваших <em>устройствах.</em>',
-    'index.s2.p1':      'Позиция чтения едет с вами — до того самого слова, на котором вы остановились. До конкретного абзаца, а не до ближайшей главы или начала страницы.',
+    'index.s2.p1':      'Позиция чтения едет с вами — до того самого абзаца, на котором вы остановились, а не до ближайшей главы или начала страницы.',
     'index.s2.p2':      '<strong>Что синхронизируется:</strong> позиция, закладки, заметки, библиотека. <strong>Что нет:</strong> то, как каждое устройство настроено для чтения.',
     'index.s2.mac.h':   'Mac',
     'index.s2.mac.p':   'Кресло. <em>Разворот в две страницы,</em> 32 pt с засечками.',
@@ -851,14 +851,14 @@ const translations = {
     'index.s2.ipad.p':  'Одна страница, удобный размер, <em>иногда сепия.</em>',
     'index.s2.iph.h':   'iPhone',
     'index.s2.iph.p':   '<em>Режим скролла,</em> тёмная тема, мелкий шрифт, одна рука.',
-    'index.s2.outro':   'У каждого экрана — своя идеальная настройка. ContinuousReader помнит их по отдельности и держит в синхроне само чтение.',
+    'index.s2.outro':   'У каждого экрана — своя идеальная настройка. ContinuousReader помнит их по отдельности — а позиция чтения у них общая.',
 
     // ---------- Section 3 — Across how you read ----------
     'index.s3.eyebrow':   'Непрерывно',
     'index.s3.h2':        'Как бы вы ни <em>читали.</em>',
     'index.s3.p1':        'Начните главу вечером, глазами по странице. Сядьте в машину утром, переключитесь на «Чтение вслух». Голос подхватит с того самого абзаца, на котором вы остановились глазами, — а не с ближайшей главы или начала файла.',
     'index.s3.callout':   'Чтение глазами и слушание ушами — одна сессия, одна позиция, одна книга.',
-    'index.s3.p2':        'Послушайте полчаса. Приехали. Сели за Mac. Книга уже прокручена к тому абзацу, на котором голос только что закончил. Продолжайте читать с того места, где остановилось слушание.',
+    'index.s3.p2':        'Послушайте полчаса. Приехав, сядьте за Mac. Книга уже прокручена к тому абзацу, на котором голос только что закончил. Продолжайте читать с того места, где остановилось слушание.',
     'index.s3.p3':        'Подсветка слово за словом — мягкий округлый указатель, скользящий вместе с голосом. Регулируемые скорость, высота тона и голос. Меняйте скорость посреди фразы — воспроизведение подхватит с конкретного слова, а не с ближайшего абзаца.',
 
     // ---------- Section 4 — Typography ----------
@@ -866,7 +866,7 @@ const translations = {
     'index.s4.h2':      'Типографика, <em>уважающая</em> текст.',
     'index.s4.p1':      'Большинство читалок промахивается с типографикой. Либо они притворяются книгой — с неуклюжими перелистываниями и псевдобумагой с поддельной текстурой, либо относятся к тексту как к свалке данных — браузерные дефолты, рваные колонки, без переносов.',
     'index.s4.p2':      '<strong>ContinuousReader не делает ни того, ни другого.</strong>',
-    'index.s4.p3':      'Пять основных палитр — Neutral, Sepia, Celestial, Lime, Rose — каждая с пятью тональными вариациями от светлой до тёмной. Плюс две особые темы для любителей олдскула: <em>Typewriter</em> в цвете слоновой кости и тёмно-коричневом и <em>Terminal</em> — белый моноширинный на глубоком синем (если палитра кажется знакомой, вы уже знаете, откуда). Плюс две экстремальные. Плюс три кастомных слота, где цвета задаёте вы. <strong>Всего тридцать три варианта.</strong>',
+    'index.s4.p3':      'Пять основных палитр — Neutral, Sepia, Celestial, Lime, Rose — каждая с пятью тональными вариациями от светлой до тёмной. Плюс две особые темы для любителей олдскула: <em>Typewriter</em> в цвете слоновой кости и тёмно-коричневом и <em>Terminal</em> — белый моноширинный на глубоком синем (если палитра кажется знакомой, вы уже знаете, откуда). Ещё две — для экстремального контраста. Три кастомных слота под ваши цвета. <strong>Всего тридцать три варианта.</strong>',
     'index.s4.p4':      '<em>Midday</em> и <em>Midnight</em> — чистый чёрный по белому и белый по чёрному, с четырьмя уровнями контраста и регулируемой жирностью шрифта. Сделано для чтения <strong>под полным солнцем на пляже</strong> или <strong>в постели с выключенным светом</strong>, без ущерба для глаз ни в одном из режимов.',
     'index.s4.picker':  'Три способа выбора. <strong>Фиксированно</strong> — одна тема всегда. <strong>День и ночь</strong> — связка светлой и тёмной, переключаются вслед за системой. <strong>Ручной оверрайд</strong> — любая тема поверх расписания, когда сессия выбивается из ритма.',
     'index.s4.dt1':     'Шрифты',
@@ -892,7 +892,7 @@ const translations = {
     'index.s6.p1':      'Вся библиотека в трёх режимах: подробный список — для просмотра, обложки в сетке — для перелистывания, сортируемая таблица — для библиотекаря в вас. Группировка по автору, циклу или папке. Цветные метки. Фильтр по жанру. Закрепите книги, которые активно читаете.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — включая ZIP-варианты. Перетащите файл. Или перетащите URL прямо из браузера — книга скачается, а диалог импорта откроется уже с заполненными метаданными, обложкой и автором. Или откройте каталоги OPDS — Standard Ebooks, Project Gutenberg, Feedbooks или собственный сервер. Следите за фидами на новые поступления в цикле, который читаете.',
     'index.s6.p3':      'Считайте время чтения по каждой книге, смотрите стрики и закономерности, выгружайте HTML-отчёт. Закладки в семи цветах с заметками и подсветкой текста. Заметки с форматированием — на каждую книгу. Всё ищется, всё экспортируется.',
-    'index.s6.p4':      'Содержимое книги хранится на диске как чистый HTML, с читаемыми именами файлов. Никакой облачно-залоченной БД, никакого проприетарного формата, никакого vendor lock-in. Резервная копия всей библиотеки в один ZIP-файл — когда захотите. Укажите приложению любую папку как корень библиотеки.',
+    'index.s6.p4':      'Содержимое книги хранится на диске как чистый HTML, с читаемыми именами файлов. Никакой облачно-залоченной БД, никакого проприетарного формата, никакого DRM, никакого vendor lock-in. Резервная копия всей библиотеки в один ZIP-файл — когда захотите. Укажите приложению любую папку как корень библиотеки.',
     'index.s6.callout': 'Ваша библиотека — это папка с файлами. Прочитайте её хоть через <code>cat</code>, если захочется.',
 
     // ---------- Section 7 — Native ----------
@@ -911,7 +911,7 @@ const translations = {
     'index.s8.cr.cta':   'Загрузить ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Бесплатно.</strong> По-настоящему бесплатно.',
-    'index.s8.jr.desc':  'Читалка для одной книги. Открыли файл, прочитали, пошли дальше. Та же типографика, тот же перевод, то же чтение вслух — в сфокусированном приложении на одну книгу. Без библиотеки, без синхронизации, без закладок. Только чтение.',
+    'index.s8.jr.desc':  'Читалка для одной книги. Открыли файл, прочитали, пошли дальше. Та же типографика, тот же перевод, то же чтение вслух — в сфокусированном приложении на одну книгу. Без библиотеки, без синхронизации, без закладок — только чтение.',
     'index.s8.jr.cta':   'Загрузить JustReader',
   },
 
