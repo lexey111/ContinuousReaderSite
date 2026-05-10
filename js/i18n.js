@@ -1039,9 +1039,372 @@ const translations = {
     'index.s8.jr.desc':  'Читалка для однієї книги. Відкрили файл, прочитали, пішли далі. Та сама типографіка, той самий переклад, те саме читання вголос — у сфокусованому застосунку на одну книгу. Без бібліотеки, без синхронізації, без закладок — лише читання.',
     'index.s8.jr.cta':   'Завантажити JustReader',
   },
-  es: {},
-  fr: {},
-  de: {},
+  // ============================================================
+  // SPANISH — index.html complete; other pages fall back to EN
+  //
+  // Register: «tú» (informal you), the standard for Spanish Apple-
+  // ecosystem marketing and indie-product copy. Apple-canonical
+  // terminology: «Lectura en voz alta», «Compra Universal»,
+  // «Compartir en Familia». Question marks open with «¿».
+  // ============================================================
+  es: {
+    // ---------- Navigation ----------
+    'nav.features':  'Funciones',
+    'nav.platforms': 'Plataformas',
+    'nav.download':  'Descargar',
+
+    // ---------- Footer ----------
+    'foot.tagline':       'Para quien no solo hojea.',
+    'foot.col.product':   'Producto',
+    'foot.col.info':      'Información',
+    'foot.col.language':  'Idioma',
+    'foot.link.privacy':  'Privacidad',
+    'foot.link.contact':  'Contacto',
+    'foot.copy':          '© 2026 ContinuousReader. Desarrollado por Oleksii Koshkin.',
+    'foot.signoff':       'Para los que de verdad leen.',
+
+    // ---------- Common ----------
+    'common.finalCta.title':    'Empieza a <em>leer.</em>',
+    'common.finalCta.subtitle': 'Dos apps. Lee un libro, o construye una biblioteca.',
+    'common.cta.getCR':         'Obtén ContinuousReader',
+    'common.cta.getJR':         'Obtén JustReader, gratis',
+    'common.cta.tryJR':         'O prueba JustReader, gratis',
+
+    // ---------- Meta (index) ----------
+    'meta.index.title':    'ContinuousReader — Un libro, continúa recto.',
+    'meta.index.desc':     'Un lector nativo para Mac, iPad e iPhone. Ciérralo en tu Mac a medianoche, ábrelo en tu iPhone por la mañana. El mismo libro. El mismo párrafo. Hecho para quien lee, no solo hojea.',
+    'meta.index.ogTitle':  'ContinuousReader — Un libro, continúa recto.',
+    'meta.index.ogDesc':   'Un lector nativo para Mac, iPad e iPhone. Ciérralo en tu Mac a medianoche, ábrelo en tu iPhone por la mañana. El mismo libro. El mismo párrafo.',
+
+    // ---------- Hero ----------
+    'index.hero.eyebrow':  'Un lector nativo para Mac, iPad e iPhone',
+    'index.hero.headline': '<span class="dropcap">U</span>n libro <span class="punct">—</span> <em>continúa recto.</em>',
+    'index.hero.sub':      'Ciérralo en tu Mac a medianoche. Ábrelo en tu iPhone en el trayecto al trabajo. <strong>El mismo libro. La misma página. El mismo párrafo.</strong>',
+
+    // ---------- Reading strip (legacy keys, no longer rendered) ----------
+    'index.strip.label':    'En continuo',
+    'index.strip.caption':  'lectura sin costuras',
+
+    // ---------- Section 2 — Across your devices ----------
+    'index.s2.eyebrow': 'En continuo',
+    'index.s2.h2':      'En todos tus <em>dispositivos.</em>',
+    'index.s2.p1':      'Tu posición de lectura viaja contigo — hasta la palabra exacta donde te detuviste. Hasta el párrafo concreto, no hasta el capítulo más cercano ni al inicio de la página.',
+    'index.s2.p2':      '<strong>Lo que se sincroniza:</strong> tu posición, tus marcadores, tus notas, tu biblioteca. <strong>Lo que no:</strong> cómo cada dispositivo está configurado para leer.',
+    'index.s2.mac.h':   'Mac',
+    'index.s2.mac.p':   'Una silla. <em>Vista de doble página,</em> 32 pt con serifa.',
+    'index.s2.ipad.h':  'iPad',
+    'index.s2.ipad.p':  'Una página, tamaño cómodo, <em>a veces sepia.</em>',
+    'index.s2.iph.h':   'iPhone',
+    'index.s2.iph.p':   '<em>Modo de desplazamiento,</em> tema oscuro, letra pequeña, en una mano.',
+    'index.s2.outro':   'Cada pantalla tiene su configuración ideal. ContinuousReader las recuerda por separado — y tu posición de lectura es común a todas.',
+
+    // ---------- Section 3 — Across how you read ----------
+    'index.s3.eyebrow':   'En continuo',
+    'index.s3.h2':        'Como sea que <em>leas.</em>',
+    'index.s3.p1':        'Empieza el capítulo por la noche, ojos en la página. Súbete al coche por la mañana, cambia a «Lectura en voz alta». La voz retoma desde el párrafo donde te detuviste con los ojos — no desde el capítulo más cercano ni desde el inicio del archivo.',
+    'index.s3.callout':   'Leer con los ojos y escuchar con los oídos son la misma sesión, la misma posición, el mismo libro.',
+    'index.s3.p2':        'Escucha media hora. Al llegar, siéntate frente al Mac. El libro ya está desplazado al párrafo donde la voz acaba de terminar. Sigue leyendo desde donde se detuvo la escucha.',
+    'index.s3.p3':        'Resaltado palabra por palabra — un indicador suave y redondeado que se desliza con la voz. Velocidad, tono y voz ajustables. Cambia la velocidad a media frase — la reproducción retoma desde la palabra exacta, no desde el párrafo más cercano.',
+
+    // ---------- Section 4 — Typography ----------
+    'index.s4.eyebrow': 'La lectura',
+    'index.s4.h2':      'Tipografía que <em>respeta</em> el texto.',
+    'index.s4.p1':      'La mayoría de las apps de lectura fallan en tipografía. O fingen ser un libro — con animaciones torpes de paso de página y papel falso de textura artificial, o tratan al texto como un volcado de datos — predeterminados del navegador, columnas irregulares, sin separación silábica.',
+    'index.s4.p2':      '<strong>ContinuousReader cuida cada detalle.</strong>',
+    'index.s4.p3':      'Cinco paletas principales — Neutral, Sepia, Celestial, Lime, Rose — cada una con cinco variaciones tonales, de claro a oscuro. Más dos temas destacados para los amantes del estilo retro: <em>Typewriter</em> en marfil y marrón oscuro y <em>Terminal</em> — monoespaciado blanco sobre azul profundo (si la paleta te resulta familiar — <em>sí, no te equivocas</em>). Otros dos para contraste extremo. Tres slots personalizados, donde los colores los pones tú. <strong>Treinta y tres variantes en total.</strong>',
+    'index.s4.p4':      '<em>Midday</em> y <em>Midnight</em> — negro puro sobre blanco y blanco puro sobre negro, con cuatro niveles de contraste y peso de fuente ajustable. Hechos para leer <strong>bajo el sol pleno en la playa</strong> o <strong>en la cama con las luces apagadas</strong>, sin dañar la vista en ninguno de los modos.',
+    'index.s4.picker':  'Tres modos de selección. <strong>Fijo</strong> — un tema, siempre. <strong>Día y Noche</strong> — un tema claro emparejado con uno oscuro, la app cambia cuando lo hace tu sistema. <strong>Anulación manual</strong> — fuerza cualquier tema sobre el horario, para una sesión que no encaja con el ritmo. En cualquier tema oscuro, un slider suave de brillo del texto del 100 % al 50 % — para noches en las que incluso los temas oscuros se sienten demasiado brillantes.',
+    'index.s4.dt1':     'Tipografías',
+    'index.s4.dd1':     'Nueve fuentes del sistema: <em>con serifa, sin serifa y monoespaciadas.</em> Georgia, Palatino, Charter, Iowan Old Style, Helvetica Neue, SF Pro, Avenir Next, Menlo, American Typewriter.',
+    'index.s4.dt2':     'Separación silábica',
+    'index.s4.dd2':     'Separación silábica real para <em>latín, cirílico, CJK, árabe y griego</em>. Detectada por el contenido, no por la configuración del usuario.',
+    'index.s4.dt3':     'Diseño',
+    'index.s4.dd3':     'Desplazamiento continuo, página única o <em>vista de doble página</em> en Mac. Tamaño, interlineado, espaciado entre párrafos, alineación, sangría, márgenes y visualización de imágenes — todo ajustable.',
+    'index.s4.dt4':     'Al instante',
+    'index.s4.dd4':     'Cada ajuste se aplica al momento — <em>sin recargar la página, sin perder la posición.</em>',
+
+    // ---------- Section 5 — Translation ----------
+    'index.s5.eyebrow': 'La traducción',
+    'index.s5.h2':      'Lee en un idioma, <em>piensa</em> en otro.',
+    'index.s5.p1':      'Selecciona una palabra. La traducción aparece en un panel abajo — no en una ventana emergente que cubre el texto, ni en un modal que tienes que cerrar. Sigue leyendo. ¿Otra palabra o frase desconocida? Solo selecciónala — sin clics extra, sin perder el foco.',
+    'index.s5.p2':      '«Traducir» y «Marcador» están en la parte superior del menú de selección — no enterrados bajo cinco elementos más que no usas. Cámbialos de orden en los ajustes, según cuál uses con más frecuencia.',
+    'index.s5.p3':      'Muchos idiomas de destino, proporcionados por el motor Apple Translation que funciona directamente en el dispositivo. <strong>Nada sale de tu Mac.</strong>',
+    'index.s5.p4':      'Cada palabra que traduces se puede recordar. ContinuousReader registra: entre qué idiomas traduces, qué palabras ya has visto, y en qué libros la ayuda fue más necesaria — útil para quien aprende un idioma, investigadores y cualquiera que lea entre idiomas. Desactiva el seguimiento — y nada se registra. Actívalo — y exporta todo el historial como un informe HTML.',
+
+    // ---------- Section 6 — Library ----------
+    'index.s6.eyebrow': 'Tu biblioteca',
+    'index.s6.h2':      'Tu biblioteca. <em>Toda tuya.</em>',
+    'index.s6.p1':      'Toda tu biblioteca en tres modos: lista detallada — para revisar, portadas en cuadrícula — para hojear, tabla ordenable — para el bibliotecario que llevas dentro. Agrupar por autor, por serie o por carpeta. Etiquetas de color. Filtro por género. Marcadores fijados. Recientemente abiertos y recientemente añadidos.',
+    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — incluyendo variantes ZIP. Pulsa un botón, arrastra un archivo, o arrastra una URL directamente desde tu navegador — el libro se descarga, y el diálogo de importación se abre con metadatos, portada y autor ya rellenados. O explora catálogos OPDS — Standard Ebooks, Project Gutenberg, Feedbooks o tu propio servidor. Sigue feeds para nuevos lanzamientos en una serie que estás siguiendo.',
+    'index.s6.p3':      'Registra tu tiempo de lectura por libro, mira rachas y patrones, exporta un informe HTML. Marcadores en siete colores con notas y resaltado de texto. Notas con formato — para cada libro. Todo se busca, todo se exporta.',
+    'index.s6.p4':      'El contenido del libro se guarda como HTML limpio en disco, con nombres de archivo legibles. Sin base de datos atada a la nube, sin formato propietario, sin DRM, sin vendor lock-in. Haz una copia de seguridad de toda la biblioteca en un archivo ZIP — cuando quieras. Todo vive en tu propio iCloud — o, si no necesitas sincronización, apunta la app a cualquier carpeta local y cámbiala cuando quieras.',
+    'index.s6.callout': 'Tu biblioteca es una carpeta de archivos. Léela con <code>cat</code> si quieres.',
+
+    // ---------- Section 7 — Native ----------
+    'index.s7.eyebrow': 'Nativo',
+    'index.s7.h2':      'Parte del <em>sistema.</em>',
+    'index.s7.p1':      'ContinuousReader está hecho con Swift y SwiftUI — los lenguajes nativos de Apple. Eso significa arranque instantáneo, desplazamiento fluido a cualquier velocidad, atajos de teclado nativos en Mac, gestos de deslizamiento adecuados en iPhone, selección de texto a nivel del sistema, y un binario que es una fracción del tamaño de una compilación con Electron.',
+    'index.s7.p2':      'En Mac, un <em>diseño de islas</em> inspirado en Ajustes del Sistema — contenedores flotantes redondeados sobre un fondo hundido — con atajos de teclado, paneles flotantes, una Tarjeta de libro que flota sobre la app, y arrastrar y soltar en todas partes. En iPad, gestos de deslizamiento nativos y compatibilidad con vista dividida. En iPhone, gestos cómodos para una mano y hojas inferiores que se sienten como iOS, <strong>no como un formulario web.</strong>',
+    'index.s7.p3':      'El trabajo pesado lo hace el propio sistema. <strong>iCloud</strong> almacena y sincroniza tus libros — tu cuenta, no la nuestra. <strong>Apple Translation</strong> se encarga de la traducción en línea — en el dispositivo, privada. <strong>El motor de voz del sistema</strong> impulsa Lectura en voz alta, con las voces que tu Mac y tu iPhone ya hablan. Nada reinventado — solo integrado.',
+
+    // ---------- Section 8 — Two apps ----------
+    'index.s8.eyebrow':  'Dos apps',
+    'index.s8.h2':       '¿ContinuousReader <em>o</em> JustReader?',
+    'index.s8.intro':    'Dos apps de lectura. Una base. <strong>Tu elección.</strong>',
+    'index.s8.cr.name':  'ContinuousReader',
+    'index.s8.cr.price': '<strong>$9.99</strong> de lanzamiento · $19.99 después. Una sola vez, no mensual.',
+    'index.s8.cr.desc':  'Un espacio de trabajo de lectura completo. Construye tu biblioteca. Sincroniza tu posición, marcadores y ajustes de lectura entre Mac, iPad e iPhone. Catálogos OPDS. Marcadores, notas, estadísticas. Cada función, en cada dispositivo, para siempre.',
+    'index.s8.cr.cta':   'Obtén ContinuousReader',
+    'index.s8.jr.name':  'JustReader',
+    'index.s8.jr.price': '<strong>Gratis.</strong> De verdad gratis.',
+    'index.s8.jr.desc':  'Un lector de un solo libro. Abre un archivo, léelo, sigue adelante. La misma tipografía, la misma traducción, la misma Lectura en voz alta — en una app enfocada de un solo archivo. Sin biblioteca, sin sincronización, sin marcadores — solo lectura.',
+    'index.s8.jr.cta':   'Obtén JustReader',
+  },
+  // ============================================================
+  // FRENCH — index.html complete; other pages fall back to EN
+  //
+  // Register: «vous» (formal, the standard for French Apple-ecosystem
+  // marketing). Apple-canonical terms: «Lecture à voix haute»,
+  // «Partage familial», «Achat universel», «marque-page».
+  // Typographic apostrophes (’) and French guillemets («...»).
+  // Hero plays on «à suivre» — the canonical French idiom for "to
+  // be continued" (TV serials, serial fiction).
+  // ============================================================
+  fr: {
+    // ---------- Navigation ----------
+    'nav.features':  'Fonctionnalités',
+    'nav.platforms': 'Plateformes',
+    'nav.download':  'Télécharger',
+
+    // ---------- Footer ----------
+    'foot.tagline':       'Pour ceux qui ne se contentent pas de feuilleter.',
+    'foot.col.product':   'Produit',
+    'foot.col.info':      'Informations',
+    'foot.col.language':  'Langue',
+    'foot.link.privacy':  'Confidentialité',
+    'foot.link.contact':  'Contact',
+    'foot.copy':          '© 2026 ContinuousReader. Développé par Oleksii Koshkin.',
+    'foot.signoff':       'Pour ceux qui lisent vraiment.',
+
+    // ---------- Common ----------
+    'common.finalCta.title':    'Commencez à <em>lire.</em>',
+    'common.finalCta.subtitle': 'Deux apps. Lisez un livre, ou construisez une bibliothèque.',
+    'common.cta.getCR':         'Obtenir ContinuousReader',
+    'common.cta.getJR':         'Obtenir JustReader, gratuit',
+    'common.cta.tryJR':         'Ou essayez JustReader, gratuit',
+
+    // ---------- Meta (index) ----------
+    'meta.index.title':    'ContinuousReader — Un livre, à suivre.',
+    'meta.index.desc':     'Un lecteur natif pour Mac, iPad et iPhone. Fermez-le sur votre Mac à minuit, ouvrez-le sur votre iPhone le matin. Le même livre. Le même paragraphe. Fait pour ceux qui lisent, pas seulement feuilletent.',
+    'meta.index.ogTitle':  'ContinuousReader — Un livre, à suivre.',
+    'meta.index.ogDesc':   'Un lecteur natif pour Mac, iPad et iPhone. Fermez-le sur votre Mac à minuit, ouvrez-le sur votre iPhone le matin. Le même livre. Le même paragraphe.',
+
+    // ---------- Hero ----------
+    'index.hero.eyebrow':  'Un lecteur natif pour Mac, iPad et iPhone',
+    'index.hero.headline': '<span class="dropcap">U</span>n livre<span class="punct">,</span> <em>à suivre.</em>',
+    'index.hero.sub':      'Fermez-le sur votre Mac à minuit. Ouvrez-le sur votre iPhone le matin, sur le trajet du travail. <strong>Le même livre. La même page. Le même paragraphe.</strong>',
+
+    // ---------- Reading strip (legacy keys, no longer rendered) ----------
+    'index.strip.label':    'En continu',
+    'index.strip.caption':  'lecture sans couture',
+
+    // ---------- Section 2 — Across your devices ----------
+    'index.s2.eyebrow': 'En continu',
+    'index.s2.h2':      'Sur tous vos <em>appareils.</em>',
+    'index.s2.p1':      'Votre position de lecture voyage avec vous — jusqu’au mot exact où vous vous êtes arrêté. Jusqu’au paragraphe précis, pas au chapitre le plus proche ni au début de la page.',
+    'index.s2.p2':      '<strong>Ce qui se synchronise :</strong> votre position, vos marque-pages, vos notes, votre bibliothèque. <strong>Ce qui ne se synchronise pas :</strong> la façon dont chaque appareil est configuré pour lire.',
+    'index.s2.mac.h':   'Mac',
+    'index.s2.mac.p':   'Un fauteuil. <em>Vue double page,</em> 32 pt avec sérif.',
+    'index.s2.ipad.h':  'iPad',
+    'index.s2.ipad.p':  'Une page, taille confortable, <em>parfois sépia.</em>',
+    'index.s2.iph.h':   'iPhone',
+    'index.s2.iph.p':   '<em>Mode défilement,</em> thème sombre, petit caractère, dans une main.',
+    'index.s2.outro':   'Chaque écran a sa configuration idéale. ContinuousReader les retient séparément — et votre position de lecture est commune à tous.',
+
+    // ---------- Section 3 — Across how you read ----------
+    'index.s3.eyebrow':   'En continu',
+    'index.s3.h2':        'Quel que soit votre <em>mode de lecture.</em>',
+    'index.s3.p1':        'Commencez le chapitre le soir, les yeux sur la page. Montez en voiture le matin, basculez sur «Lecture à voix haute». La voix reprend depuis le paragraphe où vous vous êtes arrêté avec les yeux — pas depuis le chapitre le plus proche ni le début du fichier.',
+    'index.s3.callout':   'Lire des yeux et écouter des oreilles, c’est la même session, la même position, le même livre.',
+    'index.s3.p2':        'Écoutez une demi-heure. À l’arrivée, asseyez-vous devant le Mac. Le livre est déjà déroulé jusqu’au paragraphe où la voix vient de s’arrêter. Continuez à lire là où l’écoute s’est arrêtée.',
+    'index.s3.p3':        'Surlignage mot par mot — un indicateur doux et arrondi qui glisse avec la voix. Vitesse, hauteur et voix réglables. Changez la vitesse en pleine phrase — la lecture reprend depuis le mot exact, pas depuis le paragraphe le plus proche.',
+
+    // ---------- Section 4 — Typography ----------
+    'index.s4.eyebrow': 'La lecture',
+    'index.s4.h2':      'Une typographie qui <em>respecte</em> le texte.',
+    'index.s4.p1':      'La plupart des apps de lecture se trompent en typographie. Soit elles imitent maladroitement un livre — avec des animations de tournage de page et un papier factice à la texture fabriquée, soit elles traitent le texte comme un déversement de données — réglages par défaut du navigateur, colonnes irrégulières, sans coupures de mots.',
+    'index.s4.p2':      '<strong>ContinuousReader soigne les détails.</strong>',
+    'index.s4.p3':      'Cinq palettes principales — Neutral, Sepia, Celestial, Lime, Rose — chacune avec cinq variations tonales, du clair au sombre. Plus deux thèmes mis en avant pour les amateurs du style rétro : <em>Typewriter</em> en ivoire et brun foncé et <em>Terminal</em> — monospace blanc sur bleu profond (si la palette vous semble familière — <em>oui, vous ne vous trompez pas</em>). Deux autres pour le contraste extrême. Trois emplacements personnalisés, où les couleurs sont les vôtres. <strong>Trente-trois variantes au total.</strong>',
+    'index.s4.p4':      '<em>Midday</em> et <em>Midnight</em> — noir pur sur blanc et blanc pur sur noir, avec quatre niveaux de contraste et un poids de police réglable. Faits pour lire <strong>en plein soleil sur une plage</strong> ou <strong>au lit avec les lumières éteintes</strong>, sans fatiguer les yeux dans aucun des modes.',
+    'index.s4.picker':  'Trois modes de sélection. <strong>Fixe</strong> — un thème, toujours. <strong>Jour et Nuit</strong> — un thème clair couplé à un thème sombre, l’app bascule quand votre système le fait. <strong>Forçage manuel</strong> — n’importe quel thème par-dessus le programme, pour une session qui sort du rythme. Sur n’importe quel thème sombre, un curseur souple de luminosité du texte, de 100 % à 50 % — pour les nuits où même les thèmes sombres semblent trop lumineux.',
+    'index.s4.dt1':     'Polices',
+    'index.s4.dd1':     'Neuf polices système : <em>avec sérifs, sans sérifs et monospace.</em> Georgia, Palatino, Charter, Iowan Old Style, Helvetica Neue, SF Pro, Avenir Next, Menlo, American Typewriter.',
+    'index.s4.dt2':     'Coupures de mots',
+    'index.s4.dd2':     'De vraies coupures de mots pour le <em>latin, le cyrillique, CJK, l’arabe et le grec</em>. Détectées d’après le contenu, pas selon les réglages de l’utilisateur.',
+    'index.s4.dt3':     'Mise en page',
+    'index.s4.dd3':     'Défilement continu, page unique ou <em>vue double page</em> sur Mac. Taille, interligne, espacement entre paragraphes, alignement, retrait, marges et affichage des images — tout est réglable.',
+    'index.s4.dt4':     'Instantané',
+    'index.s4.dd4':     'Chaque réglage s’applique immédiatement — <em>sans recharger la page, sans perdre la position.</em>',
+
+    // ---------- Section 5 — Translation ----------
+    'index.s5.eyebrow': 'La traduction',
+    'index.s5.h2':      'Lisez dans une langue, <em>pensez</em> dans une autre.',
+    'index.s5.p1':      'Sélectionnez un mot. La traduction apparaît dans un panneau en bas — pas dans une fenêtre flottante qui couvre le texte, ni dans une modale qu’il faut fermer. Continuez à lire. Un autre mot ou une phrase qui vous échappe ? Sélectionnez-le, c’est tout — sans clics supplémentaires, sans perdre le focus.',
+    'index.s5.p2':      '«Traduire» et «Marque-page» figurent en haut du menu de sélection — pas enterrés sous cinq autres éléments que vous n’utilisez pas. Échangez leur ordre dans les réglages, selon celui que vous utilisez le plus souvent.',
+    'index.s5.p3':      'De nombreuses langues cibles, fournies par le moteur Apple Translation qui fonctionne directement sur l’appareil. <strong>Rien ne quitte votre Mac.</strong>',
+    'index.s5.p4':      'Chaque mot que vous traduisez peut être retenu. ContinuousReader suit : entre quelles langues vous traduisez, quels mots vous avez déjà vus, et dans quels livres l’aide a été la plus nécessaire — utile pour ceux qui apprennent une langue, les chercheurs et tous ceux qui lisent entre les langues. Désactivez le suivi — et rien n’est enregistré. Activez-le — et exportez tout l’historique en rapport HTML.',
+
+    // ---------- Section 6 — Library ----------
+    'index.s6.eyebrow': 'Votre bibliothèque',
+    'index.s6.h2':      'Votre bibliothèque. <em>Entièrement à vous.</em>',
+    'index.s6.p1':      'Toute votre bibliothèque en trois modes : liste détaillée — pour passer en revue, couvertures en grille — pour feuilleter, tableau triable — pour le bibliothécaire qui sommeille en vous. Regroupement par auteur, par série ou par dossier. Étiquettes de couleur. Filtre par genre. Marque-pages épinglés. Récemment ouverts et récemment ajoutés.',
+    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — y compris les variantes ZIP. Cliquez sur un bouton, glissez un fichier, ou glissez une URL directement depuis votre navigateur — le livre est récupéré, et la fenêtre d’importation s’ouvre avec les métadonnées, la couverture et l’auteur déjà remplis. Ou parcourez les catalogues OPDS — Standard Ebooks, Project Gutenberg, Feedbooks ou votre propre serveur. Suivez des flux pour les nouveautés dans une série que vous suivez.',
+    'index.s6.p3':      'Suivez votre temps de lecture par livre, voyez les séries de jours et les motifs, exportez un rapport HTML. Marque-pages en sept couleurs avec notes et surlignage de texte. Notes formatées — pour chaque livre. Tout est cherchable, tout est exportable.',
+    'index.s6.p4':      'Le contenu du livre est stocké en HTML propre sur le disque, avec des noms de fichiers lisibles. Aucune base de données enfermée dans le cloud, aucun format propriétaire, aucun DRM, aucun verrouillage par fournisseur. Sauvegardez toute la bibliothèque dans un fichier ZIP — quand vous voulez. Tout vit dans votre propre iCloud — ou, si vous n’avez pas besoin de synchronisation, pointez l’app vers n’importe quel dossier local et changez-le quand vous voulez.',
+    'index.s6.callout': 'Votre bibliothèque, c’est un dossier de fichiers. Lisez-le avec <code>cat</code> si vous voulez.',
+
+    // ---------- Section 7 — Native ----------
+    'index.s7.eyebrow': 'Natif',
+    'index.s7.h2':      'Au cœur du <em>système.</em>',
+    'index.s7.p1':      'ContinuousReader est écrit en Swift et SwiftUI — les langages natifs d’Apple. Cela signifie un démarrage instantané, un défilement fluide à toute vitesse, des raccourcis clavier natifs sur Mac, des gestes de balayage corrects sur iPhone, une sélection de texte au niveau système, et un binaire qui pèse une fraction du poids d’une compilation Electron.',
+    'index.s7.p2':      'Sur Mac — un <em>design en îlots</em> dans l’esprit des Réglages Système : conteneurs flottants arrondis sur fond renfoncé, raccourcis clavier, panneaux flottants, une Carte de livre qui plane au-dessus de l’app, et le glisser-déposer partout. Sur iPad — gestes de balayage natifs et compatibilité Split View. Sur iPhone — gestes adaptés à une main et fenêtres modales par le bas qui se sentent comme iOS, <strong>pas comme un formulaire web.</strong>',
+    'index.s7.p3':      'Le gros du travail revient au système lui-même. <strong>iCloud</strong> stocke et synchronise vos livres — votre compte, pas le nôtre. <strong>Apple Translation</strong> gère la traduction en ligne — sur l’appareil, en privé. <strong>Le moteur vocal du système</strong> anime Lecture à voix haute, avec les voix que votre Mac et votre iPhone parlent déjà. Rien de réinventé — uniquement intégré.',
+
+    // ---------- Section 8 — Two apps ----------
+    'index.s8.eyebrow':  'Deux apps',
+    'index.s8.h2':       'ContinuousReader <em>ou</em> JustReader ?',
+    'index.s8.intro':    'Deux apps de lecture. Une seule base. <strong>À vous de choisir.</strong>',
+    'index.s8.cr.name':  'ContinuousReader',
+    'index.s8.cr.price': '<strong>$9.99</strong> au lancement · $19.99 ensuite. Une seule fois, pas par mois.',
+    'index.s8.cr.desc':  'Un véritable espace de travail de lecture. Construisez votre bibliothèque. Synchronisez votre position, vos marque-pages et vos réglages de lecture entre Mac, iPad et iPhone. Catalogues OPDS. Marque-pages, notes, statistiques. Toutes les fonctionnalités, sur tous les appareils, pour toujours.',
+    'index.s8.cr.cta':   'Obtenir ContinuousReader',
+    'index.s8.jr.name':  'JustReader',
+    'index.s8.jr.price': '<strong>Gratuit.</strong> Vraiment gratuit.',
+    'index.s8.jr.desc':  'Un lecteur d’un seul livre. Ouvrez un fichier, lisez-le, passez à autre chose. La même typographie, la même traduction, la même Lecture à voix haute — dans une app focalisée sur un seul fichier. Pas de bibliothèque, pas de synchronisation, pas de marque-pages — juste la lecture.',
+    'index.s8.jr.cta':   'Obtenir JustReader',
+  },
+  // ============================================================
+  // GERMAN — index.html complete; other pages fall back to EN
+  //
+  // Register: «du» (informal), the convention for Apple Germany’s
+  // marketing copy. Apple-canonical terminology: «Vorlesen»,
+  // «Lesezeichen», «Familienfreigabe». Hero plays on «Fortsetzung
+  // folgt» — the canonical German idiom for "to be continued"
+  // (TV serials, comics, serial fiction).
+  // ============================================================
+  de: {
+    // ---------- Navigation ----------
+    'nav.features':  'Funktionen',
+    'nav.platforms': 'Plattformen',
+    'nav.download':  'Laden',
+
+    // ---------- Footer ----------
+    'foot.tagline':       'Für die, die nicht nur blättern.',
+    'foot.col.product':   'Produkt',
+    'foot.col.info':      'Info',
+    'foot.col.language':  'Sprache',
+    'foot.link.privacy':  'Datenschutz',
+    'foot.link.contact':  'Kontakt',
+    'foot.copy':          '© 2026 ContinuousReader. Entwickelt von Oleksii Koshkin.',
+    'foot.signoff':       'Für die, die wirklich lesen.',
+
+    // ---------- Common ----------
+    'common.finalCta.title':    'Fang an zu <em>lesen.</em>',
+    'common.finalCta.subtitle': 'Zwei Apps. Lies ein Buch, oder bau eine Bibliothek auf.',
+    'common.cta.getCR':         'ContinuousReader laden',
+    'common.cta.getJR':         'JustReader laden, kostenlos',
+    'common.cta.tryJR':         'Oder probier JustReader, kostenlos',
+
+    // ---------- Meta (index) ----------
+    'meta.index.title':    'ContinuousReader — Ein Buch, Fortsetzung folgt.',
+    'meta.index.desc':     'Ein nativer Reader für Mac, iPad und iPhone. Schließ ihn um Mitternacht auf deinem Mac, öffne ihn morgens auf deinem iPhone. Dasselbe Buch. Derselbe Absatz. Gemacht für die, die lesen, nicht nur blättern.',
+    'meta.index.ogTitle':  'ContinuousReader — Ein Buch, Fortsetzung folgt.',
+    'meta.index.ogDesc':   'Ein nativer Reader für Mac, iPad und iPhone. Schließ ihn um Mitternacht auf deinem Mac, öffne ihn morgens auf deinem iPhone. Dasselbe Buch. Derselbe Absatz.',
+
+    // ---------- Hero ----------
+    'index.hero.eyebrow':  'Ein nativer Reader für Mac, iPad und iPhone',
+    'index.hero.headline': '<span class="dropcap">E</span>in Buch <span class="punct">—</span> <em>Fortsetzung folgt.</em>',
+    'index.hero.sub':      'Schließ ihn um Mitternacht auf deinem Mac. Öffne ihn morgens auf deinem iPhone, auf dem Weg zur Arbeit. <strong>Dasselbe Buch. Dieselbe Seite. Derselbe Absatz.</strong>',
+
+    // ---------- Reading strip (legacy keys, no longer rendered) ----------
+    'index.strip.label':    'Durchgehend',
+    'index.strip.caption':  'Lesen ohne Bruch',
+
+    // ---------- Section 2 — Across your devices ----------
+    'index.s2.eyebrow': 'Durchgehend',
+    'index.s2.h2':      'Auf all deinen <em>Geräten.</em>',
+    'index.s2.p1':      'Deine Leseposition reist mit dir — bis zum genauen Wort, an dem du aufgehört hast. Bis zum konkreten Absatz, nicht zum nächsten Kapitel oder Seitenanfang.',
+    'index.s2.p2':      '<strong>Was synchronisiert wird:</strong> deine Position, deine Lesezeichen, deine Notizen, deine Bibliothek. <strong>Was nicht:</strong> wie jedes Gerät zum Lesen eingerichtet ist.',
+    'index.s2.mac.h':   'Mac',
+    'index.s2.mac.p':   'Ein Sessel. <em>Doppelseite,</em> 32 pt mit Serife.',
+    'index.s2.ipad.h':  'iPad',
+    'index.s2.ipad.p':  'Eine Seite, angenehme Größe, <em>manchmal Sepia.</em>',
+    'index.s2.iph.h':   'iPhone',
+    'index.s2.iph.p':   '<em>Scrollmodus,</em> dunkles Theme, kleine Schrift, in einer Hand.',
+    'index.s2.outro':   'Jeder Bildschirm hat seine ideale Einstellung. ContinuousReader speichert sie getrennt — und deine Leseposition ist allen gemeinsam.',
+
+    // ---------- Section 3 — Across how you read ----------
+    'index.s3.eyebrow':   'Durchgehend',
+    'index.s3.h2':        'Egal wie du <em>liest.</em>',
+    'index.s3.p1':        'Beginn das Kapitel am Abend, mit den Augen auf der Seite. Steig morgens ins Auto, wechsel zu «Vorlesen». Die Stimme nimmt genau dort wieder auf, wo du mit den Augen aufgehört hast — nicht beim nächsten Kapitel, nicht am Dateianfang.',
+    'index.s3.callout':   'Mit den Augen lesen und mit den Ohren hören — dieselbe Sitzung, dieselbe Position, dasselbe Buch.',
+    'index.s3.p2':        'Hör eine halbe Stunde zu. Angekommen, setz dich an den Mac. Das Buch ist bereits zum Absatz gescrollt, an dem die Stimme gerade aufgehört hat. Lies weiter, wo das Hören aufgehört hat.',
+    'index.s3.p3':        'Wort-für-Wort-Hervorhebung — ein weicher, abgerundeter Indikator, der mit der Stimme gleitet. Geschwindigkeit, Tonhöhe und Stimme regelbar. Ändere die Geschwindigkeit mitten im Satz — die Wiedergabe nimmt am genauen Wort wieder auf, nicht am nächsten Absatz.',
+
+    // ---------- Section 4 — Typography ----------
+    'index.s4.eyebrow': 'Das Lesen',
+    'index.s4.h2':      'Typografie, die den <em>Text respektiert.</em>',
+    'index.s4.p1':      'Die meisten Lese-Apps verfehlen die Typografie. Entweder tun sie so, als wären sie ein Buch — mit ungeschickten Seitenwechseln und gefälschtem Papier mit künstlicher Textur, oder sie behandeln den Text wie eine Datenmüllhalde — Browser-Standards, ungleichmäßige Spalten, keine Silbentrennung.',
+    'index.s4.p2':      '<strong>ContinuousReader achtet auf die Details.</strong>',
+    'index.s4.p3':      'Fünf Hauptpaletten — Neutral, Sepia, Celestial, Lime, Rose — jede mit fünf tonalen Variationen, von hell bis dunkel. Dazu zwei besondere Themes für Liebhaber des Old-School-Stils: <em>Typewriter</em> in Elfenbein und Dunkelbraun und <em>Terminal</em> — weiße Monospace-Schrift auf tiefblauem Grund (wenn dir die Palette bekannt vorkommt — <em>ja, du liegst richtig</em>). Zwei weitere für extremen Kontrast. Drei eigene Slots, in denen du die Farben selbst festlegst. <strong>Insgesamt dreiunddreißig Varianten.</strong>',
+    'index.s4.p4':      '<em>Midday</em> und <em>Midnight</em> — reines Schwarz auf Weiß und reines Weiß auf Schwarz, mit vier Kontraststufen und einstellbarem Schriftgewicht. Gemacht zum Lesen <strong>in der vollen Sonne am Strand</strong> oder <strong>im Bett bei ausgeschaltetem Licht</strong>, ohne dass die Augen ermüden.',
+    'index.s4.picker':  'Drei Auswahlmodi. <strong>Fix</strong> — ein Theme, immer. <strong>Tag und Nacht</strong> — ein helles Theme gepaart mit einem dunklen, die App wechselt mit dem System. <strong>Manuelle Übersteuerung</strong> — jedes Theme über den Zeitplan hinweg, für eine Sitzung, die aus dem Rhythmus fällt. Bei jedem dunklen Theme — ein sanfter Helligkeits-Slider für den Text von 100 % bis 50 %, für Nächte, in denen selbst die dunklen Themes zu hell wirken.',
+    'index.s4.dt1':     'Schriftarten',
+    'index.s4.dd1':     'Neun Systemschriften: <em>mit Serifen, ohne Serifen und Monospace.</em> Georgia, Palatino, Charter, Iowan Old Style, Helvetica Neue, SF Pro, Avenir Next, Menlo, American Typewriter.',
+    'index.s4.dt2':     'Silbentrennung',
+    'index.s4.dd2':     'Echte Silbentrennung für <em>Latein, Kyrillisch, CJK, Arabisch und Griechisch</em>. Anhand des Inhalts erkannt, nicht über Benutzereinstellungen.',
+    'index.s4.dt3':     'Layout',
+    'index.s4.dd3':     'Durchgehendes Scrollen, Einzelseite oder <em>Doppelseite</em> auf dem Mac. Größe, Zeilenabstand, Absatzabstand, Ausrichtung, Einrückung, Ränder und Bildanzeige — alles einstellbar.',
+    'index.s4.dt4':     'Sofort',
+    'index.s4.dd4':     'Jede Einstellung wird sofort übernommen — <em>ohne Seiten-Neuladen, ohne Positionsverlust.</em>',
+
+    // ---------- Section 5 — Translation ----------
+    'index.s5.eyebrow': 'Die Übersetzung',
+    'index.s5.h2':      'Lies in einer Sprache, <em>denke</em> in einer anderen.',
+    'index.s5.p1':      'Markier ein Wort. Die Übersetzung erscheint in einem Panel unten — nicht in einem Pop-up, das den Text überdeckt, und nicht in einem Modal, das du schließen musst. Lies weiter. Noch ein unbekanntes Wort oder ein Satz? Einfach markieren — ohne zusätzliche Klicks, ohne den Fokus zu verlieren.',
+    'index.s5.p2':      '«Übersetzen» und «Lesezeichen» stehen ganz oben im Auswahl-Menü — nicht unter fünf anderen Einträgen begraben, die du nicht benutzt. Tausch ihre Reihenfolge in den Einstellungen, je nachdem, was du häufiger brauchst.',
+    'index.s5.p3':      'Viele Zielsprachen, bereitgestellt vom Apple-Translation-Framework, das direkt auf dem Gerät läuft. <strong>Nichts verlässt deinen Mac.</strong>',
+    'index.s5.p4':      'Jedes Wort, das du übersetzt, kann gespeichert werden. ContinuousReader verfolgt: zwischen welchen Sprachen du übersetzt, welche Wörter du schon gesehen hast, und in welchen Büchern Hilfe am häufigsten nötig war — nützlich für Sprachenlernende, Forscher und alle, die zwischen Sprachen lesen. Schalt das Tracking aus — und nichts wird gespeichert. Schalt es ein — und exportier den ganzen Verlauf als HTML-Bericht.',
+
+    // ---------- Section 6 — Library ----------
+    'index.s6.eyebrow': 'Deine Bibliothek',
+    'index.s6.h2':      'Deine Bibliothek. <em>Ganz für dich.</em>',
+    'index.s6.p1':      'Deine ganze Bibliothek in drei Ansichten: detaillierte Liste — zum Durchsehen, Cover im Raster — zum Blättern, sortierbare Tabelle — für den Bibliothekar in dir. Gruppieren nach Autor, Serie oder Ordner. Farbmarkierungen. Genre-Filter. Angeheftete Favoriten. Kürzlich geöffnete und kürzlich hinzugefügte.',
+    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — einschließlich ZIP-Varianten. Klick auf einen Button, zieh eine Datei hinein, oder zieh eine URL direkt aus deinem Browser — das Buch wird heruntergeladen, und der Importdialog öffnet sich mit bereits ausgefüllten Metadaten, Cover und Autor. Oder durchsuch OPDS-Kataloge — Standard Ebooks, Project Gutenberg, Feedbooks oder deinen eigenen Server. Verfolge Feeds für neue Veröffentlichungen in einer Serie, der du folgst.',
+    'index.s6.p3':      'Verfolge deine Lesezeit pro Buch, sieh dir Serien und Muster an, exportiere einen HTML-Bericht. Lesezeichen in sieben Farben mit Notizen und Texthervorhebung. Formatierte Notizen — für jedes Buch. Alles ist durchsuchbar, alles ist exportierbar.',
+    'index.s6.p4':      'Buchinhalte werden als sauberes HTML auf der Festplatte gespeichert, mit lesbaren Dateinamen. Keine cloud-eingesperrte Datenbank, kein proprietäres Format, kein DRM, kein Vendor-Lock-in. Sicher die ganze Bibliothek als ZIP-Datei — wann immer du willst. Alles lebt in deinem eigenen iCloud — oder, wenn du keine Synchronisation brauchst, zeig der App auf einen beliebigen lokalen Ordner und änder ihn jederzeit.',
+    'index.s6.callout': 'Deine Bibliothek ist ein Ordner mit Dateien. Lies sie mit <code>cat</code>, wenn du willst.',
+
+    // ---------- Section 7 — Native ----------
+    'index.s7.eyebrow': 'Nativ',
+    'index.s7.h2':      'Teil des <em>Systems.</em>',
+    'index.s7.p1':      'ContinuousReader ist in Swift und SwiftUI geschrieben — den nativen Sprachen von Apple. Das bedeutet: sofortiger Start, flüssiges Scrollen bei jeder Geschwindigkeit, native Tastenkürzel auf dem Mac, richtige Wischgesten auf dem iPhone, Textauswahl auf Systemebene und eine Binärdatei, die nur einen Bruchteil der Größe eines Electron-Builds hat.',
+    'index.s7.p2':      'Auf dem Mac — ein <em>Inseldesign</em> im Geist der Systemeinstellungen: abgerundete schwebende Container auf vertieftem Hintergrund, Tastenkürzel, schwebende Panels, eine Buchkarte, die über der App schwebt, und Drag-and-Drop überall. Auf dem iPad — native Wischgesten und Split-View-Bereitschaft. Auf dem iPhone — einhandtaugliche Gesten und Bottom Sheets, die sich wie iOS anfühlen, <strong>nicht wie ein Webformular.</strong>',
+    'index.s7.p3':      'Die Schwerstarbeit übernimmt das System selbst. <strong>iCloud</strong> speichert und synchronisiert deine Bücher — dein Account, nicht unserer. <strong>Apple Translation</strong> übernimmt die Inline-Übersetzung — auf dem Gerät, privat. <strong>Die Sprachausgabe-Engine des Systems</strong> treibt Vorlesen an, mit den Stimmen, die dein Mac und dein iPhone bereits sprechen. Nichts neu erfunden — nur integriert.',
+
+    // ---------- Section 8 — Two apps ----------
+    'index.s8.eyebrow':  'Zwei Apps',
+    'index.s8.h2':       'ContinuousReader <em>oder</em> JustReader?',
+    'index.s8.intro':    'Zwei Lese-Apps. Eine Basis. <strong>Deine Wahl.</strong>',
+    'index.s8.cr.name':  'ContinuousReader',
+    'index.s8.cr.price': '<strong>$9.99</strong> zum Launch · $19.99 danach. Einmalig, nicht monatlich.',
+    'index.s8.cr.desc':  'Eine vollständige Lese-Umgebung. Bau deine Bibliothek auf. Synchronisiere Position, Lesezeichen und Leseeinstellungen zwischen Mac, iPad und iPhone. OPDS-Kataloge. Lesezeichen, Notizen, Statistiken. Jede Funktion, auf jedem Gerät, für immer.',
+    'index.s8.cr.cta':   'ContinuousReader laden',
+    'index.s8.jr.name':  'JustReader',
+    'index.s8.jr.price': '<strong>Kostenlos.</strong> Wirklich kostenlos.',
+    'index.s8.jr.desc':  'Eine Lese-App für ein einzelnes Buch. Datei öffnen, lesen, weiter. Dieselbe Typografie, dieselbe Übersetzung, dasselbe Vorlesen — in einer fokussierten App für eine einzelne Datei. Keine Bibliothek, keine Synchronisation, keine Lesezeichen — nur Lesen.',
+    'index.s8.jr.cta':   'JustReader laden',
+  },
 };
 
 // Expose globals for main.js (no module system on this static site)
