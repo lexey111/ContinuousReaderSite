@@ -840,71 +840,126 @@ section { position: relative; z-index: 2; }
 }
 
 /* Theme strip on index typography section.
-   Vertical column showing the available palettes + featured + extreme
-   themes. Some chips carry a .callout-dot that opens a sample screenshot
-   in the lightbox. */
+   Each row: a left-aligned theme label + a pill chip whose segments
+   show real (bg, text) pairs from the app. Each segment renders 'Aa'
+   in the paired text color, so the chip becomes a live preview of how
+   that tone reads. Sample-screenshot callouts float outside the chip
+   on the right of selected rows. */
 .theme-strip {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin: 48px 0;
-  max-width: 320px;
+  max-width: 420px;
 }
 
-.theme-chip {
-  font-family: var(--serif);
-  font-size: 14px;
-  padding: 14px 20px;
-  border: 1px solid var(--rule);
-  border-radius: 8px;
+.theme-row {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: var(--bg);
+  gap: 14px;
 }
 
-.theme-chip .swatch {
-  width: 14px;
-  height: 14px;
-  border-radius: 4px;
-  border: 1px solid var(--rule);
+.theme-label {
+  font-family: var(--serif);
+  font-size: 14px;
+  color: var(--ink);
+  width: 96px;
   flex-shrink: 0;
 }
 
-.theme-chip .chip-name {
+.theme-chip {
   flex: 1;
-}
-
-.theme-chip .callout-dot {
-  margin-left: 8px;
-}
-
-.theme-chip.terminal {
-  background: #0000AA;
-  color: #FFFFFF;
-  font-family: var(--mono);
+  display: flex;
+  height: 32px;
+  border-radius: 999px;
+  overflow: hidden;
+  font-family: var(--serif);
   font-size: 13px;
-  border-color: #0000AA;
-}
-.theme-chip.terminal .swatch {
-  background: #0000AA;
-  border-color: #FFFFFF;
+  letter-spacing: 0.02em;
 }
 
-.theme-chip.midday     { background: #FFFFFF; color: #000000; border-color: #000000; font-weight: 700; }
-.theme-chip.midday     .swatch { background: #FFFFFF; border-color: #000000; }
-.theme-chip.midnight   { background: #000000; color: #FFFFFF; border-color: #000000; font-weight: 700; }
-.theme-chip.midnight   .swatch { background: #000000; border-color: #FFFFFF; }
+.theme-chip .seg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
 
-/* Palette family swatches — sampled from the actual app theme colors
-   (ReaderTheme `*Light` / mid-tone backgrounds in ReaderSettings.swift). */
-.theme-chip.neutral    .swatch { background: #FAFAFA; }
-.theme-chip.sepia      .swatch { background: #F0E5D0; }
-.theme-chip.celestial  .swatch { background: #D6E4F5; }
-.theme-chip.lime       .swatch { background: #F4F7D1; }
-.theme-chip.rose       .swatch { background: #F3E0E7; }
-.theme-chip.typewriter .swatch { background: #F5E8D5; border-color: #8B5A3C; }
-.theme-chip.hacker     .swatch { background: #001A00; }
+/* Terminal: monospace 'Aa' for the Norton-Commander vibe. */
+.theme-chip.terminal {
+  font-family: var(--mono);
+}
+
+/* Callout dot floats outside the chip on the right; existing connector
+   ::before line ends exactly at the row's right edge with this offset. */
+.theme-row .callout-dot {
+  position: absolute;
+  left: calc(100% + 36px);
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
+
+/* Inline section callout — sits after the final period of a prose
+   paragraph. Margin gives the 32px connector line room to fit in the
+   gap between text and dot without overlapping the closing word. */
+.callout-dot.section-callout {
+  vertical-align: middle;
+  margin-left: 44px;
+  position: relative;
+  top: -2px;
+}
+
+/* Section divider — a full-container-width "vignette" between thematic
+   sections. Thin rule lines extend from the container edges with small
+   diamond accents at their inner ends, then a curved flourish that
+   sweeps up to meet the brand butterfly mark in the center. The wider
+   horizontal weight balances the left-aligned narrow text columns the
+   site uses for prose. */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 72px auto;
+  padding: 0 48px;
+  color: var(--ink-fade);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.section-divider .rule {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.section-divider .rule .line {
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+}
+.section-divider .rule .dot {
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+.section-divider .dot-sm { width: 3px; height: 3px; }
+.section-divider .dot-md { width: 5px; height: 5px; }
+.section-divider .dot-lg { width: 8px; height: 8px; }
+.section-divider .mark {
+  width: 36px;
+  height: 26px;
+  flex-shrink: 0;
+  opacity: 0.85;
+  margin: 0 8px;
+}
+@media (max-width: 720px) {
+  .section-divider { padding: 0 24px; margin: 56px auto; }
+}
+
 
 /* Spec list pattern */
 .spec-list {
@@ -2214,10 +2269,13 @@ code {
 }
 
 .final-cta-buttons {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
+  /* inline-flex collapses to content width; text-align: center on the
+     parent .final-cta then horizontally centers the whole group */
 }
 
 /* ==========================================================

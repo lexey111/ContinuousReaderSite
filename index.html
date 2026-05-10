@@ -14,6 +14,28 @@
 </head>
 <body>
 
+<!-- Reusable butterfly symbol for section dividers below.
+     Defined once, referenced via <use href="#cr-butterfly" />. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cr-butterfly" viewBox="-120 -97 240 164">
+    <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+    <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+    <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+    <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+    <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+  </symbol>
+</svg>
+
 <!-- ============================================================ -->
 <!-- NAV                                                           -->
 <!-- ============================================================ -->
@@ -96,7 +118,7 @@
                        keyTimes="0; 0.05; 0.18; 0.28; 0.42; 0.58; 0.72; 0.82; 0.95; 1"
                        values="1; 1; 0; 0; 0; 0; 0; 0; 1; 1" />
             </rect>
-            <rect x="100" y="280" width="160" height="140" rx="6">
+            <rect x="125" y="280" width="110" height="140" rx="6">
               <animate attributeName="opacity" dur="18s" repeatCount="indefinite"
                        keyTimes="0; 0.05; 0.18; 0.28; 0.42; 0.58; 0.72; 0.82; 0.95; 1"
                        values="0; 0; 1; 1; 0; 0; 1; 1; 0; 0" />
@@ -111,7 +133,7 @@
           <!-- Devices: outline only -->
           <g stroke="#1F3A52" stroke-width="2">
             <rect x="40"  y="30"  width="280" height="180" rx="14" />
-            <rect x="80"  y="260" width="200" height="180" rx="14" />
+            <rect x="110" y="260" width="140" height="180" rx="14" />
             <rect x="130" y="490" width="100" height="180" rx="18" />
           </g>
 
@@ -199,6 +221,22 @@
   </div>
 </section>
 
+<div class="section-divider" aria-hidden="true">
+  <div class="rule">
+    <span class="line"></span>
+    <span class="dot dot-sm"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-lg"></span>
+  </div>
+  <svg class="mark"><use href="#cr-butterfly" /></svg>
+  <div class="rule">
+    <span class="dot dot-lg"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-sm"></span>
+    <span class="line"></span>
+  </div>
+</div>
+
 <!-- ============================================================ -->
 <!-- SECTION 3 — Continuous across how you read                    -->
 <!-- ============================================================ -->
@@ -227,15 +265,34 @@
         already scrolled to the paragraph the voice just finished. Keep reading
         where listening left off.
       </p>
-      <p data-i18n="index.s3.p3">
-        Word-by-word highlighting with a soft rounded indicator that glides
+      <p>
+        <span data-i18n="index.s3.p3">Word-by-word highlighting with a soft rounded indicator that glides
         with the voice. Adjustable speed, pitch, and voice. Change speed
         mid-sentence — playback picks up from the exact word, not the nearest
-        paragraph.
+        paragraph.</span><button class="callout-dot section-callout" type="button"
+                data-screenshot="img/screenshots/voice-reader-highlight.svg"
+                data-alt="Read Aloud with word-by-word highlight"
+                aria-label="View Read Aloud screenshot"></button>
       </p>
     </div>
   </div>
 </section>
+
+<div class="section-divider" aria-hidden="true">
+  <div class="rule">
+    <span class="line"></span>
+    <span class="dot dot-sm"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-lg"></span>
+  </div>
+  <svg class="mark"><use href="#cr-butterfly" /></svg>
+  <div class="rule">
+    <span class="dot dot-lg"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-sm"></span>
+    <span class="line"></span>
+  </div>
+</div>
 
 <!-- ============================================================ -->
 <!-- SECTION 4 — Typography                                        -->
@@ -254,16 +311,90 @@
       <p data-i18n="index.s4.p2"><strong>ContinuousReader does neither.</strong></p>
     </div>
 
+    <!-- Each row: a left-aligned theme name, then a pill chip whose
+         segments show real (bg, text) pairs from the app — each segment
+         renders "Aa" in the paired text color, so the chip itself is a
+         live preview of how that tone looks. Sample-screenshot callouts
+         hang off the right of three rows. -->
     <div class="theme-strip" role="list" aria-label="Reading themes">
-      <div class="theme-chip neutral"     role="listitem"><span class="swatch"></span><span class="chip-name">Neutral</span></div>
-      <div class="theme-chip sepia"       role="listitem"><span class="swatch"></span><span class="chip-name">Sepia</span><button class="callout-dot" type="button" data-screenshot="img/screenshots/theme-sepia.svg" data-alt="Sepia theme" aria-label="View Sepia screenshot"></button></div>
-      <div class="theme-chip celestial"   role="listitem"><span class="swatch"></span><span class="chip-name">Celestial</span></div>
-      <div class="theme-chip lime"        role="listitem"><span class="swatch"></span><span class="chip-name">Lime</span></div>
-      <div class="theme-chip rose"        role="listitem"><span class="swatch"></span><span class="chip-name">Rose</span></div>
-      <div class="theme-chip typewriter"  role="listitem"><span class="swatch"></span><span class="chip-name">Typewriter</span><button class="callout-dot" type="button" data-screenshot="img/screenshots/theme-typewriter.svg" data-alt="Typewriter theme" aria-label="View Typewriter screenshot"></button></div>
-      <div class="theme-chip terminal"    role="listitem"><span class="swatch"></span><span class="chip-name">Terminal</span><button class="callout-dot" type="button" data-screenshot="img/screenshots/theme-terminal.svg" data-alt="Terminal theme" aria-label="View Terminal screenshot"></button></div>
-      <div class="theme-chip midday"      role="listitem"><span class="swatch"></span><span class="chip-name">Midday</span></div>
-      <div class="theme-chip midnight"    role="listitem"><span class="swatch"></span><span class="chip-name">Midnight</span></div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Neutral</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#FFFFFF;color:#1a1a1a">Aa</span>
+          <span class="seg" style="background:#D9D9D9;color:#2a2a2a">Aa</span>
+          <span class="seg" style="background:#B0B0B0;color:#1a1a1a">Aa</span>
+          <span class="seg" style="background:#3A3A3A;color:#b8b8b8">Aa</span>
+          <span class="seg" style="background:#2A2A2A;color:#c8c8c8">Aa</span>
+        </div>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Sepia</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#F8F1E3;color:#4a3525">Aa</span>
+          <span class="seg" style="background:#F2E8D0;color:#4a3525">Aa</span>
+          <span class="seg" style="background:#D4C0A0;color:#2e1e10">Aa</span>
+          <span class="seg" style="background:#4A3822;color:#d4b896">Aa</span>
+          <span class="seg" style="background:#140C04;color:#c8a878">Aa</span>
+        </div>
+        <button class="callout-dot" type="button" data-screenshot="img/screenshots/theme-sepia.svg" data-alt="Sepia theme" aria-label="View Sepia screenshot"></button>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Celestial</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#E8EEF8;color:#1e2d42">Aa</span>
+          <span class="seg" style="background:#D6E3F5;color:#1e2d42">Aa</span>
+          <span class="seg" style="background:#A8C0DC;color:#0e1a2a">Aa</span>
+          <span class="seg" style="background:#283A50;color:#a8c0dc">Aa</span>
+          <span class="seg" style="background:#080E18;color:#90b0d4">Aa</span>
+        </div>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Lime</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#F8F9E2;color:#3a3818">Aa</span>
+          <span class="seg" style="background:#F5F7D1;color:#3a3818">Aa</span>
+          <span class="seg" style="background:#C8CC92;color:#222408">Aa</span>
+          <span class="seg" style="background:#3A3C22;color:#c4c890">Aa</span>
+          <span class="seg" style="background:#0E1004;color:#b0b478">Aa</span>
+        </div>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Rose</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#F9ECF0;color:#4f2e38">Aa</span>
+          <span class="seg" style="background:#F3E0E7;color:#4f2e38">Aa</span>
+          <span class="seg" style="background:#D0A8B7;color:#381a24">Aa</span>
+          <span class="seg" style="background:#4C2B36;color:#dab5c3">Aa</span>
+          <span class="seg" style="background:#18090F;color:#cca3b3">Aa</span>
+        </div>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Typewriter</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#F4EFE4;color:#2c2416">Aa</span>
+          <span class="seg" style="background:#1E1C18;color:#c4b898">Aa</span>
+        </div>
+        <button class="callout-dot" type="button" data-screenshot="img/screenshots/theme-typewriter.svg" data-alt="Typewriter theme" aria-label="View Typewriter screenshot"></button>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Terminal</span>
+        <div class="theme-chip terminal">
+          <span class="seg" style="background:#0000AA;color:#00FFFF">Aa</span>
+        </div>
+        <button class="callout-dot" type="button" data-screenshot="img/screenshots/theme-terminal.svg" data-alt="Terminal theme" aria-label="View Terminal screenshot"></button>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Midday</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#FFFFFF;color:#000000;font-weight:700">Aa</span>
+        </div>
+      </div>
+      <div class="theme-row" role="listitem">
+        <span class="theme-label">Midnight</span>
+        <div class="theme-chip">
+          <span class="seg" style="background:#000000;color:#FFFFFF;font-weight:700">Aa</span>
+        </div>
+      </div>
     </div>
 
     <div class="prose">
@@ -272,9 +403,9 @@
         with five tonal variations from light to dark. Plus two featured
         themes for the old-school crowd: <em>Typewriter</em> in ivory and
         dark brown, and <em>Terminal</em> in white monospace on deep blue
-        (if you recognize the palette, you already know why it's there).
-        Two more for extreme contrast. Three custom slots where the colors
-        are yours. <strong>Thirty-three variants in total.</strong>
+        (if you recognize the palette — <em>you already know why it's
+        there</em>). Two more for extreme contrast. Three custom slots
+        where the colors are yours. <strong>Thirty-three variants in total.</strong>
       </p>
       <p data-i18n="index.s4.p4">
         <em>Midday</em> and <em>Midnight</em> — pure black-on-white and
@@ -284,11 +415,13 @@
         eyes either way.
       </p>
       <p data-i18n="index.s4.picker">
-        Three ways to pick. <strong>Fixed</strong> — one theme, always.
+        Three picker modes. <strong>Fixed</strong> — one theme, always.
         <strong>Day &amp; Night</strong> — pair a light theme with a dark
         one and the app switches when your system does.
         <strong>Manual override</strong> — force any theme regardless of
-        schedule, for a session that doesn't fit the rhythm.
+        schedule, for a session that doesn't fit the rhythm. On any dark
+        theme, a smooth brightness slider tunes the text down from 100%
+        to 50% — for nights when even the dark themes feel too bright.
       </p>
     </div>
 
@@ -322,6 +455,22 @@
   </div>
 </section>
 
+<div class="section-divider" aria-hidden="true">
+  <div class="rule">
+    <span class="line"></span>
+    <span class="dot dot-sm"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-lg"></span>
+  </div>
+  <svg class="mark"><use href="#cr-butterfly" /></svg>
+  <div class="rule">
+    <span class="dot dot-lg"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-sm"></span>
+    <span class="line"></span>
+  </div>
+</div>
+
 <!-- ============================================================ -->
 <!-- SECTION 5 — Translation                                       -->
 <!-- ============================================================ -->
@@ -331,10 +480,14 @@
     <h2 class="h2" data-i18n="index.s5.h2">Read in one language, <em>think</em> in another.</h2>
 
     <div class="prose">
-      <p data-i18n="index.s5.p1">
-        Highlight a word. The translation appears in a panel at the bottom of
+      <p>
+        <span data-i18n="index.s5.p1">Highlight a word. The translation appears in a panel at the bottom of
         the screen — not as a popup that covers the text, not as a modal you
-        have to dismiss. Keep reading. The translation updates as you select.
+        have to dismiss. Keep reading. Another unfamiliar word or phrase?
+        Just highlight it — no extra clicks, no focus lost.</span><button class="callout-dot section-callout" type="button"
+                data-screenshot="img/screenshots/translation-panel.svg"
+                data-alt="Translation panel"
+                aria-label="View translation panel screenshot"></button>
       </p>
       <p data-i18n="index.s5.p2">
         Translate and Bookmark sit at the top of the selection menu — not
@@ -357,25 +510,44 @@
   </div>
 </section>
 
+<div class="section-divider" aria-hidden="true">
+  <div class="rule">
+    <span class="line"></span>
+    <span class="dot dot-sm"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-lg"></span>
+  </div>
+  <svg class="mark"><use href="#cr-butterfly" /></svg>
+  <div class="rule">
+    <span class="dot dot-lg"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-sm"></span>
+    <span class="line"></span>
+  </div>
+</div>
+
 <!-- ============================================================ -->
 <!-- SECTION 6 — Your library, your files                          -->
 <!-- ============================================================ -->
 <section class="index-section reveal">
   <div class="container-narrow">
     <div class="eyebrow" data-i18n="index.s6.eyebrow">Your library</div>
-    <h2 class="h2" data-i18n="index.s6.h2">Thousands of books. <em>All yours.</em></h2>
+    <h2 class="h2" data-i18n="index.s6.h2">Your library. <em>All yours.</em></h2>
 
     <div class="prose">
-      <p data-i18n="index.s6.p1">
-        Your entire library in three views: a detailed list for scanning,
+      <p>
+        <span data-i18n="index.s6.p1">Your entire library in three views: a detailed list for scanning,
         covers in a grid for browsing, or a sortable table for the librarian
         in you. Group by author, by series, or by folder. Tag with color dots.
-        Filter by genre. Pin the books you're actively reading.
+        Filter by genre. Pinned favorites. Recently opened and recently added.</span><button class="callout-dot section-callout" type="button"
+                data-screenshot="img/screenshots/library-views.svg"
+                data-alt="Library list, card, and table views"
+                aria-label="View library screenshot"></button>
       </p>
       <p data-i18n="index.s6.p2">
         <strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — including ZIP
-        variants. Drag and drop a file. Or drag a URL straight from your
-        browser — the book is fetched and the import dialog opens with
+        variants. Click a button, drag a file, or drag a URL straight from
+        your browser — the book is fetched and the import dialog opens with
         metadata, cover, and author already filled in. Or browse OPDS
         catalogs — Standard Ebooks, Project Gutenberg, Feedbooks, or your
         own server. Watch feeds for new entries in a series you follow.
@@ -390,7 +562,8 @@
         Book content is stored as clean HTML on disk, with readable filenames.
         No cloud-locked database, no proprietary format, no DRM, no vendor
         lock-in. Back up the whole library to a ZIP file whenever you want.
-        Point the app at any folder as your library root.
+        Point the app at any folder as your library root. Everything lives in
+        your own iCloud — or just locally, if you don't need sync.
       </p>
     </div>
 
@@ -401,13 +574,29 @@
   </div>
 </section>
 
+<div class="section-divider" aria-hidden="true">
+  <div class="rule">
+    <span class="line"></span>
+    <span class="dot dot-sm"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-lg"></span>
+  </div>
+  <svg class="mark"><use href="#cr-butterfly" /></svg>
+  <div class="rule">
+    <span class="dot dot-lg"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-sm"></span>
+    <span class="line"></span>
+  </div>
+</div>
+
 <!-- ============================================================ -->
 <!-- SECTION 7 — Native                                            -->
 <!-- ============================================================ -->
 <section class="index-section reveal">
   <div class="container-narrow">
     <div class="eyebrow" data-i18n="index.s7.eyebrow">Native</div>
-    <h2 class="h2" data-i18n="index.s7.h2">Not a web app, not Electron. <em>No compromise.</em></h2>
+    <h2 class="h2" data-i18n="index.s7.h2">Part of the <em>system.</em></h2>
 
     <div class="prose">
       <p data-i18n="index.s7.p1">
@@ -415,7 +604,7 @@
         languages. That means instant launch, smooth scroll at any scroll
         speed, native keyboard shortcuts on Mac, proper swipe gestures on
         iPhone, system-level text selection, and a binary that's a fraction
-        of the size of its Electron-wrapped competitors.
+        of the size of an Electron build.
       </p>
       <p data-i18n="index.s7.p2">
         On Mac, an <em>island design</em> inspired by System Settings —
@@ -424,6 +613,14 @@
         and drag-and-drop everywhere. On iPad, native swipe actions and
         split-view readiness. On iPhone, one-hand-friendly gestures and
         bottom sheets that feel like iOS, <strong>not like a web form.</strong>
+      </p>
+      <p data-i18n="index.s7.p3">
+        The heavy lifting comes from the system itself. <strong>iCloud</strong>
+        stores and syncs your books — your account, not ours.
+        <strong>Apple Translation</strong> handles in-text translation — on-device,
+        private. <strong>The system's voice engine</strong> drives Read Aloud,
+        with the voices your Mac and iPhone already speak. Nothing reinvented —
+        only integrated.
       </p>
     </div>
   </div>
@@ -446,10 +643,10 @@
         <div class="app-card-name" data-i18n="index.s8.cr.name">ContinuousReader</div>
         <div class="app-card-price" data-i18n="index.s8.cr.price"><strong>$9.99</strong> launch · $19.99 regular. Once, not monthly.</div>
         <p class="app-card-desc" data-i18n="index.s8.cr.desc">
-          A full reading workspace. Build a library of thousands of books.
-          Sync your position, bookmarks, and reading settings across Mac,
-          iPad, and iPhone. OPDS catalogs. Bookmarks, notes, statistics.
-          Every feature, on every device, forever.
+          A full reading workspace. Build your library. Sync your position,
+          bookmarks, and reading settings across Mac, iPad, and iPhone.
+          OPDS catalogs. Bookmarks, notes, statistics. Every feature, on
+          every device, forever.
         </p>
         <a href="download.html" class="app-card-cta" data-i18n="index.s8.cr.cta">Get ContinuousReader</a>
       </div>
@@ -475,7 +672,7 @@
 <section class="final-cta reveal">
   <div class="container-narrow">
     <h2 data-i18n="common.finalCta.title">Start <em>reading.</em></h2>
-    <p data-i18n="common.finalCta.subtitle">Two apps. Free or full. One download away.</p>
+    <p data-i18n="common.finalCta.subtitle">Two apps. Read a book, or grow a library.</p>
     <div class="final-cta-buttons">
       <a href="download.html" class="cta-primary">
         <span data-i18n="common.cta.getCR">Get ContinuousReader</span>
