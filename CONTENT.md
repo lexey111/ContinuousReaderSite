@@ -119,12 +119,14 @@ dump — browser defaults, ragged columns, no hyphenation.
 
 ContinuousReader does neither.
 
-Seventeen reading themes. Clean light and deep dark. Sepia and pastel for long
+Forty-one reading themes. Clean light and deep dark. Sepia and pastel for long
 sessions. High-contrast variants for outdoor reading. A **Typewriter** theme in
-ivory and dark brown, with forced American Typewriter font. A **Terminal**
-theme — white monospace on deep blue. If you recognize the palette, you'll know
-why it's there. Three custom slots where you define your own colors —
-background, text, accent. Your palette, your theme.
+ivory and dark brown — locked to American Typewriter, dressed in quiet
+steampunk: brass pocket-watch progress gauge, copper keycaps, mechanical
+drum-counter read-outs in the bottom bar. A **Terminal** theme — white
+monospace on deep blue. If you recognize the palette, you'll know why it's
+there. Three custom slots where you define your own colors — background, text,
+accent. Your palette, your theme.
 
 Nine typefaces across serif, sans, and monospace — all system fonts, rendered
 natively, no downloads. Justified text with real hyphenation in Latin, Cyrillic,
@@ -311,7 +313,7 @@ some — the reading font itself.
 - **Pastel**: Sepia, Celestial, Lemon — for long daytime sessions
 - **Neutral**: Grey
 - **Dark**: Dark Grey, Hacker, Terminal
-- **Vintage**: Typewriter, Typewriter Dark — ivory and dark brown, with forced American Typewriter font
+- **Vintage**: Typewriter, Typewriter Dark — ivory and dark brown, locked to American Typewriter, with a steampunk-flavoured bottom bar (brass pocket-watch progress gauge, copper keycaps, mechanical drum-counter timer & navigation read-out)
 - **Extreme**: Midday, Midnight — four contrast levels, bold text at the highest level
 - **Custom**: three user-defined slots with full color picker control
 

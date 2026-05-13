@@ -16,7 +16,7 @@ Both share the ReaderCore engine (local Swift Package).
 ### Reading engine
 - WKWebView-based renderer with PositionTracker.js for precise position tracking
 - Three navigation modes: continuous scroll, single page, two-page spread (Mac)
-- 34 reading themes (5 palette families x 5 tones + featured + extreme + 3 custom)
+- 41 reading themes (5 palette families x 7 tones + 2 featured + 3 custom); featured Typewriter theme adopts a quiet steampunk styling for its bottom bar (brass pocket-watch progress gauge, copper keycaps, mechanical drum-counter read-outs for elapsed time and navigation)
 - 9 system fonts (serif, sans, monospace), full typography control
 - Day & Night mode (automatic theme switching based on system appearance)
 - Reading position survives font changes, window resizes, device switches, mode switches
