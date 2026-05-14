@@ -223,6 +223,15 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: 36px;
+  /* Anchor the language dropdown to the button's right edge: JS
+     inserts the menu as a sibling of `.nav-lang` inside `.nav-links`,
+     and menu uses `position: absolute; right: 0`. Without a relative
+     ancestor closer than `.nav` (which is sticky and full-width),
+     `right: 0` snaps to the viewport's right edge instead of the
+     button's. `.nav-links` is exactly the right span — its right
+     edge coincides with the button's right edge (button is the
+     last flex item, gap applies between items only). */
+  position: relative;
 }
 
 .nav-links a {
