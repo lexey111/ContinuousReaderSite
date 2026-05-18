@@ -767,18 +767,18 @@ const translations = {
     'privacy.local.li2':       '<strong>Reading positions, bookmarks, notes</strong> — stored in a local SwiftData database within the app sandbox.',
     'privacy.local.li3':       '<strong>Reader settings</strong> — font, theme, layout preferences, stored in UserDefaults on each device.',
     'privacy.local.li4':       '<strong>Translation history</strong> — if translation statistics tracking is enabled, looked-up words are stored locally. You can disable tracking or clear the history at any time.',
-    'privacy.cloud.h':         'Sync (optional)',
+    'privacy.cloud.h':         'Sync (optional, ContinuousReader only)',
     'privacy.cloud.p1':        'When you turn on sync, your reading data lives in only three places — and travels only between them:',
     'privacy.cloud.li1':       '<strong>Your own devices</strong>, locally — the same content stored on each device the app is installed on. This is also exactly what you have when sync is off.',
     'privacy.cloud.li2':       '<strong>Your iCloud account</strong>, under your Apple ID. Apple hosts it; the developer has no access. Specifically: book files (converted HTML, cover images, per-book metadata) go to iCloud Drive; bookmarks, notes, library metadata, folders, OPDS catalogs, and a backup of your latest reading position go to iCloud Key-Value Store; translation records, if you opted into tracking, go to iCloud Drive.',
     'privacy.cloud.li3':       '<strong>In flight, between your devices</strong> — when you turn a page, the new position is relayed to your other devices through an encrypted realtime channel. The payload contains a hashed book identifier, a paragraph anchor inside the book, and a progress percentage — no titles, no content, no names. Messages pass through and are not retained on the channel. The relay is operated by Ably; tokens that let your devices connect to it are minted by a small Cloudflare Worker. Both see only a randomly generated user identifier we keep in your iCloud Keychain.',
     'privacy.cloud.p2':        'You can disable sync at any time; your library continues to work locally on each device.',
     'privacy.net.h':           'Network access',
-    'privacy.net.p1':          'The apps access the network only when:',
-    'privacy.net.li1':         '<strong>Sync</strong> is enabled — book files go through Apple iCloud Drive, bookmarks and metadata through Apple iCloud Key-Value Store, and live position updates through an encrypted realtime channel between your devices (see Sync, above, for what each path carries)',
-    'privacy.net.li2':         '<strong>OPDS catalog browsing</strong> — you connect to third-party book catalogs you configure yourself (ContinuousReader only)',
-    'privacy.net.li3':         '<strong>URL import</strong> — when you drag a URL into the import dialog to download a book file',
-    'privacy.net.p2':          'No network access occurs during reading. Translation uses Apple’s on-device Translation framework — <strong>nothing leaves your device</strong>.',
+    'privacy.net.p1':          'JustReader has essentially no network footprint — only URL import touches the network. ContinuousReader uses the network for sync and OPDS browsing when those are enabled. Specifically:',
+    'privacy.net.li1':         '<strong>Sync</strong> is enabled (ContinuousReader only) — book files go through Apple iCloud Drive, bookmarks and metadata through Apple iCloud Key-Value Store, and live position updates through an encrypted realtime channel between your devices (see Sync, above, for what each path carries)',
+    'privacy.net.li2':         '<strong>OPDS catalog browsing</strong> (ContinuousReader only) — you connect to third-party book catalogs you configure yourself',
+    'privacy.net.li3':         '<strong>URL import</strong> (both apps) — when you drag a URL into the import dialog to download a book file',
+    'privacy.net.p2':          'During the act of reading, the only traffic is the position sync covered above — and that carries only a hashed book ID, a paragraph anchor, and a progress percentage, never any content. Translation is on-device through Apple’s Translation framework — <strong>nothing about the book itself ever leaves your device</strong>.',
     'privacy.third.h':         'Third-party services',
     'privacy.third.p':         'The apps do not integrate any third-party analytics, crash reporting, advertising, or tracking services. The external dependencies are Apple’s own frameworks (iCloud, Translation), and — only when you turn on sync — Ably (an encrypted realtime relay for your reading position) and a Cloudflare Worker (which mints short-lived tokens that let your devices connect to that relay). Both see only a random identifier we keep in your iCloud Keychain — never your name, email, or anything tied to your real identity — and neither retains the messages flowing through.',
     'privacy.kids.h':          'Children’s privacy',
@@ -939,6 +939,52 @@ const translations = {
     'contact.form.message':    'Сообщение',
     'contact.form.submit':     'Отправить',
     'contact.note':            'Можно также написать напрямую на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Всё делает один разработчик, поэтому ответы обычно занимают день-два — но на каждое сообщение приходит настоящий ответ.',
+
+    // ---------- Privacy page ----------
+    'meta.privacy.title':   'Политика конфиденциальности — ContinuousReader',
+    'meta.privacy.desc':    'Политика конфиденциальности ContinuousReader. Никакой аналитики, никакого трекинга, никакой телеметрии. Ваши привычки чтения принадлежат только вам.',
+    'meta.privacy.ogTitle': 'Политика конфиденциальности — ContinuousReader',
+    'meta.privacy.ogDesc':  'Никакой аналитики, никакого трекинга, никакой телеметрии. Ваши привычки чтения принадлежат только вам.',
+
+    'privacy.header.eyebrow':  'Ваши данные, ваши устройства',
+    'privacy.header.title':    'Политика <em>конфиденциальности</em>',
+    'privacy.header.subtitle': 'Обновлено: май 2026',
+
+    'privacy.short.h':         'Коротко',
+    'privacy.short.p':         'ContinuousReader и JustReader не собирают, не анализируют и не продают никаких персональных данных. <strong>Никакой аналитики, никакой телеметрии, никакого трекинга, никакой рекламы.</strong> Ваши привычки чтения остаются с вами — на ваших собственных устройствах, в вашем собственном iCloud-аккаунте если вы включили синхронизацию, и кратковременно «в полёте» между вашими устройствами, когда синхронизация передаёт свежую позицию чтения с одного устройства на другое. Больше нигде и ничего.',
+
+    'privacy.local.h':         'Данные на вашем устройстве',
+    'privacy.local.p':         'Все данные приложения хранятся локально на вашем устройстве:',
+    'privacy.local.li1':       '<strong>Книги</strong> — конвертированы в HTML и хранятся в Documents-папке приложения. Эти файлы можно посмотреть через Finder.',
+    'privacy.local.li2':       '<strong>Позиции чтения, закладки, заметки</strong> — хранятся в локальной SwiftData-базе внутри песочницы приложения.',
+    'privacy.local.li3':       '<strong>Настройки читалки</strong> — шрифт, тема, параметры разметки — в UserDefaults на каждом устройстве.',
+    'privacy.local.li4':       '<strong>История переводов</strong> — если включён сбор статистики перевода, искавшиеся слова сохраняются локально. Сбор можно выключить или историю очистить в любой момент.',
+
+    'privacy.cloud.h':         'Синхронизация (опционально, только ContinuousReader)',
+    'privacy.cloud.p1':        'Когда вы включаете синхронизацию, ваши данные чтения живут только в трёх местах — и перемещаются только между ними:',
+    'privacy.cloud.li1':       '<strong>Ваши собственные устройства</strong>, локально — тот же контент на каждом устройстве с установленным приложением. Это же у вас есть и при выключенной синхронизации.',
+    'privacy.cloud.li2':       '<strong>Ваш iCloud-аккаунт</strong>, под вашим Apple ID. Хостит Apple; разработчик доступа не имеет. Конкретно: файлы книг (конвертированный HTML, обложки, метаданные книги) — в iCloud Drive; закладки, заметки, метаданные библиотеки, папки, OPDS-каталоги и резервная копия последней позиции чтения — в iCloud Key-Value Store; записи переводов, если вы согласились на их сбор — в iCloud Drive.',
+    'privacy.cloud.li3':       '<strong>В полёте, между вашими устройствами</strong> — когда вы перелистываете страницу, новая позиция передаётся на остальные ваши устройства через зашифрованный realtime-канал. Полезная нагрузка содержит хэшированный идентификатор книги, якорь параграфа внутри книги и процент прочитанного — никаких названий, никакого контента, никаких имён. Сообщения проходят насквозь и в канале не сохраняются. Передачу обеспечивает Ably; токены, дающие вашим устройствам подключиться, выпускает небольшой Cloudflare Worker. Оба видят только случайно сгенерированный идентификатор пользователя, который хранится в вашем iCloud Keychain.',
+    'privacy.cloud.p2':        'Синхронизацию можно выключить в любой момент; библиотека продолжит работать локально на каждом устройстве.',
+
+    'privacy.net.h':           'Доступ в сеть',
+    'privacy.net.p1':          'JustReader практически не использует сеть — только импорт книг по URL обращается к сети. ContinuousReader использует сеть для синхронизации и просмотра OPDS-каталогов, когда они включены. Конкретно:',
+    'privacy.net.li1':         '<strong>Синхронизация</strong> включена (только ContinuousReader) — файлы книг идут через Apple iCloud Drive, закладки и метаданные — через Apple iCloud Key-Value Store, а живые обновления позиции — через зашифрованный realtime-канал между вашими устройствами (см. «Синхронизация» выше для деталей по каждому маршруту)',
+    'privacy.net.li2':         '<strong>Просмотр OPDS-каталога</strong> (только ContinuousReader) — вы подключаетесь к каталогам третьих сторон, которые сами настраиваете',
+    'privacy.net.li3':         '<strong>Импорт по URL</strong> (оба приложения) — когда вы перетаскиваете URL в диалог импорта чтобы скачать файл книги',
+    'privacy.net.p2':          'Во время самого чтения единственный сетевой трафик — это синхронизация позиции, описанная выше, и она передаёт только хэшированный идентификатор книги, якорь параграфа и процент прочитанного, никакого контента. Перевод работает on-device через Apple Translation framework — <strong>ничто о самой книге не покидает ваше устройство</strong>.',
+
+    'privacy.third.h':         'Сторонние сервисы',
+    'privacy.third.p':         'Приложения не интегрируют сторонней аналитики, отчётов о падениях, рекламы и трекинга. Внешние зависимости — собственные Apple-фреймворки (iCloud, Translation), и — только при включённой синхронизации — Ably (зашифрованный realtime-канал для вашей позиции чтения) и Cloudflare Worker (выпускающий короткоживущие токены, чтобы ваши устройства могли подключаться к этому реле). Оба видят только случайный идентификатор, хранящийся в вашем iCloud Keychain — никогда ваше имя, email или что-либо привязанное к вашей реальной личности — и ни один из них не сохраняет проходящие сообщения.',
+
+    'privacy.kids.h':          'Конфиденциальность детей',
+    'privacy.kids.p':          'Приложения не собирают персональную информацию ни от кого, включая детей до 13 лет.',
+
+    'privacy.changes.h':       'Изменения в этой политике',
+    'privacy.changes.p':       'Если эта политика изменится, обновлённая версия появится здесь с новой датой «Обновлено». Сами приложения данные не собирают, так что изменения будут отражать только новые функции (например, опциональные облачные сервисы).',
+
+    'privacy.contact.h':       'Связь',
+    'privacy.contact.p':       'Вопросы по конфиденциальности: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
   },
 
   // ============================================================
@@ -1083,6 +1129,52 @@ const translations = {
     'contact.form.message':    'Повідомлення',
     'contact.form.submit':     'Надіслати',
     'contact.note':            'Можна також написати напряму на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Усім займається один розробник, тому відповіді зазвичай надходять за день-два — але на кожне повідомлення приходить справжня відповідь.',
+
+    // ---------- Privacy page ----------
+    'meta.privacy.title':   'Політика конфіденційності — ContinuousReader',
+    'meta.privacy.desc':    'Політика конфіденційності ContinuousReader. Жодної аналітики, жодного трекінгу, жодної телеметрії. Ваші читацькі звички належать тільки вам.',
+    'meta.privacy.ogTitle': 'Політика конфіденційності — ContinuousReader',
+    'meta.privacy.ogDesc':  'Жодної аналітики, жодного трекінгу, жодної телеметрії. Ваші читацькі звички належать тільки вам.',
+
+    'privacy.header.eyebrow':  'Ваші дані, ваші пристрої',
+    'privacy.header.title':    'Політика <em>конфіденційності</em>',
+    'privacy.header.subtitle': 'Оновлено: травень 2026',
+
+    'privacy.short.h':         'Коротко',
+    'privacy.short.p':         'ContinuousReader і JustReader не збирають, не аналізують і не продають жодних персональних даних. <strong>Жодної аналітики, жодної телеметрії, жодного трекінгу, жодної реклами.</strong> Ваші читацькі звички залишаються з вами — на ваших власних пристроях, у вашому власному iCloud-акаунті, якщо ви ввімкнули синхронізацію, і коротко «в польоті» між вашими пристроями, коли синхронізація передає свіжу позицію читання з одного на інший. Більше ніде і нічого.',
+
+    'privacy.local.h':         'Дані на вашому пристрої',
+    'privacy.local.p':         'Усі дані застосунку зберігаються локально на вашому пристрої:',
+    'privacy.local.li1':       '<strong>Книги</strong> — сконвертовані в HTML і зберігаються в Documents-каталозі застосунку. Ці файли можна переглянути через Finder.',
+    'privacy.local.li2':       '<strong>Позиції читання, закладки, нотатки</strong> — зберігаються в локальній SwiftData-базі всередині пісочниці застосунку.',
+    'privacy.local.li3':       '<strong>Налаштування читалки</strong> — шрифт, тема, параметри розмітки — у UserDefaults на кожному пристрої.',
+    'privacy.local.li4':       '<strong>Історія перекладів</strong> — якщо ввімкнено збирання статистики перекладу, шукані слова зберігаються локально. Збирання можна вимкнути або історію очистити в будь-який момент.',
+
+    'privacy.cloud.h':         'Синхронізація (опційно, лише ContinuousReader)',
+    'privacy.cloud.p1':        'Коли ви вмикаєте синхронізацію, ваші дані читання живуть лише в трьох місцях — і переміщаються лише між ними:',
+    'privacy.cloud.li1':       '<strong>Ваші власні пристрої</strong>, локально — той самий вміст на кожному пристрої зі встановленим застосунком. Те саме, що ви маєте і з вимкненою синхронізацією.',
+    'privacy.cloud.li2':       '<strong>Ваш iCloud-акаунт</strong>, під вашим Apple ID. Хостить Apple; розробник доступу не має. Конкретно: файли книг (сконвертований HTML, обкладинки, метадані книги) — у iCloud Drive; закладки, нотатки, метадані бібліотеки, теки, OPDS-каталоги та резервна копія останньої позиції читання — у iCloud Key-Value Store; записи перекладів, якщо ви погодилися на їх збирання — у iCloud Drive.',
+    'privacy.cloud.li3':       '<strong>У польоті, між вашими пристроями</strong> — коли ви гортаєте сторінку, нова позиція передається на решту ваших пристроїв через зашифрований realtime-канал. Корисне навантаження містить хешований ідентифікатор книги, якір абзацу всередині книги та відсоток прочитаного — жодних назв, жодного вмісту, жодних імен. Повідомлення проходять наскрізь і в каналі не зберігаються. Передачу забезпечує Ably; токени, що дозволяють вашим пристроям підключитися, випускає невеликий Cloudflare Worker. Обидва бачать лише випадково згенерований ідентифікатор користувача, який зберігається у вашому iCloud Keychain.',
+    'privacy.cloud.p2':        'Синхронізацію можна вимкнути в будь-який момент; бібліотека продовжить працювати локально на кожному пристрої.',
+
+    'privacy.net.h':           'Доступ до мережі',
+    'privacy.net.p1':          'JustReader практично не використовує мережу — лише імпорт книг за URL звертається до мережі. ContinuousReader використовує мережу для синхронізації та перегляду OPDS-каталогів, коли вони ввімкнені. Конкретно:',
+    'privacy.net.li1':         '<strong>Синхронізація</strong> ввімкнена (лише ContinuousReader) — файли книг ідуть через Apple iCloud Drive, закладки і метадані — через Apple iCloud Key-Value Store, а живі оновлення позиції — через зашифрований realtime-канал між вашими пристроями (див. «Синхронізація» вище для деталей по кожному маршруту)',
+    'privacy.net.li2':         '<strong>Перегляд OPDS-каталогу</strong> (лише ContinuousReader) — ви підключаєтеся до каталогів третіх сторін, які налаштовуєте самі',
+    'privacy.net.li3':         '<strong>Імпорт за URL</strong> (обидва застосунки) — коли ви перетягуєте URL у діалог імпорту, щоб завантажити файл книги',
+    'privacy.net.p2':          'Під час самого читання єдиний мережевий трафік — це синхронізація позиції, описана вище, і вона передає лише хешований ідентифікатор книги, якір абзацу та відсоток прочитаного, жодного вмісту. Переклад працює on-device через Apple Translation framework — <strong>ніщо про саму книгу не покидає ваш пристрій</strong>.',
+
+    'privacy.third.h':         'Сторонні сервіси',
+    'privacy.third.p':         'Застосунки не інтегрують сторонньої аналітики, звітів про збої, реклами і трекінгу. Зовнішні залежності — власні Apple-фреймворки (iCloud, Translation), і — лише при ввімкненій синхронізації — Ably (зашифрований realtime-канал для вашої позиції читання) та Cloudflare Worker (що випускає короткоживучі токени, аби ваші пристрої могли підключатися до цього реле). Обидва бачать лише випадковий ідентифікатор, що зберігається у вашому iCloud Keychain — ніколи ваше імʼя, email або щось привʼязане до вашої реальної особистості — і жоден з них не зберігає повідомлення, що проходять.',
+
+    'privacy.kids.h':          'Конфіденційність дітей',
+    'privacy.kids.p':          'Застосунки не збирають персональну інформацію ні від кого, включно з дітьми до 13 років.',
+
+    'privacy.changes.h':       'Зміни в цій політиці',
+    'privacy.changes.p':       'Якщо ця політика зміниться, оновлена версія зʼявиться тут із новою датою «Оновлено». Самі застосунки даних не збирають, тож зміни відображатимуть лише нові функції (наприклад, опційні хмарні сервіси).',
+
+    'privacy.contact.h':       'Звʼязок',
+    'privacy.contact.p':       'Питання щодо конфіденційності: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
   },
   // ============================================================
   // SPANISH — index.html complete; other pages fall back to EN
@@ -1225,6 +1317,52 @@ const translations = {
     'contact.form.message':    'Mensaje',
     'contact.form.submit':     'Enviar mensaje',
     'contact.note':            'También puedes escribir directamente a <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un solo desarrollador se ocupa de todo, así que las respuestas suelen tardar un día o dos — pero todo mensaje recibe una respuesta real.',
+
+    // ---------- Privacy page ----------
+    'meta.privacy.title':   'Política de privacidad — ContinuousReader',
+    'meta.privacy.desc':    'Política de privacidad de ContinuousReader. Sin analíticas, sin rastreo, sin telemetría. Tus hábitos de lectura son tuyos.',
+    'meta.privacy.ogTitle': 'Política de privacidad — ContinuousReader',
+    'meta.privacy.ogDesc':  'Sin analíticas, sin rastreo, sin telemetría. Tus hábitos de lectura son tuyos.',
+
+    'privacy.header.eyebrow':  'Tus datos, tus dispositivos',
+    'privacy.header.title':    'Política de <em>privacidad</em>',
+    'privacy.header.subtitle': 'Última actualización: mayo de 2026',
+
+    'privacy.short.h':         'La versión corta',
+    'privacy.short.p':         'ContinuousReader y JustReader no recopilan, analizan ni venden ningún dato personal. <strong>Sin analíticas, sin telemetría, sin rastreo, sin publicidad.</strong> Tus hábitos de lectura se quedan contigo — en tus propios dispositivos, en tu propia cuenta de iCloud si activas la sincronización, y brevemente en tránsito entre tus dispositivos cuando la sincronización pasa una posición de lectura actualizada de uno a otro. Nada más, en ningún otro sitio.',
+
+    'privacy.local.h':         'Datos almacenados en tu dispositivo',
+    'privacy.local.p':         'Todos los datos de la app se almacenan localmente en tu dispositivo:',
+    'privacy.local.li1':       '<strong>Libros</strong> — convertidos a HTML y guardados en el directorio Documents de la app. Puedes ver estos archivos en Finder.',
+    'privacy.local.li2':       '<strong>Posiciones de lectura, marcadores, notas</strong> — guardados en una base de datos SwiftData local dentro del sandbox de la app.',
+    'privacy.local.li3':       '<strong>Ajustes del lector</strong> — fuente, tema, preferencias de diseño — guardados en UserDefaults en cada dispositivo.',
+    'privacy.local.li4':       '<strong>Historial de traducciones</strong> — si activas el seguimiento de estadísticas de traducción, las palabras buscadas se guardan localmente. Puedes desactivar el seguimiento o borrar el historial en cualquier momento.',
+
+    'privacy.cloud.h':         'Sincronización (opcional, solo ContinuousReader)',
+    'privacy.cloud.p1':        'Cuando activas la sincronización, tus datos de lectura viven en solo tres lugares — y viajan solo entre ellos:',
+    'privacy.cloud.li1':       '<strong>Tus propios dispositivos</strong>, localmente — el mismo contenido en cada dispositivo donde está instalada la app. Esto también es exactamente lo que tienes cuando la sincronización está desactivada.',
+    'privacy.cloud.li2':       '<strong>Tu cuenta de iCloud</strong>, bajo tu Apple ID. Apple la aloja; el desarrollador no tiene acceso. En concreto: los archivos de libros (HTML convertido, portadas, metadatos por libro) van a iCloud Drive; marcadores, notas, metadatos de biblioteca, carpetas, catálogos OPDS y una copia de seguridad de tu última posición de lectura van a iCloud Key-Value Store; los registros de traducción, si has optado por el seguimiento, van a iCloud Drive.',
+    'privacy.cloud.li3':       '<strong>En tránsito, entre tus dispositivos</strong> — cuando pasas una página, la nueva posición se transmite a tus otros dispositivos a través de un canal en tiempo real cifrado. El payload contiene un identificador hasheado del libro, un anclaje de párrafo dentro del libro y un porcentaje de progreso — sin títulos, sin contenido, sin nombres. Los mensajes pasan a través y no se retienen en el canal. El relay lo opera Ably; los tokens que permiten que tus dispositivos se conecten los emite un pequeño Cloudflare Worker. Ambos ven solo un identificador de usuario generado aleatoriamente que guardamos en tu iCloud Keychain.',
+    'privacy.cloud.p2':        'Puedes desactivar la sincronización en cualquier momento; tu biblioteca sigue funcionando localmente en cada dispositivo.',
+
+    'privacy.net.h':           'Acceso a la red',
+    'privacy.net.p1':          'JustReader prácticamente no usa la red — solo la importación por URL accede a la red. ContinuousReader usa la red para sincronización y navegación de catálogos OPDS cuando las activas. En concreto:',
+    'privacy.net.li1':         '<strong>La sincronización</strong> está activada (solo ContinuousReader) — los archivos de libros van por Apple iCloud Drive, marcadores y metadatos por Apple iCloud Key-Value Store, y las actualizaciones de posición en vivo por un canal en tiempo real cifrado entre tus dispositivos (ver Sincronización arriba para qué transporta cada vía)',
+    'privacy.net.li2':         '<strong>Navegación de catálogos OPDS</strong> (solo ContinuousReader) — te conectas a catálogos de libros de terceros que configuras tú mismo',
+    'privacy.net.li3':         '<strong>Importación por URL</strong> (ambas apps) — cuando arrastras una URL al diálogo de importación para descargar un archivo de libro',
+    'privacy.net.p2':          'Durante la lectura propiamente dicha, el único tráfico es la sincronización de posición descrita arriba — y solo transporta un identificador hasheado del libro, un anclaje de párrafo y un porcentaje de progreso, sin contenido. La traducción usa el framework Translation de Apple en el dispositivo — <strong>nada del libro mismo sale de tu dispositivo</strong>.',
+
+    'privacy.third.h':         'Servicios de terceros',
+    'privacy.third.p':         'Las apps no integran ningún servicio de terceros de analíticas, informes de fallos, publicidad o rastreo. Las dependencias externas son los frameworks de Apple (iCloud, Translation), y — solo cuando activas la sincronización — Ably (un relay en tiempo real cifrado para tu posición de lectura) y un Cloudflare Worker (que emite tokens de corta duración que permiten a tus dispositivos conectarse a ese relay). Ambos ven solo un identificador aleatorio que guardamos en tu iCloud Keychain — nunca tu nombre, email o nada vinculado a tu identidad real — y ninguno conserva los mensajes que pasan por ellos.',
+
+    'privacy.kids.h':          'Privacidad de menores',
+    'privacy.kids.p':          'Las apps no recopilan información personal de nadie, incluidos menores de 13 años.',
+
+    'privacy.changes.h':       'Cambios en esta política',
+    'privacy.changes.p':       'Si esta política cambia, la versión actualizada se publicará aquí con una nueva fecha de "Última actualización". Las propias apps no recopilan datos, así que los cambios solo reflejarían funciones nuevas (como servicios opcionales en la nube).',
+
+    'privacy.contact.h':       'Contacto',
+    'privacy.contact.p':       'Preguntas sobre privacidad: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
   },
   // ============================================================
   // FRENCH — index.html complete; other pages fall back to EN
@@ -1369,6 +1507,52 @@ const translations = {
     'contact.form.message':    'Message',
     'contact.form.submit':     'Envoyer',
     'contact.note':            'Vous pouvez aussi écrire directement à <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un seul développeur gère tout, les réponses prennent donc généralement un ou deux jours — mais chaque message reçoit une vraie réponse.',
+
+    // ---------- Privacy page ----------
+    'meta.privacy.title':   'Politique de confidentialité — ContinuousReader',
+    'meta.privacy.desc':    'Politique de confidentialité de ContinuousReader. Pas d’analytique, pas de tracking, pas de télémétrie. Vos habitudes de lecture vous appartiennent.',
+    'meta.privacy.ogTitle': 'Politique de confidentialité — ContinuousReader',
+    'meta.privacy.ogDesc':  'Pas d’analytique, pas de tracking, pas de télémétrie. Vos habitudes de lecture vous appartiennent.',
+
+    'privacy.header.eyebrow':  'Vos données, vos appareils',
+    'privacy.header.title':    'Politique de <em>confidentialité</em>',
+    'privacy.header.subtitle': 'Dernière mise à jour : mai 2026',
+
+    'privacy.short.h':         'La version courte',
+    'privacy.short.p':         'ContinuousReader et JustReader ne collectent, n’analysent et ne vendent aucune donnée personnelle. <strong>Pas d’analytique, pas de télémétrie, pas de tracking, pas de publicité.</strong> Vos habitudes de lecture restent avec vous — sur vos propres appareils, dans votre propre compte iCloud si vous activez la synchronisation, et brièvement en transit entre vos appareils quand la synchronisation transmet une position de lecture fraîche d’un appareil à un autre. Rien d’autre, nulle part ailleurs.',
+
+    'privacy.local.h':         'Données stockées sur votre appareil',
+    'privacy.local.p':         'Toutes les données de l’app sont stockées localement sur votre appareil :',
+    'privacy.local.li1':       '<strong>Livres</strong> — convertis en HTML et stockés dans le répertoire Documents de l’app. Vous pouvez parcourir ces fichiers dans le Finder.',
+    'privacy.local.li2':       '<strong>Positions de lecture, marque-pages, notes</strong> — stockés dans une base de données SwiftData locale à l’intérieur du sandbox de l’app.',
+    'privacy.local.li3':       '<strong>Réglages du lecteur</strong> — police, thème, préférences de mise en page — stockés dans UserDefaults sur chaque appareil.',
+    'privacy.local.li4':       '<strong>Historique de traduction</strong> — si le suivi des statistiques de traduction est activé, les mots recherchés sont stockés localement. Vous pouvez désactiver le suivi ou effacer l’historique à tout moment.',
+
+    'privacy.cloud.h':         'Synchronisation (optionnelle, ContinuousReader uniquement)',
+    'privacy.cloud.p1':        'Quand vous activez la synchronisation, vos données de lecture vivent dans trois endroits seulement — et ne voyagent qu’entre eux :',
+    'privacy.cloud.li1':       '<strong>Vos propres appareils</strong>, localement — le même contenu stocké sur chaque appareil où l’app est installée. C’est exactement ce que vous avez aussi quand la synchronisation est désactivée.',
+    'privacy.cloud.li2':       '<strong>Votre compte iCloud</strong>, sous votre identifiant Apple. Apple l’héberge ; le développeur n’y a pas accès. Précisément : les fichiers de livres (HTML converti, couvertures, métadonnées par livre) vont dans iCloud Drive ; marque-pages, notes, métadonnées de bibliothèque, dossiers, catalogues OPDS et une sauvegarde de votre dernière position de lecture vont dans iCloud Key-Value Store ; les enregistrements de traduction, si vous avez activé le suivi, vont dans iCloud Drive.',
+    'privacy.cloud.li3':       '<strong>En transit, entre vos appareils</strong> — quand vous tournez une page, la nouvelle position est relayée vers vos autres appareils via un canal temps réel chiffré. La charge utile contient un identifiant haché du livre, une ancre de paragraphe dans le livre et un pourcentage de progression — pas de titres, pas de contenu, pas de noms. Les messages passent et ne sont pas conservés sur le canal. Le relais est opéré par Ably ; les tokens permettant à vos appareils de s’y connecter sont émis par un petit Cloudflare Worker. Les deux ne voient qu’un identifiant utilisateur généré aléatoirement que nous gardons dans votre iCloud Keychain.',
+    'privacy.cloud.p2':        'Vous pouvez désactiver la synchronisation à tout moment ; votre bibliothèque continue de fonctionner localement sur chaque appareil.',
+
+    'privacy.net.h':           'Accès au réseau',
+    'privacy.net.p1':          'JustReader n’utilise quasiment pas le réseau — seule l’importation par URL y accède. ContinuousReader utilise le réseau pour la synchronisation et la navigation de catalogues OPDS quand vous les activez. Précisément :',
+    'privacy.net.li1':         '<strong>La synchronisation</strong> est activée (ContinuousReader uniquement) — les fichiers de livres passent par Apple iCloud Drive, les marque-pages et métadonnées par Apple iCloud Key-Value Store, et les mises à jour de position en direct par un canal temps réel chiffré entre vos appareils (voir Synchronisation ci-dessus pour ce que chaque voie transporte)',
+    'privacy.net.li2':         '<strong>Navigation de catalogues OPDS</strong> (ContinuousReader uniquement) — vous vous connectez à des catalogues de livres tiers que vous configurez vous-même',
+    'privacy.net.li3':         '<strong>Importation par URL</strong> (les deux apps) — quand vous glissez une URL dans la boîte de dialogue d’import pour télécharger un fichier de livre',
+    'privacy.net.p2':          'Pendant la lecture elle-même, le seul trafic est la synchronisation de position décrite ci-dessus — et elle ne transporte qu’un identifiant haché du livre, une ancre de paragraphe et un pourcentage de progression, jamais de contenu. La traduction utilise le framework Translation d’Apple sur l’appareil — <strong>rien du livre lui-même ne quitte votre appareil</strong>.',
+
+    'privacy.third.h':         'Services tiers',
+    'privacy.third.p':         'Les apps n’intègrent aucun service tiers d’analytique, de rapport de crash, de publicité ou de tracking. Les dépendances externes sont les frameworks d’Apple (iCloud, Translation), et — uniquement quand vous activez la synchronisation — Ably (un relais temps réel chiffré pour votre position de lecture) et un Cloudflare Worker (qui émet des tokens de courte durée permettant à vos appareils de se connecter à ce relais). Les deux ne voient qu’un identifiant aléatoire que nous gardons dans votre iCloud Keychain — jamais votre nom, email ou quoi que ce soit lié à votre identité réelle — et ni l’un ni l’autre ne conserve les messages qui transitent.',
+
+    'privacy.kids.h':          'Confidentialité des enfants',
+    'privacy.kids.p':          'Les apps ne collectent d’informations personnelles auprès de personne, y compris les enfants de moins de 13 ans.',
+
+    'privacy.changes.h':       'Modifications de cette politique',
+    'privacy.changes.p':       'Si cette politique change, la version mise à jour sera publiée ici avec une nouvelle date de « Dernière mise à jour ». Les apps elles-mêmes ne collectent pas de données, donc les changements ne refléteraient que de nouvelles fonctionnalités (comme des services cloud optionnels).',
+
+    'privacy.contact.h':       'Contact',
+    'privacy.contact.p':       'Questions sur la confidentialité : <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
   },
   // ============================================================
   // GERMAN — index.html complete; other pages fall back to EN
@@ -1512,6 +1696,52 @@ const translations = {
     'contact.form.message':    'Nachricht',
     'contact.form.submit':     'Nachricht senden',
     'contact.note':            'Du kannst auch direkt an <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a> schreiben. Ein einzelner Entwickler kümmert sich um alles, daher dauern Antworten meist einen oder zwei Tage — aber jede Nachricht bekommt eine echte Antwort.',
+
+    // ---------- Privacy page ----------
+    'meta.privacy.title':   'Datenschutz — ContinuousReader',
+    'meta.privacy.desc':    'Datenschutzerklärung von ContinuousReader. Keine Analyse, kein Tracking, keine Telemetrie. Deine Lesegewohnheiten gehören dir.',
+    'meta.privacy.ogTitle': 'Datenschutz — ContinuousReader',
+    'meta.privacy.ogDesc':  'Keine Analyse, kein Tracking, keine Telemetrie. Deine Lesegewohnheiten gehören dir.',
+
+    'privacy.header.eyebrow':  'Deine Daten, deine Geräte',
+    'privacy.header.title':    '<em>Datenschutz</em>erklärung',
+    'privacy.header.subtitle': 'Stand: Mai 2026',
+
+    'privacy.short.h':         'Die Kurzfassung',
+    'privacy.short.p':         'ContinuousReader und JustReader sammeln, analysieren und verkaufen keine persönlichen Daten. <strong>Keine Analyse, keine Telemetrie, kein Tracking, keine Werbung.</strong> Deine Lesegewohnheiten bleiben bei dir — auf deinen eigenen Geräten, in deinem eigenen iCloud-Konto, wenn du Sync aktivierst, und kurzzeitig auf dem Weg zwischen deinen Geräten, wenn Sync eine frische Leseposition von einem ans andere übergibt. Nichts darüber hinaus, nirgendwo sonst.',
+
+    'privacy.local.h':         'Daten auf deinem Gerät',
+    'privacy.local.p':         'Alle App-Daten werden lokal auf deinem Gerät gespeichert:',
+    'privacy.local.li1':       '<strong>Bücher</strong> — in HTML konvertiert und im Documents-Verzeichnis der App abgelegt. Diese Dateien lassen sich im Finder durchsuchen.',
+    'privacy.local.li2':       '<strong>Lesepositionen, Lesezeichen, Notizen</strong> — in einer lokalen SwiftData-Datenbank innerhalb der App-Sandbox.',
+    'privacy.local.li3':       '<strong>Reader-Einstellungen</strong> — Schriftart, Theme, Layout-Präferenzen — in UserDefaults auf jedem Gerät.',
+    'privacy.local.li4':       '<strong>Übersetzungsverlauf</strong> — wenn die Erfassung der Übersetzungsstatistik aktiviert ist, werden die nachgeschlagenen Wörter lokal gespeichert. Du kannst die Erfassung jederzeit ausschalten oder den Verlauf löschen.',
+
+    'privacy.cloud.h':         'Synchronisation (optional, nur ContinuousReader)',
+    'privacy.cloud.p1':        'Wenn du Sync aktivierst, leben deine Lesedaten an genau drei Orten — und reisen nur zwischen ihnen:',
+    'privacy.cloud.li1':       '<strong>Deine eigenen Geräte</strong>, lokal — derselbe Inhalt auf jedem Gerät, auf dem die App installiert ist. Das ist auch genau das, was du hast, wenn Sync ausgeschaltet ist.',
+    'privacy.cloud.li2':       '<strong>Dein iCloud-Konto</strong>, unter deiner Apple-ID. Apple hostet es; der Entwickler hat keinen Zugriff. Konkret: Buchdateien (konvertiertes HTML, Cover, Per-Buch-Metadaten) gehen in iCloud Drive; Lesezeichen, Notizen, Bibliotheks-Metadaten, Ordner, OPDS-Kataloge und ein Backup deiner letzten Leseposition gehen in den iCloud Key-Value Store; Übersetzungsdatensätze, wenn du dich für die Erfassung entschieden hast, gehen in iCloud Drive.',
+    'privacy.cloud.li3':       '<strong>Unterwegs, zwischen deinen Geräten</strong> — wenn du eine Seite umblätterst, wird die neue Position über einen verschlüsselten Echtzeitkanal an deine anderen Geräte gesendet. Die Nutzlast enthält eine gehashte Buchkennung, einen Absatz-Anker innerhalb des Buches und einen Fortschritts-Prozentwert — keine Titel, keine Inhalte, keine Namen. Nachrichten passieren den Kanal und werden dort nicht gespeichert. Das Relay betreibt Ably; die Tokens, mit denen sich deine Geräte verbinden können, erstellt ein kleiner Cloudflare Worker. Beide sehen nur eine zufällig generierte Benutzerkennung, die wir in deinem iCloud Keychain ablegen.',
+    'privacy.cloud.p2':        'Du kannst Sync jederzeit deaktivieren; deine Bibliothek funktioniert weiterhin lokal auf jedem Gerät.',
+
+    'privacy.net.h':           'Netzwerkzugriff',
+    'privacy.net.p1':          'JustReader nutzt praktisch kein Netzwerk — nur der URL-Import greift darauf zu. ContinuousReader nutzt das Netzwerk außerdem für Sync und OPDS-Browsing, wenn du diese aktivierst. Konkret:',
+    'privacy.net.li1':         '<strong>Sync</strong> aktiviert ist (nur ContinuousReader) — Buchdateien laufen über Apple iCloud Drive, Lesezeichen und Metadaten über Apple iCloud Key-Value Store, und Live-Positions-Updates über einen verschlüsselten Echtzeitkanal zwischen deinen Geräten (siehe „Synchronisation" oben für die Details jedes Weges)',
+    'privacy.net.li2':         '<strong>OPDS-Katalog-Browsing</strong> (nur ContinuousReader) — du verbindest dich mit Drittanbieter-Buchkatalogen, die du selbst konfigurierst',
+    'privacy.net.li3':         '<strong>URL-Import</strong> (beide Apps) — wenn du eine URL in den Import-Dialog ziehst, um eine Buchdatei herunterzuladen',
+    'privacy.net.p2':          'Während des eigentlichen Lesens ist der einzige Netzwerkverkehr die oben beschriebene Positions-Sync — und die überträgt nur eine gehashte Buchkennung, einen Absatz-Anker und einen Fortschritts-Prozentwert, niemals Inhalte. Die Übersetzung läuft on-device über das Translation-Framework von Apple — <strong>nichts vom Buch selbst verlässt dein Gerät</strong>.',
+
+    'privacy.third.h':         'Drittanbieter-Dienste',
+    'privacy.third.p':         'Die Apps integrieren keine Drittanbieter-Dienste für Analyse, Crash-Reports, Werbung oder Tracking. Die externen Abhängigkeiten sind Apples eigene Frameworks (iCloud, Translation) und — nur wenn du Sync aktivierst — Ably (ein verschlüsseltes Echtzeit-Relay für deine Leseposition) und ein Cloudflare Worker (der kurzlebige Tokens erstellt, mit denen sich deine Geräte mit diesem Relay verbinden können). Beide sehen nur eine zufällige Kennung, die wir in deinem iCloud Keychain ablegen — niemals deinen Namen, deine E-Mail oder etwas, das mit deiner echten Identität verknüpft ist — und keiner von beiden speichert die Nachrichten, die durchlaufen.',
+
+    'privacy.kids.h':          'Datenschutz für Kinder',
+    'privacy.kids.p':          'Die Apps sammeln keine personenbezogenen Daten von niemandem, einschließlich Kindern unter 13 Jahren.',
+
+    'privacy.changes.h':       'Änderungen an dieser Richtlinie',
+    'privacy.changes.p':       'Wenn sich diese Richtlinie ändert, wird die aktualisierte Version hier mit einem neuen „Stand:"-Datum veröffentlicht. Die Apps selbst sammeln keine Daten, daher würden Änderungen nur neue Funktionen widerspiegeln (z. B. optionale Cloud-Dienste).',
+
+    'privacy.contact.h':       'Kontakt',
+    'privacy.contact.p':       'Fragen zum Datenschutz: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
   },
 };
 

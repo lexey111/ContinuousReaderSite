@@ -1325,6 +1325,24 @@ section.feature-section { padding: 80px 0; }
 
 .feature-list li em { font-style: italic; color: var(--ink); }
 
+/* Inline modifier for prose-style bullets where <strong> is a
+   sentence subject (followed by a comma, em-dash, or colon) — not
+   a chip label. Resets the uppercase / sans / margin-right chip
+   styling so the surrounding punctuation reads naturally. Used on
+   privacy.html where the bullets are "<strong>Your own devices</strong>,
+   locally — …" rather than the features.html "<strong>Label</strong>
+   Description" chip+text pattern. */
+.feature-list--inline li strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--ink);
+  display: inline;
+  margin-right: 0;
+}
+
 /* Code inline */
 code {
   font-family: var(--mono);

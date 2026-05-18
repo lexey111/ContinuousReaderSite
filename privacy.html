@@ -75,7 +75,7 @@
       <p data-i18n="privacy.local.p">
         All app data is stored locally on your device:
       </p>
-      <ul class="feature-list">
+      <ul class="feature-list feature-list--inline">
         <li data-i18n="privacy.local.li1"><strong>Books</strong> — converted to HTML and stored in your app's
           Documents directory. You can browse these files in Finder.</li>
         <li data-i18n="privacy.local.li2"><strong>Reading positions, bookmarks, notes</strong> — stored in a
@@ -87,12 +87,12 @@
           disable tracking or clear the history at any time.</li>
       </ul>
 
-      <h3 data-i18n="privacy.cloud.h">Sync (optional)</h3>
+      <h3 data-i18n="privacy.cloud.h">Sync (optional, ContinuousReader only)</h3>
       <p data-i18n="privacy.cloud.p1">
         When you turn on sync, your reading data lives in only three places —
         and travels only between them:
       </p>
-      <ul class="feature-list">
+      <ul class="feature-list feature-list--inline">
         <li data-i18n="privacy.cloud.li1"><strong>Your own devices</strong>, locally — the same content stored
           on each device the app is installed on. This is also exactly what
           you have when sync is off.</li>
@@ -119,22 +119,28 @@
       </p>
 
       <h3 data-i18n="privacy.net.h">Network access</h3>
-      <p data-i18n="privacy.net.p1">The apps access the network only when:</p>
-      <ul class="feature-list">
-        <li data-i18n="privacy.net.li1"><strong>Sync</strong> is enabled — book files go through Apple iCloud
-          Drive, bookmarks and metadata through Apple iCloud Key-Value
-          Store, and live position updates through an encrypted realtime
-          channel between your devices (see Sync, above, for what each
-          path carries)</li>
-        <li data-i18n="privacy.net.li2"><strong>OPDS catalog browsing</strong> — you connect to third-party
-          book catalogs you configure yourself (ContinuousReader only)</li>
-        <li data-i18n="privacy.net.li3"><strong>URL import</strong> — when you drag a URL into the import
-          dialog to download a book file</li>
+      <p data-i18n="privacy.net.p1">
+        JustReader has essentially no network footprint — only URL import
+        touches the network. ContinuousReader uses the network for sync
+        and OPDS browsing when those are enabled. Specifically:
+      </p>
+      <ul class="feature-list feature-list--inline">
+        <li data-i18n="privacy.net.li1"><strong>Sync</strong> is enabled (ContinuousReader only) — book files
+          go through Apple iCloud Drive, bookmarks and metadata through
+          Apple iCloud Key-Value Store, and live position updates through
+          an encrypted realtime channel between your devices (see Sync,
+          above, for what each path carries)</li>
+        <li data-i18n="privacy.net.li2"><strong>OPDS catalog browsing</strong> (ContinuousReader only) — you
+          connect to third-party book catalogs you configure yourself</li>
+        <li data-i18n="privacy.net.li3"><strong>URL import</strong> (both apps) — when you drag a URL into
+          the import dialog to download a book file</li>
       </ul>
       <p data-i18n="privacy.net.p2">
-        No network access occurs during reading. Translation uses Apple's
-        on-device Translation framework — <strong>nothing leaves your
-        device</strong>.
+        During the act of reading, the only traffic is the position sync
+        covered above — and that carries only a hashed book ID, a paragraph
+        anchor, and a progress percentage, never any content. Translation
+        is on-device through Apple's Translation framework —
+        <strong>nothing about the book itself ever leaves your device</strong>.
       </p>
 
       <h3 data-i18n="privacy.third.h">Third-party services</h3>
@@ -202,7 +208,7 @@
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.col.product">Product</h5>
-      <ul class="feature-list">
+      <ul class="feature-list feature-list--inline">
         <li><a href="features.html" data-i18n="nav.features">Features</a></li>
         <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
         <li><a href="download.html" data-i18n="nav.download">Download</a></li>
@@ -210,14 +216,14 @@
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.col.info">Info</h5>
-      <ul class="feature-list">
+      <ul class="feature-list feature-list--inline">
         <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
         <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.col.language">Language</h5>
-      <ul class="feature-list">
+      <ul class="feature-list feature-list--inline">
         <li><a href="#" data-lang="en">English</a></li>
         <li><a href="#" data-lang="ru">Русский</a></li>
         <li><a href="#" data-lang="uk">Українська</a></li>
