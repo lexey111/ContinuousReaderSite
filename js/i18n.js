@@ -711,6 +711,10 @@ const translations = {
     'download.faq.a10':           'Your library keeps working locally. Without iCloud, devices just don’t sync — each one maintains its own state. You can use ContinuousReader entirely offline.',
     'download.faq.q11':           'What about <em>privacy</em>?',
     'download.faq.a11':           'No analytics, no telemetry, no tracking. Translation runs on-device through Apple’s framework. No network access during reading. <em>Your reading habits are your own.</em>',
+    'download.faq.q13':           'Will there be an <em>Android / Linux / Windows</em> version?',
+    'download.faq.a13.p1':        'Apple-only for now. ContinuousReader is built natively for macOS / iPadOS / iOS — that’s what makes the typography, sync, and gestures feel the way they do. Porting JustReader to Android, Linux, or Windows would mean rebuilding the rendering and conversion engine from scratch on each one, which only makes sense once there’s an audience large enough to sustain that work as a full-time effort instead of an after-hours side project.',
+    'download.faq.a13.p2':        'ContinuousReader sales are what funds that decision. If the Apple side finds its audience, JustReader has runway to grow beyond it.',
+
     'download.faq.q12':           '<em>Support</em>?',
     'download.faq.a12':           'Email: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. One developer handles everything, so response time runs in days rather than hours — but every message gets a real reply.',
 
