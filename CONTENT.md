@@ -73,7 +73,7 @@ What syncs: your position, your bookmarks, your notes, your library. What
 doesn't: the way each device is set up to read.
 
 A Mac is a chair, two-page spread, 32 pt serif. An iPad is one page, comfortable
-size, sometimes sepia. An iPhone is scroll mode, dark theme, small text, one
+size, sometimes ochre. An iPhone is scroll mode, dark theme, small text, one
 hand. Each screen has its own ideal setup. ContinuousReader remembers them
 separately — and keeps the reading itself in sync between them.
 
@@ -119,14 +119,17 @@ dump — browser defaults, ragged columns, no hyphenation.
 
 ContinuousReader does neither.
 
-Forty-one reading themes. Clean light and deep dark. Sepia and pastel for long
-sessions. High-contrast variants for outdoor reading. A **Typewriter** theme in
-ivory and dark brown — locked to American Typewriter, dressed in quiet
-steampunk: brass pocket-watch progress gauge, copper keycaps, mechanical
-drum-counter read-outs in the bottom bar. A **Terminal** theme — white
-monospace on deep blue. If you recognize the palette, you'll know why it's
-there. Three custom slots where you define your own colors — background, text,
-accent. Your palette, your theme.
+Forty-one reading themes. Clean light and deep dark. Warm ochre and cool
+pastels for long sessions. High-contrast variants for outdoor reading. A
+**Typewriter** theme in ivory and dark brown (light and dark variants) —
+locked to American Typewriter, dressed in quiet steampunk: a brass dashboard
+speedometer with a rolling needle that swaps to a vintage radio-dial carriage
+with a lit red pointer on narrower bars, copper keycaps, and mechanical
+drum-counter read-outs in the bottom bar for both the session timer and the
+page indicator. A **Terminal** theme — white monospace on deep blue. If you
+recognize the palette, you'll know why it's there. Three custom slots where
+you define your own colors — background, text, accent. Your palette, your
+theme.
 
 Nine typefaces across serif, sans, and monospace — all system fonts, rendered
 natively, no downloads. Justified text with real hyphenation in Latin, Cyrillic,
@@ -303,25 +306,19 @@ ContinuousReader only.
 **Intro:** The reading experience itself. Typography, themes, navigation, and
 the small things you interact with while reading a book.
 
-### Seventeen themes, organized in seven groups {CR+JR}
+### Forty-one themes, organized in three groups {CR+JR}
 
 Themes in ContinuousReader are more than color schemes. Each one defines
 background, text color, progress bar tint, bookmark marker palette, and — for
 some — the reading font itself.
 
-- **System**: Light, Dark, Auto (follows macOS/iOS appearance)
-- **Pastel**: Sepia, Celestial, Lemon — for long daytime sessions
-- **Neutral**: Grey
-- **Dark**: Dark Grey, Hacker, Terminal
-- **Vintage**: Typewriter, Typewriter Dark — ivory and dark brown, locked to American Typewriter, with a steampunk-flavoured bottom bar (brass pocket-watch progress gauge, copper keycaps, mechanical drum-counter timer & navigation read-out)
-- **Extreme**: Midday, Midnight — four contrast levels, bold text at the highest level
-- **Custom**: three user-defined slots with full color picker control
+- **Palettes**: Five core families — Neutral, Ochre, Celestial, Lime, Rose. Each palette ships in seven tonal variations laid out left-to-right from a pure-white extreme through five mid tones to a pure-black extreme. The two extremes carry the palette's signature color in saturated text on plain white or plain black — built for full sun on a beach (white extreme) or pitch-dark bedrooms (black extreme). The five tones in between are the everyday reading tones for long sessions.
+- **Featured**: Typewriter (light and dark variants) — ivory and dark brown, locked to American Typewriter, with a steampunk-flavoured bottom bar (brass dashboard speedometer with a rolling needle on wide screens, vintage radio-dial carriage with a lit red pointer on narrower bars, copper keycaps, mechanical drum-counter read-outs for both the session timer and the page indicator). And Terminal — white monospace text on deep blue, locked to a monospace font (Menlo / Courier New / American Typewriter); if the palette looks familiar, you already know why it's there.
+- **Custom**: three user-defined slots with full color picker control over background, text, accent, and progress bar tint.
 
-The **Terminal** theme deserves a note of its own: white monospace text on
-deep blue, with a dedicated monospace font picker (Menlo or American
-Typewriter). If the palette looks familiar, you already know why it's there.
+That math: 5 palettes × 7 tones (35) + Typewriter light + Typewriter dark + Terminal (3 featured) + 3 custom = **41 themes**.
 
-**[SCREENSHOT: theme picker dropdown with live "Aa" previews in current font]**
+**[SCREENSHOT: theme picker showing palette grid with seven-tone strips, plus the Featured and Custom sections]**
 
 ### Nine typefaces, three groups {CR+JR}
 
@@ -948,7 +945,7 @@ Not every feature is on every platform. Here's what's where.
 | **Keyboard shortcuts** | Full set | Most | Some |
 
 All platforms share: reader engine, position tracking, bookmarks, notes,
-translation, Read Aloud, sync, all 17 themes, all 9 fonts, all file format
+translation, Read Aloud, sync, all 41 themes, all 9 fonts, all file format
 support.
 
 ---
@@ -1009,7 +1006,7 @@ every device.
 
 **Description:**
 
-Single-book reader. Same engine, same typography, same 17 themes, same
+Single-book reader. Same engine, same typography, same 41 themes, same
 translation, same Read Aloud. No library, no sync, no bookmarks — you open a
 file, you read it, you move on. Available on Mac, iPad, and iPhone.
 
@@ -1059,7 +1056,7 @@ sufficient for reading state; see the FAQ below for storage guidance).
 |---|---|---|
 | Price | Free | $19.99 once |
 | Platforms | Mac, iPad, iPhone | Mac, iPad, iPhone |
-| All 17 themes | ✓ | ✓ |
+| All 41 themes | ✓ | ✓ |
 | All 9 typefaces | ✓ | ✓ |
 | Full typography control | ✓ | ✓ |
 | Scroll / Page / Two-page modes | ✓ | ✓ |
