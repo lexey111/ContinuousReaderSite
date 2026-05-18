@@ -987,7 +987,7 @@ lifetime of the current major version.
 
 **Price (large):** $19.99
 
-**Sub:** once, not monthly
+**Sub:** once, not a subscription
 
 **Description:**
 
@@ -1021,9 +1021,9 @@ file, you read it, you move on. Available on Mac, iPad, and iPhone.
 **Intro:** ContinuousReader is one purchase, no extras, no hidden costs.
 
 - **Universal Purchase** — buy on any platform, use on all three (Mac, iPad, iPhone)
-- **iCloud sync across every Apple device you own** — reading positions, bookmarks, notes, and library metadata synchronize between all devices signed into the same Apple ID. Home Mac mini, work MacBook Pro, travel Air, iPad, iPhone — they all share the same library and the same reading position. Book files sync through iCloud Drive when you have space; if not, you can keep files local and still sync your reading state.
+- **iCloud sync across every Apple device you own** — reading positions, bookmarks, notes, and library metadata synchronize between all devices signed into the same Apple ID. Home Mac mini, work MacBook Pro, travel Air, iPad, iPhone — they all share the same library and the same reading position. Book files sync through iCloud Drive. On devices with limited storage, books can remain as cloud placeholders and download on demand when you open them — iCloud Drive's standard behavior.
 - **Free updates** for the lifetime of the current major version — bug fixes, new themes, new features
-- **No subscription**, no recurring charges, no tier lockouts
+- **No subscription** or recurring charges
 - **No ads**, no telemetry, no analytics sold to anyone
 
 When a major version requires a paid upgrade (not planned for a long time),
@@ -1084,8 +1084,7 @@ sufficient for reading state; see the FAQ below for storage guidance).
 | Custom library location (Mac) | — | ✓ |
 | Drag URL from browser to library | — | ✓ |
 
-Both apps receive bug fixes and compatibility updates. Feature updates go to
-ContinuousReader.
+Both apps receive bug fixes and compatibility updates.
 
 ---
 
@@ -1174,7 +1173,7 @@ offline.
 ### What about privacy?
 
 No analytics, no telemetry, no tracking. Translation runs on-device through
-Apple's framework. No network access during reading. Your reading habits are
+Apple's framework. No network access during reading. Your data is
 your own.
 
 ### Support?
