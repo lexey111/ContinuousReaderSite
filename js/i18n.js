@@ -918,6 +918,27 @@ const translations = {
     'index.s8.jr.price': '<strong>Бесплатно.</strong> По-настоящему бесплатно.',
     'index.s8.jr.desc':  'Читалка для одной книги. Открыли файл, прочитали, пошли дальше. Та же типографика, тот же перевод, то же чтение вслух — в сфокусированном приложении на одну книгу. Без библиотеки, без синхронизации, без закладок — только чтение.',
     'index.s8.jr.cta':   'Загрузить JustReader',
+
+    // ---------- Contact page ----------
+    'meta.contact.title':   'Контакты — ContinuousReader',
+    'meta.contact.desc':    'Связаться с разработчиком ContinuousReader. Сообщение об ошибке, пожелание или просто привет.',
+    'meta.contact.ogTitle': 'Контакты — ContinuousReader',
+    'meta.contact.ogDesc':  'Сообщение об ошибке, пожелание или просто привет.',
+
+    'contact.header.eyebrow':  'Один разработчик, реальные ответы',
+    'contact.header.title':    'Свяжитесь <em>со мной</em>.',
+    'contact.header.subtitle': 'Сообщение об ошибке, пожелание или просто заметка о книге, которую вы читаете.',
+
+    'contact.form.name':       'Имя',
+    'contact.form.email':      'Email',
+    'contact.form.subject':    'Тема',
+    'contact.form.subj.bug':     'Сообщение об ошибке',
+    'contact.form.subj.feature': 'Пожелание',
+    'contact.form.subj.question':'Вопрос',
+    'contact.form.subj.other':   'Другое',
+    'contact.form.message':    'Сообщение',
+    'contact.form.submit':     'Отправить',
+    'contact.note':            'Можно также написать напрямую на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Всё делает один разработчик, поэтому ответы обычно занимают день-два — но на каждое сообщение приходит настоящий ответ.',
   },
 
   // ============================================================
@@ -1041,6 +1062,27 @@ const translations = {
     'index.s8.jr.price': '<strong>Безкоштовно.</strong> По-справжньому безкоштовно.',
     'index.s8.jr.desc':  'Читалка для однієї книги. Відкрили файл, прочитали, пішли далі. Та сама типографіка, той самий переклад, те саме читання вголос — у сфокусованому застосунку на одну книгу. Без бібліотеки, без синхронізації, без закладок — лише читання.',
     'index.s8.jr.cta':   'Завантажити JustReader',
+
+    // ---------- Contact page ----------
+    'meta.contact.title':   'Контакти — ContinuousReader',
+    'meta.contact.desc':    'Звʼязатися з розробником ContinuousReader. Повідомлення про помилку, побажання або просто привіт.',
+    'meta.contact.ogTitle': 'Контакти — ContinuousReader',
+    'meta.contact.ogDesc':  'Повідомлення про помилку, побажання або просто привіт.',
+
+    'contact.header.eyebrow':  'Один розробник, справжні відповіді',
+    'contact.header.title':    'Звʼяжіться <em>зі мною</em>.',
+    'contact.header.subtitle': 'Повідомлення про помилку, побажання або просто нотатка про книгу, яку ви читаєте.',
+
+    'contact.form.name':       'Імʼя',
+    'contact.form.email':      'Email',
+    'contact.form.subject':    'Тема',
+    'contact.form.subj.bug':     'Повідомлення про помилку',
+    'contact.form.subj.feature': 'Побажання',
+    'contact.form.subj.question':'Питання',
+    'contact.form.subj.other':   'Інше',
+    'contact.form.message':    'Повідомлення',
+    'contact.form.submit':     'Надіслати',
+    'contact.note':            'Можна також написати напряму на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Усім займається один розробник, тому відповіді зазвичай надходять за день-два — але на кожне повідомлення приходить справжня відповідь.',
   },
   // ============================================================
   // SPANISH — index.html complete; other pages fall back to EN
@@ -1162,6 +1204,27 @@ const translations = {
     'index.s8.jr.price': '<strong>Gratis.</strong> De verdad gratis.',
     'index.s8.jr.desc':  'Un lector de un solo libro. Abre un archivo, léelo, sigue adelante. La misma tipografía, la misma traducción, la misma Lectura en voz alta — en una app enfocada de un solo archivo. Sin biblioteca, sin sincronización, sin marcadores — solo lectura.',
     'index.s8.jr.cta':   'Obtén JustReader',
+
+    // ---------- Contact page ----------
+    'meta.contact.title':   'Contacto — ContinuousReader',
+    'meta.contact.desc':    'Ponte en contacto con el desarrollador de ContinuousReader. Reporte de error, sugerencia o simplemente di hola.',
+    'meta.contact.ogTitle': 'Contacto — ContinuousReader',
+    'meta.contact.ogDesc':  'Reporte de error, sugerencia o simplemente di hola.',
+
+    'contact.header.eyebrow':  'Un solo desarrollador, respuestas reales',
+    'contact.header.title':    'Ponte <em>en contacto</em>.',
+    'contact.header.subtitle': 'Reporte de error, sugerencia o simplemente una nota sobre un libro que estás leyendo.',
+
+    'contact.form.name':       'Nombre',
+    'contact.form.email':      'Email',
+    'contact.form.subject':    'Asunto',
+    'contact.form.subj.bug':     'Reporte de error',
+    'contact.form.subj.feature': 'Sugerencia',
+    'contact.form.subj.question':'Pregunta',
+    'contact.form.subj.other':   'Otro',
+    'contact.form.message':    'Mensaje',
+    'contact.form.submit':     'Enviar mensaje',
+    'contact.note':            'También puedes escribir directamente a <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un solo desarrollador se ocupa de todo, así que las respuestas suelen tardar un día o dos — pero todo mensaje recibe una respuesta real.',
   },
   // ============================================================
   // FRENCH — index.html complete; other pages fall back to EN
@@ -1285,6 +1348,27 @@ const translations = {
     'index.s8.jr.price': '<strong>Gratuit.</strong> Vraiment gratuit.',
     'index.s8.jr.desc':  'Un lecteur d’un seul livre. Ouvrez un fichier, lisez-le, passez à autre chose. La même typographie, la même traduction, la même Lecture à voix haute — dans une app focalisée sur un seul fichier. Pas de bibliothèque, pas de synchronisation, pas de marque-pages — juste la lecture.',
     'index.s8.jr.cta':   'Obtenir JustReader',
+
+    // ---------- Contact page ----------
+    'meta.contact.title':   'Contact — ContinuousReader',
+    'meta.contact.desc':    'Contactez le développeur de ContinuousReader. Rapport de bug, suggestion ou simplement un bonjour.',
+    'meta.contact.ogTitle': 'Contact — ContinuousReader',
+    'meta.contact.ogDesc':  'Rapport de bug, suggestion ou simplement un bonjour.',
+
+    'contact.header.eyebrow':  'Un développeur, de vraies réponses',
+    'contact.header.title':    'Prenez <em>contact</em>.',
+    'contact.header.subtitle': 'Rapport de bug, suggestion ou simplement une note sur un livre que vous lisez.',
+
+    'contact.form.name':       'Nom',
+    'contact.form.email':      'Email',
+    'contact.form.subject':    'Sujet',
+    'contact.form.subj.bug':     'Rapport de bug',
+    'contact.form.subj.feature': 'Suggestion',
+    'contact.form.subj.question':'Question',
+    'contact.form.subj.other':   'Autre',
+    'contact.form.message':    'Message',
+    'contact.form.submit':     'Envoyer',
+    'contact.note':            'Vous pouvez aussi écrire directement à <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un seul développeur gère tout, les réponses prennent donc généralement un ou deux jours — mais chaque message reçoit une vraie réponse.',
   },
   // ============================================================
   // GERMAN — index.html complete; other pages fall back to EN
@@ -1407,6 +1491,27 @@ const translations = {
     'index.s8.jr.price': '<strong>Kostenlos.</strong> Wirklich kostenlos.',
     'index.s8.jr.desc':  'Eine Lese-App für ein einzelnes Buch. Datei öffnen, lesen, weiter. Dieselbe Typografie, dieselbe Übersetzung, dasselbe Vorlesen — in einer fokussierten App für eine einzelne Datei. Keine Bibliothek, keine Synchronisation, keine Lesezeichen — nur Lesen.',
     'index.s8.jr.cta':   'JustReader laden',
+
+    // ---------- Contact page ----------
+    'meta.contact.title':   'Kontakt — ContinuousReader',
+    'meta.contact.desc':    'Schreib dem Entwickler von ContinuousReader. Fehlerbericht, Funktionswunsch oder einfach ein Hallo.',
+    'meta.contact.ogTitle': 'Kontakt — ContinuousReader',
+    'meta.contact.ogDesc':  'Fehlerbericht, Funktionswunsch oder einfach ein Hallo.',
+
+    'contact.header.eyebrow':  'Ein Entwickler, echte Antworten',
+    'contact.header.title':    'Melde <em>dich</em>.',
+    'contact.header.subtitle': 'Fehlerbericht, Funktionswunsch oder einfach eine Notiz zu einem Buch, das du gerade liest.',
+
+    'contact.form.name':       'Name',
+    'contact.form.email':      'Email',
+    'contact.form.subject':    'Betreff',
+    'contact.form.subj.bug':     'Fehlerbericht',
+    'contact.form.subj.feature': 'Funktionswunsch',
+    'contact.form.subj.question':'Frage',
+    'contact.form.subj.other':   'Sonstiges',
+    'contact.form.message':    'Nachricht',
+    'contact.form.submit':     'Nachricht senden',
+    'contact.note':            'Du kannst auch direkt an <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a> schreiben. Ein einzelner Entwickler kümmert sich um alles, daher dauern Antworten meist einen oder zwei Tage — aber jede Nachricht bekommt eine echte Antwort.',
   },
 };
 
