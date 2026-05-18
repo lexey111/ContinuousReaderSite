@@ -87,7 +87,7 @@
 
         <p class="hero-subtitle" data-i18n="index.hero.sub">
           Close it on your Mac at midnight. Open it on your iPhone on the
-          morning commute. <strong>Same book. Same page. Same paragraph.</strong>
+          morning commute. <strong>Same book — same paragraph.</strong>
         </p>
 
         <div class="hero-ctas">
@@ -111,22 +111,33 @@
              role="img" aria-labelledby="hero-devices-title">
           <title id="hero-devices-title">A reading position traveling between Mac, iPad, and iPhone — the same book, the same paragraph, on whichever screen is in front of you.</title>
 
-          <!-- Active "book on screen" rectangles -->
+          <!-- Single "active book on screen" rectangle that travels with
+               the dot, morphing in size from Mac (240×140) → iPad (110×140)
+               → iPhone (70×140) along the way. Uses the same keyTimes /
+               keySplines as the dot's <animateMotion> so the rectangle's
+               centre tracks the dot exactly during dwell at each device,
+               and the rect smoothly shrinks/grows during the transitions
+               in between. The reader sees the same book travelling with
+               the position marker rather than three separate books that
+               appear-and-disappear at landing points. Height is 140
+               across all three devices, so only x / y / width animate. -->
           <g fill="#F0E5D0" stroke="none">
-            <rect x="60" y="50" width="240" height="140" rx="6">
-              <animate attributeName="opacity" dur="18s" repeatCount="indefinite"
+            <rect rx="6" height="140">
+              <animate attributeName="x" dur="18s" repeatCount="indefinite"
                        keyTimes="0; 0.05; 0.18; 0.28; 0.42; 0.58; 0.72; 0.82; 0.95; 1"
-                       values="1; 1; 0; 0; 0; 0; 0; 0; 1; 1" />
-            </rect>
-            <rect x="125" y="280" width="110" height="140" rx="6">
-              <animate attributeName="opacity" dur="18s" repeatCount="indefinite"
+                       values="60; 60; 125; 125; 145; 145; 125; 125; 60; 60"
+                       calcMode="spline"
+                       keySplines="0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1" />
+              <animate attributeName="y" dur="18s" repeatCount="indefinite"
                        keyTimes="0; 0.05; 0.18; 0.28; 0.42; 0.58; 0.72; 0.82; 0.95; 1"
-                       values="0; 0; 1; 1; 0; 0; 1; 1; 0; 0" />
-            </rect>
-            <rect x="145" y="510" width="70" height="140" rx="6">
-              <animate attributeName="opacity" dur="18s" repeatCount="indefinite"
+                       values="50; 50; 280; 280; 510; 510; 280; 280; 50; 50"
+                       calcMode="spline"
+                       keySplines="0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1" />
+              <animate attributeName="width" dur="18s" repeatCount="indefinite"
                        keyTimes="0; 0.05; 0.18; 0.28; 0.42; 0.58; 0.72; 0.82; 0.95; 1"
-                       values="0; 0; 0; 0; 1; 1; 0; 0; 0; 0" />
+                       values="240; 240; 110; 110; 70; 70; 110; 110; 240; 240"
+                       calcMode="spline"
+                       keySplines="0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1; 0.45 0 0.55 1" />
             </rect>
           </g>
 
@@ -405,8 +416,7 @@
         variants), dressed in quiet steampunk — a brass dashboard
         speedometer with a rolling needle, swapped for a vintage
         radio-dial carriage with a lit red pointer on narrower bars;
-        copper keycaps; mechanical drum counters ticking off both the
-        session timer and the page read-out — and <em>Terminal</em> in
+        copper keycaps; mechanical drum counters — and <em>Terminal</em> in
         white monospace on deep blue (if you recognize the palette —
         <em>you already know why it's there</em>). Three custom slots
         where the colors are yours. <strong>Forty-one variants in
@@ -419,14 +429,17 @@
         sun on a beach</strong> or <strong>in bed with the lights
         off</strong>, in whichever color feels right.
       </p>
-      <p data-i18n="index.s4.picker">
-        Three picker modes. <strong>Fixed</strong> — one theme, always.
+      <p>
+        <span data-i18n="index.s4.picker">Three picker modes. <strong>Fixed</strong> — one theme, always.
         <strong>Day &amp; Night</strong> — pair a light theme with a dark
         one and the app switches when your system does.
         <strong>Manual override</strong> — force any theme regardless of
         schedule, for a session that doesn't fit the rhythm. On any dark
         theme, a smooth brightness slider tunes the text down from 100%
-        to 30% — for nights when even the dark themes feel too bright.
+        to 30% — for nights when even the dark themes feel too bright.</span><button class="callout-dot section-callout" type="button"
+                data-screenshot="img/screenshots/theme-picker-modes.svg"
+                data-alt="Theme picker with Fixed, Day &amp; Night, and Manual override modes"
+                aria-label="View theme picker screenshot"></button>
       </p>
     </div>
 
@@ -651,7 +664,7 @@
           A full reading workspace. Build your library. Sync your position,
           bookmarks, and reading settings across Mac, iPad, and iPhone.
           OPDS catalogs. Bookmarks, notes, statistics. Every feature, on
-          every device, forever.
+          every device, forever.<sup>*</sup><small class="app-card-footnote">* Within the current major version. Future major releases may be a paid upgrade — never a forced re-purchase.</small>
         </p>
         <a href="download.html" class="app-card-cta" data-i18n="index.s8.cr.cta">Get ContinuousReader</a>
       </div>

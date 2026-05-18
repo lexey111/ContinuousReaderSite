@@ -47,7 +47,7 @@ Languages supported via `data-i18n`: EN, RU, UK, ES, FR, DE.
 **H1:** A book, continued.
 
 **Subtitle:** Close it on your Mac at midnight. Open it on your iPhone on the
-morning commute. Same book. Same page. Same paragraph.
+morning commute. Same book — same paragraph.
 
 **Primary CTA:** Get ContinuousReader — $19.99
 **Secondary CTA:** Or try JustReader, free
@@ -125,8 +125,8 @@ pastels for long sessions. High-contrast variants for outdoor reading. A
 locked to American Typewriter, dressed in quiet steampunk: a brass dashboard
 speedometer with a rolling needle that swaps to a vintage radio-dial carriage
 with a lit red pointer on narrower bars, copper keycaps, and mechanical
-drum-counter read-outs in the bottom bar for both the session timer and the
-page indicator. A **Terminal** theme — white monospace on deep blue. If you
+drum-counter read-outs in the bottom bar. A **Terminal** theme — white
+monospace on deep blue. If you
 recognize the palette, you'll know why it's there. Three custom slots where
 you define your own colors — background, text, accent. Your palette, your
 theme.
@@ -313,7 +313,7 @@ background, text color, progress bar tint, bookmark marker palette, and — for
 some — the reading font itself.
 
 - **Palettes**: Five core families — Neutral, Ochre, Celestial, Lime, Rose. Each palette ships in seven tonal variations laid out left-to-right from a pure-white extreme through five mid tones to a pure-black extreme. The two extremes carry the palette's signature color in saturated text on plain white or plain black — built for full sun on a beach (white extreme) or pitch-dark bedrooms (black extreme). The five tones in between are the everyday reading tones for long sessions.
-- **Featured**: Typewriter (light and dark variants) — ivory and dark brown, locked to American Typewriter, with a steampunk-flavoured bottom bar (brass dashboard speedometer with a rolling needle on wide screens, vintage radio-dial carriage with a lit red pointer on narrower bars, copper keycaps, mechanical drum-counter read-outs for both the session timer and the page indicator). And Terminal — white monospace text on deep blue, locked to a monospace font (Menlo / Courier New / American Typewriter); if the palette looks familiar, you already know why it's there.
+- **Featured**: Typewriter (light and dark variants) — ivory and dark brown, locked to American Typewriter, with a steampunk-flavoured bottom bar (brass dashboard speedometer with a rolling needle on wide screens, vintage radio-dial carriage with a lit red pointer on narrower bars, copper keycaps, mechanical drum-counter read-outs). And Terminal — white monospace text on deep blue, locked to a monospace font (Menlo / Courier New / American Typewriter); if the palette looks familiar, you already know why it's there.
 - **Custom**: three user-defined slots with full color picker control over background, text, accent, and progress bar tint.
 
 That math: 5 palettes × 7 tones (35) + Typewriter light + Typewriter dark + Terminal (3 featured) + 3 custom = **41 themes**.

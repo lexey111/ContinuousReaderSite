@@ -82,7 +82,7 @@ const translations = {
 
     'index.hero.eyebrow':  'A native reader for Mac, iPad, and iPhone',
     'index.hero.headline': '<span class="dropcap">A</span> book<span class="punct">,</span> <em>continued.</em>',
-    'index.hero.sub':      'Close it on your Mac at midnight. Open it on your iPhone on the morning commute. <strong>Same book. Same page. Same paragraph.</strong>',
+    'index.hero.sub':      'Close it on your Mac at midnight. Open it on your iPhone on the morning commute. <strong>Same book — same paragraph.</strong>',
 
     'index.strip.label':    'Continuous',
     'index.strip.caption':  'one library, synced',
@@ -110,7 +110,7 @@ const translations = {
     'index.s4.h2':      'Typography that <em>respects</em> the text.',
     'index.s4.p1':      'Most reading apps get typography wrong. Either they pretend the screen is a book, with skeuomorphic page turns and fake paper, or they treat text as a data dump — browser defaults, ragged columns, no hyphenation.',
     'index.s4.p2':      '<strong>ContinuousReader sweats the details.</strong>',
-    'index.s4.p3':      'Five core palettes — Neutral, Ochre, Celestial, Lime, Rose — each with seven tonal variations: from a pure-white extreme on the left, through five mid tones, to a pure-black extreme on the right. Plus two featured themes for the old-school crowd: <em>Typewriter</em> in ivory and dark brown (light and dark variants), dressed in quiet steampunk — a brass dashboard speedometer with a rolling needle, swapped for a vintage radio-dial carriage with a lit red pointer on narrower bars; copper keycaps; mechanical drum counters ticking off both the session timer and the page read-out — and <em>Terminal</em> in white monospace on deep blue (if you recognize the palette — <em>you already know why it’s there</em>). Three custom slots where the colors are yours. <strong>Forty-one variants in total.</strong>',
+    'index.s4.p3':      'Five core palettes — Neutral, Ochre, Celestial, Lime, Rose — each with seven tonal variations: from a pure-white extreme on the left, through five mid tones, to a pure-black extreme on the right. Plus two featured themes for the old-school crowd: <em>Typewriter</em> in ivory and dark brown (light and dark variants), dressed in quiet steampunk — a brass dashboard speedometer with a rolling needle, swapped for a vintage radio-dial carriage with a lit red pointer on narrower bars; copper keycaps; mechanical drum counters — and <em>Terminal</em> in white monospace on deep blue (if you recognize the palette — <em>you already know why it’s there</em>). Three custom slots where the colors are yours. <strong>Forty-one variants in total.</strong>',
     'index.s4.p4':      'The two extremes on every colored palette — pure white with saturated palette-color text on the left, pure black with the same on the right — cover the harsh cases: <strong>full sun on a beach</strong> or <strong>in bed with the lights off</strong>, in whichever color feels right.',
     'index.s4.picker':  'Three picker modes. <strong>Fixed</strong> — one theme, always. <strong>Day &amp; Night</strong> — pair a light theme with a dark one and the app switches when your system does. <strong>Manual override</strong> — force any theme regardless of schedule, for a session that doesn’t fit the rhythm. On any dark theme, a smooth brightness slider tunes the text down from 100% to 30% — for nights when even the dark themes feel too bright.',
     'index.s4.dt1':     'Typefaces',
@@ -148,7 +148,7 @@ const translations = {
     'index.s8.intro':    'Two reading apps. One foundation. <strong>Your choice.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Once, not monthly.',
-    'index.s8.cr.desc':  'A full reading workspace. Build your library. Sync your position, bookmarks, and reading settings across Mac, iPad, and iPhone. OPDS catalogs. Bookmarks, notes, statistics. Every feature, on every device, forever.',
+    'index.s8.cr.desc':  'A full reading workspace. Build your library. Sync your position, bookmarks, and reading settings across Mac, iPad, and iPhone. OPDS catalogs. Bookmarks, notes, statistics. Every feature, on every device, forever.<sup>*</sup><small class="app-card-footnote">* Within the current major version. Future major releases may be a paid upgrade — never a forced re-purchase.</small>',
     'index.s8.cr.cta':   'Get ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Free.</strong> Truly free.',
@@ -177,7 +177,7 @@ const translations = {
     'features.s1.themes.h':       'Forty-one themes, organized in palette families',
     'features.s1.themes.p1':      'Themes are more than color schemes. Each defines background, text color, progress bar tint, bookmark marker palette, and — for some — the reading font itself.',
     'features.s1.themes.li1':     '<strong>Palettes</strong>Five families — Neutral, Ochre, Celestial, Lime, Rose — each with seven tonal variations: a pure-white extreme on the left, five mid tones in between, and a pure-black extreme on the right. The extremes carry the palette\'s signature color in saturated text on plain white or black — built for full sun on a beach or pitch-dark bedrooms.',
-    'features.s1.themes.li2':     '<strong>Featured</strong>Typewriter (ivory + dark brown, light and dark variants, locked to American Typewriter — leans into a quiet steampunk vibe with a brass dashboard speedometer whose needle rolls as you read, swapped for a vintage radio-dial carriage with a lit red pointer on narrower bars; copper-rim keycaps; mechanical drum-counter read-outs for both the session timer and the page indicator) and Terminal (white monospace on deep blue, locked to Menlo / Courier New, Norton Commander homage). Both come with their own independent typography and layout settings.',
+    'features.s1.themes.li2':     '<strong>Featured</strong>Typewriter (ivory + dark brown, light and dark variants, locked to American Typewriter — leans into a quiet steampunk vibe with a brass dashboard speedometer whose needle rolls as you read, swapped for a vintage radio-dial carriage with a lit red pointer on narrower bars; copper-rim keycaps; mechanical drum-counter read-outs) and Terminal (white monospace on deep blue, locked to Menlo / Courier New, Norton Commander homage). Both come with their own independent typography and layout settings.',
     'features.s1.themes.li4':     '<strong>Custom</strong>Three user-defined slots with full color picker control',
     'features.s1.themes.li5':     '<strong>Day &amp; Night mode</strong>Assign separate themes for light and dark system appearance — automatic or manually overridden',
     'features.s1.themes.p2':      'The reader carries three independent appearance contexts — Regular, Typewriter, and Terminal. Each remembers its own font, size, line height, padding, alignment, and navigation mode, so a tweak made inside Terminal won\'t follow you back to Ochre.',
@@ -838,7 +838,7 @@ const translations = {
     // ---------- Hero ----------
     'index.hero.eyebrow':  'Нативная читалка для Mac, iPad и iPhone',
     'index.hero.headline': '<span class="dropcap">К</span>нига <span class="punct">—</span> <em>продолжается.</em>',
-    'index.hero.sub':      'Закройте на Mac в полночь. Откройте на iPhone утром по дороге на работу. <strong>Та же книга. Та же страница. Тот же абзац.</strong>',
+    'index.hero.sub':      'Закройте на Mac в полночь. Откройте на iPhone утром по дороге на работу. <strong>Та же книга — тот же абзац.</strong>',
 
     // ---------- Reading strip ----------
     'index.strip.label':    'Непрерывно',
@@ -847,7 +847,7 @@ const translations = {
     // ---------- Section 2 — Across your devices ----------
     'index.s2.eyebrow': 'Непрерывно',
     'index.s2.h2':      'На всех ваших <em>устройствах.</em>',
-    'index.s2.p1':      'Позиция чтения едет с вами — до того самого абзаца, на котором вы остановились, а не до ближайшей главы или начала страницы.',
+    'index.s2.p1':      'Позиция чтения едет с вами — с точностью до того самого абзаца, на котором вы остановились, а не до ближайшей главы или начала страницы.',
     'index.s2.p2':      '<strong>Что синхронизируется:</strong> позиция, закладки, заметки, библиотека. <strong>Что нет:</strong> то, как каждое устройство настроено для чтения.',
     'index.s2.mac.h':   'Mac',
     'index.s2.mac.p':   'Кресло. <em>Разворот в две страницы,</em> 32 pt с засечками.',
@@ -870,7 +870,7 @@ const translations = {
     'index.s4.h2':      'Типографика, <em>уважающая</em> текст.',
     'index.s4.p1':      'Большинство читалок промахивается с типографикой. Либо они притворяются книгой — с неуклюжими перелистываниями и псевдобумагой с поддельной текстурой, либо относятся к тексту как к свалке данных — браузерные дефолты, рваные колонки, без переносов.',
     'index.s4.p2':      '<strong>ContinuousReader внимателен к деталям.</strong>',
-    'index.s4.p3':      'Пять основных палитр — Neutral, Ochre, Celestial, Lime, Rose — каждая с семью тональными вариациями: чисто-белый экстрим слева, пять средних тонов посередине и чисто-чёрный экстрим справа. Плюс две особые темы для любителей олдскула: <em>Typewriter</em> в цвете слоновой кости и тёмно-коричневом (светлый и тёмный варианты) — со сдержанной стимпанк-эстетикой: латунный спидометр приборной панели с подвижной стрелкой, на узких полосах сменяется винтажной радиошкалой с подсвеченной красной указательной чертой; медные клавиши; барабанные механические счётчики и для таймера сессии, и для индикатора страницы — и <em>Terminal</em> — белый моноширинный на глубоком синем (если палитра кажется знакомой — <em>да, вы не ошиблись</em>). Три кастомных слота под ваши цвета. <strong>Всего сорок один вариант.</strong>',
+    'index.s4.p3':      'Пять основных палитр — Neutral, Ochre, Celestial, Lime, Rose — каждая с семью тональными вариациями: чисто-белый экстрим слева, пять средних тонов посередине и чисто-чёрный экстрим справа. Плюс две особые темы для любителей олдскула: <em>Typewriter</em> в цвете слоновой кости и тёмно-коричневом (светлый и тёмный варианты) — со сдержанной стимпанк-эстетикой: латунный спидометр приборной панели с подвижной стрелкой, на узких полосах сменяется винтажной радиошкалой с подсвеченной красной указательной чертой; медные клавиши; барабанные механические счётчики — и <em>Terminal</em> — белый моноширинный на глубоком синем (если палитра кажется знакомой — <em>да, вы не ошиблись</em>). Три кастомных слота под ваши цвета. <strong>Всего сорок один вариант.</strong>',
     'index.s4.p4':      'Два экстрима в каждой цветной палитре — чисто-белый с насыщенным палитровым цветом слева, чисто-чёрный с тем же цветом справа — закрывают жёсткие сценарии: <strong>под полным солнцем на пляже</strong> или <strong>в постели с выключенным светом</strong>, в любом цвете на выбор.',
     'index.s4.picker':  'Три способа выбора схемы. <strong>Фиксированно</strong> — одна тема всегда. <strong>День и ночь</strong> — связка светлой и тёмной, переключаются вслед за системой. <strong>Ручной оверрайд</strong> — любая тема поверх расписания, когда сессия выбивается из ритма. На любой тёмной теме — плавный слайдер яркости текста от 100% до 30%, для ночей, когда даже тёмная схема кажется слишком яркой.',
     'index.s4.dt1':     'Шрифты',
@@ -912,7 +912,7 @@ const translations = {
     'index.s8.intro':    'Две читалки. Одна основа. <strong>Ваш выбор.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Один раз, не ежемесячно.',
-    'index.s8.cr.desc':  'Полноценное рабочее место для чтения. Соберите свою библиотеку. Синхронизируйте позицию, закладки и настройки чтения между Mac, iPad и iPhone. Каталоги OPDS. Закладки, заметки, статистика. Все возможности, на всех устройствах, навсегда.',
+    'index.s8.cr.desc':  'Полноценное рабочее место для чтения. Соберите свою библиотеку. Синхронизируйте позицию, закладки и настройки чтения между Mac, iPad и iPhone. Каталоги OPDS. Закладки, заметки, статистика. Все возможности, на всех устройствах, навсегда.<sup>*</sup><small class="app-card-footnote">* В пределах текущей мажорной версии. Будущие крупные релизы могут быть платным апгрейдом — но никогда принудительной пере-покупкой.</small>',
     'index.s8.cr.cta':   'Загрузить ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Бесплатно.</strong> По-настоящему бесплатно.',
@@ -961,7 +961,7 @@ const translations = {
     // ---------- Hero ----------
     'index.hero.eyebrow':  'Нативна читалка для Mac, iPad та iPhone',
     'index.hero.headline': '<span class="dropcap">К</span>нига <span class="punct">—</span> <em>продовжується.</em>',
-    'index.hero.sub':      'Закрийте на Mac опівночі. Відкрийте на iPhone уранці по дорозі на роботу. <strong>Та сама книга. Та сама сторінка. Той самий абзац.</strong>',
+    'index.hero.sub':      'Закрийте на Mac опівночі. Відкрийте на iPhone уранці по дорозі на роботу. <strong>Та сама книга — той самий абзац.</strong>',
 
     // ---------- Reading strip (legacy keys, no longer rendered) ----------
     'index.strip.label':    'Безперервно',
@@ -970,7 +970,7 @@ const translations = {
     // ---------- Section 2 — Across your devices ----------
     'index.s2.eyebrow': 'Безперервно',
     'index.s2.h2':      'На всіх ваших <em>пристроях.</em>',
-    'index.s2.p1':      'Позиція читання їде з вами — до того самого слова, на якому ви зупинилися. До конкретного абзацу, а не до найближчого розділу або початку сторінки.',
+    'index.s2.p1':      'Позиція читання їде з вами — з точністю до того самого слова, на якому ви зупинилися. До конкретного абзацу, а не до найближчого розділу або початку сторінки.',
     'index.s2.p2':      '<strong>Що синхронізується:</strong> позиція, закладки, нотатки, бібліотека. <strong>А що ні:</strong> те, як кожен пристрій налаштовано для читання.',
     'index.s2.mac.h':   'Mac',
     'index.s2.mac.p':   'Крісло. <em>Розворот на дві сторінки,</em> 32 pt із засічками.',
@@ -993,7 +993,7 @@ const translations = {
     'index.s4.h2':      'Типографіка, що <em>поважає</em> текст.',
     'index.s4.p1':      'Більшість читалок промахується з типографікою. Або вони прикидаються книгою — з незграбними перегортаннями і псевдопапером з підробленою текстурою, або ставляться до тексту як до звалища даних — браузерні дефолти, рвані колонки, без переносів.',
     'index.s4.p2':      '<strong>ContinuousReader уважний до деталей.</strong>',
-    'index.s4.p3':      'Пʼять основних палітр — Neutral, Ochre, Celestial, Lime, Rose — кожна з сімома тональними варіаціями: чисто-білий екстрим зліва, пʼять середніх тонів посередині та чисто-чорний екстрим справа. Плюс дві особливі теми для любителів олдскула: <em>Typewriter</em> у кольорі слонової кості й темно-коричневому (світлий і темний варіанти) — зі стриманою стимпанк-естетикою: латунний спідометр приладової панелі з рухомою стрілкою, на вузьких смугах змінюється вінтажною радіошкалою з підсвіченою червоною вказівною рискою; мідні клавіші; барабанні механічні лічильники як для таймера сесії, так і для індикатора сторінки — та <em>Terminal</em> — білий моноширинний на глибокому синьому (якщо палітра здається знайомою — <em>так, ви не помилилися</em>). Три кастомні слоти, де кольори задаєте ви. <strong>Усього сорок один варіант.</strong>',
+    'index.s4.p3':      'Пʼять основних палітр — Neutral, Ochre, Celestial, Lime, Rose — кожна з сімома тональними варіаціями: чисто-білий екстрим зліва, пʼять середніх тонів посередині та чисто-чорний екстрим справа. Плюс дві особливі теми для любителів олдскула: <em>Typewriter</em> у кольорі слонової кості й темно-коричневому (світлий і темний варіанти) — зі стриманою стимпанк-естетикою: латунний спідометр приладової панелі з рухомою стрілкою, на вузьких смугах змінюється вінтажною радіошкалою з підсвіченою червоною вказівною рискою; мідні клавіші; барабанні механічні лічильники — та <em>Terminal</em> — білий моноширинний на глибокому синьому (якщо палітра здається знайомою — <em>так, ви не помилилися</em>). Три кастомні слоти, де кольори задаєте ви. <strong>Усього сорок один варіант.</strong>',
     'index.s4.p4':      'Два екстрими в кожній кольоровій палітрі — чисто-білий із насиченим палітровим кольором зліва, чисто-чорний із тим самим кольором справа — закривають жорсткі сценарії: <strong>під яскравим сонцем на пляжі</strong> або <strong>у ліжку з вимкненим світлом</strong>, у будь-якому кольорі на вибір.',
     'index.s4.picker':  'Три способи вибору схеми. <strong>Фіксовано</strong> — одна тема завжди. <strong>День і ніч</strong> — звʼязка світлої й темної, перемикаються слідом за системою. <strong>Ручний оверрайд</strong> — будь-яка тема поверх розкладу, коли сесія випадає з ритму. На будь-якій темній темі — плавний слайдер яскравості тексту від 100% до 30%, для ночей, коли навіть темна схема здається занадто яскравою.',
     'index.s4.dt1':     'Шрифти',
@@ -1035,7 +1035,7 @@ const translations = {
     'index.s8.intro':    'Дві читалки. Одна основа. <strong>Ваш вибір.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Один раз, не щомісяця.',
-    'index.s8.cr.desc':  'Повноцінне робоче місце для читання. Зберіть свою бібліотеку. Синхронізуйте позицію, закладки та налаштування читання між Mac, iPad та iPhone. Каталоги OPDS. Закладки, нотатки, статистика. Усі можливості, на всіх пристроях, назавжди.',
+    'index.s8.cr.desc':  'Повноцінне робоче місце для читання. Зберіть свою бібліотеку. Синхронізуйте позицію, закладки та налаштування читання між Mac, iPad та iPhone. Каталоги OPDS. Закладки, нотатки, статистика. Усі можливості, на всіх пристроях, назавжди.<sup>*</sup><small class="app-card-footnote">* У межах поточної мажорної версії. Майбутні великі релізи можуть бути платним апґрейдом — але ніколи примусовим перевикупленням.</small>',
     'index.s8.cr.cta':   'Завантажити ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Безкоштовно.</strong> По-справжньому безкоштовно.',
@@ -1082,7 +1082,7 @@ const translations = {
     // ---------- Hero ----------
     'index.hero.eyebrow':  'Un lector nativo para Mac, iPad e iPhone',
     'index.hero.headline': '<span class="dropcap">U</span>n libro <span class="punct">—</span> <em>continúa recto.</em>',
-    'index.hero.sub':      'Ciérralo en tu Mac a medianoche. Ábrelo en tu iPhone en el trayecto al trabajo. <strong>El mismo libro. La misma página. El mismo párrafo.</strong>',
+    'index.hero.sub':      'Ciérralo en tu Mac a medianoche. Ábrelo en tu iPhone en el trayecto al trabajo. <strong>El mismo libro — el mismo párrafo.</strong>',
 
     // ---------- Reading strip (legacy keys, no longer rendered) ----------
     'index.strip.label':    'En continuo',
@@ -1114,7 +1114,7 @@ const translations = {
     'index.s4.h2':      'Tipografía que <em>respeta</em> el texto.',
     'index.s4.p1':      'La mayoría de las apps de lectura fallan en tipografía. O fingen ser un libro — con animaciones torpes de paso de página y papel falso de textura artificial, o tratan al texto como un volcado de datos — predeterminados del navegador, columnas irregulares, sin separación silábica.',
     'index.s4.p2':      '<strong>ContinuousReader cuida cada detalle.</strong>',
-    'index.s4.p3':      'Cinco paletas principales — Neutral, Ochre, Celestial, Lime, Rose — cada una con siete variaciones tonales: un extremo blanco puro a la izquierda, cinco tonos intermedios y un extremo negro puro a la derecha. Más dos temas destacados para los amantes del estilo retro: <em>Typewriter</em> en marfil y marrón oscuro (variantes clara y oscura) — con un toque steampunk discreto: un velocímetro de tablero en latón con aguja móvil que se transforma en una escala de radio vintage con marcador rojo iluminado en barras estrechas; teclas de cobre; contadores mecánicos de tambor tanto para el cronómetro de sesión como para el indicador de página — y <em>Terminal</em> — monoespaciado blanco sobre azul profundo (si la paleta te resulta familiar — <em>sí, no te equivocas</em>). Tres slots personalizados, donde los colores los pones tú. <strong>Cuarenta y una variantes en total.</strong>',
+    'index.s4.p3':      'Cinco paletas principales — Neutral, Ochre, Celestial, Lime, Rose — cada una con siete variaciones tonales: un extremo blanco puro a la izquierda, cinco tonos intermedios y un extremo negro puro a la derecha. Más dos temas destacados para los amantes del estilo retro: <em>Typewriter</em> en marfil y marrón oscuro (variantes clara y oscura) — con un toque steampunk discreto: un velocímetro de tablero en latón con aguja móvil que se transforma en una escala de radio vintage con marcador rojo iluminado en barras estrechas; teclas de cobre; contadores mecánicos de tambor — y <em>Terminal</em> — monoespaciado blanco sobre azul profundo (si la paleta te resulta familiar — <em>sí, no te equivocas</em>). Tres slots personalizados, donde los colores los pones tú. <strong>Cuarenta y una variantes en total.</strong>',
     'index.s4.p4':      'Los dos extremos de cada paleta de color — blanco puro con texto saturado del color de la paleta a la izquierda, negro puro con el mismo color a la derecha — cubren los casos extremos: <strong>bajo el sol pleno en la playa</strong> o <strong>en la cama con las luces apagadas</strong>, en el color que mejor te siente.',
     'index.s4.picker':  'Tres modos de selección. <strong>Fijo</strong> — un tema, siempre. <strong>Día y Noche</strong> — un tema claro emparejado con uno oscuro, la app cambia cuando lo hace tu sistema. <strong>Anulación manual</strong> — fuerza cualquier tema sobre el horario, para una sesión que no encaja con el ritmo. En cualquier tema oscuro, un slider suave de brillo del texto del 100 % al 30 % — para noches en las que incluso los temas oscuros se sienten demasiado brillantes.',
     'index.s4.dt1':     'Tipografías',
@@ -1156,7 +1156,7 @@ const translations = {
     'index.s8.intro':    'Dos apps de lectura. Una base. <strong>Tu elección.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Una sola vez, no mensual.',
-    'index.s8.cr.desc':  'Un espacio de trabajo de lectura completo. Construye tu biblioteca. Sincroniza tu posición, marcadores y ajustes de lectura entre Mac, iPad e iPhone. Catálogos OPDS. Marcadores, notas, estadísticas. Cada función, en cada dispositivo, para siempre.',
+    'index.s8.cr.desc':  'Un espacio de trabajo de lectura completo. Construye tu biblioteca. Sincroniza tu posición, marcadores y ajustes de lectura entre Mac, iPad e iPhone. Catálogos OPDS. Marcadores, notas, estadísticas. Cada función, en cada dispositivo, para siempre.<sup>*</sup><small class="app-card-footnote">* Dentro de la versión mayor actual. Las futuras versiones mayores pueden ser una actualización de pago — nunca una recompra forzada.</small>',
     'index.s8.cr.cta':   'Obtén ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Gratis.</strong> De verdad gratis.',
@@ -1205,7 +1205,7 @@ const translations = {
     // ---------- Hero ----------
     'index.hero.eyebrow':  'Un lecteur natif pour Mac, iPad et iPhone',
     'index.hero.headline': '<span class="dropcap">U</span>n livre<span class="punct">,</span> <em>à suivre.</em>',
-    'index.hero.sub':      'Fermez-le sur votre Mac à minuit. Ouvrez-le sur votre iPhone le matin, sur le trajet du travail. <strong>Le même livre. La même page. Le même paragraphe.</strong>',
+    'index.hero.sub':      'Fermez-le sur votre Mac à minuit. Ouvrez-le sur votre iPhone le matin, sur le trajet du travail. <strong>Le même livre — le même paragraphe.</strong>',
 
     // ---------- Reading strip (legacy keys, no longer rendered) ----------
     'index.strip.label':    'En continu',
@@ -1237,7 +1237,7 @@ const translations = {
     'index.s4.h2':      'Une typographie qui <em>respecte</em> le texte.',
     'index.s4.p1':      'La plupart des apps de lecture se trompent en typographie. Soit elles imitent maladroitement un livre — avec des animations de tournage de page et un papier factice à la texture fabriquée, soit elles traitent le texte comme un déversement de données — réglages par défaut du navigateur, colonnes irrégulières, sans coupures de mots.',
     'index.s4.p2':      '<strong>ContinuousReader soigne les détails.</strong>',
-    'index.s4.p3':      'Cinq palettes principales — Neutral, Ochre, Celestial, Lime, Rose — chacune avec sept variations tonales : un extrême blanc pur à gauche, cinq tons intermédiaires et un extrême noir pur à droite. Plus deux thèmes mis en avant pour les amateurs du style rétro : <em>Typewriter</em> en ivoire et brun foncé (variantes claire et sombre) — avec une touche steampunk discrète : un compteur de vitesse de tableau de bord en laiton à aiguille mobile, remplacé par un cadran radio vintage à pointeur rouge éclairé sur les barres étroites ; touches en cuivre ; compteurs mécaniques à tambour à la fois pour le minuteur de session et l’indicateur de page — et <em>Terminal</em> — monospace blanc sur bleu profond (si la palette vous semble familière — <em>oui, vous ne vous trompez pas</em>). Trois emplacements personnalisés, où les couleurs sont les vôtres. <strong>Quarante et une variantes au total.</strong>',
+    'index.s4.p3':      'Cinq palettes principales — Neutral, Ochre, Celestial, Lime, Rose — chacune avec sept variations tonales : un extrême blanc pur à gauche, cinq tons intermédiaires et un extrême noir pur à droite. Plus deux thèmes mis en avant pour les amateurs du style rétro : <em>Typewriter</em> en ivoire et brun foncé (variantes claire et sombre) — avec une touche steampunk discrète : un compteur de vitesse de tableau de bord en laiton à aiguille mobile, remplacé par un cadran radio vintage à pointeur rouge éclairé sur les barres étroites ; touches en cuivre ; compteurs mécaniques à tambour — et <em>Terminal</em> — monospace blanc sur bleu profond (si la palette vous semble familière — <em>oui, vous ne vous trompez pas</em>). Trois emplacements personnalisés, où les couleurs sont les vôtres. <strong>Quarante et une variantes au total.</strong>',
     'index.s4.p4':      'Les deux extrêmes de chaque palette colorée — blanc pur avec un texte saturé de la couleur de la palette à gauche, noir pur avec le même à droite — couvrent les cas difficiles : <strong>en plein soleil sur une plage</strong> ou <strong>au lit avec les lumières éteintes</strong>, dans la couleur qui vous va.',
     'index.s4.picker':  'Trois modes de sélection. <strong>Fixe</strong> — un thème, toujours. <strong>Jour et Nuit</strong> — un thème clair couplé à un thème sombre, l’app bascule quand votre système le fait. <strong>Forçage manuel</strong> — n’importe quel thème par-dessus le programme, pour une session qui sort du rythme. Sur n’importe quel thème sombre, un curseur souple de luminosité du texte, de 100 % à 30 % — pour les nuits où même les thèmes sombres semblent trop lumineux.',
     'index.s4.dt1':     'Polices',
@@ -1279,7 +1279,7 @@ const translations = {
     'index.s8.intro':    'Deux apps de lecture. Une seule base. <strong>À vous de choisir.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Une seule fois, pas par mois.',
-    'index.s8.cr.desc':  'Un véritable espace de travail de lecture. Construisez votre bibliothèque. Synchronisez votre position, vos marque-pages et vos réglages de lecture entre Mac, iPad et iPhone. Catalogues OPDS. Marque-pages, notes, statistiques. Toutes les fonctionnalités, sur tous les appareils, pour toujours.',
+    'index.s8.cr.desc':  'Un véritable espace de travail de lecture. Construisez votre bibliothèque. Synchronisez votre position, vos marque-pages et vos réglages de lecture entre Mac, iPad et iPhone. Catalogues OPDS. Marque-pages, notes, statistiques. Toutes les fonctionnalités, sur tous les appareils, pour toujours.<sup>*</sup><small class="app-card-footnote">* Au sein de la version majeure actuelle. Les versions majeures futures peuvent être une mise à niveau payante — jamais un rachat forcé.</small>',
     'index.s8.cr.cta':   'Obtenir ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Gratuit.</strong> Vraiment gratuit.',
@@ -1327,7 +1327,7 @@ const translations = {
     // ---------- Hero ----------
     'index.hero.eyebrow':  'Ein nativer Reader für Mac, iPad und iPhone',
     'index.hero.headline': '<span class="dropcap">E</span>in Buch <span class="punct">—</span> <em>Fortsetzung folgt.</em>',
-    'index.hero.sub':      'Schließ ihn um Mitternacht auf deinem Mac. Öffne ihn morgens auf deinem iPhone, auf dem Weg zur Arbeit. <strong>Dasselbe Buch. Dieselbe Seite. Derselbe Absatz.</strong>',
+    'index.hero.sub':      'Schließ ihn um Mitternacht auf deinem Mac. Öffne ihn morgens auf deinem iPhone, auf dem Weg zur Arbeit. <strong>Dasselbe Buch — derselbe Absatz.</strong>',
 
     // ---------- Reading strip (legacy keys, no longer rendered) ----------
     'index.strip.label':    'Durchgehend',
@@ -1359,7 +1359,7 @@ const translations = {
     'index.s4.h2':      'Typografie, die den <em>Text respektiert.</em>',
     'index.s4.p1':      'Die meisten Lese-Apps verfehlen die Typografie. Entweder tun sie so, als wären sie ein Buch — mit ungeschickten Seitenwechseln und gefälschtem Papier mit künstlicher Textur, oder sie behandeln den Text wie eine Datenmüllhalde — Browser-Standards, ungleichmäßige Spalten, keine Silbentrennung.',
     'index.s4.p2':      '<strong>ContinuousReader achtet auf die Details.</strong>',
-    'index.s4.p3':      'Fünf Hauptpaletten — Neutral, Ochre, Celestial, Lime, Rose — jede mit sieben tonalen Variationen: ein reinweißes Extrem links, fünf Mitteltöne und ein reinschwarzes Extrem rechts. Dazu zwei besondere Themes für Liebhaber des Old-School-Stils: <em>Typewriter</em> in Elfenbein und Dunkelbraun (helle und dunkle Variante) — mit dezentem Steampunk-Touch: ein Messing-Armaturenbrett-Tachometer mit rollender Nadel, der bei schmalen Leisten in eine Vintage-Radioskala mit beleuchtetem rotem Zeiger wechselt; Kupfertasten; mechanische Trommelzählwerke sowohl für den Sitzungs-Timer als auch für die Seitenanzeige — und <em>Terminal</em> — weiße Monospace-Schrift auf tiefblauem Grund (wenn dir die Palette bekannt vorkommt — <em>ja, du liegst richtig</em>). Drei eigene Slots, in denen du die Farben selbst festlegst. <strong>Insgesamt einundvierzig Varianten.</strong>',
+    'index.s4.p3':      'Fünf Hauptpaletten — Neutral, Ochre, Celestial, Lime, Rose — jede mit sieben tonalen Variationen: ein reinweißes Extrem links, fünf Mitteltöne und ein reinschwarzes Extrem rechts. Dazu zwei besondere Themes für Liebhaber des Old-School-Stils: <em>Typewriter</em> in Elfenbein und Dunkelbraun (helle und dunkle Variante) — mit dezentem Steampunk-Touch: ein Messing-Armaturenbrett-Tachometer mit rollender Nadel, der bei schmalen Leisten in eine Vintage-Radioskala mit beleuchtetem rotem Zeiger wechselt; Kupfertasten; mechanische Trommelzählwerke — und <em>Terminal</em> — weiße Monospace-Schrift auf tiefblauem Grund (wenn dir die Palette bekannt vorkommt — <em>ja, du liegst richtig</em>). Drei eigene Slots, in denen du die Farben selbst festlegst. <strong>Insgesamt einundvierzig Varianten.</strong>',
     'index.s4.p4':      'Die zwei Extreme jeder Farbpalette — reines Weiß mit gesättigtem Palettenfarb-Text links, reines Schwarz mit derselben Farbe rechts — decken die harten Fälle ab: <strong>in der vollen Sonne am Strand</strong> oder <strong>im Bett bei ausgeschaltetem Licht</strong>, in der Farbe, die gerade passt.',
     'index.s4.picker':  'Drei Auswahlmodi. <strong>Fix</strong> — ein Theme, immer. <strong>Tag und Nacht</strong> — ein helles Theme gepaart mit einem dunklen, die App wechselt mit dem System. <strong>Manuelle Übersteuerung</strong> — jedes Theme über den Zeitplan hinweg, für eine Sitzung, die aus dem Rhythmus fällt. Bei jedem dunklen Theme — ein sanfter Helligkeits-Slider für den Text von 100 % bis 30 %, für Nächte, in denen selbst die dunklen Themes zu hell wirken.',
     'index.s4.dt1':     'Schriftarten',
@@ -1401,7 +1401,7 @@ const translations = {
     'index.s8.intro':    'Zwei Lese-Apps. Eine Basis. <strong>Deine Wahl.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Einmalig, nicht monatlich.',
-    'index.s8.cr.desc':  'Eine vollständige Lese-Umgebung. Bau deine Bibliothek auf. Synchronisiere Position, Lesezeichen und Leseeinstellungen zwischen Mac, iPad und iPhone. OPDS-Kataloge. Lesezeichen, Notizen, Statistiken. Jede Funktion, auf jedem Gerät, für immer.',
+    'index.s8.cr.desc':  'Eine vollständige Lese-Umgebung. Bau deine Bibliothek auf. Synchronisiere Position, Lesezeichen und Leseeinstellungen zwischen Mac, iPad und iPhone. OPDS-Kataloge. Lesezeichen, Notizen, Statistiken. Jede Funktion, auf jedem Gerät, für immer.<sup>*</sup><small class="app-card-footnote">* Innerhalb der aktuellen Hauptversion. Künftige Hauptversionen können ein kostenpflichtiges Upgrade sein — niemals ein erzwungener Neukauf.</small>',
     'index.s8.cr.cta':   'ContinuousReader laden',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Kostenlos.</strong> Wirklich kostenlos.',

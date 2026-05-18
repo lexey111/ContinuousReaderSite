@@ -1052,6 +1052,18 @@ section { position: relative; z-index: 2; }
   margin-bottom: 32px;
 }
 
+/* Footnote inside .app-card-desc (e.g. the "* within the major version"
+   caveat on the paid card). Block-display lets it sit as its own line
+   with a top margin against the desc body; smaller font + extra opacity
+   set the visual hierarchy so it doesn't compete with the desc copy. */
+.app-card-footnote {
+  display: block;
+  margin-top: 18px;
+  font-size: 0.82em;
+  line-height: 1.5;
+  opacity: 0.72;
+}
+
 .app-card-cta {
   font-family: var(--sans);
   font-size: 14px;
