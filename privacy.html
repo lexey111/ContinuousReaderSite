@@ -63,9 +63,12 @@
 
       <h3 data-i18n="privacy.short.h">The short version</h3>
       <p data-i18n="privacy.short.p">
-        ContinuousReader and JustReader do not collect, transmit, or store any
-        personal data on external servers. <strong>No analytics, no telemetry,
-        no tracking, no advertising.</strong> Your reading habits are your own.
+        ContinuousReader and JustReader do not collect, analyze, or sell any
+        personal data. <strong>No analytics, no telemetry, no tracking, no
+        advertising.</strong> Your reading habits stay with you — on your
+        own devices, in your own iCloud account if you turn on sync, and
+        briefly in transit between your devices when sync hands a fresh
+        reading position from one to another. Nothing else, nowhere else.
       </p>
 
       <h3 data-i18n="privacy.local.h">Data stored on your device</h3>
@@ -84,30 +87,45 @@
           disable tracking or clear the history at any time.</li>
       </ul>
 
-      <h3 data-i18n="privacy.cloud.h">iCloud sync (optional)</h3>
+      <h3 data-i18n="privacy.cloud.h">Sync (optional)</h3>
       <p data-i18n="privacy.cloud.p1">
-        When you enable iCloud sync in ContinuousReader, the following data is
-        synchronized through your personal iCloud account:
+        When you turn on sync, your reading data lives in only three places —
+        and travels only between them:
       </p>
       <ul class="feature-list">
-        <li data-i18n="privacy.cloud.li1"><strong>Reading state</strong> — positions, bookmarks, notes, library
-          metadata (via iCloud Key-Value Store)</li>
-        <li data-i18n="privacy.cloud.li2"><strong>Book files</strong> — converted HTML, cover images, and
-          metadata (via iCloud Drive)</li>
-        <li data-i18n="privacy.cloud.li3"><strong>Translation records</strong> — if tracking is enabled
-          (via iCloud Drive)</li>
+        <li data-i18n="privacy.cloud.li1"><strong>Your own devices</strong>, locally — the same content stored
+          on each device the app is installed on. This is also exactly what
+          you have when sync is off.</li>
+        <li data-i18n="privacy.cloud.li2"><strong>Your iCloud account</strong>, under your Apple ID. Apple
+          hosts it; the developer has no access. Specifically: book files
+          (converted HTML, cover images, per-book metadata) go to iCloud
+          Drive; bookmarks, notes, library metadata, folders, OPDS catalogs,
+          and a backup of your latest reading position go to iCloud
+          Key-Value Store; translation records, if you opted into tracking,
+          go to iCloud Drive.</li>
+        <li data-i18n="privacy.cloud.li3"><strong>In flight, between your devices</strong> — when you turn a
+          page, the new position is relayed to your other devices through an
+          encrypted realtime channel. The payload contains a hashed book
+          identifier, a paragraph anchor inside the book, and a progress
+          percentage — no titles, no content, no names. Messages pass
+          through and are not retained on the channel. The relay is
+          operated by Ably; tokens that let your devices connect to it are
+          minted by a small Cloudflare Worker. Both see only a randomly
+          generated user identifier we keep in your iCloud Keychain.</li>
       </ul>
       <p data-i18n="privacy.cloud.p2">
-        This data travels between your devices through Apple's iCloud
-        infrastructure, under your Apple ID. <strong>The developer has no
-        access to your iCloud data.</strong> You can disable iCloud sync at
-        any time; your library continues to work locally.
+        You can disable sync at any time; your library continues to work
+        locally on each device.
       </p>
 
       <h3 data-i18n="privacy.net.h">Network access</h3>
       <p data-i18n="privacy.net.p1">The apps access the network only when:</p>
       <ul class="feature-list">
-        <li data-i18n="privacy.net.li1"><strong>iCloud sync</strong> is enabled (Apple's iCloud servers)</li>
+        <li data-i18n="privacy.net.li1"><strong>Sync</strong> is enabled — book files go through Apple iCloud
+          Drive, bookmarks and metadata through Apple iCloud Key-Value
+          Store, and live position updates through an encrypted realtime
+          channel between your devices (see Sync, above, for what each
+          path carries)</li>
         <li data-i18n="privacy.net.li2"><strong>OPDS catalog browsing</strong> — you connect to third-party
           book catalogs you configure yourself (ContinuousReader only)</li>
         <li data-i18n="privacy.net.li3"><strong>URL import</strong> — when you drag a URL into the import
@@ -122,8 +140,14 @@
       <h3 data-i18n="privacy.third.h">Third-party services</h3>
       <p data-i18n="privacy.third.p">
         The apps do not integrate any third-party analytics, crash reporting,
-        advertising, or tracking services. The only external dependency is
-        Apple's own frameworks (iCloud, Translation).
+        advertising, or tracking services. The external dependencies are
+        Apple's own frameworks (iCloud, Translation), and — only when you
+        turn on sync — Ably (an encrypted realtime relay for your reading
+        position) and a Cloudflare Worker (which mints short-lived tokens
+        that let your devices connect to that relay). Both see only a
+        random identifier we keep in your iCloud Keychain — never your
+        name, email, or anything tied to your real identity — and neither
+        retains the messages flowing through.
       </p>
 
       <h3 data-i18n="privacy.kids.h">Children's privacy</h3>

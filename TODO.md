@@ -111,16 +111,23 @@ size) in a few seconds.
 - All 6 HTML pages: nav links, footer columns, `<title>`, og: meta tags
   carry `data-i18n` attributes; `js/i18n.js` is loaded before
   `js/main.js`.
-- `index.html`: full content marked up with `data-i18n` (88 attrs).
+- All 6 HTML pages have full-body `data-i18n` / `data-i18n-attr`
+  markup — `index.html` first, then `features.html`, `platforms.html`,
+  `download.html`, `contact.html`, `privacy.html` in subsequent passes.
 
 ### Still to do
 
-- `data-i18n` markup on the bodies of features, platforms, download,
-  contact, privacy. The keys exist in `js/i18n.js`; the HTML just needs
-  the attributes added — like `index.html` already has.
-- Translations for ru, uk, es, fr, de (5 languages × ~626 keys). Each
-  language can be filled in one page at a time; partial coverage is
-  fine.
+- Translations for ru, uk, es, fr, de. EN source has ~626 keys total.
+  Current per-language coverage of non-EN locales:
+  - **Done** across all 6 langs: `nav` (3) + `foot` (8) + `common` (5)
+    + full `index` (66) + 4 of 24 `meta` keys — ≈ 86 keys / language.
+  - **Still EN-only** (fall back to English at runtime): `features`
+    (249), `platforms` (120), `download` (108), `privacy` (31),
+    `contact` (13), plus 20 outstanding `meta` keys — ≈ 541 keys per
+    target language.
+  - Partial coverage is fine — `js/main.js`'s `getKey()` already falls
+    back to the English string when a locale is missing the key, so
+    each language can be filled in one page at a time.
 
 ## Future / nice to have
 
