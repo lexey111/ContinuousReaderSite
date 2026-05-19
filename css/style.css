@@ -1204,6 +1204,7 @@ section.feature-section { padding: 80px 0; }
   font-weight: 500;
 }
 
+
 /* Badges next to H3 — CR/JR colored by logo wings */
 .badge-group {
   display: inline-flex;
@@ -1324,6 +1325,21 @@ section.feature-section { padding: 80px 0; }
 }
 
 .feature-list li em { font-style: italic; color: var(--ink); }
+
+/* Callout dot sitting inline right after the chip in a feature-list bullet:
+   no auto-margin (parent isn't flex), small breathing space, suppressed
+   connector line (the 32px ::before line is designed for right-edge layouts
+   and would overlap the chip text here). Vertically centered against the
+   chip's cap-height with a small downward nudge — the dot is 14px tall, the
+   chip is 12px UPPERCASE; align-baseline puts the dot floating above. */
+.feature-list li .callout-dot {
+  margin-left: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+.feature-list li .callout-dot::before { display: none; }
 
 /* Inline modifier for prose-style bullets where <strong> is a
    sentence subject (followed by a comma, em-dash, or colon) — not
@@ -2687,4 +2703,93 @@ code {
 @media (max-width: 480px) {
   .nav-brand span:last-child { display: none; }
   .nav-links a:not(:last-child):not(.active) { display: none; }
+}
+
+/* Features-page right-side TOC. Fixed sticky position, hidden below 1280px
+   where the right gutter narrows enough that the sidebar would overlap
+   the main column. Subsections (h3/h4 level) hidden by default and shown
+   only under the currently-active section (accordion). */
+.features-toc {
+  position: fixed;
+  top: 120px;
+  right: 32px;
+  width: 200px;
+  max-height: calc(100vh - 160px);
+  overflow-y: auto;
+  z-index: 50;
+  scrollbar-width: thin;
+}
+
+.features-toc nav,
+.features-toc ul { margin: 0; padding: 0; }
+.features-toc ul { list-style: none; }
+
+.features-toc > nav > ul > li { margin-bottom: 4px; }
+
+.features-toc > nav > ul > li > a {
+  display: block;
+  padding: 6px 0 6px 12px;
+  margin-left: -12px;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-left: 2px solid transparent;
+  transition: color 180ms, border-color 180ms;
+}
+
+/* TOC labels carry <em>...</em> from the source headings — flatten styling
+   inside the TOC so the chip-uppercase reads consistently. */
+.features-toc > nav > ul > li > a em {
+  font-style: normal;
+  color: inherit;
+}
+
+.features-toc > nav > ul > li.active > a {
+  color: var(--accent);
+  border-left-color: var(--accent);
+}
+
+.features-toc > nav > ul > li:not(.active) > a:hover { color: var(--ink-soft); }
+
+.features-toc ul ul {
+  display: none;
+  margin: 4px 0 10px 0;
+  padding-left: 0;
+}
+
+.features-toc > nav > ul > li.active > ul { display: block; }
+
+.features-toc ul ul a {
+  display: block;
+  padding: 3px 0 3px 12px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-family: var(--serif);
+  font-size: 12px;
+  line-height: 1.4;
+  border-left: 1px solid var(--rule);
+  transition: color 180ms, border-color 180ms;
+}
+
+.features-toc ul ul a em {
+  font-style: normal;
+  color: inherit;
+}
+
+.features-toc ul ul a.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  font-weight: 500;
+}
+
+.features-toc ul ul a:hover {
+  color: var(--ink);
+}
+
+@media (max-width: 1280px) {
+  .features-toc { display: none; }
 }

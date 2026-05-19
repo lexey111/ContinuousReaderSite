@@ -125,7 +125,7 @@ pastels for long sessions. High-contrast variants for outdoor reading. A
 **Typewriter** theme in ivory and dark brown (light and dark variants) —
 locked to American Typewriter, dressed in quiet steampunk: a brass dashboard
 speedometer with a rolling needle that swaps to a vintage radio-dial carriage
-with a lit red pointer on narrower bars, copper keycaps, and mechanical
+with a lit red pointer on narrower screens, copper keycaps, and mechanical
 drum-counter read-outs in the bottom bar. A **Terminal** theme — white
 monospace on deep blue. If you
 recognize the palette, you'll know why it's there. Three custom slots where
@@ -314,7 +314,7 @@ background, text color, progress bar tint, bookmark marker palette, and — for
 some — the reading font itself.
 
 - **Palettes**: Five core families — Neutral, Ochre, Celestial, Lime, Rose. Each palette ships in seven tonal variations laid out left-to-right from a pure-white extreme through five mid tones to a pure-black extreme. The two extremes carry the palette's signature color in saturated text on plain white or plain black — built for full sun on a beach (white extreme) or pitch-dark bedrooms (black extreme). The five tones in between are the everyday reading tones for long sessions.
-- **Featured**: Typewriter (light and dark variants) — ivory and dark brown, locked to American Typewriter, with a steampunk-flavoured bottom bar (brass dashboard speedometer with a rolling needle on wide screens, vintage radio-dial carriage with a lit red pointer on narrower bars, copper keycaps, mechanical drum-counter read-outs). And Terminal — white monospace text on deep blue, locked to a monospace font (Menlo / Courier New / American Typewriter); if the palette looks familiar, you already know why it's there.
+- **Featured**: Typewriter (light and dark variants) — ivory and dark brown, locked to American Typewriter, with a steampunk-flavoured bottom bar (brass dashboard speedometer with a rolling needle on wide screens, vintage radio-dial carriage with a lit red pointer on narrower screens, copper keycaps, mechanical drum-counter read-outs). And Terminal — white monospace text on deep blue, locked to a monospace font (Menlo / Courier New / American Typewriter); if the palette looks familiar, you already know why it's there.
 - **Custom**: three user-defined slots with full color picker control over background, text, accent, and progress bar tint.
 
 That math: 5 palettes × 7 tones (35) + Typewriter light + Typewriter dark + Terminal (3 featured) + 3 custom = **41 themes**.
@@ -352,9 +352,9 @@ The default reader renders the book as a single continuous page — no artificia
 breaks, just smooth vertical scrolling.
 
 Switch to **Page** mode for a paginated experience with animated or instant
-page turns and page separators. On Mac and iPad (in landscape), **Two pages**
-mode renders a classic book spread. All three modes preserve your exact
-position when switching.
+page turns. Page separators are configurable — clean lines or a soft shadow.
+On Mac and iPad (in landscape), **Two pages** mode renders a classic book
+spread. All three modes preserve your exact position when switching.
 
 **[SCREENSHOT: two-page spread on Mac with progress bar and chapter map]**
 
@@ -378,30 +378,25 @@ A slim progress bar along the bottom expands on hover (Mac) or tap (iOS) to
 reveal reading position. Click or double-tap to open the **progress drawer**:
 
 - **Tapered slider**: a custom track that's thick for the part you've read and hair-thin for what's ahead, with a smooth S-curve at your current position
-- **Drag-to-seek and tap-to-seek** with debounced scrolling
-- **Entry marker**: a filled dot with a dashed ring showing where you started this session
-- **Marker modes**: switch the track to show chapters, images, or nothing. Chapter markers show titles on hover. Image markers show thumbnail previews.
-- **Go To**: jump to any page number or percentage, with a sliding pill mode switch
+- **Entry marker**: a dot with a dashed ring showing where you started this session
+- **Marker modes**: switch the track to show chapters, images, bookmarks, or nothing. Chapter markers show titles on hover. Image markers show thumbnail previews.
+- **Go To**: direct jump to a page or percent — just enter the value
 
-In ContinuousReader, an additional marker mode shows **color-coded bookmarks**
-along the track, each with its preview text and page number on hover.
-
-All marker positions are computed live from the document — not stored
-estimates, always matching where things actually are.
+In ContinuousReader, bookmark markers are **color-coded** and show preview
+text and page number on hover.
 
 **[SCREENSHOT: progress drawer with tapered slider, markers, and Go To input]**
 
 ### Chapter navigation {CR+JR}
 
-Chapter structure is extracted on import from EPUB spine items, FB2 sections,
-and HTML headings, with proper heading priority and scene-break separator
-filtering (`* * *`, `---`, etc.).
+Chapter structure is extracted on import — with proper heading priority and
+scene-break separator filtering (`* * *`, `---`, etc.).
 
 The **Chapters** tab in the side panel lets you jump to any chapter with one
 click. On Mac, you can switch between two display modes:
 
 - **Chapter list**: a static list with the current chapter highlighted and bolded
-- **Chapter map**: proportional variable-height rows — taller rows for longer chapters — with a thin left rail track, a sliding thumb, and a viewport-proportional indicator. Page numbers are hidden in map mode for a cleaner spatial view. If you've used the minimap in a code editor, you'll recognize the shape — the book as a page of structure, not just text.
+- **Chapter map**: proportional variable-height rows — taller rows for longer chapters — with a thin left rail track, a sliding thumb, and a viewport-proportional indicator. Page numbers are hidden in map mode for a cleaner spatial view. If you've used the minimap in a code editor, you'll recognize the shape.
 
 On iPad and iPhone, chapter list only, with current chapter highlighted.
 

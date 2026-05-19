@@ -68,9 +68,16 @@
   // languages where "Mac" reads as "Мас" with the brain locked into the
   // alphabet of the surrounding text. Listed longest-first so JS regex
   // alternation prefers compound forms.
-  const DEVICE_RE = /\b(MacBook Pro|MacBook Air|MacBook|Mac mini|Mac Studio|Mac Pro|macOS|iPadOS|iOS|Mac|iPad|iPhone)\b/g;
+  const DEVICE_RE = /\b(MacBook Pro|MacBook Air|MacBook|Mac mini|Mac Studio|Mac Pro|macOS|iPadOS|iOS|iMac|Mac|iPad|iPhone)\b/g;
   function wrapDevices(html) {
-    return html.replace(DEVICE_RE, '<span class="dev">$1</span>');
+    // Walk the string alternating tag segments (<...>) and text segments,
+    // applying DEVICE_RE only to text. Without this an attribute like
+    // data-alt="Mac chapter map" would become data-alt="<span class="dev">Mac</span> chapter map"
+    // — the inner double-quote terminates the attribute and the rest renders
+    // as visible text.
+    return html.replace(/(<[^>]*>)|([^<]+)/g, (m, tag, text) =>
+      tag ? tag : text.replace(DEVICE_RE, '<span class="dev">$1</span>')
+    );
   }
   function stripTags(html) {
     return html.replace(/<[^>]+>/g, '');
@@ -304,6 +311,94 @@
   }
 
   // ----------------------------------------------------------
+  // Features-page right-side TOC: scroll-spy that marks the currently-
+  // visible section/subsection in the sidebar. Targets follow the
+  // <id-prefix>-<name> convention injected into features.html (s1, s1-themes,
+  // s2-translate, etc.). Subsection list nests under its parent <li> and
+  // only renders when the parent has .active — keeps the sidebar compact.
+  // ----------------------------------------------------------
+  function setupFeaturesTOC() {
+    const toc = document.querySelector('.features-toc');
+    if (!toc) return;
+
+    const linkById = new Map();
+    toc.querySelectorAll('a[href^="#"]').forEach((a) => {
+      linkById.set(a.getAttribute('href').slice(1), a);
+    });
+
+    // Smooth-scroll on TOC link click, with an offset for the sticky nav.
+    toc.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (!el) return;
+        e.preventDefault();
+        const top = el.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+        history.replaceState(null, '', '#' + id);
+      });
+    });
+
+    // Collect anchor targets in document order.
+    const targets = Array.from(document.querySelectorAll('[id]')).filter((el) =>
+      /^s\d+(-[\w-]+)?$/.test(el.id)
+    );
+
+    function updateActive() {
+      const offset = 200; // px from viewport top — counts as "passed"
+      let activeSection = null;
+      let activeSub = null;
+
+      for (const el of targets) {
+        const top = el.getBoundingClientRect().top;
+        if (top - offset <= 0) {
+          if (el.id.includes('-')) activeSub = el.id;
+          else { activeSection = el.id; activeSub = null; }
+        } else {
+          break;
+        }
+      }
+
+      toc.querySelectorAll('.active').forEach((el) => el.classList.remove('active'));
+
+      if (activeSection) {
+        const link = linkById.get(activeSection);
+        if (link) {
+          link.classList.add('active');
+          const li = link.closest('li');
+          if (li) li.classList.add('active');
+        }
+      }
+      if (activeSub) {
+        const subLink = linkById.get(activeSub);
+        if (subLink) subLink.classList.add('active');
+        // Also light up the parent section.
+        const parentId = activeSub.split('-')[0];
+        const parentLink = linkById.get(parentId);
+        if (parentLink) {
+          parentLink.classList.add('active');
+          const li = parentLink.closest('li');
+          if (li) li.classList.add('active');
+        }
+      }
+    }
+
+    let scheduled = false;
+    function onScroll() {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(() => {
+        updateActive();
+        scheduled = false;
+      });
+    }
+
+    updateActive();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+  }
+
+  // ----------------------------------------------------------
   // Boot
   // ----------------------------------------------------------
   function boot() {
@@ -317,6 +412,7 @@
     setupStickyNav();
     setupReveal();
     setupLightbox();
+    setupFeaturesTOC();
   }
 
   if (document.readyState === 'loading') {
