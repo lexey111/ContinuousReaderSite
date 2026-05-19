@@ -74,8 +74,9 @@ doesn't: the way each device is set up to read.
 
 A Mac is a chair, two-page spread, 32 pt serif. An iPad is one page, comfortable
 size, sometimes ochre. An iPhone is scroll mode, dark theme, small text, one
-hand. Each screen has its own ideal setup. ContinuousReader remembers them
-separately — and keeps the reading itself in sync between them.
+hand. Each screen has its own ideal setup — scroll, paged, or two-page
+spread, whichever fits the moment. ContinuousReader remembers them per
+device and keeps the reading itself in sync.
 
 ---
 
@@ -351,8 +352,9 @@ The default reader renders the book as a single continuous page — no artificia
 breaks, just smooth vertical scrolling.
 
 Switch to **Page** mode for a paginated experience with animated or instant
-page turns and page separators. On Mac, **Two pages** mode renders a classic
-book spread. All three modes preserve your exact position when switching.
+page turns and page separators. On Mac and iPad (in landscape), **Two pages**
+mode renders a classic book spread. All three modes preserve your exact
+position when switching.
 
 **[SCREENSHOT: two-page spread on Mac with progress bar and chapter map]**
 
@@ -442,10 +444,10 @@ panel and in exported reports.
 
 ### Fullscreen (iOS) {CR+JR}
 
-Double-tap the reading area to hide the bottom bar and enter fullscreen. The
-top safe area is ignored so content extends under the Dynamic Island or camera
-housing. Double-tap again to exit. The mode auto-exits when you open settings,
-search, or the side panel.
+Tap the center of the reading area to hide the bottom bar and enter
+fullscreen. The top safe area is ignored so content extends under the Dynamic
+Island or camera housing. Tap the center again to exit. The mode auto-exits
+when you open settings, search, or the side panel.
 
 Optional **pixel-art clock** shows the time as dotted numerals on the
 background of the page — adjustable position and contrast, visible enough to
@@ -769,7 +771,7 @@ see the [Platforms page](platforms.html).
 A short summary:
 
 - **Mac**: the most feature-rich. Table view, keyboard shortcuts, floating panels, island design, drag-and-drop everywhere.
-- **iPad**: touch-optimized. Native swipe actions, side panel, split view, two-column settings layout.
+- **iPad**: touch-optimized. Native swipe actions, side panel, split view, two-column reading layout.
 - **iPhone**: streamlined for one-hand use. Compact UI, gesture navigation, bottom sheets, half-sheet folders.
 
 All three share the same reader, same themes, same typography controls, same
@@ -820,8 +822,8 @@ how you read, not how we expect everyone to read.
 
 **H1:** Three platforms, three experiences.
 
-**Subtitle:** One app, one library, one purchase. Adapted to each device's way
-of working — not a compromise that ignores all three.
+**Subtitle:** One app across Mac, iPad, and iPhone — adapted to each
+device's way of working, not mediocre on all three.
 
 **Intro paragraph:**
 
@@ -882,9 +884,9 @@ laptop. ContinuousReader takes advantage of both.
 - **Native swipe actions** on books for quick actions (pin, color, delete)
 - **Side panel** with bookmarks, chapters, and comments — same data as Mac, adapted to touch
 - **Split view ready** — read alongside any other iPad app
-- **Two-column settings** layout that uses the wider screen instead of pretending to be an iPhone
+- **Two-column reading** that uses the wider screen instead of pretending to be a stretched-out iPhone
 - **Card view with column picker** in quick settings — choose 2, 3, or 4 columns depending on how dense you want the grid
-- **Page-sized OPDS browser** — not a narrow sheet, not a separate window, but a focused dialog the size of the page
+- **Full OPDS browser** — search, filters, shortcuts, and watchers for new releases, at full page size
 
 Same island design as Mac, same fonts, same themes. The library looks like it
 belongs to the same app — because it does.
@@ -902,43 +904,43 @@ clock visible — Russian recommended]**
 
 The iPhone version is streamlined, not stripped. Every feature that makes
 sense on a small screen is there. The ones that don't — the table view, the
-floating panels, the two-page spread — are quietly absent, because forcing
-them would make the app worse.
+floating panels, the two-page spread — are absent, because forcing them
+would make the app worse. Instead — quick settings, tap zones, fullscreen
+reading, native sheets.
 
 **What iPhone does differently:**
 
-- **One-hand friendly** — touch targets, swipe zones, and reachable controls within thumb's reach
-- **Bottom sheets** instead of popovers — half-sheet folders, settings, filters. Natural iOS interaction.
-- **Double-tap fullscreen** — the reading area expands under the Dynamic Island, bottom bar hides, text fills the screen. Double-tap again to exit.
-- **Pixel-art clock** — optional dotted clock shows the time as part of the page background during fullscreen reading. For anyone who's ever lost track of time and missed their stop.
-- **Compact library** with 5-level adaptive row layout that trims information as space shrinks
-- **Fixed 2-column card grid** — not responsive, always 2. Because on a phone, 3 is too many and 1 is too few.
-- **Gesture navigation** — edge swipes, pull-to-refresh, swipe-to-dismiss sheets. iOS the way iOS should work.
+- **One-hand friendly** — controls and swipes within thumb's reach. Two page-turn modes: top/bottom for one thumb, or left/right for two. Pick what suits you.
+- **Native sheets** of different heights for folders, settings, filters — instead of separate windows.
+- **Center-tap fullscreen** — tap the middle of the screen and the reading area expands under the Dynamic Island, bottom bar hides, text fills the screen. Tap again to exit.
+- **Clock and progress over the page** — a small island at the bottom, a thin bottom bar, or pixel-art numerals built into the page background show clock and reading progress while you read in fullscreen. For anyone who's ever lost track of time and missed their stop.
+- **Library in list and cards** — two of the three view modes, no table on a phone. A lot of care went into making both pleasant to thumb through: adaptive row density and a fixed 2-column card grid (because 3 is cramped and 1 is wasteful).
+- **Gesture navigation** — edge swipes, swipe-to-dismiss sheets. iOS the way iOS should work.
 
 ---
 
 ## Feature availability by platform
 
-Not every feature is on every platform. Here's what's where.
+Same reader, three platforms — how each feature is adapted to each.
 
 | | Mac | iPad | iPhone |
 |---|---|---|---|
 | **Library layout** | Island design, resizable columns, hover effects | Island design, swipe actions, compact fonts | Compact list, swipe actions, bottom bar |
 | **View modes** | List, Card, Table | List, Card | List, Card |
-| **Folders** | Collapsible sidebar (F4) | Collapsible sidebar | Bottom sheet |
+| **Folders** | Collapsible sidebar (F4) | Collapsible sidebar | Bottom panel |
 | **Info panel** | Resizable right-side panel | Resizable right-side panel | Push detail view |
 | **Reader side panel** | Integrated left panel | Integrated left panel | Overlay drawer with swipe gestures |
 | **Themes** | All 17 | All 17 | All 17 |
 | **Fonts** | All 9 | All 9 | All 9 |
 | **Typography controls** | Full | Full | Full |
-| **Settings** | Popover + Cmd+, dialog | Popover, two-column | Sheet with detents |
-| **Page modes** | Scroll, Page, Two pages | Scroll, Page | Scroll, Page |
+| **Settings** | Popover + Cmd+, dialog | Popover, two-column | Multi-level bottom panel |
+| **Page modes** | Scroll, Page, Two pages | Scroll, Page, Two pages (landscape) | Scroll, Page |
 | **Chapter map** | ✓ | — | — |
 | **Fullscreen reading** | — | Double-tap | Double-tap |
-| **Pixel-art clock** | — | ✓ | ✓ |
+| **Fullscreen clock & progress** | — | ✓ | ✓ |
 | **Navigation** | Keyboard + trackpad | Keyboard + touch | Edge swipes + touch |
-| **OPDS** | Separate floating window | Page-sized dialog | Sheet |
-| **Filters** | Unified popover | Unified popover | Unified half-sheet |
+| **OPDS** | Separate floating window | Page-sized dialog | Panel |
+| **Filters** | Unified popover | Unified popover | Unified panel |
 | **Backup / Restore** | ✓ | — | — |
 | **Custom library location** | ✓ | — | — |
 | **Drag and drop from browser** | ✓ | ✓ | — |

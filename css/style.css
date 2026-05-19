@@ -1688,6 +1688,48 @@ code {
   background: var(--rule);
 }
 
+/* Shared cross-platform block on platforms page (between per-platform and table) */
+.platform-shared { padding: 60px 0 80px; }
+
+.shared-content { max-width: 720px; }
+
+.shared-eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.shared-title {
+  font-family: var(--serif);
+  font-size: clamp(32px, 4.5vw, 48px);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.shared-title em {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 300;
+}
+
+.shared-intro {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+}
+
+.shared-intro strong { color: var(--ink); font-weight: 500; }
+
+.shared-list li strong { display: block; margin-bottom: 4px; }
+
 /* Comparison table on platforms page */
 .table-section {
   background: var(--bg-deeper);
@@ -1736,7 +1778,6 @@ code {
   background: var(--bg);
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--rule);
 }
 
 .feature-table {
@@ -1745,7 +1786,7 @@ code {
   font-family: var(--serif);
 }
 
-.feature-table thead { background: var(--bg-deeper); }
+.feature-table thead { background: var(--bg-darker); }
 
 .feature-table thead th {
   font-family: var(--sans);
@@ -1756,7 +1797,7 @@ code {
   color: var(--ink);
   padding: 18px 20px;
   text-align: left;
-  border-bottom: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--bg-deeper);
 }
 
 .feature-table thead th:not(:first-child) { text-align: center; }
@@ -1766,11 +1807,9 @@ code {
   font-size: 15px;
   line-height: 1.45;
   color: var(--ink-soft);
-  border-bottom: 1px solid var(--rule);
   vertical-align: top;
+  border-bottom: 1px solid var(--bg-deeper);
 }
-
-.feature-table tbody tr:last-child td { border-bottom: none; }
 
 .feature-table tbody td:first-child {
   font-weight: 500;
@@ -1806,8 +1845,6 @@ code {
 
 .table-footer {
   margin-top: 32px;
-  padding-top: 32px;
-  border-top: 1px solid var(--rule);
   font-family: var(--serif);
   font-size: 16px;
   font-style: italic;
@@ -2024,13 +2061,11 @@ code {
 
 .requirements-table tbody td {
   padding: 18px 24px;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--bg-deeper);
   font-family: var(--serif);
   font-size: 17px;
   color: var(--ink-soft);
 }
-
-.requirements-table tbody tr:last-child td { border-bottom: none; }
 
 .requirements-table tbody td:first-child {
   font-family: var(--sans);
@@ -2065,7 +2100,6 @@ code {
   background: var(--bg);
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid var(--rule);
 }
 
 .comparison-table {
@@ -2074,7 +2108,7 @@ code {
   font-family: var(--serif);
 }
 
-.comparison-table thead { background: var(--bg-deeper); }
+.comparison-table thead { background: var(--bg-darker); }
 
 .comparison-table thead th {
   font-family: var(--sans);
@@ -2085,7 +2119,7 @@ code {
   color: var(--ink);
   padding: 18px 20px;
   text-align: left;
-  border-bottom: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--bg-deeper);
 }
 
 .comparison-table thead th:not(:first-child) {
@@ -2098,7 +2132,7 @@ code {
   font-size: 15px;
   line-height: 1.45;
   color: var(--ink-soft);
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--bg-deeper);
   vertical-align: middle;
 }
 
@@ -2128,8 +2162,8 @@ code {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
-  border-bottom: 1px solid var(--rule-strong);
-  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--bg-deeper);
+  border-top: 1px solid var(--bg-deeper);
   text-align: left;
 }
 
@@ -2140,7 +2174,7 @@ code {
 
 .comparison-table tr.intro-row td {
   padding: 18px 20px;
-  border-bottom: 1px solid var(--rule);
+  border-bottom: 1px solid var(--bg-deeper);
   font-size: 14px;
 }
 
