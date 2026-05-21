@@ -726,6 +726,23 @@ Mac is rarely a comfortable setup on an iPhone held in one hand at midnight.
 If you want, per-device settings can also be synced — it's an opt-in switch in
 preferences.
 
+### Sync panel and connected devices
+
+The cloud icon in the library's bottom bar is more than a status light. Tap
+it and a panel opens — popover on Mac and iPad, sheet on iPhone — that tells
+you exactly what sync is doing and which of your devices are part of it.
+
+- **Live status** — connected, reconnecting, or unavailable, in plain language
+- **Library at a glance** — how many books in your library, how many are downloaded on this device, and an approximate size — with a one-tap "Exact size?" if you want the real on-disk number
+- **Connected devices** — every Mac, iPad, and iPhone you've used with sync, in an Apple-Settings-style list — name, model, and when each was last active
+- **Online dot** — a small green indicator shows which devices are awake right now
+- **Forget** — removed a device for good? Right-click on Mac or swipe on iPhone to take it out of the list
+
+Each device updates its own activity only while the app is actually in front
+of you — a Mac in the background or a locked iPhone won't claim to be online.
+Honest about presence; the panel reflects what you'd see if you walked over
+to that other device right now.
+
 ### Readable book storage
 
 Book content is stored as clean HTML on disk. Files are named with readable

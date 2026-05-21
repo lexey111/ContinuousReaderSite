@@ -44,6 +44,7 @@ Both share the ReaderCore engine (local Swift Package).
 - Book files via iCloud Drive
 - Master/slave model for concurrent reading (one device owns position per book)
 - Works with free iCloud tier for reading state; file sync uses iCloud Drive storage
+- Sync panel reachable by tapping the cloud status badge — shows transport state, library stats (books / downloaded / size with on-demand exact disk scan), and Apple-Settings-style list of connected devices with last-activity timestamps. Foreground-only heartbeat (no fake "online" from a backgrounded Mac or locked iPhone). Forget a peer device via context menu (Mac) or swipe (iPhone).
 
 ### Platform adaptations
 - **Mac**: keyboard shortcuts (F1-F10), floating panels, island design, drag-and-drop, two-page spread
