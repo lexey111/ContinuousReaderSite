@@ -729,8 +729,8 @@ preferences.
 ### Sync panel and connected devices
 
 The cloud icon in the library's bottom bar is more than a status light. Tap
-it and a panel opens — popover on Mac and iPad, sheet on iPhone — that tells
-you exactly what sync is doing and which of your devices are part of it.
+it and a panel opens that tells you exactly what sync is doing and which of
+your devices are part of it.
 
 - **Live status** — connected, reconnecting, or unavailable, in plain language
 - **Library at a glance** — how many books in your library, how many are downloaded on this device, and an approximate size — with a one-tap "Exact size?" if you want the real on-disk number
