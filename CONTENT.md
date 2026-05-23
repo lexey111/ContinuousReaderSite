@@ -733,7 +733,7 @@ it and a panel opens that tells you exactly what sync is doing and which of
 your devices are part of it.
 
 - **Live status** — connected, reconnecting, or unavailable, in plain language
-- **Library at a glance** — how many books in your library, how many are downloaded on this device, and an approximate size — with a one-tap "Exact size?" if you want the real on-disk number
+- **Library at a glance** — how many books are in your library, how many are downloaded on this device, and the real on-disk size, measured the moment you open the panel (a brief spinner while it walks the folder)
 - **Connected devices** — every Mac, iPad, and iPhone you've used with sync, in an Apple-Settings-style list — name, model, and when each was last active
 - **Online dot** — a small green indicator shows which devices are awake right now
 - **Forget** — removed a device for good? Right-click on Mac or swipe on iPhone to take it out of the list
@@ -771,6 +771,31 @@ anywhere:
 
 Multiple libraries work through this mechanism — point at different folders
 for different purposes (work books / novels / research / whatever).
+
+You can switch between cloud and on-device mode at any time, and swap working
+folders while in local mode. Each switch runs through a guided wizard — see
+below.
+
+### Switching modes safely
+
+There's an old file-manager joke: F5 — the file stays here and turns up there.
+F6 — it leaves here and turns up there. F8 — it leaves here and turns up
+nowhere. Moving a whole library is the same three keys with higher stakes — so
+the wizard is built to keep that last one from ever happening by accident.
+
+iCloud or on-device, the default folder or one of your own — move between them
+whenever you like. Every switch opens a short wizard that shows the state of
+both sides first and asks what to do with your files. Nothing moves behind your
+back.
+
+- **Copy, Move, or Switch** — Copy duplicates your books and keeps both sides. Move relocates them and frees the original. Switch only re-points the library and touches no files. You choose; the wizard never decides for you.
+- **The impact, in megabytes** — the confirm step says what will happen before it happens: how much iCloud gains, whether the local folder ends up empty, whether your other devices will see the change. Numbers, not vague reassurances.
+- **Replace is never silent** — the wizard checks the destination first. If it already holds a library, it asks whether to replace it before touching anything.
+- **A cancelled copy costs nothing** — copying a large library can be stopped halfway with no harm. The existing library is only touched once the copy has fully landed, so an interrupted run leaves the original exactly as it was.
+- **Your stats come along** — reading positions, bookmarks, notes, folders, OPDS catalogs, reading time, even translation history all survive the move, in both directions. Turning sync off doesn't quietly reset your numbers.
+- **Move leaves nothing behind** — when books move out of iCloud, the folder list and translation data leave with them. No orphaned files stranded in the cloud on "waiting to upload".
+
+> Turning sync on or off should be a decision you can reverse without holding your breath.
 
 ---
 

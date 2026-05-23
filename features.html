@@ -136,6 +136,7 @@
           <li><a href="#s5-storage" data-i18n="features.s5.storage.h"></a></li>
           <li><a href="#s5-backup" data-i18n="features.s5.backup.h"></a></li>
           <li><a href="#s5-location" data-i18n="features.s5.location.h"></a></li>
+          <li><a href="#s5-switching" data-i18n="features.s5.switching.h"></a></li>
         </ul>
       </li>
       <li data-section="s6"><a href="#s6" data-i18n="features.s6.h2"></a>
@@ -1024,7 +1025,7 @@
         </p>
         <ul class="feature-list">
           <li data-i18n="features.s5.devicelist.li1"><strong>Live status</strong>Connected, reconnecting, or unavailable — in plain language</li>
-          <li data-i18n="features.s5.devicelist.li2"><strong>Library at a glance</strong>How many books in your library, how many are downloaded on this device, and an approximate size — with a one-tap "Exact size?" if you want the real on-disk number</li>
+          <li data-i18n="features.s5.devicelist.li2"><strong>Library at a glance</strong>How many books are in your library, how many are downloaded on this device, and the real on-disk size — measured the moment you open the panel, with a brief spinner while it walks the folder</li>
           <li data-i18n="features.s5.devicelist.li3"><strong>Connected devices</strong>Every Mac, iPad, and iPhone you've used with sync, in an Apple-Settings-style list — name, model, and when each was last active</li>
           <li data-i18n="features.s5.devicelist.li4"><strong>Online dot</strong>A small green indicator shows which devices are awake right now</li>
           <li data-i18n="features.s5.devicelist.li5"><strong>Forget</strong>Removed a device for good? Right-click on Mac or swipe on iPhone to take it out of the list</li>
@@ -1094,12 +1095,44 @@
           research / whatever).
         </p>
         <p><span data-i18n="features.s5.location.p3">
-          Custom location and iCloud sync are mutually exclusive: enabling
-          sync moves the library to iCloud Drive and turns off custom-location
-          overrides; setting a custom folder turns sync off. Pick the
-          workflow that fits.
+          You can switch between cloud and on-device mode at any time, and swap
+          working folders while in local mode. Each switch runs through a
+          guided wizard — see below.
         </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-location.png" data-alt="Custom library location settings" aria-label="View library location screenshot"></button></p>
       </div>
+    </div>
+
+    <div id="s5-switching" class="feature">
+      <div class="feature-head">
+        <h3 class="feature-h3" data-i18n="features.s5.switching.h">Switching modes safely</h3>
+      </div>
+      <div class="feature-body">
+        <p data-i18n="features.s5.switching.joke">
+          There’s an old file-manager joke: F5 — the file stays here and turns
+          up there. F6 — it leaves here and turns up there. F8 — it leaves here
+          and turns up nowhere. Moving a whole library is the same three keys
+          with higher stakes — so the wizard is built to keep that last one
+          from ever happening by accident.
+        </p>
+        <p data-i18n="features.s5.switching.p1">
+          iCloud or on-device, the default folder or one of your own — move
+          between them whenever you like. Every switch opens a short wizard
+          that shows the state of both sides first and asks what to do with
+          your files. Nothing moves behind your back.
+        </p>
+        <ul class="feature-list">
+          <li data-i18n="features.s5.switching.li1"><strong>Copy, Move, or Switch</strong>Copy duplicates your books and keeps both sides. Move relocates them and frees the original. Switch only re-points the library and touches no files. You choose — the wizard never decides for you.</li>
+          <li data-i18n="features.s5.switching.li2"><strong>The impact, in megabytes</strong>The confirm step says what will happen before it happens: how much iCloud gains, whether the local folder ends up empty, whether your other devices will see the change. Numbers, not vague reassurances.</li>
+          <li data-i18n="features.s5.switching.li3"><strong>Replace is never silent</strong>The wizard checks the destination first. If it already holds a library, it asks whether to replace it before touching anything.</li>
+          <li data-i18n="features.s5.switching.li4"><strong>A cancelled copy costs nothing</strong>Copying a large library can be stopped halfway with no harm. The existing library is only touched once the copy has fully landed, so an interrupted run leaves the original exactly as it was.</li>
+          <li data-i18n="features.s5.switching.li5"><strong>Your stats come along</strong>Reading positions, bookmarks, notes, folders, OPDS catalogs, reading time, even translation history — all of it survives the move, in both directions. Turning sync off doesn’t quietly reset your numbers.</li>
+          <li data-i18n="features.s5.switching.li6"><strong>Move leaves nothing behind</strong>When books move out of iCloud, the folder list and translation data leave with them. No orphaned files stranded in the cloud on “waiting to upload”.</li>
+        </ul>
+      </div>
+      <blockquote class="callout" data-i18n="features.s5.switching.callout">
+        Turning sync on or off should be a decision you can reverse without
+        holding your breath.
+      </blockquote>
     </div>
   </div>
 </section>
