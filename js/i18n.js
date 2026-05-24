@@ -131,7 +131,7 @@ const translations = {
 
     'index.s6.eyebrow': 'Your library',
     'index.s6.h2':      'Your library. <em>All yours.</em>',
-    'index.s6.p1':      'Your entire library in three views: a detailed list for scanning, covers in a grid for browsing, or a sortable table for the librarian in you. Group by author, by series, or by folder. Tag with color dots. Filter by genre. Pinned favorites. Recently opened and recently added.',
+    'index.s6.p1':      'Your entire library in three views: a detailed list for scanning, covers in a grid for browsing, or a sortable table for the librarian in you. Group by author, series, genre, or date. Tag with color dots. Filter by genre. Pinned favorites. Recently opened and recently added.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — including ZIP variants. Click a button, drag a file, or drag a URL straight from your browser — the book is fetched and the import dialog opens with metadata, cover, and author already filled in. Or browse OPDS catalogs — Standard Ebooks, Project Gutenberg, Feedbooks, or your own server. Watch feeds for new entries in a series you follow.',
     'index.s6.p3':      'Track your reading time per book, see streaks and patterns, export an HTML report. Bookmarks in seven colors with notes and text highlights. Rich text notes per book. Everything searchable, everything exportable.',
     'index.s6.p4':      'Book content is stored as clean HTML on disk, with readable filenames. No cloud-locked database, no proprietary format, no DRM, no vendor lock-in. Back up the whole library to a ZIP file whenever you want. Everything lives in your own iCloud — or, if you don’t need sync, point the app at any local folder and change it whenever you want.',
@@ -307,7 +307,7 @@ const translations = {
     'features.s3.views.li1':      '<strong>List view</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-list.png" data-alt="List view — adaptive rows with five detail levels" aria-label="View list-mode screenshot"></button>Adaptive row layout with five detail levels (full, compact, minimal, essential, mobile). Shows cover, title, author, series, progress, genre chips, and a context menu.',
     'features.s3.views.li2':      '<strong>Card view</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-card.png" data-alt="Card view — responsive grid with cover images" aria-label="View card-mode screenshot"></button>Responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, fixed 2-column grid.',
     'features.s3.views.li3':      '<strong>Table view</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.png" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Mac only) Sortable columns, column customization, two-level hierarchy, inline color dots in the title column, annotation sheet, and a full-width actions toolbar above the table.',
-    'features.s3.views.p':        'All three support <strong>multi-mode grouping</strong>: none, author, series, or author &amp; series — with collapsible sections and shared section headers.',
+    'features.s3.views.p':        'All three support <strong>multi-mode grouping</strong>: none, author, series, author &amp; series, genres, or date added — with collapsible sections and shared section headers.',
 
     'features.s3.search.h':       'Search, sort, filter',
     'features.s3.search.li1':     '<strong>Scoped search</strong>Filter by title, author, series, comment, annotation, or genre. Results appear as you type.',
@@ -327,7 +327,6 @@ const translations = {
     'features.s3.folders.li2':    '<strong>Folder bottom sheet</strong>On iPhone with create, rename, delete, and swipe actions',
     'features.s3.folders.li3':    '<strong>Drag and drop</strong>Books onto folders to assign them',
     'features.s3.folders.li4':    '<strong>Bulk folder assignment</strong>In selection mode',
-    'features.s3.folders.li5':    '<strong>Default folder</strong>For new imports — set via context menu, indicated with a star',
     'features.s3.folders.p2':     'Folders are flat (not hierarchical) by design — most users don’t need tree depth, and flat folders are faster to navigate.',
 
     'features.s3.info.h':         'Info panel',
@@ -925,7 +924,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Библиотека',
     'index.s6.h2':      'Ваша библиотека. <em>Вся ваша.</em>',
-    'index.s6.p1':      'Вся библиотека в трёх режимах: подробный список — для просмотра, обложки в сетке — для перелистывания, сортируемая таблица — для вашего внутреннего библиотекаря. Группировка по автору, циклу или папке. Цветные метки. Фильтр по жанру. Избранные книги. Недавно открытые и недавно добавленные.',
+    'index.s6.p1':      'Вся библиотека в трёх режимах: подробный список — для просмотра, обложки в сетке — для перелистывания, сортируемая таблица — для вашего внутреннего библиотекаря. Группируйте по автору, серии, жанру или дате. Цветные метки. Фильтр по жанру. Избранные книги. Недавно открытые и недавно добавленные.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — включая ZIP-варианты. Нажмите кнопку, или перетащите файл, или перетащите URL прямо из браузера — книга скачается, а диалог импорта откроется уже с заполненными метаданными, обложкой и автором. Или откройте каталоги OPDS — Standard Ebooks, Project Gutenberg, Feedbooks или собственный сервер. Следите за фидами на новые поступления в цикле, который читаете.',
     'index.s6.p3':      'Считайте время чтения по каждой книге, смотрите серии дней и закономерности, выгружайте HTML-отчёт. Закладки в семи цветах с заметками и подсветкой текста. Заметки с форматированием — на каждую книгу. Всё ищется, всё экспортируется.',
     'index.s6.p4':      'Содержимое книги хранится на диске как чистый HTML, с читаемыми именами файлов. Никакой облачно-залоченной БД, никакого проприетарного формата, никакого DRM, никакого vendor lock-in. Резервная копия всей библиотеки в один ZIP-файл — когда захотите. Всё хранится в вашем iCloud — или, если вам не нужна синхронизация, выберите любую локальную папку и меняйте её при необходимости.',
@@ -1292,7 +1291,7 @@ const translations = {
     'features.s3.views.li1':      '<strong>Список</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-list.png" data-alt="List view — adaptive rows with five detail levels" aria-label="View list-mode screenshot"></button>Адаптивная строчная разметка с пятью уровнями детализации (полный, компактный, минимальный, основной, мобильный). Показывает обложку, название, автора, серию, прогресс, теги жанров и контекстное меню.',
     'features.s3.views.li2':      '<strong>Карточки</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-card.png" data-alt="Card view — responsive grid with cover images" aria-label="View card-mode screenshot"></button>Адаптивная сетка с обложками, навигация клавиатурой по четырём направлениям, анимация увеличения обложки, открытие двойным щелчком, чекбоксы выделения в матовом стекле. На iPhone — фиксированная сетка в две колонки.',
     'features.s3.views.li3':      '<strong>Таблица</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.png" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Только Mac) Сортируемые колонки, кастомизация колонок, двухуровневая иерархия, инлайн цветные точки в колонке названия, панель аннотации и панель действий во всю ширину над таблицей.',
-    'features.s3.views.p':        'Все три поддерживают <strong>многорежимную группировку</strong>: без группировки, по автору, по серии или по автору и серии — со сворачиваемыми секциями и общими заголовками секций.',
+    'features.s3.views.p':        'Все три поддерживают <strong>многорежимную группировку</strong>: без группировки, по автору, по серии, по автору и серии, по жанрам или по дате добавления — со сворачиваемыми секциями и общими заголовками секций.',
 
     'features.s3.search.h':       'Поиск, сортировка, фильтрация',
     'features.s3.search.li1':     '<strong>Поиск по областям</strong>Фильтр по названию, автору, серии, комментарию, аннотации или жанру. Результаты появляются по мере ввода.',
@@ -1312,7 +1311,6 @@ const translations = {
     'features.s3.folders.li2':    '<strong>Нижняя панель папок</strong>На iPhone с действиями создания, переименования, удаления и свайпами',
     'features.s3.folders.li3':    '<strong>Drag-and-drop</strong>Перетаскивайте книги на папки, чтобы их распределить',
     'features.s3.folders.li4':    '<strong>Массовое назначение папки</strong>В режиме выделения',
-    'features.s3.folders.li5':    '<strong>Папка по умолчанию</strong>Для новых импортов — устанавливается через контекстное меню, помечается звёздочкой',
     'features.s3.folders.p2':     'Папки сделаны плоскими (без иерархии) намеренно — большинству пользователей глубина дерева не нужна, а по плоским папкам быстрее перемещаться.',
 
     'features.s3.info.h':         'Информационная панель',
@@ -1705,7 +1703,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Бібліотека',
     'index.s6.h2':      'Ваша бібліотека. <em>Уся ваша.</em>',
-    'index.s6.p1':      'Уся бібліотека в трьох режимах: детальний список — для перегляду, обкладинки в сітці — для гортання, сортована таблиця — для вашого внутрішнього бібліотекаря. Групування за автором, циклом чи папкою. Кольорові мітки. Фільтр за жанром. Обрані книги. Нещодавно відкриті та нещодавно додані.',
+    'index.s6.p1':      'Уся бібліотека в трьох режимах: детальний список — для перегляду, обкладинки в сітці — для гортання, сортована таблиця — для вашого внутрішнього бібліотекаря. Групуйте за автором, серією, жанром або датою. Кольорові мітки. Фільтр за жанром. Обрані книги. Нещодавно відкриті та нещодавно додані.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — включно із ZIP-варіантами. Натисніть кнопку, або перетягніть файл, або перетягніть URL прямо з браузера — книга завантажиться, а діалог імпорту відкриється вже із заповненими метаданими, обкладинкою та автором. Або відкрийте каталоги OPDS — Standard Ebooks, Project Gutenberg, Feedbooks чи власний сервер. Стежте за фідами на нові надходження в циклі, який читаєте.',
     'index.s6.p3':      'Рахуйте час читання за кожну книгу, дивіться серії днів та закономірності, вивантажуйте HTML-звіт. Закладки в семи кольорах із нотатками й підсвіткою тексту. Нотатки з форматуванням — на кожну книгу. Усе шукається, усе експортується.',
     'index.s6.p4':      'Вміст книги зберігається на диску як чистий HTML, з читабельними іменами файлів. Жодної хмарно-залоченої БД, жодного пропрієтарного формату, жодного DRM, жодного vendor lock-in. Резервна копія всієї бібліотеки в один ZIP-файл — коли захочете. Усе зберігається у вашому iCloud — або, якщо вам не потрібна синхронізація, виберіть будь-яку локальну папку та змінюйте її за потреби.',
@@ -2072,7 +2070,7 @@ const translations = {
     'features.s3.views.li1':      '<strong>Список</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-list.png" data-alt="List view — adaptive rows with five detail levels" aria-label="View list-mode screenshot"></button>Адаптивний макет рядків із пʼятьма рівнями деталізації (повний, компактний, мінімальний, базовий, мобільний). Показує обкладинку, назву, автора, серію, прогрес, теги жанрів і контекстне меню.',
     'features.s3.views.li2':      '<strong>Картки</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-card.png" data-alt="Card view — responsive grid with cover images" aria-label="View card-mode screenshot"></button>Адаптивна сітка з обкладинками, 4-напрямкова навігація з клавіатури, анімація наближення обкладинки, подвійний клік для відкриття, чекбокси вибору з ефектом матового скла. На iPhone — фіксована сітка у 2 стовпці.',
     'features.s3.views.li3':      '<strong>Таблиця</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.png" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(тільки Mac) Сортовані стовпці, налаштування стовпців, дворівнева ієрархія, вбудовані колірні крапки в стовпці назв, панель анотації та повноширока панель дій над таблицею.',
-    'features.s3.views.p':        'Усі три підтримують <strong>багаторежимне групування</strong>: без групування, за автором, за серією або за автором і серією — зі згортуваними секціями і спільними заголовками секцій.',
+    'features.s3.views.p':        'Усі три підтримують <strong>багаторежимне групування</strong>: без групування, за автором, за серією, за автором і серією, за жанрами або за датою додавання — зі згортуваними секціями і спільними заголовками секцій.',
 
     'features.s3.search.h':       'Пошук, сортування, фільтр',
     'features.s3.search.li1':     '<strong>Пошук в обраному полі</strong>Фільтрування за назвою, автором, серією, коментарем, анотацією чи жанром. Результати зʼявляються по мірі вводу.',
@@ -2092,7 +2090,6 @@ const translations = {
     'features.s3.folders.li2':    '<strong>Нижня панель тек</strong>На iPhone — зі створенням, перейменуванням, видаленням і свайп-діями',
     'features.s3.folders.li3':    '<strong>Перетягування</strong>Кидайте книги на теки, щоб їх призначити',
     'features.s3.folders.li4':    '<strong>Масове призначення теки</strong>У режимі вибору',
-    'features.s3.folders.li5':    '<strong>Тека за замовчуванням</strong>Для нових імпортів — задається через контекстне меню, позначається зірочкою',
     'features.s3.folders.p2':     'Теки пласкі (не ієрархічні) за задумом — більшості користувачів не потрібна глибина дерева, а пласкі теки швидші в навігації.',
 
     'features.s3.info.h':         'Інформаційна панель',
@@ -2483,7 +2480,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Tu biblioteca',
     'index.s6.h2':      'Tu biblioteca. <em>Toda tuya.</em>',
-    'index.s6.p1':      'Toda tu biblioteca en tres modos: lista detallada — para revisar, portadas en cuadrícula — para hojear, tabla ordenable — para el bibliotecario que llevas dentro. Agrupar por autor, por serie o por carpeta. Etiquetas de color. Filtro por género. Marcadores fijados. Recientemente abiertos y recientemente añadidos.',
+    'index.s6.p1':      'Toda tu biblioteca en tres modos: lista detallada — para revisar, portadas en cuadrícula — para hojear, tabla ordenable — para el bibliotecario que llevas dentro. Agrupa por autor, serie, género o fecha. Etiquetas de color. Filtro por género. Marcadores fijados. Recientemente abiertos y recientemente añadidos.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — incluyendo variantes ZIP. Pulsa un botón, arrastra un archivo, o arrastra una URL directamente desde tu navegador — el libro se descarga, y el diálogo de importación se abre con metadatos, portada y autor ya rellenados. O explora catálogos OPDS — Standard Ebooks, Project Gutenberg, Feedbooks o tu propio servidor. Sigue feeds para nuevos lanzamientos en una serie que estás siguiendo.',
     'index.s6.p3':      'Registra tu tiempo de lectura por libro, mira rachas y patrones, exporta un informe HTML. Marcadores en siete colores con notas y resaltado de texto. Notas con formato — para cada libro. Todo se busca, todo se exporta.',
     'index.s6.p4':      'El contenido del libro se guarda como HTML limpio en disco, con nombres de archivo legibles. Sin base de datos atada a la nube, sin formato propietario, sin DRM, sin vendor lock-in. Haz una copia de seguridad de toda la biblioteca en un archivo ZIP — cuando quieras. Todo vive en tu propio iCloud — o, si no necesitas sincronización, apunta la app a cualquier carpeta local y cámbiala cuando quieras.',
@@ -2850,7 +2847,7 @@ const translations = {
     'features.s3.views.li1':      '<strong>Lista</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-list.png" data-alt="List view — adaptive rows with five detail levels" aria-label="View list-mode screenshot"></button>Disposición de filas adaptativa con cinco niveles de detalle (completo, compacto, mínimo, esencial y móvil). Muestra portada, título, autor, serie, progreso, etiquetas de género y un menú contextual.',
     'features.s3.views.li2':      '<strong>Tarjetas</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-card.png" data-alt="Card view — responsive grid with cover images" aria-label="View card-mode screenshot"></button>Cuadrícula adaptable con portadas, navegación por teclado en cuatro direcciones, animación de zoom de portada, doble clic para abrir y casillas de selección con efecto vidrio esmerilado. En iPhone, cuadrícula fija de dos columnas.',
     'features.s3.views.li3':      '<strong>Tabla</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.png" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(solo Mac) Columnas ordenables, personalización de columnas, jerarquía en dos niveles, puntos de color en línea en la columna de título, panel de anotaciones y una barra de acciones a todo el ancho sobre la tabla.',
-    'features.s3.views.p':        'Los tres admiten <strong>agrupamiento multimodo</strong>: ninguno, por autor, por serie o por autor y serie, con secciones plegables y cabeceras de sección compartidas.',
+    'features.s3.views.p':        'Los tres admiten <strong>agrupamiento multimodo</strong>: ninguno, por autor, por serie, por autor y serie, por géneros o por fecha de adición, con secciones plegables y cabeceras de sección compartidas.',
 
     'features.s3.search.h':       'Búsqueda, ordenación y filtros',
     'features.s3.search.li1':     '<strong>Búsqueda con ámbito</strong>Filtra por título, autor, serie, comentario, anotación o género. Los resultados aparecen mientras escribes.',
@@ -2870,7 +2867,6 @@ const translations = {
     'features.s3.folders.li2':    '<strong>Panel inferior de carpetas</strong>En iPhone, con crear, renombrar, eliminar y acciones por deslizamiento',
     'features.s3.folders.li3':    '<strong>Arrastrar y soltar</strong>Suelta los libros sobre las carpetas para asignarlos',
     'features.s3.folders.li4':    '<strong>Asignación masiva a carpeta</strong>En modo de selección',
-    'features.s3.folders.li5':    '<strong>Carpeta por defecto</strong>Para las nuevas importaciones: se define desde el menú contextual y se marca con una estrella',
     'features.s3.folders.p2':     'Las carpetas son planas (no jerárquicas) por diseño: a la mayoría de usuarios no les hace falta profundidad de árbol, y una estructura plana es más rápida de recorrer.',
 
     'features.s3.info.h':         'Panel de información',
@@ -3263,7 +3259,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Votre bibliothèque',
     'index.s6.h2':      'Votre bibliothèque. <em>Entièrement à vous.</em>',
-    'index.s6.p1':      'Toute votre bibliothèque en trois modes : liste détaillée — pour passer en revue, couvertures en grille — pour feuilleter, tableau triable — pour le bibliothécaire qui sommeille en vous. Regroupement par auteur, par série ou par dossier. Étiquettes de couleur. Filtre par genre. Marque-pages épinglés. Récemment ouverts et récemment ajoutés.',
+    'index.s6.p1':      'Toute votre bibliothèque en trois modes : liste détaillée — pour passer en revue, couvertures en grille — pour feuilleter, tableau triable — pour le bibliothécaire qui sommeille en vous. Groupez par auteur, série, genre ou date. Étiquettes de couleur. Filtre par genre. Marque-pages épinglés. Récemment ouverts et récemment ajoutés.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — y compris les variantes ZIP. Cliquez sur un bouton, glissez un fichier, ou glissez une URL directement depuis votre navigateur — le livre est récupéré, et la fenêtre d’importation s’ouvre avec les métadonnées, la couverture et l’auteur déjà remplis. Ou parcourez les catalogues OPDS — Standard Ebooks, Project Gutenberg, Feedbooks ou votre propre serveur. Suivez des flux pour les nouveautés dans une série que vous suivez.',
     'index.s6.p3':      'Suivez votre temps de lecture par livre, voyez les séries de jours et les motifs, exportez un rapport HTML. Marque-pages en sept couleurs avec notes et surlignage de texte. Notes formatées — pour chaque livre. Tout est cherchable, tout est exportable.',
     'index.s6.p4':      'Le contenu du livre est stocké en HTML propre sur le disque, avec des noms de fichiers lisibles. Aucune base de données enfermée dans le cloud, aucun format propriétaire, aucun DRM, aucun verrouillage par fournisseur. Sauvegardez toute la bibliothèque dans un fichier ZIP — quand vous voulez. Tout vit dans votre propre iCloud — ou, si vous n’avez pas besoin de synchronisation, pointez l’app vers n’importe quel dossier local et changez-le quand vous voulez.',
@@ -3630,7 +3626,7 @@ const translations = {
     'features.s3.views.li1':      '<strong>Liste</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-list.png" data-alt="List view — adaptive rows with five detail levels" aria-label="View list-mode screenshot"></button>Disposition de lignes adaptative avec cinq niveaux de détail (complet, compact, minimal, essentiel, mobile). Affiche couverture, titre, auteur, série, progression, étiquettes de genre et un menu contextuel.',
     'features.s3.views.li2':      '<strong>Cartes</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-card.png" data-alt="Card view — responsive grid with cover images" aria-label="View card-mode screenshot"></button>Grille adaptative avec images de couverture, navigation clavier dans les quatre directions, animation de zoom de la couverture, double-clic pour ouvrir, cases de sélection en verre dépoli. Sur iPhone, grille fixe à deux colonnes.',
     'features.s3.views.li3':      '<strong>Tableau</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.png" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Mac uniquement) Colonnes triables, personnalisation des colonnes, hiérarchie à deux niveaux, pastilles de couleur intégrées à la colonne titre, feuille d’annotation et barre d’actions pleine largeur au-dessus du tableau.',
-    'features.s3.views.p':        'Les trois prennent en charge un <strong>regroupement multi-modes</strong> : aucun, par auteur, par série ou par auteur et série — avec sections rétractables et en-têtes partagés.',
+    'features.s3.views.p':        'Les trois prennent en charge un <strong>regroupement multi-modes</strong> : aucun, par auteur, par série, par auteur et série, par genres ou par date d’ajout — avec sections rétractables et en-têtes partagés.',
 
     'features.s3.search.h':       'Rechercher, trier, filtrer',
     'features.s3.search.li1':     '<strong>Recherche ciblée</strong>Filtrez par titre, auteur, série, commentaire, annotation ou genre. Les résultats apparaissent au fil de la saisie.',
@@ -3650,7 +3646,6 @@ const translations = {
     'features.s3.folders.li2':    '<strong>Feuille de dossiers en bas</strong>Sur iPhone, avec création, renommage, suppression et actions par balayage',
     'features.s3.folders.li3':    '<strong>Glisser-déposer</strong>Faites glisser les livres sur les dossiers pour les y assigner',
     'features.s3.folders.li4':    '<strong>Attribution groupée à un dossier</strong>En mode sélection',
-    'features.s3.folders.li5':    '<strong>Dossier par défaut</strong>Pour les nouvelles importations — défini via le menu contextuel, signalé par une étoile',
     'features.s3.folders.p2':     'Les dossiers sont à plat (non hiérarchiques) par choix — la plupart des utilisateurs n’ont pas besoin de profondeur arborescente, et les dossiers à plat se naviguent plus vite.',
 
     'features.s3.info.h':         'Panneau d’information',
@@ -4042,7 +4037,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Deine Bibliothek',
     'index.s6.h2':      'Deine Bibliothek. <em>Ganz für dich.</em>',
-    'index.s6.p1':      'Deine ganze Bibliothek in drei Ansichten: detaillierte Liste — zum Durchsehen, Cover im Raster — zum Blättern, sortierbare Tabelle — für den Bibliothekar in dir. Gruppieren nach Autor, Serie oder Ordner. Farbmarkierungen. Genre-Filter. Angeheftete Favoriten. Kürzlich geöffnete und kürzlich hinzugefügte.',
+    'index.s6.p1':      'Deine ganze Bibliothek in drei Ansichten: detaillierte Liste — zum Durchsehen, Cover im Raster — zum Blättern, sortierbare Tabelle — für den Bibliothekar in dir. Gruppieren Sie nach Autor, Serie, Genre oder Datum. Farbmarkierungen. Genre-Filter. Angeheftete Favoriten. Kürzlich geöffnete und kürzlich hinzugefügte.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — einschließlich ZIP-Varianten. Klick auf einen Button, zieh eine Datei hinein, oder zieh eine URL direkt aus deinem Browser — das Buch wird heruntergeladen, und der Importdialog öffnet sich mit bereits ausgefüllten Metadaten, Cover und Autor. Oder durchsuch OPDS-Kataloge — Standard Ebooks, Project Gutenberg, Feedbooks oder deinen eigenen Server. Verfolge Feeds für neue Veröffentlichungen in einer Serie, der du folgst.',
     'index.s6.p3':      'Verfolge deine Lesezeit pro Buch, sieh dir Serien und Muster an, exportiere einen HTML-Bericht. Lesezeichen in sieben Farben mit Notizen und Texthervorhebung. Formatierte Notizen — für jedes Buch. Alles ist durchsuchbar, alles ist exportierbar.',
     'index.s6.p4':      'Buchinhalte werden als sauberes HTML auf der Festplatte gespeichert, mit lesbaren Dateinamen. Keine cloud-eingesperrte Datenbank, kein proprietäres Format, kein DRM, kein Vendor-Lock-in. Sicher die ganze Bibliothek als ZIP-Datei — wann immer du willst. Alles lebt in deinem eigenen iCloud — oder, wenn du keine Synchronisation brauchst, zeig der App auf einen beliebigen lokalen Ordner und änder ihn jederzeit.',
@@ -4409,7 +4404,7 @@ const translations = {
     'features.s3.views.li1':      '<strong>Liste</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-list.png" data-alt="List view — adaptive rows with five detail levels" aria-label="View list-mode screenshot"></button>Adaptives Zeilen-Layout mit fünf Detailstufen (voll, kompakt, minimal, essenziell, mobil). Zeigt Cover, Titel, Autor, Reihe, Fortschritt, Genre-Chips und ein Kontextmenü.',
     'features.s3.views.li2':      '<strong>Karten</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-card.png" data-alt="Card view — responsive grid with cover images" aria-label="View card-mode screenshot"></button>Responsives Raster mit Coverbildern, 4-Wege-Tastaturnavigation, Cover-Zoom-Animation, Doppelklick zum Öffnen, mattierte Auswahl-Checkboxen. Auf iPhone festes 2-Spalten-Raster.',
     'features.s3.views.li3':      '<strong>Tabelle</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.png" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Nur Mac) Sortierbare Spalten, Spalten-Anpassung, zweistufige Hierarchie, inline Farbpunkte in der Titelspalte, Annotations-Sheet und eine vollbreite Aktions-Werkzeugleiste über der Tabelle.',
-    'features.s3.views.p':        'Alle drei unterstützen <strong>Mehrfach-Gruppierung</strong>: keine, Autor, Reihe oder Autor &amp; Reihe — mit einklappbaren Sektionen und gemeinsamen Sektionsköpfen.',
+    'features.s3.views.p':        'Alle drei unterstützen <strong>Mehrfach-Gruppierung</strong>: keine, Autor, Reihe, Autor &amp; Reihe, Genres oder Hinzufügedatum — mit einklappbaren Sektionen und gemeinsamen Sektionsköpfen.',
 
     'features.s3.search.h':       'Suche, Sortierung, Filter',
     'features.s3.search.li1':     '<strong>Gezielte Suche</strong>Filtern nach Titel, Autor, Reihe, Kommentar, Annotation oder Genre. Ergebnisse erscheinen beim Tippen.',
@@ -4429,7 +4424,6 @@ const translations = {
     'features.s3.folders.li2':    '<strong>Ordner-Bottom-Sheet</strong>Auf iPhone mit Erstellen, Umbenennen, Löschen und Wischgesten',
     'features.s3.folders.li3':    '<strong>Drag-and-Drop</strong>Bücher auf Ordner ziehen, um sie zuzuweisen',
     'features.s3.folders.li4':    '<strong>Massen-Ordnerzuweisung</strong>Im Auswahlmodus',
-    'features.s3.folders.li5':    '<strong>Standardordner</strong>Für neue Importe — über das Kontextmenü gesetzt, mit einem Stern markiert',
     'features.s3.folders.p2':     'Ordner sind flach (nicht hierarchisch) — die meisten Nutzer brauchen keine Baumtiefe, und flache Ordner lassen sich schneller durchnavigieren.',
 
     'features.s3.info.h':         'Info-Panel',

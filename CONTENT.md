@@ -179,7 +179,7 @@ on, and export the full history as an HTML report.
 
 Your entire library in three views: a detailed list for scanning, covers in a
 grid for browsing, or a sortable table for the librarian in you. Group by
-author, by series, or by folder. Tag with color dots. Filter by genre. Pin the
+author, series, genre, or date. Tag with color dots. Filter by genre. Pin the
 books you're actively reading.
 
 EPUB, FB2, MOBI, HTML, TXT, RTF — including ZIP variants. Drag and drop a
@@ -537,8 +537,9 @@ without fiddling with filters.
 - **Card view**: responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, fixed 2-column grid.
 - **Table view** (Mac only): sortable columns, column customization, two-level hierarchy, inline color dots in the title column, annotation sheet, and a full-width actions toolbar above the table.
 
-All three support **multi-mode grouping**: none, author, series, or author &
-series — with collapsible sections and shared section headers.
+All three support **multi-mode grouping**: none, author, series, author &
+series, genres, or date added — with collapsible sections and shared section
+headers.
 
 **[SCREENSHOT: three view modes side by side on Mac]**
 
@@ -573,7 +574,6 @@ Flat user-created categories that work across all your books.
 - **Folder bottom sheet** on iPhone with create, rename, delete, and swipe actions
 - **Drag and drop** books onto folders to assign them
 - **Bulk folder assignment** in selection mode
-- **Default folder** for new imports — set via context menu, indicated with a star
 
 Folders are flat (not hierarchical) by design — most users don't need tree
 depth, and flat folders are faster to navigate.
