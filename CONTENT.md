@@ -568,15 +568,17 @@ remainder with a hover popover showing the full list.
 
 ### Virtual folders
 
-Flat user-created categories that work across all your books.
+User-created folders with full nesting — organize your library into a tree of
+folders and subfolders, the same on Mac, iPad, and iPhone, kept in sync.
 
-- **Collapsible sidebar** on Mac and iPad (F4 to toggle)
-- **Folder bottom sheet** on iPhone with create, rename, delete, and swipe actions
-- **Drag and drop** books onto folders to assign them
+- **Nested sidebar tree** on Mac and iPad — expand and collapse folders, F4 toggles the panel
+- **Folder sheet on iPhone** — a nested list with create, rename, delete, and move between folders
+- **Drag and drop** — drop books onto a folder to file them; drag a folder onto another to nest it
+- **Keyboard navigation** on Mac — arrow keys move through the tree and expand or collapse folders
 - **Bulk folder assignment** in selection mode
 
-Folders are flat (not hierarchical) by design — most users don't need tree
-depth, and flat folders are faster to navigate.
+Deleting a folder or a book doesn't erase it — the books move to the Trash,
+where you can restore them anytime, or empty the Trash to delete them permanently.
 
 ### Info panel
 
@@ -664,7 +666,7 @@ it enters the library:
 - **Metadata preview**: detected title, author, series, publication date, language
 - **Color tag** assignment
 - **Genre chip picker**
-- **Folder assignment** (context-aware — uses the current folder when browsing a folder, falls back to your default setting)
+- **Folder assignment** (context-aware — uses the current folder when browsing one, otherwise none)
 - **Origin URL** stored for later "In Library" detection in OPDS
 - **Image inclusion toggle** for FB2/EPUB/MOBI (strip images if you prefer text-only)
 - **Open after import** checkbox
