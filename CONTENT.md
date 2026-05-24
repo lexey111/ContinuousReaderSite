@@ -656,12 +656,26 @@ Drop) remembered between sessions.
 In JustReader, importing replaces the current book. In ContinuousReader, books
 join the library.
 
+### Mass import {CR}
+
+On macOS, import an existing collection in one pass. Point ContinuousReader at
+folders and files and it converts everything at once. The source folder tree is
+recreated as nested virtual folders, merging into folders that already exist.
+Choose the destination — the current folder, the library root, or any folder —
+and the structure nests under your choice, or books go straight in. Duplicates
+are skipped, matched by author and title, so re-importing a collection won't
+pile up copies. Apply a color tag and choose whether to keep cover images and
+inline illustrations. Drop a folder or several files onto the library to start
+it (a single file opens the regular import dialog). At the end you get a summary:
+how many imported and found, folders created, duplicates skipped, total size, and
+any errors.
+
 ### Import dialog {CR}
 
 When you import a book into ContinuousReader, you can set its metadata before
 it enters the library:
 
-- **Duplicate detection** against existing library
+- **Duplicate detection** against the existing library, showing where the duplicate already lives
 - **Cover preview** (shown from the book's own metadata — replaceable later from the Book Card)
 - **Metadata preview**: detected title, author, series, publication date, language
 - **Color tag** assignment
