@@ -534,7 +534,7 @@ without fiddling with filters.
 ### Three view modes
 
 - **List view**: adaptive row layout with five detail levels (full, compact, minimal, essential, mobile). Shows cover, title, author, series, progress, genre chips, and a context menu.
-- **Card view**: responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, fixed 2-column grid.
+- **Card view**: responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, a 2- or 3-column grid (3 = compact mini-cards), switchable in Settings.
 - **Table view** (Mac only): sortable columns, column customization, two-level hierarchy, inline color dots in the title column, annotation sheet, and a full-width actions toolbar above the table.
 
 All three support **multi-mode grouping**: none, author, series, author &
@@ -967,7 +967,7 @@ reading, native sheets.
 - **Native sheets** of different heights for folders, settings, filters — instead of separate windows.
 - **Center-tap fullscreen** — tap the middle of the screen and the reading area expands under the Dynamic Island, bottom bar hides, text fills the screen. Tap again to exit.
 - **Clock and progress over the page** — a small island at the bottom, a thin bottom bar, or pixel-art numerals built into the page background show clock and reading progress while you read in fullscreen. For anyone who's ever lost track of time and missed their stop.
-- **Library in list and cards** — two of the three view modes, no table on a phone. A lot of care went into making both pleasant to thumb through: adaptive row density and a fixed 2-column card grid (because 3 is cramped and 1 is wasteful).
+- **Library in list and cards** — two of the three view modes, no table on a phone. A lot of care went into making both pleasant to thumb through: adaptive row density and a card grid switchable between two columns or three compact mini-cards.
 - **Gesture navigation** — edge swipes, swipe-to-dismiss sheets. iOS the way iOS should work.
 
 ---
