@@ -534,7 +534,7 @@ without fiddling with filters.
 ### Three view modes
 
 - **List view**: adaptive row layout with five detail levels (full, compact, minimal, essential, mobile). Shows cover, title, author, series, progress, genre chips, and a context menu.
-- **Card view**: responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, a 2- or 3-column grid (3 = compact mini-cards), switchable in Settings.
+- **Card view**: responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, a 2- or 3-column grid (3 = compact mini-cards), switchable in Settings. On Mac and iPad, a 4-tier size picker — Big, Default, Small, Tiny — driving column count (2 / 3 / 4 / 5 on iPad) and proportional spacing; the Tiny tier drops genre chips and stacks reading-time below the progress bar so the cards stay readable.
 - **Table view** (Mac only): sortable columns, column customization, two-level hierarchy, inline color dots in the title column, annotation sheet, and a full-width actions toolbar above the table.
 
 All three support **multi-mode grouping**: none, author, series, author &
@@ -938,7 +938,7 @@ laptop. ContinuousReader takes advantage of both.
 - **Side panel** with bookmarks, chapters, and comments — same data as Mac, adapted to touch
 - **Split view ready** — read alongside any other iPad app
 - **Two-column reading** that uses the wider screen instead of pretending to be a stretched-out iPhone
-- **Card view with column picker** in quick settings — choose 2, 3, or 4 columns depending on how dense you want the grid
+- **Card view in four sizes** — pick Big, Default, Small, or Tiny (2 / 3 / 4 / 5 columns) in quick settings; the smallest tier drops genre chips and stacks reading-time under the progress bar
 - **Full OPDS browser** — search, filters, shortcuts, and watchers for new releases, at full page size
 
 Same island design as Mac, same fonts, same themes. The library looks like it
