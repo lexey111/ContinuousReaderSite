@@ -1448,6 +1448,24 @@ code {
   border-radius: 8px;
 }
 
+/* Real screenshots are captured WITH their own macOS window chrome + window
+   shadow, so the placeholder frame (dashed border, deep-bg fill, big padding,
+   forced aspect-ratio) would double up. When a frame actually holds an <img>,
+   strip the frame box and the img's own rounding — let the screenshot's chrome
+   be the only frame. The dashed placeholder boxes (no <img>) are untouched. */
+.screenshot:has(img),
+.screenshot-frame:has(img) {
+  background: none;
+  border: none;
+  padding: 0;
+  aspect-ratio: auto;
+}
+
+.screenshot:has(img) img,
+.screenshot-frame:has(img) img {
+  border-radius: 0;
+}
+
 /* Platforms summary on features page */
 .platforms-summary {
   display: grid;
@@ -2575,8 +2593,10 @@ code {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  /* Screenshots include their own macOS window chrome + shadow, so don't add a
+     second rounded frame + drop shadow here (it read as a boxy double shadow). */
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .lightbox-close {
