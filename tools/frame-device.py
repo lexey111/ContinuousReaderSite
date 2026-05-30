@@ -46,7 +46,8 @@ def main():
     border = rim + bezel
     device_r = screen_r + border
     margin = round(mn * 0.09)        # transparent margin for shadow + buttons
-    btn_out = max(3, round(rim * 1.4))  # how far buttons protrude
+    btn_out = max(2, round(rim * 0.7))  # how far buttons protrude (subtle)
+    glint_op = 0.30 if phone else 0.15  # tablet edge is less specular
 
     dw, dh = sw + 2 * border, sh + 2 * border
     cw, ch = dw + 2 * margin, dh + 2 * margin
@@ -56,31 +57,31 @@ def main():
     drop = round(mn * 0.013)
 
     # ---- buttons (straddle the device edge) ------------------------------
-    # Each entry: (side, start_fraction, length_fraction) along the long edge.
+    # Each entry: (side, start_fraction, length_fraction) along that edge.
     if phone:
-        left_btns = [(0.150, 0.052), (0.235, 0.088), (0.340, 0.088)]  # action, vol+, vol-
-        right_btns = [(0.250, 0.130), (0.430, 0.070)]                 # side, camera control
+        btns = [("left", 0.150, 0.052), ("left", 0.235, 0.088), ("left", 0.340, 0.088),  # action, vol+, vol-
+                ("right", 0.250, 0.130), ("right", 0.430, 0.070)]                          # side, camera control
     else:
-        left_btns = []
-        right_btns = [(0.050, 0.075), (0.150, 0.075)]                 # iPad volume pair (top side)
+        btns = [("top", 0.62, 0.12),                                                       # power (top edge)
+                ("right", 0.055, 0.072), ("right", 0.150, 0.072)]                          # volume pair
 
-    def side_button(side, sf, lf):
-        y0 = dy + dh * sf
-        ln = dh * lf
-        r = min(btn_out, ln / 2)
-        if side == "left":
-            x = dx - btn_out
+    def button(side, sf, lf):
+        if side in ("left", "right"):
+            y0, ln = dy + dh * sf, dh * lf
+            r = min(btn_out, ln / 2)
+            x = (dx - btn_out) if side == "left" else (dx + dw - rim)
             w = btn_out + rim
-        else:
-            x = dx + dw - rim
-            w = btn_out + rim
-        return (f'<rect x="{x:.1f}" y="{y0:.1f}" width="{w:.1f}" height="{ln:.1f}" '
+            bx, by, bw, bh = x, y0, w, ln
+        else:  # top
+            x0, ln = dx + dw * sf, dw * lf
+            r = min(btn_out, ln / 2)
+            bx, by, bw, bh = x0, dy - btn_out, ln, btn_out + rim
+        return (f'<rect x="{bx:.1f}" y="{by:.1f}" width="{bw:.1f}" height="{bh:.1f}" '
                 f'rx="{r:.1f}" ry="{r:.1f}" fill="url(#btn)"/>'
-                f'<rect x="{x:.1f}" y="{y0:.1f}" width="{w:.1f}" height="{ln:.1f}" '
-                f'rx="{r:.1f}" ry="{r:.1f}" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>')
+                f'<rect x="{bx:.1f}" y="{by:.1f}" width="{bw:.1f}" height="{bh:.1f}" '
+                f'rx="{r:.1f}" ry="{r:.1f}" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>')
 
-    buttons = "".join(side_button("left", s, l) for s, l in left_btns)
-    buttons += "".join(side_button("right", s, l) for s, l in right_btns)
+    buttons = "".join(button(*b) for b in btns)
 
     b64 = base64.b64encode(open(inp, "rb").read()).decode()
 
@@ -106,8 +107,8 @@ def main():
       <stop offset="1" stop-color="#0e0f12"/>
     </linearGradient>
     <radialGradient id="glint" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.32"/>
-      <stop offset="0.7" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="{glint_op}"/>
+      <stop offset="0.7" stop-color="#ffffff" stop-opacity="{glint_op*0.15:.3f}"/>
       <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
     <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
