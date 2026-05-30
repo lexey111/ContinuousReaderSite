@@ -47,7 +47,7 @@ def main():
     device_r = screen_r + border
     margin = round(mn * 0.09)        # transparent margin for shadow + buttons
     btn_out = max(2, round(rim * 0.7))  # how far buttons protrude (subtle)
-    glint_op = 0.30 if phone else 0.04  # tablet edge is barely specular
+    glint_op = 0.30 if phone else 0.02  # tablet edge is barely specular
 
     dw, dh = sw + 2 * border, sh + 2 * border
     cw, ch = dw + 2 * margin, dh + 2 * margin
