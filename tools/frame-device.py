@@ -47,7 +47,12 @@ def main():
     device_r = screen_r + border
     margin = round(mn * 0.09)        # transparent margin for shadow + buttons
     btn_out = max(2, round(rim * 0.7))  # how far buttons protrude (subtle)
-    glint_op = 0.30 if phone else 0.02  # tablet edge is barely specular
+    glint_op = 0.30 if phone else 0.02  # corner radial highlight
+    # Metal sheen endpoints (top-left & bottom-right corners of the body) and the
+    # white outer rim stroke. The tablet edge is more matte, so darker + softer.
+    metal_hi = "#7c7f86" if phone else "#43464c"
+    metal_mid = "#2a2c31" if phone else "#22242a"
+    rim_hi = 0.28 if phone else 0.12
 
     dw, dh = sw + 2 * border, sh + 2 * border
     cw, ch = dw + 2 * margin, dh + 2 * margin
@@ -93,13 +98,13 @@ def main():
     <clipPath id="body"><rect x="{dx}" y="{dy}" width="{dw}" height="{dh}" rx="{device_r}" ry="{device_r}"/></clipPath>
     <!-- metallic edge: sheen bands across a diagonal -->
     <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0"    stop-color="#7c7f86"/>
-      <stop offset="0.16" stop-color="#2a2c31"/>
+      <stop offset="0"    stop-color="{metal_hi}"/>
+      <stop offset="0.16" stop-color="{metal_mid}"/>
       <stop offset="0.34" stop-color="#16171b"/>
       <stop offset="0.5"  stop-color="#34363b"/>
       <stop offset="0.66" stop-color="#16171b"/>
-      <stop offset="0.84" stop-color="#2a2c31"/>
-      <stop offset="1"    stop-color="#7c7f86"/>
+      <stop offset="0.84" stop-color="{metal_mid}"/>
+      <stop offset="1"    stop-color="{metal_hi}"/>
     </linearGradient>
     <linearGradient id="btn" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#0e0f12"/>
@@ -129,7 +134,7 @@ def main():
   <rect x="{dx}" y="{dy}" width="{dw}" height="{dh}" rx="{device_r}" ry="{device_r}" fill="url(#metal)"/>
   <!-- bright outer rim highlight + inner shade for a rounded-edge feel -->
   <rect x="{dx+0.75}" y="{dy+0.75}" width="{dw-1.5}" height="{dh-1.5}" rx="{device_r-1}" ry="{device_r-1}"
-        fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.5"/>
+        fill="none" stroke="#ffffff" stroke-opacity="{rim_hi}" stroke-width="1.5"/>
   <rect x="{dx+rim*0.5}" y="{dy+rim*0.5}" width="{dw-rim}" height="{dh-rim}" rx="{device_r-rim*0.5}" ry="{device_r-rim*0.5}"
         fill="none" stroke="#000000" stroke-opacity="0.5" stroke-width="{max(1, round(rim*0.4))}"/>
 
