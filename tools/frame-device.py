@@ -47,7 +47,7 @@ def main():
     device_r = screen_r + border
     margin = round(mn * 0.09)        # transparent margin for shadow + buttons
     btn_out = max(2, round(rim * 0.7))  # how far buttons protrude (subtle)
-    glint_op = 0.30 if phone else 0.08  # tablet edge is much less specular
+    glint_op = 0.30 if phone else 0.04  # tablet edge is barely specular
 
     dw, dh = sw + 2 * border, sh + 2 * border
     cw, ch = dw + 2 * margin, dh + 2 * margin
@@ -62,7 +62,7 @@ def main():
         btns = [("left", 0.150, 0.052), ("left", 0.235, 0.088), ("left", 0.340, 0.088),  # action, vol+, vol-
                 ("right", 0.250, 0.130), ("right", 0.430, 0.070)]                          # side, camera control
     else:
-        btns = [("top", 0.74, 0.10),                                                       # power (top edge, near corner)
+        btns = [("top", 0.80, 0.10),                                                       # power (top edge, near corner)
                 ("right", 0.055, 0.072), ("right", 0.150, 0.072)]                          # volume pair
 
     def button(side, sf, lf):
