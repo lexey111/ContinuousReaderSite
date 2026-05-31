@@ -290,24 +290,25 @@
         window.open(src, '_blank');
         return;
       }
-      dialogImg.classList.remove('is-loaded'); // hide old image immediately
+      dialogImg.classList.remove('is-loaded'); // hide old image immediately (opacity 0)
       dialog.classList.add('is-loading');      // show spinner
       dialog.showModal();
 
-      const pre = new Image();
-      pre.onload = () => {
-        dialogImg.src = src;                   // already decoded → instant
-        dialogImg.alt = alt || '';
+      // Point the (hidden) img at the new src and reveal only once it has fully
+      // decoded — so neither the old image nor a partially-painted new one
+      // flashes. The img is opacity 0 the whole time it's decoding.
+      dialogImg.alt = alt || '';
+      dialogImg.src = src;
+      const reveal = () => {
         dialog.classList.remove('is-loading');
         requestAnimationFrame(() => dialogImg.classList.add('is-loaded')); // fade in
       };
-      pre.onerror = () => {                     // don't spin forever on failure
-        dialog.classList.remove('is-loading');
-        dialogImg.src = src;
-        dialogImg.alt = alt || '';
-        dialogImg.classList.add('is-loaded');
-      };
-      pre.src = src;
+      if (dialogImg.decode) {
+        dialogImg.decode().then(reveal).catch(reveal);
+      } else {
+        dialogImg.onload = reveal;
+        dialogImg.onerror = reveal;
+      }
     }
 
     document.querySelectorAll('.screenshot, .screenshot-frame').forEach((frame) => {
@@ -337,12 +338,20 @@
   function setupImageFade() {
     const imgs = document.querySelectorAll('.screenshot img, .screenshot-frame img');
     imgs.forEach((img) => {
+      const reveal = () => img.classList.add('is-loaded');
+      // Reveal only once FULLY decoded (decode() resolves when the bitmap is
+      // ready to paint atomically) — otherwise the fade runs while the PNG
+      // paints in bands top-to-bottom. Wait for load first so lazy images
+      // aren't forced to fetch early.
+      const decodeThenReveal = () => {
+        if (img.decode) { img.decode().then(reveal).catch(reveal); }
+        else { reveal(); }
+      };
       if (img.complete && img.naturalWidth > 0) {
-        img.classList.add('is-loaded');
+        decodeThenReveal();
         return;
       }
-      const reveal = () => img.classList.add('is-loaded');
-      img.addEventListener('load', reveal);
+      img.addEventListener('load', decodeThenReveal);
       img.addEventListener('error', reveal); // reveal (broken) rather than spin forever
     });
   }

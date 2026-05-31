@@ -2635,6 +2635,9 @@ code {
   transition: opacity 0.3s ease;
 }
 .lightbox-content img.is-loaded { opacity: 1; }
+/* While loading, hide the (old) image INSTANTLY — no fade-out — so the
+   previously-opened image never flashes before the new one fades in. */
+.lightbox.is-loading .lightbox-content img { opacity: 0; transition: none; }
 
 /* Spinner shown while the lightbox image loads */
 .lightbox-spinner {
