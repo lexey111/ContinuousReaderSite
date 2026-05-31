@@ -1498,6 +1498,20 @@ code {
   border: none;
   padding: 0;
   aspect-ratio: auto;
+  max-width: 100%;   /* fill the content column (override the 64ch mono cap) */
+}
+
+/* Embedded screenshots break out a touch wider than the reading column on
+   desktop, so UI detail stays legible. Capped to the viewport so the slim
+   side padding can't trigger horizontal scroll. */
+@media (min-width: 960px) {
+  .feature .screenshot:has(img),
+  .feature .screenshot-frame:has(img) {
+    width: calc(100% + 160px);
+    max-width: calc(100vw - 96px);
+    margin-left: -80px;
+    margin-right: -80px;
+  }
 }
 
 .screenshot:has(img) img,
