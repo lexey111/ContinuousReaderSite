@@ -216,10 +216,10 @@ const translations = {
 
     'features.s1.progress.h':     'Progress drawer and markers',
     'features.s1.progress.p1':    'A slim progress bar along the bottom expands on hover (Mac) or tap (iOS) to reveal reading position. Click or double-tap to open the progress drawer:',
-    'features.s1.progress.li1':   '<strong>Tapered slider</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-tapered.webp" data-alt="Tapered slider showing thick-to-thin track with S-curve at current position" aria-label="View tapered slider screenshot"></button>A custom track that’s thick for the part you’ve read and hair-thin for what’s ahead, with a smooth S-curve at your current position',
+    'features.s1.progress.li1':   '<strong>Tapered slider</strong>A custom track that’s thick for the part you’ve read and hair-thin for what’s ahead, with a smooth S-curve at your current position',
     'features.s1.progress.li3':   '<strong>Entry marker</strong>A dot with a dashed ring showing where you started this session',
-    'features.s1.progress.li4':   '<strong>Marker modes</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-marker-modes.webp" data-alt="Progress drawer marker modes: chapters, images, bookmarks" aria-label="View marker modes screenshot"></button>Switch the track to show chapters, images, bookmarks, or nothing. Chapter markers show titles on hover. Image markers show thumbnail previews.',
-    'features.s1.progress.li5':   '<strong>Go To</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-go-to.webp" data-alt="Go To dialog with sliding pill mode switch between page and percent" aria-label="View Go To dialog screenshot"></button>Direct jump to a page or percent — just enter the value',
+    'features.s1.progress.li4':   '<strong>Marker modes</strong>Switch the track to show chapters, images, bookmarks, or nothing. Chapter markers show titles on hover. Image markers show thumbnail previews.',
+    'features.s1.progress.li5':   '<strong>Go To</strong>Direct jump to a page or percent — just enter the value',
     'features.s1.progress.p2':    'In ContinuousReader, bookmark markers are <strong>color-coded</strong> and show preview text and page number on hover.',
 
     'features.s1.chapters.h':     'Chapter navigation',
@@ -1216,14 +1216,14 @@ const translations = {
     'features.s1.position.li4':   '<strong>Смену режима</strong>Скролл → страница, страница → разворот',
     'features.s1.position.li5':   '<strong>Долгие перерывы</strong>Открытие книги через несколько недель с другими настройками',
     'features.s1.position.p2':    'Когда вы возвращаетесь к книге, ридер восстанавливает позицию на <em>том самом абзаце</em>, на котором вы остановились.',
-    'features.s1.position.p3':    'Одна оговорка: параметры, меняющие число страниц в книге — размер шрифта, высота строки, межабзацный отступ, двухстраничный разворот — могут сместить точную позицию на строку-другую. Ридер привязывается к <em>первому абзацу, видимому на экране</em>, поэтому вы не теряете место, даже когда число страниц меняется под ним.',
+    'features.s1.position.p3':    'Одна оговорка: параметры, меняющие число страниц в книге — размер шрифта, высота строки, межабзацный отступ, двухстраничный разворот — могут сместить точную позицию на строку-другую. Ридер привязывается к <em>первому абзацу, видимому на экране</em>, поэтому вы не теряете место, даже когда число страниц меняется.',
 
     'features.s1.progress.h':     'Полоса прогресса и маркеры',
     'features.s1.progress.p1':    'Тонкий прогресс-бар вдоль нижнего края разворачивается при наведении (Mac) или касании (iOS) и показывает позицию чтения. Клик или двойное касание открывают панель прогресса:',
-    'features.s1.progress.li1':   '<strong>Сужающийся слайдер</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-tapered.webp" data-alt="Tapered slider showing thick-to-thin track with S-curve at current position" aria-label="View tapered slider screenshot"></button>Особый трек — толстый там, где уже прочитано, и тонкий как волос на том, что впереди, с плавной S-кривой в текущей позиции',
+    'features.s1.progress.li1':   '<strong>Сужающийся слайдер</strong>Особый трек — толстый там, где уже прочитано, и тонкий как волос на том, что впереди, с плавной S-кривой в текущей позиции',
     'features.s1.progress.li3':   '<strong>Точка входа</strong>Точка в пунктирном кольце показывает, где вы начали эту сессию',
-    'features.s1.progress.li4':   '<strong>Режимы маркеров</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-marker-modes.webp" data-alt="Progress drawer marker modes: chapters, images, bookmarks" aria-label="View marker modes screenshot"></button>Переключите трек на отображение глав, изображений, закладок или просто позиции. Главы показывают названия при наведении. Изображения — миниатюры превью.',
-    'features.s1.progress.li5':   '<strong>Перейти к</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-go-to.webp" data-alt="Go To dialog with sliding pill mode switch between page and percent" aria-label="View Go To dialog screenshot"></button>Прямой переход к странице или проценту — просто введите значение',
+    'features.s1.progress.li4':   '<strong>Режимы маркеров</strong>Переключите трек на отображение глав, изображений, закладок или просто позиции. Главы показывают названия при наведении. Изображения — миниатюры превью.',
+    'features.s1.progress.li5':   '<strong>Перейти к</strong>Прямой переход к странице или проценту — просто введите значение',
     'features.s1.progress.p2':    'В ContinuousReader маркеры закладок несут <strong>цветовую кодировку</strong> и показывают превью-текст и номер страницы при наведении.',
 
     'features.s1.chapters.h':     'Навигация по главам',
@@ -2011,14 +2011,14 @@ const translations = {
     'features.s1.position.li4':   '<strong>Перемикання режимів</strong>Зі скролу в сторінку, зі сторінки в розворот',
     'features.s1.position.li5':   '<strong>Тривалі паузи</strong>Повернення до книги через тижні з іншими налаштуваннями',
     'features.s1.position.p2':    'Коли ви повертаєтеся до книги, читач плавно зʼявляється на <em>точному абзаці</em>, де ви зупинилися, а не на найближчому розділі.',
-    'features.s1.position.p3':    'Одне застереження: параметри, що змінюють кількість сторінок у книзі — розмір шрифту, висота рядка, відступ між абзацами, двосторінковий розворот — можуть зсунути точну позицію на рядок-другий. Читач прив’язується до <em>першого абзацу, видимого на екрані</em>, тож ви не втрачаєте місце, навіть коли кількість сторінок змінюється під ним.',
+    'features.s1.position.p3':    'Одне застереження: параметри, що змінюють кількість сторінок у книзі — розмір шрифту, висота рядка, відступ між абзацами, двосторінковий розворот — можуть зсунути точну позицію на рядок-другий. Читач прив’язується до <em>першого абзацу, видимого на екрані</em>, тож ви не втрачаєте місце, навіть коли кількість сторінок змінюється.',
 
     'features.s1.progress.h':     'Виїзна панель прогресу та маркери',
     'features.s1.progress.p1':    'Тонкий індикатор прогресу внизу розширюється при наведенні (Mac) або дотику (iOS) і показує позицію читання. Натисніть або двічі торкніться, щоб відкрити виїзну панель прогресу:',
-    'features.s1.progress.li1':   '<strong>Звужений повзунок</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-tapered.webp" data-alt="Tapered slider showing thick-to-thin track with S-curve at current position" aria-label="View tapered slider screenshot"></button>Власна доріжка — товста для прочитаного і тонка, мов волосина, для того, що попереду, з плавним S-вигином у вашій поточній позиції',
+    'features.s1.progress.li1':   '<strong>Звужений повзунок</strong>Власна доріжка — товста для прочитаного і тонка, мов волосина, для того, що попереду, з плавним S-вигином у вашій поточній позиції',
     'features.s1.progress.li3':   '<strong>Маркер старту</strong>Крапка з пунктирним кільцем, що показує, звідки ви розпочали цю сесію',
-    'features.s1.progress.li4':   '<strong>Режими маркерів</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-marker-modes.webp" data-alt="Progress drawer marker modes: chapters, images, bookmarks" aria-label="View marker modes screenshot"></button>Переведіть доріжку на показ розділів, зображень, закладок — або вимкніть зовсім. Маркери розділів показують назви на наведення. Маркери зображень показують превʼю-мініатюри.',
-    'features.s1.progress.li5':   '<strong>Перейти до</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-go-to.webp" data-alt="Go To dialog with sliding pill mode switch between page and percent" aria-label="View Go To dialog screenshot"></button>Прямий перехід до сторінки або відсотка — просто введіть значення',
+    'features.s1.progress.li4':   '<strong>Режими маркерів</strong>Переведіть доріжку на показ розділів, зображень, закладок — або вимкніть зовсім. Маркери розділів показують назви на наведення. Маркери зображень показують превʼю-мініатюри.',
+    'features.s1.progress.li5':   '<strong>Перейти до</strong>Прямий перехід до сторінки або відсотка — просто введіть значення',
     'features.s1.progress.p2':    'У ContinuousReader маркери закладок мають <strong>кольорове кодування</strong> і показують превʼю-текст і номер сторінки на наведення.',
 
     'features.s1.chapters.h':     'Навігація розділами',
@@ -2808,10 +2808,10 @@ const translations = {
 
     'features.s1.progress.h':     'Panel de progreso y marcadores',
     'features.s1.progress.p1':    'Una fina barra de progreso a lo largo de la parte inferior se expande al pasar el cursor (Mac) o al tocarla (iOS) para mostrar la posición de lectura. Haz clic o doble toque para abrir el panel de progreso:',
-    'features.s1.progress.li1':   '<strong>Control deslizante afinado</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-tapered.webp" data-alt="Tapered slider showing thick-to-thin track with S-curve at current position" aria-label="View tapered slider screenshot"></button>Una pista personalizada que es gruesa en la parte ya leída y casi filiforme en lo que queda por delante, con una curva en S suave en tu posición actual',
+    'features.s1.progress.li1':   '<strong>Control deslizante afinado</strong>Una pista personalizada que es gruesa en la parte ya leída y casi filiforme en lo que queda por delante, con una curva en S suave en tu posición actual',
     'features.s1.progress.li3':   '<strong>Marca de inicio</strong>Un punto con un anillo discontinuo que muestra dónde empezaste esta sesión',
-    'features.s1.progress.li4':   '<strong>Modos de marcado</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-marker-modes.webp" data-alt="Progress drawer marker modes: chapters, images, bookmarks" aria-label="View marker modes screenshot"></button>Cambia la pista para mostrar capítulos, imágenes, marcadores o nada. Las marcas de capítulo muestran los títulos al pasar el cursor. Las de imagen muestran miniaturas como vista previa.',
-    'features.s1.progress.li5':   '<strong>Ir a…</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-go-to.webp" data-alt="Go To dialog with sliding pill mode switch between page and percent" aria-label="View Go To dialog screenshot"></button>Salto directo a una página o porcentaje — solo introduce el valor',
+    'features.s1.progress.li4':   '<strong>Modos de marcado</strong>Cambia la pista para mostrar capítulos, imágenes, marcadores o nada. Las marcas de capítulo muestran los títulos al pasar el cursor. Las de imagen muestran miniaturas como vista previa.',
+    'features.s1.progress.li5':   '<strong>Ir a…</strong>Salto directo a una página o porcentaje — solo introduce el valor',
     'features.s1.progress.p2':    'En ContinuousReader, los marcadores de favoritos tienen <strong>código de color</strong> y muestran texto de previsualización y número de página al pasar el cursor.',
 
     'features.s1.chapters.h':     'Navegación por capítulos',
@@ -3603,10 +3603,10 @@ const translations = {
 
     'features.s1.progress.h':     'Tiroir de progression et marqueurs',
     'features.s1.progress.p1':    'Une fine barre de progression en bas s’agrandit au survol (Mac) ou au toucher (iOS) pour révéler la position de lecture. Cliquez ou touchez deux fois pour ouvrir le tiroir de progression :',
-    'features.s1.progress.li1':   '<strong>Glissière effilée</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-tapered.webp" data-alt="Tapered slider showing thick-to-thin track with S-curve at current position" aria-label="View tapered slider screenshot"></button>Une piste sur mesure, épaisse pour la portion déjà lue et fine comme un cheveu pour ce qui reste, avec une courbe en S au niveau de votre position actuelle',
+    'features.s1.progress.li1':   '<strong>Glissière effilée</strong>Une piste sur mesure, épaisse pour la portion déjà lue et fine comme un cheveu pour ce qui reste, avec une courbe en S au niveau de votre position actuelle',
     'features.s1.progress.li3':   '<strong>Marqueur d’entrée</strong>Un point cerclé d’un pointillé, indiquant où vous avez commencé cette session',
-    'features.s1.progress.li4':   '<strong>Modes de marquage</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-marker-modes.webp" data-alt="Progress drawer marker modes: chapters, images, bookmarks" aria-label="View marker modes screenshot"></button>Affichez sur la piste les chapitres, les images, les signets ou rien. Les marqueurs de chapitres affichent leur titre au survol. Les marqueurs d’images affichent des vignettes en aperçu.',
-    'features.s1.progress.li5':   '<strong>Aller à</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-go-to.webp" data-alt="Go To dialog with sliding pill mode switch between page and percent" aria-label="View Go To dialog screenshot"></button>Saut direct à une page ou un pourcentage — entrez simplement la valeur',
+    'features.s1.progress.li4':   '<strong>Modes de marquage</strong>Affichez sur la piste les chapitres, les images, les signets ou rien. Les marqueurs de chapitres affichent leur titre au survol. Les marqueurs d’images affichent des vignettes en aperçu.',
+    'features.s1.progress.li5':   '<strong>Aller à</strong>Saut direct à une page ou un pourcentage — entrez simplement la valeur',
     'features.s1.progress.p2':    'Dans ContinuousReader, les marqueurs de signets sont <strong>colorés</strong> et affichent leur texte d’aperçu et leur numéro de page au survol.',
 
     'features.s1.chapters.h':     'Navigation par chapitres',
@@ -4397,10 +4397,10 @@ const translations = {
 
     'features.s1.progress.h':     'Fortschritts-Schublade und Marker',
     'features.s1.progress.p1':    'Ein schmaler Fortschrittsbalken am unteren Rand vergrößert sich beim Überfahren (Mac) oder Antippen (iOS) und zeigt die Leseposition. Klicken oder Doppeltippen öffnet die Fortschritts-Schublade:',
-    'features.s1.progress.li1':   '<strong>Verjüngender Regler</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-tapered.webp" data-alt="Tapered slider showing thick-to-thin track with S-curve at current position" aria-label="View tapered slider screenshot"></button>Eine eigene Spur, die im bereits gelesenen Bereich dick und im Verbleibenden haardünn ist — mit einer sanften S-Kurve an Ihrer aktuellen Position',
+    'features.s1.progress.li1':   '<strong>Verjüngender Regler</strong>Eine eigene Spur, die im bereits gelesenen Bereich dick und im Verbleibenden haardünn ist — mit einer sanften S-Kurve an Ihrer aktuellen Position',
     'features.s1.progress.li3':   '<strong>Einstiegsmarker</strong>Ein Punkt mit gestricheltem Ring — zeigt, wo Sie diese Sitzung begonnen haben',
-    'features.s1.progress.li4':   '<strong>Markermodi</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-marker-modes.webp" data-alt="Progress drawer marker modes: chapters, images, bookmarks" aria-label="View marker modes screenshot"></button>Schalten Sie die Spur auf Kapitel, Bilder, Lesezeichen oder nichts um. Kapitelmarker zeigen Titel beim Überfahren; Bildmarker zeigen Vorschau-Thumbnails.',
-    'features.s1.progress.li5':   '<strong>Gehe zu</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-go-to.webp" data-alt="Go To dialog with sliding pill mode switch between page and percent" aria-label="View Go To dialog screenshot"></button>Direkter Sprung zu einer Seite oder einem Prozentwert — einfach den Wert eingeben',
+    'features.s1.progress.li4':   '<strong>Markermodi</strong>Schalten Sie die Spur auf Kapitel, Bilder, Lesezeichen oder nichts um. Kapitelmarker zeigen Titel beim Überfahren; Bildmarker zeigen Vorschau-Thumbnails.',
+    'features.s1.progress.li5':   '<strong>Gehe zu</strong>Direkter Sprung zu einer Seite oder einem Prozentwert — einfach den Wert eingeben',
     'features.s1.progress.p2':    'In ContinuousReader sind die Lesezeichen-Marker <strong>farbcodiert</strong> und zeigen Vorschautext und Seitenzahl beim Überfahren.',
 
     'features.s1.chapters.h':     'Kapitelnavigation',
