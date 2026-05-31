@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<script>document.documentElement.classList.add('js')</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="meta.features.title">Features — ContinuousReader</title>
-<meta name="description" data-i18n-attr="content:meta.features.desc" content="A closer look at how ContinuousReader is built and what it can do. Themes, typography, translation, library, sync, and more.">
-<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-<meta property="og:title" data-i18n-attr="content:meta.features.ogTitle" content="Features — ContinuousReader">
-<meta property="og:description" data-i18n-attr="content:meta.features.ogDesc" content="Themes, typography, translation, library, sync, and more. A closer look at how ContinuousReader is built.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="img/logo.svg">
-<link rel="preload" href="fonts/source-serif-4-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <script>document.documentElement.classList.add('js')</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.features.title">Features — ContinuousReader</title>
+    <meta name="description" data-i18n-attr="content:meta.features.desc"
+          content="A closer look at how ContinuousReader is built and what it can do. Themes, typography, translation, library, sync, and more.">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <meta property="og:title" data-i18n-attr="content:meta.features.ogTitle" content="Features — ContinuousReader">
+    <meta property="og:description" data-i18n-attr="content:meta.features.ogDesc"
+          content="Themes, typography, translation, library, sync, and more. A closer look at how ContinuousReader is built.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="img/logo.svg">
+    <link rel="preload" href="fonts/source-serif-4-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -21,8 +23,8 @@
 <!-- NAV                                                           -->
 <!-- ============================================================ -->
 <nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
       <span class="nav-logo" aria-hidden="true">
         <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
           <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
@@ -42,1241 +44,1762 @@
           <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
         </svg>
       </span>
-      <span>ContinuousReader</span>
-    </a>
-    <div class="nav-links">
-      <a href="features.html" class="active" data-i18n="nav.features">Features</a>
-      <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-      <a href="download.html" data-i18n="nav.download">Download</a>
-      <button class="nav-lang" type="button">EN</button>
+            <span>ContinuousReader</span>
+        </a>
+        <div class="nav-links">
+            <a href="features.html" class="active" data-i18n="nav.features">Features</a>
+            <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
+            <a href="download.html" data-i18n="nav.download">Download</a>
+            <button class="nav-lang" type="button">EN</button>
+        </div>
     </div>
-  </div>
 </nav>
 
 <!-- ============================================================ -->
 <!-- PAGE HEADER                                                   -->
 <!-- ============================================================ -->
 <header class="page-header">
-  <div class="container-narrow">
-    <div class="page-eyebrow" data-i18n="features.header.eyebrow">A closer look</div>
-    <h1 class="page-title" data-i18n="features.header.title">Features</h1>
-    <p class="page-subtitle" data-i18n="features.header.subtitle">
-      A closer look at how ContinuousReader is built and what it can do.
-    </p>
-    <div class="page-intro" data-i18n="features.header.intro">
-      This page is a tour, not a spec sheet. If you're comparing reading apps
-      on specific capabilities — formats, sync behavior, theming, translation
-      — you'll find them organized below. If you want a shorter overview,
-      start with <a href="index.html">the home page</a>. If there's something
-      specific you need to know that isn't here,
-      <a href="mailto:hello@continuousreader.app">get in touch</a>.
+    <div class="container-narrow">
+        <div class="page-eyebrow" data-i18n="features.header.eyebrow">A closer look</div>
+        <h1 class="page-title" data-i18n="features.header.title">Features</h1>
+        <p class="page-subtitle" data-i18n="features.header.subtitle">
+            A closer look at how ContinuousReader is built and what it can do.
+        </p>
+        <div class="page-intro" data-i18n="features.header.intro">
+            This page is a tour, not a spec sheet. If you're comparing reading apps
+            on specific capabilities — formats, sync behavior, theming, translation
+            — you'll find them organized below. If you want a shorter overview,
+            start with <a href="index.html">the home page</a>. If there's something
+            specific you need to know that isn't here,
+            <a href="mailto:hello@continuousreader.app">get in touch</a>.
+        </div>
+        <div class="legend" data-i18n="features.header.legend">
+            Features marked
+            <span class="badge-inline cr">ContinuousReader</span>
+            are part of the full app. Features marked
+            <span class="badge-inline jr">JustReader</span>
+            are also in the free single-book reader. <strong>Most of the reading
+            experience is shared</strong>; the library, sync, and OPDS browser are
+            ContinuousReader only.
+        </div>
     </div>
-    <div class="legend" data-i18n="features.header.legend">
-      Features marked
-      <span class="badge-inline cr">ContinuousReader</span>
-      are part of the full app. Features marked
-      <span class="badge-inline jr">JustReader</span>
-      are also in the free single-book reader. <strong>Most of the reading
-      experience is shared</strong>; the library, sync, and OPDS browser are
-      ContinuousReader only.
-    </div>
-  </div>
 </header>
 
 <aside class="features-toc" aria-label="On this page">
-  <nav>
-    <ul>
-      <li data-section="s1"><a href="#s1" data-i18n="features.s1.h2"></a>
+    <nav>
         <ul>
-          <li><a href="#s1-themes" data-i18n="features.s1.themes.h"></a></li>
-          <li><a href="#s1-fonts" data-i18n="features.s1.fonts.h"></a></li>
-          <li><a href="#s1-typo" data-i18n="features.s1.typo.h"></a></li>
-          <li><a href="#s1-modes" data-i18n="features.s1.modes.h"></a></li>
-          <li><a href="#s1-position" data-i18n="features.s1.position.h"></a></li>
-          <li><a href="#s1-progress" data-i18n="features.s1.progress.h"></a></li>
-          <li><a href="#s1-chapters" data-i18n="features.s1.chapters.h"></a></li>
-          <li><a href="#s1-bookmarks" data-i18n="features.s1.bookmarks.h"></a></li>
-          <li><a href="#s1-search" data-i18n="features.s1.search.h"></a></li>
-          <li><a href="#s1-notes" data-i18n="features.s1.notes.h"></a></li>
-          <li><a href="#s1-fullscreen" data-i18n="features.s1.fullscreen.h"></a></li>
+            <li data-section="s1"><a href="#s1" data-i18n="features.s1.h2"></a>
+                <ul>
+                    <li><a href="#s1-themes" data-i18n="features.s1.themes.h"></a></li>
+                    <li><a href="#s1-fonts" data-i18n="features.s1.fonts.h"></a></li>
+                    <li><a href="#s1-typo" data-i18n="features.s1.typo.h"></a></li>
+                    <li><a href="#s1-modes" data-i18n="features.s1.modes.h"></a></li>
+                    <li><a href="#s1-position" data-i18n="features.s1.position.h"></a></li>
+                    <li><a href="#s1-progress" data-i18n="features.s1.progress.h"></a></li>
+                    <li><a href="#s1-chapters" data-i18n="features.s1.chapters.h"></a></li>
+                    <li><a href="#s1-bookmarks" data-i18n="features.s1.bookmarks.h"></a></li>
+                    <li><a href="#s1-search" data-i18n="features.s1.search.h"></a></li>
+                    <li><a href="#s1-notes" data-i18n="features.s1.notes.h"></a></li>
+                    <li><a href="#s1-fullscreen" data-i18n="features.s1.fullscreen.h"></a></li>
+                </ul>
+            </li>
+            <li data-section="s2"><a href="#s2" data-i18n="features.s2.h2"></a>
+                <ul>
+                    <li><a href="#s2-translate" data-i18n="features.s2.translate.h"></a></li>
+                    <li><a href="#s2-stats" data-i18n="features.s2.stats.h"></a></li>
+                    <li><a href="#s2-readaloud" data-i18n="features.s2.readaloud.h"></a></li>
+                </ul>
+            </li>
+            <li data-section="s3"><a href="#s3" data-i18n="features.s3.h2"></a>
+                <ul>
+                    <li><a href="#s3-tabs" data-i18n="features.s3.tabs.h"></a></li>
+                    <li><a href="#s3-views" data-i18n="features.s3.views.h"></a></li>
+                    <li><a href="#s3-search" data-i18n="features.s3.search.h"></a></li>
+                    <li><a href="#s3-colors" data-i18n="features.s3.colors.h"></a></li>
+                    <li><a href="#s3-genres" data-i18n="features.s3.genres.h"></a></li>
+                    <li><a href="#s3-folders" data-i18n="features.s3.folders.h"></a></li>
+                    <li><a href="#s3-info" data-i18n="features.s3.info.h"></a></li>
+                    <li><a href="#s3-bulk" data-i18n="features.s3.bulk.h"></a></li>
+                    <li><a href="#s3-preview" data-i18n="features.s3.preview.h"></a></li>
+                    <li><a href="#s3-bookcard" data-i18n="features.s3.bookcard.h"></a></li>
+                </ul>
+            </li>
+            <li data-section="s4"><a href="#s4" data-i18n="features.s4.h2"></a>
+                <ul>
+                    <li><a href="#s4-formats" data-i18n="features.s4.formats.h"></a></li>
+                    <li><a href="#s4-ways" data-i18n="features.s4.ways.h"></a></li>
+                    <li><a href="#s4-mass" data-i18n="features.s4.mass.h"></a></li>
+                    <li><a href="#s4-dialog" data-i18n="features.s4.dialog.h"></a></li>
+                    <li><a href="#s4-size" data-i18n="features.s4.size.h"></a></li>
+                    <li><a href="#s4-opds" data-i18n="features.s4.opds.h"></a></li>
+                    <li><a href="#s4-watch" data-i18n="features.s4.watch.h"></a></li>
+                </ul>
+            </li>
+            <li data-section="s5"><a href="#s5" data-i18n="features.s5.h2"></a>
+                <ul>
+                    <li><a href="#s5-icloud" data-i18n="features.s5.icloud.h"></a></li>
+                    <li><a href="#s5-devicelist" data-i18n="features.s5.devicelist.h"></a></li>
+                    <li><a href="#s5-storage" data-i18n="features.s5.storage.h"></a></li>
+                    <li><a href="#s5-backup" data-i18n="features.s5.backup.h"></a></li>
+                    <li><a href="#s5-location" data-i18n="features.s5.location.h"></a></li>
+                    <li><a href="#s5-switching" data-i18n="features.s5.switching.h"></a></li>
+                </ul>
+            </li>
+            <li data-section="s6"><a href="#s6" data-i18n="features.s6.h2"></a>
+                <ul>
+                    <li><a href="#s6-mac" data-i18n="features.s6.mac.h"></a></li>
+                    <li><a href="#s6-ipad" data-i18n="features.s6.ipad.h"></a></li>
+                    <li><a href="#s6-iphone" data-i18n="features.s6.iphone.h"></a></li>
+                </ul>
+            </li>
+            <li data-section="s7"><a href="#s7" data-i18n="features.s7.h2"></a>
+                <ul>
+                    <li><a href="#s7-wizard" data-i18n="features.s7.wizard.h"></a></li>
+                    <li><a href="#s7-toggles" data-i18n="features.s7.toggles.h"></a></li>
+                </ul>
+            </li>
         </ul>
-      </li>
-      <li data-section="s2"><a href="#s2" data-i18n="features.s2.h2"></a>
-        <ul>
-          <li><a href="#s2-translate" data-i18n="features.s2.translate.h"></a></li>
-          <li><a href="#s2-stats" data-i18n="features.s2.stats.h"></a></li>
-          <li><a href="#s2-readaloud" data-i18n="features.s2.readaloud.h"></a></li>
-        </ul>
-      </li>
-      <li data-section="s3"><a href="#s3" data-i18n="features.s3.h2"></a>
-        <ul>
-          <li><a href="#s3-tabs" data-i18n="features.s3.tabs.h"></a></li>
-          <li><a href="#s3-views" data-i18n="features.s3.views.h"></a></li>
-          <li><a href="#s3-search" data-i18n="features.s3.search.h"></a></li>
-          <li><a href="#s3-colors" data-i18n="features.s3.colors.h"></a></li>
-          <li><a href="#s3-genres" data-i18n="features.s3.genres.h"></a></li>
-          <li><a href="#s3-folders" data-i18n="features.s3.folders.h"></a></li>
-          <li><a href="#s3-info" data-i18n="features.s3.info.h"></a></li>
-          <li><a href="#s3-bulk" data-i18n="features.s3.bulk.h"></a></li>
-          <li><a href="#s3-preview" data-i18n="features.s3.preview.h"></a></li>
-          <li><a href="#s3-bookcard" data-i18n="features.s3.bookcard.h"></a></li>
-        </ul>
-      </li>
-      <li data-section="s4"><a href="#s4" data-i18n="features.s4.h2"></a>
-        <ul>
-          <li><a href="#s4-formats" data-i18n="features.s4.formats.h"></a></li>
-          <li><a href="#s4-ways" data-i18n="features.s4.ways.h"></a></li>
-          <li><a href="#s4-mass" data-i18n="features.s4.mass.h"></a></li>
-          <li><a href="#s4-dialog" data-i18n="features.s4.dialog.h"></a></li>
-          <li><a href="#s4-size" data-i18n="features.s4.size.h"></a></li>
-          <li><a href="#s4-opds" data-i18n="features.s4.opds.h"></a></li>
-          <li><a href="#s4-watch" data-i18n="features.s4.watch.h"></a></li>
-        </ul>
-      </li>
-      <li data-section="s5"><a href="#s5" data-i18n="features.s5.h2"></a>
-        <ul>
-          <li><a href="#s5-icloud" data-i18n="features.s5.icloud.h"></a></li>
-          <li><a href="#s5-devicelist" data-i18n="features.s5.devicelist.h"></a></li>
-          <li><a href="#s5-storage" data-i18n="features.s5.storage.h"></a></li>
-          <li><a href="#s5-backup" data-i18n="features.s5.backup.h"></a></li>
-          <li><a href="#s5-location" data-i18n="features.s5.location.h"></a></li>
-          <li><a href="#s5-switching" data-i18n="features.s5.switching.h"></a></li>
-        </ul>
-      </li>
-      <li data-section="s6"><a href="#s6" data-i18n="features.s6.h2"></a>
-        <ul>
-          <li><a href="#s6-mac" data-i18n="features.s6.mac.h"></a></li>
-          <li><a href="#s6-ipad" data-i18n="features.s6.ipad.h"></a></li>
-          <li><a href="#s6-iphone" data-i18n="features.s6.iphone.h"></a></li>
-        </ul>
-      </li>
-      <li data-section="s7"><a href="#s7" data-i18n="features.s7.h2"></a>
-        <ul>
-          <li><a href="#s7-wizard" data-i18n="features.s7.wizard.h"></a></li>
-          <li><a href="#s7-toggles" data-i18n="features.s7.toggles.h"></a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+    </nav>
 </aside>
 
 <!-- ============================================================ -->
 <!-- SECTION 1 — THE READER                                        -->
 <!-- ============================================================ -->
 <section id="s1" class="feature-section reveal">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="section-eyebrow"><span class="section-number">01</span><span data-i18n="features.s1.label">Section one</span></div>
-      <h2 class="section-h2" data-i18n="features.s1.h2">The <em>reader</em>.</h2>
-      <p class="section-intro" data-i18n="features.s1.intro">
-        The reading experience itself. Typography, themes, navigation, and the
-        small things you interact with while reading a book.
-      </p>
-    </div>
+    <div class="container-narrow">
+        <div class="section-header">
+            <div class="section-eyebrow"><span class="section-number">01</span><span data-i18n="features.s1.label">Section one</span>
+            </div>
+            <h2 class="section-h2" data-i18n="features.s1.h2">The <em>reader</em>.</h2>
+            <p class="section-intro" data-i18n="features.s1.intro">
+                The reading experience itself. Typography, themes, navigation, and the
+                small things you interact with while reading a book.
+            </p>
+        </div>
 
-    <div id="s1-themes" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.themes.h">Forty-one themes, organized in palette families</h3>
-        <span class="badge-group">
+        <div id="s1-themes" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.themes.h">Forty-one themes, organized in palette
+                    families</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.themes.p1">
-          Themes are more than color schemes. Each defines background, text
-          color, progress bar tint, and bookmark marker palette. The
-          <em>Featured</em> ones go further — they bring their own typeface,
-          signature frames, and custom progress indicators built into the
-          theme's identity, not just a color tweak.
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s1.themes.li1"><strong>Palettes</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-palettes-grid.webp" data-alt="Palette family grid showing five families and seven tonal variations" aria-label="View palettes screenshot"></button>Five families — Neutral, Ochre, Celestial, Lime, Rose — each with seven tonal variations: a pure-white extreme on the left, five mid tones in between, and a pure-black extreme on the right. The extremes carry the palette's signature color in saturated text on plain white or black — built for full sun on a beach or pitch-dark bedrooms.</li>
-          <li data-i18n="features.s1.themes.li2"><strong>Featured</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-featured-themes.webp" data-alt="Typewriter and Terminal Featured themes side by side" aria-label="View Featured themes screenshot"></button>Typewriter (ivory + dark brown, light and dark variants, locked to American Typewriter — leans into a quiet steampunk vibe with a brass dashboard speedometer whose needle rolls as you read, swapped for a vintage radio-dial carriage with a lit red pointer on narrower screens; copper-rim keycaps; mechanical drum-counter read-outs) and Terminal (white monospace on deep blue, locked to Menlo / Courier New, Norton Commander homage). Both come with their own independent typography and layout settings.</li>
-          <li data-i18n="features.s1.themes.li4"><strong>Custom</strong>Three user-defined slots with full color picker control</li>
-          <li data-i18n="features.s1.themes.li5"><strong>Day &amp; Night mode</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-day-night-mode.webp" data-alt="Day and Night mode showing light theme and dark theme variants" aria-label="View Day and Night mode screenshot"></button>Assign separate themes for light and dark system appearance — automatic or manually overridden</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s1.themes.p2">
-          The reader carries three independent appearance contexts — Regular,
-          Typewriter, and Terminal. Each remembers its own font, size, line
-          height, padding, alignment, and navigation mode, so a tweak made
-          inside Terminal won't follow you back to Ochre.
-        </p>
-      </div>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-themes-picker.webp" alt="Theme picker dropdown showing live Aa previews in current font">
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.themes.p1">
+                    Themes are more than color schemes. Each defines background, text
+                    color, progress bar tint, and bookmark marker palette. The
+                    <em>Featured</em> ones go further — they bring their own typeface,
+                    signature frames, and custom progress indicators built into the
+                    theme's identity, not just a color tweak.
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.themes.li1"><strong>Palettes</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-palettes-grid.webp"
+                                data-alt="Palette family grid showing five families and seven tonal variations"
+                                aria-label="View palettes screenshot"></button>
+                        Five families — Neutral, Ochre, Celestial, Lime, Rose — each with seven tonal variations: a
+                        pure-white extreme on the left, five mid tones in between, and a pure-black extreme on the
+                        right. The extremes carry the palette's signature color in saturated text on plain white or
+                        black — built for full sun on a beach or pitch-dark bedrooms.
+                    </li>
+                    <li data-i18n="features.s1.themes.li2"><strong>Featured</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-featured-themes.webp"
+                                data-alt="Typewriter and Terminal Featured themes side by side"
+                                aria-label="View Featured themes screenshot"></button>
+                        Typewriter (ivory + dark brown, light and dark variants, locked to American Typewriter — leans
+                        into a quiet steampunk vibe with a brass dashboard speedometer whose needle rolls as you read,
+                        swapped for a vintage radio-dial carriage with a lit red pointer on narrower screens; copper-rim
+                        keycaps; mechanical drum-counter read-outs) and Terminal (white monospace on deep blue, locked
+                        to Menlo / Courier New, Norton Commander homage). Both come with their own independent
+                        typography and layout settings.
+                    </li>
+                    <li data-i18n="features.s1.themes.li4"><strong>Custom</strong>Three user-defined slots with full
+                        color picker control
+                    </li>
+                    <li data-i18n="features.s1.themes.li5"><strong>Day &amp; Night mode</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-day-night-mode.webp"
+                                data-alt="Day and Night mode showing light theme and dark theme variants"
+                                aria-label="View Day and Night mode screenshot"></button>
+                        Assign separate themes for light and dark system appearance — automatic or manually overridden
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s1.themes.p2">
+                    The reader carries three independent appearance contexts — Regular,
+                    Typewriter, and Terminal. Each remembers its own font, size, line
+                    height, padding, alignment, and navigation mode, so a tweak made
+                    inside Terminal won't follow you back to Ochre.
+                </p>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-themes-picker.webp"
+                     alt="Theme picker dropdown showing live Aa previews in current font">
+            </div>
+        </div>
 
-    <div id="s1-fonts" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.fonts.h">Nine typefaces, three groups</h3>
-        <span class="badge-group">
+        <div id="s1-fonts" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.fonts.h">Nine typefaces, three groups</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.fonts.p1">All system fonts — no downloads, no licensing, no rendering differences between devices.</p>
-        <ul class="feature-list">
-          <li data-i18n="features.s1.fonts.li1"><strong>Serif</strong>Georgia, Palatino, Charter, Iowan Old Style</li>
-          <li data-i18n="features.s1.fonts.li2"><strong>Sans-serif</strong>Helvetica Neue, SF Pro, Avenir Next</li>
-          <li data-i18n="features.s1.fonts.li3"><strong>Monospace</strong>Menlo on Mac, Courier New on iOS; American Typewriter everywhere</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s1.fonts.p2">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.fonts.p1">All system fonts — no downloads, no licensing, no rendering
+                    differences between devices.</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.fonts.li1"><strong>Serif</strong>Georgia, Palatino, Charter, Iowan Old
+                        Style
+                    </li>
+                    <li data-i18n="features.s1.fonts.li2"><strong>Sans-serif</strong>Helvetica Neue, SF Pro, Avenir Next
+                    </li>
+                    <li data-i18n="features.s1.fonts.li3"><strong>Monospace</strong>Menlo on Mac, Courier New on iOS;
+                        American Typewriter everywhere
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s1.fonts.p2">
           The font picker groups them with labeled sections and shows live
           "Aa" previews in the theme you're currently using.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-fonts.webp" data-alt="Font picker with grouped sections and live Aa previews" aria-label="View fonts screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                </p>
+            </div>
+        </div>
 
-    <div id="s1-typo" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.typo.h">Full typography control</h3>
-        <span class="badge-group">
+        <div id="s1-typo" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.typo.h">Full typography control</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <ul class="feature-list">
-          <li data-i18n="features.s1.typo.li1"><strong>Size</strong>12 to 48 pixels</li>
-          <li data-i18n="features.s1.typo.li2"><strong>Line height</strong>Continuously adjustable, from tight to spacious</li>
-          <li data-i18n="features.s1.typo.li3"><strong>Paragraph spacing</strong>Continuously adjustable from 0.3 to 2.4 em</li>
-          <li data-i18n="features.s1.typo.li4"><strong>Text indent</strong>Toggle first-line indentation</li>
-          <li data-i18n="features.s1.typo.li5"><strong>Alignment</strong>Left, justified, or right</li>
-          <li data-i18n="features.s1.typo.li6"><strong>Hyphenation</strong>Automatic when justified, with content-based language detection for Latin, Cyrillic, CJK, Arabic, and Greek scripts</li>
-          <li data-i18n="features.s1.typo.li7"><strong>Page padding</strong>Continuous slider from edge-to-edge to generous margins</li>
-          <li data-i18n="features.s1.typo.li8"><strong>Image display</strong>Show, mask (reveal on hover), or hide entirely</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s1.typo.p">
+            </div>
+            <div class="feature-body">
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.typo.li1"><strong>Size</strong>12 to 48 pixels</li>
+                    <li data-i18n="features.s1.typo.li2"><strong>Line height</strong>Continuously adjustable, from tight
+                        to spacious
+                    </li>
+                    <li data-i18n="features.s1.typo.li3"><strong>Paragraph spacing</strong>Continuously adjustable from
+                        0.3 to 2.4 em
+                    </li>
+                    <li data-i18n="features.s1.typo.li4"><strong>Text indent</strong>Toggle first-line indentation</li>
+                    <li data-i18n="features.s1.typo.li5"><strong>Alignment</strong>Left, justified, or right</li>
+                    <li data-i18n="features.s1.typo.li6"><strong>Hyphenation</strong>Automatic when justified, with
+                        content-based language detection for Latin, Cyrillic, CJK, Arabic, and Greek scripts
+                    </li>
+                    <li data-i18n="features.s1.typo.li7"><strong>Page padding</strong>Continuous slider from
+                        edge-to-edge to generous margins
+                    </li>
+                    <li data-i18n="features.s1.typo.li8"><strong>Image display</strong>Show, mask (reveal on hover), or
+                        hide entirely
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s1.typo.p">
           Every setting applies instantly — <em>no page reload, no position lost.</em>
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-typo.webp" data-alt="Typography controls — size, line height, alignment, spacing" aria-label="View typography screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                </p>
+            </div>
+        </div>
 
-    <div id="s1-modes" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.modes.h">Continuous scroll, page, or two-page spread</h3>
-        <span class="badge-group">
+        <div id="s1-modes" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.modes.h">Continuous scroll, page, or two-page spread</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.modes.p1">
-          The default reader renders the book as a single continuous page —
-          no artificial breaks, just smooth vertical scrolling.
-        </p>
-        <p data-i18n="features.s1.modes.p2">
-          Switch to <strong>Page</strong> mode for a paginated experience
-          with animated or instant page turns. Page separators are
-          configurable — clean lines or a soft shadow. On Mac and iPad
-          (in landscape), <strong>Two pages</strong> mode renders a
-          classic book spread. All three modes preserve your exact
-          position when switching.
-        </p>
-      </div>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-two-page-spread.webp" alt="Two-page spread on Mac with progress bar and chapter map">
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.modes.p1">
+                    The default reader renders the book as a single continuous page —
+                    no artificial breaks, just smooth vertical scrolling.
+                </p>
+                <p data-i18n="features.s1.modes.p2">
+                    Switch to <strong>Page</strong> mode for a paginated experience
+                    with animated or instant page turns. Page separators are
+                    configurable — clean lines or a soft shadow. On Mac and iPad
+                    (in landscape), <strong>Two pages</strong> mode renders a
+                    classic book spread. All three modes preserve your exact
+                    position when switching.
+                </p>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-two-page-spread.webp"
+                     alt="Two-page spread on Mac with progress bar and chapter map">
+            </div>
+        </div>
 
-    <div id="s1-position" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.position.h">Position that survives anything</h3>
-        <span class="badge-group">
+        <div id="s1-position" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.position.h">Position that survives anything</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.position.p1">
-          Your reading position is tracked more precisely than most readers
-          bother with — which means it survives:
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s1.position.li1"><strong>Font changes</strong>Size, family, line height</li>
-          <li data-i18n="features.s1.position.li2"><strong>Window resizes</strong>Full layout reflow</li>
-          <li data-i18n="features.s1.position.li3"><strong>Device switches</strong>Mac to iPad, iPad to iPhone — ContinuousReader with sync enabled</li>
-          <li data-i18n="features.s1.position.li4"><strong>Mode switches</strong>Scroll to page, page to spread</li>
-          <li data-i18n="features.s1.position.li5"><strong>Long absences</strong>Reopening the book weeks later with different settings</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s1.position.p2">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.position.p1">
+                    Your reading position is tracked more precisely than most readers
+                    bother with — which means it survives:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.position.li1"><strong>Font changes</strong>Size, family, line height</li>
+                    <li data-i18n="features.s1.position.li2"><strong>Window resizes</strong>Full layout reflow</li>
+                    <li data-i18n="features.s1.position.li3"><strong>Device switches</strong>Mac to iPad, iPad to iPhone
+                        — ContinuousReader with sync enabled
+                    </li>
+                    <li data-i18n="features.s1.position.li4"><strong>Mode switches</strong>Scroll to page, page to
+                        spread
+                    </li>
+                    <li data-i18n="features.s1.position.li5"><strong>Long absences</strong>Reopening the book weeks
+                        later with different settings
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s1.position.p2">
           When you return to a book, the reader fades in at the
           <em>exact paragraph</em> you left, not the nearest chapter.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-position.webp" data-alt="Reading position restored to the exact paragraph" aria-label="View position screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-position.webp"
+                            data-alt="Reading position restored to the exact paragraph"
+                            aria-label="View position screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s1-progress" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.progress.h">Progress drawer and markers</h3>
-        <span class="badge-group">
+        <div id="s1-progress" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.progress.h">Progress drawer and markers</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.progress.p1">
-          A slim progress bar along the bottom expands on hover (Mac) or tap
-          (iOS) to reveal reading position. Click or double-tap to open the
-          progress drawer:
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s1.progress.li1"><strong>Tapered slider</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-tapered.webp" data-alt="Tapered slider showing thick-to-thin track with S-curve at current position" aria-label="View tapered slider screenshot"></button>A custom track that's thick for the part you've read and hair-thin for what's ahead, with a smooth S-curve at your current position</li>
-          <li data-i18n="features.s1.progress.li3"><strong>Entry marker</strong>A dot with a dashed ring showing where you started this session</li>
-          <li data-i18n="features.s1.progress.li4"><strong>Marker modes</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-marker-modes.webp" data-alt="Progress drawer marker modes: chapters, images, bookmarks" aria-label="View marker modes screenshot"></button>Switch the track to show chapters, images, bookmarks, or nothing. Chapter markers show titles on hover. Image markers show thumbnail previews.</li>
-          <li data-i18n="features.s1.progress.li5"><strong>Go To</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-progress-go-to.webp" data-alt="Go To dialog with sliding pill mode switch between page and percent" aria-label="View Go To dialog screenshot"></button>Direct jump to a page or percent — just enter the value</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s1.progress.p2">
-          In ContinuousReader, bookmark markers are
-          <strong>color-coded</strong> and show preview text and page number
-          on hover.
-        </p>
-      </div>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-progress-drawer.webp" alt="Progress drawer with tapered slider, markers, and Go To input">
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.progress.p1">
+                    A slim progress bar along the bottom expands on hover (Mac) or tap
+                    (iOS) to reveal reading position. Click or double-tap to open the
+                    progress drawer:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.progress.li1"><strong>Tapered slider</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-progress-tapered.webp"
+                                data-alt="Tapered slider showing thick-to-thin track with S-curve at current position"
+                                aria-label="View tapered slider screenshot"></button>
+                        A custom track that's thick for the part you've read and hair-thin for what's ahead, with a
+                        smooth S-curve at your current position
+                    </li>
+                    <li data-i18n="features.s1.progress.li3"><strong>Entry marker</strong>A dot with a dashed ring
+                        showing where you started this session
+                    </li>
+                    <li data-i18n="features.s1.progress.li4"><strong>Marker modes</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-progress-marker-modes.webp"
+                                data-alt="Progress drawer marker modes: chapters, images, bookmarks"
+                                aria-label="View marker modes screenshot"></button>
+                        Switch the track to show chapters, images, bookmarks, or nothing. Chapter markers show titles on
+                        hover. Image markers show thumbnail previews.
+                    </li>
+                    <li data-i18n="features.s1.progress.li5"><strong>Go To</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-progress-go-to.webp"
+                                data-alt="Go To dialog with sliding pill mode switch between page and percent"
+                                aria-label="View Go To dialog screenshot"></button>
+                        Direct jump to a page or percent — just enter the value
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s1.progress.p2">
+                    In ContinuousReader, bookmark markers are
+                    <strong>color-coded</strong> and show preview text and page number
+                    on hover.
+                </p>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-progress-drawer.webp"
+                     alt="Progress drawer with tapered slider, markers, and Go To input">
+            </div>
+        </div>
 
-    <div id="s1-chapters" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.chapters.h">Chapter navigation</h3>
-        <span class="badge-group">
+        <div id="s1-chapters" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.chapters.h">Chapter navigation</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.chapters.p1">
-          Chapter structure is extracted on import — with proper heading
-          priority and scene-break separator filtering
-          (<code>* * *</code>, <code>---</code>, etc.).
-        </p>
-        <p data-i18n="features.s1.chapters.p2">
-          The <strong>Chapters</strong> tab in the side panel lets you jump
-          to any chapter with one click. On Mac, you can switch between two
-          display modes:
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s1.chapters.li1"><strong>Chapter list</strong>A static list with the current chapter highlighted and bolded</li>
-          <li data-i18n="features.s1.chapters.li2"><strong>Chapter map</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-chapter-map.webp" data-alt="Mac chapter map with proportional-height rows and viewport indicator" aria-label="View chapter map screenshot"></button>Proportional variable-height rows — taller rows for longer chapters — with a thin left rail track, a sliding thumb, and a viewport-proportional indicator. Page numbers are hidden in map mode for a cleaner spatial view.</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s1.chapters.p3">
-          If you've used the minimap in a code editor, you'll recognize the
-          shape.
-        </p>
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.chapters.p1">
+                    Chapter structure is extracted on import — with proper heading
+                    priority and scene-break separator filtering
+                    (<code>* * *</code>, <code>---</code>, etc.).
+                </p>
+                <p data-i18n="features.s1.chapters.p2">
+                    The <strong>Chapters</strong> tab in the side panel lets you jump
+                    to any chapter with one click. On Mac, you can switch between two
+                    display modes:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.chapters.li1"><strong>Chapter list</strong>A static list with the current
+                        chapter highlighted and bolded
+                    </li>
+                    <li data-i18n="features.s1.chapters.li2"><strong>Chapter map</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-chapter-map.webp"
+                                data-alt="Mac chapter map with proportional-height rows and viewport indicator"
+                                aria-label="View chapter map screenshot"></button>
+                        Proportional variable-height rows — taller rows for longer chapters — with a thin left rail
+                        track, a sliding thumb, and a viewport-proportional indicator. Page numbers are hidden in map
+                        mode for a cleaner spatial view.
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s1.chapters.p3">
+                    If you've used the minimap in a code editor, you'll recognize the
+                    shape.
+                </p>
+            </div>
+        </div>
 
-    <div id="s1-bookmarks" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.bookmarks.h">Bookmarks</h3>
-        <span class="badge-group">
+        <div id="s1-bookmarks" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.bookmarks.h">Bookmarks</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.bookmarks.p1">
-          Add a bookmark with <code>Cmd+B</code> or via the text selection
-          context menu. The app captures your selected text as a preview, or
-          — if nothing is selected — the first visible paragraph.
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s1.bookmarks.li1"><strong>Seven colors</strong>To categorize bookmarks (last-used color is remembered)</li>
-          <li data-i18n="features.s1.bookmarks.li2"><strong>Notes</strong>Attached to any bookmark</li>
-          <li data-i18n="features.s1.bookmarks.li3"><strong>Filter bookmarks by color</strong>Appears when a book has two or more bookmark colors</li>
-          <li data-i18n="features.s1.bookmarks.li4"><strong>Highlights in the text</strong>Each bookmark tints its passage in the book — as if marked with a highlighter, in its own color</li>
-          <li data-i18n="features.s1.bookmarks.li5"><strong>Live markers</strong>On the progress bar, with tooltip previews</li>
-          <li data-i18n="features.s1.bookmarks.li6"><strong>Nearest bookmark</strong>Highlighted in bold in the side panel as you read</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s1.bookmarks.p2">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.bookmarks.p1">
+                    Add a bookmark with <code>Cmd+B</code> or via the text selection
+                    context menu. The app captures your selected text as a preview, or
+                    — if nothing is selected — the first visible paragraph.
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.bookmarks.li1"><strong>Seven colors</strong>To categorize bookmarks
+                        (last-used color is remembered)
+                    </li>
+                    <li data-i18n="features.s1.bookmarks.li2"><strong>Notes</strong>Attached to any bookmark</li>
+                    <li data-i18n="features.s1.bookmarks.li3"><strong>Filter bookmarks by color</strong>Appears when a
+                        book has two or more bookmark colors
+                    </li>
+                    <li data-i18n="features.s1.bookmarks.li4"><strong>Highlights in the text</strong>Each bookmark tints
+                        its passage in the book — as if marked with a highlighter, in its own color
+                    </li>
+                    <li data-i18n="features.s1.bookmarks.li5"><strong>Live markers</strong>On the progress bar, with
+                        tooltip previews
+                    </li>
+                    <li data-i18n="features.s1.bookmarks.li6"><strong>Nearest bookmark</strong>Highlighted in bold in
+                        the side panel as you read
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s1.bookmarks.p2">
           Bookmarks are available only in ContinuousReader.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-bookmarks.webp" data-alt="Bookmarks panel — 7-color highlights with notes" aria-label="View bookmarks screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-bookmarks.webp"
+                            data-alt="Bookmarks panel — 7-color highlights with notes"
+                            aria-label="View bookmarks screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s1-search" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.search.h">In-book search</h3>
-        <span class="badge-group">
+        <div id="s1-search" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.search.h">In-book search</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.search.p1">
-          Open in-book search from the <strong>Search</strong> tab in the
-          reader's bottom toolbar, or press <code>Cmd+F</code>. Match counter,
-          previous/next navigation, case-sensitive toggle, and yellow/orange
-          highlights in the text. Position markers appear along the scrollbar
-          so you can see matches at a glance.
-        </p>
-        <p data-i18n="features.s1.search.p2">
-          Search works the same way as translation, settings, and navigation
-          — as a tab in the reader's bottom toolbar, <em>not a floating
-          window that covers the text.</em>
-        </p>
-        <p><span data-i18n="features.s1.search.p3">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.search.p1">
+                    Open in-book search from the <strong>Search</strong> tab in the
+                    reader's bottom toolbar, or press <code>Cmd+F</code>. Match counter,
+                    previous/next navigation, case-sensitive toggle, and yellow/orange
+                    highlights in the text. Position markers appear along the scrollbar
+                    so you can see matches at a glance.
+                </p>
+                <p data-i18n="features.s1.search.p2">
+                    Search works the same way as translation, settings, and navigation
+                    — as a tab in the reader's bottom toolbar, <em>not a floating
+                    window that covers the text.</em>
+                </p>
+                <p><span data-i18n="features.s1.search.p3">
           On iPhone, in fullscreen, the combined <strong>Go to…</strong>
           sheet wraps search with page-number and percent navigation behind
           one segmented control — type a value, pick a mode, jump.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-iphone-go-to.webp" data-alt="iPhone fullscreen Go to sheet with segmented mode picker — percent, page, search" aria-label="View iPhone Go to sheet screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-iphone-go-to.webp"
+                            data-alt="iPhone fullscreen Go to sheet with segmented mode picker — percent, page, search"
+                            aria-label="View iPhone Go to sheet screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s1-notes" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.notes.h">Notes</h3>
-        <span class="badge-group">
+        <div id="s1-notes" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.notes.h">Notes</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.notes.p1">
-          Each book has a personal notes field with a <strong>rich text editor</strong>.
-          The formatting toolbar supports bold, italic, underline,
-          strikethrough, H1–H3 headings, bullet and numbered lists,
-          blockquotes, horizontal rules, and four highlight colors (yellow,
-          green, blue, pink). On iPhone, the toolbar splits into two rows to
-          fit everything without scrolling.
-        </p>
-        <p><span data-i18n="features.s1.notes.p2">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.notes.p1">
+                    Each book has a personal notes field with a <strong>rich text editor</strong>.
+                    The formatting toolbar supports bold, italic, underline,
+                    strikethrough, H1–H3 headings, bullet and numbered lists,
+                    blockquotes, horizontal rules, and four highlight colors (yellow,
+                    green, blue, pink). On iPhone, the toolbar splits into two rows to
+                    fit everything without scrolling.
+                </p>
+                <p><span data-i18n="features.s1.notes.p2">
           Notes are stored with full formatting and rendered the same way in
           the side panel and in exported reports.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-notes.webp" data-alt="Rich-text notes editor with formatting toolbar" aria-label="View notes screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-notes.webp"
+                            data-alt="Rich-text notes editor with formatting toolbar"
+                            aria-label="View notes screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s1-fullscreen" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s1.fullscreen.h">Fullscreen <em>(iOS)</em></h3>
-        <span class="badge-group">
+        <div id="s1-fullscreen" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.fullscreen.h">Fullscreen <em>(iOS)</em></h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s1.fullscreen.p1">
-          Tap the center of the reading area to hide the bottom bar and enter
-          fullscreen. In scroll mode, only the physical edges of the device
-          remain — text flows under the Dynamic Island or camera housing.
-          In paged mode, the safe area is respected so each page reads as
-          a clean rectangle. Tap the center again to exit.
-        </p>
-        <p><span data-i18n="features.s1.fullscreen.settings">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.fullscreen.p1">
+                    Tap the center of the reading area to hide the bottom bar and enter
+                    fullscreen. In scroll mode, only the physical edges of the device
+                    remain — text flows under the Dynamic Island or camera housing.
+                    In paged mode, the safe area is respected so each page reads as
+                    a clean rectangle. Tap the center again to exit.
+                </p>
+                <p><span data-i18n="features.s1.fullscreen.settings">
           In fullscreen, <strong>quick settings</strong> are reachable
           without leaving — a left bottom tap zone on iPhone, a
           tap-the-clock menu on iPad. Adjust theme, font, size, brightness
           without losing the page.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-fs-quick-settings.webp" data-alt="Fullscreen quick-settings menu on iPhone left tap zone and iPad clock menu" aria-label="View fullscreen quick settings screenshot"></button></p>
-        <p><span data-i18n="features.s1.fullscreen.nav">
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-fs-quick-settings.webp"
+                            data-alt="Fullscreen quick-settings menu on iPhone left tap zone and iPad clock menu"
+                            aria-label="View fullscreen quick settings screenshot"></button>
+                </p>
+                <p><span data-i18n="features.s1.fullscreen.nav">
           <strong>Precise navigation</strong> is available too — both a full
           marker-rich panel (chapters, images, bookmarks) and a quick
           drag-and-search sheet. Both work in fullscreen on iPhone and
           iPad. The mode auto-exits only when you open the side panel or
           the translator.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-fs-quick-nav.webp" data-alt="Fullscreen precise-navigation panel on iPhone right tap zone and iPad menu" aria-label="View fullscreen navigation screenshot"></button></p>
-        <p><span data-i18n="features.s1.fullscreen.p2">
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-fs-quick-nav.webp"
+                            data-alt="Fullscreen precise-navigation panel on iPhone right tap zone and iPad menu"
+                            aria-label="View fullscreen navigation screenshot"></button>
+                </p>
+                <p><span data-i18n="features.s1.fullscreen.p2">
           Optional <strong>pixel-art clock</strong> shows the time as dotted
           numerals on the background of the page — adjustable position and
           contrast, visible enough to check at a glance, unobtrusive enough
           to ignore while reading. <em>For anyone who's ever lost track of
           time in a book and missed their stop.</em>
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-fullscreen.webp" data-alt="Fullscreen reading on iPhone with optional pixel-art clock" aria-label="View pixel-art clock screenshot"></button></p>
-        <p><span data-i18n="features.s1.fullscreen.clock_island">
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-fullscreen.webp"
+                            data-alt="Fullscreen reading on iPhone with optional pixel-art clock"
+                            aria-label="View pixel-art clock screenshot"></button>
+                </p>
+                <p><span data-i18n="features.s1.fullscreen.clock_island">
           Or a small <strong>island indicator</strong> floating at the bottom
           — clock and reading progress over a darker pill background.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-fs-clock-island.webp" data-alt="Fullscreen island indicator at bottom showing clock and reading progress" aria-label="View island clock indicator screenshot"></button></p>
-        <p><span data-i18n="features.s1.fullscreen.clock_bar">
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-fs-clock-island.webp"
+                            data-alt="Fullscreen island indicator at bottom showing clock and reading progress"
+                            aria-label="View island clock indicator screenshot"></button>
+                </p>
+                <p><span data-i18n="features.s1.fullscreen.clock_bar">
           Or a thin <strong>bottom bar</strong> version — clock and progress
           across the full width of the screen.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-fs-clock-bar.webp" data-alt="Fullscreen thin bottom bar showing clock and progress across full width" aria-label="View bottom bar clock screenshot"></button></p>
-      </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-fs-clock-bar.webp"
+                            data-alt="Fullscreen thin bottom bar showing clock and progress across full width"
+                            aria-label="View bottom bar clock screenshot"></button>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- SECTION 2 — TRANSLATION & READ ALOUD                          -->
 <!-- ============================================================ -->
 <section id="s2" class="feature-section reveal">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="section-eyebrow"><span class="section-number">02</span><span data-i18n="features.s2.label">Section two</span></div>
-      <h2 class="section-h2" data-i18n="features.s2.h2">Translation and <em>Read Aloud</em>.</h2>
-      <p class="section-intro" data-i18n="features.s2.intro">
-        Two features that shape how you engage with a book, beyond just
-        reading it visually. Both integrate with the reader's position
-        tracking, so you never lose your place when switching modes.
-      </p>
-    </div>
+    <div class="container-narrow">
+        <div class="section-header">
+            <div class="section-eyebrow"><span class="section-number">02</span><span data-i18n="features.s2.label">Section two</span>
+            </div>
+            <h2 class="section-h2" data-i18n="features.s2.h2">Translation and <em>Read Aloud</em>.</h2>
+            <p class="section-intro" data-i18n="features.s2.intro">
+                Two features that shape how you engage with a book, beyond just
+                reading it visually. Both integrate with the reader's position
+                tracking, so you never lose your place when switching modes.
+            </p>
+        </div>
 
-    <div id="s2-translate" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s2.translate.h">Translation — inline, non-disruptive</h3>
-        <span class="badge-group">
+        <div id="s2-translate" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s2.translate.h">Translation — inline, non-disruptive</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s2.translate.p1">
-          Highlight any word or phrase. The translation appears in a panel at
-          the bottom of the screen that stays out of the way while you keep
-          reading. <strong>No popup, no modal, no context switch.</strong>
-        </p>
-        <p data-i18n="features.s2.translate.p2">Three display modes in the panel:</p>
-        <ul class="feature-list">
-          <li data-i18n="features.s2.translate.li1"><strong>Translation only</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-translate-only.webp" data-alt="Translation only mode — compact translated text" aria-label="View translation-only mode screenshot"></button>Just the translated text, maximally compact</li>
-          <li data-i18n="features.s2.translate.li2"><strong>Side by side</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-translate-side-by-side.webp" data-alt="Side-by-side mode — source and translation next to each other" aria-label="View side-by-side translation screenshot"></button>Source and translation next to each other</li>
-          <li data-i18n="features.s2.translate.li3"><strong>Interlinear</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-translate-interlinear.webp" data-alt="Interlinear mode — translation under the original, each word under its source" aria-label="View interlinear translation screenshot"></button>The translation directly under the original — each word under its source</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s2.translate.p3">
-          Switch modes in the toolbar, or set your preferred default in
-          settings.
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s2.translate.li4"><strong>Many target languages</strong>Provided by Apple's on-device Translation framework</li>
-          <li data-i18n="features.s2.translate.li5"><strong>Nothing leaves your device</strong>All translation happens locally</li>
-          <li data-i18n="features.s2.translate.li6"><strong>Selection menu reordering</strong>Translate and Bookmark sit at the top of the right-click / long-press menu by default. Reorder them in settings — whichever you reach for more often goes first.</li>
-        </ul>
-      </div>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-translation-panel.webp" alt="Reader with selected word and interlinear translation panel">
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s2.translate.p1">
+                    Highlight any word or phrase. The translation appears in a panel at
+                    the bottom of the screen that stays out of the way while you keep
+                    reading. <strong>No popup, no modal, no context switch.</strong>
+                </p>
+                <p data-i18n="features.s2.translate.p2">Three display modes in the panel:</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s2.translate.li1"><strong>Translation only</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-translate-only.webp"
+                                data-alt="Translation only mode — compact translated text"
+                                aria-label="View translation-only mode screenshot"></button>
+                        Just the translated text, maximally compact
+                    </li>
+                    <li data-i18n="features.s2.translate.li2"><strong>Side by side</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-translate-side-by-side.webp"
+                                data-alt="Side-by-side mode — source and translation next to each other"
+                                aria-label="View side-by-side translation screenshot"></button>
+                        Source and translation next to each other
+                    </li>
+                    <li data-i18n="features.s2.translate.li3"><strong>Interlinear</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-translate-interlinear.webp"
+                                data-alt="Interlinear mode — translation under the original, each word under its source"
+                                aria-label="View interlinear translation screenshot"></button>
+                        The translation directly under the original — each word under its source
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s2.translate.p3">
+                    Switch modes in the toolbar, or set your preferred default in
+                    settings.
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s2.translate.li4"><strong>Many target languages</strong>Provided by Apple's
+                        on-device Translation framework
+                    </li>
+                    <li data-i18n="features.s2.translate.li5"><strong>Nothing leaves your device</strong>All translation
+                        happens locally
+                    </li>
+                    <li data-i18n="features.s2.translate.li6"><strong>Selection menu reordering</strong>Translate and
+                        Bookmark sit at the top of the right-click / long-press menu by default. Reorder them in
+                        settings — whichever you reach for more often goes first.
+                    </li>
+                </ul>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-translation-panel.webp"
+                     alt="Reader with selected word and interlinear translation panel">
+            </div>
+        </div>
 
-    <div id="s2-stats" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s2.stats.h">Translation statistics</h3>
-        <span class="badge-group">
+        <div id="s2-stats" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s2.stats.h">Translation statistics</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s2.stats.p1">
-          Every word you look up can be remembered. ContinuousReader tracks:
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s2.stats.li1"><strong>Languages</strong>The languages you translate between, with frequencies</li>
-          <li data-i18n="features.s2.stats.li2"><strong>Words seen before</strong>With counts</li>
-          <li data-i18n="features.s2.stats.li3"><strong>Books</strong>Where you translated the most</li>
-          <li data-i18n="features.s2.stats.li4"><strong>Time-based activity</strong>When and how often you reach for translation</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s2.stats.p2">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s2.stats.p1">
+                    Every word you look up can be remembered. ContinuousReader tracks:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s2.stats.li1"><strong>Languages</strong>The languages you translate between,
+                        with frequencies
+                    </li>
+                    <li data-i18n="features.s2.stats.li2"><strong>Words seen before</strong>With counts</li>
+                    <li data-i18n="features.s2.stats.li3"><strong>Books</strong>Where you translated the most</li>
+                    <li data-i18n="features.s2.stats.li4"><strong>Time-based activity</strong>When and how often you
+                        reach for translation
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s2.stats.p2">
           Tracking can be toggled any time. Turn it off and nothing is
           recorded. Turn it on and export the full history as an HTML report
           — useful for language learners, researchers, and translators.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-translation-stats.webp" data-alt="Translation statistics dashboard" aria-label="View translation statistics screenshot"></button></p>
-        <p style="font-size: 14px; font-style: italic; color: var(--ink-fade); margin-top: 16px;" data-i18n="features.s2.stats.p3">
-          Future: export to Anki or other flash-card formats, if there's demand.
-        </p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-translation-stats.webp"
+                            data-alt="Translation statistics dashboard"
+                            aria-label="View translation statistics screenshot"></button>
+                </p>
+                <p style="font-size: 14px; font-style: italic; color: var(--ink-fade); margin-top: 16px;"
+                   data-i18n="features.s2.stats.p3">
+                    Future: export to Anki or other flash-card formats, if there's demand.
+                </p>
+            </div>
+        </div>
 
-    <div id="s2-readaloud" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s2.readaloud.h">Read Aloud</h3>
-        <span class="badge-group">
+        <div id="s2-readaloud" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s2.readaloud.h">Read Aloud</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s2.readaloud.p1">
-          Built-in text-to-speech that reads from your current position. Not
-          a separate mode — <em>an extension of the same reading session.</em>
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s2.readaloud.li1"><strong>Position sync on open</strong>The voice reader matches the paragraph you were visually on</li>
-          <li data-i18n="features.s2.readaloud.li2"><strong>Position sync on close</strong>The visual reader scrolls to the paragraph the voice finished</li>
-          <li data-i18n="features.s2.readaloud.li3"><strong>Word-by-word highlighting</strong>A soft rounded indicator glides from word to word, automatically keeping the current paragraph scrolled into view</li>
-          <li data-i18n="features.s2.readaloud.li4"><strong>Transport controls</strong>Play/pause, skip forward/back, elapsed time, paragraph counter</li>
-          <li data-i18n="features.s2.readaloud.li5"><strong>Adjustable speed</strong>Continuous slider with real-time effect — change speed mid-sentence and playback picks up from the exact word, not the nearest paragraph</li>
-          <li data-i18n="features.s2.readaloud.li6"><strong>Pitch and voice</strong>Inline pitch slider, voice picker with Auto language detection or manual selection. Disabled during playback to prevent disruption — pause, adjust, resume.</li>
-          <li data-i18n="features.s2.readaloud.li7"><strong>Theme integration</strong>All controls, progress bar, and word highlight use your current reader theme colors</li>
-        </ul>
-      </div>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-voice-reader.webp" alt="Read Aloud view with scrolling paragraphs, current word highlighted, transport controls">
-      </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s2.readaloud.p1">
+                    Built-in text-to-speech that reads from your current position. Not
+                    a separate mode — <em>an extension of the same reading session.</em>
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s2.readaloud.li1"><strong>Position sync on open</strong>The voice reader
+                        matches the paragraph you were visually on
+                    </li>
+                    <li data-i18n="features.s2.readaloud.li2"><strong>Position sync on close</strong>The visual reader
+                        scrolls to the paragraph the voice finished
+                    </li>
+                    <li data-i18n="features.s2.readaloud.li3"><strong>Word-by-word highlighting</strong>A soft rounded
+                        indicator glides from word to word, automatically keeping the current paragraph scrolled into
+                        view
+                    </li>
+                    <li data-i18n="features.s2.readaloud.li4"><strong>Transport controls</strong>Play/pause, skip
+                        forward/back, elapsed time, paragraph counter
+                    </li>
+                    <li data-i18n="features.s2.readaloud.li5"><strong>Adjustable speed</strong>Continuous slider with
+                        real-time effect — change speed mid-sentence and playback picks up from the exact word, not the
+                        nearest paragraph
+                    </li>
+                    <li data-i18n="features.s2.readaloud.li6"><strong>Pitch and voice</strong>Inline pitch slider, voice
+                        picker with Auto language detection or manual selection. Disabled during playback to prevent
+                        disruption — pause, adjust, resume.
+                    </li>
+                    <li data-i18n="features.s2.readaloud.li7"><strong>Theme integration</strong>All controls, progress
+                        bar, and word highlight use your current reader theme colors
+                    </li>
+                </ul>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-voice-reader.webp"
+                     alt="Read Aloud view with scrolling paragraphs, current word highlighted, transport controls">
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- SECTION 3 — THE LIBRARY (CR-only)                             -->
 <!-- ============================================================ -->
 <section id="s3" class="feature-section cr-only reveal">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="section-eyebrow"><span class="section-number">03</span><span data-i18n="features.s3.label">Section three</span></div>
-      <h2 class="section-h2" data-i18n="features.s3.h2">The <em>library</em>.</h2>
-      <p class="section-intro" data-i18n="features.s3.intro">
-        How ContinuousReader organizes, displays, and manages your collection.
-        The library is where you spend time between books — it should be
-        fast, flexible, and stay out of your way.
-      </p>
-      <div class="cr-only-banner">
-        <span class="marker">CR ONLY</span>
-        <span data-i18n="features.s3.banner">JustReader reads one book at a time and doesn’t support library features. Everything below is ContinuousReader territory.</span>
-      </div>
-    </div>
+    <div class="container-narrow">
+        <div class="section-header">
+            <div class="section-eyebrow"><span class="section-number">03</span><span data-i18n="features.s3.label">Section three</span>
+            </div>
+            <h2 class="section-h2" data-i18n="features.s3.h2">The <em>library</em>.</h2>
+            <p class="section-intro" data-i18n="features.s3.intro">
+                How ContinuousReader organizes, displays, and manages your collection.
+                The library is where you spend time between books — it should be
+                fast, flexible, and stay out of your way.
+            </p>
+            <div class="cr-only-banner">
+                <span class="marker">CR ONLY</span>
+                <span data-i18n="features.s3.banner">JustReader reads one book at a time and doesn’t support library features. Everything below is ContinuousReader territory.</span>
+            </div>
+        </div>
 
-    <div id="s3-tabs" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.tabs.h">Three tabs</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s3.tabs.p1">The library is organized into three tabs, each with its own purpose:</p>
-        <ul class="feature-list">
-          <li data-i18n="features.s3.tabs.li1"><strong>Library</strong>The complete collection, with all filtering, sorting, and folder scoping applied</li>
-          <li data-i18n="features.s3.tabs.li2"><strong>Latest</strong>Recently opened or recently imported books (switchable), ignoring folder filters</li>
-          <li data-i18n="features.s3.tabs.li3"><strong>Pinned</strong>Your favorites, also ignoring folder filters</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s3.tabs.p2">
+        <div id="s3-tabs" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.tabs.h">Three tabs</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s3.tabs.p1">The library is organized into three tabs, each with its own
+                    purpose:</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s3.tabs.li1"><strong>Library</strong>The complete collection, with all
+                        filtering, sorting, and folder scoping applied
+                    </li>
+                    <li data-i18n="features.s3.tabs.li2"><strong>Latest</strong>Recently opened or recently imported
+                        books (switchable), ignoring folder filters
+                    </li>
+                    <li data-i18n="features.s3.tabs.li3"><strong>Pinned</strong>Your favorites, also ignoring folder
+                        filters
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s3.tabs.p2">
           Latest and Pinned work as shortcuts — the books you want fast
           access to, without fiddling with filters.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-library-tabs.webp" data-alt="Library tabs — Library, Latest, Pinned" aria-label="View library tabs screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-library-tabs.webp"
+                            data-alt="Library tabs — Library, Latest, Pinned"
+                            aria-label="View library tabs screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s3-views" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.views.h">Three view modes</h3>
-      </div>
-      <div class="feature-body">
-        <ul class="feature-list">
-          <li data-i18n="features.s3.views.li1"><strong>List view</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-list.webp" data-alt="List view — adaptive rows with five detail levels" aria-label="View list-mode screenshot"></button>Adaptive row layout with five detail levels (full, compact, minimal, essential, mobile). Shows cover, title, author, series, progress, genre chips, and a context menu.</li>
-          <li data-i18n="features.s3.views.li2"><strong>Card view</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-card.webp" data-alt="Card view — responsive grid with cover images" aria-label="View card-mode screenshot"></button>Responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, switchable 2- or 3-column grid; on Mac and iPad, a 4-tier size picker from Big to Tiny.</li>
-          <li data-i18n="features.s3.views.li3"><strong>Table view</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.webp" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Mac only) Sortable columns, column customization, two-level hierarchy, inline color dots in the title column, annotation sheet, and a full-width actions toolbar above the table.</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s3.views.p">
-          All three support <strong>multi-mode grouping</strong>: none,
-          author, series, author &amp; series, genres, or date added — with
-          collapsible sections and shared section headers.
-        </p>
-      </div>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-library-list.webp" alt="Three view modes side by side on Mac">
-      </div>
-    </div>
+        <div id="s3-views" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.views.h">Three view modes</h3>
+            </div>
+            <div class="feature-body">
+                <ul class="feature-list">
+                    <li data-i18n="features.s3.views.li1"><strong>List view</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-view-list.webp"
+                                data-alt="List view — adaptive rows with five detail levels"
+                                aria-label="View list-mode screenshot"></button>
+                        Adaptive row layout with five detail levels (full, compact, minimal, essential, mobile). Shows
+                        cover, title, author, series, progress, genre chips, and a context menu.
+                    </li>
+                    <li data-i18n="features.s3.views.li2"><strong>Card view</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-view-card.webp"
+                                data-alt="Card view — responsive grid with cover images"
+                                aria-label="View card-mode screenshot"></button>
+                        Responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation,
+                        double-click to open, frosted glass selection checkboxes. On iPhone, switchable 2- or 3-column
+                        grid; on Mac and iPad, a 4-tier size picker from Big to Tiny.
+                    </li>
+                    <li data-i18n="features.s3.views.li3"><strong>Table view</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-view-table.webp"
+                                data-alt="Table view (Mac only) — sortable columns with two-level hierarchy"
+                                aria-label="View table-mode screenshot"></button>
+                        (Mac only) Sortable columns, column customization, two-level hierarchy, inline color dots in the
+                        title column, annotation sheet, and a full-width actions toolbar above the table.
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s3.views.p">
+                    All three support <strong>multi-mode grouping</strong>: none,
+                    author, series, author &amp; series, genres, or date added — with
+                    collapsible sections and shared section headers.
+                </p>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-library-list.webp" alt="Three view modes side by side on Mac">
+            </div>
+        </div>
 
-    <div id="s3-search" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.search.h">Search, sort, filter</h3>
-      </div>
-      <div class="feature-body">
-        <ul class="feature-list">
-          <li data-i18n="features.s3.search.li1"><strong>Scoped search</strong>Filter by title, author, series, comment, annotation, or genre. Results appear as you type.</li>
-          <li data-i18n="features.s3.search.li2"><strong>Eight sort options</strong>Title, author, series, date added, date opened, date published, reading progress, and file size. Each cycles through ascending, descending, and cleared states.</li>
-          <li><span data-i18n="features.s3.search.li3"><strong>Unified filter popover</strong>Color and genre filters combined in one place. Active filters show inline badges — up to 3 color dots then a count, genre name with ellipsis then a count.</span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-library-search.webp" data-alt="Library search, sort, and filter controls" aria-label="View library search screenshot"></button></li>
-        </ul>
-      </div>
-    </div>
+        <div id="s3-search" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.search.h">Search, sort, filter</h3>
+            </div>
+            <div class="feature-body">
+                <ul class="feature-list">
+                    <li data-i18n="features.s3.search.li1"><strong>Scoped search</strong>Filter by title, author,
+                        series, comment, annotation, or genre. Results appear as you type.
+                    </li>
+                    <li data-i18n="features.s3.search.li2"><strong>Eight sort options</strong>Title, author, series,
+                        date added, date opened, date published, reading progress, and file size. Each cycles through
+                        ascending, descending, and cleared states.
+                    </li>
+                    <li><span data-i18n="features.s3.search.li3"><strong>Unified filter popover</strong>Color and genre filters combined in one place. Active filters show inline badges — up to 3 color dots then a count, genre name with ellipsis then a count.</span>
+                        <button class="callout-dot section-callout" type="button"
+                                data-screenshot="img/screenshots/features-library-search.webp"
+                                data-alt="Library search, sort, and filter controls"
+                                aria-label="View library search screenshot"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <div id="s3-colors" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.colors.h">Color tags</h3>
-      </div>
-      <div class="feature-body">
-        <p><span data-i18n="features.s3.colors.p">
+        <div id="s3-colors" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.colors.h">Color tags</h3>
+            </div>
+            <div class="feature-body">
+                <p><span data-i18n="features.s3.colors.p">
           Seven Finder-style colored dots that can be assigned to any book
           via context menu, edit dialog, import dialog, or info panel.
           Optional color highlighting shows faint background tints in list
           and card views, and colored titles in table view.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-color-tags.webp" data-alt="Color tag chips on book rows" aria-label="View color tags screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-color-tags.webp"
+                            data-alt="Color tag chips on book rows" aria-label="View color tags screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s3-genres" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.genres.h">Genres and tags</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s3.genres.p1">
-          Genre tags are auto-extracted from FB2 genre codes (around 170
-          mapped) and EPUB <code>dc:subject</code> metadata. A
-          <strong>genre chip picker</strong> allows manual editing per book,
-          and a full <strong>genre management sheet</strong> handles bulk
-          operations across the library.
-        </p>
-        <p><span data-i18n="features.s3.genres.p2">
+        <div id="s3-genres" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.genres.h">Genres and tags</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s3.genres.p1">
+                    Genre tags are auto-extracted from FB2 genre codes (around 170
+                    mapped) and EPUB <code>dc:subject</code> metadata. A
+                    <strong>genre chip picker</strong> allows manual editing per book,
+                    and a full <strong>genre management sheet</strong> handles bulk
+                    operations across the library.
+                </p>
+                <p><span data-i18n="features.s3.genres.p2">
           When a book has more genres than fit on a row, a
           <strong>+N badge</strong> shows the remainder with a hover popover
           showing the full list.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-genres.webp" data-alt="Genre chip picker for editing book metadata" aria-label="View genres screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-genres.webp"
+                            data-alt="Genre chip picker for editing book metadata"
+                            aria-label="View genres screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s3-folders" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.folders.h">Virtual folders</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s3.folders.p1">User-created folders with full nesting — organize your library into a tree of folders and subfolders, the same on Mac, iPad, and iPhone.</p>
-        <ul class="feature-list">
-          <li data-i18n="features.s3.folders.li1"><strong>Nested sidebar tree</strong>On Mac and iPad — expand and collapse folders, F4 toggles the panel</li>
-          <li data-i18n="features.s3.folders.li2"><strong>Folder sheet on iPhone</strong>Nested list with create, rename, delete, and move between folders</li>
-          <li data-i18n="features.s3.folders.li3"><strong>Drag and drop</strong>Drop books onto a folder to file them; drag a folder onto another to nest it</li>
-          <li data-i18n="features.s3.folders.li4"><strong>Bulk folder assignment</strong>In selection mode</li>
-          <li data-i18n="features.s3.folders.li5"><strong>Keyboard navigation</strong>On Mac — arrow keys move through the tree and expand or collapse folders</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s3.folders.p2">
+        <div id="s3-folders" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.folders.h">Virtual folders</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s3.folders.p1">User-created folders with full nesting — organize your library
+                    into a tree of folders and subfolders, the same on Mac, iPad, and iPhone.</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s3.folders.li1"><strong>Nested sidebar tree</strong>On Mac and iPad — expand
+                        and collapse folders, F4 toggles the panel
+                    </li>
+                    <li data-i18n="features.s3.folders.li2"><strong>Folder sheet on iPhone</strong>Nested list with
+                        create, rename, delete, and move between folders
+                    </li>
+                    <li data-i18n="features.s3.folders.li3"><strong>Drag and drop</strong>Drop books onto a folder to
+                        file them; drag a folder onto another to nest it
+                    </li>
+                    <li data-i18n="features.s3.folders.li4"><strong>Bulk folder assignment</strong>In selection mode
+                    </li>
+                    <li data-i18n="features.s3.folders.li5"><strong>Keyboard navigation</strong>On Mac — arrow keys move
+                        through the tree and expand or collapse folders
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s3.folders.p2">
           Deleting a folder or a book doesn't erase it — books move to the Trash,
           where you can restore them, or empty the Trash to delete for good.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-folders.webp" data-alt="Nested folder sidebar with Trash" aria-label="View folders screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-folders.webp"
+                            data-alt="Nested folder sidebar with Trash" aria-label="View folders screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s3-info" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.info.h">Info panel</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s3.info.p1">
-          A resizable detail panel (<code>F2</code> to toggle) organized in a
-          <strong>three-island layout</strong> inspired by Apple's System
-          Settings:
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s3.info.li1"><strong>Island 1 — Editable metadata</strong>Title, author, series, action toolbar (Read / Book Card / Quick Look / Pin / Delete), color tag, genre chips, folder picker</li>
-          <li data-i18n="features.s3.info.li2"><strong>Island 2 — Preview content</strong>Annotation, notes, and bookmarks with links back to the Book Card</li>
-          <li data-i18n="features.s3.info.li3"><strong>Island 3 — Cover image</strong>Displayed when available</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s3.info.p2">
+        <div id="s3-info" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.info.h">Info panel</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s3.info.p1">
+                    A resizable detail panel (<code>F2</code> to toggle) organized in a
+                    <strong>three-island layout</strong> inspired by Apple's System
+                    Settings:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s3.info.li1"><strong>Island 1 — Editable metadata</strong>Title, author,
+                        series, action toolbar (Read / Book Card / Quick Look / Pin / Delete), color tag, genre chips,
+                        folder picker
+                    </li>
+                    <li data-i18n="features.s3.info.li2"><strong>Island 2 — Preview content</strong>Annotation, notes,
+                        and bookmarks with links back to the Book Card
+                    </li>
+                    <li data-i18n="features.s3.info.li3"><strong>Island 3 — Cover image</strong>Displayed when available
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s3.info.p2">
           The last visible island stretches to fill remaining vertical space.
           The panel remembers its width between sessions.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-info-panel.webp" data-alt="Three-island info panel with book metadata" aria-label="View info panel screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-info-panel.webp"
+                            data-alt="Three-island info panel with book metadata"
+                            aria-label="View info panel screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s3-bulk" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.bulk.h">Selection mode and bulk operations</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s3.bulk.p1">
-          Select multiple books and apply operations to all of them at once:
-          color tag, genre assignment, author / series bulk edit, move to
-          folder, delete.
-        </p>
-        <p><span data-i18n="features.s3.bulk.p2">
+        <div id="s3-bulk" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.bulk.h">Selection mode and bulk operations</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s3.bulk.p1">
+                    Select multiple books and apply operations to all of them at once:
+                    color tag, genre assignment, author / series bulk edit, move to
+                    folder, delete.
+                </p>
+                <p><span data-i18n="features.s3.bulk.p2">
           Available in all view modes on all platforms. Swipe actions and
           the Read button are disabled during selection mode to prevent
           accidents.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-bulk-ops.webp" data-alt="Selection mode with bulk operations toolbar" aria-label="View bulk operations screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-bulk-ops.webp"
+                            data-alt="Selection mode with bulk operations toolbar"
+                            aria-label="View bulk operations screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s3-preview" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.preview.h">Quick preview</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s3.preview.p1">
-          Press <code>Space</code> in any view to see 2–3 paragraphs from
-          your current reading position in a sheet, with async loading. Skips
-          title-page content. Dismiss with Space or Esc.
-        </p>
-        <p><span data-i18n="features.s3.preview.p2">
+        <div id="s3-preview" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.preview.h">Quick preview</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s3.preview.p1">
+                    Press <code>Space</code> in any view to see 2–3 paragraphs from
+                    your current reading position in a sheet, with async loading. Skips
+                    title-page content. Dismiss with Space or Esc.
+                </p>
+                <p><span data-i18n="features.s3.preview.p2">
           Useful when scrolling through the library and wondering
           <em>"where was I in this one"</em> without opening the book.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-quick-preview.webp" data-alt="Quick preview sheet showing first paragraphs" aria-label="View quick preview screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-quick-preview.webp"
+                            data-alt="Quick preview sheet showing first paragraphs"
+                            aria-label="View quick preview screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s3-bookcard" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s3.bookcard.h">Unified Book Card</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s3.bookcard.p1">A tab-based modal that consolidates every piece of data about a book.</p>
-        <ul class="feature-list">
-          <li data-i18n="features.s3.bookcard.li1"><strong>Cover</strong>Display, replace, or delete. Drag-and-drop on Mac.</li>
-          <li data-i18n="features.s3.bookcard.li2"><strong>Info</strong>All editable metadata in one place, auto-save after a brief pause</li>
-          <li data-i18n="features.s3.bookcard.li3"><strong>Notes</strong>Rich text editor with formatting toolbar</li>
-          <li data-i18n="features.s3.bookcard.li4"><strong>Marks</strong>All bookmarks with color filter, swipe-to-edit on iOS, inline editor on Mac</li>
-          <li data-i18n="features.s3.bookcard.li5"><strong>Stats</strong>Reading progress, pages, opens, dates, file size, translation insights. Exportable as an HTML report.</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s3.bookcard.p2_mac">
+        <div id="s3-bookcard" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s3.bookcard.h">Unified Book Card</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s3.bookcard.p1">A tab-based modal that consolidates every piece of data about a
+                    book.</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s3.bookcard.li1"><strong>Cover</strong>Display, replace, or delete.
+                        Drag-and-drop on Mac.
+                    </li>
+                    <li data-i18n="features.s3.bookcard.li2"><strong>Info</strong>All editable metadata in one place,
+                        auto-save after a brief pause
+                    </li>
+                    <li data-i18n="features.s3.bookcard.li3"><strong>Notes</strong>Rich text editor with formatting
+                        toolbar
+                    </li>
+                    <li data-i18n="features.s3.bookcard.li4"><strong>Marks</strong>All bookmarks with color filter,
+                        swipe-to-edit on iOS, inline editor on Mac
+                    </li>
+                    <li data-i18n="features.s3.bookcard.li5"><strong>Stats</strong>Reading progress, pages, opens,
+                        dates, file size, translation insights. Exportable as an HTML report.
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s3.bookcard.p2_mac">
           On Mac, the Book Card opens as a separate window above the main
           one — move it aside and read alongside.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-book-card-mac.webp" data-alt="Book Card on Mac — separate window floating above the main app window" aria-label="View Book Card on Mac screenshot"></button></p>
-        <p><span data-i18n="features.s3.bookcard.p2_ipad">
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-book-card-mac.webp"
+                            data-alt="Book Card on Mac — separate window floating above the main app window"
+                            aria-label="View Book Card on Mac screenshot"></button>
+                </p>
+                <p><span data-i18n="features.s3.bookcard.p2_ipad">
           On iPad, it's a page-sized sheet.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-book-card-ipad.webp" data-alt="Book Card on iPad — page-sized sheet" aria-label="View Book Card on iPad screenshot"></button></p>
-        <p><span data-i18n="features.s3.bookcard.p2_iph">
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-book-card-ipad.webp"
+                            data-alt="Book Card on iPad — page-sized sheet"
+                            aria-label="View Book Card on iPad screenshot"></button>
+                </p>
+                <p><span data-i18n="features.s3.bookcard.p2_iph">
           On iPhone, it's a full-screen sheet with native segmented
           control — swipe down to dismiss.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-book-card-iphone.webp" data-alt="Book Card on iPhone — full-screen sheet with segmented control" aria-label="View Book Card on iPhone screenshot"></button></p>
-      </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-book-card-iphone.webp"
+                            data-alt="Book Card on iPhone — full-screen sheet with segmented control"
+                            aria-label="View Book Card on iPhone screenshot"></button>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- SECTION 4 — IMPORT                                            -->
 <!-- ============================================================ -->
 <section id="s4" class="feature-section reveal">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="section-eyebrow"><span class="section-number">04</span><span data-i18n="features.s4.label">Section four</span></div>
-      <h2 class="section-h2" data-i18n="features.s4.h2"><em>Import</em>.</h2>
-      <p class="section-intro" data-i18n="features.s4.intro">
-        Ways to add books, the formats supported, and the controls you have
-        when a new book enters the library.
-      </p>
-    </div>
+    <div class="container-narrow">
+        <div class="section-header">
+            <div class="section-eyebrow"><span class="section-number">04</span><span data-i18n="features.s4.label">Section four</span>
+            </div>
+            <h2 class="section-h2" data-i18n="features.s4.h2"><em>Import</em>.</h2>
+            <p class="section-intro" data-i18n="features.s4.intro">
+                Ways to add books, the formats supported, and the controls you have
+                when a new book enters the library.
+            </p>
+        </div>
 
-    <div id="s4-formats" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s4.formats.h">Supported formats</h3>
-        <span class="badge-group">
+        <div id="s4-formats" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s4.formats.h">Supported formats</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <ul class="feature-list">
-          <li data-i18n="features.s4.formats.li1"><strong>EPUB</strong>With chapter extraction and embedded image handling</li>
-          <li data-i18n="features.s4.formats.li2"><strong>FB2 / FB2.ZIP</strong>With automatic genre code mapping (~170 codes)</li>
-          <li data-i18n="features.s4.formats.li3"><strong>MOBI</strong>Via a native decompressor</li>
-          <li data-i18n="features.s4.formats.li4"><strong>HTML / HTML.ZIP</strong>With HTML sanitization and encoding detection</li>
-          <li data-i18n="features.s4.formats.li5"><strong>TXT / TXT.ZIP</strong>With encoding detection</li>
-          <li data-i18n="features.s4.formats.li6"><strong>RTF / RTF.ZIP</strong>Streaming parser</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s4.formats.p">
+            </div>
+            <div class="feature-body">
+                <ul class="feature-list">
+                    <li data-i18n="features.s4.formats.li1"><strong>EPUB</strong>With chapter extraction and embedded
+                        image handling
+                    </li>
+                    <li data-i18n="features.s4.formats.li2"><strong>FB2 / FB2.ZIP</strong>With automatic genre code
+                        mapping (~170 codes)
+                    </li>
+                    <li data-i18n="features.s4.formats.li3"><strong>MOBI</strong>Via a native decompressor</li>
+                    <li data-i18n="features.s4.formats.li4"><strong>HTML / HTML.ZIP</strong>With HTML sanitization and
+                        encoding detection
+                    </li>
+                    <li data-i18n="features.s4.formats.li5"><strong>TXT / TXT.ZIP</strong>With encoding detection</li>
+                    <li data-i18n="features.s4.formats.li6"><strong>RTF / RTF.ZIP</strong>Streaming parser</li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s4.formats.p">
           Embedded images are extracted, compressed to JPEG under 500KB at
           max 1200px, and stored alongside the content. Importing images is
           your choice, per book — on by default, off if the author overdoes
           it or you want to save space (the choice is remembered). Once
           imported, images in the reader can be <em>shown, masked
           (revealed on hover), or hidden entirely.</em>
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-formats.webp" data-alt="Supported file formats grid" aria-label="View formats screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-formats.webp"
+                            data-alt="Supported file formats grid" aria-label="View formats screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s4-ways" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s4.ways.h">Three ways to import</h3>
-        <span class="badge-group">
+        <div id="s4-ways" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s4.ways.h">Three ways to import</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <ul class="feature-list">
-          <li data-i18n="features.s4.ways.li1"><strong>Browse</strong>Native file picker with filter for all supported extensions</li>
-          <li data-i18n="features.s4.ways.li2"><strong>URL</strong>Paste a download link and the app fetches, validates, and imports the file</li>
-          <li data-i18n="features.s4.ways.li3"><strong>Drag and drop</strong>Drop a file onto the library. Or drag a URL straight from your browser's address bar — the book is fetched and the import dialog opens with metadata, cover, and author already filled in. You skip the copy-paste-open-import-paste-fetch dance, but you still see the book before it joins the library.</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s4.ways.p1">
-          On Mac, the import dialog has a persistent tab switcher (This Mac
-          / URL / Drop) remembered between sessions.
-        </p>
-        <p><span data-i18n="features.s4.ways.p2">
+            </div>
+            <div class="feature-body">
+                <ul class="feature-list">
+                    <li data-i18n="features.s4.ways.li1"><strong>Browse</strong>Native file picker with filter for all
+                        supported extensions
+                    </li>
+                    <li data-i18n="features.s4.ways.li2"><strong>URL</strong>Paste a download link and the app fetches,
+                        validates, and imports the file
+                    </li>
+                    <li data-i18n="features.s4.ways.li3"><strong>Drag and drop</strong>Drop a file onto the library. Or
+                        drag a URL straight from your browser's address bar — the book is fetched and the import dialog
+                        opens with metadata, cover, and author already filled in. You skip the
+                        copy-paste-open-import-paste-fetch dance, but you still see the book before it joins the
+                        library.
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s4.ways.p1">
+                    On Mac, the import dialog has a persistent tab switcher (This Mac
+                    / URL / Drop) remembered between sessions.
+                </p>
+                <p><span data-i18n="features.s4.ways.p2">
           In JustReader, importing replaces the current book. In
           ContinuousReader, books join the library.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-import-ways.webp" data-alt="Three ways to import — browse, drag-drop, share sheet" aria-label="View import methods screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-import-ways.webp"
+                            data-alt="Three ways to import — browse, drag-drop, share sheet"
+                            aria-label="View import methods screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s4-mass" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s4.mass.h">Mass import</h3>
-        <span class="badge-group">
+        <div id="s4-mass" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s4.mass.h">Mass import</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s4.mass.p1">Import an existing collection in one pass (macOS). Point ContinuousReader at folders and files and it converts everything at once.</p>
-        <ul class="feature-list">
-          <li data-i18n="features.s4.mass.li1"><strong>Recreate the folder structure</strong>The source directory tree becomes nested virtual folders, merging into folders that already exist</li>
-          <li data-i18n="features.s4.mass.li2"><strong>Choose the destination</strong>The current folder, the library root, or any folder — the structure nests under your choice, or books go straight in</li>
-          <li data-i18n="features.s4.mass.li3"><strong>Skip duplicates</strong>Matched by author and title, so re-importing a collection won't pile up copies</li>
-          <li data-i18n="features.s4.mass.li4"><strong>Color tag and images</strong>Apply a color tag and choose whether to keep cover images and inline illustrations</li>
-          <li data-i18n="features.s4.mass.li5"><strong>Drag and drop</strong>Drop a folder or several files onto the library to start it; a single file opens the regular import dialog</li>
-          <li data-i18n="features.s4.mass.li6"><strong>Summary at the end</strong>How many imported, folders created, duplicates skipped, total size, and any errors</li>
-        </ul>
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s4.mass.p1">Import an existing collection in one pass (macOS). Point
+                    ContinuousReader at folders and files and it converts everything at once.</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s4.mass.li1"><strong>Recreate the folder structure</strong>The source
+                        directory tree becomes nested virtual folders, merging into folders that already exist
+                    </li>
+                    <li data-i18n="features.s4.mass.li2"><strong>Choose the destination</strong>The current folder, the
+                        library root, or any folder — the structure nests under your choice, or books go straight in
+                    </li>
+                    <li data-i18n="features.s4.mass.li3"><strong>Skip duplicates</strong>Matched by author and title, so
+                        re-importing a collection won't pile up copies
+                    </li>
+                    <li data-i18n="features.s4.mass.li4"><strong>Color tag and images</strong>Apply a color tag and
+                        choose whether to keep cover images and inline illustrations
+                    </li>
+                    <li data-i18n="features.s4.mass.li5"><strong>Drag and drop</strong>Drop a folder or several files
+                        onto the library to start it; a single file opens the regular import dialog
+                    </li>
+                    <li data-i18n="features.s4.mass.li6"><strong>Summary at the end</strong>How many imported, folders
+                        created, duplicates skipped, total size, and any errors
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <div id="s4-dialog" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s4.dialog.h">Import dialog</h3>
-        <span class="badge-group">
+        <div id="s4-dialog" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s4.dialog.h">Import dialog</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s4.dialog.p1">
-          When you import a book into ContinuousReader, you can set its
-          metadata before it enters the library:
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s4.dialog.li1"><strong>Duplicate detection</strong>Against the existing library, showing where the duplicate already lives</li>
-          <li data-i18n="features.s4.dialog.li2"><strong>Cover preview</strong>Shown from the book's own metadata — replaceable later from the Book Card</li>
-          <li data-i18n="features.s4.dialog.li3"><strong>Metadata preview</strong>Detected title, author, series, publication date, language</li>
-          <li data-i18n="features.s4.dialog.li4"><strong>Color tag</strong>Assignment</li>
-          <li data-i18n="features.s4.dialog.li5"><strong>Genre chip picker</strong>Manual genre editing</li>
-          <li data-i18n="features.s4.dialog.li6"><strong>Folder assignment</strong>Context-aware — uses the current folder when browsing one, otherwise none</li>
-          <li data-i18n="features.s4.dialog.li7"><strong>Origin URL</strong>Stored for later "In Library" detection in OPDS</li>
-          <li data-i18n="features.s4.dialog.li8"><strong>Image inclusion toggle</strong>For FB2/EPUB/MOBI (strip images if you prefer text-only)</li>
-          <li data-i18n="features.s4.dialog.li9"><strong>Open after import</strong>Checkbox</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s4.dialog.p2">
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s4.dialog.p1">
+                    When you import a book into ContinuousReader, you can set its
+                    metadata before it enters the library:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s4.dialog.li1"><strong>Duplicate detection</strong>Against the existing
+                        library, showing where the duplicate already lives
+                    </li>
+                    <li data-i18n="features.s4.dialog.li2"><strong>Cover preview</strong>Shown from the book's own
+                        metadata — replaceable later from the Book Card
+                    </li>
+                    <li data-i18n="features.s4.dialog.li3"><strong>Metadata preview</strong>Detected title, author,
+                        series, publication date, language
+                    </li>
+                    <li data-i18n="features.s4.dialog.li4"><strong>Color tag</strong>Assignment</li>
+                    <li data-i18n="features.s4.dialog.li5"><strong>Genre chip picker</strong>Manual genre editing</li>
+                    <li data-i18n="features.s4.dialog.li6"><strong>Folder assignment</strong>Context-aware — uses the
+                        current folder when browsing one, otherwise none
+                    </li>
+                    <li data-i18n="features.s4.dialog.li7"><strong>Origin URL</strong>Stored for later "In Library"
+                        detection in OPDS
+                    </li>
+                    <li data-i18n="features.s4.dialog.li8"><strong>Image inclusion toggle</strong>For FB2/EPUB/MOBI
+                        (strip images if you prefer text-only)
+                    </li>
+                    <li data-i18n="features.s4.dialog.li9"><strong>Open after import</strong>Checkbox</li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s4.dialog.p2">
           JustReader skips this dialog — pick a file, start reading.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-import-dialog.webp" data-alt="Import dialog with metadata editing fields" aria-label="View import dialog screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-import-dialog.webp"
+                            data-alt="Import dialog with metadata editing fields"
+                            aria-label="View import dialog screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s4-size" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s4.size.h">File size protection</h3>
-        <span class="badge-group">
+        <div id="s4-size" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s4.size.h">File size protection</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge jr">JR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <ul class="feature-list">
-          <li data-i18n="features.s4.size.li1"><strong>5 MB</strong>Warning banner, import proceeds</li>
-          <li data-i18n="features.s4.size.li2"><strong>50 MB</strong>Hard limit, import rejected</li>
-          <li><span data-i18n="features.s4.size.li3"><strong>100 MB</strong>Hard limit on decompressed size for ZIP/EPUB archives</span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-file-size.webp" data-alt="File size warning dialog" aria-label="View file size warning screenshot"></button></li>
-        </ul>
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <ul class="feature-list">
+                    <li data-i18n="features.s4.size.li1"><strong>5 MB</strong>Warning banner, import proceeds</li>
+                    <li data-i18n="features.s4.size.li2"><strong>50 MB</strong>Hard limit, import rejected</li>
+                    <li><span data-i18n="features.s4.size.li3"><strong>100 MB</strong>Hard limit on decompressed size for ZIP/EPUB archives</span>
+                        <button class="callout-dot section-callout" type="button"
+                                data-screenshot="img/screenshots/features-file-size.webp"
+                                data-alt="File size warning dialog"
+                                aria-label="View file size warning screenshot"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    <div id="s4-opds" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s4.opds.h">OPDS browser</h3>
-        <span class="badge-group">
+        <div id="s4-opds" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s4.opds.h">OPDS browser</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s4.opds.p">Browse online book catalogs with a native interface.</p>
-        <ul class="feature-list">
-          <li data-i18n="features.s4.opds.li1"><strong>Default catalogs</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-default-catalogs.webp" data-alt="Default OPDS catalogs — Standard Ebooks, Project Gutenberg, Feedbooks" aria-label="View OPDS li1 screenshot"></button>Standard Ebooks, Project Gutenberg, Feedbooks — ready to use</li>
-          <li data-i18n="features.s4.opds.li2"><strong>Custom catalogs</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-custom-catalog.webp" data-alt="Add custom OPDS catalog dialog with Basic Auth fields" aria-label="View OPDS li2 screenshot"></button>Add your own OPDS server with Basic Auth support</li>
-          <li data-i18n="features.s4.opds.li3"><strong>Feed navigation</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-breadcrumbs.webp" data-alt="OPDS breadcrumb navigation trail with middle truncation" aria-label="View OPDS li3 screenshot"></button>With breadcrumb trail and middle truncation for long paths</li>
-          <li data-i18n="features.s4.opds.li4"><strong>Server-side search</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-search.webp" data-alt="Server-side OPDS search using catalog OpenSearch template" aria-label="View OPDS li4 screenshot"></button>Using the catalog's OpenSearch template when available</li>
-          <li data-i18n="features.s4.opds.li5"><strong>Local filter</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-filter.webp" data-alt="Local filter bar at the bottom of an OPDS feed" aria-label="View OPDS li5 screenshot"></button>At the bottom of every feed — instantly filters visible items by title, author, or summary as you type</li>
-          <li data-i18n="features.s4.opds.li6"><strong>Cover thumbnails</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-covers.webp" data-alt="OPDS catalog showing cover thumbnails with native caching" aria-label="View OPDS li6 screenshot"></button>With native caching</li>
-          <li data-i18n="features.s4.opds.li7"><strong>"In Library" badge</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-library-badge.webp" data-alt="In Library badge on already-imported books in OPDS results" aria-label="View OPDS li7 screenshot"></button>For books already imported</li>
-          <li data-i18n="features.s4.opds.li8"><strong>Batch import queue</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-batch-import.webp" data-alt="OPDS batch import queue with folder, color, and format selection" aria-label="View OPDS li8 screenshot"></button>With folder assignment, color tags, and format selection</li>
-          <li data-i18n="features.s4.opds.li9"><strong>Single import</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-opds-single-import.webp" data-alt="OPDS single import with post-import options" aria-label="View OPDS li9 screenshot"></button>With post-import options</li>
-        </ul>
-      </div>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-opds-browser.webp" alt="OPDS browser showing Standard Ebooks root with cover thumbnails and filter bar">
-      </div>
-    </div>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s4.opds.p">Browse online book catalogs with a native interface.</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s4.opds.li1"><strong>Default catalogs</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-default-catalogs.webp"
+                                data-alt="Default OPDS catalogs — Standard Ebooks, Project Gutenberg, Feedbooks"
+                                aria-label="View OPDS li1 screenshot"></button>
+                        Standard Ebooks, Project Gutenberg, Feedbooks — ready to use
+                    </li>
+                    <li data-i18n="features.s4.opds.li2"><strong>Custom catalogs</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-custom-catalog.webp"
+                                data-alt="Add custom OPDS catalog dialog with Basic Auth fields"
+                                aria-label="View OPDS li2 screenshot"></button>
+                        Add your own OPDS server with Basic Auth support
+                    </li>
+                    <li data-i18n="features.s4.opds.li3"><strong>Feed navigation</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-breadcrumbs.webp"
+                                data-alt="OPDS breadcrumb navigation trail with middle truncation"
+                                aria-label="View OPDS li3 screenshot"></button>
+                        With breadcrumb trail and middle truncation for long paths
+                    </li>
+                    <li data-i18n="features.s4.opds.li4"><strong>Server-side search</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-search.webp"
+                                data-alt="Server-side OPDS search using catalog OpenSearch template"
+                                aria-label="View OPDS li4 screenshot"></button>
+                        Using the catalog's OpenSearch template when available
+                    </li>
+                    <li data-i18n="features.s4.opds.li5"><strong>Local filter</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-filter.webp"
+                                data-alt="Local filter bar at the bottom of an OPDS feed"
+                                aria-label="View OPDS li5 screenshot"></button>
+                        At the bottom of every feed — instantly filters visible items by title, author, or summary as
+                        you type
+                    </li>
+                    <li data-i18n="features.s4.opds.li6"><strong>Cover thumbnails</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-covers.webp"
+                                data-alt="OPDS catalog showing cover thumbnails with native caching"
+                                aria-label="View OPDS li6 screenshot"></button>
+                        With native caching
+                    </li>
+                    <li data-i18n="features.s4.opds.li7"><strong>"In Library" badge</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-library-badge.webp"
+                                data-alt="In Library badge on already-imported books in OPDS results"
+                                aria-label="View OPDS li7 screenshot"></button>
+                        For books already imported
+                    </li>
+                    <li data-i18n="features.s4.opds.li8"><strong>Batch import queue</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-batch-import.webp"
+                                data-alt="OPDS batch import queue with folder, color, and format selection"
+                                aria-label="View OPDS li8 screenshot"></button>
+                        With folder assignment, color tags, and format selection
+                    </li>
+                    <li data-i18n="features.s4.opds.li9"><strong>Single import</strong>
+                        <button class="callout-dot" type="button"
+                                data-screenshot="img/screenshots/features-opds-single-import.webp"
+                                data-alt="OPDS single import with post-import options"
+                                aria-label="View OPDS li9 screenshot"></button>
+                        With post-import options
+                    </li>
+                </ul>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-opds-browser.webp"
+                     alt="OPDS browser showing Standard Ebooks root with cover thumbnails and filter bar">
+            </div>
+        </div>
 
-    <div id="s4-watch" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s4.watch.h">OPDS shortcuts and watchers</h3>
-        <span class="badge-group">
+        <div id="s4-watch" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s4.watch.h">OPDS shortcuts and watchers</h3>
+                <span class="badge-group">
           <span class="badge cr">CR</span>
         </span>
-      </div>
-      <div class="feature-body">
-        <p><span data-i18n="features.s4.watch.p">Two features that make OPDS browsing more than a one-time lookup.</span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-opds-watchers.webp" data-alt="OPDS watchers list with status indicators" aria-label="View OPDS watchers screenshot"></button></p>
-        <ul class="feature-list">
-          <li data-i18n="features.s4.watch.li1"><strong>Shortcuts</strong>Bookmark any feed for one-click navigation. Useful for favorite author pages, series, or collections.</li>
-          <li data-i18n="features.s4.watch.li2"><strong>Watchers</strong>Track series or author feeds for new entries. Toggle an eye icon on any acquisition feed to start watching. "Check" detects new additions manually. Color-coded status: green when all entries are in your library, orange when new ones appear. Delete a catalog, and all its shortcuts and watchers are cleaned up.</li>
-        </ul>
-      </div>
+            </div>
+            <div class="feature-body">
+                <p><span data-i18n="features.s4.watch.p">Two features that make OPDS browsing more than a one-time lookup.</span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-opds-watchers.webp"
+                            data-alt="OPDS watchers list with status indicators"
+                            aria-label="View OPDS watchers screenshot"></button>
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s4.watch.li1"><strong>Shortcuts</strong>Bookmark any feed for one-click
+                        navigation. Useful for favorite author pages, series, or collections.
+                    </li>
+                    <li data-i18n="features.s4.watch.li2"><strong>Watchers</strong>Track series or author feeds for new
+                        entries. Toggle an eye icon on any acquisition feed to start watching. "Check" detects new
+                        additions manually. Color-coded status: green when all entries are in your library, orange when
+                        new ones appear. Delete a catalog, and all its shortcuts and watchers are cleaned up.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- SECTION 5 — SYNC AND DATA (CR-only)                           -->
 <!-- ============================================================ -->
 <section id="s5" class="feature-section cr-only reveal">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="section-eyebrow"><span class="section-number">05</span><span data-i18n="features.s5.label">Section five</span></div>
-      <h2 class="section-h2" data-i18n="features.s5.h2">Sync and <em>data</em>.</h2>
-      <p class="section-intro" data-i18n="features.s5.intro">
-        How your library travels between devices, how it's stored, and what
-        happens when you want to move it, back it up, or walk away.
-      </p>
-      <div class="cr-only-banner">
-        <span class="marker">CR ONLY</span>
-        <span data-i18n="features.s5.banner">Sync, backup, and library management require ContinuousReader. JustReader has no library to sync.</span>
-      </div>
-    </div>
+    <div class="container-narrow">
+        <div class="section-header">
+            <div class="section-eyebrow"><span class="section-number">05</span><span data-i18n="features.s5.label">Section five</span>
+            </div>
+            <h2 class="section-h2" data-i18n="features.s5.h2">Sync and <em>data</em>.</h2>
+            <p class="section-intro" data-i18n="features.s5.intro">
+                How your library travels between devices, how it's stored, and what
+                happens when you want to move it, back it up, or walk away.
+            </p>
+            <div class="cr-only-banner">
+                <span class="marker">CR ONLY</span>
+                <span data-i18n="features.s5.banner">Sync, backup, and library management require ContinuousReader. JustReader has no library to sync.</span>
+            </div>
+        </div>
 
-    <div id="s5-icloud" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s5.icloud.h">iCloud sync</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s5.icloud.p1">
-          Included in ContinuousReader, works across <strong>every Apple
-          device signed into the same Apple ID</strong> — home Mac, work
-          Mac, travel laptop, iPad, iPhone.
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s5.icloud.li1"><strong>Reading positions</strong>Down to the exact paragraph</li>
-          <li data-i18n="features.s5.icloud.li2"><strong>Bookmarks</strong>With colors, notes, and text highlights</li>
-          <li data-i18n="features.s5.icloud.li3"><strong>Notes</strong>The full rich-text content per book</li>
-          <li data-i18n="features.s5.icloud.li4"><strong>Library metadata</strong>Titles, authors, folders, color tags, genres</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s5.icloud.p2">
-          <strong>What doesn't sync:</strong> your per-device reading
-          settings. Each device keeps its own font, size, theme, and padding
-          — because a comfortable setup on a 27-inch iMac is rarely a
-          comfortable setup on an iPhone held in one hand at midnight.
-        </p>
-      </div>
-    </div>
+        <div id="s5-icloud" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s5.icloud.h">iCloud sync</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s5.icloud.p1">
+                    Included in ContinuousReader, works across <strong>every Apple
+                    device signed into the same Apple ID</strong> — home Mac, work
+                    Mac, travel laptop, iPad, iPhone.
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s5.icloud.li1"><strong>Reading positions</strong>Down to the exact paragraph
+                    </li>
+                    <li data-i18n="features.s5.icloud.li2"><strong>Bookmarks</strong>With colors, notes, and text
+                        highlights
+                    </li>
+                    <li data-i18n="features.s5.icloud.li3"><strong>Notes</strong>The full rich-text content per book
+                    </li>
+                    <li data-i18n="features.s5.icloud.li4"><strong>Library metadata</strong>Titles, authors, folders,
+                        color tags, genres
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s5.icloud.p2">
+                    <strong>What doesn't sync:</strong> your per-device reading
+                    settings. Each device keeps its own font, size, theme, and padding
+                    — because a comfortable setup on a 27-inch iMac is rarely a
+                    comfortable setup on an iPhone held in one hand at midnight.
+                </p>
+            </div>
+        </div>
 
-    <div id="s5-devicelist" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s5.devicelist.h">Sync panel and connected devices</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s5.devicelist.p1">
-          The cloud icon in the library's bottom bar is more than a status
-          light. Tap it and a panel opens that tells you exactly what sync
-          is doing and which of your devices are part of it.
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s5.devicelist.li1"><strong>Live status</strong>Connected, reconnecting, or unavailable — in plain language</li>
-          <li data-i18n="features.s5.devicelist.li2"><strong>Library at a glance</strong>How many books are in your library, how many are downloaded on this device, and the real on-disk size — measured the moment you open the panel, with a brief spinner while it walks the folder</li>
-          <li data-i18n="features.s5.devicelist.li3"><strong>Connected devices</strong>Every Mac, iPad, and iPhone you've used with sync, in an Apple-Settings-style list — name, model, and when each was last active</li>
-          <li data-i18n="features.s5.devicelist.li4"><strong>Online dot</strong>A small green indicator shows which devices are awake right now</li>
-          <li data-i18n="features.s5.devicelist.li5"><strong>Forget</strong>Removed a device for good? Right-click on Mac or swipe on iPhone to take it out of the list</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s5.devicelist.p2">
-          Each device updates its own activity only while the app is actually
-          in front of you — a Mac in the background or a locked iPhone won't
-          claim to be online. Honest about presence; the panel reflects what
-          you'd see if you walked over to that other device right now.
-        </p>
-      </div>
-    </div>
+        <div id="s5-devicelist" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s5.devicelist.h">Sync panel and connected devices</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s5.devicelist.p1">
+                    The cloud icon in the library's bottom bar is more than a status
+                    light. Tap it and a panel opens that tells you exactly what sync
+                    is doing and which of your devices are part of it.
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s5.devicelist.li1"><strong>Live status</strong>Connected, reconnecting, or
+                        unavailable — in plain language
+                    </li>
+                    <li data-i18n="features.s5.devicelist.li2"><strong>Library at a glance</strong>How many books are in
+                        your library, how many are downloaded on this device, and the real on-disk size — measured the
+                        moment you open the panel, with a brief spinner while it walks the folder
+                    </li>
+                    <li data-i18n="features.s5.devicelist.li3"><strong>Connected devices</strong>Every Mac, iPad, and
+                        iPhone you've used with sync, in an Apple-Settings-style list — name, model, and when each was
+                        last active
+                    </li>
+                    <li data-i18n="features.s5.devicelist.li4"><strong>Online dot</strong>A small green indicator shows
+                        which devices are awake right now
+                    </li>
+                    <li data-i18n="features.s5.devicelist.li5"><strong>Forget</strong>Removed a device for good?
+                        Right-click on Mac or swipe on iPhone to take it out of the list
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s5.devicelist.p2">
+                    Each device updates its own activity only while the app is actually
+                    in front of you — a Mac in the background or a locked iPhone won't
+                    claim to be online. Honest about presence; the panel reflects what
+                    you'd see if you walked over to that other device right now.
+                </p>
+            </div>
+        </div>
 
-    <div id="s5-storage" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s5.storage.h">Readable book storage</h3>
-      </div>
-      <div class="feature-body">
-        <p><span data-i18n="features.s5.storage.p">
+        <div id="s5-storage" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s5.storage.h">Readable book storage</h3>
+            </div>
+            <div class="feature-body">
+                <p><span data-i18n="features.s5.storage.p">
           Book content is stored as clean HTML on disk. Files are named with
           readable slugs — <code>strugatskie-trudno-byt-bogom.html</code>
           rather than UUIDs or hashes. You can navigate your library folder
           in Finder, open any book with a text editor, and the content is
           just there.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-storage.webp" data-alt="Books folder in Finder with readable filenames" aria-label="View storage screenshot"></button></p>
-      </div>
-      <blockquote class="callout" data-i18n="features.s5.storage.callout">
-        Your library is a folder of files. Read it with <code>cat</code> if
-        you want to.
-      </blockquote>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-storage.webp"
+                            data-alt="Books folder in Finder with readable filenames"
+                            aria-label="View storage screenshot"></button>
+                </p>
+            </div>
+            <blockquote class="callout" data-i18n="features.s5.storage.callout">
+                Your library is a folder of files. Read it with <code>cat</code> if
+                you want to.
+            </blockquote>
+        </div>
 
-    <div id="s5-backup" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s5.backup.h">Backup and restore</h3>
-      </div>
-      <div class="feature-body">
-        <ul class="feature-list">
-          <li data-i18n="features.s5.backup.li1"><strong>Backup</strong>Export the entire library (books, metadata, bookmarks, notes) to a single ZIP file. Size and filename shown in status.</li>
-          <li data-i18n="features.s5.backup.li2"><strong>Restore</strong>Import from backup with validation — book count check, version compatibility, and a confirmation dialog before overwriting.</li>
-        </ul>
-        <p style="margin-top: 24px;"><span data-i18n="features.s5.backup.p">
+        <div id="s5-backup" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s5.backup.h">Backup and restore</h3>
+            </div>
+            <div class="feature-body">
+                <ul class="feature-list">
+                    <li data-i18n="features.s5.backup.li1"><strong>Backup</strong>Export the entire library (books,
+                        metadata, bookmarks, notes) to a single ZIP file. Size and filename shown in status.
+                    </li>
+                    <li data-i18n="features.s5.backup.li2"><strong>Restore</strong>Import from backup with validation —
+                        book count check, version compatibility, and a confirmation dialog before overwriting.
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;"><span data-i18n="features.s5.backup.p">
           Use this to move to a new Mac, keep a second library on an
           external drive, or just archive a point-in-time snapshot before
           reorganizing.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-backup.webp" data-alt="Backup creation dialog with ZIP export" aria-label="View backup screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-backup.webp"
+                            data-alt="Backup creation dialog with ZIP export"
+                            aria-label="View backup screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s5-location" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s5.location.h">Custom library location <em>(Mac)</em></h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s5.location.p1">
-          By default, your library lives inside the app's sandbox. You can
-          move it anywhere:
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s5.location.li1"><strong>Any folder</strong>On your Mac, including external drives</li>
-          <li data-i18n="features.s5.location.li2"><strong>When moving</strong>Choose to move existing data or use the new folder as-is (for multiple libraries)</li>
-          <li data-i18n="features.s5.location.li3"><strong>Reset</strong>Any time to return to the default location</li>
-        </ul>
-        <p style="margin-top: 24px;" data-i18n="features.s5.location.p2">
-          Multiple libraries work through this mechanism — point at
-          different folders for different purposes (work books / novels /
-          research / whatever).
-        </p>
-        <p><span data-i18n="features.s5.location.p3">
+        <div id="s5-location" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s5.location.h">Custom library location <em>(Mac)</em></h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s5.location.p1">
+                    By default, your library lives inside the app's sandbox. You can
+                    move it anywhere:
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s5.location.li1"><strong>Any folder</strong>On your Mac, including external
+                        drives
+                    </li>
+                    <li data-i18n="features.s5.location.li2"><strong>When moving</strong>Choose to move existing data or
+                        use the new folder as-is (for multiple libraries)
+                    </li>
+                    <li data-i18n="features.s5.location.li3"><strong>Reset</strong>Any time to return to the default
+                        location
+                    </li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s5.location.p2">
+                    Multiple libraries work through this mechanism — point at
+                    different folders for different purposes (work books / novels /
+                    research / whatever).
+                </p>
+                <p><span data-i18n="features.s5.location.p3">
           You can switch between cloud and on-device mode at any time, and swap
           working folders while in local mode. Each switch runs through a
           guided wizard — see below.
-        </span><button class="callout-dot section-callout" type="button" data-screenshot="img/screenshots/features-location.webp" data-alt="Custom library location settings" aria-label="View library location screenshot"></button></p>
-      </div>
-    </div>
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-location.webp"
+                            data-alt="Custom library location settings"
+                            aria-label="View library location screenshot"></button>
+                </p>
+            </div>
+        </div>
 
-    <div id="s5-switching" class="feature">
-      <div class="feature-head">
-        <h3 class="feature-h3" data-i18n="features.s5.switching.h">Switching modes safely</h3>
-      </div>
-      <div class="feature-body">
-        <p data-i18n="features.s5.switching.joke">
-          There’s an old file-manager joke: F5 — the file stays here and turns
-          up there. F6 — it leaves here and turns up there. F8 — it leaves here
-          and turns up nowhere. Moving a whole library is the same three keys
-          with higher stakes — so the wizard is built to keep that last one
-          from ever happening by accident.
-        </p>
-        <p data-i18n="features.s5.switching.p1">
-          iCloud or on-device, the default folder or one of your own — move
-          between them whenever you like. Every switch opens a short wizard
-          that shows the state of both sides first and asks what to do with
-          your files. Nothing moves behind your back.
-        </p>
-        <ul class="feature-list">
-          <li data-i18n="features.s5.switching.li1"><strong>Copy, Move, or Switch</strong>Copy duplicates your books and keeps both sides. Move relocates them and frees the original. Switch only re-points the library and touches no files. You choose — the wizard never decides for you.</li>
-          <li data-i18n="features.s5.switching.li2"><strong>The impact, in megabytes</strong>The confirm step says what will happen before it happens: how much iCloud gains, whether the local folder ends up empty, whether your other devices will see the change. Numbers, not vague reassurances.</li>
-          <li data-i18n="features.s5.switching.li3"><strong>Replace is never silent</strong>The wizard checks the destination first. If it already holds a library, it asks whether to replace it before touching anything.</li>
-          <li data-i18n="features.s5.switching.li4"><strong>A cancelled copy costs nothing</strong>Copying a large library can be stopped halfway with no harm. The existing library is only touched once the copy has fully landed, so an interrupted run leaves the original exactly as it was.</li>
-          <li data-i18n="features.s5.switching.li5"><strong>Your stats come along</strong>Reading positions, bookmarks, notes, folders, OPDS catalogs, reading time, even translation history — all of it survives the move, in both directions. Turning sync off doesn’t quietly reset your numbers.</li>
-          <li data-i18n="features.s5.switching.li6"><strong>Move leaves nothing behind</strong>When books move out of iCloud, the folder list and translation data leave with them. No orphaned files stranded in the cloud on “waiting to upload”.</li>
-        </ul>
-      </div>
-      <blockquote class="callout" data-i18n="features.s5.switching.callout">
-        Turning sync on or off should be a decision you can reverse without
-        holding your breath.
-      </blockquote>
+        <div id="s5-switching" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s5.switching.h">Switching modes safely</h3>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s5.switching.joke">
+                    There’s an old file-manager joke: F5 — the file stays here and turns
+                    up there. F6 — it leaves here and turns up there. F8 — it leaves here
+                    and turns up nowhere. Moving a whole library is the same three keys
+                    with higher stakes — so the wizard is built to keep that last one
+                    from ever happening by accident.
+                </p>
+                <p data-i18n="features.s5.switching.p1">
+                    iCloud or on-device, the default folder or one of your own — move
+                    between them whenever you like. Every switch opens a short wizard
+                    that shows the state of both sides first and asks what to do with
+                    your files. Nothing moves behind your back.
+                </p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s5.switching.li1"><strong>Copy, Move, or Switch</strong>Copy duplicates your
+                        books and keeps both sides. Move relocates them and frees the original. Switch only re-points
+                        the library and touches no files. You choose — the wizard never decides for you.
+                    </li>
+                    <li data-i18n="features.s5.switching.li2"><strong>The impact, in megabytes</strong>The confirm step
+                        says what will happen before it happens: how much iCloud gains, whether the local folder ends up
+                        empty, whether your other devices will see the change. Numbers, not vague reassurances.
+                    </li>
+                    <li data-i18n="features.s5.switching.li3"><strong>Replace is never silent</strong>The wizard checks
+                        the destination first. If it already holds a library, it asks whether to replace it before
+                        touching anything.
+                    </li>
+                    <li data-i18n="features.s5.switching.li4"><strong>A cancelled copy costs nothing</strong>Copying a
+                        large library can be stopped halfway with no harm. The existing library is only touched once the
+                        copy has fully landed, so an interrupted run leaves the original exactly as it was.
+                    </li>
+                    <li data-i18n="features.s5.switching.li5"><strong>Your stats come along</strong>Reading positions,
+                        bookmarks, notes, folders, OPDS catalogs, reading time, even translation history — all of it
+                        survives the move, in both directions. Turning sync off doesn’t quietly reset your numbers.
+                    </li>
+                    <li data-i18n="features.s5.switching.li6"><strong>Move leaves nothing behind</strong>When books move
+                        out of iCloud, the folder list and translation data leave with them. No orphaned files stranded
+                        in the cloud on “waiting to upload”.
+                    </li>
+                </ul>
+            </div>
+            <blockquote class="callout" data-i18n="features.s5.switching.callout">
+                Turning sync on or off should be a decision you can reverse without
+                holding your breath.
+            </blockquote>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- SECTION 6 — PLATFORM DETAILS                                  -->
 <!-- ============================================================ -->
 <section id="s6" class="feature-section reveal">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="section-eyebrow"><span class="section-number">06</span><span data-i18n="features.s6.label">Section six</span></div>
-      <h2 class="section-h2" data-i18n="features.s6.h2">Platform <em>details</em>.</h2>
-      <p class="section-intro" data-i18n="features.s6.intro">
-        For a full platform-by-platform comparison — what's available on
-        Mac, iPad, and iPhone, and how each platform adapts the interface to
-        its conventions — see the platforms page.
-      </p>
+    <div class="container-narrow">
+        <div class="section-header">
+            <div class="section-eyebrow"><span class="section-number">06</span><span data-i18n="features.s6.label">Section six</span>
+            </div>
+            <h2 class="section-h2" data-i18n="features.s6.h2">Platform <em>details</em>.</h2>
+            <p class="section-intro" data-i18n="features.s6.intro">
+                For a full platform-by-platform comparison — what's available on
+                Mac, iPad, and iPhone, and how each platform adapts the interface to
+                its conventions — see the platforms page.
+            </p>
+        </div>
+
+        <div class="platforms-summary">
+            <div id="s6-mac" class="platform-summary-card">
+                <h4 data-i18n="features.s6.mac.h">Mac</h4>
+                <p data-i18n="features.s6.mac.p">The most feature-rich. <strong>Table view</strong>, keyboard shortcuts,
+                    floating panels, island design, drag-and-drop everywhere.</p>
+            </div>
+            <div id="s6-ipad" class="platform-summary-card">
+                <h4 data-i18n="features.s6.ipad.h">iPad</h4>
+                <p data-i18n="features.s6.ipad.p">Touch-optimized. <strong>Native swipe actions</strong>, side panel,
+                    split view, two-column settings layout.</p>
+            </div>
+            <div id="s6-iphone" class="platform-summary-card">
+                <h4 data-i18n="features.s6.iphone.h">iPhone</h4>
+                <p data-i18n="features.s6.iphone.p">Streamlined for one-hand use. <strong>Compact UI</strong>, gesture
+                    navigation, bottom sheets, half-sheet folders.</p>
+            </div>
+        </div>
+
+        <p style="font-family: var(--serif); font-size: 17px; color: var(--ink-soft); line-height: 1.6; max-width: 60ch; margin-top: 32px;"
+           data-i18n="features.s6.outro">
+            All three share the same reader, same themes, same typography
+            controls, same translation and Read Aloud.
+        </p>
+
+        <a href="platforms.html" class="platforms-link" data-i18n="features.s6.link">See the full platforms page</a>
     </div>
-
-    <div class="platforms-summary">
-      <div id="s6-mac" class="platform-summary-card">
-        <h4 data-i18n="features.s6.mac.h">Mac</h4>
-        <p data-i18n="features.s6.mac.p">The most feature-rich. <strong>Table view</strong>, keyboard shortcuts, floating panels, island design, drag-and-drop everywhere.</p>
-      </div>
-      <div id="s6-ipad" class="platform-summary-card">
-        <h4 data-i18n="features.s6.ipad.h">iPad</h4>
-        <p data-i18n="features.s6.ipad.p">Touch-optimized. <strong>Native swipe actions</strong>, side panel, split view, two-column settings layout.</p>
-      </div>
-      <div id="s6-iphone" class="platform-summary-card">
-        <h4 data-i18n="features.s6.iphone.h">iPhone</h4>
-        <p data-i18n="features.s6.iphone.p">Streamlined for one-hand use. <strong>Compact UI</strong>, gesture navigation, bottom sheets, half-sheet folders.</p>
-      </div>
-    </div>
-
-    <p style="font-family: var(--serif); font-size: 17px; color: var(--ink-soft); line-height: 1.6; max-width: 60ch; margin-top: 32px;" data-i18n="features.s6.outro">
-      All three share the same reader, same themes, same typography
-      controls, same translation and Read Aloud.
-    </p>
-
-    <a href="platforms.html" class="platforms-link" data-i18n="features.s6.link">See the full platforms page</a>
-  </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- SECTION 7 — INTERFACE THAT FITS                               -->
 <!-- ============================================================ -->
 <section id="s7" class="interface-fits reveal">
-  <div class="container-narrow">
-    <div class="section-header">
-      <div class="section-eyebrow"><span class="section-number">07</span><span data-i18n="features.s7.label">Closing</span></div>
-      <h2 class="section-h2" data-i18n="features.s7.h2">Interface that <em>fits</em>.</h2>
-      <p class="section-intro" data-i18n="features.s7.intro">
-        Not every reader needs every feature. ContinuousReader is built to
-        adapt — <em>twice</em>.
-      </p>
-    </div>
+    <div class="container-narrow">
+        <div class="section-header">
+            <div class="section-eyebrow"><span class="section-number">07</span><span data-i18n="features.s7.label">Closing</span>
+            </div>
+            <h2 class="section-h2" data-i18n="features.s7.h2">Interface that <em>fits</em>.</h2>
+            <p class="section-intro" data-i18n="features.s7.intro">
+                Not every reader needs every feature. ContinuousReader is built to
+                adapt — <em>twice</em>.
+            </p>
+        </div>
 
-    <div id="s7-wizard" class="interface-fits-block">
-      <h4 data-i18n="features.s7.wizard.h">On first launch — the <em>Welcome wizard</em>.</h4>
-      <p data-i18n="features.s7.wizard.p">
-        Before you import your first book, a short setup walks you through
-        the choices that matter — starting with <strong>where your library
-        should live</strong>: in iCloud (synced across your devices), on
-        this device only, or in a folder you pick (the books survive
-        uninstall). Then language, interface theme, library view (list,
-        cards, or table), and which features you want visible. Seven
-        screens, all skippable, all changeable later. <strong>You start
-        with an app that already looks the way you want and stores your
-        books exactly where you want them.</strong>
-      </p>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-welcome-wizard.webp" alt="Welcome wizard — Choose library view step with List, Cards, Table options">
-      </div>
-    </div>
+        <div id="s7-wizard" class="interface-fits-block">
+            <h4 data-i18n="features.s7.wizard.h">On first launch — the <em>Welcome wizard</em>.</h4>
+            <p data-i18n="features.s7.wizard.p">
+                Before you import your first book, a short setup walks you through
+                the choices that matter — starting with <strong>where your library
+                should live</strong>: in iCloud (synced across your devices), on
+                this device only, or in a folder you pick (the books survive
+                uninstall). Then language, interface theme, library view (list,
+                cards, or table), and which features you want visible. Seven
+                screens, all skippable, all changeable later. <strong>You start
+                with an app that already looks the way you want and stores your
+                books exactly where you want them.</strong>
+            </p>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-welcome-wizard.webp"
+                     alt="Welcome wizard — Choose library view step with List, Cards, Table options">
+            </div>
+        </div>
 
-    <div id="s7-toggles" class="interface-fits-block">
-      <h4 data-i18n="features.s7.toggles.h">Any time after — the <em>Features panel</em>.</h4>
-      <p data-i18n="features.s7.toggles.p">
-        If you never use Read Aloud, turn it off and the button disappears
-        from the bottom toolbar. Same for OPDS, Translation, and Statistics.
-        Found in Settings → Features. Each toggle removes the feature from
-        the UI cleanly — <strong>no dimmed buttons, no empty placeholders,
-        no orphan shortcuts, no menu items that never apply to you.</strong>
-      </p>
-      <div class="screenshot">
-        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-search-panel.webp" alt="Settings — Features panel with toggle switches">
-      </div>
-    </div>
+        <div id="s7-toggles" class="interface-fits-block">
+            <h4 data-i18n="features.s7.toggles.h">Any time after — the <em>Features panel</em>.</h4>
+            <p data-i18n="features.s7.toggles.p">
+                If you never use Read Aloud, turn it off and the button disappears
+                from the bottom toolbar. Same for OPDS, Translation, and Statistics.
+                Found in Settings → Features. Each toggle removes the feature from
+                the UI cleanly — <strong>no dimmed buttons, no empty placeholders,
+                no orphan shortcuts, no menu items that never apply to you.</strong>
+            </p>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-search-panel.webp"
+                     alt="Settings — Features panel with toggle switches">
+            </div>
+        </div>
 
-    <p style="font-family: var(--serif); font-size: 19px; font-style: italic; color: var(--ink); line-height: 1.55; max-width: 50ch; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--rule);" data-i18n="features.s7.outro">
-      Change your mind, relaunch the wizard from Settings. Your app should
-      reflect how you read, not how we expect everyone to read.
-    </p>
-  </div>
+        <p style="font-family: var(--serif); font-size: 19px; font-style: italic; color: var(--ink); line-height: 1.55; max-width: 50ch; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--rule);"
+           data-i18n="features.s7.outro">
+            Change your mind, relaunch the wizard from Settings. Your app should
+            reflect how you read, not how we expect everyone to read.
+        </p>
+    </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- FINAL CTA                                                     -->
 <!-- ============================================================ -->
 <section class="final-cta reveal">
-  <div class="container-narrow">
-    <h2 data-i18n="common.finalCta.title">Start <em>reading.</em></h2>
-    <p data-i18n="common.finalCta.subtitle">Two apps. Read a book, or grow a library.</p>
-    <div class="final-cta-buttons">
-      <a href="download.html" class="cta-primary">
-        <span data-i18n="common.cta.getCR">Get ContinuousReader</span>
-        <span class="price">$19.99</span>
-      </a>
-      <a href="download.html" class="cta-secondary" data-i18n="common.cta.getJR">Get JustReader, free</a>
+    <div class="container-narrow">
+        <h2 data-i18n="common.finalCta.title">Start <em>reading.</em></h2>
+        <p data-i18n="common.finalCta.subtitle">Two apps. Read a book, or grow a library.</p>
+        <div class="final-cta-buttons">
+            <a href="download.html" class="cta-primary">
+                <span data-i18n="common.cta.getCR">Get ContinuousReader</span>
+                <span class="price">$19.99</span>
+            </a>
+            <a href="download.html" class="cta-secondary" data-i18n="common.cta.getJR">Get JustReader, free</a>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- ============================================================ -->
 <!-- FOOTER                                                        -->
 <!-- ============================================================ -->
 <footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="brand-line">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <div class="brand-line">
         <span class="nav-logo" aria-hidden="true">
           <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
           <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
@@ -1296,45 +1819,45 @@
           <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
         </svg>
         </span>
-        <span>ContinuousReader</span>
-      </div>
-      <p class="footer-tagline" data-i18n="foot.tagline">Built for readers who don't just browse.</p>
+                <span>ContinuousReader</span>
+            </div>
+            <p class="footer-tagline" data-i18n="foot.tagline">Built for readers who don't just browse.</p>
+        </div>
+
+        <div class="footer-col">
+            <h5 data-i18n="foot.col.product">Product</h5>
+            <ul>
+                <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+                <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+                <li><a href="download.html" data-i18n="nav.download">Download</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h5 data-i18n="foot.col.info">Info</h5>
+            <ul>
+                <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
+                <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h5 data-i18n="foot.col.language">Language</h5>
+            <ul>
+                <li><a href="#" data-lang="en">English</a></li>
+                <li><a href="#" data-lang="ru">Русский</a></li>
+                <li><a href="#" data-lang="uk">Українська</a></li>
+                <li><a href="#" data-lang="es">Español</a></li>
+                <li><a href="#" data-lang="fr">Français</a></li>
+                <li><a href="#" data-lang="de">Deutsch</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div class="footer-col">
-      <h5 data-i18n="foot.col.product">Product</h5>
-      <ul>
-        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
-        <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
-        <li><a href="download.html" data-i18n="nav.download">Download</a></li>
-      </ul>
+    <div class="footer-bottom">
+        <span data-i18n="foot.copy">© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+        <span data-i18n="foot.signoff">A reader's reader.</span>
     </div>
-
-    <div class="footer-col">
-      <h5 data-i18n="foot.col.info">Info</h5>
-      <ul>
-        <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
-        <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h5 data-i18n="foot.col.language">Language</h5>
-      <ul>
-        <li><a href="#" data-lang="en">English</a></li>
-        <li><a href="#" data-lang="ru">Русский</a></li>
-        <li><a href="#" data-lang="uk">Українська</a></li>
-        <li><a href="#" data-lang="es">Español</a></li>
-        <li><a href="#" data-lang="fr">Français</a></li>
-        <li><a href="#" data-lang="de">Deutsch</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <span data-i18n="foot.copy">© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
-    <span data-i18n="foot.signoff">A reader's reader.</span>
-  </div>
 </footer>
 
 <script src="js/i18n.js"></script>
