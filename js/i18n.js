@@ -130,7 +130,7 @@ const translations = {
     'index.s5.p4':      'Every word you look up can be remembered. ContinuousReader tracks the languages you translate between, the words you’ve seen before, and the books where you needed help most — useful for language learners, researchers, and anyone reading across languages. Turn tracking off, and nothing is recorded. Turn it on, and export the full history as an HTML report.',
 
     'index.s6.eyebrow': 'Your library',
-    'index.s6.h2':      'Your library. <em>All yours.</em>',
+    'index.s6.h2':      '<em>Your</em> library',
     'index.s6.p1':      'Your entire library in three views: a detailed list for scanning, covers in a grid for browsing, or a sortable table for the librarian in you. Group by author, series, genre, or date. Tag with color dots. Filter by genre. Pinned favorites. Recently opened and recently added.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — including ZIP variants. Click a button, drag a file, or drag a URL straight from your browser — the book is fetched and the import dialog opens with metadata, cover, and author already filled in. Or browse OPDS catalogs — Standard Ebooks, Project Gutenberg, Feedbooks, or your own server. Watch feeds for new entries in a series you follow.',
     'index.s6.p3':      'Track your reading time per book, see streaks and patterns, export an HTML report. Bookmarks in seven colors with notes and text highlights. Rich text notes per book. Everything searchable, everything exportable.',
@@ -938,7 +938,7 @@ const translations = {
 
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Библиотека',
-    'index.s6.h2':      'Ваша библиотека. <em>Вся ваша.</em>',
+    'index.s6.h2':      '<em>Ваша</em> библиотека',
     'index.s6.p1':      'Вся библиотека в трёх режимах: подробный список — для просмотра, обложки в сетке — для перелистывания, сортируемая таблица — для вашего внутреннего библиотекаря. Группируйте по автору, серии, жанру или дате. Цветные метки. Фильтр по жанру. Избранные книги. Недавно открытые и недавно добавленные.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — включая ZIP-варианты. Нажмите кнопку, или перетащите файл, или перетащите URL прямо из браузера — книга скачается, а диалог импорта откроется уже с заполненными метаданными, обложкой и автором. Или откройте каталоги OPDS — Standard Ebooks, Project Gutenberg, Feedbooks или собственный сервер. Следите за фидами на новые поступления в цикле, который читаете.',
     'index.s6.p3':      'Считайте время чтения по каждой книге, смотрите серии дней и закономерности, выгружайте HTML-отчёт. Закладки в семи цветах с заметками и подсветкой текста. Заметки с форматированием — на каждую книгу. Всё ищется, всё экспортируется.',
@@ -1732,7 +1732,7 @@ const translations = {
 
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Бібліотека',
-    'index.s6.h2':      'Ваша бібліотека. <em>Уся ваша.</em>',
+    'index.s6.h2':      '<em>Ваша</em> бібліотека',
     'index.s6.p1':      'Уся бібліотека в трьох режимах: детальний список — для перегляду, обкладинки в сітці — для гортання, сортована таблиця — для вашого внутрішнього бібліотекаря. Групуйте за автором, серією, жанром або датою. Кольорові мітки. Фільтр за жанром. Обрані книги. Нещодавно відкриті та нещодавно додані.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — включно із ZIP-варіантами. Натисніть кнопку, або перетягніть файл, або перетягніть URL прямо з браузера — книга завантажиться, а діалог імпорту відкриється вже із заповненими метаданими, обкладинкою та автором. Або відкрийте каталоги OPDS — Standard Ebooks, Project Gutenberg, Feedbooks чи власний сервер. Стежте за фідами на нові надходження в циклі, який читаєте.',
     'index.s6.p3':      'Рахуйте час читання за кожну книгу, дивіться серії днів та закономірності, вивантажуйте HTML-звіт. Закладки в семи кольорах із нотатками й підсвіткою тексту. Нотатки з форматуванням — на кожну книгу. Усе шукається, усе експортується.',
@@ -2524,7 +2524,7 @@ const translations = {
 
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Tu biblioteca',
-    'index.s6.h2':      'Tu biblioteca. <em>Toda tuya.</em>',
+    'index.s6.h2':      '<em>Tu</em> biblioteca',
     'index.s6.p1':      'Toda tu biblioteca en tres modos: lista detallada — para revisar, portadas en cuadrícula — para hojear, tabla ordenable — para el bibliotecario que llevas dentro. Agrupa por autor, serie, género o fecha. Etiquetas de color. Filtro por género. Marcadores fijados. Recientemente abiertos y recientemente añadidos.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — incluyendo variantes ZIP. Pulsa un botón, arrastra un archivo, o arrastra una URL directamente desde tu navegador — el libro se descarga, y el diálogo de importación se abre con metadatos, portada y autor ya rellenados. O explora catálogos OPDS — Standard Ebooks, Project Gutenberg, Feedbooks o tu propio servidor. Sigue feeds para nuevos lanzamientos en una serie que estás siguiendo.',
     'index.s6.p3':      'Registra tu tiempo de lectura por libro, mira rachas y patrones, exporta un informe HTML. Marcadores en siete colores con notas y resaltado de texto. Notas con formato — para cada libro. Todo se busca, todo se exporta.',
@@ -3318,7 +3318,7 @@ const translations = {
 
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Votre bibliothèque',
-    'index.s6.h2':      'Votre bibliothèque. <em>Entièrement à vous.</em>',
+    'index.s6.h2':      '<em>Votre</em> bibliothèque',
     'index.s6.p1':      'Toute votre bibliothèque en trois modes : liste détaillée — pour passer en revue, couvertures en grille — pour feuilleter, tableau triable — pour le bibliothécaire qui sommeille en vous. Groupez par auteur, série, genre ou date. Étiquettes de couleur. Filtre par genre. Marque-pages épinglés. Récemment ouverts et récemment ajoutés.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — y compris les variantes ZIP. Cliquez sur un bouton, glissez un fichier, ou glissez une URL directement depuis votre navigateur — le livre est récupéré, et la fenêtre d’importation s’ouvre avec les métadonnées, la couverture et l’auteur déjà remplis. Ou parcourez les catalogues OPDS — Standard Ebooks, Project Gutenberg, Feedbooks ou votre propre serveur. Suivez des flux pour les nouveautés dans une série que vous suivez.',
     'index.s6.p3':      'Suivez votre temps de lecture par livre, voyez les séries de jours et les motifs, exportez un rapport HTML. Marque-pages en sept couleurs avec notes et surlignage de texte. Notes formatées — pour chaque livre. Tout est cherchable, tout est exportable.',
@@ -4111,7 +4111,7 @@ const translations = {
 
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Deine Bibliothek',
-    'index.s6.h2':      'Deine Bibliothek. <em>Ganz für dich.</em>',
+    'index.s6.h2':      '<em>Deine</em> Bibliothek',
     'index.s6.p1':      'Deine ganze Bibliothek in drei Ansichten: detaillierte Liste — zum Durchsehen, Cover im Raster — zum Blättern, sortierbare Tabelle — für den Bibliothekar in dir. Gruppieren Sie nach Autor, Serie, Genre oder Datum. Farbmarkierungen. Genre-Filter. Angeheftete Favoriten. Kürzlich geöffnete und kürzlich hinzugefügte.',
     'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF</strong> — einschließlich ZIP-Varianten. Klick auf einen Button, zieh eine Datei hinein, oder zieh eine URL direkt aus deinem Browser — das Buch wird heruntergeladen, und der Importdialog öffnet sich mit bereits ausgefüllten Metadaten, Cover und Autor. Oder durchsuch OPDS-Kataloge — Standard Ebooks, Project Gutenberg, Feedbooks oder deinen eigenen Server. Verfolge Feeds für neue Veröffentlichungen in einer Serie, der du folgst.',
     'index.s6.p3':      'Verfolge deine Lesezeit pro Buch, sieh dir Serien und Muster an, exportiere einen HTML-Bericht. Lesezeichen in sieben Farben mit Notizen und Texthervorhebung. Formatierte Notizen — für jedes Buch. Alles ist durchsuchbar, alles ist exportierbar.',
