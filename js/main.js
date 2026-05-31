@@ -311,7 +311,7 @@
       }
     }
 
-    document.querySelectorAll('.screenshot, .screenshot-frame').forEach((frame) => {
+    document.querySelectorAll('.screenshot, .screenshot-frame, .device-shot').forEach((frame) => {
       const img = frame.querySelector('img');
       if (!img) {
         frame.style.cursor = 'default';

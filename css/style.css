@@ -819,12 +819,15 @@ section { position: relative; z-index: 2; }
   height: auto;
 }
 
-/* Callout dot — "click to see screenshot" indicator */
 .device-setup-item h4 {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0;
 }
+/* Center each column (heading + caption) over its device. */
+.device-setup-item { text-align: center; }
+.device-setup-item .device-shot { cursor: zoom-in; }
 
 .callout-dot {
   display: inline-flex;
