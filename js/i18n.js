@@ -212,6 +212,7 @@ const translations = {
     'features.s1.position.li4':   '<strong>Mode switches</strong>Scroll to page, page to spread',
     'features.s1.position.li5':   '<strong>Long absences</strong>Reopening the book weeks later with different settings',
     'features.s1.position.p2':    'When you return to a book, the reader fades in at the <em>exact paragraph</em> you left, not the nearest chapter.',
+    'features.s1.position.p3':    'One caveat: settings that change how many pages a book has — font size, line height, paragraph spacing, two-page spread — can nudge the exact spot by a line or two. The reader anchors to the <em>first paragraph visible on screen</em>, so you keep your place even when the page count shifts under it.',
 
     'features.s1.progress.h':     'Progress drawer and markers',
     'features.s1.progress.p1':    'A slim progress bar along the bottom expands on hover (Mac) or tap (iOS) to reveal reading position. Click or double-tap to open the progress drawer:',
@@ -1215,6 +1216,7 @@ const translations = {
     'features.s1.position.li4':   '<strong>Смену режима</strong>Скролл → страница, страница → разворот',
     'features.s1.position.li5':   '<strong>Долгие перерывы</strong>Открытие книги через несколько недель с другими настройками',
     'features.s1.position.p2':    'Когда вы возвращаетесь к книге, ридер восстанавливает позицию на <em>том самом абзаце</em>, на котором вы остановились.',
+    'features.s1.position.p3':    'Одна оговорка: параметры, меняющие число страниц в книге — размер шрифта, высота строки, межабзацный отступ, двухстраничный разворот — могут сместить точную позицию на строку-другую. Ридер привязывается к <em>первому абзацу, видимому на экране</em>, поэтому вы не теряете место, даже когда число страниц меняется под ним.',
 
     'features.s1.progress.h':     'Полоса прогресса и маркеры',
     'features.s1.progress.p1':    'Тонкий прогресс-бар вдоль нижнего края разворачивается при наведении (Mac) или касании (iOS) и показывает позицию чтения. Клик или двойное касание открывают панель прогресса:',
@@ -2009,6 +2011,7 @@ const translations = {
     'features.s1.position.li4':   '<strong>Перемикання режимів</strong>Зі скролу в сторінку, зі сторінки в розворот',
     'features.s1.position.li5':   '<strong>Тривалі паузи</strong>Повернення до книги через тижні з іншими налаштуваннями',
     'features.s1.position.p2':    'Коли ви повертаєтеся до книги, читач плавно зʼявляється на <em>точному абзаці</em>, де ви зупинилися, а не на найближчому розділі.',
+    'features.s1.position.p3':    'Одне застереження: параметри, що змінюють кількість сторінок у книзі — розмір шрифту, висота рядка, відступ між абзацами, двосторінковий розворот — можуть зсунути точну позицію на рядок-другий. Читач прив’язується до <em>першого абзацу, видимого на екрані</em>, тож ви не втрачаєте місце, навіть коли кількість сторінок змінюється під ним.',
 
     'features.s1.progress.h':     'Виїзна панель прогресу та маркери',
     'features.s1.progress.p1':    'Тонкий індикатор прогресу внизу розширюється при наведенні (Mac) або дотику (iOS) і показує позицію читання. Натисніть або двічі торкніться, щоб відкрити виїзну панель прогресу:',
@@ -2801,6 +2804,7 @@ const translations = {
     'features.s1.position.li4':   '<strong>Cambios de modo</strong>De desplazamiento a página, de página a doble página',
     'features.s1.position.li5':   '<strong>Ausencias largas</strong>Volver al libro semanas después con ajustes distintos',
     'features.s1.position.p2':    'Cuando vuelves a un libro, el lector reaparece en el <em>párrafo exacto</em> donde lo dejaste, no en el capítulo más cercano.',
+    'features.s1.position.p3':    'Una salvedad: los ajustes que cambian cuántas páginas tiene un libro — tamaño de fuente, altura de línea, espaciado entre párrafos, doble página — pueden desplazar el punto exacto una línea o dos. El lector se ancla al <em>primer párrafo visible en pantalla</em>, así que no pierdes tu lugar aunque cambie el número de páginas.',
 
     'features.s1.progress.h':     'Panel de progreso y marcadores',
     'features.s1.progress.p1':    'Una fina barra de progreso a lo largo de la parte inferior se expande al pasar el cursor (Mac) o al tocarla (iOS) para mostrar la posición de lectura. Haz clic o doble toque para abrir el panel de progreso:',
@@ -3595,6 +3599,7 @@ const translations = {
     'features.s1.position.li4':   '<strong>Changements de mode</strong>Du défilement à la page, de la page à la double page',
     'features.s1.position.li5':   '<strong>Longues absences</strong>Rouvrir le livre des semaines plus tard avec d’autres réglages',
     'features.s1.position.p2':    'Quand vous revenez à un livre, le lecteur réapparaît au <em>paragraphe exact</em> que vous aviez quitté, pas au chapitre le plus proche.',
+    'features.s1.position.p3':    'Une réserve : les réglages qui modifient le nombre de pages d’un livre — taille de police, hauteur de ligne, espacement des paragraphes, double page — peuvent décaler l’endroit exact d’une ligne ou deux. Le lecteur s’ancre au <em>premier paragraphe visible à l’écran</em>, vous gardez donc votre place même quand le nombre de pages change.',
 
     'features.s1.progress.h':     'Tiroir de progression et marqueurs',
     'features.s1.progress.p1':    'Une fine barre de progression en bas s’agrandit au survol (Mac) ou au toucher (iOS) pour révéler la position de lecture. Cliquez ou touchez deux fois pour ouvrir le tiroir de progression :',
@@ -4388,6 +4393,7 @@ const translations = {
     'features.s1.position.li4':   '<strong>Moduswechsel</strong>Scrollen zu Seite, Seite zu Doppelseite',
     'features.s1.position.li5':   '<strong>Lange Abwesenheiten</strong>Wiederöffnen des Buches Wochen später mit anderen Einstellungen',
     'features.s1.position.p2':    'Wenn Sie zu einem Buch zurückkehren, blendet der Reader exakt am <em>Absatz</em> ein, an dem Sie aufgehört haben — nicht am nächstgelegenen Kapitel.',
+    'features.s1.position.p3':    'Eine Einschränkung: Einstellungen, die ändern, wie viele Seiten ein Buch hat — Schriftgröße, Zeilenhöhe, Absatzabstand, Doppelseite — können die genaue Stelle um eine Zeile oder zwei verschieben. Der Reader verankert sich am <em>ersten auf dem Bildschirm sichtbaren Absatz</em>, sodass Sie Ihre Stelle behalten, auch wenn sich die Seitenzahl darunter ändert.',
 
     'features.s1.progress.h':     'Fortschritts-Schublade und Marker',
     'features.s1.progress.p1':    'Ein schmaler Fortschrittsbalken am unteren Rand vergrößert sich beim Überfahren (Mac) oder Antippen (iOS) und zeigt die Leseposition. Klicken oder Doppeltippen öffnet die Fortschritts-Schublade:',
