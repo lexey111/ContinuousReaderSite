@@ -8,8 +8,11 @@ tell Claude — he'll resize/optimize and confirm the HTML reference works.
 
 - **Dimensions:** Mac 1600×1000 · iPad 1600×1200 · iPhone 800×1600 portrait.
   Shoot bigger if convenient — Claude downscales. Retina/2× is fine.
-- **Format:** capture as PNG. Claude converts large ones to optimized
-  JPEG/WebP where it helps, keeping PNG for crisp-UI shots.
+- **Format:** capture as PNG, then run `tools/optimize-images.sh` — it
+  produces web-optimized **.webp** (downscaled to ≤2000px long edge, q82,
+  alpha preserved for framed devices). The HTML references `.webp`; the .webp
+  files are what's committed/served (the table "File" names below say `.png`
+  but the served asset is the matching `.webp`). ~4-6× smaller than PNG.
 - **Fake library content:** use plausible-but-fake titles/authors (classic
   public-domain + made-up sci-fi/fantasy). Never real reading habits.
 - **Language per page:**
