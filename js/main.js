@@ -336,7 +336,7 @@
   // .is-loaded). width/height attrs already reserve the box (no layout shift).
   // ----------------------------------------------------------
   function setupImageFade() {
-    const imgs = document.querySelectorAll('.screenshot img, .screenshot-frame img');
+    const imgs = document.querySelectorAll('.screenshot img, .screenshot-frame img, .device-shot img');
     imgs.forEach((img) => {
       const reveal = () => img.classList.add('is-loaded');
       // Reveal only once FULLY decoded (decode() resolves when the bitmap is

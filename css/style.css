@@ -783,6 +783,23 @@ section { position: relative; z-index: 2; }
   color: var(--ink);
 }
 
+/* Directly-visible device shots on the home page (the three devices sit on a
+   common baseline so their captions line up; not lightbox-clickable). */
+.device-setup-item .device-shot {
+  height: 300px;
+  margin: 4px 0 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.device-setup-item .device-shot img {
+  max-height: 300px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Callout dot — "click to see screenshot" indicator */
 .device-setup-item h4 {
   display: flex;
@@ -1473,18 +1490,22 @@ code {
 @keyframes cr-spin { to { transform: rotate(360deg); } }
 
 .js .screenshot:has(img),
-.js .screenshot-frame:has(img) { position: relative; }
+.js .screenshot-frame:has(img),
+.js .device-shot:has(img) { position: relative; }
 
 .js .screenshot img,
-.js .screenshot-frame img {
+.js .screenshot-frame img,
+.js .device-shot img {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 .js .screenshot img.is-loaded,
-.js .screenshot-frame img.is-loaded { opacity: 1; }
+.js .screenshot-frame img.is-loaded,
+.js .device-shot img.is-loaded { opacity: 1; }
 
 .js .screenshot:has(img:not(.is-loaded))::after,
-.js .screenshot-frame:has(img:not(.is-loaded))::after {
+.js .screenshot-frame:has(img:not(.is-loaded))::after,
+.js .device-shot:has(img:not(.is-loaded))::after {
   content: "";
   position: absolute;
   top: 50%;
