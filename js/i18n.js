@@ -187,7 +187,7 @@ const translations = {
     'features.s1.fonts.li1':      '<strong>Serif</strong>Georgia, Palatino, Charter, Iowan Old Style',
     'features.s1.fonts.li2':      '<strong>Sans-serif</strong>Helvetica Neue, SF Pro, Avenir Next',
     'features.s1.fonts.li3':      '<strong>Monospace</strong>Menlo on Mac, Courier New on iOS; American Typewriter everywhere',
-    'features.s1.fonts.p2':       'The font picker groups them with labeled sections and shows live "Aa" previews in the theme you’re currently using.',
+    'features.s1.fonts.p2':       'The font picker groups them with labeled sections and applies your choice to the page instantly. Where the typeface supports them, you also get weights — thin, regular, and bold.',
 
     'features.s1.typo.h':         'Full typography control',
     'features.s1.typo.li1':       '<strong>Size</strong>12 to 48 pixels',
@@ -1191,7 +1191,7 @@ const translations = {
     'features.s1.fonts.li1':      '<strong>С засечками</strong>Georgia, Palatino, Charter, Iowan Old Style',
     'features.s1.fonts.li2':      '<strong>Без засечек</strong>Helvetica Neue, SF Pro, Avenir Next',
     'features.s1.fonts.li3':      '<strong>Моноширинные</strong>Menlo на Mac, Courier New на iOS; American Typewriter везде',
-    'features.s1.fonts.p2':       'Селектор шрифтов группирует их по подписанным секциям и показывает живые превью «Aa» в той теме, которой вы сейчас пользуетесь.',
+    'features.s1.fonts.p2':       'Селектор шрифтов группирует их по подписанным секциям и применяет ваш выбор к странице сразу же. А если шрифт это поддерживает, доступны и начертания — тонкое, обычное и жирное.',
 
     'features.s1.typo.h':         'Полный контроль над типографикой',
     'features.s1.typo.li1':       '<strong>Размер</strong>От 12 до 48 пикселей',
@@ -1986,7 +1986,7 @@ const translations = {
     'features.s1.fonts.li1':      '<strong>Із засічками</strong>Georgia, Palatino, Charter, Iowan Old Style',
     'features.s1.fonts.li2':      '<strong>Без засічок</strong>Helvetica Neue, SF Pro, Avenir Next',
     'features.s1.fonts.li3':      '<strong>Моноширинні</strong>Menlo на Mac, Courier New на iOS; American Typewriter всюди',
-    'features.s1.fonts.p2':       'Селектор шрифтів групує їх позначеними секціями і показує живі превʼю «Aa» в темі, якою ви зараз користуєтеся.',
+    'features.s1.fonts.p2':       'Селектор шрифтів групує їх за підписаними секціями й застосовує ваш вибір до сторінки одразу. А якщо шрифт це підтримує, доступні й накреслення — тонке, звичайне та жирне.',
 
     'features.s1.typo.h':         'Повний контроль типографіки',
     'features.s1.typo.li1':       '<strong>Розмір</strong>Від 12 до 48 пікселів',
@@ -2779,7 +2779,7 @@ const translations = {
     'features.s1.fonts.li1':      '<strong>Serif</strong>Georgia, Palatino, Charter, Iowan Old Style',
     'features.s1.fonts.li2':      '<strong>Sans-serif</strong>Helvetica Neue, SF Pro, Avenir Next',
     'features.s1.fonts.li3':      '<strong>Monoespaciada</strong>Menlo en Mac y Courier New en iOS; American Typewriter en todas partes',
-    'features.s1.fonts.p2':       'El selector de fuentes las agrupa con secciones etiquetadas y muestra previsualizaciones «Aa» en vivo dentro del tema que estés usando.',
+    'features.s1.fonts.p2':       'El selector de fuentes las agrupa en secciones etiquetadas y aplica tu elección a la página al instante. Y, cuando la tipografía lo permite, también dispones de grosores: fino, normal y negrita.',
 
     'features.s1.typo.h':         'Control tipográfico completo',
     'features.s1.typo.li1':       '<strong>Tamaño</strong>De 12 a 48 píxeles',
@@ -3574,7 +3574,7 @@ const translations = {
     'features.s1.fonts.li1':      '<strong>Serif</strong>Georgia, Palatino, Charter, Iowan Old Style',
     'features.s1.fonts.li2':      '<strong>Sans serif</strong>Helvetica Neue, SF Pro, Avenir Next',
     'features.s1.fonts.li3':      '<strong>Monospace</strong>Menlo sur Mac, Courier New sur iOS ; American Typewriter partout',
-    'features.s1.fonts.p2':       'Le sélecteur de police les regroupe en sections étiquetées et affiche des aperçus « Aa » en direct dans le thème actuellement utilisé.',
+    'features.s1.fonts.p2':       'Le sélecteur de police les regroupe en sections étiquetées et applique votre choix à la page instantanément. Et lorsque la police le permet, vous disposez aussi de graisses : maigre, normale et grasse.',
 
     'features.s1.typo.h':         'Contrôle typographique complet',
     'features.s1.typo.li1':       '<strong>Taille</strong>De 12 à 48 pixels',
@@ -4368,7 +4368,7 @@ const translations = {
     'features.s1.fonts.li1':      '<strong>Serif</strong>Georgia, Palatino, Charter, Iowan Old Style',
     'features.s1.fonts.li2':      '<strong>Sans-serif</strong>Helvetica Neue, SF Pro, Avenir Next',
     'features.s1.fonts.li3':      '<strong>Monospace</strong>Menlo auf Mac, Courier New auf iOS; American Typewriter überall',
-    'features.s1.fonts.p2':       'Die Schriftauswahl gruppiert sie in beschrifteten Sektionen und zeigt Live-„Aa"-Vorschauen im gerade aktiven Theme.',
+    'features.s1.fonts.p2':       'Die Schriftauswahl gruppiert sie in beschriftete Abschnitte und wendet Ihre Wahl sofort auf die Seite an. Und wo die Schrift es unterstützt, stehen auch Schriftschnitte zur Verfügung — dünn, normal und fett.',
 
     'features.s1.typo.h':         'Volle Typografie-Kontrolle',
     'features.s1.typo.li1':       '<strong>Größe</strong>12 bis 48 Pixel',
