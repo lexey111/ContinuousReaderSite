@@ -11,8 +11,8 @@
 set -euo pipefail
 
 DIR="${1:-img/screenshots}"
-QUALITY=82       # WebP quality (sharp UI/text reads well at 82)
-MAXEDGE=2000     # cap the long edge (lightbox stays crisp, files stay small)
+QUALITY=85       # WebP quality (sharp UI/text)
+MAXEDGE=3000     # near-native (crisp in full-size lightbox on Retina)
 
 command -v cwebp >/dev/null || { echo "cwebp missing — run: brew install webp"; exit 1; }
 
@@ -21,7 +21,16 @@ for f in "$DIR"/*.png; do
   [ -e "$f" ] || continue
   out="${f%.png}.webp"
   tmp="$(mktemp -t optimg).png"
-  sips -Z "$MAXEDGE" "$f" --out "$tmp" >/dev/null 2>&1
+  # Downscale ONLY when the long edge exceeds MAXEDGE (sips -Z also upscales,
+  # which just bloats + blurs). Otherwise keep native resolution.
+  w=$(sips -g pixelWidth "$f" 2>/dev/null | awk '/pixelWidth/{print $2}')
+  h=$(sips -g pixelHeight "$f" 2>/dev/null | awk '/pixelHeight/{print $2}')
+  long=$(( w > h ? w : h ))
+  if [ "${long:-0}" -gt "$MAXEDGE" ]; then
+    sips -Z "$MAXEDGE" "$f" --out "$tmp" >/dev/null 2>&1
+  else
+    cp "$f" "$tmp"
+  fi
   cwebp -q "$QUALITY" -quiet "$tmp" -o "$out"
   rm -f "$tmp"
   b=$(stat -f%z "$f"); a=$(stat -f%z "$out")
