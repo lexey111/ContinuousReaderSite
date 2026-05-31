@@ -101,7 +101,12 @@
       if (el.tagName === 'TITLE') {
         document.title = stripTags(val);
       } else {
-        el.innerHTML = wrapDevices(val);
+        let html = wrapDevices(val);
+        // The features-page TOC reuses the section-title keys, which end with a
+        // period in the heading itself — but a trailing period reads wrong in a
+        // nav list. Strip it for TOC links only (headings keep theirs).
+        if (el.closest('.features-toc')) html = html.replace(/\.\s*$/, '');
+        el.innerHTML = html;
       }
     });
 
