@@ -283,6 +283,21 @@
       dialog.addEventListener('click', (e) => {
         if (e.target === dialog) dialog.close();
       });
+      // Re-fit on resize while open.
+      window.addEventListener('resize', () => { if (dialog.open) fitLightboxImage(); });
+    }
+
+    // Size the image to min(natural, viewport) — NEVER upscale past 100% of the
+    // image's own pixels (a screenshot enlarged beyond its size looks soft).
+    function fitLightboxImage() {
+      const img = dialog.querySelector('img');
+      const nw = img.naturalWidth, nh = img.naturalHeight;
+      if (!nw || !nh) return;
+      const availW = window.innerWidth - 80;   // matches .lightbox-content padding (40*2)
+      const availH = window.innerHeight - 80;
+      const scale = Math.min(1, availW / nw, availH / nh);
+      img.style.width = Math.round(nw * scale) + 'px';
+      img.style.height = Math.round(nh * scale) + 'px';
     }
 
     const dialogImg = dialog.querySelector('img');
@@ -305,6 +320,7 @@
       dialogImg.alt = alt || '';
       dialogImg.src = src;
       const reveal = () => {
+        fitLightboxImage();                    // cap at 100% of natural size
         dialog.classList.remove('is-loading');
         requestAnimationFrame(() => dialogImg.classList.add('is-loaded')); // fade in
       };
