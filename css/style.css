@@ -753,12 +753,22 @@ section { position: relative; z-index: 2; }
 
 /* Device setup triptych in section 2 */
 .device-setup {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
   margin-top: 56px;
   padding-top: 40px;
   border-top: 1px solid var(--rule);
+}
+
+/* Mac (wide/landscape) gets its own full-width row on top; iPad + iPhone
+   (both portrait) sit in two columns below. */
+.device-mac { text-align: center; }
+.device-mac h4 { justify-content: center; }
+.device-mac p { max-width: 540px; margin-left: auto; margin-right: auto; }
+
+.device-setup-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 52px;
 }
 
 .device-setup-item h4 {
@@ -786,18 +796,27 @@ section { position: relative; z-index: 2; }
 /* Directly-visible device shots on the home page (the three devices sit on a
    common baseline so their captions line up; not lightbox-clickable). */
 .device-setup-item .device-shot {
-  height: 300px;
+  height: 360px;
   margin: 4px 0 16px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 .device-setup-item .device-shot img {
-  max-height: 300px;
+  max-height: 360px;
   max-width: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
+}
+
+/* Mac shot — full width on its own row (landscape), not height-capped. */
+.device-mac .device-shot { height: auto; margin-bottom: 18px; }
+.device-mac .device-shot img {
+  width: 100%;
+  max-width: 860px;
+  max-height: none;
+  height: auto;
 }
 
 /* Callout dot — "click to see screenshot" indicator */
@@ -2754,7 +2773,7 @@ code {
   .prose h2 { font-size: 20px; }
   .spec-list { grid-template-columns: 1fr; gap: 4px; }
   .spec-list dt { padding-top: 20px; }
-  .device-setup { grid-template-columns: 1fr; gap: 32px; }
+  .device-setup-row { grid-template-columns: 1fr; gap: 32px; }
   .platforms-summary { grid-template-columns: 1fr; gap: 32px; }
   .two-apps-grid { grid-template-columns: 1fr; gap: 48px; }
   .platform-grid { grid-template-columns: 1fr; gap: 40px; }
