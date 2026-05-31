@@ -6,6 +6,10 @@
 (function () {
   'use strict';
 
+  // Mark scripting available (the <head> snippet does this too; this is a
+  // fallback). Image fade-in / spinner CSS is gated on `.js`.
+  document.documentElement.classList.add('js');
+
   // ----------------------------------------------------------
   // Internationalization
   //
@@ -258,6 +262,7 @@
       dialog.className = 'lightbox';
       dialog.innerHTML = `
         <button type="button" class="lightbox-close" aria-label="Close">Close (Esc)</button>
+        <div class="lightbox-spinner" aria-hidden="true"></div>
         <div class="lightbox-content">
           <img alt="" />
         </div>
@@ -277,8 +282,35 @@
 
     const dialogImg = dialog.querySelector('img');
 
-    const screenshots = document.querySelectorAll('.screenshot, .screenshot-frame');
-    screenshots.forEach((frame) => {
+    // Open with a spinner and only reveal the image once it has fully decoded —
+    // so the previously-opened image never flashes while the new one downloads,
+    // and a partially-loaded (progressive) image never shows.
+    function openLightbox(src, alt) {
+      if (typeof dialog.showModal !== 'function') {
+        window.open(src, '_blank');
+        return;
+      }
+      dialogImg.classList.remove('is-loaded'); // hide old image immediately
+      dialog.classList.add('is-loading');      // show spinner
+      dialog.showModal();
+
+      const pre = new Image();
+      pre.onload = () => {
+        dialogImg.src = src;                   // already decoded → instant
+        dialogImg.alt = alt || '';
+        dialog.classList.remove('is-loading');
+        requestAnimationFrame(() => dialogImg.classList.add('is-loaded')); // fade in
+      };
+      pre.onerror = () => {                     // don't spin forever on failure
+        dialog.classList.remove('is-loading');
+        dialogImg.src = src;
+        dialogImg.alt = alt || '';
+        dialogImg.classList.add('is-loaded');
+      };
+      pre.src = src;
+    }
+
+    document.querySelectorAll('.screenshot, .screenshot-frame').forEach((frame) => {
       const img = frame.querySelector('img');
       if (!img) {
         frame.style.cursor = 'default';
@@ -286,27 +318,32 @@
       }
       frame.addEventListener('click', (e) => {
         e.preventDefault();
-        dialogImg.src = img.dataset.full || img.src;
-        dialogImg.alt = img.alt || '';
-        if (typeof dialog.showModal === 'function') {
-          dialog.showModal();
-        } else {
-          window.open(dialogImg.src, '_blank');
-        }
+        openLightbox(img.dataset.full || img.src, img.alt);
       });
     });
 
     document.querySelectorAll('.callout-dot[data-screenshot]').forEach((dot) => {
       dot.addEventListener('click', (e) => {
         e.preventDefault();
-        dialogImg.src = dot.dataset.screenshot;
-        dialogImg.alt = dot.dataset.alt || '';
-        if (typeof dialog.showModal === 'function') {
-          dialog.showModal();
-        } else {
-          window.open(dialogImg.src, '_blank');
-        }
+        openLightbox(dot.dataset.screenshot, dot.dataset.alt);
       });
+    });
+  }
+
+  // ----------------------------------------------------------
+  // Inline screenshots: fade in once decoded (spinner shows via CSS until
+  // .is-loaded). width/height attrs already reserve the box (no layout shift).
+  // ----------------------------------------------------------
+  function setupImageFade() {
+    const imgs = document.querySelectorAll('.screenshot img, .screenshot-frame img');
+    imgs.forEach((img) => {
+      if (img.complete && img.naturalWidth > 0) {
+        img.classList.add('is-loaded');
+        return;
+      }
+      const reveal = () => img.classList.add('is-loaded');
+      img.addEventListener('load', reveal);
+      img.addEventListener('error', reveal); // reveal (broken) rather than spin forever
     });
   }
 
@@ -412,6 +449,7 @@
     setupStickyNav();
     setupReveal();
     setupLightbox();
+    setupImageFade();
     setupFeaturesTOC();
   }
 
