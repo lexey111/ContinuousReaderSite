@@ -2699,8 +2699,9 @@ code {
   object-fit: contain;
   /* Round the square-cornered window captures; keep no extra drop shadow
      (device-framed shots carry their own, and the radius is invisible in their
-     transparent margin). */
-  border-radius: 12px;
+     transparent margin). Larger here than inline since the lightbox shows the
+     image near full size, matching the macOS window corner. */
+  border-radius: 18px;
   box-shadow: none;
   /* Hidden until the new image has fully decoded, then fade in — so the
      previously-opened image never flashes while the new one downloads. */
