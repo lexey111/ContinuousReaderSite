@@ -1528,7 +1528,10 @@ code {
 
 .screenshot:has(img) img,
 .screenshot-frame:has(img) img {
-  border-radius: 0;
+  /* Window captures are taken as flat rectangles (square corners); round them
+     here. Harmless on device-framed shots — the radius falls in their
+     transparent margin. */
+  border-radius: 10px;
 }
 
 /* Smooth image loading. The width/height attrs reserve the aspect box (no
@@ -2694,9 +2697,10 @@ code {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  /* Screenshots include their own macOS window chrome + shadow, so don't add a
-     second rounded frame + drop shadow here (it read as a boxy double shadow). */
-  border-radius: 0;
+  /* Round the square-cornered window captures; keep no extra drop shadow
+     (device-framed shots carry their own, and the radius is invisible in their
+     transparent margin). */
+  border-radius: 12px;
   box-shadow: none;
   /* Hidden until the new image has fully decoded, then fade in — so the
      previously-opened image never flashes while the new one downloads. */
