@@ -229,26 +229,35 @@
   }
 
   // ----------------------------------------------------------
-  // Mobile nav — inject a hamburger that toggles `.nav-links` as a
-  // dropdown (<=600px). Done in JS so it lands on every page without
-  // editing each nav block.
+  // Mobile nav — inject a hamburger that toggles the destination links
+  // (<=600px). The links are wrapped in `.nav-menu` so the hamburger
+  // toggles ONLY them; the language button stays visible beside the
+  // hamburger. Done in JS so it lands on every page.
   // ----------------------------------------------------------
   function setupMobileNav() {
     const nav = document.getElementById('nav');
     if (!nav) return;
-    const inner = nav.querySelector('.nav-inner');
     const links = nav.querySelector('.nav-links');
-    if (!inner || !links || nav.querySelector('.nav-toggle')) return;
-    if (!links.id) links.id = 'nav-links';
+    if (!links || nav.querySelector('.nav-toggle')) return;
+
+    // Wrap the <a> links in .nav-menu (leaving the .nav-lang button in place)
+    let menu = links.querySelector('.nav-menu');
+    if (!menu) {
+      menu = document.createElement('div');
+      menu.className = 'nav-menu';
+      menu.id = 'nav-menu';
+      Array.from(links.querySelectorAll(':scope > a')).forEach((a) => menu.appendChild(a));
+      links.insertBefore(menu, links.firstChild);
+    }
 
     const btn = document.createElement('button');
     btn.className = 'nav-toggle';
     btn.type = 'button';
     btn.setAttribute('aria-label', 'Menu');
     btn.setAttribute('aria-expanded', 'false');
-    btn.setAttribute('aria-controls', links.id);
+    btn.setAttribute('aria-controls', 'nav-menu');
     btn.innerHTML = '<span></span><span></span><span></span>';
-    inner.appendChild(btn);
+    links.appendChild(btn);
 
     function close() {
       nav.classList.remove('nav-open');
@@ -262,7 +271,10 @@
       document.addEventListener('click', onDoc, true);
       document.addEventListener('keydown', onKey, true);
     }
-    function onDoc(e) { if (!nav.contains(e.target)) close(); }
+    // Close on any tap outside the dropdown + toggle — including the language
+    // button, so opening the language menu dismisses this one (they share the
+    // same right-edge anchor and would otherwise overlap).
+    function onDoc(e) { if (!menu.contains(e.target) && !btn.contains(e.target)) close(); }
     function onKey(e) { if (e.key === 'Escape') { close(); btn.focus(); } }
 
     btn.addEventListener('click', (e) => {
@@ -270,7 +282,7 @@
       if (nav.classList.contains('nav-open')) close(); else open();
     });
     // Tapping a destination link closes the menu (harmless on navigation).
-    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+    menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
     // Resizing back up to desktop should never leave it stuck open.
     window.addEventListener('resize', () => { if (window.innerWidth > 600) close(); }, { passive: true });
   }

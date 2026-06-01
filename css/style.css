@@ -234,6 +234,15 @@ a { color: inherit; }
   position: relative;
 }
 
+/* The three destination links live in `.nav-menu` so the mobile hamburger
+   can toggle them independently of the always-visible language button.
+   On desktop it's just an inline flex group (same 36px rhythm as before). */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
 .nav-links a {
   font-family: var(--sans);
   font-size: 14px;
@@ -2875,10 +2884,13 @@ code {
 
 @media (max-width: 600px) {
   .nav-toggle { display: flex; }
-  .nav-links {
+  /* nav-links stays an inline row: language button + hamburger side by side. */
+  .nav-links { gap: 14px; }
+  /* Only the destination links collapse into a dropdown under the hamburger. */
+  .nav-menu {
     position: absolute;
     top: calc(100% + 10px);
-    right: 24px;
+    right: 0;
     flex-direction: column;
     align-items: stretch;
     gap: 2px;
@@ -2890,12 +2902,11 @@ code {
     box-shadow: 0 14px 36px rgba(26, 22, 14, 0.16);
     display: none;
   }
-  .nav.nav-open .nav-links { display: flex; }
-  .nav-links a { padding: 11px 14px; font-size: 15px; border-radius: 9px; }
-  .nav-links a:hover { background: var(--bg-deeper); color: var(--ink); }
-  .nav-links a.active { background: var(--bg-deeper); }
-  .nav-links a.active::after { display: none; }
-  .nav-lang { align-self: flex-start; margin-top: 6px; }
+  .nav.nav-open .nav-menu { display: flex; }
+  .nav-menu a { padding: 11px 14px; font-size: 15px; border-radius: 9px; }
+  .nav-menu a:hover { background: var(--bg-deeper); color: var(--ink); }
+  .nav-menu a.active { background: var(--bg-deeper); }
+  .nav-menu a.active::after { display: none; }
   .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; }
   .reading-strip-inner { flex-wrap: wrap; gap: 12px; }
   .reading-strip-caption { width: 100%; margin-left: 0; }
