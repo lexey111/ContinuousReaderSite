@@ -229,6 +229,53 @@
   }
 
   // ----------------------------------------------------------
+  // Mobile nav — inject a hamburger that toggles `.nav-links` as a
+  // dropdown (<=600px). Done in JS so it lands on every page without
+  // editing each nav block.
+  // ----------------------------------------------------------
+  function setupMobileNav() {
+    const nav = document.getElementById('nav');
+    if (!nav) return;
+    const inner = nav.querySelector('.nav-inner');
+    const links = nav.querySelector('.nav-links');
+    if (!inner || !links || nav.querySelector('.nav-toggle')) return;
+    if (!links.id) links.id = 'nav-links';
+
+    const btn = document.createElement('button');
+    btn.className = 'nav-toggle';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Menu');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-controls', links.id);
+    btn.innerHTML = '<span></span><span></span><span></span>';
+    inner.appendChild(btn);
+
+    function close() {
+      nav.classList.remove('nav-open');
+      btn.setAttribute('aria-expanded', 'false');
+      document.removeEventListener('click', onDoc, true);
+      document.removeEventListener('keydown', onKey, true);
+    }
+    function open() {
+      nav.classList.add('nav-open');
+      btn.setAttribute('aria-expanded', 'true');
+      document.addEventListener('click', onDoc, true);
+      document.addEventListener('keydown', onKey, true);
+    }
+    function onDoc(e) { if (!nav.contains(e.target)) close(); }
+    function onKey(e) { if (e.key === 'Escape') { close(); btn.focus(); } }
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (nav.classList.contains('nav-open')) close(); else open();
+    });
+    // Tapping a destination link closes the menu (harmless on navigation).
+    links.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+    // Resizing back up to desktop should never leave it stuck open.
+    window.addEventListener('resize', () => { if (window.innerWidth > 600) close(); }, { passive: true });
+  }
+
+  // ----------------------------------------------------------
   // Reveal sections on scroll
   // ----------------------------------------------------------
   function setupReveal() {
@@ -477,6 +524,7 @@
     // the .is-current marker and label.
     if (i18nReady()) applyLanguage(lang);
     setupStickyNav();
+    setupMobileNav();
     setupReveal();
     setupLightbox();
     setupImageFade();

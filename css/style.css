@@ -259,6 +259,35 @@ a { color: inherit; }
   background: var(--accent);
 }
 
+/* Mobile hamburger — injected by main.js, shown only <=600px (see media
+   query below). Hidden on desktop where the inline nav-links show. */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  margin: -8px 0;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 0 auto;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 220ms ease, opacity 160ms ease;
+}
+.nav.nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav.nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+.nav.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 .nav-lang {
   font-family: var(--sans);
   font-size: 13px;
@@ -2845,9 +2874,28 @@ code {
 }
 
 @media (max-width: 600px) {
-  .nav-links { gap: 18px; }
-  .nav-links a { font-size: 13px; }
-  .nav-links a.active::after { bottom: -18px; }
+  .nav-toggle { display: flex; }
+  .nav-links {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 24px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    min-width: 190px;
+    padding: 10px;
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    box-shadow: 0 14px 36px rgba(26, 22, 14, 0.16);
+    display: none;
+  }
+  .nav.nav-open .nav-links { display: flex; }
+  .nav-links a { padding: 11px 14px; font-size: 15px; border-radius: 9px; }
+  .nav-links a:hover { background: var(--bg-deeper); color: var(--ink); }
+  .nav-links a.active { background: var(--bg-deeper); }
+  .nav-links a.active::after { display: none; }
+  .nav-lang { align-self: flex-start; margin-top: 6px; }
   .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; }
   .reading-strip-inner { flex-wrap: wrap; gap: 12px; }
   .reading-strip-caption { width: 100%; margin-left: 0; }
@@ -2867,7 +2915,6 @@ code {
 
 @media (max-width: 480px) {
   .nav-brand span:last-child { display: none; }
-  .nav-links a:not(:last-child):not(.active) { display: none; }
 }
 
 /* Features-page right-side TOC. Fixed sticky position, hidden below 1280px
