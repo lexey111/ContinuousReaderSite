@@ -39,8 +39,9 @@ for `img/screenshots/*.webp` → 0 missing.
 
 ## What's on the site
 
-- **Home (`index.html`):** 3 inline device shots (`home-mac-two-page`,
-  `home-ipad-sepia`, `home-iphone-dark-scroll`) + lightbox dots (`theme-sepia`,
+- **Home (`index.html`):** 3 inline device shots — `home-mac-two-page` (sepia),
+  `home-ipad-norton` (Norton/Terminal), `home-iphone-dark-scroll` (one theme per
+  device) + lightbox dots (`theme-sepia`,
   `theme-typewriter`, `theme-terminal`, `theme-picker-modes`, `translation-panel`,
   `library-views`, `voice-reader-highlight`).
 - **Platforms (`platforms.html`):** `platforms-mac-library-table`,

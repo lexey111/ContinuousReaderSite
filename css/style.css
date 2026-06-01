@@ -796,7 +796,7 @@ section { position: relative; z-index: 2; }
 /* Directly-visible device shots on the home page (the three devices sit on a
    common baseline so their captions line up; not lightbox-clickable). */
 .device-setup-item .device-shot {
-  height: 360px;
+  height: 400px;
   margin: 4px 0 16px;
   display: flex;
   align-items: flex-end;
@@ -809,6 +809,9 @@ section { position: relative; z-index: 2; }
   height: auto;
   object-fit: contain;
 }
+/* iPad is the larger device — render it a touch taller than the iPhone (both
+   bottom-aligned in the same 400px box, so the captions still line up). #71 */
+.device-ipad .device-shot img { max-height: 400px; }
 
 /* Mac shot — full width on its own row (landscape), not height-capped. */
 .device-mac .device-shot { height: auto; margin-bottom: 18px; }
@@ -817,6 +820,18 @@ section { position: relative; z-index: 2; }
   max-width: 860px;
   max-height: none;
   height: auto;
+}
+/* On desktop the Mac shot breaks out wider than the reading column (matching the
+   embedded feature screenshots) so the two-page spread reads big. Capped to the
+   viewport so the slim side padding can't trigger horizontal scroll. */
+@media (min-width: 960px) {
+  .device-mac .device-shot {
+    width: calc(100% + 160px);
+    max-width: calc(100vw - 96px);
+    margin-left: -80px;
+    margin-right: -80px;
+  }
+  .device-mac .device-shot img { max-width: 100%; }
 }
 
 .device-setup-item h4 {
