@@ -443,7 +443,7 @@ const translations = {
     'features.s5.devicelist.li3': '<strong>Connected devices</strong>Every Mac, iPad, and iPhone you’ve used with sync, in an Apple-Settings-style list — name, model, and when each was last active',
     'features.s5.devicelist.li4': '<strong>Online dot</strong>A small green indicator shows which devices are awake right now',
     'features.s5.devicelist.li5': '<strong>Forget</strong>Removed a device for good? Right-click on Mac or swipe on iPhone to take it out of the list',
-    'features.s5.devicelist.p2':  'Each device updates its own activity only while the app is actually in front of you — a Mac in the background or a locked iPhone won’t claim to be online. Honest about presence; the panel reflects what you’d see if you walked over to that other device right now.',
+    'features.s5.devicelist.p2':  'Each device updates its own activity only while the app is actually in front of you — a Mac in the background or a locked iPhone won’t claim to be online.',
 
     'features.s5.storage.h':      'Readable book storage',
     'features.s5.storage.p':      'Book content is stored as clean HTML on disk. Files have human-readable names — <code>strugatskie-trudno-byt-bogom.html</code> instead of UUIDs or hashes. You can navigate your library folder in Finder, open any book with a text editor, and the content is just there.',
@@ -1446,7 +1446,7 @@ const translations = {
     'features.s5.devicelist.li3': '<strong>Подключённые устройства</strong>Каждый Mac, iPad и iPhone, использовавший синхронизацию, в списке в стиле Настроек Apple — имя, модель и время последней активности',
     'features.s5.devicelist.li4': '<strong>Зелёная точка</strong>Маленький индикатор показывает, какие устройства активны прямо сейчас',
     'features.s5.devicelist.li5': '<strong>Забыть</strong>Окончательно расстались с устройством? Контекстное меню на Mac или свайп на iPhone — и оно исчезнет из списка',
-    'features.s5.devicelist.p2':  'Каждое устройство обновляет свою активность только пока приложение действительно перед вами — Mac в фоне или заблокированный iPhone не будут утверждать, что они онлайн. Честный показ присутствия; панель отражает то, что вы увидели бы, если бы прямо сейчас подошли к другому устройству.',
+    'features.s5.devicelist.p2':  'Каждое устройство обновляет свою активность только пока приложение действительно перед вами — Mac в фоне или заблокированный iPhone не будут утверждать, что они онлайн.',
 
     'features.s5.storage.h':      'Читаемое хранилище книг',
     'features.s5.storage.p':      'Содержимое книг хранится на диске как чистый HTML. Файлы названы по-человечески: автор и название через дефисы — <code>strugatskie-trudno-byt-bogom.html</code>, а не UUID или хэши. Можете листать папку библиотеки в Finder, открывать любую книгу в текстовом редакторе — содержимое просто там.',
@@ -2241,7 +2241,7 @@ const translations = {
     'features.s5.devicelist.li3': '<strong>Підключені пристрої</strong>Кожен Mac, iPad та iPhone, що використовував синхронізацію, у списку в стилі Налаштувань Apple — ім’я, модель і час останньої активності',
     'features.s5.devicelist.li4': '<strong>Зелена цятка</strong>Маленький індикатор показує, які пристрої активні прямо зараз',
     'features.s5.devicelist.li5': '<strong>Забути</strong>Остаточно розпрощались із пристроєм? Контекстне меню на Mac або свайп на iPhone — і він зникне зі списку',
-    'features.s5.devicelist.p2':  'Кожен пристрій оновлює свою активність лише поки додаток дійсно перед вами — Mac у фоні або заблокований iPhone не претендуватиме на статус онлайн. Чесний показ присутності; панель відображає те, що ви побачили б, якби прямо зараз підійшли до іншого пристрою.',
+    'features.s5.devicelist.p2':  'Кожен пристрій оновлює свою активність лише поки додаток дійсно перед вами — Mac у фоні або заблокований iPhone не претендуватиме на статус онлайн.',
 
     'features.s5.storage.h':      'Читане сховище книг',
     'features.s5.storage.p':      'Вміст книги зберігається на диску як чистий HTML. Файли названо по-людськи: автор і назва через дефіси — <code>strugatskie-trudno-byt-bogom.html</code>, а не UUID або хеші. Ви можете блукати текою бібліотеки у Finder, відкривати будь-яку книгу текстовим редактором — і вміст просто там, на місці.',
@@ -3034,7 +3034,7 @@ const translations = {
     'features.s5.devicelist.li3': '<strong>Dispositivos conectados</strong>Cada Mac, iPad e iPhone que has usado con sincronización, en una lista al estilo Ajustes de Apple — nombre, modelo y última actividad',
     'features.s5.devicelist.li4': '<strong>Punto verde</strong>Un pequeño indicador muestra qué dispositivos están despiertos ahora mismo',
     'features.s5.devicelist.li5': '<strong>Olvidar</strong>¿Te has deshecho de un dispositivo? Clic derecho en Mac o deslizar en iPhone para sacarlo de la lista',
-    'features.s5.devicelist.p2':  'Cada dispositivo actualiza su actividad solo mientras la aplicación está realmente delante de ti — un Mac en segundo plano o un iPhone bloqueado no afirmarán estar en línea. Presencia honesta; el panel refleja lo que verías si fueras ahora mismo al otro dispositivo.',
+    'features.s5.devicelist.p2':  'Cada dispositivo actualiza su actividad solo mientras la aplicación está realmente delante de ti — un Mac en segundo plano o un iPhone bloqueado no afirmarán estar en línea.',
 
     'features.s5.storage.h':      'Almacenamiento legible de los libros',
     'features.s5.storage.p':      'El contenido de los libros se guarda como HTML limpio en disco. Los archivos llevan nombres legibles —<code>strugatskie-trudno-byt-bogom.html</code>, no UUIDs ni hashes—. Puedes explorar la carpeta de tu biblioteca en Finder, abrir cualquier libro con un editor de texto y encontrar el contenido sin más.',
@@ -3829,7 +3829,7 @@ const translations = {
     'features.s5.devicelist.li3': '<strong>Appareils connectés</strong>Chaque Mac, iPad et iPhone que vous avez utilisé avec la synchronisation, dans une liste à la manière des Réglages d’Apple — nom, modèle et dernière activité',
     'features.s5.devicelist.li4': '<strong>Point vert</strong>Un petit indicateur montre quels appareils sont actifs en ce moment',
     'features.s5.devicelist.li5': '<strong>Oublier</strong>Vous vous êtes définitivement débarrassé d’un appareil ? Clic droit sur Mac ou balayage sur iPhone pour le retirer de la liste',
-    'features.s5.devicelist.p2':  'Chaque appareil ne met à jour son activité que tant que l’application est réellement devant vous — un Mac en arrière-plan ou un iPhone verrouillé ne prétendra pas être en ligne. Présence honnête ; le panneau reflète ce que vous verriez si vous alliez sur l’autre appareil à l’instant.',
+    'features.s5.devicelist.p2':  'Chaque appareil ne met à jour son activité que tant que l’application est réellement devant vous — un Mac en arrière-plan ou un iPhone verrouillé ne prétendra pas être en ligne.',
 
     'features.s5.storage.h':      'Stockage des livres lisible',
     'features.s5.storage.p':      'Le contenu des livres est stocké en HTML propre sur le disque. Les fichiers portent des noms lisibles — <code>strugatskie-trudno-byt-bogom.html</code> plutôt que des UUID ou des hachages. Vous pouvez parcourir le dossier de votre bibliothèque dans le Finder, ouvrir n’importe quel livre dans un éditeur de texte, et le contenu est là, tel quel.',
@@ -4623,7 +4623,7 @@ const translations = {
     'features.s5.devicelist.li3': '<strong>Verbundene Geräte</strong>Jeder Mac, jedes iPad und jedes iPhone, das Sie mit Sync genutzt haben, in einer Liste im Stil der Apple-Einstellungen — Name, Modell und letzte Aktivität',
     'features.s5.devicelist.li4': '<strong>Grüner Punkt</strong>Ein kleiner Indikator zeigt, welche Geräte gerade aktiv sind',
     'features.s5.devicelist.li5': '<strong>Vergessen</strong>Sie haben sich endgültig von einem Gerät getrennt? Rechtsklick auf dem Mac oder Wischen auf dem iPhone, um es aus der Liste zu nehmen',
-    'features.s5.devicelist.p2':  'Jedes Gerät aktualisiert seine Aktivität nur, solange die App tatsächlich vor Ihnen ist — ein Mac im Hintergrund oder ein gesperrtes iPhone beansprucht nicht „online“ zu sein. Ehrliche Präsenz; das Panel spiegelt das, was Sie sehen würden, wenn Sie jetzt zum anderen Gerät gehen.',
+    'features.s5.devicelist.p2':  'Jedes Gerät aktualisiert seine Aktivität nur, solange die App tatsächlich vor Ihnen ist — ein Mac im Hintergrund oder ein gesperrtes iPhone beansprucht nicht „online“ zu sein.',
 
     'features.s5.storage.h':      'Lesbarer Buchspeicher',
     'features.s5.storage.p':      'Buchinhalte werden als sauberes HTML auf der Platte abgelegt. Dateien tragen lesbare Namen — <code>strugatskie-trudno-byt-bogom.html</code> statt UUIDs oder Hashes. Sie können den Bibliotheksordner im Finder durchgehen, jedes Buch in einem Texteditor öffnen — und der Inhalt liegt einfach da.',
