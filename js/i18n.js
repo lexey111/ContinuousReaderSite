@@ -402,8 +402,8 @@ const translations = {
 
     'features.s4.size.h':         'File size protection',
     'features.s4.size.li1':       '<strong>5 MB</strong>Warning banner, import proceeds',
-    'features.s4.size.li2':       '<strong>50 MB</strong>Hard limit, import rejected',
-    'features.s4.size.li3':       '<strong>100 MB</strong>Hard limit on decompressed size for ZIP/EPUB archives',
+    'features.s4.size.li2':       '<strong>50 MB</strong>Large-file threshold on Mac (30 / 60 MB on iPhone / iPad) — you can import anyway, or without images',
+    'features.s4.size.li3':       '<strong>100 MB</strong>Decompressed-size threshold for ZIP / EPUB archives (75 / 150 MB on iPhone / iPad)',
 
     'features.s4.opds.h':         'OPDS browser',
     'features.s4.opds.p':         'Browse online book catalogs with a native interface.',
@@ -1406,8 +1406,8 @@ const translations = {
 
     'features.s4.size.h':         'Защита по размеру файла',
     'features.s4.size.li1':       '<strong>5 МБ</strong>Предупреждающий баннер, импорт продолжается',
-    'features.s4.size.li2':       '<strong>50 МБ</strong>Жёсткий лимит, импорт отклоняется',
-    'features.s4.size.li3':       '<strong>100 МБ</strong>Жёсткий лимит на распакованный размер для архивов ZIP/EPUB',
+    'features.s4.size.li2':       '<strong>50 МБ</strong>Порог большого файла на Mac (30 / 60 МБ на iPhone / iPad) — можно импортировать всё равно или без картинок',
+    'features.s4.size.li3':       '<strong>100 МБ</strong>Порог распакованного размера для архивов ZIP / EPUB (75 / 150 МБ на iPhone / iPad)',
 
     'features.s4.opds.h':         'OPDS-браузер',
     'features.s4.opds.p':         'Листайте онлайн-каталоги книг через нативный интерфейс.',
@@ -2201,8 +2201,8 @@ const translations = {
 
     'features.s4.size.h':         'Захист за розміром файлу',
     'features.s4.size.li1':       '<strong>5 МБ</strong>Банер-попередження, імпорт триває',
-    'features.s4.size.li2':       '<strong>50 МБ</strong>Жорстка межа, імпорт відхиляється',
-    'features.s4.size.li3':       '<strong>100 МБ</strong>Жорстка межа на розмір розпакування для ZIP/EPUB-архівів',
+    'features.s4.size.li2':       '<strong>50 МБ</strong>Поріг великого файлу на Mac (30 / 60 МБ на iPhone / iPad) — можна імпортувати все одно або без зображень',
+    'features.s4.size.li3':       '<strong>100 МБ</strong>Поріг розпакованого розміру для архівів ZIP / EPUB (75 / 150 МБ на iPhone / iPad)',
 
     'features.s4.opds.h':         'OPDS-браузер',
     'features.s4.opds.p':         'Перегляд онлайн-каталогів книг із нативним інтерфейсом.',
@@ -2994,8 +2994,8 @@ const translations = {
 
     'features.s4.size.h':         'Protección por tamaño de archivo',
     'features.s4.size.li1':       '<strong>5 MB</strong>Banner de aviso, la importación sigue adelante',
-    'features.s4.size.li2':       '<strong>50 MB</strong>Límite rígido, la importación se rechaza',
-    'features.s4.size.li3':       '<strong>100 MB</strong>Límite rígido sobre el tamaño descomprimido para archivos ZIP/EPUB',
+    'features.s4.size.li2':       '<strong>50 MB</strong>Umbral de archivo grande en Mac (30 / 60 MB en iPhone / iPad) — puedes importarlo igualmente o sin imágenes',
+    'features.s4.size.li3':       '<strong>100 MB</strong>Umbral de tamaño descomprimido para archivos ZIP / EPUB (75 / 150 MB en iPhone / iPad)',
 
     'features.s4.opds.h':         'Navegador OPDS',
     'features.s4.opds.p':         'Recorre catálogos de libros en línea con una interfaz nativa.',
@@ -3789,8 +3789,8 @@ const translations = {
 
     'features.s4.size.h':         'Protection sur la taille de fichier',
     'features.s4.size.li1':       '<strong>5 Mo</strong>Bannière d’avertissement, importation poursuivie',
-    'features.s4.size.li2':       '<strong>50 Mo</strong>Plafond strict, importation rejetée',
-    'features.s4.size.li3':       '<strong>100 Mo</strong>Plafond strict sur la taille décompressée pour les archives ZIP/EPUB',
+    'features.s4.size.li2':       '<strong>50 Mo</strong>Seuil de gros fichier sur Mac (30 / 60 Mo sur iPhone / iPad) — vous pouvez importer quand même, ou sans les images',
+    'features.s4.size.li3':       '<strong>100 Mo</strong>Seuil de taille décompressée pour les archives ZIP / EPUB (75 / 150 Mo sur iPhone / iPad)',
 
     'features.s4.opds.h':         'Navigateur OPDS',
     'features.s4.opds.p':         'Parcourez les catalogues de livres en ligne avec une interface native.',
@@ -4583,8 +4583,8 @@ const translations = {
 
     'features.s4.size.h':         'Dateigrößen-Schutz',
     'features.s4.size.li1':       '<strong>5 MB</strong>Warnbanner, der Import läuft weiter',
-    'features.s4.size.li2':       '<strong>50 MB</strong>Hartes Limit — der Import wird abgelehnt',
-    'features.s4.size.li3':       '<strong>100 MB</strong>Hartes Limit für die entpackte Größe von ZIP/EPUB-Archiven',
+    'features.s4.size.li2':       '<strong>50 MB</strong>Schwelle für große Dateien auf dem Mac (30 / 60 MB auf iPhone / iPad) — Sie können trotzdem importieren, auch ohne Bilder',
+    'features.s4.size.li3':       '<strong>100 MB</strong>Schwelle für die entpackte Größe von ZIP / EPUB-Archiven (75 / 150 MB auf iPhone / iPad)',
 
     'features.s4.opds.h':         'OPDS-Browser',
     'features.s4.opds.p':         'Online-Buchkataloge mit nativer Oberfläche durchstöbern.',
