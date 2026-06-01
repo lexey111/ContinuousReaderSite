@@ -1486,7 +1486,7 @@ const translations = {
     'features.s6.iphone.h':       'iPhone',
     'features.s6.iphone.p':       'Упрощён под управление одной рукой. <strong>Компактный UI</strong>, жестовая навигация, нижние панели, папки в виде панели.',
     'features.s6.outro':          'Все три используют один и тот же ридер, одни и те же темы, типографику, перевод и Чтение вслух.',
-    'features.s6.link':           'Полная страница про платформы',
+    'features.s6.link':           'Перейти на страницу платформ',
 
     // Section 7 — Interface that fits
     'features.s7.label':          'Завершение',
