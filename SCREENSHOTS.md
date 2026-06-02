@@ -43,9 +43,12 @@ for `img/screenshots/*.webp` → 0 missing.
   `home-ipad-norton` (Norton/Terminal), `home-iphone-dark-scroll` (one theme per
   device) + lightbox dots (`theme-sepia`,
   `theme-typewriter`, `theme-terminal`, `theme-picker-modes`, `translation-panel`,
-  `library-views`, `voice-reader-highlight`).
+  `library-views`, `voice-reader-highlight`, `library-files-finder` — the
+  on-disk library in Finder, callout on the "read it with `cat`" line).
 - **Platforms (`platforms.html`):** `platforms-mac-library-table`,
-  `platforms-ipad-side-panel`, `platforms-iphone-fullscreen-clock`.
+  `platforms-ipad-side-panel`, `platforms-iphone-fullscreen-clock`, plus
+  `ipad-settings-panel` — a framed **landscape** iPad with the reading settings
+  panel open, shown inline in the "Same reader, every screen" shared section.
 - **Features (`features.html`):** themes-picker, palettes-grid, featured-themes,
   day-night-mode, two-page-spread, chapter-map, progress-drawer, bookmarks,
   search, fullscreen + fs-quick-settings / fs-quick-nav / fs-clock-island /

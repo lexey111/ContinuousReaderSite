@@ -1830,7 +1830,6 @@ code {
   font-size: 15px;
   line-height: 1.5;
   color: var(--ink-soft);
-  border-top: 1px solid var(--rule);
 }
 .platform-list li:first-child { border-top: none; }
 
@@ -1861,8 +1860,6 @@ code {
   font-style: italic;
   color: var(--ink-soft);
   margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid var(--rule);
 }
 
 .platform-divider {
@@ -1920,6 +1917,24 @@ code {
 .shared-intro strong { color: var(--ink); font-weight: 500; }
 
 .shared-list li strong { display: block; margin-bottom: 4px; }
+
+/* Framed iPad settings shot under the shared list — the device frame + shadow
+   are baked into the webp (transparent margin), so this only centers and caps
+   its width. Click opens the lightbox (wired via .device-shot in main.js). */
+.shared-shot { max-width: 100%; margin: 48px auto 0; cursor: zoom-in; }
+.shared-shot img { display: block; width: 100%; height: auto; }
+/* On wider viewports, break the landscape shot out of the 720px text column to
+   fill the whole container so it reads big. The left edge stays aligned with the
+   text column (container content edge); it just extends rightward to the
+   container edge. Capped to the container content width so it never overflows. */
+@media (min-width: 760px) {
+  .shared-shot {
+    width: calc(100vw - 96px);
+    max-width: 1104px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 /* Comparison table on platforms page */
 .table-section {
