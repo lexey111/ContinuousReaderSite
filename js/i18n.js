@@ -64,6 +64,7 @@ const translations = {
     'foot.link.contact':  'Contact',
     'foot.copy':          '© 2026 ContinuousReader. Developed by Oleksii Koshkin.',
     'foot.signoff':       'A reader’s reader.',
+    'foot.mtNote':        '',
 
     // ---------- Common (shared across pages) ----------
     'common.finalCta.title':    'Start <em>reading.</em>',
@@ -868,6 +869,7 @@ const translations = {
     'foot.link.contact':  'Связаться',
     'foot.copy':          '© 2026 ContinuousReader. Разработка — Алексей Кошкин.',
     'foot.signoff':       'Читалка для читателей.',
+    'foot.mtNote':        '',
 
     // ---------- Common ----------
     'common.finalCta.title':    'Начните <em>читать.</em>',
@@ -1663,6 +1665,7 @@ const translations = {
     'foot.link.contact':  'Звʼязатися',
     'foot.copy':          '© 2026 ContinuousReader. Розробка — Олексій Кошкін.',
     'foot.signoff':       'Читалка для читачів.',
+    'foot.mtNote':        '',
 
     // ---------- Common ----------
     'common.finalCta.title':    'Почніть <em>читати.</em>',
@@ -2456,6 +2459,7 @@ const translations = {
     'foot.link.contact':  'Contacto',
     'foot.copy':          '© 2026 ContinuousReader. Desarrollado por Oleksii Koshkin.',
     'foot.signoff':       'Para los que de verdad leen.',
+    'foot.mtNote':        '¿Alguna frase suena rara? Escríbenos a <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
 
     // ---------- Common ----------
     'common.finalCta.title':    'Empieza a <em>leer.</em>',
@@ -3251,6 +3255,7 @@ const translations = {
     'foot.link.contact':  'Contact',
     'foot.copy':          '© 2026 ContinuousReader. Développé par Oleksii Koshkin.',
     'foot.signoff':       'Pour ceux qui lisent vraiment.',
+    'foot.mtNote':        'Une tournure qui sonne faux ? Écrivez-nous à <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
 
     // ---------- Common ----------
     'common.finalCta.title':    'Commencez à <em>lire.</em>',
@@ -4045,6 +4050,7 @@ const translations = {
     'foot.link.contact':  'Kontakt',
     'foot.copy':          '© 2026 ContinuousReader. Entwickelt von Oleksii Koshkin.',
     'foot.signoff':       'Für die, die wirklich lesen.',
+    'foot.mtNote':        'Klingt eine Formulierung holprig? Schreib uns an <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>',
 
     // ---------- Common ----------
     'common.finalCta.title':    'Fang an zu <em>lesen.</em>',

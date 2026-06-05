@@ -2721,6 +2721,7 @@ code {
 
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 32px;
   border-top: 1px solid var(--rule);
@@ -2729,6 +2730,18 @@ code {
   color: var(--ink-fade);
   max-width: 1200px;
 }
+
+/* Translation-feedback invite — only the machine-translated locales (es/fr/de)
+   carry text; en/ru/uk leave the key empty, so :empty collapses the line. */
+.footer-mt-note {
+  flex: 0 0 100%;
+  margin-top: 16px;
+  font-size: 12px;
+  color: var(--ink-fade);
+  opacity: 0.8;
+}
+.footer-mt-note:empty { display: none; }
+.footer-mt-note a { color: inherit; text-decoration: underline; }
 
 /* ==========================================================
    LIGHTBOX (for screenshots)
