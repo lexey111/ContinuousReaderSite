@@ -2,7 +2,7 @@
 
 > A native multiplatform reading app for macOS, iPadOS, and iPhone. One codebase, three platform-adapted experiences. Built in Swift and SwiftUI.
 
-ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB, FB2, MOBI, HTML, TXT, RTF files (and their ZIP variants). The core value proposition is seamless reading position sync across all Apple devices via iCloud.
+ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB, FB2, MOBI, HTML, TXT, RTF and — on Mac — DOC/DOCX files (and their ZIP variants). The core value proposition is seamless reading position sync across all Apple devices via iCloud.
 
 ## Two products
 
@@ -15,8 +15,8 @@ Both share the ReaderCore engine (local Swift Package).
 
 ### Reading engine
 - WKWebView-based renderer with PositionTracker.js for precise position tracking
-- Three navigation modes: continuous scroll, single page, two-page spread (Mac)
-- 41 reading themes (5 palette families x 7 tones + featured Typewriter theme in light and dark variants + featured Terminal theme + 3 custom slots); the Typewriter theme adopts a quiet steampunk styling for its bottom bar (brass dashboard speedometer with a rolling needle on wider bars, vintage radio-dial carriage with a lit red pointer on narrower bars, copper keycaps, mechanical drum-counter read-outs)
+- Three navigation modes: continuous scroll, single page, two-page spread (Mac, iPad in landscape)
+- 41 reading themes (5 palette families x 7 tones + 3 featured themes — Typewriter, Terminal, Norton — + 3 custom slots); the Typewriter theme adopts a quiet steampunk styling for its bottom bar (brass dashboard speedometer with a rolling needle on wider bars, vintage radio-dial carriage with a lit red pointer on narrower bars, copper keycaps, mechanical drum-counter read-outs); Norton is a retro file-manager-style frame with an NC-blue bar
 - 9 system fonts (serif, sans, monospace), full typography control
 - Day & Night mode (automatic theme switching based on system appearance)
 - Reading position survives font changes, window resizes, device switches, mode switches
@@ -32,15 +32,17 @@ Both share the ReaderCore engine (local Swift Package).
 - Seamless handoff between reading and listening (same position)
 
 ### Library (ContinuousReader only)
-- Three view modes: list, cards, table
-- Virtual folders, color tags (7 colors), genres
-- OPDS catalog browser with shortcuts and watchers
+- Three view modes: list, cards (4 sizes), table (native on Mac)
+- Nested virtual folders, color tags (7 colors), genres, Trash with soft delete
+- OPDS catalog browser with shortcuts and watchers (watchers diff feeds against the library and flag books you don't own yet)
+- Mass import walking folder trees, deduplicating, and replicating the source structure as folders (Mac)
 - Book Card with 5 tabs (Cover/Info/Notes/Marks/Stats)
 - Rich text notes editor per book
+- Reading statistics dashboard + shareable HTML reports
 - Backup/restore to ZIP, custom library location (Mac)
 
 ### iCloud sync (ContinuousReader only)
-- Reading positions, bookmarks, notes, library metadata via iCloud KV Store
+- Reading positions sync in real time while reading (with an iCloud KV Store backup); bookmarks, notes, library metadata via iCloud KV Store
 - Book files via iCloud Drive
 - Master/slave model for concurrent reading (one device owns position per book)
 - Works with free iCloud tier for reading state; file sync uses iCloud Drive storage
@@ -49,7 +51,7 @@ Both share the ReaderCore engine (local Swift Package).
 ### Platform adaptations
 - **Mac**: keyboard shortcuts (F1-F10), floating panels, island design, drag-and-drop, two-page spread
 - **iPad**: swipe gestures, native sheets, external keyboard support
-- **iPhone**: one-hand-friendly, bottom tap zones, compact layouts, Dynamic Island support
+- **iPhone**: one-hand-friendly, bottom tap zones, compact layouts, notch/Dynamic Island-aware fullscreen
 
 ## Technical details
 
@@ -63,7 +65,7 @@ Both share the ReaderCore engine (local Swift Package).
 
 ## Formats supported
 
-EPUB, FB2, FB2.ZIP, MOBI, HTML, TXT, RTF, and ZIP variants of HTML/TXT/RTF.
+EPUB, FB2, FB2.ZIP, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac only), and ZIP variants of HTML/TXT/RTF/DOC.
 Footnote extraction from EPUB and FB2. Chapter extraction. Cover detection. Encoding auto-detection.
 
 ## Links
