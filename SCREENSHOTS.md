@@ -56,7 +56,7 @@ for `img/screenshots/*.webp` → 0 missing.
   library-tabs, view-list / view-card / view-table, library-search, folders,
   info-panel, bulk-ops, quick-preview, book-card-mac / -ipad / -iphone,
   import-dialog, import-ways, opds-browser, opds-filter, opds-single-import,
-  opds-batch-import, backup, location (via backup shot), sync-insights,
+  opds-batch-import, location, sync-insights,
   sync-wizard, welcome-wizard, feature-toggles, notes.
 
 ## Callouts intentionally removed (minor features, no good/safe shot)
@@ -72,3 +72,7 @@ breadcrumbs / server search / covers / In-Library badge / watchers.
 - iPad status bar shows a Spanish date on `features-notes` and
   `features-book-card-ipad` (content is English). Switch the simulator language
   to English to re-shoot if it ever bothers.
+
+> Note (2026-06-10): the built-in Backup/Restore feature was removed from the app
+> (#170 — the library folder itself is the backup), so no `features-backup` shot is
+> needed; the s5-backup section no longer has a screenshot callout.
