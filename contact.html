@@ -157,6 +157,20 @@
   </div>
 </footer>
 
+<script>
+// Preset the form subject from the app's Help-menu links (#158):
+// contact.html?mode=bug -> Bug report, ?mode=idea -> Feature request.
+// Unknown/missing values leave the form at its default.
+(function () {
+    var mode = new URLSearchParams(window.location.search).get('mode');
+    var subject = { bug: 'bug', idea: 'feature' }[mode];
+    if (!subject) return;
+    var select = document.getElementById('cf-subject');
+    if (select) select.value = subject;
+    var message = document.getElementById('cf-message');
+    if (message) message.focus();
+})();
+</script>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 
