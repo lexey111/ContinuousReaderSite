@@ -39,7 +39,7 @@ Both share the ReaderCore engine (local Swift Package).
 - Book Card with 5 tabs (Cover/Info/Notes/Marks/Stats)
 - Rich text notes editor per book
 - Reading statistics dashboard + shareable HTML reports
-- Backup/restore to ZIP, custom library location (Mac)
+- Self-contained library folder — copy it anywhere for a backup; custom library location (Mac)
 
 ### iCloud sync (ContinuousReader only)
 - Reading positions sync in real time while reading (with an iCloud KV Store backup); bookmarks, notes, library metadata via iCloud KV Store
