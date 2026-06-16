@@ -795,6 +795,15 @@ const translations = {
     'contact.form.message':    'Message',
     'contact.form.submit':     'Send message',
     'contact.note':            'You can also write directly to <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. One developer handles everything, so replies usually take a day or two — but every message gets a real answer.',
+    // --- thanks page ---
+    'meta.thanks.title': 'Thank you — ContinuousReader',
+    'meta.thanks.desc': 'Your message has been sent.',
+    'meta.thanks.ogTitle': 'Thank you — ContinuousReader',
+    'meta.thanks.ogDesc': 'Your message has been sent.',
+    'thanks.header.eyebrow': 'Message sent',
+    'thanks.header.title': 'Thank <em>you</em>.',
+    'thanks.header.subtitle': 'Your message landed in my inbox. One developer handles everything, so a reply usually takes a day or two — but every message gets a real answer.',
+    'thanks.back': 'Back to home',
 
     // ============================================================
     // PRIVACY
@@ -990,6 +999,15 @@ const translations = {
     'contact.form.message':    'Сообщение',
     'contact.form.submit':     'Отправить',
     'contact.note':            'Можно также написать напрямую на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Всё делает один разработчик, поэтому ответы обычно занимают день-два — но на каждое сообщение приходит настоящий ответ.',
+    // --- thanks page ---
+    'meta.thanks.title': 'Спасибо — ContinuousReader',
+    'meta.thanks.desc': 'Ваше сообщение отправлено.',
+    'meta.thanks.ogTitle': 'Спасибо — ContinuousReader',
+    'meta.thanks.ogDesc': 'Ваше сообщение отправлено.',
+    'thanks.header.eyebrow': 'Сообщение отправлено',
+    'thanks.header.title': 'Спасибо за <em>письмо</em>.',
+    'thanks.header.subtitle': 'Ваше сообщение у меня в почте. Всем занимается один разработчик, так что ответ обычно приходит за день-два — но на каждое сообщение я отвечаю лично.',
+    'thanks.back': 'На главную',
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Политика конфиденциальности — ContinuousReader',
@@ -1787,6 +1805,15 @@ const translations = {
     'contact.form.message':    'Повідомлення',
     'contact.form.submit':     'Надіслати',
     'contact.note':            'Можна також написати напряму на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Усім займається один розробник, тому відповіді зазвичай надходять за день-два — але на кожне повідомлення приходить справжня відповідь.',
+    // --- thanks page ---
+    'meta.thanks.title': 'Дякую — ContinuousReader',
+    'meta.thanks.desc': 'Ваше повідомлення надіслано.',
+    'meta.thanks.ogTitle': 'Дякую — ContinuousReader',
+    'meta.thanks.ogDesc': 'Ваше повідомлення надіслано.',
+    'thanks.header.eyebrow': 'Повідомлення надіслано',
+    'thanks.header.title': 'Дякую за <em>лист</em>.',
+    'thanks.header.subtitle': 'Ваше повідомлення вже в моїй пошті. Усім займається один розробник, тож відповідь зазвичай надходить за день-два — але на кожне повідомлення я відповідаю особисто.',
+    'thanks.back': 'На головну',
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Політика конфіденційності — ContinuousReader',
@@ -2582,6 +2609,15 @@ const translations = {
     'contact.form.message':    'Mensaje',
     'contact.form.submit':     'Enviar mensaje',
     'contact.note':            'También puedes escribir directamente a <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un solo desarrollador se ocupa de todo, así que las respuestas suelen tardar un día o dos — pero todo mensaje recibe una respuesta real.',
+    // --- thanks page ---
+    'meta.thanks.title': 'Gracias — ContinuousReader',
+    'meta.thanks.desc': 'Tu mensaje ha sido enviado.',
+    'meta.thanks.ogTitle': 'Gracias — ContinuousReader',
+    'meta.thanks.ogDesc': 'Tu mensaje ha sido enviado.',
+    'thanks.header.eyebrow': 'Mensaje enviado',
+    'thanks.header.title': 'Gracias por tu <em>mensaje</em>.',
+    'thanks.header.subtitle': 'Tu mensaje ya está en mi bandeja. Un solo desarrollador se encarga de todo, así que la respuesta suele tardar un día o dos — pero cada mensaje recibe una respuesta real.',
+    'thanks.back': 'Volver al inicio',
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Política de privacidad — ContinuousReader',
@@ -3379,6 +3415,15 @@ const translations = {
     'contact.form.message':    'Message',
     'contact.form.submit':     'Envoyer',
     'contact.note':            'Vous pouvez aussi écrire directement à <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un seul développeur gère tout, les réponses prennent donc généralement un ou deux jours — mais chaque message reçoit une vraie réponse.',
+    // --- thanks page ---
+    'meta.thanks.title': 'Merci — ContinuousReader',
+    'meta.thanks.desc': 'Votre message a été envoyé.',
+    'meta.thanks.ogTitle': 'Merci — ContinuousReader',
+    'meta.thanks.ogDesc': 'Votre message a été envoyé.',
+    'thanks.header.eyebrow': 'Message envoyé',
+    'thanks.header.title': 'Merci pour votre <em>message</em>.',
+    'thanks.header.subtitle': 'Votre message est bien arrivé dans ma boîte. Un seul développeur s’occupe de tout, donc une réponse prend généralement un jour ou deux — mais chaque message reçoit une vraie réponse.',
+    'thanks.back': 'Retour à l’accueil',
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Politique de confidentialité — ContinuousReader',
@@ -4175,6 +4220,15 @@ const translations = {
     'contact.form.message':    'Nachricht',
     'contact.form.submit':     'Nachricht senden',
     'contact.note':            'Du kannst auch direkt an <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a> schreiben. Ein einzelner Entwickler kümmert sich um alles, daher dauern Antworten meist einen oder zwei Tage — aber jede Nachricht bekommt eine echte Antwort.',
+    // --- thanks page ---
+    'meta.thanks.title': 'Danke — ContinuousReader',
+    'meta.thanks.desc': 'Deine Nachricht wurde gesendet.',
+    'meta.thanks.ogTitle': 'Danke — ContinuousReader',
+    'meta.thanks.ogDesc': 'Deine Nachricht wurde gesendet.',
+    'thanks.header.eyebrow': 'Nachricht gesendet',
+    'thanks.header.title': 'Danke für deine <em>Nachricht</em>.',
+    'thanks.header.subtitle': 'Deine Nachricht ist in meinem Postfach gelandet. Ein einzelner Entwickler kümmert sich um alles, daher dauert eine Antwort meist ein, zwei Tage — aber jede Nachricht bekommt eine echte Antwort.',
+    'thanks.back': 'Zurück zur Startseite',
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Datenschutz — ContinuousReader',
