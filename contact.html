@@ -69,8 +69,9 @@
 
 <section class="section reveal" style="padding-top: 0;">
   <div class="container-narrow">
-    <!-- Replace ACTION with your Formspree endpoint: https://formspree.io/f/YOUR_FORM_ID -->
-    <form action="https://formspree.io/f/PLACEHOLDER" method="POST" class="contact-form">
+    <form action="https://formspree.io/f/mjgdzyzj" method="POST" class="contact-form">
+      <!-- After a successful submit, return to the site's styled thank-you page. -->
+      <input type="hidden" name="_next" value="https://continuousreader.app/thanks.html">
       <div class="form-field">
         <label for="cf-name" data-i18n="contact.form.name">Name</label>
         <input type="text" id="cf-name" name="name" required autocomplete="name">
