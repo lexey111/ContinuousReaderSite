@@ -8,20 +8,15 @@ after going live. Items are grouped by when they need to happen.
 These are the things that should happen before the site is shared with anyone
 publicly. Most are placeholder replacements.
 
-### Replace App Store buttons
+### Replace App Store buttons — DONE (2026-07-08, 1.0.1 live)
 
-The two "Download on the App Store" buttons on `download.html` are placeholder
-text-style buttons with `href="#"`. Apple provides official SVG App Store
-badges with download / branding guidelines:
-
-- Get the badges: https://tools.applemediaservices.com/app-store/
-- Replace `<a href="#" class="path-store-button">Download on the App Store</a>`
-  with the official badge SVG (or `<img>` of the PNG).
-- Update `href` to your actual App Store URL once apps are published. Until
-  then, link to a "coming soon" page or leave as `#`.
-- Same applies to all `cta-primary` buttons that link to `download.html` —
-  these are fine to leave as page links, but the actual final purchase link
-  on `download.html` is the one that matters.
+Both buttons on `download.html` now link to the real store pages
+(`apps.apple.com/app/continuousreader/id6783733436` and
+`…/justreader/id6781187067`), each with a QR code (`img/qr-*.svg`,
+generated with segno) and a localized "scan with your iPhone or iPad"
+caption. The site's own styled button was kept instead of Apple's badge
+SVG — swap in the official badge later if desired:
+https://tools.applemediaservices.com/app-store/
 
 ### Smoke test
 

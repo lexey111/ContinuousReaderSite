@@ -2202,6 +2202,27 @@ code {
   font-style: italic;
 }
 
+.path-qr {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.path-qr img {
+  display: block;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.path-qr .path-store-button-note {
+  margin-top: 0;
+  max-width: 140px;
+  text-align: left;
+}
+
 /* Generic "section" on download page */
 .section { padding: 100px 0; position: relative; z-index: 2; }
 .section.alt-bg { background: var(--bg-deeper); }
