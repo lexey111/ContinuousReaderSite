@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="meta.contact.title">Contact — ContinuousReader</title>
-<meta name="description" data-i18n-attr="content:meta.contact.desc" content="Get in touch with the developer of ContinuousReader. Bug reports, feature requests, or just say hello.">
+<title data-i18n="meta.changelog.title">What’s New — ContinuousReader</title>
+<meta name="description" data-i18n-attr="content:meta.changelog.desc" content="ContinuousReader release history — what changed in every version.">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-<meta property="og:title" data-i18n-attr="content:meta.contact.ogTitle" content="Contact — ContinuousReader">
-<meta property="og:description" data-i18n-attr="content:meta.contact.ogDesc" content="Bug reports, feature requests, or just say hello.">
+<meta property="og:title" data-i18n-attr="content:meta.changelog.ogTitle" content="What’s New — ContinuousReader">
+<meta property="og:description" data-i18n-attr="content:meta.changelog.ogDesc" content="Release history — what changed in every version.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://continuousreader.app/img/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="ContinuousReader — a native reader for Mac, iPad, and iPhone">
 <meta property="og:site_name" content="ContinuousReader">
-<meta property="og:url" content="https://continuousreader.app/contact.html">
+<meta property="og:url" content="https://continuousreader.app/changelog.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://continuousreader.app/img/og-image.png">
-<link rel="canonical" href="https://continuousreader.app/contact.html">
+<link rel="canonical" href="https://continuousreader.app/changelog.html">
 <link rel="preload" href="fonts/source-serif-4-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/style.css?v=2">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -59,55 +59,45 @@
 
 <header class="page-header">
   <div class="container-narrow">
-    <div class="page-eyebrow" data-i18n="contact.header.eyebrow">One developer, real replies</div>
-    <h1 class="page-title" data-i18n="contact.header.title">Get in <em>touch</em>.</h1>
-    <p class="page-subtitle" data-i18n="contact.header.subtitle">
-      Bug report, feature request, or just a note about a book you’re reading.
+    <div class="page-eyebrow" data-i18n="changelog.header.eyebrow">Release history</div>
+    <h1 class="page-title" data-i18n="changelog.header.title">What’s <em>New</em></h1>
+    <p class="page-subtitle" data-i18n="changelog.header.subtitle">
+      Every ContinuousReader release, newest first. JustReader shares the reading engine, so engine changes apply to both apps.
     </p>
   </div>
 </header>
 
-<section class="section reveal" style="padding-top: 0;">
+<section class="section reveal">
   <div class="container-narrow">
-    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-      <input type="hidden" name="access_key" value="81544e5a-ff7a-448a-beb4-2a63898d005a">
-      <!-- On success Web3Forms redirects here (custom redirect is free) -->
-      <input type="hidden" name="redirect" value="https://continuousreader.app/thanks.html">
-      <!-- Honeypot: a real user never sees/ticks this; bots that do are rejected -->
-      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
-      <div class="form-field">
-        <label for="cf-name" data-i18n="contact.form.name">Name</label>
-        <input type="text" id="cf-name" name="name" required autocomplete="name">
-      </div>
-      <div class="form-field">
-        <label for="cf-email" data-i18n="contact.form.email">Email</label>
-        <input type="email" id="cf-email" name="email" required autocomplete="email">
-      </div>
-      <div class="form-field">
-        <label for="cf-subject" data-i18n="contact.form.subject">Subject</label>
-        <!-- name="subject" → Web3Forms uses it as the email subject line; the
-             value is the (English) subject text, the visible label stays
-             localized via data-i18n. -->
-        <select id="cf-subject" name="subject">
-          <option value="Bug report" data-i18n="contact.form.subj.bug">Bug report</option>
-          <option value="Feature request" data-i18n="contact.form.subj.feature">Feature request</option>
-          <option value="Question" data-i18n="contact.form.subj.question">Question</option>
-          <option value="Other" selected data-i18n="contact.form.subj.other">Other</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label for="cf-message" data-i18n="contact.form.message">Message</label>
-        <textarea id="cf-message" name="message" rows="6" required></textarea>
-      </div>
-      <button type="submit" class="form-submit" data-i18n="contact.form.submit">Send message</button>
-    </form>
+    <div class="feature-body">
 
-    <p class="contact-note" data-i18n="contact.note">
-      You can also write directly to
-      <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.
-      One developer handles everything, so replies usually take a day or
-      two — but every message gets a real answer.
-    </p>
+      <h3><span data-i18n="changelog.v11.title">1.1 “Apollo”</span> <span class="changelog-date" data-i18n="changelog.v11.date">— July 2026</span></h3>
+      <ul>
+        <li data-i18n="changelog.v11.i1">OPDS Watchers dashboard — watch catalog feeds, check in the background, import new arrivals in one click, with an import log.</li>
+        <li data-i18n="changelog.v11.i2">New badges and a New library tab collect books you haven’t started, with per-folder counts.</li>
+        <li data-i18n="changelog.v11.i3">Margins mode on Mac: the page floats as a sheet on a themed desk — wood, leather, blueprint grids or your own wallpaper.</li>
+        <li data-i18n="changelog.v11.i4">Illustrations match the theme: monochrome engravings blend into the page color, transparent line art stays transparent.</li>
+        <li data-i18n="changelog.v11.i5">Cleaner card view: more air, a cover-only mode and reading progress on the card.</li>
+        <li data-i18n="changelog.v11.i6">Native multi-select on Mac (⌘-click, ⇧-click, rubber-band) — dragging moves the whole selection.</li>
+        <li data-i18n="changelog.v11.i7">Continue Reading: reopen your last book with one shortcut or pick up where another device left off.</li>
+        <li data-i18n="changelog.v11.i8">Steadier sync: no more position rewinds after sleep; the Latest tab catches up in seconds.</li>
+        <li data-i18n="changelog.v11.i9">A What’s New screen in the app, plus many fixes and polish.</li>
+      </ul>
+
+      <h3><span data-i18n="changelog.v101.title">1.0.1</span> <span class="changelog-date" data-i18n="changelog.v101.date">— July 8, 2026</span></h3>
+      <ul>
+        <li data-i18n="changelog.v101.i1">Rock-solid two-page reading on iPad — stable across app switching and rotation.</li>
+        <li data-i18n="changelog.v101.i2">Battery indicator and configurable status sections in fullscreen.</li>
+        <li data-i18n="changelog.v101.i3">Fixed keyboard scrolling jitter with external keyboards.</li>
+        <li data-i18n="changelog.v101.i4">Safer book imports and polish throughout.</li>
+      </ul>
+
+      <h3><span data-i18n="changelog.v10.title">1.0 “Monarch”</span> <span class="changelog-date" data-i18n="changelog.v10.date">— July 7, 2026</span></h3>
+      <ul>
+        <li data-i18n="changelog.v10.i1">First public release: the library with folders and cards, the continuous reader with 41 themes, iCloud sync, OPDS catalogs, translation, Read Aloud and reading statistics — on Mac, iPad and iPhone.</li>
+      </ul>
+
+    </div><!-- .feature-body -->
   </div>
 </section>
 
@@ -140,7 +130,7 @@
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.col.product">Product</h5>
-      <ul>
+      <ul class="feature-list feature-list--inline">
         <li><a href="features.html" data-i18n="nav.features">Features</a></li>
         <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
         <li><a href="download.html" data-i18n="nav.download">Download</a></li>
@@ -148,7 +138,7 @@
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.col.info">Info</h5>
-      <ul>
+      <ul class="feature-list feature-list--inline">
         <li><a href="changelog.html" data-i18n="foot.link.changelog">What’s New</a></li>
         <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
         <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
@@ -156,7 +146,7 @@
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.col.language">Language</h5>
-      <ul>
+      <ul class="feature-list feature-list--inline">
         <li><a href="#" data-lang="en">English</a></li>
         <li><a href="#" data-lang="ru">Русский</a></li>
         <li><a href="#" data-lang="uk">Українська</a></li>
@@ -173,20 +163,6 @@
   </div>
 </footer>
 
-<script>
-// Preset the form subject from the app's Help-menu links (#158):
-// contact.html?mode=bug -> Bug report, ?mode=idea -> Feature request.
-// Unknown/missing values leave the form at its default.
-(function () {
-    var mode = new URLSearchParams(window.location.search).get('mode');
-    var subject = { bug: 'Bug report', idea: 'Feature request' }[mode];
-    if (!subject) return;
-    var select = document.getElementById('cf-subject');
-    if (select) select.value = subject;
-    var message = document.getElementById('cf-message');
-    if (message) message.focus();
-})();
-</script>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 

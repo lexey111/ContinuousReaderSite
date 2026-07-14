@@ -3064,3 +3064,39 @@ code {
 @media (max-width: 1280px) {
   .features-toc { display: none; }
 }
+
+/* Changelog page */
+.changelog-date {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-ghost);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* Comparison table on narrow screens (#3 mobile pass): the fixed 16%
+   columns + 20px paddings overflowed the phone viewport and forced a
+   horizontal scroll. Compress paddings/typography under 640px so the
+   3-column layout fits; the wrap keeps overflow-x as a last resort. */
+@media (max-width: 640px) {
+  .comparison-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .comparison-table thead th {
+    padding: 12px 8px;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+  .comparison-table thead th:not(:first-child) { width: 22%; }
+  .comparison-table tbody td {
+    padding: 9px 8px;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+  .comparison-table tbody td:first-child { font-size: 12px; }
+  .comparison-table tbody td:not(:first-child) { font-size: 14px; }
+  .comparison-table tr.divider td {
+    padding: 10px 8px;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+  }
+}
