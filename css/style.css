@@ -3100,3 +3100,7 @@ code {
     letter-spacing: 0.1em;
   }
 }
+
+/* Platform badge (Mac-only features, e.g. margins mode) */
+.badge.mac { color: var(--ink-soft); }
+.badge.mac::before { background: var(--ink-ghost); }
