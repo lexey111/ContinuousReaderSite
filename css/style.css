@@ -3104,3 +3104,22 @@ code {
 /* Platform badge (Mac-only features, e.g. margins mode) */
 .badge.mac { color: var(--ink-soft); }
 .badge.mac::before { background: var(--ink-ghost); }
+
+/* Changelog release dividers — the codename butterflies */
+.release-divider {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 64px 0 8px;
+}
+.release-divider.flip { flex-direction: row-reverse; justify-content: flex-end; }
+.release-divider h3 { margin: 0; }
+.release-butterfly {
+  height: 110px;
+  width: auto;
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .release-divider { gap: 16px; margin-top: 44px; }
+  .release-butterfly { height: 72px; }
+}
