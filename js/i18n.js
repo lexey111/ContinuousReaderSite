@@ -69,7 +69,7 @@ const translations = {
     'meta.changelog.ogDesc': 'Release history — what changed in every version.',
     'changelog.header.eyebrow': 'Release history',
     'changelog.header.title': 'What’s <em>New</em>',
-    'changelog.header.subtitle': 'Every ContinuousReader release, newest first. JustReader shares the reading engine, so engine changes apply to both apps.',
+    'changelog.header.subtitle': 'Every ContinuousReader release, newest first. JustReader and PlainReader share the reading engine, so engine changes reach all three apps.',
     'changelog.v14.i10': 'Fixes and polish throughout.',
     'changelog.v14.i9': 'JustReader: a full-fledged Settings screen, reading statistics, bookmarks and notes that survive re-imports, the Book Card, and chapter navigation right from home.',
     'changelog.v14.i8': 'Sync you can see: the waiting curtain names the book and says how fresh the other device’s position is; the readers sheet lists every device with its live position.',
@@ -126,8 +126,13 @@ const translations = {
 
     // ---------- Common (shared across pages) ----------
     'common.finalCta.title':    'Start <em>reading.</em>',
-    'common.finalCta.subtitle': 'Two apps. Read a book, or grow a library.',
+    'common.finalCta.subtitle': 'Three apps. Read a book, fill a shelf, or grow a library.',
+    'common.room.alt': 'An isometric reading room: one book open on the desk, a shelf of books on the wall, and a full bookcase',
+    'common.room.book': 'A book',
+    'common.room.shelf': 'A shelf',
+    'common.room.library': 'A library',
     'common.cta.getCR':         'Get ContinuousReader',
+    'common.cta.getPR':         'Get PlainReader',
     'common.cta.getJR':         'Get JustReader, free',
     'common.cta.tryJR':         'Or try JustReader, free',
 
@@ -203,16 +208,17 @@ const translations = {
     'index.s7.p2':      'On Mac, an <em>island design</em> borrowed from System Settings — rounded floating panels on a recessed background — with keyboard shortcuts, a Book Card that floats above the app, and drag-and-drop more or less everywhere. On iPad, real swipe actions and Split View. On iPhone, gestures built for one hand and sheets that rise from the bottom like the rest of iOS, <strong>not like a web form.</strong>',
     'index.s7.p3':      'The heavy lifting is the system’s, not ours. <strong>iCloud</strong> stores and syncs your books in your own account. <strong>Apple Translation</strong> does the in-text translation, on-device and private. <strong>The system voice engine</strong> drives Read Aloud, using the voices your Mac and iPhone already speak. We didn’t reinvent any of it — we just wired it together properly.',
 
-    'index.s8.eyebrow':  'Two apps',
-    'index.s8.h2':       'ContinuousReader <em>or</em> JustReader?',
-    'index.s8.intro':    'Two reading apps. One foundation. <strong>Your choice.</strong>',
+    'index.s8.eyebrow':  'Three apps',
+    'index.s8.h2':       'A book, a <em>shelf</em>, or a library?',
+    'index.s8.intro':    'Three reading apps on one engine: the book on your nightstand, the bookshelf, the library. <strong>Your choice.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Once, not a subscription.',
-    'index.s8.cr.desc':  'The full reading setup. Build a library, then sync your position, bookmarks, and reading settings across Mac, iPad, and iPhone. OPDS catalogs, notes, statistics, the lot. Every feature, on every device, for as long as you read.<sup>*</sup><small class="app-card-footnote">* Within the current major version. Future major releases may be a paid upgrade — never a forced re-purchase.</small>',
+    'index.s8.cr.desc':  'The full reading setup. Build a library, then sync your position, bookmarks, and reading settings across Mac, iPad, and iPhone. OPDS catalogs, notes, statistics, the lot. Every feature, on every device, for as long as you read.<sup>*</sup>',
     'index.s8.cr.cta':   'Get ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Free.</strong> Truly free.',
     'index.s8.jr.desc':  'A one-book reader. Open a file, read it, move on. Same typography, same translation, same Read Aloud — just without the library, the sync, or the bookmarks. Only the reading.',
+    'index.s8.note': '* Both paid apps: free updates within the current major version. Future major releases may be a paid upgrade — never a forced re-purchase of what you already own.',
     'index.s8.jr.cta':   'Get JustReader',
 
     // ============================================================
@@ -227,7 +233,7 @@ const translations = {
     'features.header.title':    'Features',
     'features.header.subtitle': 'A closer look at how ContinuousReader is built and what it can do.',
     'features.header.intro':    'This page is a tour, not a spec sheet. If you’re comparing reading apps on specific capabilities — formats, sync behavior, theming, translation — you’ll find them organized below. If you want a shorter overview, start with <a href="index.html">the home page</a>. If there’s something specific you need to know that isn’t here, <a href="mailto:hello@continuousreader.app">get in touch</a>.',
-    'features.header.legend':   'Features marked <span class="badge-inline cr">ContinuousReader</span> are part of the full app. Features marked <span class="badge-inline jr">JustReader</span> are also in the free single-book reader. <strong>Most of the reading experience is shared</strong>; the library, sync, and OPDS browser are ContinuousReader only.',
+    'features.header.legend':   'Features marked <span class="badge-inline cr">ContinuousReader</span> are part of the full app. Those marked <span class="badge-inline pr">PlainReader</span> are also on the bookshelf, and those marked <span class="badge-inline jr">JustReader</span> are in the free single-book reader too. <strong>Most of the reading experience is shared by all three</strong>; the library, iCloud sync, and watched OPDS feeds are ContinuousReader only.',
 
     // Section 1 — The reader
     'features.s1.label':   'Section one',
@@ -744,7 +750,7 @@ const translations = {
 
     'download.included.eyebrow':  'In the box',
     'download.included.title':    'What’s <em>included</em>.',
-    'download.included.intro':    'ContinuousReader is one purchase, no extras, no hidden costs.',
+    'download.included.intro':    'Each paid app is one purchase, no extras, no hidden costs — and iCloud sync is what ContinuousReader adds on top.',
     'download.included.li1':      '<strong>Universal Purchase</strong> — buy on any platform, use on all three (Mac, iPad, iPhone).',
     'download.included.li2':      '<strong>iCloud sync across every Apple device you own</strong> — reading positions, bookmarks, notes, and library metadata synchronize between all devices signed into the same Apple ID. Home Mac mini, work MacBook Pro, travel MacBook Air, iPad, iPhone — they all share the same library and the same reading position. Book files sync through iCloud Drive. On devices with limited storage, books can remain as cloud placeholders and download on demand when you open them — iCloud Drive’s standard behavior.',
     'download.included.li3':      '<strong>Free updates for the lifetime of the current major version</strong> — bug fixes, new themes, new features.',
@@ -763,7 +769,7 @@ const translations = {
     'download.req.note':          'Universal Purchase works with any Apple ID that owns either app. iCloud sync requires iCloud Drive enabled on all devices you want to sync (free tier is sufficient for reading state; see the <a href="#faq">FAQ below</a> for storage guidance).',
 
     'download.cmp.eyebrow':       'Side by side',
-    'download.cmp.title':         'ContinuousReader <em>or</em> JustReader?',
+    'download.cmp.title':         'A book, a <em>shelf</em>, or a library?',
     'download.pr.name': 'PlainReader',
     'download.pr.price': '$6.99',
     'download.pr.priceSub': 'once, not a subscription · Universal Purchase on Mac, iPad, iPhone',
@@ -800,7 +806,7 @@ const translations = {
     'download.faq.apr.p2': 'The reading itself is the same in all three: the same engine, typography, themes, translation and Read Aloud. What differs is how much the app helps you keep track — and that is worth paying for only when you actually have something to keep track of.',
     'index.s8.pr.name': 'PlainReader',
     'index.s8.pr.price': '<strong>$6.99</strong>. Once, not a subscription.',
-    'index.s8.pr.desc': 'A bookshelf. Up to 25 books open side by side, each keeping its own place, position, bookmarks and notes — switch with a tap. Nothing to file, sort or maintain, and everything the reader authored outlives the copy on disk.',
+    'index.s8.pr.desc': 'A bookshelf. Up to 25 books open side by side, each keeping its own place, position, bookmarks and notes — switch with a tap. Nothing to file, sort or maintain, and everything the reader authored outlives the copy on disk.<sup>*</sup>',
     'index.s8.pr.cta': 'Get PlainReader',
     'download.cmp.col.feature':   'Feature',
     'download.cmp.col.jr':        'JustReader',
@@ -844,7 +850,7 @@ const translations = {
     'download.cmp.r.recents': 'Reopen recent books where you left off',
     'download.cmp.r.recents.jr': 'Last 5 books',
     'download.cmp.r.recents.cr': 'Whole library',
-    'download.cmp.footer':        '<strong>Both apps receive bug fixes and compatibility updates.</strong>',
+    'download.cmp.footer':        '<strong>All three apps receive bug fixes and compatibility updates.</strong>',
 
     'download.faq.eyebrow':       'FAQ',
     'download.faq.title':         '<em>Questions</em>.',
@@ -953,7 +959,7 @@ const translations = {
     'privacy.net.p1':          'JustReader has essentially no network footprint — only URL import touches the network. ContinuousReader uses the network for sync and OPDS browsing when those are enabled. Specifically:',
     'privacy.net.li1':         '<strong>Sync</strong> is enabled (ContinuousReader only) — book files go through Apple iCloud Drive, bookmarks and metadata through Apple iCloud Key-Value Store, and live position updates through an encrypted realtime channel between your devices (see Sync, above, for what each path carries)',
     'privacy.net.li2':         '<strong>OPDS catalog browsing</strong> (ContinuousReader only) — you connect to third-party book catalogs you configure yourself',
-    'privacy.net.li3':         '<strong>URL import</strong> (both apps) — when you drag a URL into the import dialog to download a book file',
+    'privacy.net.li3':         '<strong>URL import</strong> (all three apps) — when you drag a URL into the import dialog to download a book file',
     'privacy.net.p2':          'During the act of reading, the only traffic is the position sync covered above — and that carries only a hashed book ID, a paragraph anchor, and a progress percentage, never any content. Translation is on-device through Apple’s Translation framework — <strong>nothing about the book itself ever leaves your device</strong>.',
     'privacy.third.h':         'Third-party services',
     'privacy.third.p':         'The apps do not integrate any third-party analytics, crash reporting, advertising, or tracking services. The external dependencies are Apple’s own frameworks (iCloud, Translation), and — only when you turn on sync — Ably (an encrypted realtime relay for your reading position) and a Cloudflare Worker (which mints short-lived tokens that let your devices connect to that relay). Both see only a random identifier we keep in your iCloud Keychain — never your name, email, or anything tied to your real identity — and neither retains the messages flowing through.',
@@ -1002,7 +1008,7 @@ const translations = {
     'meta.changelog.ogDesc': 'История релизов — что изменилось в каждой версии.',
     'changelog.header.eyebrow': 'История релизов',
     'changelog.header.title': 'Что <em>нового</em>',
-    'changelog.header.subtitle': 'Все релизы ContinuousReader, новые сверху. JustReader использует тот же движок чтения, поэтому изменения движка касаются обоих приложений.',
+    'changelog.header.subtitle': 'Каждый выпуск ContinuousReader, свежие сверху. JustReader и PlainReader используют тот же читальный движок, поэтому изменения движка приходят во все три приложения.',
     'changelog.v14.i10': 'Исправления и полировка.',
     'changelog.v14.i9': 'JustReader: полноценный экран настроек, статистика чтения, закладки и заметки, переживающие повторный импорт, карточка книги и навигация по главам с главного экрана.',
     'changelog.v14.i8': 'Видимая синхронизация: шторка ожидания называет книгу и говорит, насколько свежа позиция другого устройства; список читателей показывает живую позицию каждого.',
@@ -1059,8 +1065,13 @@ const translations = {
 
     // ---------- Common ----------
     'common.finalCta.title':    'Начните <em>читать.</em>',
-    'common.finalCta.subtitle': 'Два приложения. Прочесть книгу — или собрать библиотеку.',
+    'common.finalCta.subtitle': 'Три приложения. Прочесть книгу, заполнить полку — или собрать библиотеку.',
+    'common.room.alt': 'Изометрическая комната для чтения: одна раскрытая книга на столе, полка с книгами на стене и полный книжный шкаф',
+    'common.room.book': 'Книга',
+    'common.room.shelf': 'Полка',
+    'common.room.library': 'Библиотека',
     'common.cta.getCR':         'Загрузить ContinuousReader',
+    'common.cta.getPR':         'Загрузить PlainReader',
     'common.cta.getJR':         'Загрузить JustReader, бесплатно',
     'common.cta.tryJR':         'Или попробуйте JustReader, бесплатно',
 
@@ -1143,16 +1154,17 @@ const translations = {
     'index.s7.p3':      'Тяжёлую работу делает сама система, а не мы. <strong>iCloud</strong> хранит и синхронизирует ваши книги в вашем же аккаунте. <strong>Apple Translation</strong> переводит прямо в тексте, на устройстве и приватно. <strong>Системный голосовой движок</strong> ведёт «Чтение вслух» голосами, которыми ваш Mac и iPhone уже говорят. Мы ничего из этого не переизобретали — просто аккуратно соединили.',
 
     // ---------- Section 8 — Two apps ----------
-    'index.s8.eyebrow':  'Два приложения',
-    'index.s8.h2':       'ContinuousReader <em>или</em> JustReader?',
-    'index.s8.intro':    'Две читалки. Одна основа. <strong>Ваш выбор.</strong>',
+    'index.s8.eyebrow':  'Три приложения',
+    'index.s8.h2':       'Книга, <em>полка</em> или библиотека?',
+    'index.s8.intro':    'Три читалки на одном движке: книга на тумбочке, книжная полка, библиотека. <strong>Выбор за вами.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Один раз, не подписка.',
-    'index.s8.cr.desc':  'Всё для чтения целиком. Соберите библиотеку, а потом синхронизируйте позицию, закладки и настройки чтения между Mac, iPad и iPhone. Каталоги OPDS, заметки, статистика — всё. Каждая возможность, на каждом устройстве — столько, сколько вы читаете.<sup>*</sup><small class="app-card-footnote">* В пределах текущей мажорной версии. Будущие крупные релизы могут быть платным апгрейдом — но никогда принудительной повторной покупкой.</small>',
+    'index.s8.cr.desc':  'Всё для чтения целиком. Соберите библиотеку, а потом синхронизируйте позицию, закладки и настройки чтения между Mac, iPad и iPhone. Каталоги OPDS, заметки, статистика — всё. Каждая возможность, на каждом устройстве — столько, сколько вы читаете.<sup>*</sup>',
     'index.s8.cr.cta':   'Загрузить ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Бесплатно.</strong> По-настоящему бесплатно.',
     'index.s8.jr.desc':  'Читалка на одну книгу. Открыли файл, прочитали, пошли дальше. Та же типографика, тот же перевод, то же «Чтение вслух» — только без библиотеки, синхронизации и закладок. Одно лишь чтение.',
+    'index.s8.note': '* Оба платных приложения: бесплатные обновления в пределах текущей мажорной версии. Будущие крупные релизы могут быть платным апгрейдом — но никогда принудительной повторной покупкой того, что у вас уже есть.',
     'index.s8.jr.cta':   'Загрузить JustReader',
 
     // ---------- Contact page ----------
@@ -1196,7 +1208,7 @@ const translations = {
     'privacy.header.subtitle': 'Обновлено: май 2026',
 
     'privacy.short.h':         'Коротко',
-    'privacy.short.p':         'ContinuousReader и JustReader не собирают, не анализируют и не продают никаких персональных данных. <strong>Никакой аналитики, никакой телеметрии, никакого трекинга, никакой рекламы.</strong> Ваши данные остаются с вами — на ваших собственных устройствах, в вашем собственном iCloud-аккаунте, если вы включили синхронизацию, и кратковременно «в полёте» между вашими устройствами, когда синхронизация передаёт свежую позицию чтения с одного устройства на другое. Больше нигде и ничего.',
+    'privacy.short.p':         'ContinuousReader, PlainReader и JustReader не собирают, не анализируют и не продают никаких персональных данных. <strong>Никакой аналитики, никакой телеметрии, никакого трекинга, никакой рекламы.</strong> Ваши данные остаются с вами — на ваших собственных устройствах, в вашем собственном iCloud-аккаунте, если вы включили синхронизацию, и кратковременно «в полёте» между вашими устройствами, когда синхронизация передаёт свежую позицию чтения с одного устройства на другое. Больше нигде и ничего.',
 
     'privacy.local.h':         'Данные на вашем устройстве',
     'privacy.local.p':         'Все данные приложения хранятся локально на вашем устройстве:',
@@ -1216,7 +1228,7 @@ const translations = {
     'privacy.net.p1':          'JustReader практически не использует сеть — только импорт книг по URL обращается к сети. ContinuousReader использует сеть для синхронизации и просмотра OPDS-каталогов, когда они включены. Конкретно:',
     'privacy.net.li1':         '<strong>Синхронизация</strong> включена (только ContinuousReader) — файлы книг идут через Apple iCloud Drive, закладки и метаданные — через Apple iCloud Key-Value Store, а живые обновления позиции — через зашифрованный realtime-канал между вашими устройствами (см. «Синхронизация» выше для деталей по каждому маршруту)',
     'privacy.net.li2':         '<strong>Просмотр OPDS-каталога</strong> (только ContinuousReader) — вы подключаетесь к каталогам третьих сторон, которые сами настраиваете',
-    'privacy.net.li3':         '<strong>Импорт по URL</strong> (оба приложения) — когда вы перетаскиваете URL в диалог импорта, чтобы скачать файл книги',
+    'privacy.net.li3':         '<strong>Импорт по URL</strong> (все три приложения) — когда вы перетаскиваете URL в диалог импорта, чтобы скачать файл книги',
     'privacy.net.p2':          'Во время самого чтения единственный сетевой трафик — это синхронизация позиции, описанная выше, и она передаёт только хэшированный идентификатор книги, якорь абзаца и процент прочитанного, никакого контента. Перевод работает on-device через Apple Translation framework — <strong>ничто о самой книге не покидает ваше устройство</strong>.',
 
     'privacy.third.h':         'Сторонние сервисы',
@@ -1256,7 +1268,7 @@ const translations = {
 
     'download.included.eyebrow':  'В комплекте',
     'download.included.title':    '<em>Что входит</em>.',
-    'download.included.intro':    'ContinuousReader — это одна покупка, без дополнений и скрытых расходов.',
+    'download.included.intro':    'Каждое платное приложение — одна покупка, без дополнений и скрытых расходов; синхронизация iCloud — то, что ContinuousReader добавляет сверху.',
     'download.included.li1':      '<strong>Универсальная покупка</strong> — покупаете на любой платформе, используете на всех трёх (Mac, iPad, iPhone).',
     'download.included.li2':      '<strong>Синхронизация через iCloud между всеми вашими Apple-устройствами</strong> — позиции чтения, закладки, заметки и метаданные библиотеки синхронизируются между всеми устройствами под одним Apple ID. Домашний Mac mini, рабочий MacBook Pro, дорожный MacBook Air, iPad, iPhone — у всех одна и та же библиотека и одна и та же позиция чтения. Файлы книг синхронизируются через iCloud Drive. На устройствах с ограниченным местом книги могут оставаться облачными плейсхолдерами и подгружаться по запросу при открытии — стандартное поведение iCloud Drive.',
     'download.included.li3':      '<strong>Бесплатные обновления в пределах текущей мажорной версии</strong> — исправления багов, новые темы, новые функции.',
@@ -1275,7 +1287,7 @@ const translations = {
     'download.req.note':          'Универсальная покупка работает с любым Apple ID, владеющим одним из приложений. Для синхронизации через iCloud требуется включённый iCloud Drive на всех устройствах, которые нужно синхронизировать (бесплатного тарифа достаточно для состояния чтения; см. <a href="#faq">FAQ ниже</a> по объёму хранилища).',
 
     'download.cmp.eyebrow':       'Сравнение',
-    'download.cmp.title':         'ContinuousReader <em>или</em> JustReader?',
+    'download.cmp.title':         'Книга, <em>полка</em> или библиотека?',
     'download.pr.name': 'PlainReader',
     'download.pr.price': '$6,99',
     'download.pr.priceSub': 'один раз, не подписка · универсальная покупка для Mac, iPad, iPhone',
@@ -1312,7 +1324,7 @@ const translations = {
     'download.faq.apr.p2': 'Само чтение во всех трёх одинаково: тот же движок, типографика, темы, перевод и чтение вслух. Отличается лишь то, насколько приложение помогает не терять нить, — а за это стоит платить, только когда действительно есть что не терять.',
     'index.s8.pr.name': 'PlainReader',
     'index.s8.pr.price': '<strong>$6,99</strong>. Разово, не подписка.',
-    'index.s8.pr.desc': 'Книжная полка. До 25 книг рядом, у каждой своё место, позиция, закладки и заметки — переключение в один тап. Ничего не нужно раскладывать, сортировать и обслуживать, а всё, что написал читатель, переживает копию на диске.',
+    'index.s8.pr.desc': 'Книжная полка. До 25 книг рядом, у каждой своё место, позиция, закладки и заметки — переключение в один тап. Ничего не нужно раскладывать, сортировать и обслуживать, а всё, что написал читатель, переживает копию на диске.<sup>*</sup>',
     'index.s8.pr.cta': 'Получить PlainReader',
     'download.cmp.col.feature':   'Функция',
     'download.cmp.col.jr':        'JustReader',
@@ -1356,7 +1368,7 @@ const translations = {
     'download.cmp.r.recents': 'Недавние книги открываются там, где вы остановились',
     'download.cmp.r.recents.jr': '5 последних книг',
     'download.cmp.r.recents.cr': 'Вся библиотека',
-    'download.cmp.footer':        '<strong>Оба приложения получают исправления багов и обновления совместимости.</strong>',
+    'download.cmp.footer':        '<strong>Все три приложения получают исправления багов и обновления совместимости.</strong>',
 
     'download.faq.eyebrow':       'FAQ',
     'download.faq.title':         '<em>Вопросы</em>.',
@@ -1412,7 +1424,7 @@ const translations = {
     'features.header.title':    'Возможности',
     'features.header.subtitle': 'Подробнее о том, как устроен ContinuousReader и что он умеет.',
     'features.header.intro':    'Это не сухой перечень характеристик, а обзорная экскурсия. Если вы сравниваете приложения для чтения по конкретным возможностям — форматы, поведение синхронизации, темы, перевод — всё это найдётся ниже. Если нужен более краткий обзор, начните с <a href="index.html">главной страницы</a>. Если вам важно что-то конкретное, чего здесь нет, <a href="mailto:hello@continuousreader.app">напишите</a>.',
-    'features.header.legend':   'Возможности, отмеченные <span class="badge-inline cr">ContinuousReader</span>, входят в полное приложение. Возможности, отмеченные <span class="badge-inline jr">JustReader</span>, есть и в бесплатной однокнижной читалке. <strong>Большая часть опыта чтения общая</strong>; библиотека, синхронизация и OPDS-браузер — только в ContinuousReader.',
+    'features.header.legend':   'Возможности, отмеченные <span class="badge-inline cr">ContinuousReader</span>, входят в полное приложение. Отмеченные <span class="badge-inline pr">PlainReader</span> есть и на книжной полке, а отмеченные <span class="badge-inline jr">JustReader</span> — и в бесплатной однокнижной читалке. <strong>Большая часть опыта чтения общая для всех трёх</strong>; библиотека, синхронизация iCloud и наблюдение за лентами OPDS — только в ContinuousReader.',
 
     // Section 1 — The reader
     'features.s1.label':   'Раздел первый',
@@ -1926,7 +1938,7 @@ const translations = {
     'meta.changelog.ogDesc': 'Історія релізів — що змінилося в кожній версії.',
     'changelog.header.eyebrow': 'Історія релізів',
     'changelog.header.title': 'Що <em>нового</em>',
-    'changelog.header.subtitle': 'Усі релізи ContinuousReader, найновіші згори. JustReader використовує той самий рушій читання, тож зміни рушія стосуються обох застосунків.',
+    'changelog.header.subtitle': 'Кожен випуск ContinuousReader, свіжі згори. JustReader і PlainReader використовують той самий читальний рушій, тож зміни рушія приходять в усі три застосунки.',
     'changelog.v14.i10': 'Виправлення та поліпшення.',
     'changelog.v14.i9': 'JustReader: повноцінний екран налаштувань, статистика читання, закладки й нотатки, що переживають повторний імпорт, картка книги та навігація за розділами з головного екрана.',
     'changelog.v14.i8': 'Видима синхронізація: шторка очікування називає книгу й каже, наскільки свіжа позиція іншого пристрою; список читачів показує живу позицію кожного.',
@@ -1983,8 +1995,13 @@ const translations = {
 
     // ---------- Common ----------
     'common.finalCta.title':    'Почніть <em>читати.</em>',
-    'common.finalCta.subtitle': 'Два застосунки. Прочитати книгу — або зібрати бібліотеку.',
+    'common.finalCta.subtitle': 'Три застосунки. Прочитати книгу, заповнити полицю — або зібрати бібліотеку.',
+    'common.room.alt': 'Ізометрична кімната для читання: одна розгорнута книга на столі, полиця з книгами на стіні й повна книжкова шафа',
+    'common.room.book': 'Книга',
+    'common.room.shelf': 'Полиця',
+    'common.room.library': 'Бібліотека',
     'common.cta.getCR':         'Завантажити ContinuousReader',
+    'common.cta.getPR':         'Завантажити PlainReader',
     'common.cta.getJR':         'Завантажити JustReader, безкоштовно',
     'common.cta.tryJR':         'Або спробуйте JustReader, безкоштовно',
 
@@ -2067,16 +2084,17 @@ const translations = {
     'index.s7.p3':      'Важку роботу робить сама система, а не ми. <strong>iCloud</strong> зберігає та синхронізує ваші книги у вашому ж акаунті. <strong>Apple Translation</strong> перекладає прямо в тексті, на пристрої та приватно. <strong>Системний голосовий рушій</strong> веде «Читання вголос» голосами, якими ваш Mac та iPhone уже говорять. Ми нічого з цього не переробляли — просто акуратно зʼєднали.',
 
     // ---------- Section 8 — Two apps ----------
-    'index.s8.eyebrow':  'Два застосунки',
-    'index.s8.h2':       'ContinuousReader <em>чи</em> JustReader?',
-    'index.s8.intro':    'Дві читалки. Одна основа. <strong>Ваш вибір.</strong>',
+    'index.s8.eyebrow':  'Три застосунки',
+    'index.s8.h2':       'Книга, <em>полиця</em> чи бібліотека?',
+    'index.s8.intro':    'Три читалки на одному рушії: книга на тумбочці, книжкова полиця, бібліотека. <strong>Вибір за вами.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Один раз, не підписка.',
-    'index.s8.cr.desc':  'Усе для читання повністю. Зберіть бібліотеку, а потім синхронізуйте позицію, закладки та налаштування читання між Mac, iPad та iPhone. Каталоги OPDS, нотатки, статистика — усе. Кожна можливість, на кожному пристрої — стільки, скільки ви читаєте.<sup>*</sup><small class="app-card-footnote">* У межах поточної мажорної версії. Майбутні великі релізи можуть бути платним апґрейдом — але ніколи примусовою повторною купівлею.</small>',
+    'index.s8.cr.desc':  'Усе для читання повністю. Зберіть бібліотеку, а потім синхронізуйте позицію, закладки та налаштування читання між Mac, iPad та iPhone. Каталоги OPDS, нотатки, статистика — усе. Кожна можливість, на кожному пристрої — стільки, скільки ви читаєте.<sup>*</sup>',
     'index.s8.cr.cta':   'Завантажити ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Безкоштовно.</strong> По-справжньому безкоштовно.',
     'index.s8.jr.desc':  'Читалка на одну книгу. Відкрили файл, прочитали, пішли далі. Та сама типографіка, той самий переклад, те саме «Читання вголос» — лише без бібліотеки, синхронізації та закладок. Тільки читання.',
+    'index.s8.note': '* Обидва платні застосунки: безкоштовні оновлення в межах поточної мажорної версії. Майбутні великі релізи можуть бути платним оновленням — але ніколи примусовою повторною покупкою того, що у вас уже є.',
     'index.s8.jr.cta':   'Завантажити JustReader',
 
     // ---------- Contact page ----------
@@ -2120,7 +2138,7 @@ const translations = {
     'privacy.header.subtitle': 'Оновлено: травень 2026',
 
     'privacy.short.h':         'Коротко',
-    'privacy.short.p':         'ContinuousReader і JustReader не збирають, не аналізують і не продають жодних персональних даних. <strong>Жодної аналітики, жодної телеметрії, жодного трекінгу, жодної реклами.</strong> Ваші дані залишаються з вами — на ваших власних пристроях, у вашому власному iCloud-акаунті, якщо ви ввімкнули синхронізацію, і коротко «в польоті» між вашими пристроями, коли синхронізація передає свіжу позицію читання з одного на інший. Більше ніде і нічого.',
+    'privacy.short.p':         'ContinuousReader, PlainReader і JustReader не збирають, не аналізують і не продають жодних персональних даних. <strong>Жодної аналітики, жодної телеметрії, жодного трекінгу, жодної реклами.</strong> Ваші дані залишаються з вами — на ваших власних пристроях, у вашому власному iCloud-акаунті, якщо ви ввімкнули синхронізацію, і коротко «в польоті» між вашими пристроями, коли синхронізація передає свіжу позицію читання з одного на інший. Більше ніде і нічого.',
 
     'privacy.local.h':         'Дані на вашому пристрої',
     'privacy.local.p':         'Усі дані застосунку зберігаються локально на вашому пристрої:',
@@ -2140,7 +2158,7 @@ const translations = {
     'privacy.net.p1':          'JustReader практично не використовує мережу — лише імпорт книг за URL звертається до мережі. ContinuousReader використовує мережу для синхронізації та перегляду OPDS-каталогів, коли вони ввімкнені. Конкретно:',
     'privacy.net.li1':         '<strong>Синхронізація</strong> ввімкнена (лише ContinuousReader) — файли книг ідуть через Apple iCloud Drive, закладки і метадані — через Apple iCloud Key-Value Store, а живі оновлення позиції — через зашифрований realtime-канал між вашими пристроями (див. «Синхронізація» вище для деталей по кожному маршруту)',
     'privacy.net.li2':         '<strong>Перегляд OPDS-каталогу</strong> (лише ContinuousReader) — ви підключаєтеся до каталогів третіх сторін, які налаштовуєте самі',
-    'privacy.net.li3':         '<strong>Імпорт за URL</strong> (обидва застосунки) — коли ви перетягуєте URL у діалог імпорту, щоб завантажити файл книги',
+    'privacy.net.li3':         '<strong>Імпорт за URL</strong> (усі три застосунки) — коли ви перетягуєте URL у діалог імпорту, щоб завантажити файл книги',
     'privacy.net.p2':          'Під час самого читання єдиний мережевий трафік — це синхронізація позиції, описана вище, і вона передає лише хешований ідентифікатор книги, якір абзацу та відсоток прочитаного, жодного вмісту. Переклад працює on-device через Apple Translation framework — <strong>ніщо про саму книгу не покидає ваш пристрій</strong>.',
 
     'privacy.third.h':         'Сторонні сервіси',
@@ -2180,7 +2198,7 @@ const translations = {
 
     'download.included.eyebrow':  'У комплекті',
     'download.included.title':    '<em>Що входить</em>.',
-    'download.included.intro':    'ContinuousReader — це одна купівля, без додатків і прихованих витрат.',
+    'download.included.intro':    'Кожен платний застосунок — одна покупка, без доповнень і прихованих витрат; синхронізація iCloud — те, що ContinuousReader додає згори.',
     'download.included.li1':      '<strong>Універсальна купівля</strong> — купуєте на будь-якій платформі, використовуєте на всіх трьох (Mac, iPad, iPhone).',
     'download.included.li2':      '<strong>Синхронізація через iCloud між усіма вашими Apple-пристроями</strong> — позиції читання, закладки, нотатки і метадані бібліотеки синхронізуються між усіма пристроями під одним Apple ID. Домашній Mac mini, робочий MacBook Pro, дорожній MacBook Air, iPad, iPhone — у всіх та сама бібліотека і та сама позиція читання. Файли книг синхронізуються через iCloud Drive. На пристроях з обмеженим місцем книги можуть залишатися хмарними плейсхолдерами і завантажуватися на вимогу при відкритті — стандартна поведінка iCloud Drive.',
     'download.included.li3':      '<strong>Безкоштовні оновлення в межах поточної мажорної версії</strong> — виправлення багів, нові теми, нові функції.',
@@ -2199,7 +2217,7 @@ const translations = {
     'download.req.note':          'Універсальна купівля працює з будь-яким Apple ID, який володіє одним із застосунків. Для синхронізації через iCloud потрібен увімкнений iCloud Drive на всіх пристроях, які потрібно синхронізувати (безкоштовного тарифу достатньо для стану читання; див. <a href="#faq">FAQ нижче</a> щодо обсягу сховища).',
 
     'download.cmp.eyebrow':       'Порівняння',
-    'download.cmp.title':         'ContinuousReader <em>чи</em> JustReader?',
+    'download.cmp.title':         'Книга, <em>полиця</em> чи бібліотека?',
     'download.pr.name': 'PlainReader',
     'download.pr.price': '$6,99',
     'download.pr.priceSub': 'один раз, не передплата · універсальна покупка для Mac, iPad, iPhone',
@@ -2236,7 +2254,7 @@ const translations = {
     'download.faq.apr.p2': 'Саме читання в усіх трьох однакове: той самий рушій, типографіка, теми, переклад і читання вголос. Відрізняється лише те, наскільки застосунок допомагає не губити нитку, — а за це варто платити, лише коли справді є що не губити.',
     'index.s8.pr.name': 'PlainReader',
     'index.s8.pr.price': '<strong>$6,99</strong>. Разово, не передплата.',
-    'index.s8.pr.desc': 'Книжкова полиця. До 25 книг поруч, у кожної своє місце, позиція, закладки й нотатки — перемикання в один дотик. Нічого не треба розкладати, сортувати й обслуговувати, а все, що написав читач, переживає копію на диску.',
+    'index.s8.pr.desc': 'Книжкова полиця. До 25 книг поруч, у кожної своє місце, позиція, закладки й нотатки — перемикання в один дотик. Нічого не треба розкладати, сортувати й обслуговувати, а все, що написав читач, переживає копію на диску.<sup>*</sup>',
     'index.s8.pr.cta': 'Отримати PlainReader',
     'download.cmp.col.feature':   'Функція',
     'download.cmp.col.jr':        'JustReader',
@@ -2280,7 +2298,7 @@ const translations = {
     'download.cmp.r.recents': 'Нещодавні книги відкриваються там, де ви зупинилися',
     'download.cmp.r.recents.jr': '5 останніх книг',
     'download.cmp.r.recents.cr': 'Уся бібліотека',
-    'download.cmp.footer':        '<strong>Обидва застосунки отримують виправлення багів і оновлення сумісності.</strong>',
+    'download.cmp.footer':        '<strong>Усі три застосунки отримують виправлення багів і оновлення сумісності.</strong>',
 
     'download.faq.eyebrow':       'FAQ',
     'download.faq.title':         '<em>Питання</em>.',
@@ -2336,7 +2354,7 @@ const translations = {
     'features.header.title':    'Можливості',
     'features.header.subtitle': 'Детальний погляд на те, як побудовано ContinuousReader і що він уміє.',
     'features.header.intro':    'Ця сторінка — оглядова екскурсія, а не специфікація. Якщо ви порівнюєте читалки за конкретними можливостями — формати, синхронізація, теми, переклад — усе впорядковано нижче. Якщо потрібен коротший огляд, почніть із <a href="index.html">головної сторінки</a>. Якщо вам бракує чогось конкретного, чого тут немає, <a href="mailto:hello@continuousreader.app">напишіть нам</a>.',
-    'features.header.legend':   'Можливості, позначені <span class="badge-inline cr">ContinuousReader</span>, належать повній версії застосунку. Можливості з міткою <span class="badge-inline jr">JustReader</span> доступні і в безкоштовному читачі однієї книги. <strong>Більшість читацького досвіду спільна</strong>; бібліотека, синхронізація та OPDS-браузер — тільки в ContinuousReader.',
+    'features.header.legend':   'Можливості, позначені <span class="badge-inline cr">ContinuousReader</span>, належать повній версії застосунку. Позначені <span class="badge-inline pr">PlainReader</span> є й на книжковій полиці, а позначені <span class="badge-inline jr">JustReader</span> — і в безкоштовному читачі однієї книги. <strong>Більшість читацького досвіду спільна для всіх трьох</strong>; бібліотека, синхронізація iCloud і спостереження за стрічками OPDS — тільки в ContinuousReader.',
 
     // Section 1 — The reader
     'features.s1.label':   'Розділ перший',
@@ -2848,7 +2866,7 @@ const translations = {
     'meta.changelog.ogDesc': 'Historial de versiones: qué cambió en cada versión.',
     'changelog.header.eyebrow': 'Historial de versiones',
     'changelog.header.title': '<em>Novedades</em>',
-    'changelog.header.subtitle': 'Todas las versiones de ContinuousReader, las más recientes primero. JustReader comparte el motor de lectura, así que los cambios del motor se aplican a ambas apps.',
+    'changelog.header.subtitle': 'Cada versión de ContinuousReader, la más reciente arriba. JustReader y PlainReader comparten el motor de lectura, así que los cambios del motor llegan a las tres apps.',
     'changelog.v14.i10': 'Correcciones y pulido.',
     'changelog.v14.i9': 'JustReader: una pantalla de ajustes completa, estadísticas de lectura, marcadores y notas que sobreviven a la reimportación, la ficha del libro y navegación por capítulos desde el inicio.',
     'changelog.v14.i8': 'Sincronización visible: la cortina de espera nombra el libro y dice cuán reciente es la posición del otro dispositivo; la lista de lectores muestra la posición en vivo de cada uno.',
@@ -2905,8 +2923,13 @@ const translations = {
 
     // ---------- Common ----------
     'common.finalCta.title':    'Empieza a <em>leer.</em>',
-    'common.finalCta.subtitle': 'Dos apps. Lee un libro, o construye una biblioteca.',
+    'common.finalCta.subtitle': 'Tres apps. Lee un libro, llena una estantería o construye una biblioteca.',
+    'common.room.alt': 'Una sala de lectura isométrica: un libro abierto sobre el escritorio, una estantería de libros en la pared y una librería llena',
+    'common.room.book': 'Un libro',
+    'common.room.shelf': 'Una estantería',
+    'common.room.library': 'Una biblioteca',
     'common.cta.getCR':         'Obtén ContinuousReader',
+    'common.cta.getPR':         'Obtén PlainReader',
     'common.cta.getJR':         'Obtén JustReader, gratis',
     'common.cta.tryJR':         'O prueba JustReader, gratis',
 
@@ -2989,16 +3012,17 @@ const translations = {
     'index.s7.p3':      'El trabajo pesado es del sistema, no nuestro. <strong>iCloud</strong> almacena y sincroniza tus libros en tu propia cuenta. <strong>Apple Translation</strong> se encarga de la traducción dentro del texto, en el dispositivo y privada. <strong>El motor de voz del sistema</strong> impulsa la Lectura en voz alta, con las voces que tu Mac y tu iPhone ya hablan. No reinventamos nada — solo lo conectamos todo como es debido.',
 
     // ---------- Section 8 — Two apps ----------
-    'index.s8.eyebrow':  'Dos apps',
-    'index.s8.h2':       '¿ContinuousReader <em>o</em> JustReader?',
-    'index.s8.intro':    'Dos apps de lectura. Una base. <strong>Tu elección.</strong>',
+    'index.s8.eyebrow':  'Tres apps',
+    'index.s8.h2':       '¿Un libro, una <em>estantería</em> o una biblioteca?',
+    'index.s8.intro':    'Tres apps de lectura sobre un mismo motor: el libro de la mesilla, la estantería, la biblioteca. <strong>Tú eliges.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Una sola vez, no es suscripción.',
-    'index.s8.cr.desc':  'La experiencia de lectura completa. Construye una biblioteca y luego sincroniza tu posición, marcadores y ajustes de lectura entre Mac, iPad e iPhone. Catálogos OPDS, notas, estadísticas, todo. Cada función, en cada dispositivo, durante todo el tiempo que leas.<sup>*</sup><small class="app-card-footnote">* Dentro de la versión principal actual. Las futuras versiones principales pueden ser una actualización de pago — nunca una recompra forzada.</small>',
+    'index.s8.cr.desc':  'La experiencia de lectura completa. Construye una biblioteca y luego sincroniza tu posición, marcadores y ajustes de lectura entre Mac, iPad e iPhone. Catálogos OPDS, notas, estadísticas, todo. Cada función, en cada dispositivo, durante todo el tiempo que leas.<sup>*</sup>',
     'index.s8.cr.cta':   'Obtén ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Gratis.</strong> De verdad gratis.',
     'index.s8.jr.desc':  'Un lector de un solo libro. Abre un archivo, léelo, sigue adelante. La misma tipografía, la misma traducción, la misma Lectura en voz alta — solo que sin la biblioteca, la sincronización ni los marcadores. Solo la lectura.',
+    'index.s8.note': '* Ambas apps de pago: actualizaciones gratuitas dentro de la versión principal actual. Las futuras versiones mayores pueden ser una actualización de pago, nunca una recompra forzada de lo que ya tienes.',
     'index.s8.jr.cta':   'Obtén JustReader',
 
     // ---------- Contact page ----------
@@ -3062,7 +3086,7 @@ const translations = {
     'privacy.net.p1':          'JustReader prácticamente no usa la red — solo la importación por URL accede a la red. ContinuousReader usa la red para sincronización y navegación de catálogos OPDS cuando las activas. En concreto:',
     'privacy.net.li1':         '<strong>La sincronización</strong> está activada (solo ContinuousReader) — los archivos de libros van por Apple iCloud Drive, marcadores y metadatos por Apple iCloud Key-Value Store, y las actualizaciones de posición en vivo por un canal en tiempo real cifrado entre tus dispositivos (ver Sincronización arriba para qué transporta cada vía)',
     'privacy.net.li2':         '<strong>Navegación de catálogos OPDS</strong> (solo ContinuousReader) — te conectas a catálogos de libros de terceros que configuras tú mismo',
-    'privacy.net.li3':         '<strong>Importación por URL</strong> (ambas apps) — cuando arrastras una URL al diálogo de importación para descargar un archivo de libro',
+    'privacy.net.li3':         '<strong>Importación por URL</strong> (las tres apps) — cuando arrastras una URL al diálogo de importación para descargar un archivo de libro',
     'privacy.net.p2':          'Durante la lectura propiamente dicha, el único tráfico es la sincronización de posición descrita arriba — y solo transporta un identificador hasheado del libro, un anclaje de párrafo y un porcentaje de progreso, sin contenido. La traducción usa el framework Translation de Apple en el dispositivo — <strong>nada del libro mismo sale de tu dispositivo</strong>.',
 
     'privacy.third.h':         'Servicios de terceros',
@@ -3102,7 +3126,7 @@ const translations = {
 
     'download.included.eyebrow':  'En la caja',
     'download.included.title':    '<em>Qué incluye</em>.',
-    'download.included.intro':    'ContinuousReader es una sola compra, sin extras, sin costes ocultos.',
+    'download.included.intro':    'Cada app de pago es una sola compra, sin extras ni costes ocultos; la sincronización con iCloud es lo que añade ContinuousReader.',
     'download.included.li1':      '<strong>Compra Universal</strong> — compra en cualquier plataforma, úsalo en las tres (Mac, iPad, iPhone).',
     'download.included.li2':      '<strong>Sincronización iCloud en cada dispositivo Apple que tengas</strong> — posiciones de lectura, marcadores, notas y metadatos de biblioteca se sincronizan entre todos los dispositivos con sesión iniciada en el mismo Apple ID. Mac mini de casa, MacBook Pro del trabajo, MacBook Air de viaje, iPad, iPhone — todos comparten la misma biblioteca y la misma posición de lectura. Los archivos de libros se sincronizan por iCloud Drive. En dispositivos con espacio limitado, los libros pueden mantenerse como marcadores de posición en la nube y descargarse bajo demanda cuando los abres — comportamiento estándar de iCloud Drive.',
     'download.included.li3':      '<strong>Actualizaciones gratuitas durante la vida de la versión principal actual</strong> — corrección de bugs, nuevos temas, nuevas funciones.',
@@ -3121,7 +3145,7 @@ const translations = {
     'download.req.note':          'Compra Universal funciona con cualquier Apple ID que posea cualquiera de las apps. La sincronización iCloud requiere iCloud Drive activado en todos los dispositivos que quieras sincronizar (el plan gratuito basta para el estado de lectura; consulta las <a href="#faq">FAQ más abajo</a> para orientación sobre almacenamiento).',
 
     'download.cmp.eyebrow':       'Lado a lado',
-    'download.cmp.title':         '¿ContinuousReader <em>o</em> JustReader?',
+    'download.cmp.title':         '¿Un libro, una <em>estantería</em> o una biblioteca?',
     'download.pr.name': 'PlainReader',
     'download.pr.price': '6,99 $',
     'download.pr.priceSub': 'una vez, no una suscripción · compra universal en Mac, iPad, iPhone',
@@ -3158,7 +3182,7 @@ const translations = {
     'download.faq.apr.p2': 'La lectura en sí es idéntica en las tres: el mismo motor, tipografía, temas, traducción y lectura en voz alta. Lo que cambia es cuánto te ayuda la app a no perder el hilo, y eso solo vale la pena pagarlo cuando de verdad hay algo que no perder.',
     'index.s8.pr.name': 'PlainReader',
     'index.s8.pr.price': '<strong>6,99 $</strong>. Una vez, no una suscripción.',
-    'index.s8.pr.desc': 'Una estantería. Hasta 25 libros uno al lado del otro, cada uno con su sitio, posición, marcadores y notas: cambia con un toque. Nada que archivar, ordenar ni mantener, y todo lo que escribe el lector sobrevive a la copia en disco.',
+    'index.s8.pr.desc': 'Una estantería. Hasta 25 libros uno al lado del otro, cada uno con su sitio, posición, marcadores y notas: cambia con un toque. Nada que archivar, ordenar ni mantener, y todo lo que escribe el lector sobrevive a la copia en disco.<sup>*</sup>',
     'index.s8.pr.cta': 'Obtener PlainReader',
     'download.cmp.col.feature':   'Función',
     'download.cmp.col.jr':        'JustReader',
@@ -3202,7 +3226,7 @@ const translations = {
     'download.cmp.r.recents': 'Los libros recientes se reabren donde los dejaste',
     'download.cmp.r.recents.jr': 'Últimos 5 libros',
     'download.cmp.r.recents.cr': 'Toda la biblioteca',
-    'download.cmp.footer':        '<strong>Ambas apps reciben correcciones de bugs y actualizaciones de compatibilidad.</strong>',
+    'download.cmp.footer':        '<strong>Las tres apps reciben correcciones de bugs y actualizaciones de compatibilidad.</strong>',
 
     'download.faq.eyebrow':       'FAQ',
     'download.faq.title':         '<em>Preguntas</em>.',
@@ -3258,7 +3282,7 @@ const translations = {
     'features.header.title':    'Funciones',
     'features.header.subtitle': 'Una mirada en profundidad a cómo está construido ContinuousReader y lo que puede hacer.',
     'features.header.intro':    'Esta página es un recorrido, no una ficha técnica. Si estás comparando lectores por funciones concretas —formatos, comportamiento de la sincronización, temas, traducción— las encontrarás organizadas más abajo. Si prefieres un resumen más breve, empieza por <a href="index.html">la página de inicio</a>. Y si necesitas saber algo específico que no aparece aquí, <a href="mailto:hello@continuousreader.app">escríbenos</a>.',
-    'features.header.legend':   'Las funciones marcadas como <span class="badge-inline cr">ContinuousReader</span> forman parte de la aplicación completa. Las marcadas como <span class="badge-inline jr">JustReader</span> también están en el lector gratuito de un solo libro. <strong>La mayor parte de la experiencia de lectura es compartida</strong>; la biblioteca, la sincronización y el navegador OPDS son exclusivos de ContinuousReader.',
+    'features.header.legend':   'Las funciones marcadas como <span class="badge-inline cr">ContinuousReader</span> forman parte de la aplicación completa. Las marcadas como <span class="badge-inline pr">PlainReader</span> están también en la estantería, y las marcadas como <span class="badge-inline jr">JustReader</span> están además en el lector gratuito de un solo libro. <strong>La mayor parte de la experiencia de lectura es común a las tres</strong>; la biblioteca, la sincronización con iCloud y los vigilantes de OPDS son exclusivos de ContinuousReader.',
 
     // Section 1 — The reader
     'features.s1.label':   'Sección uno',
@@ -3772,7 +3796,7 @@ const translations = {
     'meta.changelog.ogDesc': 'Historique des versions : ce qui a changé à chaque version.',
     'changelog.header.eyebrow': 'Historique des versions',
     'changelog.header.title': '<em>Nouveautés</em>',
-    'changelog.header.subtitle': 'Toutes les versions de ContinuousReader, les plus récentes en premier. JustReader partage le moteur de lecture : les changements du moteur s’appliquent aux deux apps.',
+    'changelog.header.subtitle': 'Chaque version de ContinuousReader, la plus récente en premier. JustReader et PlainReader partagent le moteur de lecture, donc ses évolutions atteignent les trois apps.',
     'changelog.v14.i10': 'Corrections et finitions.',
     'changelog.v14.i9': 'JustReader : un écran de réglages complet, des statistiques de lecture, des signets et notes qui survivent à la réimportation, la fiche du livre et la navigation par chapitres depuis l’accueil.',
     'changelog.v14.i8': 'Une synchronisation visible : le rideau d’attente nomme le livre et indique la fraîcheur de la position de l’autre appareil ; la liste des lecteurs montre la position en direct de chacun.',
@@ -3829,8 +3853,13 @@ const translations = {
 
     // ---------- Common ----------
     'common.finalCta.title':    'Commencez à <em>lire.</em>',
-    'common.finalCta.subtitle': 'Deux apps. Lisez un livre, ou construisez une bibliothèque.',
+    'common.finalCta.subtitle': 'Trois apps. Lisez un livre, remplissez une étagère, ou construisez une bibliothèque.',
+    'common.room.alt': 'Une salle de lecture isométrique : un livre ouvert sur le bureau, une étagère de livres au mur et une bibliothèque pleine',
+    'common.room.book': 'Un livre',
+    'common.room.shelf': 'Une étagère',
+    'common.room.library': 'Une bibliothèque',
     'common.cta.getCR':         'Obtenir ContinuousReader',
+    'common.cta.getPR':         'Obtenir PlainReader',
     'common.cta.getJR':         'Obtenir JustReader, gratuit',
     'common.cta.tryJR':         'Ou essayez JustReader, gratuit',
 
@@ -3913,16 +3942,17 @@ const translations = {
     'index.s7.p3':      'Le gros du travail revient au système, pas à nous. <strong>iCloud</strong> stocke et synchronise vos livres dans votre propre compte. <strong>Apple Translation</strong> assure la traduction dans le texte, sur l’appareil et en privé. <strong>Le moteur vocal du système</strong> anime la Lecture à voix haute, avec les voix déjà installées sur votre Mac et votre iPhone. Nous n’avons rien réinventé — nous avons simplement tout assemblé proprement.',
 
     // ---------- Section 8 — Two apps ----------
-    'index.s8.eyebrow':  'Deux apps',
-    'index.s8.h2':       'ContinuousReader <em>ou</em> JustReader ?',
-    'index.s8.intro':    'Deux apps de lecture. Une seule base. <strong>À vous de choisir.</strong>',
+    'index.s8.eyebrow':  'Trois apps',
+    'index.s8.h2':       'Un livre, une <em>étagère</em> ou une bibliothèque ?',
+    'index.s8.intro':    'Trois apps de lecture sur un même moteur : le livre de la table de nuit, l’étagère, la bibliothèque. <strong>À vous de choisir.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Une seule fois, pas un abonnement.',
-    'index.s8.cr.desc':  'L’environnement de lecture complet. Construisez une bibliothèque, puis synchronisez votre position, vos signets et vos réglages de lecture entre Mac, iPad et iPhone. Catalogues OPDS, notes, statistiques, tout y est. Chaque fonctionnalité, sur chaque appareil, aussi longtemps que vous lisez.<sup>*</sup><small class="app-card-footnote">* Au sein de la version majeure actuelle. Les versions majeures futures peuvent être une mise à niveau payante — jamais un rachat forcé.</small>',
+    'index.s8.cr.desc':  'L’environnement de lecture complet. Construisez une bibliothèque, puis synchronisez votre position, vos signets et vos réglages de lecture entre Mac, iPad et iPhone. Catalogues OPDS, notes, statistiques, tout y est. Chaque fonctionnalité, sur chaque appareil, aussi longtemps que vous lisez.<sup>*</sup>',
     'index.s8.cr.cta':   'Obtenir ContinuousReader',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Gratuit.</strong> Vraiment gratuit.',
     'index.s8.jr.desc':  'Un lecteur d’un seul livre. Ouvrez un fichier, lisez-le, passez à autre chose. La même typographie, la même traduction, la même Lecture à voix haute — simplement sans la bibliothèque, sans la synchronisation, sans les signets. Rien que la lecture.',
+    'index.s8.note': '* Les deux apps payantes : mises à jour gratuites au sein de la version majeure actuelle. Les futures versions majeures pourront être une mise à niveau payante — jamais un rachat forcé de ce que vous possédez déjà.',
     'index.s8.jr.cta':   'Obtenir JustReader',
 
     // ---------- Contact page ----------
@@ -3986,7 +4016,7 @@ const translations = {
     'privacy.net.p1':          'JustReader n’utilise quasiment pas le réseau — seule l’importation par URL y accède. ContinuousReader utilise le réseau pour la synchronisation et la navigation de catalogues OPDS quand vous les activez. Précisément :',
     'privacy.net.li1':         '<strong>La synchronisation</strong> est activée (ContinuousReader uniquement) — les fichiers de livres passent par Apple iCloud Drive, les signets et métadonnées par Apple iCloud Key-Value Store, et les mises à jour de position en direct par un canal temps réel chiffré entre vos appareils (voir Synchronisation ci-dessus pour ce que chaque voie transporte)',
     'privacy.net.li2':         '<strong>Navigation de catalogues OPDS</strong> (ContinuousReader uniquement) — vous vous connectez à des catalogues de livres tiers que vous configurez vous-même',
-    'privacy.net.li3':         '<strong>Importation par URL</strong> (les deux apps) — quand vous glissez une URL dans la boîte de dialogue d’importation pour télécharger un fichier de livre',
+    'privacy.net.li3':         '<strong>Importation par URL</strong> (les trois apps) — quand vous glissez une URL dans la boîte de dialogue d’importation pour télécharger un fichier de livre',
     'privacy.net.p2':          'Pendant la lecture elle-même, le seul trafic est la synchronisation de position décrite ci-dessus — et elle ne transporte qu’un identifiant haché du livre, une ancre de paragraphe et un pourcentage de progression, jamais de contenu. La traduction utilise le framework Translation d’Apple sur l’appareil — <strong>rien du livre lui-même ne quitte votre appareil</strong>.',
 
     'privacy.third.h':         'Services tiers',
@@ -4026,7 +4056,7 @@ const translations = {
 
     'download.included.eyebrow':  'Inclus',
     'download.included.title':    'Ce qui est <em>inclus</em>.',
-    'download.included.intro':    'ContinuousReader, c’est un seul achat, sans suppléments, sans coûts cachés.',
+    'download.included.intro':    'Chaque app payante est un achat unique, sans extras ni frais cachés — et la synchronisation iCloud est ce que ContinuousReader ajoute par-dessus.',
     'download.included.li1':      '<strong>Achat Universel</strong> — achetez sur n’importe quelle plateforme, utilisez sur les trois (Mac, iPad, iPhone).',
     'download.included.li2':      '<strong>Synchronisation iCloud sur tous vos appareils Apple</strong> — les positions de lecture, signets, notes et métadonnées de bibliothèque se synchronisent entre tous les appareils connectés au même identifiant Apple. Mac mini de la maison, MacBook Pro du travail, MacBook Air de voyage, iPad, iPhone — tous partagent la même bibliothèque et la même position de lecture. Les fichiers de livres se synchronisent via iCloud Drive. Sur les appareils avec peu de stockage, les livres peuvent rester dans le nuage et se télécharger à la demande à l’ouverture — comportement standard d’iCloud Drive.',
     'download.included.li3':      '<strong>Mises à jour gratuites pendant toute la durée de la version majeure actuelle</strong> — corrections de bugs, nouveaux thèmes, nouvelles fonctionnalités.',
@@ -4045,7 +4075,7 @@ const translations = {
     'download.req.note':          'L’Achat Universel fonctionne avec tout identifiant Apple qui possède l’une des apps. La synchronisation iCloud nécessite iCloud Drive activé sur tous les appareils que vous voulez synchroniser (le palier gratuit suffit pour l’état de lecture ; voir la <a href="#faq">FAQ ci-dessous</a> pour des conseils sur le stockage).',
 
     'download.cmp.eyebrow':       'Côte à côte',
-    'download.cmp.title':         'ContinuousReader <em>ou</em> JustReader ?',
+    'download.cmp.title':         'Un livre, une <em>étagère</em> ou une bibliothèque ?',
     'download.pr.name': 'PlainReader',
     'download.pr.price': '6,99 $',
     'download.pr.priceSub': 'une fois, pas un abonnement · achat universel sur Mac, iPad, iPhone',
@@ -4082,7 +4112,7 @@ const translations = {
     'download.faq.apr.p2': 'La lecture elle-même est identique dans les trois : même moteur, même typographie, mêmes thèmes, même traduction, même lecture à voix haute. Ce qui change, c’est l’aide que l’app apporte pour ne pas perdre le fil — et cela ne vaut la dépense que lorsqu’il y a vraiment un fil à tenir.',
     'index.s8.pr.name': 'PlainReader',
     'index.s8.pr.price': '<strong>6,99 $</strong>. Une fois, pas un abonnement.',
-    'index.s8.pr.desc': 'Une étagère. Jusqu’à 25 livres côte à côte, chacun gardant sa place, sa position, ses signets et ses notes — on change d’un geste. Rien à classer, trier ou entretenir, et tout ce que le lecteur a écrit survit à la copie sur le disque.',
+    'index.s8.pr.desc': 'Une étagère. Jusqu’à 25 livres côte à côte, chacun gardant sa place, sa position, ses signets et ses notes — on change d’un geste. Rien à classer, trier ou entretenir, et tout ce que le lecteur a écrit survit à la copie sur le disque.<sup>*</sup>',
     'index.s8.pr.cta': 'Obtenir PlainReader',
     'download.cmp.col.feature':   'Fonctionnalité',
     'download.cmp.col.jr':        'JustReader',
@@ -4126,7 +4156,7 @@ const translations = {
     'download.cmp.r.recents': 'Les livres récents se rouvrent où vous vous étiez arrêté',
     'download.cmp.r.recents.jr': '5 derniers livres',
     'download.cmp.r.recents.cr': 'Toute la bibliothèque',
-    'download.cmp.footer':        '<strong>Les deux apps reçoivent des corrections de bugs et des mises à jour de compatibilité.</strong>',
+    'download.cmp.footer':        '<strong>Les trois apps reçoivent des corrections de bugs et des mises à jour de compatibilité.</strong>',
 
     'download.faq.eyebrow':       'FAQ',
     'download.faq.title':         '<em>Questions</em>.',
@@ -4182,7 +4212,7 @@ const translations = {
     'features.header.title':    'Fonctionnalités',
     'features.header.subtitle': 'Un regard plus attentif sur la conception de ContinuousReader et ce qu’il sait faire.',
     'features.header.intro':    'Cette page est une visite guidée, pas une fiche technique. Si vous comparez des applications de lecture sur des capacités précises — formats, comportement de la synchronisation, thèmes, traduction — vous les trouverez organisées ci-dessous. Pour un aperçu plus court, commencez par <a href="index.html">la page d’accueil</a>. S’il vous manque une information précise qui ne figure pas ici, <a href="mailto:hello@continuousreader.app">écrivez-nous</a>.',
-    'features.header.legend':   'Les fonctionnalités marquées <span class="badge-inline cr">ContinuousReader</span> font partie de l’application complète. Celles marquées <span class="badge-inline jr">JustReader</span> sont également présentes dans le lecteur gratuit à livre unique. <strong>L’essentiel de l’expérience de lecture est partagé</strong> ; la bibliothèque, la synchronisation et le navigateur OPDS restent exclusifs à ContinuousReader.',
+    'features.header.legend':   'Les fonctionnalités marquées <span class="badge-inline cr">ContinuousReader</span> font partie de l’application complète. Celles marquées <span class="badge-inline pr">PlainReader</span> sont aussi sur l’étagère, et celles marquées <span class="badge-inline jr">JustReader</span> figurent également dans le lecteur gratuit à livre unique. <strong>L’essentiel de l’expérience de lecture est partagé par les trois</strong> ; la bibliothèque, la synchronisation iCloud et les veilleurs OPDS restent exclusifs à ContinuousReader.',
 
     // Section 1 — The reader
     'features.s1.label':   'Section un',
@@ -4695,7 +4725,7 @@ const translations = {
     'meta.changelog.ogDesc': 'Versionshistorie — was sich in jeder Version geändert hat.',
     'changelog.header.eyebrow': 'Versionshistorie',
     'changelog.header.title': '<em>Neuigkeiten</em>',
-    'changelog.header.subtitle': 'Alle ContinuousReader-Versionen, neueste zuerst. JustReader teilt die Lese-Engine — Engine-Änderungen gelten für beide Apps.',
+    'changelog.header.subtitle': 'Jede ContinuousReader-Version, die neueste zuerst. JustReader und PlainReader teilen sich die Lese-Engine, daher erreichen Engine-Änderungen alle drei Apps.',
     'changelog.v14.i10': 'Fehlerbehebungen und Feinschliff.',
     'changelog.v14.i9': 'JustReader: ein vollwertiger Einstellungsbildschirm, Lesestatistik, Lesezeichen und Notizen, die den erneuten Import überleben, die Buchkarte und Kapitelnavigation direkt vom Startbildschirm.',
     'changelog.v14.i8': 'Sichtbare Synchronisierung: der Wartevorhang nennt das Buch und sagt, wie frisch die Position des anderen Geräts ist; die Leserliste zeigt die Live-Position jedes Geräts.',
@@ -4752,8 +4782,13 @@ const translations = {
 
     // ---------- Common ----------
     'common.finalCta.title':    'Fang an zu <em>lesen.</em>',
-    'common.finalCta.subtitle': 'Zwei Apps. Lies ein Buch, oder bau eine Bibliothek auf.',
+    'common.finalCta.subtitle': 'Drei Apps. Lies ein Buch, füll ein Regal, oder bau eine Bibliothek auf.',
+    'common.room.alt': 'Ein isometrisches Lesezimmer: ein aufgeschlagenes Buch auf dem Schreibtisch, ein Bücherbord an der Wand und ein voller Bücherschrank',
+    'common.room.book': 'Ein Buch',
+    'common.room.shelf': 'Ein Regal',
+    'common.room.library': 'Eine Bibliothek',
     'common.cta.getCR':         'ContinuousReader laden',
+    'common.cta.getPR':         'PlainReader laden',
     'common.cta.getJR':         'JustReader laden, kostenlos',
     'common.cta.tryJR':         'Oder probier JustReader, kostenlos',
 
@@ -4836,16 +4871,17 @@ const translations = {
     'index.s7.p3':      'Die Schwerstarbeit ist die des Systems, nicht unsere. <strong>iCloud</strong> speichert und synchronisiert deine Bücher in deinem eigenen Account. <strong>Apple Translation</strong> erledigt die Übersetzung im Text, auf dem Gerät und privat. <strong>Die Sprachausgabe-Engine des Systems</strong> treibt das Vorlesen an, mit den Stimmen, die dein Mac und dein iPhone bereits sprechen. Wir haben nichts davon neu erfunden — wir haben es nur ordentlich zusammengesteckt.',
 
     // ---------- Section 8 — Two apps ----------
-    'index.s8.eyebrow':  'Zwei Apps',
-    'index.s8.h2':       'ContinuousReader <em>oder</em> JustReader?',
-    'index.s8.intro':    'Zwei Lese-Apps. Eine Basis. <strong>Deine Wahl.</strong>',
+    'index.s8.eyebrow':  'Drei Apps',
+    'index.s8.h2':       'Ein Buch, ein <em>Regal</em> oder eine Bibliothek?',
+    'index.s8.intro':    'Drei Lese-Apps auf einer Engine: das Buch auf dem Nachttisch, das Bücherregal, die Bibliothek. <strong>Ihre Wahl.</strong>',
     'index.s8.cr.name':  'ContinuousReader',
     'index.s8.cr.price': '<strong>$19.99</strong>. Einmalig, kein Abo.',
-    'index.s8.cr.desc':  'Die vollständige Lese-Umgebung. Bau eine Bibliothek auf und synchronisier dann deine Position, deine Lesezeichen und deine Reader-Einstellungen zwischen Mac, iPad und iPhone. OPDS-Kataloge, Notizen, Statistiken, das ganze Programm. Jede Funktion, auf jedem Gerät, solange du liest.<sup>*</sup><small class="app-card-footnote">* Innerhalb der aktuellen Hauptversion. Künftige Hauptversionen können ein kostenpflichtiges Upgrade sein — niemals ein erzwungener Neukauf.</small>',
+    'index.s8.cr.desc':  'Die vollständige Lese-Umgebung. Bau eine Bibliothek auf und synchronisier dann deine Position, deine Lesezeichen und deine Reader-Einstellungen zwischen Mac, iPad und iPhone. OPDS-Kataloge, Notizen, Statistiken, das ganze Programm. Jede Funktion, auf jedem Gerät, solange du liest.<sup>*</sup>',
     'index.s8.cr.cta':   'ContinuousReader laden',
     'index.s8.jr.name':  'JustReader',
     'index.s8.jr.price': '<strong>Kostenlos.</strong> Wirklich kostenlos.',
     'index.s8.jr.desc':  'Ein Reader für ein einzelnes Buch. Datei öffnen, lesen, weiter. Dieselbe Typografie, dieselbe Übersetzung, dasselbe Vorlesen — nur ohne die Bibliothek, die Synchronisation oder die Lesezeichen. Nur das Lesen.',
+    'index.s8.note': '* Beide Bezahl-Apps: kostenlose Updates innerhalb der aktuellen Hauptversion. Künftige Hauptversionen können ein kostenpflichtiges Upgrade sein — nie ein erzwungener Neukauf dessen, was Ihnen bereits gehört.',
     'index.s8.jr.cta':   'JustReader laden',
 
     // ---------- Contact page ----------
@@ -4909,7 +4945,7 @@ const translations = {
     'privacy.net.p1':          'JustReader nutzt praktisch kein Netzwerk — nur der URL-Import greift darauf zu. ContinuousReader nutzt das Netzwerk außerdem für Sync und OPDS-Browsing, wenn du diese aktivierst. Konkret:',
     'privacy.net.li1':         '<strong>Sync</strong> ist aktiviert (nur ContinuousReader) — Buchdateien laufen über Apple iCloud Drive, Lesezeichen und Metadaten über Apple iCloud Key-Value Store, und Live-Positions-Updates über einen verschlüsselten Echtzeitkanal zwischen deinen Geräten (siehe „Synchronisation“ oben für die Details jedes Weges)',
     'privacy.net.li2':         '<strong>OPDS-Katalog-Browsing</strong> (nur ContinuousReader) — du verbindest dich mit Drittanbieter-Buchkatalogen, die du selbst konfigurierst',
-    'privacy.net.li3':         '<strong>URL-Import</strong> (beide Apps) — wenn du eine URL in den Import-Dialog ziehst, um eine Buchdatei herunterzuladen',
+    'privacy.net.li3':         '<strong>URL-Import</strong> (alle drei Apps) — wenn du eine URL in den Import-Dialog ziehst, um eine Buchdatei herunterzuladen',
     'privacy.net.p2':          'Während des eigentlichen Lesens ist der einzige Netzwerkverkehr die oben beschriebene Positions-Sync — und die überträgt nur eine gehashte Buchkennung, einen Absatz-Anker und einen Fortschritts-Prozentwert, niemals Inhalte. Die Übersetzung läuft on-device über das Translation-Framework von Apple — <strong>nichts vom Buch selbst verlässt dein Gerät</strong>.',
 
     'privacy.third.h':         'Drittanbieter-Dienste',
@@ -4949,7 +4985,7 @@ const translations = {
 
     'download.included.eyebrow':  'Im Paket',
     'download.included.title':    'Was <em>enthalten</em> ist.',
-    'download.included.intro':    'ContinuousReader ist ein einmaliger Kauf, keine Extras, keine versteckten Kosten.',
+    'download.included.intro':    'Jede Bezahl-App ist ein einziger Kauf, ohne Extras und versteckte Kosten — und die iCloud-Synchronisierung ist das, was ContinuousReader obendrauf legt.',
     'download.included.li1':      '<strong>Universal Purchase</strong> — auf einer Plattform kaufen, auf allen dreien nutzen (Mac, iPad, iPhone).',
     'download.included.li2':      '<strong>iCloud-Sync auf all deinen Apple-Geräten</strong> — Lesepositionen, Lesezeichen, Notizen und Bibliotheks-Metadaten werden zwischen allen Geräten synchronisiert unter derselben Apple-ID. Heim-Mac mini, Arbeits-MacBook Pro, Reise-MacBook Air, iPad, iPhone — alle teilen sich dieselbe Bibliothek und dieselbe Leseposition. Buchdateien werden über iCloud Drive synchronisiert. Auf Geräten mit begrenztem Speicher können Bücher als Cloud-Platzhalter bleiben und auf Anfrage geladen werden, wenn du sie öffnest — Standardverhalten von iCloud Drive.',
     'download.included.li3':      '<strong>Kostenlose Updates für die Dauer der aktuellen Hauptversion</strong> — Fehlerbehebungen, neue Themes, neue Funktionen.',
@@ -4968,7 +5004,7 @@ const translations = {
     'download.req.note':          'Universal Purchase funktioniert mit jeder Apple-ID, die eine der Apps besitzt. iCloud-Sync erfordert aktiviertes iCloud Drive auf allen Geräten, die du synchronisieren möchtest (der kostenlose Tarif reicht für den Lese-Zustand; siehe die <a href="#faq">FAQ unten</a> für Hinweise zum Speicher).',
 
     'download.cmp.eyebrow':       'Im Vergleich',
-    'download.cmp.title':         'ContinuousReader <em>oder</em> JustReader?',
+    'download.cmp.title':         'Ein Buch, ein <em>Regal</em> oder eine Bibliothek?',
     'download.pr.name': 'PlainReader',
     'download.pr.price': '6,99 $',
     'download.pr.priceSub': 'einmalig, kein Abo · Universalkauf für Mac, iPad, iPhone',
@@ -5005,7 +5041,7 @@ const translations = {
     'download.faq.apr.p2': 'Das Lesen selbst ist in allen dreien gleich: dieselbe Engine, Typografie, Themen, Übersetzung und Vorlesefunktion. Unterschiedlich ist nur, wie sehr die App hilft, den Überblick zu behalten — und dafür zu zahlen lohnt sich erst, wenn es wirklich etwas zu überblicken gibt.',
     'index.s8.pr.name': 'PlainReader',
     'index.s8.pr.price': '<strong>6,99 $</strong>. Einmalig, kein Abo.',
-    'index.s8.pr.desc': 'Ein Bücherregal. Bis zu 25 Bücher nebeneinander, jedes mit eigenem Platz, Position, Lesezeichen und Notizen — Wechsel mit einem Tipp. Nichts einzusortieren, zu ordnen oder zu pflegen, und alles, was der Leser geschrieben hat, überlebt die Kopie auf der Platte.',
+    'index.s8.pr.desc': 'Ein Bücherregal. Bis zu 25 Bücher nebeneinander, jedes mit eigenem Platz, Position, Lesezeichen und Notizen — Wechsel mit einem Tipp. Nichts einzusortieren, zu ordnen oder zu pflegen, und alles, was der Leser geschrieben hat, überlebt die Kopie auf der Platte.<sup>*</sup>',
     'index.s8.pr.cta': 'PlainReader holen',
     'download.cmp.col.feature':   'Funktion',
     'download.cmp.col.jr':        'JustReader',
@@ -5049,7 +5085,7 @@ const translations = {
     'download.cmp.r.recents': 'Zuletzt gelesene Bücher öffnen sich an der alten Stelle',
     'download.cmp.r.recents.jr': 'Die letzten 5 Bücher',
     'download.cmp.r.recents.cr': 'Die ganze Bibliothek',
-    'download.cmp.footer':        '<strong>Beide Apps erhalten Fehlerbehebungen und Kompatibilitäts-Updates.</strong>',
+    'download.cmp.footer':        '<strong>Alle drei Apps erhalten Fehlerbehebungen und Kompatibilitäts-Updates.</strong>',
 
     'download.faq.eyebrow':       'FAQ',
     'download.faq.title':         '<em>Fragen</em>.',
@@ -5105,7 +5141,7 @@ const translations = {
     'features.header.title':    'Funktionen',
     'features.header.subtitle': 'Ein genauerer Blick darauf, wie ContinuousReader aufgebaut ist und was es kann.',
     'features.header.intro':    'Diese Seite ist eine Rundtour, kein Datenblatt. Wenn du Leseanwendungen anhand konkreter Fähigkeiten vergleichst — Formate, Sync-Verhalten, Themes, Übersetzung — findest du diese unten geordnet vor. Wenn du eine kürzere Übersicht möchtest, beginn mit <a href="index.html">der Startseite</a>. Falls du etwas Bestimmtes wissen musst, das hier nicht steht, <a href="mailto:hello@continuousreader.app">melde dich gerne</a>.',
-    'features.header.legend':   'Funktionen mit der Kennzeichnung <span class="badge-inline cr">ContinuousReader</span> sind Teil der vollständigen App. Funktionen mit der Kennzeichnung <span class="badge-inline jr">JustReader</span> sind auch in der kostenlosen Einzelbuch-Anwendung enthalten. <strong>Der Großteil des Leseerlebnisses ist gemeinsam</strong>; Bibliothek, Sync und OPDS-Browser sind nur in ContinuousReader.',
+    'features.header.legend':   'Funktionen mit der Kennzeichnung <span class="badge-inline cr">ContinuousReader</span> sind Teil der vollständigen App. Die mit <span class="badge-inline pr">PlainReader</span> gekennzeichneten stehen auch im Bücherregal, und die mit <span class="badge-inline jr">JustReader</span> gekennzeichneten zusätzlich im kostenlosen Einzelbuch-Reader. <strong>Der Großteil des Leseerlebnisses ist allen dreien gemeinsam</strong>; Bibliothek, iCloud-Sync und beobachtete OPDS-Feeds gibt es nur in ContinuousReader.',
 
     // Section 1 — The reader
     'features.s1.label':   'Abschnitt eins',

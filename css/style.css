@@ -687,7 +687,7 @@ a { color: inherit; }
   border-bottom-color: var(--ink);
 }
 .cta-secondary::after {
-  content: " →";
+  content: "\00a0→";
   color: var(--accent);
   font-weight: 600;
 }
@@ -1109,7 +1109,7 @@ section { position: relative; z-index: 2; }
 
 .app-card {
   border-left: 2px solid var(--rule-strong);
-  padding-left: 40px;
+  padding-left: 28px;
 }
 
 .app-card.paid {
@@ -1122,7 +1122,7 @@ section { position: relative; z-index: 2; }
 
 .app-card-name {
   font-family: var(--serif);
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink);
@@ -1131,9 +1131,9 @@ section { position: relative; z-index: 2; }
 
 .app-card-price {
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: 17px;
   color: var(--ink-soft);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .app-card-price strong {
@@ -1143,13 +1143,15 @@ section { position: relative; z-index: 2; }
 
 .app-card-desc {
   font-family: var(--serif);
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.55;
   color: var(--ink-soft);
   margin-bottom: 32px;
 }
 
-/* Footnote inside .app-card-desc (e.g. the "* within the major version"
+/* Footnote inside .app-card-desc — kept for any card that needs its own
+   aside; the paid-upgrade note is shared and lives in .apps-note.
+   (was: "* within the major version"
    caveat on the paid card). Block-display lets it sit as its own line
    with a top margin against the desc body; smaller font + extra opacity
    set the visual hierarchy so it doesn't compete with the desc copy. */
@@ -1159,6 +1161,20 @@ section { position: relative; z-index: 2; }
   font-size: 0.82em;
   line-height: 1.5;
   opacity: 0.72;
+}
+
+/* The paid-upgrade promise belongs to BOTH paid apps, so it sits under
+   the grid rather than inside ContinuousReader's card (user). */
+.apps-note {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  opacity: 0.75;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  max-width: 68ch;
 }
 
 .app-card-cta {
@@ -1173,7 +1189,7 @@ section { position: relative; z-index: 2; }
   transition: color 200ms, border-color 200ms;
 }
 
-.app-card-cta::after { content: " →"; color: var(--accent); }
+.app-card-cta::after { content: "\00a0→"; color: var(--accent); }
 .app-card-cta:hover {
   color: var(--accent);
   border-bottom-color: var(--accent);
@@ -1690,7 +1706,7 @@ code {
   padding-bottom: 2px;
 }
 
-.platforms-link::after { content: " →"; color: var(--accent); }
+.platforms-link::after { content: "\00a0→"; color: var(--accent); }
 
 /* Interface that fits — closing section */
 .interface-fits {
@@ -3198,4 +3214,144 @@ code {
   .release-divider { gap: 16px; margin-top: 44px; }
   .release-divider h3 { font-size: 24px; }
   .release-butterfly { height: 84px; }
+}
+
+/* ==========================================================
+   FINAL CTA — the room, and the three ways in
+   ==========================================================
+   The three apps are a ladder, so the buttons stop being a pyramid of
+   equals: ContinuousReader is filled, PlainReader outlined, JustReader a
+   plain link (user, 2026-08-13). Each carries a coloured dot that matches
+   a pin on the illustration — the book on the desk, the shelf on the wall,
+   the bookcase — so the price answers "which of these am I buying?"
+   without a sentence explaining it. */
+.cta-room {
+  display: grid;
+  /* The section centres its heading; this block is a layout, not a line. */
+  max-width: 1060px;
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+  gap: 56px;
+  align-items: center;
+  margin-top: 48px;
+  text-align: left;
+}
+
+.room-figure {
+  position: relative;
+  margin: 0;
+  line-height: 0;
+}
+
+.room-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* A pin is a dot plus a label that reads as a caption on the picture,
+   not as a control: no hover, no pointer. */
+.room-pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.room-pin i {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.75), 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.room-pin b {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.82);
+  padding: 4px 9px;
+  border-radius: 100px;
+}
+
+.pin-cr i, .dot-cr { background: #2D5573; }
+.pin-pr i, .dot-pr { background: #2E6B4F; }
+.pin-jr i, .dot-jr { background: #A84B28; }
+
+.cta-choices {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+}
+
+.cta-app {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cta-app .price {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.cta-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+/* Outline: the middle rung — the primary's shape without its weight. */
+.cta-outline {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 16px 28px;
+  border: 1.5px solid var(--ink);
+  border-radius: 100px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cta-outline:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.cta-outline:hover .cta-dot { box-shadow: 0 0 0 2px rgba(255,255,255,0.35); }
+
+/* Quiet: a link, and it stays a link — the free app asks for nothing. */
+.cta-quiet {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 8px 28px;
+  transition: color 0.2s ease;
+}
+
+.cta-quiet::after { content: "\00a0→"; color: var(--accent); }
+.cta-quiet:hover { color: var(--ink); }
+
+@media (max-width: 900px) {
+  .cta-room { grid-template-columns: 1fr; gap: 32px; }
+  .cta-choices { max-width: 420px; margin: 0 auto; }
+  .room-pin b { font-size: 11px; padding: 3px 7px; }
+}
+
+@media (max-width: 600px) {
+  /* The labels crowd the picture at phone width — the dots alone still
+     tie the buttons to the room. */
+  .room-pin b { display: none; }
 }
