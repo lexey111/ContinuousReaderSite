@@ -1101,8 +1101,9 @@ section { position: relative; z-index: 2; }
 
 .two-apps-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  /* Three since PlainReader — see .paths-grid for the same change. */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
   margin-top: 64px;
 }
 
@@ -1113,6 +1114,10 @@ section { position: relative; z-index: 2; }
 
 .app-card.paid {
   border-left-color: var(--accent);
+}
+
+.app-card.mid {
+  border-left-color: #2E6B4F;
 }
 
 .app-card-name {
@@ -1337,6 +1342,16 @@ section.feature-section { padding: 80px 0; }
 
 .badge.cr::before {
   background-image: url('../img/icon-cr.svg');
+}
+
+.badge.pr {
+  background: #D9E9DF;
+  color: #2E6B4F;
+  border: 1px solid #B4D3C1;
+}
+
+.badge.pr::before {
+  background-image: url('../img/icon-pr.svg');
 }
 
 .badge.jr {
@@ -1752,6 +1767,16 @@ code {
   flex-shrink: 0;
 }
 
+.legend .badge-inline.pr {
+  background: #D9E9DF;
+  color: #2E6B4F;
+  border: 1px solid #B4D3C1;
+}
+
+.legend .badge-inline.pr::before {
+  background-image: url('../img/icon-pr.svg');
+}
+
 .legend .badge-inline.cr {
   background: #DCE7F0;
   color: #1F3A52;
@@ -2137,8 +2162,10 @@ code {
 
 .paths-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  /* Three apps since PlainReader: the ladder reads left to right,
+     library → bookshelf → nightstand, so the gap tightens to fit. */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
 }
 
 .path-card {
@@ -2147,6 +2174,9 @@ code {
 }
 
 .path-card.paid { border-left-color: var(--accent); }
+/* PlainReader's own rule — the family's green, so the three cards read as
+   three products rather than one highlighted and two alternatives. */
+.path-card.mid { border-left-color: #2E6B4F; }
 
 .path-name {
   font-family: var(--serif);
@@ -2365,6 +2395,25 @@ code {
 .comparison-table thead th:not(:first-child) {
   text-align: center;
   width: 16%;
+}
+
+/* Three apps: the feature column keeps the room it needs, the three
+   answer columns share what is left evenly. */
+.comparison-table.three thead th:not(:first-child) { width: 15%; }
+
+/* Word answers ("up to 25", "read-only") sit in the same cells as the
+   ticks — they take the label voice so a phrase never reads as a value
+   in the tick's monospace. */
+.comparison-table.three tbody td:not(:first-child) {
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+
+.comparison-table.three tbody td:not(:first-child) .check,
+.comparison-table.three tbody td:not(:first-child) .dash {
+  font-family: var(--mono);
+  font-size: 16px;
 }
 
 .comparison-table tbody td {
@@ -2899,6 +2948,13 @@ code {
 /* ==========================================================
    RESPONSIVE
    ========================================================== */
+/* Three download cards need room the tablet width does not have — they
+   stack earlier than everything else on the page. */
+@media (max-width: 1100px) {
+  .paths-grid { grid-template-columns: 1fr; gap: 48px; }
+  .two-apps-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
 @media (max-width: 900px) {
   .nav-inner { padding: 18px 24px; }
   .container, .container-narrow, .platform-divider {
