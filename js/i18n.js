@@ -173,8 +173,8 @@ const translations = {
     'index.s4.eyebrow': 'The reading',
     'index.s4.h2':      'Typography that <em>respects</em> the text.',
     'index.s4.p1':      'Most reading apps get typography wrong in one of two ways. Some pretend the screen is a book, with skeuomorphic page-curls and fake paper grain. Others dump the text on the screen and walk away — browser defaults, ragged columns, no hyphenation.',
-    'index.s4.p2':      '<strong>ContinuousReader sweats the details.</strong>',
-    'index.s4.p3':      'Five core palettes — Neutral, Ochre, Celestial, Lime, Rose — each with seven tonal variations: from a pure-white extreme on the left, through five mid tones, to a pure-black extreme on the right. Plus two featured themes for the old-school crowd: <em>Typewriter</em> in ivory and dark brown (light and dark variants), dressed in quiet steampunk — a brass dashboard speedometer with a rolling needle, swapped for a vintage radio-dial carriage with a lit red pointer on narrower screens; copper keycaps; mechanical drum counters — and <em>Terminal</em> in white monospace on deep blue (if you recognize the palette — <em>you already know why it’s there</em>). Three custom slots where the colors are yours. <strong>Forty-one themes in total.</strong>',
+    'index.s4.p2':      '<strong>ContinuousReader takes the third option.</strong>',
+    'index.s4.p3':      'Five palettes — Neutral, Ochre, Celestial, Lime, Rose — each in seven tones, from a pure-white extreme through five mid tones to a pure-black one. Then two themes that bring their own furniture. <em>Typewriter</em>: ivory and dark brown, with a brass speedometer whose needle rolls as you read, copper keycaps and mechanical drum counters. <em>Terminal</em>: white monospace on deep blue — if you recognise the palette, you know why it is here. Three custom slots take colours of your own. <strong>Forty-one themes in total.</strong>',
     'index.s4.p4':      'The two extremes on every colored palette — pure white with saturated palette-color text on the left, pure black with the same on the right — cover the harsh cases: <strong>full sun on a beach</strong> or <strong>in bed with the lights off</strong>, in whichever color feels right.',
     'index.s4.picker':  'Three picker modes. <strong>Fixed</strong> — one theme, always. <strong>Day &amp; Night</strong> — pair a light theme with a dark one and the app switches when your system does. <strong>Manual override</strong> — force any theme regardless of schedule, for a session that doesn’t fit the rhythm. On any dark theme, a smooth brightness slider tunes the text down from 100% to 30% — for nights when even the dark themes feel too bright.',
     'index.s4.dt1':     'Typefaces',
@@ -196,7 +196,7 @@ const translations = {
     'index.s6.eyebrow': 'Your library',
     'index.s6.h2':      '<em>Your</em> library',
     'index.s6.p1':      'The library is a list: covers or rows, folders, tags, search. New, Latest and Pinned each get a tab of their own.',
-    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac)</strong>, and their ZIP variants. Click a button, drop in a file, or drag a URL straight from your browser — the book downloads and the import dialog opens with its title, author, and cover already filled in. Or browse OPDS catalogs: Standard Ebooks, Project Gutenberg, Feedbooks, or your own server. Following a series? Set a watcher on its feed — the app checks it in the background and imports new arrivals for you.',
+    'index.s6.p2':      'Three ways to look at it: compact rows when you know what you want, a wall of covers for browsing, or a sortable table when you want to see everything at once.',
     'index.s6.p3':      'Track your reading time book by book, watch the streaks and patterns build up, and export it all as an HTML report.',
     'index.s6.p3b':     'Bookmarks come in seven colors, with notes and highlighted text. Each book gets its own rich-text notes. Everything is searchable, and everything can be exported.',
     'index.s6.p4':      'Every book is stored on disk as plain HTML, in folders named so you can actually read them. No proprietary container, no DRM, nothing locked to a cloud you can’t walk away from. Copy or zip the whole library folder whenever you like. It all lives in your own iCloud — or, if you’d rather skip sync, point the app at any local folder and move it whenever you want.',
@@ -205,8 +205,8 @@ const translations = {
     'index.s7.eyebrow': 'Native',
     'index.s7.h2':      'Part of the <em>system.</em>',
     'index.s7.p1':      'ContinuousReader is written in Swift and SwiftUI, the languages Apple builds its own apps in. You feel it in the small things: it opens the instant you click, scrolling stays smooth however hard you flick it, and shortcuts and swipes behave the way the rest of the system does. The whole app ships as a lean native binary, not a bundled-up copy of a web browser.',
-    'index.s7.p2':      'On Mac, an <em>island design</em> borrowed from System Settings — rounded floating panels on a recessed background — with keyboard shortcuts, a Book Card that floats above the app, and drag-and-drop more or less everywhere. On iPad, real swipe actions and Split View. On iPhone, gestures built for one hand and sheets that rise from the bottom like the rest of iOS, <strong>not like a web form.</strong>',
-    'index.s7.p3':      'The heavy lifting is the system’s, not ours. <strong>iCloud</strong> stores and syncs your books in your own account. <strong>Apple Translation</strong> does the in-text translation, on-device and private. <strong>The system voice engine</strong> drives Read Aloud, using the voices your Mac and iPhone already speak. We didn’t reinvent any of it — we just wired it together properly.',
+    'index.s7.p2':      'It shows in the small things: it opens the moment you click it, the window remembers where it was, and the keyboard reaches everything the mouse does.',
+    'index.s7.p3':      'None of it is reinvented; it is Apple’s own machinery, wired together properly.',
 
     'index.s8.eyebrow':  'Three apps',
     'index.s8.h2':       'A book, a <em>shelf</em>, or a library?',
@@ -276,7 +276,7 @@ const translations = {
     'features.s1.modes.p2':       'Switch to <strong>Page</strong> mode for a paginated experience with animated or instant page turns. Page separators are configurable — clean lines or a soft shadow. On Mac and iPad (in landscape), <strong>Two pages</strong> mode renders a classic book spread. All three modes preserve your exact position when switching.',
 
     'features.s1.position.h':     'Position that survives anything',
-    'features.s1.position.p1':    'Your reading position is tracked more precisely than most readers bother with — which means it survives:',
+    'features.s1.position.p1':    'Your reading position is tracked to the paragraph, which is what lets it survive:',
     'features.s1.position.li1':   '<strong>Font changes</strong>Size, family, line height',
     'features.s1.position.li2':   '<strong>Window resizes</strong>Full layout reflow',
     'features.s1.position.li3':   '<strong>Device switches</strong>Mac to iPad, iPad to iPhone — ContinuousReader with sync enabled',
@@ -377,7 +377,7 @@ const translations = {
     'features.s3.tabs.p2':        'New, Latest and Pinned work as shortcuts — the books you want fast access to, without fiddling with filters.',
 
     'features.s3.views.h':        'View modes',
-    'features.s3.views.li1':      '<strong>List view</strong>(iPad and iPhone) Adaptive rows with adjustable detail levels — covers at every level. Shows title, author, series, progress, genre chips, and a context menu.',
+    'features.s3.views.li1':      '<strong>List</strong>Rows that tighten as you shrink them — from cover, title, author, series and progress down to a single line',
     'features.s3.views.li2':      '<strong>Card view</strong>Responsive grid with cover images, 4-directional keyboard navigation, cover zoom animation, double-click to open, frosted glass selection checkboxes. On iPhone, a 2–4 column grid (5 on wide screens); on Mac and iPad, a continuous card-size slider.',
     'features.s3.views.li3':      '<strong>Table view</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.webp" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Mac only) Sortable columns, column customization, two-level hierarchy, inline color dots in the title column, annotation sheet, and a full-width actions toolbar above the table.',
     'features.s3.views.p':        'All of them support <strong>multi-mode grouping</strong>: none, author, series, author &amp; series, genres, or date added — with collapsible sections and shared section headers.',
@@ -391,7 +391,7 @@ const translations = {
     'features.s3.search.h':       'Search, sort, filter',
     'features.s3.search.li1':     '<strong>Scoped search</strong>Filter by title, author, series, notes, annotation, or genre. Results appear as you type.',
     'features.s3.search.li2':     '<strong>Six sort options</strong>Title, author, series, date added, date opened, and date published. Each cycles through ascending, descending, and cleared.',
-    'features.s3.search.li3':     '<strong>Unified filter popover</strong>Color and genre filters combined in one place. Active filters show inline badges — up to 3 color dots then a count, genre name with ellipsis then a count.',
+    'features.s3.search.li3':     '<strong>One filter popover</strong>Colour and genre in one place, and whatever you have filtered by stays visible on the button — so you always know why a book is missing from the list',
 
     'features.s3.colors.h':       'Color tags',
     'features.s3.colors.p':       'Seven Finder-style colored dots that can be assigned to any book via context menu, edit dialog, import dialog, or info panel. Optional color highlighting shows faint background tints in list and card views, and inline colored dots in table view.',
@@ -475,7 +475,7 @@ const translations = {
     'features.s4.dialog.li4':     '<strong>Color tag</strong>Assignment',
     'features.s4.dialog.li5':     '<strong>Genre chip picker</strong>Manual genre editing',
     'features.s4.dialog.li6':     '<strong>Folder assignment</strong>Context-aware — uses the current folder when browsing one, otherwise none',
-    'features.s4.dialog.li7':     '<strong>Origin URL</strong>Stored for later "In Library" detection in OPDS',
+    'features.s4.dialog.li7':     '<strong>Where it came from</strong>Remembered, so a catalog can mark a book you already have',
     'features.s4.dialog.li8':     '<strong>Image inclusion toggle</strong>For FB2/EPUB/MOBI (strip images if you prefer text-only)',
     'features.s4.dialog.li9':     '<strong>Open after import</strong>Checkbox',
     'features.s4.dialog.p2':      'JustReader skips this dialog — pick a file, start reading.',
@@ -900,7 +900,7 @@ const translations = {
     'download.faq.a13.p2':        'ContinuousReader sales are what funds that decision. If the Apple side finds its audience, JustReader has runway to grow beyond it.',
 
     'download.faq.q12':           '<em>Support</em>?',
-    'download.faq.a12':           'Email: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. One developer handles everything, so response time runs in days rather than hours — but every message gets a real reply.',
+    'download.faq.a12':           'Email: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.',
 
     'download.about.eyebrow':     'About',
     'download.about.title':       'A note <em>before you download</em>.',
@@ -929,7 +929,7 @@ const translations = {
     'contact.form.subj.other':   'Other',
     'contact.form.message':    'Message',
     'contact.form.submit':     'Send message',
-    'contact.note':            'You can also write directly to <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. One developer handles everything, so replies usually take a day or two — but every message gets a real answer.',
+    'contact.note':            'You can also write straight to <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. I answer every message myself, which usually takes a day or two.',
     // --- thanks page ---
     'meta.thanks.title': 'Thank you — ContinuousReader',
     'meta.thanks.desc': 'Your message has been sent.',
@@ -937,7 +937,7 @@ const translations = {
     'meta.thanks.ogDesc': 'Your message has been sent.',
     'thanks.header.eyebrow': 'Message sent',
     'thanks.header.title': 'Thank <em>you</em>.',
-    'thanks.header.subtitle': 'Your message landed in my inbox. One developer handles everything, so a reply usually takes a day or two — but every message gets a real answer.',
+    'thanks.header.subtitle': 'Your message landed in my inbox. I answer every one myself, which usually takes a day or two.',
     'thanks.back': 'Back to home',
 
     // ============================================================
@@ -1126,8 +1126,8 @@ const translations = {
     'index.s4.eyebrow': 'Чтение',
     'index.s4.h2':      'Типографика, <em>уважающая</em> текст.',
     'index.s4.p1':      'Большинство читалок промахивается с типографикой одним из двух способов. Одни прикидываются книгой — с псевдоперелистыванием и поддельной фактурой бумаги. Другие просто вываливают текст на экран и уходят: браузерные дефолты, рваные колонки, без переносов.',
-    'index.s4.p2':      '<strong>ContinuousReader внимателен к деталям.</strong>',
-    'index.s4.p3':      'Пять основных палитр — Neutral, Ochre, Celestial, Lime, Rose — каждая с семью тональными вариациями: чисто-белая крайность слева, пять средних тонов посередине и чисто-чёрная крайность справа. Плюс две особые темы для любителей олдскула: <em>Typewriter</em> в цвете слоновой кости и тёмно-коричневом (светлый и тёмный варианты) — со сдержанной стимпанк-эстетикой: латунный спидометр приборной панели с подвижной стрелкой, на узких экранах сменяется винтажной радиошкалой с подсвеченной красной указательной чертой; медные клавиши; барабанные механические счётчики — и <em>Terminal</em> — белый моноширинный на глубоком синем (если палитра кажется знакомой — <em>да, вы не ошиблись</em>). Три пользовательских слота под ваши цвета. <strong>Всего сорок один вариант.</strong>',
+    'index.s4.p2':      '<strong>ContinuousReader выбирает третий путь.</strong>',
+    'index.s4.p3':      'Пять палитр — Neutral, Ochre, Celestial, Lime, Rose — каждая в семи тонах: от чисто-белого края через пять средних к чисто-чёрному. Плюс две темы со своей мебелью. <em>Typewriter</em>: слоновая кость и тёмно-коричневый, латунный спидометр со стрелкой, которая ползёт по мере чтения, медные клавиши и механические счётчики-барабаны. <em>Terminal</em>: белый моноширинный на глубоком синем — если узнали палитру, вы знаете, почему она здесь. Три пользовательских слота — под ваши цвета. <strong>Сорок одна тема всего.</strong>',
     'index.s4.p4':      'Две крайние точки в каждой цветной палитре — чисто-белая с насыщенным палитровым цветом слева, чисто-чёрная с тем же цветом справа — закрывают жёсткие сценарии: <strong>под полным солнцем на пляже</strong> или <strong>в постели с выключенным светом</strong>, в любом цвете на выбор.',
     'index.s4.picker':  'Три способа выбора схемы. <strong>Фиксированно</strong> — одна тема всегда. <strong>День и ночь</strong> — связка светлой и тёмной, переключаются вслед за системой. <strong>Ручное переопределение</strong> — любая тема поверх расписания, когда сессия выбивается из ритма. На любой тёмной теме — плавный слайдер яркости текста от 100% до 30%, для ночей, когда даже тёмная схема кажется слишком яркой.',
     'index.s4.dt1':     'Шрифты',
@@ -1151,7 +1151,7 @@ const translations = {
     'index.s6.eyebrow': 'Библиотека',
     'index.s6.h2':      '<em>Ваша</em> библиотека',
     'index.s6.p1':      'Библиотека — это список: обложки или строки, папки, метки, поиск. У «Нового», «Последних» и «Закреплённых» — по своей вкладке.',
-    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac)</strong> и их ZIP-варианты. Нажмите кнопку, бросьте файл или перетащите URL прямо из браузера — книга скачается, а диалог импорта откроется уже с заполненными названием, автором и обложкой. Или загляните в каталоги OPDS: Standard Ebooks, Project Gutenberg, Feedbooks или собственный сервер. Читаете серию? Поставьте слежение за её фидом — приложение проверит его в фоне и само принесёт новинки.',
+    'index.s6.p2':      'Три способа на это смотреть: компактные строки, когда вы знаете, что ищете; стена обложек, когда хочется полистать; сортируемая таблица, когда нужно увидеть всё сразу.',
     'index.s6.p3':      'Считайте время чтения по каждой книге, смотрите, как набираются серии дней и закономерности, и выгружайте всё это в HTML-отчёт.',
     'index.s6.p3b':     'Закладки бывают семи цветов, с заметками и подсветкой текста. У каждой книги — свои заметки с форматированием. Всё ищется, и всё можно экспортировать.',
     'index.s6.p4':      'Каждая книга лежит на диске как обычный HTML, в папках с человекочитаемыми именами. Никакого проприетарного контейнера, никакого DRM, ничего привязанного к облаку, из которого не уйти. Копируйте или архивируйте всю папку библиотеки, когда захотите. Всё хранится в вашем собственном iCloud — или, если синхронизация не нужна, укажите любую локальную папку и переносите её куда угодно.',
@@ -1161,8 +1161,8 @@ const translations = {
     'index.s7.eyebrow': 'Нативно',
     'index.s7.h2':      'Часть <em>системы.</em>',
     'index.s7.p1':      'ContinuousReader написан на Swift и SwiftUI — тех самых языках, на которых Apple пишет свои приложения. Это чувствуется в мелочах: он открывается мгновенно по щелчку, скролл остаётся плавным, как бы резко вы его ни крутили, а горячие клавиши и свайпы ведут себя как во всей остальной системе. И всё это — компактный нативный бинарник, а не упакованная копия браузера.',
-    'index.s7.p2':      'На Mac — <em>островной дизайн</em>, позаимствованный у системных Настроек: округлые плавающие панели на утопленном фоне, горячие клавиши, Карточка книги поверх приложения и drag-and-drop почти везде. На iPad — настоящие свайпы и Split View. На iPhone — жесты под одну руку и панели, выезжающие снизу как во всей iOS, <strong>а не как веб-форма.</strong>',
-    'index.s7.p3':      'Тяжёлую работу делает сама система, а не мы. <strong>iCloud</strong> хранит и синхронизирует ваши книги в вашем же аккаунте. <strong>Apple Translation</strong> переводит прямо в тексте, на устройстве и приватно. <strong>Системный голосовой движок</strong> ведёт «Чтение вслух» голосами, которыми ваш Mac и iPhone уже говорят. Мы ничего из этого не переизобретали — просто аккуратно соединили.',
+    'index.s7.p2':      'Это видно по мелочам: открывается сразу по щелчку, окно помнит, где стояло, а с клавиатуры достаётся всё то же, что и мышью.',
+    'index.s7.p3':      'Здесь ничего не изобретено заново: это механика самой Apple, просто аккуратно соединённая.',
 
     // ---------- Section 8 — Two apps ----------
     'index.s8.eyebrow':  'Три приложения',
@@ -1197,7 +1197,7 @@ const translations = {
     'contact.form.subj.other':   'Другое',
     'contact.form.message':    'Сообщение',
     'contact.form.submit':     'Отправить',
-    'contact.note':            'Можно также написать напрямую на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Всё делает один разработчик, поэтому ответы обычно занимают день-два — но на каждое сообщение приходит настоящий ответ.',
+    'contact.note':            'Можно написать и прямо на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Я отвечаю на каждое письмо сам — обычно это занимает день-два.',
     // --- thanks page ---
     'meta.thanks.title': 'Спасибо — ContinuousReader',
     'meta.thanks.desc': 'Ваше сообщение отправлено.',
@@ -1205,7 +1205,7 @@ const translations = {
     'meta.thanks.ogDesc': 'Ваше сообщение отправлено.',
     'thanks.header.eyebrow': 'Сообщение отправлено',
     'thanks.header.title': 'Спасибо за <em>письмо</em>.',
-    'thanks.header.subtitle': 'Ваше сообщение у меня в почте. Всем занимается один разработчик, так что ответ обычно приходит за день-два — но на каждое сообщение я отвечаю лично.',
+    'thanks.header.subtitle': 'Ваше письмо дошло. Я отвечаю на каждое сам — обычно это занимает день-два.',
     'thanks.back': 'На главную',
 
     // ---------- Privacy page ----------
@@ -1428,7 +1428,7 @@ const translations = {
     'download.faq.a13.p1':        'Пока только Apple. ContinuousReader построен нативно для macOS / iPadOS / iOS — именно это и делает типографику, синхронизацию и жесты такими, какие они есть. Портирование JustReader на Android, Linux или Windows означало бы переписать движок рендеринга и конвертации с нуля для каждой платформы, и это имеет смысл только когда есть аудитория, достаточно крупная, чтобы поддерживать такую работу как фулл-тайм, а не как сайд-проект после работы.',
     'download.faq.a13.p2':        'Продажи ContinuousReader финансируют это решение. Если Apple-сторона найдёт свою аудиторию, у JustReader будет ресурс расти за её пределы.',
     'download.faq.q12':           '<em>Поддержка</em>?',
-    'download.faq.a12':           'Email: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Всё делает один разработчик, поэтому ответ обычно приходит за несколько дней, а не часов — но на каждое сообщение приходит настоящий ответ.',
+    'download.faq.a12':           'Почта: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.',
 
     'download.about.eyebrow':     'О приложении',
     'download.about.title':       'Несколько слов <em>перед загрузкой</em>.',
@@ -1489,7 +1489,7 @@ const translations = {
     'features.s1.modes.p2':       'Переключитесь в режим <strong>Страница</strong> для постраничного чтения с анимированным или мгновенным листанием. Разделители страниц настраиваются — чёткие линии или мягкая тень. На Mac и iPad (в альбомной ориентации) режим <strong>Две страницы</strong> рисует классический книжный разворот. Все три режима сохраняют вашу точную позицию при переключении.',
 
     'features.s1.position.h':     'Позиция, которая переживает что угодно',
-    'features.s1.position.p1':    'Ваша позиция чтения отслеживается точнее, чем заморачивается большинство читалок — поэтому она переживает:',
+    'features.s1.position.p1':    'Позиция чтения отслеживается до абзаца — именно поэтому она переживает:',
     'features.s1.position.li1':   '<strong>Смену шрифта</strong>Размер, начертание, межстрочный интервал',
     'features.s1.position.li2':   '<strong>Изменение размера окна</strong>Полное перетекание разметки',
     'features.s1.position.li3':   '<strong>Смену устройства</strong>Mac → iPad, iPad → iPhone — ContinuousReader с включённой синхронизацией',
@@ -1590,7 +1590,7 @@ const translations = {
     'features.s3.tabs.p2':        'Новое, Последние и Закреплённые работают как быстрые списки — книги, к которым нужен мгновенный доступ, без возни с фильтрами.',
 
     'features.s3.views.h':        'Режимы отображения',
-    'features.s3.views.li1':      '<strong>Список</strong>(iPad и iPhone) Адаптивные строки с настраиваемой подробностью — обложки на любом уровне. Название, автор, серия, прогресс, жанры и контекстное меню.',
+    'features.s3.views.li1':      '<strong>Список</strong>Строки сжимаются вслед за плотностью: от обложки, названия, автора, серии и прогресса — до одной строки',
     'features.s3.views.li2':      '<strong>Карточки</strong>Адаптивная сетка с обложками, клавиатурная навигация во все стороны, анимация обложек, открытие двойным щелчком. На iPhone — 2–4 колонки (5 на широких экранах); на Mac и iPad — плавный ползунок размера карточек.',
     'features.s3.views.li3':      '<strong>Таблица</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.webp" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Только Mac) Сортируемые колонки, кастомизация колонок, двухуровневая иерархия, инлайн цветные точки в колонке названия, панель аннотации и панель действий во всю ширину над таблицей.',
     'features.s3.views.p':        'Все поддерживают <strong>многорежимную группировку</strong>: без группировки, по автору, по серии, по автору и серии, по жанрам или по дате добавления — со сворачиваемыми секциями и общими заголовками секций.',
@@ -1604,7 +1604,7 @@ const translations = {
     'features.s3.search.h':       'Поиск, сортировка, фильтрация',
     'features.s3.search.li1':     '<strong>Поиск по полям</strong>Фильтр по названию, автору, серии, комментарию, аннотации или жанру. Результаты появляются по мере ввода.',
     'features.s3.search.li2':     '<strong>Шесть сортировок</strong>Название, автор, серия, дата добавления, дата открытия и дата издания. Каждая переключается по кругу: по возрастанию, по убыванию, сброшено.',
-    'features.s3.search.li3':     '<strong>Единый popover фильтров</strong>Фильтры по цвету и жанру объединены в одном месте. Активные фильтры показывают инлайн-бейджи — до трёх цветных точек и счётчик, имя жанра с многоточием и счётчик.',
+    'features.s3.search.li3':     '<strong>Один поповер фильтров</strong>Цвет и жанр в одном месте, а то, по чему вы отфильтровали, остаётся видно на кнопке — чтобы всегда было понятно, почему книги нет в списке',
 
     'features.s3.colors.h':       'Цветовые метки',
     'features.s3.colors.p':       'Семь цветных точек в стиле Finder назначаются любой книге через контекстное меню, диалог редактирования, диалог импорта или информационную панель. Опциональная цветовая подсветка показывает лёгкие фоновые оттенки в списке и в карточках, а в таблице — цветные точки рядом с названием.',
@@ -1688,7 +1688,7 @@ const translations = {
     'features.s4.dialog.li4':     '<strong>Цветовая метка</strong>Назначение',
     'features.s4.dialog.li5':     '<strong>Селектор жанровых тегов</strong>Ручное редактирование жанров',
     'features.s4.dialog.li6':     '<strong>Назначение папки</strong>С учётом контекста — берёт текущую папку, если вы в ней, иначе без папки',
-    'features.s4.dialog.li7':     '<strong>URL происхождения</strong>Сохраняется для последующего определения «В библиотеке» в OPDS',
+    'features.s4.dialog.li7':     '<strong>Откуда книга</strong>Запоминается, чтобы каталог мог отметить книгу, которая у вас уже есть',
     'features.s4.dialog.li8':     '<strong>Переключатель включения изображений</strong>Для FB2/EPUB/MOBI (выкиньте картинки, если предпочитаете чистый текст)',
     'features.s4.dialog.li9':     '<strong>Открыть после импорта</strong>Чекбокс',
     'features.s4.dialog.p2':      'JustReader пропускает этот диалог — выбираете файл, начинаете читать.',
@@ -2067,8 +2067,8 @@ const translations = {
     'index.s4.eyebrow': 'Читання',
     'index.s4.h2':      'Типографіка, що <em>поважає</em> текст.',
     'index.s4.p1':      'Більшість читалок промахується з типографікою одним із двох способів. Одні прикидаються книгою — з псевдоперегортанням і підробленою фактурою паперу. Інші просто вивалюють текст на екран і йдуть: браузерні дефолти, рвані колонки, без переносів.',
-    'index.s4.p2':      '<strong>ContinuousReader уважний до деталей.</strong>',
-    'index.s4.p3':      'Пʼять основних палітр — Neutral, Ochre, Celestial, Lime, Rose — кожна з сімома тональними варіаціями: чисто-біла крайність зліва, пʼять середніх тонів посередині та чисто-чорна крайність справа. Плюс дві особливі теми для любителів олдскула: <em>Typewriter</em> у кольорі слонової кості й темно-коричневому (світлий і темний варіанти) — зі стриманою стимпанк-естетикою: латунний спідометр приладової панелі з рухомою стрілкою, на вузьких екранах змінюється вінтажною радіошкалою з підсвіченою червоною вказівною рискою; мідні клавіші; барабанні механічні лічильники — та <em>Terminal</em> — білий моноширинний на глибокому синьому (якщо палітра здається знайомою — <em>так, ви не помилилися</em>). Три кастомні слоти, де кольори задаєте ви. <strong>Усього сорок один варіант.</strong>',
+    'index.s4.p2':      '<strong>ContinuousReader обирає третій шлях.</strong>',
+    'index.s4.p3':      'П’ять палітр — Neutral, Ochre, Celestial, Lime, Rose — кожна в семи тонах: від чисто-білого краю через п’ять середніх до чисто-чорного. Плюс дві теми з власними меблями. <em>Typewriter</em>: слонова кістка й темно-коричневий, латунний спідометр зі стрілкою, що повзе в міру читання, мідні клавіші та механічні лічильники-барабани. <em>Terminal</em>: білий моноширинний на глибокому синьому — якщо впізнали палітру, ви знаєте, чому вона тут. Три користувацькі слоти — під ваші кольори. <strong>Сорок одна тема всього.</strong>',
     'index.s4.p4':      'Дві крайні точки в кожній кольоровій палітрі — чисто-біла з насиченим палітровим кольором зліва, чисто-чорна з тим самим кольором справа — закривають жорсткі сценарії: <strong>під яскравим сонцем на пляжі</strong> або <strong>у ліжку з вимкненим світлом</strong>, у будь-якому кольорі на вибір.',
     'index.s4.picker':  'Три способи вибору схеми. <strong>Фіксовано</strong> — одна тема завжди. <strong>День і ніч</strong> — звʼязка світлої й темної, перемикаються слідом за системою. <strong>Ручне перевизначення</strong> — будь-яка тема поверх розкладу, коли сесія випадає з ритму. На будь-якій темній темі — плавний слайдер яскравості тексту від 100% до 30%, для ночей, коли навіть темна схема здається занадто яскравою.',
     'index.s4.dt1':     'Шрифти',
@@ -2092,7 +2092,7 @@ const translations = {
     'index.s6.eyebrow': 'Бібліотека',
     'index.s6.h2':      '<em>Ваша</em> бібліотека',
     'index.s6.p1':      'Бібліотека — це список: обкладинки або рядки, папки, мітки, пошук. У «Нового», «Останніх» і «Закріплених» — по своїй вкладці.',
-    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac)</strong> та їхні ZIP-варіанти. Натисніть кнопку, киньте файл або перетягніть URL прямо з браузера — книга завантажиться, а діалог імпорту відкриється вже із заповненими назвою, автором та обкладинкою. Або загляньте в каталоги OPDS: Standard Ebooks, Project Gutenberg, Feedbooks чи власний сервер. Читаєте серію? Поставте стеження за її фідом — застосунок перевірить його у фоні та сам принесе новинки.',
+    'index.s6.p2':      'Три способи на це дивитися: компактні рядки, коли ви знаєте, що шукаєте; стіна обкладинок, коли хочеться погортати; сортована таблиця, коли треба побачити все одразу.',
     'index.s6.p3':      'Рахуйте час читання для кожної книги окремо, дивіться, як набираються серії днів і закономірності, і вивантажуйте все це в HTML-звіт.',
     'index.s6.p3b':     'Закладки бувають семи кольорів, із нотатками й підсвіткою тексту. У кожної книги — свої нотатки з форматуванням. Усе шукається, і все можна експортувати.',
     'index.s6.p4':      'Кожна книга лежить на диску як звичайний HTML, у папках із людиночитаними іменами. Жодного пропрієтарного контейнера, жодного DRM, нічого привʼязаного до хмари, з якої не вийти. Копіюйте або архівуйте всю папку бібліотеки, коли захочете. Усе зберігається у вашому власному iCloud — або, якщо синхронізація не потрібна, вкажіть будь-яку локальну папку та переносьте її куди завгодно.',
@@ -2102,8 +2102,8 @@ const translations = {
     'index.s7.eyebrow': 'Нативно',
     'index.s7.h2':      'Частина <em>системи.</em>',
     'index.s7.p1':      'ContinuousReader написаний на Swift і SwiftUI — тих самих мовах, якими Apple пише власні застосунки. Це відчувається в дрібницях: він відкривається миттєво, щойно клацнете, скрол лишається плавним, хоч би як різко ви його крутили, а гарячі клавіші та свайпи поводяться як у всій решті системи. І все це — компактний нативний бінарник, а не запакована копія браузера.',
-    'index.s7.p2':      'На Mac — <em>острівний дизайн</em>, запозичений у системних Налаштувань: округлі рухомі панелі на втопленому тлі, гарячі клавіші, Картка книги поверх застосунку та drag-and-drop майже всюди. На iPad — справжні свайпи й Split View. На iPhone — жести під одну руку й панелі, що виїжджають знизу як у всій iOS, <strong>а не як веб-форма.</strong>',
-    'index.s7.p3':      'Важку роботу робить сама система, а не ми. <strong>iCloud</strong> зберігає та синхронізує ваші книги у вашому ж акаунті. <strong>Apple Translation</strong> перекладає прямо в тексті, на пристрої та приватно. <strong>Системний голосовий рушій</strong> веде «Читання вголос» голосами, якими ваш Mac та iPhone уже говорять. Ми нічого з цього не переробляли — просто акуратно зʼєднали.',
+    'index.s7.p2':      'Це видно з дрібниць: відкривається одразу після клацання, вікно пам’ятає, де стояло, а з клавіатури дістається все те саме, що й мишею.',
+    'index.s7.p3':      'Тут нічого не винайдено заново: це механіка самої Apple, просто акуратно з’єднана.',
 
     // ---------- Section 8 — Two apps ----------
     'index.s8.eyebrow':  'Три застосунки',
@@ -2138,7 +2138,7 @@ const translations = {
     'contact.form.subj.other':   'Інше',
     'contact.form.message':    'Повідомлення',
     'contact.form.submit':     'Надіслати',
-    'contact.note':            'Можна також написати напряму на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Усім займається один розробник, тому відповіді зазвичай надходять за день-два — але на кожне повідомлення приходить справжня відповідь.',
+    'contact.note':            'Можна написати й прямо на <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Я відповідаю на кожен лист сам — зазвичай це займає день-два.',
     // --- thanks page ---
     'meta.thanks.title': 'Дякую — ContinuousReader',
     'meta.thanks.desc': 'Ваше повідомлення надіслано.',
@@ -2146,7 +2146,7 @@ const translations = {
     'meta.thanks.ogDesc': 'Ваше повідомлення надіслано.',
     'thanks.header.eyebrow': 'Повідомлення надіслано',
     'thanks.header.title': 'Дякую за <em>лист</em>.',
-    'thanks.header.subtitle': 'Ваше повідомлення вже в моїй пошті. Усім займається один розробник, тож відповідь зазвичай надходить за день-два — але на кожне повідомлення я відповідаю особисто.',
+    'thanks.header.subtitle': 'Ваш лист дійшов. Я відповідаю на кожен сам — зазвичай це займає день-два.',
     'thanks.back': 'На головну',
 
     // ---------- Privacy page ----------
@@ -2369,7 +2369,7 @@ const translations = {
     'download.faq.a13.p1':        'Поки лише Apple. ContinuousReader побудований нативно для macOS / iPadOS / iOS — саме це й робить типографіку, синхронізацію та жести такими, якими вони є. Портування JustReader на Android, Linux чи Windows означало б переписати рушій рендерингу та конвертації з нуля для кожної платформи, і це має сенс лише коли є аудиторія, достатньо велика, щоб підтримувати таку роботу як фулл-тайм, а не як сайд-проект після роботи.',
     'download.faq.a13.p2':        'Саме продажі ContinuousReader фінансують це рішення. Якщо Apple-сторона знайде свою аудиторію, у JustReader буде ресурс вирости за її межі.',
     'download.faq.q12':           '<em>Підтримка</em>?',
-    'download.faq.a12':           'Email: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Усім займається один розробник, тому відповідь зазвичай надходить за кілька днів, а не годин — але на кожне повідомлення приходить справжня відповідь.',
+    'download.faq.a12':           'Пошта: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.',
 
     'download.about.eyebrow':     'Про застосунок',
     'download.about.title':       'Кілька слів <em>перед завантаженням</em>.',
@@ -2430,7 +2430,7 @@ const translations = {
     'features.s1.modes.p2':       'Перемкніться в режим <strong>Сторінка</strong> для посторінкового читання з анімованим або миттєвим гортанням. Роздільники сторінок налаштовуються — чіткі лінії або мʼяка тінь. На Mac та iPad (в альбомній орієнтації) режим <strong>Дві сторінки</strong> відображає класичний книжковий розворот. Усі три режими зберігають вашу точну позицію при перемиканні.',
 
     'features.s1.position.h':     'Позиція, яка переживе все',
-    'features.s1.position.p1':    'Ваша позиція читання відстежується точніше, ніж заведено в більшості читачів — а отже, вона переживе:',
+    'features.s1.position.p1':    'Позиція читання відстежується до абзацу — саме тому вона переживає:',
     'features.s1.position.li1':   '<strong>Зміни шрифту</strong>Розмір, гарнітура, висота рядка',
     'features.s1.position.li2':   '<strong>Зміни розміру вікна</strong>Повне переформатування макета',
     'features.s1.position.li3':   '<strong>Перехід між пристроями</strong>З Mac на iPad, з iPad на iPhone — ContinuousReader з увімкненою синхронізацією',
@@ -2531,7 +2531,7 @@ const translations = {
     'features.s3.tabs.p2':        'Нове, Останні та Закріплені працюють як швидкі списки — книги, до яких потрібен миттєвий доступ, без вовтуження з фільтрами.',
 
     'features.s3.views.h':        'Режими перегляду',
-    'features.s3.views.li1':      '<strong>Список</strong>(iPad та iPhone) Адаптивні рядки з налаштовуваною деталізацією — обкладинки на будь-якому рівні. Назва, автор, серія, прогрес, жанри та контекстне меню.',
+    'features.s3.views.li1':      '<strong>Список</strong>Рядки стискаються услід за щільністю: від обкладинки, назви, автора, серії та прогресу — до одного рядка',
     'features.s3.views.li2':      '<strong>Картки</strong>Адаптивна сітка з обкладинками, клавіатурна навігація в усі боки, анімація обкладинок, відкриття подвійним клацанням. На iPhone — 2–4 колонки (5 на широких екранах); на Mac та iPad — плавний повзунок розміру карток.',
     'features.s3.views.li3':      '<strong>Таблиця</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.webp" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(тільки Mac) Сортовані колонки, налаштування колонок, дворівнева ієрархія, вбудовані колірні крапки в колонці назв, панель анотації та повноширока панель дій над таблицею.',
     'features.s3.views.p':        'Усі підтримують <strong>багаторежимне групування</strong>: без групування, за автором, за серією, за автором і серією, за жанрами або за датою додавання — зі згортуваними секціями і спільними заголовками секцій.',
@@ -2545,7 +2545,7 @@ const translations = {
     'features.s3.search.h':       'Пошук, сортування, фільтр',
     'features.s3.search.li1':     '<strong>Пошук в обраному полі</strong>Фільтрування за назвою, автором, серією, коментарем, анотацією чи жанром. Результати зʼявляються у міру введення.',
     'features.s3.search.li2':     '<strong>Шість сортувань</strong>Назва, автор, серія, дата додавання, дата відкриття та дата видання. Кожне перемикається по колу: за зростанням, за спаданням, скинуто.',
-    'features.s3.search.li3':     '<strong>Обʼєднана панель фільтрів</strong>Фільтри кольору й жанру зведені в одне місце. Активні фільтри показують вбудовані значки — до 3 колірних крапок плюс кількість; назва жанру з трикрапкою плюс кількість.',
+    'features.s3.search.li3':     '<strong>Один поповер фільтрів</strong>Колір і жанр в одному місці, а те, за чим ви відфільтрували, лишається видно на кнопці — щоб завжди було зрозуміло, чому книги немає в списку',
 
     'features.s3.colors.h':       'Кольорові мітки',
     'features.s3.colors.p':       'Сім кольорових крапок у стилі Finder, які можна призначити будь-якій книзі через контекстне меню, діалог редагування, діалог імпорту чи інформаційну панель. Опційне колірне підсвічування показує ледь помітні фонові відтінки у списку й картках, а в таблиці — кольорові крапки поруч із назвою.',
@@ -2629,7 +2629,7 @@ const translations = {
     'features.s4.dialog.li4':     '<strong>Кольорова мітка</strong>Призначення',
     'features.s4.dialog.li5':     '<strong>Селектор жанрових тегів</strong>Ручне редагування жанрів',
     'features.s4.dialog.li6':     '<strong>Призначення теки</strong>З урахуванням контексту — бере поточну теку, якщо ви в ній, інакше без теки',
-    'features.s4.dialog.li7':     '<strong>URL походження</strong>Зберігається для пізнішого виявлення «У бібліотеці» в OPDS',
+    'features.s4.dialog.li7':     '<strong>Звідки книга</strong>Запам’ятовується, щоб каталог міг позначити книгу, яка у вас уже є',
     'features.s4.dialog.li8':     '<strong>Перемикач включення зображень</strong>Для FB2/EPUB/MOBI (відкинути зображення, якщо хочете суто текст)',
     'features.s4.dialog.li9':     '<strong>Відкрити після імпорту</strong>Прапорець',
     'features.s4.dialog.p2':      'JustReader пропускає цей діалог — вибирайте файл і починайте читати.',
@@ -3006,8 +3006,8 @@ const translations = {
     'index.s4.eyebrow': 'La lectura',
     'index.s4.h2':      'Tipografía que <em>respeta</em> el texto.',
     'index.s4.p1':      'La mayoría de las apps de lectura se equivocan con la tipografía de una de dos maneras. Unas fingen que la pantalla es un libro, con animaciones esqueuomórficas de paso de página y textura de papel falsa. Otras vuelcan el texto en la pantalla y se desentienden — los valores por defecto del navegador, columnas irregulares, sin separación silábica.',
-    'index.s4.p2':      '<strong>ContinuousReader cuida cada detalle.</strong>',
-    'index.s4.p3':      'Cinco paletas principales — Neutral, Ochre, Celestial, Lime, Rose — cada una con siete variaciones tonales: un extremo blanco puro a la izquierda, cinco tonos intermedios y un extremo negro puro a la derecha. Más dos temas destacados para los amantes del estilo retro: <em>Typewriter</em> en marfil y marrón oscuro (variantes clara y oscura) — con un toque steampunk discreto: un velocímetro de tablero en latón con aguja móvil que se transforma en una escala de radio vintage con marcador rojo iluminado en barras estrechas; teclas de cobre; contadores mecánicos de tambor — y <em>Terminal</em> — monoespaciado blanco sobre azul profundo (si la paleta te resulta familiar — <em>sí, no te equivocas</em>). Tres espacios personalizados, donde los colores los pones tú. <strong>Cuarenta y un temas en total.</strong>',
+    'index.s4.p2':      '<strong>ContinuousReader toma la tercera opción.</strong>',
+    'index.s4.p3':      'Cinco paletas —Neutral, Ochre, Celestial, Lime, Rose— cada una en siete tonos: desde un blanco puro, pasando por cinco tonos medios, hasta un negro puro. Y dos temas que traen su propio mobiliario. <em>Typewriter</em>: marfil y marrón oscuro, con un velocímetro de latón cuya aguja avanza a medida que lees, teclas de cobre y contadores mecánicos de tambor. <em>Terminal</em>: monoespaciada blanca sobre azul profundo; si reconoces la paleta, ya sabes por qué está aquí. Tres ranuras personalizadas para tus propios colores. <strong>Cuarenta y un temas en total.</strong>',
     'index.s4.p4':      'Los dos extremos de cada paleta de color — blanco puro con texto saturado del color de la paleta a la izquierda, negro puro con el mismo color a la derecha — cubren los casos extremos: <strong>bajo el sol pleno en la playa</strong> o <strong>en la cama con las luces apagadas</strong>, en el color que mejor te siente.',
     'index.s4.picker':  'Tres modos de selección. <strong>Fijo</strong> — un tema, siempre. <strong>Día y Noche</strong> — un tema claro emparejado con uno oscuro, la app cambia cuando lo hace tu sistema. <strong>Anulación manual</strong> — fuerza cualquier tema sobre el horario, para una sesión que no encaja con el ritmo. En cualquier tema oscuro, un control deslizante suave de brillo del texto del 100 % al 30 % — para noches en las que incluso los temas oscuros se sienten demasiado brillantes.',
     'index.s4.dt1':     'Tipografías',
@@ -3031,7 +3031,7 @@ const translations = {
     'index.s6.eyebrow': 'Tu biblioteca',
     'index.s6.h2':      '<em>Tu</em> biblioteca',
     'index.s6.p1':      'La biblioteca es una lista: portadas o filas, carpetas, etiquetas, búsqueda. «Nuevos», «Recientes» y «Fijados» tienen cada uno su propia pestaña.',
-    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac)</strong> y sus variantes ZIP. Pulsa un botón, suelta un archivo o arrastra una URL directamente desde tu navegador — el libro se descarga y el diálogo de importación se abre con su título, autor y portada ya rellenados. O explora catálogos OPDS: Standard Ebooks, Project Gutenberg, Feedbooks o tu propio servidor. ¿Sigues una serie? Pon un seguimiento a su feed: la app lo comprueba en segundo plano e importa las novedades por ti.',
+    'index.s6.p2':      'Tres maneras de mirarla: filas compactas cuando sabes lo que buscas, un muro de portadas para curiosear, o una tabla ordenable cuando quieres verlo todo a la vez.',
     'index.s6.p3':      'Registra tu tiempo de lectura libro por libro, observa cómo se acumulan rachas y patrones, y expórtalo todo como un informe HTML.',
     'index.s6.p3b':     'Los marcadores vienen en siete colores, con notas y texto resaltado. Cada libro tiene sus propias notas con formato. Todo se puede buscar, y todo se puede exportar.',
     'index.s6.p4':      'El contenido del libro se guarda como HTML limpio en disco, con nombres de archivo legibles. Sin base de datos atada a la nube, sin formato propietario, sin DRM, sin ataduras a ningún proveedor. Copia o comprime en ZIP toda la carpeta de la biblioteca cuando quieras. Todo vive en tu propio iCloud — o, si no necesitas sincronización, apunta la app a cualquier carpeta local y cámbiala cuando quieras.',
@@ -3041,8 +3041,8 @@ const translations = {
     'index.s7.eyebrow': 'Nativo',
     'index.s7.h2':      'Parte del <em>sistema.</em>',
     'index.s7.p1':      'ContinuousReader está escrito en Swift y SwiftUI, los lenguajes con los que Apple crea sus propias apps. Lo notas en los pequeños detalles: se abre en el instante en que haces clic, el desplazamiento se mantiene fluido por fuerte que lo lances, y los atajos y deslizamientos se comportan igual que el resto del sistema. Toda la app se distribuye como un binario nativo y ligero, no como una copia empaquetada de un navegador web.',
-    'index.s7.p2':      'En Mac, un <em>diseño de islas</em> tomado de Ajustes del Sistema — paneles flotantes redondeados sobre un fondo hundido — con atajos de teclado, una Book Card que flota sobre la app, y arrastrar y soltar prácticamente en todas partes. En iPad, acciones de deslizamiento reales y Split View. En iPhone, gestos pensados para una mano y hojas que suben desde abajo como el resto de iOS, <strong>no como un formulario web.</strong>',
-    'index.s7.p3':      'El trabajo pesado es del sistema, no nuestro. <strong>iCloud</strong> almacena y sincroniza tus libros en tu propia cuenta. <strong>Apple Translation</strong> se encarga de la traducción dentro del texto, en el dispositivo y privada. <strong>El motor de voz del sistema</strong> impulsa la Lectura en voz alta, con las voces que tu Mac y tu iPhone ya hablan. No reinventamos nada — solo lo conectamos todo como es debido.',
+    'index.s7.p2':      'Se nota en los detalles: se abre en cuanto haces clic, la ventana recuerda dónde estaba y el teclado llega a todo lo que llega el ratón.',
+    'index.s7.p3':      'Nada de esto está reinventado: es la maquinaria de Apple, conectada como es debido.',
 
     // ---------- Section 8 — Two apps ----------
     'index.s8.eyebrow':  'Tres apps',
@@ -3077,7 +3077,7 @@ const translations = {
     'contact.form.subj.other':   'Otro',
     'contact.form.message':    'Mensaje',
     'contact.form.submit':     'Enviar mensaje',
-    'contact.note':            'También puedes escribir directamente a <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un solo desarrollador se ocupa de todo, así que las respuestas suelen tardar un día o dos — pero todo mensaje recibe una respuesta real.',
+    'contact.note':            'También puedes escribir directamente a <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Respondo yo mismo a cada mensaje, y suele llevarme un día o dos.',
     // --- thanks page ---
     'meta.thanks.title': 'Gracias — ContinuousReader',
     'meta.thanks.desc': 'Tu mensaje ha sido enviado.',
@@ -3085,7 +3085,7 @@ const translations = {
     'meta.thanks.ogDesc': 'Tu mensaje ha sido enviado.',
     'thanks.header.eyebrow': 'Mensaje enviado',
     'thanks.header.title': 'Gracias por tu <em>mensaje</em>.',
-    'thanks.header.subtitle': 'Tu mensaje ya está en mi bandeja. Un solo desarrollador se encarga de todo, así que la respuesta suele tardar un día o dos — pero cada mensaje recibe una respuesta real.',
+    'thanks.header.subtitle': 'Tu mensaje ha llegado a mi bandeja. Respondo yo mismo a todos, y suele llevarme un día o dos.',
     'thanks.back': 'Volver al inicio',
 
     // ---------- Privacy page ----------
@@ -3308,7 +3308,7 @@ const translations = {
     'download.faq.a13.p1':        'Solo Apple por ahora. ContinuousReader está construido nativamente para macOS / iPadOS / iOS — eso es lo que hace que la tipografía, la sincronización y los gestos se sientan como se sienten. Portar JustReader a Android, Linux o Windows significaría reconstruir el motor de renderizado y conversión desde cero en cada uno, lo cual solo tiene sentido una vez que haya un público lo suficientemente grande para sostener ese trabajo como esfuerzo a tiempo completo en lugar de un proyecto paralelo después del trabajo.',
     'download.faq.a13.p2':        'Las ventas de ContinuousReader son lo que financia esa decisión. Si el lado Apple encuentra su público, JustReader tiene margen para crecer más allá.',
     'download.faq.q12':           '¿<em>Soporte</em>?',
-    'download.faq.a12':           'Email: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un solo desarrollador se ocupa de todo, así que la respuesta suele tardar días, no horas — pero cada mensaje recibe una respuesta real.',
+    'download.faq.a12':           'Correo: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.',
 
     'download.about.eyebrow':     'Acerca de',
     'download.about.title':       'Una nota <em>antes de descargar</em>.',
@@ -3369,7 +3369,7 @@ const translations = {
     'features.s1.modes.p2':       'Cambia al modo <strong>Página</strong> para una experiencia paginada con paso de página animado o instantáneo. Los separadores entre páginas se pueden configurar: líneas nítidas o una sombra suave. En Mac e iPad (en horizontal), el modo <strong>Dos páginas</strong> reproduce la clásica doble página de un libro abierto. Los tres modos conservan tu posición exacta al cambiar.',
 
     'features.s1.position.h':     'Una posición que aguanta cualquier cosa',
-    'features.s1.position.p1':    'Tu posición de lectura se registra con más precisión de la que se toman la mayoría de lectores, lo que significa que sobrevive a:',
+    'features.s1.position.p1':    'La posición de lectura se registra hasta el párrafo, y por eso sobrevive a:',
     'features.s1.position.li1':   '<strong>Cambios de fuente</strong>Tamaño, familia, interlineado',
     'features.s1.position.li2':   '<strong>Cambios de tamaño de ventana</strong>Recomposición completa del diseño',
     'features.s1.position.li3':   '<strong>Cambios de dispositivo</strong>De Mac a iPad, de iPad a iPhone: ContinuousReader con la sincronización activada',
@@ -3470,7 +3470,7 @@ const translations = {
     'features.s3.tabs.p2':        'Nuevo, Recientes y Fijados funcionan como atajos: los libros a los que quieres llegar rápido, sin pelearte con los filtros.',
 
     'features.s3.views.h':        'Modos de visualización',
-    'features.s3.views.li1':      '<strong>Vista de lista</strong>(iPad y iPhone) Filas adaptativas con niveles de detalle ajustables — portadas en todos los niveles. Título, autor, serie, progreso, géneros y menú contextual.',
+    'features.s3.views.li1':      '<strong>Lista</strong>Las filas se aprietan según las encoges: de portada, título, autor, serie y progreso a una sola línea',
     'features.s3.views.li2':      '<strong>Vista de tarjetas</strong>Cuadrícula adaptable con portadas, navegación por teclado en 4 direcciones, animación de zoom, doble clic para abrir. En iPhone, cuadrícula de 2–4 columnas (5 en pantallas anchas); en Mac y iPad, un deslizador continuo del tamaño de tarjeta.',
     'features.s3.views.li3':      '<strong>Tabla</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.webp" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(solo Mac) Columnas ordenables, personalización de columnas, jerarquía en dos niveles, puntos de color en línea en la columna de título, panel de anotaciones y una barra de acciones a todo el ancho sobre la tabla.',
     'features.s3.views.p':        'Todos admiten <strong>agrupamiento multimodo</strong>: ninguno, por autor, por serie, por autor y serie, por géneros o por fecha de incorporación, con secciones plegables y cabeceras de sección compartidas.',
@@ -3484,7 +3484,7 @@ const translations = {
     'features.s3.search.h':       'Búsqueda, ordenación y filtros',
     'features.s3.search.li1':     '<strong>Búsqueda con ámbito</strong>Filtra por título, autor, serie, comentario, anotación o género. Los resultados aparecen mientras escribes.',
     'features.s3.search.li2':     '<strong>Seis criterios de orden</strong>Título, autor, serie, fecha de incorporación, fecha de apertura y fecha de publicación. Cada uno alterna entre ascendente, descendente y sin orden.',
-    'features.s3.search.li3':     '<strong>Filtro unificado en un popover</strong>Color y género combinados en un solo lugar. Los filtros activos muestran distintivos en línea: hasta 3 puntos de color y un contador, o el nombre del género con puntos suspensivos y un contador.',
+    'features.s3.search.li3':     '<strong>Un único popover de filtros</strong>Color y género en un mismo sitio, y lo que hayas filtrado sigue a la vista en el botón, así que siempre sabes por qué falta un libro de la lista',
 
     'features.s3.colors.h':       'Etiquetas de color',
     'features.s3.colors.p':       'Siete puntos de color al estilo Finder que puedes asignar a cualquier libro desde el menú contextual, el diálogo de edición, el diálogo de importación o el panel de información. El resaltado de color opcional muestra fondos teñidos suavemente en la vista de lista y de tarjetas, y puntos de color junto al título en la vista de tabla.',
@@ -3568,7 +3568,7 @@ const translations = {
     'features.s4.dialog.li4':     '<strong>Etiqueta de color</strong>Asignación',
     'features.s4.dialog.li5':     '<strong>Selector de etiquetas de género</strong>Edición manual de géneros',
     'features.s4.dialog.li6':     '<strong>Asignación de carpeta</strong>Según el contexto: usa la carpeta actual si estás en una; si no, ninguna',
-    'features.s4.dialog.li7':     '<strong>URL de origen</strong>Se guarda para la detección posterior de «En la biblioteca» en OPDS',
+    'features.s4.dialog.li7':     '<strong>De dónde vino</strong>Se recuerda, para que un catálogo pueda marcar un libro que ya tienes',
     'features.s4.dialog.li8':     '<strong>Inclusión de imágenes</strong>Para FB2/EPUB/MOBI (elimina las imágenes si prefieres solo texto)',
     'features.s4.dialog.li9':     '<strong>Abrir tras la importación</strong>Casilla',
     'features.s4.dialog.p2':      'JustReader se salta este diálogo: eliges un archivo y empiezas a leer.',
@@ -3947,8 +3947,8 @@ const translations = {
     'index.s4.eyebrow': 'La lecture',
     'index.s4.h2':      'Une typographie qui <em>respecte</em> le texte.',
     'index.s4.p1':      'La plupart des apps de lecture se trompent en typographie de deux façons. Certaines font semblant que l’écran est un livre, avec des effets de pages qui se tournent et un faux grain de papier. D’autres déversent le texte à l’écran et s’en vont — réglages par défaut du navigateur, colonnes irrégulières, sans coupures de mots.',
-    'index.s4.p2':      '<strong>ContinuousReader soigne les détails.</strong>',
-    'index.s4.p3':      'Cinq palettes principales — Neutral, Ochre, Celestial, Lime, Rose — chacune avec sept variations tonales : un extrême blanc pur à gauche, cinq tons intermédiaires et un extrême noir pur à droite. Plus deux thèmes mis en avant pour les amateurs du style rétro : <em>Typewriter</em> en ivoire et brun foncé (variantes claire et sombre) — avec une touche steampunk discrète : un compteur de vitesse de tableau de bord en laiton à aiguille mobile, remplacé par un cadran radio vintage à pointeur rouge éclairé sur les écrans plus étroits ; touches en cuivre ; compteurs mécaniques à tambour — et <em>Terminal</em> — monospace blanc sur bleu profond (si la palette vous semble familière — <em>oui, vous ne vous trompez pas</em>). Trois emplacements personnalisés, où les couleurs sont les vôtres. <strong>Quarante et un thèmes au total.</strong>',
+    'index.s4.p2':      '<strong>ContinuousReader prend la troisième voie.</strong>',
+    'index.s4.p3':      'Cinq palettes — Neutral, Ochre, Celestial, Lime, Rose — chacune en sept tons : d’un blanc pur, en passant par cinq tons intermédiaires, jusqu’à un noir pur. Puis deux thèmes qui apportent leur propre mobilier. <em>Typewriter</em> : ivoire et brun foncé, avec un compteur en laiton dont l’aiguille avance à mesure que vous lisez, des touches en cuivre et des compteurs mécaniques à tambour. <em>Terminal</em> : monospace blanc sur bleu profond — si vous reconnaissez la palette, vous savez pourquoi elle est là. Trois emplacements personnalisés pour vos propres couleurs. <strong>Quarante et un thèmes en tout.</strong>',
     'index.s4.p4':      'Les deux extrêmes de chaque palette colorée — blanc pur avec un texte saturé de la couleur de la palette à gauche, noir pur avec le même à droite — couvrent les cas difficiles : <strong>en plein soleil sur une plage</strong> ou <strong>au lit avec les lumières éteintes</strong>, dans la couleur qui vous va.',
     'index.s4.picker':  'Trois modes de sélection. <strong>Fixe</strong> — un thème, toujours. <strong>Jour et Nuit</strong> — un thème clair couplé à un thème sombre, l’app bascule quand votre système le fait. <strong>Forçage manuel</strong> — n’importe quel thème, quel que soit le programme, pour une session qui sort du rythme. Sur n’importe quel thème sombre, un curseur progressif de luminosité du texte, de 100 % à 30 % — pour les nuits où même les thèmes sombres semblent trop lumineux.',
     'index.s4.dt1':     'Polices',
@@ -3972,7 +3972,7 @@ const translations = {
     'index.s6.eyebrow': 'Votre bibliothèque',
     'index.s6.h2':      '<em>Votre</em> bibliothèque',
     'index.s6.p1':      'La bibliothèque est une liste : couvertures ou lignes, dossiers, étiquettes, recherche. « Nouveaux », « Récents » et « Épinglés » ont chacun leur onglet.',
-    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac)</strong> et leurs variantes ZIP. Cliquez sur un bouton, déposez un fichier, ou glissez une URL directement depuis votre navigateur — le livre se télécharge et la fenêtre d’importation s’ouvre avec son titre, son auteur et sa couverture déjà remplis. Ou parcourez les catalogues OPDS : Standard Ebooks, Project Gutenberg, Feedbooks ou votre propre serveur. Vous suivez une série ? Surveillez son flux : l’app le vérifie en arrière-plan et importe les nouveautés pour vous.',
+    'index.s6.p2':      'Trois façons de la regarder : des lignes compactes quand vous savez ce que vous cherchez, un mur de couvertures pour flâner, ou un tableau triable quand vous voulez tout voir d’un coup.',
     'index.s6.p3':      'Suivez votre temps de lecture livre par livre, regardez se dessiner vos séries de jours de lecture et vos habitudes, et exportez le tout en rapport HTML.',
     'index.s6.p3b':     'Les signets existent en sept couleurs, avec notes et texte surligné. Chaque livre dispose de ses propres notes en texte enrichi. Tout se recherche, et tout s’exporte.',
     'index.s6.p4':      'Le contenu du livre est stocké en HTML propre sur le disque, avec des noms de fichiers lisibles. Aucune base de données enfermée dans le cloud, aucun format propriétaire, aucun DRM, aucun verrouillage par fournisseur. Copiez ou compressez en ZIP tout le dossier de la bibliothèque quand vous voulez. Tout vit dans votre propre iCloud — ou, si vous n’avez pas besoin de synchronisation, pointez l’app vers n’importe quel dossier local et changez-le quand vous voulez.',
@@ -3982,8 +3982,8 @@ const translations = {
     'index.s7.eyebrow': 'Natif',
     'index.s7.h2':      'Au cœur du <em>système.</em>',
     'index.s7.p1':      'ContinuousReader est écrit en Swift et SwiftUI, les langages dans lesquels Apple bâtit ses propres apps. On le ressent dans les petits détails : l’app s’ouvre à l’instant où vous cliquez, le défilement reste fluide même quand vous lancez la page brusquement, et les raccourcis et balayages se comportent comme partout ailleurs dans le système. Toute l’app est livrée sous forme d’un binaire natif léger, pas d’une copie empaquetée d’un navigateur web.',
-    'index.s7.p2':      'Sur Mac, un <em>design en îlots</em> emprunté aux Réglages Système — panneaux flottants arrondis sur fond renfoncé — avec raccourcis clavier, une Book Card qui plane au-dessus de l’app, et le glisser-déposer à peu près partout. Sur iPad, de vraies actions par balayage et Split View. Sur iPhone, des gestes pensés pour une seule main et des feuilles qui montent depuis le bas comme le reste d’iOS, <strong>pas comme un formulaire web.</strong>',
-    'index.s7.p3':      'Le gros du travail revient au système, pas à nous. <strong>iCloud</strong> stocke et synchronise vos livres dans votre propre compte. <strong>Apple Translation</strong> assure la traduction dans le texte, sur l’appareil et en privé. <strong>Le moteur vocal du système</strong> anime la Lecture à voix haute, avec les voix déjà installées sur votre Mac et votre iPhone. Nous n’avons rien réinventé — nous avons simplement tout assemblé proprement.',
+    'index.s7.p2':      'Cela se voit aux détails : elle s’ouvre dès le clic, la fenêtre se souvient de sa place, et le clavier atteint tout ce qu’atteint la souris.',
+    'index.s7.p3':      'Rien n’a été réinventé : c’est la mécanique d’Apple, assemblée comme il faut.',
 
     // ---------- Section 8 — Two apps ----------
     'index.s8.eyebrow':  'Trois apps',
@@ -4018,7 +4018,7 @@ const translations = {
     'contact.form.subj.other':   'Autre',
     'contact.form.message':    'Message',
     'contact.form.submit':     'Envoyer',
-    'contact.note':            'Vous pouvez aussi écrire directement à <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un seul développeur gère tout, les réponses prennent donc généralement un ou deux jours — mais chaque message reçoit une vraie réponse.',
+    'contact.note':            'Vous pouvez aussi écrire directement à <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Je réponds moi-même à chaque message, ce qui prend en général un jour ou deux.',
     // --- thanks page ---
     'meta.thanks.title': 'Merci — ContinuousReader',
     'meta.thanks.desc': 'Votre message a été envoyé.',
@@ -4026,7 +4026,7 @@ const translations = {
     'meta.thanks.ogDesc': 'Votre message a été envoyé.',
     'thanks.header.eyebrow': 'Message envoyé',
     'thanks.header.title': 'Merci pour votre <em>message</em>.',
-    'thanks.header.subtitle': 'Votre message est bien arrivé dans ma boîte. Un seul développeur s’occupe de tout, donc une réponse prend généralement un jour ou deux — mais chaque message reçoit une vraie réponse.',
+    'thanks.header.subtitle': 'Votre message est arrivé dans ma boîte. Je réponds moi-même à chacun, ce qui prend en général un jour ou deux.',
     'thanks.back': 'Retour à l’accueil',
 
     // ---------- Privacy page ----------
@@ -4249,7 +4249,7 @@ const translations = {
     'download.faq.a13.p1':        'Apple uniquement pour l’instant. ContinuousReader est construit nativement pour macOS / iPadOS / iOS — c’est ce qui rend la typographie, la synchronisation et les gestes tels qu’ils sont. Porter JustReader sur Android, Linux ou Windows impliquerait de reconstruire le moteur de rendu et de conversion à partir de zéro sur chacun, ce qui n’a de sens qu’une fois qu’il y a un public suffisamment large pour soutenir ce travail comme un effort à plein temps plutôt qu’un projet annexe après le travail.',
     'download.faq.a13.p2':        'Ce sont les ventes de ContinuousReader qui financent cette décision. Si le côté Apple trouve son public, JustReader aura les moyens de grandir au-delà de l’écosystème Apple.',
     'download.faq.q12':           '<em>Support</em> ?',
-    'download.faq.a12':           'Email : <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Un seul développeur s’occupe de tout, le temps de réponse se compte donc en jours plutôt qu’en heures — mais chaque message reçoit une vraie réponse.',
+    'download.faq.a12':           'E-mail : <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.',
 
     'download.about.eyebrow':     'À propos',
     'download.about.title':       'Une note <em>avant le téléchargement</em>.',
@@ -4310,7 +4310,7 @@ const translations = {
     'features.s1.modes.p2':       'Passez au mode <strong>Page</strong> pour une expérience paginée avec des transitions de page animées ou instantanées. Les séparateurs de pages sont configurables : lignes nettes ou ombre douce. Sur Mac et iPad (en paysage), le mode <strong>Double page</strong> rend une véritable double page de livre. Les trois modes conservent votre position exacte lors du changement.',
 
     'features.s1.position.h':     'Une position qui survit à tout',
-    'features.s1.position.p1':    'Votre position de lecture est suivie avec une précision rare — ce qui lui permet de survivre à :',
+    'features.s1.position.p1':    'Votre position de lecture est suivie au paragraphe près, et c’est ce qui lui permet de survivre à :',
     'features.s1.position.li1':   '<strong>Changements de police</strong>Taille, famille, interligne',
     'features.s1.position.li2':   '<strong>Redimensionnements de fenêtre</strong>Recomposition complète de la mise en page',
     'features.s1.position.li3':   '<strong>Changements d’appareil</strong>Du Mac à l’iPad, de l’iPad à l’iPhone — avec ContinuousReader et la synchronisation activée',
@@ -4411,7 +4411,7 @@ const translations = {
     'features.s3.tabs.p2':        'Nouveau, Récents et Épinglés servent de raccourcis — les livres auxquels vous voulez accéder vite, sans jongler avec les filtres.',
 
     'features.s3.views.h':        'Modes d’affichage',
-    'features.s3.views.li1':      '<strong>Vue liste</strong>(iPad et iPhone) Lignes adaptatives à niveaux de détail réglables — couvertures à tous les niveaux. Titre, auteur, série, progression, genres et menu contextuel.',
+    'features.s3.views.li1':      '<strong>Liste</strong>Les lignes se resserrent à mesure que vous les réduisez — de la couverture, du titre, de l’auteur, de la série et de la progression jusqu’à une seule ligne',
     'features.s3.views.li2':      '<strong>Vue cartes</strong>Grille adaptative avec couvertures, navigation clavier dans les 4 directions, zoom animé, double-clic pour ouvrir. Sur iPhone, grille de 2 à 4 colonnes (5 sur écrans larges) ; sur Mac et iPad, un curseur continu de taille des cartes.',
     'features.s3.views.li3':      '<strong>Tableau</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.webp" data-alt="Table view (Mac only) — sortable columns with two-level hierarchy" aria-label="View table-mode screenshot"></button>(Mac uniquement) Colonnes triables, personnalisation des colonnes, hiérarchie à deux niveaux, pastilles de couleur intégrées à la colonne titre, feuille d’annotation et barre d’actions pleine largeur au-dessus du tableau.',
     'features.s3.views.p':        'Tous prennent en charge un <strong>regroupement multi-modes</strong> : aucun, par auteur, par série, par auteur et série, par genres ou par date d’ajout — avec sections rétractables et en-têtes partagés.',
@@ -4425,7 +4425,7 @@ const translations = {
     'features.s3.search.h':       'Rechercher, trier, filtrer',
     'features.s3.search.li1':     '<strong>Recherche ciblée</strong>Filtrez par titre, auteur, série, commentaire, annotation ou genre. Les résultats apparaissent au fil de la saisie.',
     'features.s3.search.li2':     '<strong>Six tris</strong>Titre, auteur, série, date d’ajout, date d’ouverture et date de publication. Chacun passe par croissant, décroissant, puis annulé.',
-    'features.s3.search.li3':     '<strong>Popover de filtres unifié</strong>Filtres de couleurs et de genres regroupés au même endroit. Les filtres actifs apparaissent en badges intégrés — jusqu’à 3 pastilles de couleur suivies d’un compteur, ou le nom de genre tronqué suivi d’un compteur.',
+    'features.s3.search.li3':     '<strong>Un seul popover de filtres</strong>Couleur et genre au même endroit, et ce par quoi vous avez filtré reste visible sur le bouton — vous savez toujours pourquoi un livre manque à la liste',
 
     'features.s3.colors.h':       'Étiquettes de couleur',
     'features.s3.colors.p':       'Sept pastilles de couleur façon Finder, attribuables à tout livre via le menu contextuel, le dialogue d’édition, le dialogue d’importation ou le panneau d’information. Un surlignage optionnel ajoute des teintes de fond légères dans les vues Liste et Cartes, et des pastilles de couleur en regard du titre en vue Tableau.',
@@ -4509,7 +4509,7 @@ const translations = {
     'features.s4.dialog.li4':     '<strong>Étiquette de couleur</strong>Attribution',
     'features.s4.dialog.li5':     '<strong>Sélecteur d’étiquettes de genre</strong>Édition manuelle des genres',
     'features.s4.dialog.li6':     '<strong>Affectation de dossier</strong>Selon le contexte — utilise le dossier courant si vous y êtes, sinon aucun',
-    'features.s4.dialog.li7':     '<strong>URL d’origine</strong>Stockée pour la détection « Dans la bibliothèque » dans OPDS',
+    'features.s4.dialog.li7':     '<strong>D’où il vient</strong>Mémorisé, pour qu’un catalogue puisse signaler un livre que vous avez déjà',
     'features.s4.dialog.li8':     '<strong>Inclusion des images</strong>Pour FB2/EPUB/MOBI (retirez les images si vous préférez le texte seul)',
     'features.s4.dialog.li9':     '<strong>Ouvrir après importation</strong>Case à cocher',
     'features.s4.dialog.p2':      'JustReader saute ce dialogue — choisissez un fichier, commencez à lire.',
@@ -4887,8 +4887,8 @@ const translations = {
     'index.s4.eyebrow': 'Das Lesen',
     'index.s4.h2':      'Typografie, die den <em>Text respektiert.</em>',
     'index.s4.p1':      'Die meisten Lese-Apps verfehlen die Typografie auf eine von zwei Arten. Manche tun so, als wäre der Bildschirm ein Buch — mit skeuomorphen Umblätter-Animationen und künstlicher Papierstruktur. Andere kippen den Text einfach auf den Bildschirm und lassen ihn liegen — Browser-Standards, ausgefranste Spalten, keine Silbentrennung.',
-    'index.s4.p2':      '<strong>ContinuousReader achtet auf die Details.</strong>',
-    'index.s4.p3':      'Fünf Hauptpaletten — Neutral, Ochre, Celestial, Lime, Rose — jede mit sieben tonalen Variationen: ein reinweißes Extrem links, fünf Mitteltöne und ein reinschwarzes Extrem rechts. Dazu zwei besondere Themes für Liebhaber des Old-School-Stils: <em>Typewriter</em> in Elfenbein und Dunkelbraun (helle und dunkle Variante) — mit dezentem Steampunk-Touch: ein Messing-Armaturenbrett-Tachometer mit rollender Nadel, der auf schmaleren Bildschirmen in eine Vintage-Radioskala mit beleuchtetem rotem Zeiger wechselt; Kupfertasten; mechanische Trommelzählwerke — und <em>Terminal</em> — weiße Monospace-Schrift auf tiefblauem Grund (wenn dir die Palette bekannt vorkommt — <em>ja, du liegst richtig</em>). Drei eigene Slots, in denen du die Farben selbst festlegst. <strong>Insgesamt einundvierzig Varianten.</strong>',
+    'index.s4.p2':      '<strong>ContinuousReader nimmt den dritten Weg.</strong>',
+    'index.s4.p3':      'Fünf Paletten — Neutral, Ochre, Celestial, Lime, Rose — jede in sieben Tönen: von reinem Weiß über fünf Mitteltöne bis zu reinem Schwarz. Dazu zwei Themen, die eigenes Mobiliar mitbringen. <em>Typewriter</em>: Elfenbein und Dunkelbraun, mit einem Messing-Tacho, dessen Nadel beim Lesen wandert, Kupfertasten und mechanischen Trommelzählern. <em>Terminal</em>: weiße Monospace auf tiefem Blau — wer die Palette erkennt, weiß auch, warum sie da ist. Drei eigene Slots für deine Farben. <strong>Einundvierzig Themen insgesamt.</strong>',
     'index.s4.p4':      'Die zwei Extreme jeder Farbpalette — reines Weiß mit gesättigtem Palettenfarb-Text links, reines Schwarz mit derselben Farbe rechts — decken die harten Fälle ab: <strong>in der vollen Sonne am Strand</strong> oder <strong>im Bett bei ausgeschaltetem Licht</strong>, in der Farbe, die gerade passt.',
     'index.s4.picker':  'Drei Auswahlmodi. <strong>Fix</strong> — ein Theme, immer. <strong>Tag und Nacht</strong> — ein helles Theme gepaart mit einem dunklen, die App wechselt mit dem System. <strong>Manuell erzwingen</strong> — jedes Theme, unabhängig vom Zeitplan, für eine Sitzung, die aus dem Rhythmus fällt. Bei jedem dunklen Theme — ein sanfter Helligkeits-Slider für den Text von 100 % bis 30 %, für Nächte, in denen selbst die dunklen Themes zu hell wirken.',
     'index.s4.dt1':     'Schriften',
@@ -4912,7 +4912,7 @@ const translations = {
     'index.s6.eyebrow': 'Deine Bibliothek',
     'index.s6.h2':      '<em>Deine</em> Bibliothek',
     'index.s6.p1':      'Die Bibliothek ist eine Liste: Cover oder Zeilen, Ordner, Etiketten, Suche. „Neu“, „Zuletzt“ und „Angeheftet“ bekommen je einen eigenen Tab.',
-    'index.s6.p2':      '<strong>EPUB, FB2, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac)</strong> und ihre ZIP-Varianten. Klick auf einen Button, zieh eine Datei hinein, oder zieh eine URL direkt aus deinem Browser — das Buch wird heruntergeladen, und der Importdialog öffnet sich mit bereits ausgefülltem Titel, Autor und Cover. Oder durchsuch OPDS-Kataloge: Standard Ebooks, Project Gutenberg, Feedbooks oder deinen eigenen Server. Verfolgst du eine Serie? Setz einen Watcher auf ihren Feed — die App prüft ihn im Hintergrund und importiert Neuzugänge für dich.',
+    'index.s6.p2':      'Drei Arten, sie anzusehen: kompakte Zeilen, wenn du weißt, was du suchst, eine Wand aus Covern zum Stöbern, oder eine sortierbare Tabelle, wenn du alles auf einmal sehen willst.',
     'index.s6.p3':      'Verfolge deine Lesezeit Buch für Buch, sieh zu, wie sich Lesesträhnen und Muster aufbauen, und exportier alles als HTML-Bericht.',
     'index.s6.p3b':     'Lesezeichen gibt es in sieben Farben, mit Notizen und hervorgehobenem Text. Jedes Buch bekommt seine eigenen formatierten Notizen. Alles ist durchsuchbar, und alles lässt sich exportieren.',
     'index.s6.p4':      'Buchinhalte werden als sauberes HTML auf der Festplatte gespeichert, mit lesbaren Dateinamen. Kein proprietärer Container, kein DRM, nichts, was an eine Cloud gekettet ist, von der du nicht mehr wegkommst. Kopiere oder zippe den ganzen Bibliotheksordner, wann immer du willst. Alles lebt in deiner eigenen iCloud — oder, wenn du keine Synchronisation brauchst, richte die App auf einen beliebigen lokalen Ordner und ändere ihn jederzeit.',
@@ -4922,8 +4922,8 @@ const translations = {
     'index.s7.eyebrow': 'Nativ',
     'index.s7.h2':      'Teil des <em>Systems.</em>',
     'index.s7.p1':      'ContinuousReader ist in Swift und SwiftUI geschrieben — den Sprachen, in denen Apple seine eigenen Apps baut. Du spürst es in den kleinen Dingen: Es öffnet im selben Moment, in dem du klickst, das Scrollen bleibt flüssig, so kräftig du auch wischst, und Tastaturkürzel und Wischgesten verhalten sich so wie der Rest des Systems. Die ganze App wird als schlanke native Binärdatei ausgeliefert, nicht als zusammengepackte Kopie eines Web-Browsers.',
-    'index.s7.p2':      'Auf dem Mac ein <em>Inseldesign</em>, von den Systemeinstellungen entlehnt — abgerundete schwebende Panels auf vertieftem Hintergrund — mit Tastaturkürzeln, einer Book Card, die über der App schwebt, und Drag-and-Drop mehr oder weniger überall. Auf dem iPad echte Wischaktionen und Split View. Auf dem iPhone Gesten, die für eine Hand gebaut sind, und Sheets, die von unten aufsteigen wie der Rest von iOS, <strong>nicht wie ein Webformular.</strong>',
-    'index.s7.p3':      'Die Schwerstarbeit ist die des Systems, nicht unsere. <strong>iCloud</strong> speichert und synchronisiert deine Bücher in deinem eigenen Account. <strong>Apple Translation</strong> erledigt die Übersetzung im Text, auf dem Gerät und privat. <strong>Die Sprachausgabe-Engine des Systems</strong> treibt das Vorlesen an, mit den Stimmen, die dein Mac und dein iPhone bereits sprechen. Wir haben nichts davon neu erfunden — wir haben es nur ordentlich zusammengesteckt.',
+    'index.s7.p2':      'Es zeigt sich an Kleinigkeiten: Sie öffnet sich beim Klick, das Fenster weiß noch, wo es stand, und die Tastatur erreicht alles, was die Maus erreicht.',
+    'index.s7.p3':      'Nichts davon ist neu erfunden: Es ist Apples eigene Mechanik, sauber zusammengesetzt.',
 
     // ---------- Section 8 — Two apps ----------
     'index.s8.eyebrow':  'Drei Apps',
@@ -4958,7 +4958,7 @@ const translations = {
     'contact.form.subj.other':   'Sonstiges',
     'contact.form.message':    'Nachricht',
     'contact.form.submit':     'Nachricht senden',
-    'contact.note':            'Du kannst auch direkt an <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a> schreiben. Ein einzelner Entwickler kümmert sich um alles, daher dauern Antworten meist einen oder zwei Tage — aber jede Nachricht bekommt eine echte Antwort.',
+    'contact.note':            'Du kannst auch direkt an <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a> schreiben. Ich beantworte jede Nachricht selbst, das dauert meist ein bis zwei Tage.',
     // --- thanks page ---
     'meta.thanks.title': 'Danke — ContinuousReader',
     'meta.thanks.desc': 'Deine Nachricht wurde gesendet.',
@@ -4966,7 +4966,7 @@ const translations = {
     'meta.thanks.ogDesc': 'Deine Nachricht wurde gesendet.',
     'thanks.header.eyebrow': 'Nachricht gesendet',
     'thanks.header.title': 'Danke für deine <em>Nachricht</em>.',
-    'thanks.header.subtitle': 'Deine Nachricht ist in meinem Postfach gelandet. Ein einzelner Entwickler kümmert sich um alles, daher dauert eine Antwort meist ein, zwei Tage — aber jede Nachricht bekommt eine echte Antwort.',
+    'thanks.header.subtitle': 'Deine Nachricht ist in meinem Postfach gelandet. Ich beantworte jede selbst, das dauert meist ein bis zwei Tage.',
     'thanks.back': 'Zurück zur Startseite',
 
     // ---------- Privacy page ----------
@@ -5189,7 +5189,7 @@ const translations = {
     'download.faq.a13.p1':        'Vorerst nur Apple. ContinuousReader ist nativ für macOS / iPadOS / iOS gebaut — genau das macht Typografie, Sync und Gesten so, wie sie sind. JustReader auf Android, Linux oder Windows zu portieren würde bedeuten, die Rendering- und Konvertierungs-Engine auf jeder Plattform von Grund auf neu zu bauen, was nur Sinn ergibt, sobald es ein Publikum gibt, das groß genug ist, um diese Arbeit als Vollzeit-Aufwand statt als Feierabend-Projekt zu tragen.',
     'download.faq.a13.p2':        'Die Verkäufe von ContinuousReader finanzieren diese Entscheidung. Wenn die Apple-Seite ihr Publikum findet, hat JustReader den Spielraum, darüber hinauszuwachsen.',
     'download.faq.q12':           '<em>Support</em>?',
-    'download.faq.a12':           'E-Mail: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>. Ein einzelner Entwickler kümmert sich um alles, daher liegt die Antwortzeit eher bei Tagen als bei Stunden — aber jede Nachricht bekommt eine echte Antwort.',
+    'download.faq.a12':           'E-Mail: <a href="mailto:hello@continuousreader.app">hello@continuousreader.app</a>.',
 
     'download.about.eyebrow':     'Über',
     'download.about.title':       'Eine Anmerkung <em>vor dem Download</em>.',
@@ -5250,7 +5250,7 @@ const translations = {
     'features.s1.modes.p2':       'Wechsle in den Modus <strong>Seite</strong> für ein paginiertes Erlebnis mit animierten oder sofortigen Seitenwechseln. Seitentrenner sind konfigurierbar — klare Linien oder ein sanfter Schatten. Auf Mac und iPad (im Querformat) zeigt der Modus <strong>Doppelseite</strong> eine klassische Doppelseite wie im aufgeschlagenen Buch. Alle drei Modi bewahren deine exakte Position beim Wechseln.',
 
     'features.s1.position.h':     'Eine Position, die alles übersteht',
-    'features.s1.position.p1':    'Deine Leseposition wird präziser verfolgt, als sich die meisten Reader die Mühe machen — was bedeutet, dass sie Folgendes übersteht:',
+    'features.s1.position.p1':    'Deine Leseposition wird bis zum Absatz genau verfolgt — deshalb übersteht sie:',
     'features.s1.position.li1':   '<strong>Schriftänderungen</strong>Größe, Familie, Zeilenhöhe',
     'features.s1.position.li2':   '<strong>Fenstergrößenänderungen</strong>Vollständiger Layout-Umbruch',
     'features.s1.position.li3':   '<strong>Gerätewechsel</strong>Mac auf iPad, iPad auf iPhone — ContinuousReader mit aktiviertem Sync',
@@ -5351,7 +5351,7 @@ const translations = {
     'features.s3.tabs.p2':        'Neu, Neueste und Angeheftet dienen als Schnellzugriff — die Bücher, an die man sofort will, ohne Filter-Gefummel.',
 
     'features.s3.views.h':        'Ansichten',
-    'features.s3.views.li1':      '<strong>Listenansicht</strong>(iPad und iPhone) Adaptive Zeilen mit einstellbaren Detailstufen — Cover auf jeder Stufe. Titel, Autor, Serie, Fortschritt, Genres und Kontextmenü.',
+    'features.s3.views.li1':      '<strong>Liste</strong>Zeilen rücken enger, je kleiner du sie machst — von Cover, Titel, Autor, Reihe und Fortschritt bis zu einer einzigen Zeile',
     'features.s3.views.li2':      '<strong>Kartenansicht</strong>Responsives Raster mit Covern, 4-Wege-Tastaturnavigation, Cover-Zoom, Öffnen per Doppelklick. Auf dem iPhone ein Raster mit 2–4 Spalten (5 auf breiten Bildschirmen); auf Mac und iPad ein stufenloser Kartengrößen-Regler.',
     'features.s3.views.li3':      '<strong>Tabelle</strong><button class="callout-dot" type="button" data-screenshot="img/screenshots/features-view-table.webp" data-alt="Tabellenansicht (nur Mac) — sortierbare Spalten mit zweistufiger Hierarchie" aria-label="Tabellenansicht-Screenshot ansehen"></button>(Nur Mac) Sortierbare Spalten, Spalten-Anpassung, zweistufige Hierarchie, inline Farbpunkte in der Titelspalte, Annotations-Sheet und eine vollbreite Aktions-Werkzeugleiste über der Tabelle.',
     'features.s3.views.p':        'Alle unterstützen <strong>Mehrfach-Gruppierung</strong>: keine, Autor, Reihe, Autor &amp; Reihe, Genres oder Hinzufügedatum — mit einklappbaren Sektionen und gemeinsamen Sektionsköpfen.',
@@ -5365,7 +5365,7 @@ const translations = {
     'features.s3.search.h':       'Suche, Sortierung, Filter',
     'features.s3.search.li1':     '<strong>Gezielte Suche</strong>Filtern nach Titel, Autor, Reihe, Kommentar, Annotation oder Genre. Ergebnisse erscheinen beim Tippen.',
     'features.s3.search.li2':     '<strong>Sechs Sortierungen</strong>Titel, Autor, Reihe, Hinzugefügt, Zuletzt geöffnet und Erscheinungsdatum. Jede wechselt zwischen aufsteigend, absteigend und aus.',
-    'features.s3.search.li3':     '<strong>Einheitliches Filter-Popover</strong>Farb- und Genrefilter an einem Ort vereint. Aktive Filter zeigen Inline-Badges — bis zu 3 Farbpunkte und dann eine Zahl, Genrename mit Auslassung und dann eine Zahl.',
+    'features.s3.search.li3':     '<strong>Ein Filter-Popover</strong>Farbe und Genre an einem Ort, und wonach du gefiltert hast, bleibt auf dem Knopf sichtbar — so weißt du immer, warum ein Buch in der Liste fehlt',
 
     'features.s3.colors.h':       'Farbmarkierungen',
     'features.s3.colors.p':       'Sieben farbige Punkte im Finder-Stil, die jedem Buch über Kontextmenü, Bearbeitungs-Dialog, Import-Dialog oder Info-Panel zugewiesen werden können. Eine optionale Farbhervorhebung zeigt dezente Hintergrundtöne in Listen- und Kartenansicht sowie farbige Punkte neben dem Titel in der Tabellenansicht.',
@@ -5449,7 +5449,7 @@ const translations = {
     'features.s4.dialog.li4':     '<strong>Farbmarkierung</strong>Zuweisung',
     'features.s4.dialog.li5':     '<strong>Genre-Chip-Wähler</strong>Manuelle Genrebearbeitung',
     'features.s4.dialog.li6':     '<strong>Ordnerzuweisung</strong>Kontextabhängig — verwendet den aktuellen Ordner, falls geöffnet, sonst keinen',
-    'features.s4.dialog.li7':     '<strong>Herkunfts-URL</strong>Gespeichert für die spätere „In Bibliothek“-Erkennung in OPDS',
+    'features.s4.dialog.li7':     '<strong>Woher es kam</strong>Wird gemerkt, damit ein Katalog ein Buch markieren kann, das du schon hast',
     'features.s4.dialog.li8':     '<strong>Schalter für Bilder</strong>Für FB2/EPUB/MOBI (Bilder entfernen, wenn du nur Text bevorzugst)',
     'features.s4.dialog.li9':     '<strong>Nach dem Import öffnen</strong>Checkbox',
     'features.s4.dialog.p2':      'JustReader überspringt diesen Dialog — Datei wählen, lesen.',
