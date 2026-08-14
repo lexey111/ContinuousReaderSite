@@ -727,9 +727,9 @@ const translations = {
     // DOWNLOAD
     // ============================================================
     'meta.download.title':   'Download — ContinuousReader',
-    'meta.download.desc':    'ContinuousReader and JustReader for Mac, iPad, and iPhone. One-time purchase or free. Universal Purchase, iCloud sync, no subscription.',
+    'meta.download.desc':    'ContinuousReader, PlainReader and JustReader for Mac, iPad, and iPhone. One book, a shelf of them, or a full library — one-time purchases or free.',
     'meta.download.ogTitle': 'Download — ContinuousReader',
-    'meta.download.ogDesc':  'ContinuousReader for Mac, iPad, iPhone. JustReader free. Universal Purchase, iCloud sync, no subscription.',
+    'meta.download.ogDesc':  'Three readers for Mac, iPad and iPhone: JustReader free, PlainReader $6.99, ContinuousReader $19.99. One-time purchases, no subscription.',
 
     'download.header.eyebrow':  'Available on the App Store',
     'download.header.title':    'Get <em>ContinuousReader</em>.',
@@ -1256,9 +1256,9 @@ const translations = {
 
     // ---------- Download page ----------
     'meta.download.title':   'Загрузить — ContinuousReader',
-    'meta.download.desc':    'ContinuousReader и JustReader для Mac, iPad и iPhone. Разовая покупка или бесплатно. Универсальная покупка, синхронизация через iCloud, без подписки.',
+    'meta.download.desc':    'ContinuousReader, PlainReader и JustReader для Mac, iPad и iPhone. Одна книга, полка книг или полноценная библиотека — разовые покупки или бесплатно.',
     'meta.download.ogTitle': 'Загрузить — ContinuousReader',
-    'meta.download.ogDesc':  'ContinuousReader для Mac, iPad, iPhone. JustReader бесплатно. Универсальная покупка, синхронизация через iCloud, без подписки.',
+    'meta.download.ogDesc':  'Три читалки для Mac, iPad и iPhone: JustReader бесплатно, PlainReader $6,99, ContinuousReader $19.99. Разовые покупки, без подписки.',
 
     'download.header.eyebrow':  'Доступно в App Store',
     'download.header.title':    'Купить <em>ContinuousReader</em>.',
@@ -2197,9 +2197,9 @@ const translations = {
 
     // ---------- Download page ----------
     'meta.download.title':   'Завантажити — ContinuousReader',
-    'meta.download.desc':    'ContinuousReader і JustReader для Mac, iPad та iPhone. Разова купівля або безкоштовно. Універсальна купівля, синхронізація через iCloud, без підписки.',
+    'meta.download.desc':    'ContinuousReader, PlainReader і JustReader для Mac, iPad та iPhone. Одна книга, полиця книг чи повноцінна бібліотека — разові покупки або безкоштовно.',
     'meta.download.ogTitle': 'Завантажити — ContinuousReader',
-    'meta.download.ogDesc':  'ContinuousReader для Mac, iPad, iPhone. JustReader безкоштовно. Універсальна купівля, синхронізація через iCloud, без підписки.',
+    'meta.download.ogDesc':  'Три читалки для Mac, iPad та iPhone: JustReader безкоштовно, PlainReader $6,99, ContinuousReader $19.99. Разові покупки, без передплати.',
 
     'download.header.eyebrow':  'Доступно в App Store',
     'download.header.title':    'Купити <em>ContinuousReader</em>.',
@@ -3136,9 +3136,9 @@ const translations = {
 
     // ---------- Download page ----------
     'meta.download.title':   'Descargar — ContinuousReader',
-    'meta.download.desc':    'ContinuousReader y JustReader para Mac, iPad e iPhone. Compra única o gratis. Compra Universal, sincronización iCloud, sin suscripción.',
+    'meta.download.desc':    'ContinuousReader, PlainReader y JustReader para Mac, iPad y iPhone. Un libro, una estantería o una biblioteca completa: compras únicas o gratis.',
     'meta.download.ogTitle': 'Descargar — ContinuousReader',
-    'meta.download.ogDesc':  'ContinuousReader para Mac, iPad, iPhone. JustReader gratis. Compra Universal, sincronización iCloud, sin suscripción.',
+    'meta.download.ogDesc':  'Tres lectores para Mac, iPad y iPhone: JustReader gratis, PlainReader 6,99 $, ContinuousReader 19,99 $. Compras únicas, sin suscripción.',
 
     'download.header.eyebrow':  'Disponible en App Store',
     'download.header.title':    'Obtén <em>ContinuousReader</em>.',
@@ -4077,9 +4077,9 @@ const translations = {
 
     // ---------- Download page ----------
     'meta.download.title':   'Télécharger — ContinuousReader',
-    'meta.download.desc':    'ContinuousReader et JustReader pour Mac, iPad et iPhone. Achat unique ou gratuit. Achat Universel, synchronisation iCloud, pas d’abonnement.',
+    'meta.download.desc':    'ContinuousReader, PlainReader et JustReader pour Mac, iPad et iPhone. Un livre, une étagère ou une bibliothèque complète — achats uniques ou gratuit.',
     'meta.download.ogTitle': 'Télécharger — ContinuousReader',
-    'meta.download.ogDesc':  'ContinuousReader pour Mac, iPad, iPhone. JustReader gratuit. Achat Universel, synchronisation iCloud, pas d’abonnement.',
+    'meta.download.ogDesc':  'Trois lecteurs pour Mac, iPad et iPhone : JustReader gratuit, PlainReader 6,99 $, ContinuousReader 19,99 $. Achats uniques, sans abonnement.',
 
     'download.header.eyebrow':  'Disponible sur l’App Store',
     'download.header.title':    'Obtenez <em>ContinuousReader</em>.',
@@ -5017,9 +5017,9 @@ const translations = {
 
     // ---------- Download page ----------
     'meta.download.title':   'Laden — ContinuousReader',
-    'meta.download.desc':    'ContinuousReader und JustReader für Mac, iPad und iPhone. Einmaliger Kauf oder kostenlos. Universal Purchase, iCloud-Sync, kein Abo.',
+    'meta.download.desc':    'ContinuousReader, PlainReader und JustReader für Mac, iPad und iPhone. Ein Buch, ein Regal voll oder eine ganze Bibliothek — Einmalkäufe oder kostenlos.',
     'meta.download.ogTitle': 'Laden — ContinuousReader',
-    'meta.download.ogDesc':  'ContinuousReader für Mac, iPad, iPhone. JustReader kostenlos. Universal Purchase, iCloud-Sync, kein Abo.',
+    'meta.download.ogDesc':  'Drei Reader für Mac, iPad und iPhone: JustReader kostenlos, PlainReader 6,99 $, ContinuousReader 19,99 $. Einmalkäufe, kein Abo.',
 
     'download.header.eyebrow':  'Verfügbar im App Store',
     'download.header.title':    'Hol dir <em>ContinuousReader</em>.',

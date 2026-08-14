@@ -4,12 +4,15 @@
 
 ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB, FB2, MOBI, HTML, TXT, RTF and — on Mac — DOC/DOCX files (and their ZIP variants). The core value proposition is seamless reading position sync across all Apple devices via iCloud.
 
-## Two products
+## Three products
 
-- **ContinuousReader** ($19.99, one-time) — full reading workspace with library, iCloud sync, bookmarks, OPDS catalogs, reading statistics, translation tracking
-- **JustReader** (free) — single-book reader with the same engine, typography, themes, translation, and Read Aloud. No library, no sync, no bookmarks.
+One picture explains the family: JustReader is the book on your nightstand, PlainReader is the bookshelf, ContinuousReader is the library.
 
-Both share the ReaderCore engine (local Swift Package).
+- **ContinuousReader** ($19.99, one-time) — full reading workspace: library with folders and global full-text search, iCloud sync, OPDS catalogs with watchers, mass import, reading statistics
+- **PlainReader** ($6.99, one-time) — up to 25 books open in parallel, each in its own place with its own position; no collection to manage. OPDS browser, shared searchable history of the last 25 books, colour tags
+- **JustReader** (free) — one book at a time, with the same engine, typography, themes, translation and Read Aloud
+
+All three share the ReaderCore engine (local Swift Package), so the reading experience — themes, typography, navigation modes, translation, Read Aloud, bookmarks, per-book notes, reading statistics and the Book Card — is the same in all of them. What differs is how much collection management sits on top.
 
 ## Key features
 
@@ -31,12 +34,14 @@ Both share the ReaderCore engine (local Swift Package).
 - Adjustable rate, pitch, volume
 - Seamless handoff between reading and listening (same position)
 
-### Library (ContinuousReader only)
+### Library (ContinuousReader only; PlainReader has a 25-place shelf instead)
 - Three view modes: list, cards (4 sizes), table (native on Mac)
 - Nested virtual folders, color tags (7 colors), genres, Trash with soft delete
 - OPDS catalog browser with shortcuts and watchers (watchers diff feeds against the library and flag books you don't own yet)
 - Mass import walking folder trees, deduplicating, and replicating the source structure as folders (Mac)
-- Book Card with 5 tabs (Cover/Info/Notes/Marks/Stats)
+- Book Card with tabs (Cover/Images/Info/Notes/Bookmarks/Stats) — shared by all three apps; only ContinuousReader can edit a book's own details
+- Global search across the full text of every book in the library, jumping straight to the hit
+- Interface depth (Flat / Standard / Deep) and an accent colour that reaches every window and sheet
 - Rich text notes editor per book
 - Reading statistics dashboard + shareable HTML reports
 - Self-contained library folder — copy it anywhere for a backup; custom library location (Mac)
@@ -59,9 +64,10 @@ Both share the ReaderCore engine (local Swift Package).
 - **Minimum OS**: iOS 17.0, macOS 14.0
 - **Storage**: SwiftData (local), iCloud KV Store + iCloud Drive (sync)
 - **Book storage**: Clean HTML files on disk with readable slug-based folder names
+- **Shipped version**: 1.4 "Admiral" (2026-08-13) for ContinuousReader and JustReader; PlainReader ships as 1.4 as well — the number tracks the shared engine generation, not each app
 - **Privacy**: No analytics, no telemetry, no tracking. Translation is on-device.
 - **Localization**: English + Russian, Ukrainian, Spanish, French, German (930+ keys)
-- **Bundle ID**: com.lexey111.ContinuousReader
+- **Bundle IDs**: com.lexey111.ContinuousReader, com.lexey111.PlainReader, com.lexey111.JustReader
 
 ## Formats supported
 
