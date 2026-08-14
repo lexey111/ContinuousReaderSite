@@ -3378,3 +3378,22 @@ code {
 }
 
 .path-name .cta-dot { margin-right: 10px; vertical-align: 0.08em; }
+
+/* The download page's pins carry the price beside the name — the label is
+   the whole answer there, so it takes the mono voice for the figure and a
+   hairline to keep the two readings apart. */
+.room-standalone .room-pin b {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.room-standalone .room-pin b em {
+  font-family: var(--mono);
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--accent);
+  padding-left: 7px;
+  border-left: 1px solid rgba(0, 0, 0, 0.14);
+}
