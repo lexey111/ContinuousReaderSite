@@ -757,7 +757,6 @@ const translations = {
     'download.included.li2':      '<strong>One payment, then nothing</strong> — no subscription, no in-app purchases, no upsells inside the app you bought.',
     'download.included.li3':      '<strong>Free updates for the lifetime of the current major version</strong> — bug fixes, new themes, new features.',
     'download.included.li4':      '<strong>No ads, no telemetry, no analytics</strong> sold to anyone. Nothing about your reading leaves your device unless you turn on sync.',
-    'download.included.li5':      '<strong>Your books stay files</strong> — plain folders you can copy, move, or back up yourself, in any of the three apps.',
     'download.included.li6':  '<strong>iCloud sync</strong> <em>(ContinuousReader)</em> — positions, bookmarks, notes and library metadata follow every device on your Apple ID; book files ride iCloud Drive. Neither the shelf nor the nightstand syncs — see the <a href="#faq">FAQ</a> for how much storage it needs.',
     'download.included.note':     'When a major version requires a paid upgrade (<em>not planned for a long time</em>), <strong>you’ll know well in advance</strong> and it will be optional — your current version keeps working.',
 
@@ -1287,7 +1286,6 @@ const translations = {
     'download.included.li2':      '<strong>Один платёж — и всё</strong>: ни подписки, ни встроенных покупок, ни допродаж внутри купленного приложения.',
     'download.included.li3':      '<strong>Бесплатные обновления в пределах текущей мажорной версии</strong> — исправления, новые темы, новые возможности.',
     'download.included.li4':      '<strong>Ни рекламы, ни телеметрии, ни аналитики</strong> — и ничего никому не продаётся. Про ваше чтение с устройства не уходит ничего, пока вы сами не включите синхронизацию.',
-    'download.included.li5':      '<strong>Ваши книги остаются файлами</strong> — обычные папки, которые можно скопировать, перенести или забэкапить самому, в любом из трёх приложений.',
     'download.included.li6':  '<strong>Синхронизация iCloud</strong> <em>(ContinuousReader)</em> — позиции, закладки, заметки и метаданные библиотеки следуют за каждым устройством с вашим Apple ID; файлы книг едут через iCloud Drive. Ни полка, ни тумбочка не синхронизируются — сколько нужно места, смотрите в <a href="#faq">FAQ</a>.',
     'download.included.note':     'Когда мажорная версия потребует платного апгрейда (<em>ещё долго не планируется</em>), <strong>вы узнаете об этом заранее</strong>, и решение будет добровольным — текущая версия продолжит работать.',
 
@@ -2229,7 +2227,6 @@ const translations = {
     'download.included.li2':      '<strong>Один платіж — і все</strong>: ні передплати, ні вбудованих покупок, ні допродажів усередині купленого застосунку.',
     'download.included.li3':      '<strong>Безкоштовні оновлення в межах поточної мажорної версії</strong> — виправлення, нові теми, нові можливості.',
     'download.included.li4':      '<strong>Ні реклами, ні телеметрії, ні аналітики</strong> — і нічого нікому не продається. Про ваше читання з пристрою не йде нічого, доки ви самі не увімкнете синхронізацію.',
-    'download.included.li5':      '<strong>Ваші книги лишаються файлами</strong> — звичайні папки, які можна скопіювати, перенести чи зробити резервну копію самому, у будь-якому з трьох застосунків.',
     'download.included.li6':  '<strong>Синхронізація iCloud</strong> <em>(ContinuousReader)</em> — позиції, закладки, нотатки й метадані бібліотеки йдуть за кожним пристроєм з вашим Apple ID; файли книг їдуть через iCloud Drive. Ні полиця, ні тумбочка не синхронізуються — скільки потрібно місця, дивіться у <a href="#faq">FAQ</a>.',
     'download.included.note':     'Коли мажорна версія потребуватиме платного апґрейду (<em>найближчим часом не планується</em>), <strong>ви дізнаєтеся про це заздалегідь</strong>, і рішення буде добровільним — поточна версія продовжить працювати.',
 
@@ -3169,7 +3166,6 @@ const translations = {
     'download.included.li2':      '<strong>Un pago y ya está</strong>: sin suscripción, sin compras dentro de la app, sin ventas adicionales en lo que ya compraste.',
     'download.included.li3':      '<strong>Actualizaciones gratuitas durante toda la versión principal actual</strong>: correcciones, temas nuevos, funciones nuevas.',
     'download.included.li4':      '<strong>Sin anuncios, sin telemetría, sin analíticas</strong> vendidas a nadie. Nada sobre tu lectura sale del dispositivo salvo que actives la sincronización.',
-    'download.included.li5':      '<strong>Tus libros siguen siendo archivos</strong>: carpetas normales que puedes copiar, mover o respaldar tú mismo, en cualquiera de las tres apps.',
     'download.included.li6':  '<strong>Sincronización con iCloud</strong> <em>(ContinuousReader)</em>: posiciones, marcadores, notas y metadatos de la biblioteca siguen a todos los dispositivos de tu Apple ID; los archivos viajan por iCloud Drive. Ni la estantería ni la mesilla se sincronizan; consulta las <a href="#faq">preguntas frecuentes</a> para saber cuánto espacio necesita.',
     'download.included.note':     'Cuando una versión principal requiera una actualización de pago (<em>no previsto a corto plazo</em>), <strong>lo sabrás con bastante antelación</strong> y será opcional — tu versión actual seguirá funcionando.',
 
@@ -4111,7 +4107,6 @@ const translations = {
     'download.included.li2':      '<strong>Un paiement, puis plus rien</strong> : pas d’abonnement, pas d’achats intégrés, pas de relances dans l’app que vous avez achetée.',
     'download.included.li3':      '<strong>Mises à jour gratuites pendant toute la version majeure en cours</strong> — corrections, nouveaux thèmes, nouvelles fonctions.',
     'download.included.li4':      '<strong>Pas de publicité, pas de télémétrie, pas d’analytique</strong> vendue à qui que ce soit. Rien de votre lecture ne quitte l’appareil tant que vous n’activez pas la synchronisation.',
-    'download.included.li5':      '<strong>Vos livres restent des fichiers</strong> — de simples dossiers que vous pouvez copier, déplacer ou sauvegarder vous-même, dans chacune des trois apps.',
     'download.included.li6':  '<strong>Synchronisation iCloud</strong> <em>(ContinuousReader)</em> — positions, signets, notes et métadonnées de la bibliothèque suivent chaque appareil de votre identifiant Apple ; les fichiers passent par iCloud Drive. Ni l’étagère ni la table de nuit ne se synchronisent — voir la <a href="#faq">FAQ</a> pour l’espace nécessaire.',
     'download.included.note':     'Quand une version majeure nécessitera une mise à niveau payante (<em>pas prévu avant longtemps</em>), <strong>vous serez prévenu bien à l’avance</strong> et ce sera optionnel — votre version actuelle continuera de fonctionner.',
 
@@ -5052,7 +5047,6 @@ const translations = {
     'download.included.li2':      '<strong>Eine Zahlung, dann nichts mehr</strong> — kein Abo, keine In-App-Käufe, keine Verkaufshinweise in der App, die Sie gekauft haben.',
     'download.included.li3':      '<strong>Kostenlose Updates für die gesamte aktuelle Hauptversion</strong> — Fehlerbehebungen, neue Themen, neue Funktionen.',
     'download.included.li4':      '<strong>Keine Werbung, keine Telemetrie, keine Analytik</strong>, an niemanden verkauft. Nichts über Ihr Lesen verlässt das Gerät, solange Sie die Synchronisierung nicht einschalten.',
-    'download.included.li5':      '<strong>Ihre Bücher bleiben Dateien</strong> — schlichte Ordner, die Sie selbst kopieren, verschieben oder sichern können, in jeder der drei Apps.',
     'download.included.li6':  '<strong>iCloud-Synchronisierung</strong> <em>(ContinuousReader)</em> — Positionen, Lesezeichen, Notizen und Bibliotheks-Metadaten folgen jedem Gerät Ihrer Apple-ID; Buchdateien laufen über iCloud Drive. Weder Regal noch Nachttisch synchronisieren — wie viel Speicher es braucht, steht in den <a href="#faq">FAQ</a>.',
     'download.included.note':     'Wenn eine Hauptversion ein kostenpflichtiges Upgrade erfordert (<em>auf lange Sicht nicht geplant</em>), <strong>wirst du es rechtzeitig erfahren</strong>, und es wird optional sein — deine aktuelle Version funktioniert weiter.',
 

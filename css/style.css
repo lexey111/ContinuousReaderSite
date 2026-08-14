@@ -3430,3 +3430,29 @@ code {
   position: relative;
   line-height: 0;
 }
+
+/* One item in the list belongs to a single app — it gets a plate so the
+   scope is visible before the words say it (user). Quiet: this is a
+   qualifier, not a highlight. */
+.included-list li.scoped {
+  background: var(--bg-darker);
+  border-radius: 10px;
+  border-top: none;
+  /* The plate swallows the row's own dash marker and hanging indent —
+     it carries the scope by itself. */
+  padding: 20px 24px 20px 24px;
+  margin: 10px -24px 0;
+}
+
+.included-list li.scoped::before { display: none; }
+
+.included-list li.scoped em {
+  font-style: normal;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
