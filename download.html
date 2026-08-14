@@ -95,7 +95,7 @@
   <div class="container">
     <div class="paths-grid">
       <div class="path-card paid">
-        <div class="path-name" data-i18n="download.cr.name">ContinuousReader</div>
+        <div class="path-name"><span class="cta-dot dot-cr" aria-hidden="true"></span><span data-i18n="download.cr.name">ContinuousReader</span></div>
         <div class="path-price" data-i18n="download.cr.price">$19.99</div>
         <div class="path-price-sub" data-i18n="download.cr.priceSub">once, not a subscription · Universal Purchase on Mac, iPad, iPhone</div>
         <p class="path-desc" data-i18n="download.cr.desc">
@@ -111,7 +111,7 @@
         </div>
       </div>
       <div class="path-card mid">
-        <div class="path-name" data-i18n="download.pr.name">PlainReader</div>
+        <div class="path-name"><span class="cta-dot dot-pr" aria-hidden="true"></span><span data-i18n="download.pr.name">PlainReader</span></div>
         <div class="path-price" data-i18n="download.pr.price">$6.99</div>
         <div class="path-price-sub" data-i18n="download.pr.priceSub">once, not a subscription · Universal Purchase on Mac, iPad, iPhone</div>
         <p class="path-desc" data-i18n="download.pr.desc">
@@ -127,7 +127,7 @@
         </div>
       </div>
       <div class="path-card">
-        <div class="path-name" data-i18n="download.jr.name">JustReader</div>
+        <div class="path-name"><span class="cta-dot dot-jr" aria-hidden="true"></span><span data-i18n="download.jr.name">JustReader</span></div>
         <div class="path-price free" data-i18n="download.jr.price">Free</div>
         <div class="path-price-sub" data-i18n="download.jr.priceSub">truly free, no tricks</div>
         <p class="path-desc" data-i18n="download.jr.desc">
@@ -143,6 +143,19 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section room-section reveal">
+  <div class="container-narrow">
+    <figure class="room-figure room-standalone">
+      <img src="img/rooms/library-sepia.webp" width="1000" height="1000" loading="lazy" decoding="async"
+           alt="An isometric reading room: one book open on the desk, a shelf of books on the wall, and a full bookcase" data-i18n-attr="alt:common.room.alt">
+      <span class="room-pin pin-jr" style="left:35%; top:54.5%"><i></i><b data-i18n="common.room.book">A book</b></span>
+      <span class="room-pin pin-pr" style="left:31.5%; top:23%"><i></i><b data-i18n="common.room.shelf">A shelf</b></span>
+      <span class="room-pin pin-cr" style="left:70%; top:40%"><i></i><b data-i18n="common.room.library">A library</b></span>
+      <figcaption data-i18n="download.room.caption">One room, three ways to read in it — and the dot beside each price says which is which.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -235,7 +248,7 @@
           <tr><td data-i18n="download.cmp.r.parallel"><strong>Several books open at once</strong>, each in its own place</td><td><span class="dash">—</span></td><td data-i18n="download.cmp.r.parallel.pr"><strong>up to 25</strong></td><td data-i18n="download.cmp.r.parallel.cr">one at a time</td></tr>
           <tr><td data-i18n="download.cmp.r.switch">Switch between the books you are reading in one tap</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td data-i18n="download.cmp.r.switch.cr">through the library</td></tr>
           <tr><td data-i18n="download.cmp.r.history">Shared history that reopens a book in place</td><td data-i18n="download.cmp.r.history.jr">last 5</td><td data-i18n="download.cmp.r.history.pr">last 25, searchable</td><td data-i18n="download.cmp.r.history.cr">the whole library</td></tr>
-          <tr><td data-i18n="download.cmp.r.card"><strong>Book Card</strong> — cover, images, info, notes, bookmarks, stats</td><td data-i18n="download.cmp.r.card.jr">read-only</td><td data-i18n="download.cmp.r.card.pr">read-only</td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.card"><strong>Book Card</strong> — cover, images, info, notes, bookmarks, stats</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.tags">Color tags (7 colors)</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.depth">Interface depth — Flat / Standard / Deep</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.opds"><strong>OPDS</strong> catalogs with shortcuts</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
@@ -245,6 +258,7 @@
           <tr><td data-i18n="download.cmp.r.icloud"><strong>iCloud sync</strong> across devices</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.org"><strong>Nested folders</strong> with subfolders and drag-and-drop</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.trash"><strong>Trash</strong> — restore deleted books or empty it</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.edit">Edit a book’s own details — title, author, series, cover</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.genres">Genre management</td><td><span class="dash">—</span></td><td data-i18n="download.cmp.r.genres.pr">shown, not edited</td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.watch">OPDS <strong>watchers</strong> that fetch new arrivals</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
           <tr><td data-i18n="download.cmp.r.mass"><strong>Mass import</strong> of folders and files (Mac)</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>

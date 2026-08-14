@@ -3356,3 +3356,25 @@ code {
      tie the buttons to the room. */
   .room-pin b { display: none; }
 }
+
+/* The room again on the download page, under the three prices — the
+   metaphor belongs where the choice is made, not only in the footer
+   (user). Same pins, centred, with the caption doing the mapping. */
+.room-section { padding: 0 0 20px; }
+
+.room-standalone {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.room-standalone figcaption {
+  font-family: var(--serif);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  text-align: center;
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+.path-name .cta-dot { margin-right: 10px; vertical-align: 0.08em; }
