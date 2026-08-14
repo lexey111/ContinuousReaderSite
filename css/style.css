@@ -3254,7 +3254,12 @@ code {
    not as a control: no hover, no pointer. */
 .room-pin {
   position: absolute;
-  transform: translate(-50%, -50%);
+  /* The DOT is the anchor, not the pin. Centring the whole group put the
+     dot half a label to the left of its object — and since labels are
+     translated, the drift changed with the language (user, 2026-08-14:
+     "Бесплатно" walks further than "Free"). Shift by half the dot's own
+     width instead; the label then grows to the right, off the anchor. */
+  transform: translate(-5.5px, -50%);
   display: flex;
   align-items: center;
   gap: 8px;
