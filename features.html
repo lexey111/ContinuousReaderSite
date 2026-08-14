@@ -74,7 +74,7 @@
             A closer look at how ContinuousReader is built and what it can do.
         </p>
         <div class="page-intro" data-i18n="features.header.intro">
-            This page is a tour, not a spec sheet. If you’re comparing reading apps
+             If you’re comparing reading apps
             on specific capabilities — formats, sync behavior, theming, translation
             — you’ll find them organized below. If you want a shorter overview,
             start with <a href="index.html">the home page</a>. If there’s something
@@ -535,6 +535,7 @@
                 <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge pr">PR</span>
+          <span class="badge jr">JR</span>
         </span>
             </div>
             <div class="feature-body">
@@ -562,7 +563,7 @@
                     </li>
                 </ul>
                 <p style="margin-top: 24px;"><span data-i18n="features.s1.bookmarks.p2">
-          Bookmarks are available only in ContinuousReader.
+          Bookmarks live with the book, not with the app’s copy of it: close the book, bring the same file back later, and the marks are still there. All three apps have them.
         </span>
                     <button class="callout-dot section-callout" type="button"
                             data-screenshot="img/screenshots/features-bookmarks.webp"
@@ -613,6 +614,7 @@
                 <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge pr">PR</span>
+          <span class="badge jr">JR</span>
         </span>
             </div>
             <div class="feature-body">
@@ -752,7 +754,7 @@
                     <li data-i18n="features.s2.translate.li2"><strong>Side by side</strong>Source and translation next
                         to each other
                     </li>
-                    <li data-i18n="features.s2.translate.li3"><strong>Interlinear</strong>The translation directly under
+                    <li data-i18n="features.s2.translate.li3"><strong>Dictionary</strong>A short selection comes back as a centered look-up in the reading font, instead of
                         the original — each word under its source
                     </li>
                 </ul>
@@ -884,7 +886,7 @@
             </p>
             <div class="cr-only-banner">
                 <span class="marker">CR ONLY</span>
-                <span data-i18n="features.s3.banner">JustReader reads one book at a time; PlainReader keeps up to 25 on a shelf, with colors, a shared history and its own book card — but no collection to organize. Folders, collection-wide search and everything else below is ContinuousReader territory.</span>
+                <span data-i18n="features.s3.banner">JustReader reads one book at a time; PlainReader keeps up to 25 on a shelf, with colors, a shared history and its own book card — but no collection to organize. Folders, collection-wide search and the rest of the library belong to ContinuousReader.</span>
             </div>
         </div>
 
@@ -893,8 +895,7 @@
                 <h3 class="feature-h3" data-i18n="features.s3.tabs.h">Three tabs</h3>
             </div>
             <div class="feature-body">
-                <p data-i18n="features.s3.tabs.p1">The library is organized into three tabs, each with its own
-                    purpose:</p>
+                <p data-i18n="features.s3.tabs.p1">The library is organized into four tabs. Library holds everything; the other three are shortcuts into it:</p>
                 <ul class="feature-list">
                     <li data-i18n="features.s3.tabs.li1"><strong>Library</strong>The complete collection, with all
                         filtering, sorting, and folder scoping applied
@@ -1017,9 +1018,7 @@
                     <li data-i18n="features.s3.search.li1"><strong>Scoped search</strong>Filter by title, author,
                         series, notes, annotation, or genre. Results appear as you type.
                     </li>
-                    <li data-i18n="features.s3.search.li2"><strong>Eight sort options</strong>Title, author, series,
-                        date added, date opened, date published, reading progress, and file size. Each cycles through
-                        ascending, descending, and cleared states.
+                    <li data-i18n="features.s3.search.li2"><strong>Six sort options</strong>Title, author, series, date added, date opened, and date published. Each cycles through ascending, descending, and cleared.
                     </li>
                     <li><span data-i18n="features.s3.search.li3"><strong>Unified filter popover</strong>Color and genre filters combined in one place. Active filters show inline badges — up to 3 color dots then a count, genre name with ellipsis then a count.</span>
                         <button class="callout-dot section-callout" type="button"
@@ -1052,7 +1051,7 @@
             </div>
             <div class="feature-body">
                 <p data-i18n="features.s3.genres.p1">
-                    Genre tags are auto-extracted from FB2 genre codes (around 170
+                    Genre tags are auto-extracted from FB2 genre codes (158 of them
                     mapped) and EPUB <code>dc:subject</code> metadata. A
                     <strong>genre chip picker</strong> allows manual editing per book,
                     and a full <strong>genre management sheet</strong> handles bulk
@@ -1196,7 +1195,7 @@
                     <li data-i18n="features.s3.bookcard.li3"><strong>Notes</strong>Rich text editor with formatting
                         toolbar
                     </li>
-                    <li data-i18n="features.s3.bookcard.li4"><strong>Marks</strong>All bookmarks with color filter,
+                    <li data-i18n="features.s3.bookcard.li4"><strong>Bookmarks</strong>Every mark with its colour filter,
                         swipe-to-edit on iOS, inline editor on Mac
                     </li>
                     <li data-i18n="features.s3.bookcard.li5"><strong>Stats</strong>Reading progress, pages, opens,
@@ -1264,7 +1263,7 @@
                         image handling
                     </li>
                     <li data-i18n="features.s4.formats.li2"><strong>FB2 / FB2.ZIP</strong>With automatic genre code
-                        mapping (~170 codes)
+                        mapping (158 codes)
                     </li>
                     <li data-i18n="features.s4.formats.li3"><strong>MOBI</strong>Via a native decompressor</li>
                     <li data-i18n="features.s4.formats.li4"><strong>HTML / HTML.ZIP</strong>With HTML sanitization and
@@ -1435,7 +1434,7 @@
             <div class="feature-body">
                 <p data-i18n="features.s4.opds.p">Browse online book catalogs with a native interface.</p>
                 <ul class="feature-list">
-                    <li data-i18n="features.s4.opds.li1"><strong>Default catalogs</strong>Standard Ebooks, Project Gutenberg, Feedbooks — ready to use</li>
+                    <li data-i18n="features.s4.opds.li1"><strong>Default catalogs</strong>Project Gutenberg, Ebooks libres et gratuits and textos.info are ready to use — add any other OPDS server yourself</li>
                     <li data-i18n="features.s4.opds.li2"><strong>Custom catalogs</strong>Add your own OPDS server with Basic Auth support</li>
                     <li data-i18n="features.s4.opds.li3"><strong>Feed navigation</strong>With breadcrumb trail and middle truncation for long paths</li>
                     <li data-i18n="features.s4.opds.li4"><strong>Server-side search</strong>Using the catalog’s OpenSearch template when available</li>
@@ -1595,6 +1594,7 @@
                 <span class="badge-group">
           <span class="badge cr">CR</span>
           <span class="badge pr">PR</span>
+          <span class="badge jr">JR</span>
         </span>
             </div>
             <div class="feature-body">
@@ -1627,11 +1627,11 @@
             </div>
             <div class="feature-body">
                 <p><span data-i18n="features.s5.storage.p">
-          Book content is stored as clean HTML on disk. Files have
-          human-readable names — <code>strugatskie-trudno-byt-bogom.html</code>
-          instead of UUIDs or hashes. You can navigate your library folder
-          in Finder, open any book with a text editor, and the content is
-          just there.
+          Book content is stored as clean HTML on disk. Each book gets a
+          folder named after its author and title —
+          <code>strugatskie-trudno-byt-bogom/</code> — holding
+          <code>content.html</code>, a small metadata file and the book’s
+          images. No proprietary container, no database you cannot open.
         </span>
                 </p>
             </div>
