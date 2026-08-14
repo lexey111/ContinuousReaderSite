@@ -3402,3 +3402,31 @@ code {
   padding-left: 7px;
   border-left: 1px solid rgba(0, 0, 0, 0.14);
 }
+
+/* The same ladder in a ROW, for the pages whose final call sits on one
+   line (features, platforms): filled, outlined, link — left to right, so
+   the eye reads it as three tiers rather than a primary and two
+   alternates. The price rides inside each button instead of being pushed
+   to a far edge, which only makes sense in the home page's column. */
+.final-cta-buttons.ladder {
+  gap: 20px;
+}
+
+.final-cta-buttons.ladder .cta-app .price { margin-left: 0; }
+
+.final-cta-buttons.ladder .cta-outline,
+.final-cta-buttons.ladder .cta-quiet {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.final-cta-buttons.ladder .cta-quiet { padding: 16px 8px; }
+
+/* The pins hang on the PICTURE, not on the figure — a figcaption inside
+   the same positioning context stretched it, and every percentage came
+   out proportionally low (user, 2026-08-14). */
+.room-frame {
+  position: relative;
+  line-height: 0;
+}
