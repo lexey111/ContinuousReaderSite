@@ -757,7 +757,7 @@ const translations = {
     'download.included.li2':      '<strong>One payment, then nothing</strong> — no subscription, no in-app purchases, no upsells inside the app you bought.',
     'download.included.li3':      '<strong>Free updates for the lifetime of the current major version</strong> — bug fixes, new themes, new features.',
     'download.included.li4':      '<strong>No ads, no telemetry, no analytics</strong> sold to anyone. Nothing about your reading leaves your device unless you turn on sync.',
-    'download.included.li6':  '<strong>iCloud sync</strong> <em>(ContinuousReader)</em> — positions, bookmarks, notes and library metadata follow every device on your Apple ID; book files ride iCloud Drive. Neither the shelf nor the nightstand syncs — see the <a href="#faq">FAQ</a> for how much storage it needs.',
+    'download.included.li6':  '<strong>iCloud sync</strong> <em>(ContinuousReader)</em> — positions, bookmarks, notes and library metadata follow every device on your Apple ID; book files ride iCloud Drive. Neither the “shelf” nor the “nightstand” syncs — see the <a href="#faq">FAQ</a> for how much storage it needs.',
     'download.included.note':     'When a major version requires a paid upgrade (<em>not planned for a long time</em>), <strong>you’ll know well in advance</strong> and it will be optional — your current version keeps working.',
 
     'download.req.eyebrow':       'Compatibility',
@@ -1286,7 +1286,7 @@ const translations = {
     'download.included.li2':      '<strong>Один платёж — и всё</strong>: ни подписки, ни встроенных покупок, ни допродаж внутри купленного приложения.',
     'download.included.li3':      '<strong>Бесплатные обновления в пределах текущей мажорной версии</strong> — исправления, новые темы, новые возможности.',
     'download.included.li4':      '<strong>Ни рекламы, ни телеметрии, ни аналитики</strong> — и ничего никому не продаётся. Про ваше чтение с устройства не уходит ничего, пока вы сами не включите синхронизацию.',
-    'download.included.li6':  '<strong>Синхронизация iCloud</strong> <em>(ContinuousReader)</em> — позиции, закладки, заметки и метаданные библиотеки следуют за каждым устройством с вашим Apple ID; файлы книг едут через iCloud Drive. Ни полка, ни тумбочка не синхронизируются — сколько нужно места, смотрите в <a href="#faq">FAQ</a>.',
+    'download.included.li6':  '<strong>Синхронизация iCloud</strong> <em>(ContinuousReader)</em> — позиции, закладки, заметки и метаданные библиотеки следуют за каждым устройством с вашим Apple ID; файлы книг едут через iCloud Drive. Ни «полка», ни «тумбочка» не синхронизируются — сколько нужно места, смотрите в <a href="#faq">FAQ</a>.',
     'download.included.note':     'Когда мажорная версия потребует платного апгрейда (<em>ещё долго не планируется</em>), <strong>вы узнаете об этом заранее</strong>, и решение будет добровольным — текущая версия продолжит работать.',
 
     'download.req.eyebrow':       'Совместимость',
@@ -1396,7 +1396,7 @@ const translations = {
     'download.faq.apr3.p2': 'Верните ту же книгу через месяц — файлом, ссылкой или из истории последних 25 — и всё окажется там, где вы остановились.',
     'download.faq.qpr4': 'Можно ли позже перейти с PlainReader на <em>ContinuousReader</em>?',
     'download.faq.apr4.p1': 'Да, и ничего не потеряется — но это две отдельные покупки, а не апгрейд со скидкой. Ваши книги — обычные файлы, так что в библиотеку вы их импортируете ровно так же, как приносили на полку.',
-    'download.faq.apr4.p2': 'Оба приложения могут спокойно жить на одном устройстве: полка — для того, что читаете сейчас, библиотека — для всего, что у вас есть.',
+    'download.faq.apr4.p2': 'Оба приложения могут спокойно жить на одном устройстве: «полка» — для того, что читаете сейчас, библиотека — для всего, что у вас есть.',
     'download.faq.q2':            'Можно ли <em>попробовать</em> ContinuousReader перед покупкой?',
     'download.faq.a2.p1':         'JustReader — наиболее близкое к пробной версии: тот же движок чтения, та же типографика, тот же перевод и чтение вслух. Если вам нравится, как JustReader читает, ContinuousReader покажется идентичным, просто с библиотекой и синхронизацией.',
     'download.faq.a2.p2':         'Для функций, специфичных для библиотеки (OPDS, папки, закладки), пробной версии нет — но стандартная политика возврата App Store действует в течение 14 дней.',
@@ -2227,7 +2227,7 @@ const translations = {
     'download.included.li2':      '<strong>Один платіж — і все</strong>: ні передплати, ні вбудованих покупок, ні допродажів усередині купленого застосунку.',
     'download.included.li3':      '<strong>Безкоштовні оновлення в межах поточної мажорної версії</strong> — виправлення, нові теми, нові можливості.',
     'download.included.li4':      '<strong>Ні реклами, ні телеметрії, ні аналітики</strong> — і нічого нікому не продається. Про ваше читання з пристрою не йде нічого, доки ви самі не увімкнете синхронізацію.',
-    'download.included.li6':  '<strong>Синхронізація iCloud</strong> <em>(ContinuousReader)</em> — позиції, закладки, нотатки й метадані бібліотеки йдуть за кожним пристроєм з вашим Apple ID; файли книг їдуть через iCloud Drive. Ні полиця, ні тумбочка не синхронізуються — скільки потрібно місця, дивіться у <a href="#faq">FAQ</a>.',
+    'download.included.li6':  '<strong>Синхронізація iCloud</strong> <em>(ContinuousReader)</em> — позиції, закладки, нотатки й метадані бібліотеки йдуть за кожним пристроєм з вашим Apple ID; файли книг їдуть через iCloud Drive. Ні «полиця», ні «тумбочка» не синхронізуються — скільки потрібно місця, дивіться у <a href="#faq">FAQ</a>.',
     'download.included.note':     'Коли мажорна версія потребуватиме платного апґрейду (<em>найближчим часом не планується</em>), <strong>ви дізнаєтеся про це заздалегідь</strong>, і рішення буде добровільним — поточна версія продовжить працювати.',
 
     'download.req.eyebrow':       'Сумісність',
@@ -2337,7 +2337,7 @@ const translations = {
     'download.faq.apr3.p2': 'Поверніть ту саму книгу за місяць — файлом, посиланням чи з історії останніх 25 — і все буде там, де ви зупинилися.',
     'download.faq.qpr4': 'Чи можна пізніше перейти з PlainReader на <em>ContinuousReader</em>?',
     'download.faq.apr4.p1': 'Так, і нічого не загубиться — але це дві окремі покупки, а не оновлення зі знижкою. Ваші книги — звичайні файли, тож до бібліотеки ви імпортуєте їх так само, як приносили на полицю.',
-    'download.faq.apr4.p2': 'Обидва застосунки можуть спокійно жити на одному пристрої: полиця — для того, що читаєте зараз, бібліотека — для всього, що у вас є.',
+    'download.faq.apr4.p2': 'Обидва застосунки можуть спокійно жити на одному пристрої: «полиця» — для того, що читаєте зараз, бібліотека — для всього, що у вас є.',
     'download.faq.q2':            'Чи можна <em>спробувати</em> ContinuousReader перед покупкою?',
     'download.faq.a2.p1':         'JustReader — найближче до пробної версії: той самий рушій читання, та сама типографіка, той самий переклад і читання вголос. Якщо вам подобається, як JustReader читає, ContinuousReader буде ідентичним, просто з бібліотекою і синхронізацією.',
     'download.faq.a2.p2':         'Для функцій, специфічних для бібліотеки (OPDS, теки, закладки), пробної версії немає — але стандартна політика повернення App Store діє протягом 14 днів.',
@@ -3166,7 +3166,7 @@ const translations = {
     'download.included.li2':      '<strong>Un pago y ya está</strong>: sin suscripción, sin compras dentro de la app, sin ventas adicionales en lo que ya compraste.',
     'download.included.li3':      '<strong>Actualizaciones gratuitas durante toda la versión principal actual</strong>: correcciones, temas nuevos, funciones nuevas.',
     'download.included.li4':      '<strong>Sin anuncios, sin telemetría, sin analíticas</strong> vendidas a nadie. Nada sobre tu lectura sale del dispositivo salvo que actives la sincronización.',
-    'download.included.li6':  '<strong>Sincronización con iCloud</strong> <em>(ContinuousReader)</em>: posiciones, marcadores, notas y metadatos de la biblioteca siguen a todos los dispositivos de tu Apple ID; los archivos viajan por iCloud Drive. Ni la estantería ni la mesilla se sincronizan; consulta las <a href="#faq">preguntas frecuentes</a> para saber cuánto espacio necesita.',
+    'download.included.li6':  '<strong>Sincronización con iCloud</strong> <em>(ContinuousReader)</em>: posiciones, marcadores, notas y metadatos de la biblioteca siguen a todos los dispositivos de tu Apple ID; los archivos viajan por iCloud Drive. Ni la «estantería» ni la «mesilla» se sincronizan; consulta las <a href="#faq">preguntas frecuentes</a> para saber cuánto espacio necesita.',
     'download.included.note':     'Cuando una versión principal requiera una actualización de pago (<em>no previsto a corto plazo</em>), <strong>lo sabrás con bastante antelación</strong> y será opcional — tu versión actual seguirá funcionando.',
 
     'download.req.eyebrow':       'Compatibilidad',
@@ -4107,7 +4107,7 @@ const translations = {
     'download.included.li2':      '<strong>Un paiement, puis plus rien</strong> : pas d’abonnement, pas d’achats intégrés, pas de relances dans l’app que vous avez achetée.',
     'download.included.li3':      '<strong>Mises à jour gratuites pendant toute la version majeure en cours</strong> — corrections, nouveaux thèmes, nouvelles fonctions.',
     'download.included.li4':      '<strong>Pas de publicité, pas de télémétrie, pas d’analytique</strong> vendue à qui que ce soit. Rien de votre lecture ne quitte l’appareil tant que vous n’activez pas la synchronisation.',
-    'download.included.li6':  '<strong>Synchronisation iCloud</strong> <em>(ContinuousReader)</em> — positions, signets, notes et métadonnées de la bibliothèque suivent chaque appareil de votre identifiant Apple ; les fichiers passent par iCloud Drive. Ni l’étagère ni la table de nuit ne se synchronisent — voir la <a href="#faq">FAQ</a> pour l’espace nécessaire.',
+    'download.included.li6':  '<strong>Synchronisation iCloud</strong> <em>(ContinuousReader)</em> — positions, signets, notes et métadonnées de la bibliothèque suivent chaque appareil de votre identifiant Apple ; les fichiers passent par iCloud Drive. Ni « l’étagère » ni « la table de nuit » ne se synchronisent — voir la <a href="#faq">FAQ</a> pour l’espace nécessaire.',
     'download.included.note':     'Quand une version majeure nécessitera une mise à niveau payante (<em>pas prévu avant longtemps</em>), <strong>vous serez prévenu bien à l’avance</strong> et ce sera optionnel — votre version actuelle continuera de fonctionner.',
 
     'download.req.eyebrow':       'Compatibilité',
@@ -5047,7 +5047,7 @@ const translations = {
     'download.included.li2':      '<strong>Eine Zahlung, dann nichts mehr</strong> — kein Abo, keine In-App-Käufe, keine Verkaufshinweise in der App, die Sie gekauft haben.',
     'download.included.li3':      '<strong>Kostenlose Updates für die gesamte aktuelle Hauptversion</strong> — Fehlerbehebungen, neue Themen, neue Funktionen.',
     'download.included.li4':      '<strong>Keine Werbung, keine Telemetrie, keine Analytik</strong>, an niemanden verkauft. Nichts über Ihr Lesen verlässt das Gerät, solange Sie die Synchronisierung nicht einschalten.',
-    'download.included.li6':  '<strong>iCloud-Synchronisierung</strong> <em>(ContinuousReader)</em> — Positionen, Lesezeichen, Notizen und Bibliotheks-Metadaten folgen jedem Gerät Ihrer Apple-ID; Buchdateien laufen über iCloud Drive. Weder Regal noch Nachttisch synchronisieren — wie viel Speicher es braucht, steht in den <a href="#faq">FAQ</a>.',
+    'download.included.li6':  '<strong>iCloud-Synchronisierung</strong> <em>(ContinuousReader)</em> — Positionen, Lesezeichen, Notizen und Bibliotheks-Metadaten folgen jedem Gerät Ihrer Apple-ID; Buchdateien laufen über iCloud Drive. Weder „Regal“ noch „Nachttisch“ synchronisieren — wie viel Speicher es braucht, steht in den <a href="#faq">FAQ</a>.',
     'download.included.note':     'Wenn eine Hauptversion ein kostenpflichtiges Upgrade erfordert (<em>auf lange Sicht nicht geplant</em>), <strong>wirst du es rechtzeitig erfahren</strong>, und es wird optional sein — deine aktuelle Version funktioniert weiter.',
 
     'download.req.eyebrow':       'Kompatibilität',
