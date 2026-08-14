@@ -1117,7 +1117,7 @@ section { position: relative; z-index: 2; }
 }
 
 .app-card.mid {
-  border-left-color: #2E6B4F;
+  border-left-color: #41789E;
 }
 
 .app-card-name {
@@ -1361,9 +1361,9 @@ section.feature-section { padding: 80px 0; }
 }
 
 .badge.pr {
-  background: #D9E9DF;
-  color: #2E6B4F;
-  border: 1px solid #B4D3C1;
+  background: #EFE7DA;
+  color: #4A6076;
+  border: 1px solid #DED2BE;
 }
 
 .badge.pr::before {
@@ -1784,9 +1784,9 @@ code {
 }
 
 .legend .badge-inline.pr {
-  background: #D9E9DF;
-  color: #2E6B4F;
-  border: 1px solid #B4D3C1;
+  background: #EFE7DA;
+  color: #4A6076;
+  border: 1px solid #DED2BE;
 }
 
 .legend .badge-inline.pr::before {
@@ -2190,9 +2190,10 @@ code {
 }
 
 .path-card.paid { border-left-color: var(--accent); }
-/* PlainReader's own rule — the family's green, so the three cards read as
-   three products rather than one highlighted and two alternatives. */
-.path-card.mid { border-left-color: #2E6B4F; }
+/* PlainReader's rule takes the mid blue of its own mark, so the three
+   cards read as three products rather than one highlighted and two
+   alternatives. */
+.path-card.mid { border-left-color: #41789E; }
 
 .path-name {
   font-family: var(--serif);
@@ -3282,7 +3283,7 @@ code {
 }
 
 .pin-cr i, .dot-cr { background: #2D5573; }
-.pin-pr i, .dot-pr { background: #2E6B4F; }
+.pin-pr i, .dot-pr { background: #41789E; }
 .pin-jr i, .dot-jr { background: #A84B28; }
 
 .cta-choices {
