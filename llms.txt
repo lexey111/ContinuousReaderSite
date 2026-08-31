@@ -77,5 +77,6 @@ Footnote extraction from EPUB and FB2. Chapter extraction. Cover detection. Enco
 ## Links
 
 - Website: https://continuousreader.app
+- The family, app by app: https://continuousreader.app/family.html
 - Contact: hello@continuousreader.app
 - Developer: Oleksii Koshkin

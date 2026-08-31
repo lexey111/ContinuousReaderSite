@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.family.title">The family — three readers, one engine</title>
+<meta name="description" data-i18n-attr="content:meta.family.desc" content="ContinuousReader, PlainReader and JustReader: one book, a shelf of them, or a whole library — the same reading engine in all three.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<meta property="og:title" data-i18n-attr="content:meta.family.ogTitle" content="The family — three readers, one engine">
+<meta property="og:description" data-i18n-attr="content:meta.family.ogDesc" content="One book, a shelf of them, or a whole library — the same reading engine in all three.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://continuousreader.app/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ContinuousReader — a native reader for Mac, iPad, and iPhone">
+<meta property="og:site_name" content="ContinuousReader">
+<meta property="og:url" content="https://continuousreader.app/family.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://continuousreader.app/img/og-image.png">
+<link rel="canonical" href="https://continuousreader.app/family.html">
+<link rel="preload" href="fonts/source-serif-4-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- Reusable butterfly symbol for the section divider below.
+     Defined once, referenced via <use href="#cr-butterfly" />. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cr-butterfly" viewBox="-120 -97 240 164">
+    <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+    <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+    <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+    <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+    <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+  </symbol>
+</svg>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-logo" aria-hidden="true">
+        <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+      </span>
+      <span>ContinuousReader</span>
+    </a>
+    <div class="nav-links">
+      <a href="features.html" data-i18n="nav.features">Features</a>
+      <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
+      <a href="family.html" class="active" data-i18n="nav.family">Family</a>
+      <a href="download.html" data-i18n="nav.download">Download</a>
+      <button class="nav-lang" type="button">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container-narrow">
+    <div class="page-eyebrow" data-i18n="family.header.eyebrow">Three apps, one reading engine</div>
+    <h1 class="page-title" data-i18n="family.header.title">A nightstand, a <em>shelf</em>, a library.</h1>
+    <p class="page-subtitle" data-i18n="family.header.subtitle">
+      The same reader, sized to how many books you keep.
+    </p>
+    <div class="page-intro">
+      <p data-i18n="family.header.intro1">
+        Most reading apps ask you to accept a library manager before you can
+        open a single file. These three start from the other end. The reader
+        is the same in all of them — what changes is how much room it comes
+        with.
+      </p>
+      <p data-i18n="family.header.intro2">
+        The typography, the themes, the reading modes, translation, Read
+        Aloud, bookmarks and notes are one shared engine.
+        <strong>So choose by how many books you keep, not by which features
+        you are willing to lose.</strong>
+      </p>
+    </div>
+  </div>
+</header>
+<div class="section-divider" aria-hidden="true">
+  <div class="rule">
+    <span class="line"></span>
+    <span class="dot dot-sm"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-lg"></span>
+  </div>
+  <svg class="mark"><use href="#cr-butterfly" /></svg>
+  <div class="rule">
+    <span class="dot dot-lg"></span>
+    <span class="dot dot-md"></span>
+    <span class="dot dot-sm"></span>
+    <span class="line"></span>
+  </div>
+</div>
+
+<section class="section room-section reveal">
+  <div class="container-narrow">
+    <figure class="room-figure room-standalone">
+      <div class="room-frame">
+        <img src="img/rooms/library-sepia.webp" width="1000" height="1000" loading="lazy" decoding="async"
+             alt="An isometric reading room: one book open on the desk, a shelf of books on the wall, and a full bookcase" data-i18n-attr="alt:common.room.alt">
+        <span class="room-pin pin-jr" style="left:35%; top:54.5%"><i></i><b><span data-i18n="common.room.book">A book</span><em data-i18n="download.jr.price">Free</em></b></span>
+        <span class="room-pin pin-pr" style="left:31.5%; top:23%"><i></i><b><span data-i18n="common.room.shelf">A shelf</span><em data-i18n="download.pr.price">$6.99</em></b></span>
+        <span class="room-pin pin-cr" style="left:70%; top:40%"><i></i><b><span data-i18n="common.room.library">A library</span><em data-i18n="download.cr.price">$19.99</em></b></span>
+      </div>
+      <figcaption data-i18n="family.room.caption">One room, three ways to read in it. Each app takes one of them seriously and leaves the rest alone.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="platform-block reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-eyebrow" data-i18n="family.jr.eyebrow">JustReader · free</div>
+        <h2 class="platform-title" data-i18n="family.jr.title">The <em>nightstand</em>.</h2>
+        <p class="platform-intro" data-i18n="family.jr.intro">
+          One book at a time. Open a file, read it, close it. There is no library, no shelf and nothing to file — the book you are reading is the whole app.
+        </p>
+        <div class="platform-list-label" data-i18n="family.jr.label">Pick it if</div>
+        <ul class="platform-list">
+          <li data-i18n="family.jr.li1"><strong>You read one book at a time</strong>and have no wish to organise anything</li>
+          <li data-i18n="family.jr.li2"><strong>Someone sent you an EPUB</strong>and you want to read it now, properly</li>
+          <li data-i18n="family.jr.li3"><strong>You want to try the engine</strong>before paying for room in it</li>
+          <li data-i18n="family.jr.li4"><strong>You come back to books</strong>close one and open it again later — your place is still where you left it</li>
+        </ul>
+        <p class="platform-closing" data-i18n="family.jr.closing">
+          Free, with no trial and nothing held back: the reading is the same reading.
+        </p>
+        <p class="platform-closing">
+          <a href="https://apps.apple.com/app/justreader/id6781187067" target="_blank" rel="noopener" data-i18n="family.jr.store">JustReader on the App Store</a>
+        </p>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame">
+          <img width="2590" height="3278" loading="lazy" decoding="async" src="img/family-jr.webp" alt="JustReader on iPad: one book on the screen, its cover, the progress dial and Continue" data-i18n-attr="alt:family.jr.shotAlt">
+          <div class="screenshot-caption" data-i18n="family.jr.shotCap">iPad · <span class="lang-tag">English</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="platform-block reverse reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-eyebrow" data-i18n="family.pr.eyebrow">PlainReader · $6.99 once</div>
+        <h2 class="platform-title" data-i18n="family.pr.title">The <em>shelf</em>.</h2>
+        <p class="platform-intro" data-i18n="family.pr.intro">
+          Up to twenty-five numbered places, each holding a book. Not a library to maintain — a shelf you take in at a glance, where every book keeps its own page open.
+        </p>
+        <div class="platform-list-label" data-i18n="family.pr.label">Pick it if</div>
+        <ul class="platform-list">
+          <li data-i18n="family.pr.li1"><strong>You keep a few books going</strong>a novel, a manual, and the one you fell asleep in</li>
+          <li data-i18n="family.pr.li2"><strong>You do not want a catalogue</strong>no folders, no tags, nothing to file</li>
+          <li data-i18n="family.pr.li3"><strong>You want the whole reader</strong>every theme, every mode, translation and Read Aloud</li>
+          <li data-i18n="family.pr.li4"><strong>You take books from catalogues</strong>OPDS is built in — bring one straight from a server into a place</li>
+        </ul>
+        <p class="platform-closing" data-i18n="family.pr.closing">
+          A shelf answers the question a library never asks: what am I reading right now?
+        </p>
+        <p class="platform-closing">
+          <a href="https://apps.apple.com/app/plainreader/id6801140208" target="_blank" rel="noopener" data-i18n="family.pr.store">PlainReader on the App Store</a>
+        </p>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame">
+          <img width="2590" height="3278" loading="lazy" decoding="async" src="img/family-pr.webp" alt="PlainReader on iPad: the numbered places down the side, the book in the chosen one open beside them" data-i18n-attr="alt:family.pr.shotAlt">
+          <div class="screenshot-caption" data-i18n="family.pr.shotCap">iPad · <span class="lang-tag">English</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="platform-block reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-eyebrow" data-i18n="family.cr.eyebrow">ContinuousReader · $19.99 once</div>
+        <h2 class="platform-title" data-i18n="family.cr.title">The <em>library</em>.</h2>
+        <p class="platform-intro" data-i18n="family.cr.intro">
+          Everything, and somewhere to put it: folders, colours, genres and series, search across every book, catalogues with watchers, statistics — and a reading position that follows you from the Mac to the phone mid-paragraph.
+        </p>
+        <div class="platform-list-label" data-i18n="family.cr.label">Pick it if</div>
+        <ul class="platform-list">
+          <li data-i18n="family.cr.li1"><strong>You keep hundreds of books</strong>and want to find one in a second</li>
+          <li data-i18n="family.cr.li2"><strong>You read on more than one device</strong>the same book, the same paragraph, both ways</li>
+          <li data-i18n="family.cr.li3"><strong>You write while you read</strong>a real editor per book, and marks you can find again</li>
+          <li data-i18n="family.cr.li4"><strong>You want the workspace</strong>panels to dock, float or pin, and a keyboard shortcut for everything</li>
+        </ul>
+        <p class="platform-closing" data-i18n="family.cr.closing">
+          The one to reach for when reading is not an occasional thing.
+        </p>
+        <p class="platform-closing">
+          <a href="https://apps.apple.com/app/continuousreader/id6783733436" target="_blank" rel="noopener" data-i18n="family.cr.store">ContinuousReader on the App Store</a>
+        </p>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame">
+          <img width="2590" height="3278" loading="lazy" decoding="async" src="img/family-cr.webp" alt="ContinuousReader on iPad: the library in card view, folders down the side, covers in a grid" data-i18n-attr="alt:family.cr.shotAlt">
+          <div class="screenshot-caption" data-i18n="family.cr.shotCap">iPad · <span class="lang-tag">English</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt-bg reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow" data-i18n="family.shared.eyebrow">In all three</div>
+      <h2 class="section-title" data-i18n="family.shared.title">The same <em>reading</em>.</h2>
+      <p class="section-intro" data-i18n="family.shared.intro">
+        The part you actually spend your evening in is one codebase. Whichever
+        you start with, and whenever you move up, you keep the reader you
+        already know.
+      </p>
+    </div>
+    <ul class="platform-list">
+      <li data-i18n="family.shared.li1"><strong>The page</strong>Scroll, page or two-page spread, real typography, hyphenation and justification, and margins you can set</li>
+      <li data-i18n="family.shared.li2"><strong>The light</strong>Every theme, day and night, including the two with a frame of their own — Typewriter and Norton</li>
+      <li data-i18n="family.shared.li3"><strong>The words</strong>Translation of a selected fragment, Read Aloud with the line lit as it goes, and search inside the book</li>
+      <li data-i18n="family.shared.li4"><strong>What you leave behind</strong>Bookmarks with colours, notes and the place you stopped — kept for the book, not for the copy on disk</li>
+      <li data-i18n="family.shared.li5"><strong>Every device</strong>Native on Mac, iPad and iPhone, bought once for all three — and no subscription anywhere in the family</li>
+    </ul>
+    <p class="section-note" data-i18n="family.shared.note">
+      Moving up means moving books, not learning an app. There is no upgrade
+      path between them: each is its own purchase, and each is bought once.
+    </p>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="container-narrow">
+    <div class="section-header">
+      <h2 class="section-title" data-i18n="family.cta.title">Which one is <em>yours</em>?</h2>
+      <p class="section-intro" data-i18n="family.cta.body">
+        The prices, the full comparison and the App Store links are all on one
+        page.
+      </p>
+    </div>
+    <div class="hero-ctas">
+      <a href="download.html" class="cta-primary"><span data-i18n="family.cta.button">See all three</span></a>
+      <a href="features.html" class="cta-secondary" data-i18n="family.cta.secondary">Or read what the engine does</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-line">
+        <span class="nav-logo" aria-hidden="true">
+          <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+        </span>
+        <span>ContinuousReader</span>
+      </div>
+      <p class="footer-tagline" data-i18n="foot.tagline">Built for readers who don’t just browse.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.product">Product</h5>
+      <ul>
+        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+        <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+        <li><a href="download.html" data-i18n="nav.download">Download</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.info">Info</h5>
+      <ul>
+        <li><a href="changelog.html" data-i18n="foot.link.changelog">What’s New</a></li>
+        <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
+        <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.language">Language</h5>
+      <ul>
+        <li><a href="#" data-lang="en">English</a></li>
+        <li><a href="#" data-lang="ru">Русский</a></li>
+        <li><a href="#" data-lang="uk">Українська</a></li>
+        <li><a href="#" data-lang="es">Español</a></li>
+        <li><a href="#" data-lang="fr">Français</a></li>
+        <li><a href="#" data-lang="de">Deutsch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="foot.copy">© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span data-i18n="foot.signoff">A reader’s reader.</span>
+    <span class="footer-mt-note" data-i18n="foot.mtNote"></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e1030353e074be59240a656f79267da"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
