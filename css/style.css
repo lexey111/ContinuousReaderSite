@@ -1631,6 +1631,15 @@ code {
   border-radius: 10px;
 }
 
+/* A Mac window capture carries no shadow of its own: `screencapture -R`
+   takes the rect, and the window's shadow lives outside it. On a page that
+   stands the shot on the reading ground rather than inside a dashed frame,
+   that reads as a sticker (user). Opt-in, so the device-framed shots — which
+   bring their own shadow — are untouched. */
+.screenshot-frame.mac-shot img {
+  box-shadow: 0 18px 44px rgba(26, 22, 14, 0.20), 0 3px 10px rgba(26, 22, 14, 0.10);
+}
+
 /* Smooth image loading. The width/height attrs reserve the aspect box (no
    layout shift); while the image decodes we show a spinner, then fade it in on
    load — kills the "old/partial image then pop" on slow (4G) connections.
