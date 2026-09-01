@@ -983,7 +983,7 @@ const translations = {
 
     // ---------- The family page ----------
     'nav.family': 'Family',
-    'family.cr.closing': 'The one to reach for when reading is not an occasional thing.',
+    'family.cr.closing': 'The one to use when reading is not an occasional pastime but a real part of your life.',
     'family.cr.eyebrow': 'ContinuousReader · $19.99 once',
     'family.cr.intro': 'Everything is here, and somewhere to put it: folders, colours, genres and series, search across every book at once, and watchers that keep an eye on OPDS catalogues for new arrivals. And a reading position that follows you from the Mac to the iPhone mid-paragraph.',
     'family.cr.label': 'Pick it if',
@@ -1995,7 +1995,7 @@ const translations = {
 
     // ---------- The family page ----------
     'nav.family': 'Семейство',
-    'family.cr.closing': 'То, к чему тянутся, когда чтение — не случайное занятие.',
+    'family.cr.closing': 'То, чем пользуются, когда чтение — не случайное занятие, а важная часть жизни.',
     'family.cr.eyebrow': 'ContinuousReader · $19.99 однократно',
     'family.cr.intro': 'Тут есть всё, и место для всего: папки, цвета, жанры и серии, поиск сразу по всем книгам, следилки за новинками в OPDS-каталогах. И позиция чтения, которая переходит с Mac на iPhone посреди абзаца.',
     'family.cr.label': 'Берите, если',
@@ -2999,7 +2999,7 @@ const translations = {
 
     // ---------- The family page ----------
     'nav.family': 'Сімейство',
-    'family.cr.closing': 'Те, до чого тягнуться, коли читання — не випадкове заняття.',
+    'family.cr.closing': 'Те, чим користуються, коли читання — не випадкове заняття, а важлива частина життя.',
     'family.cr.eyebrow': 'ContinuousReader · $19.99 одноразово',
     'family.cr.intro': 'Тут є все, і місце для всього: теки, кольори, жанри й серії, пошук одразу по всіх книжках, стеження за новинками в OPDS-каталогах. І позиція читання, яка переходить з Mac на iPhone посеред абзацу.',
     'family.cr.label': 'Беріть, якщо',
@@ -4001,7 +4001,7 @@ const translations = {
 
     // ---------- The family page ----------
     'nav.family': 'Familia',
-    'family.cr.closing': 'El que se coge cuando leer no es una cosa ocasional.',
+    'family.cr.closing': 'El que se usa cuando leer no es algo ocasional, sino una parte importante de la vida.',
     'family.cr.eyebrow': 'ContinuousReader · 19,99 $ una vez',
     'family.cr.intro': 'Aquí está todo, y un sitio para todo: carpetas, colores, géneros y series, búsqueda en todos los libros a la vez, y vigilantes que están atentos a las novedades de los catálogos OPDS. Y una posición de lectura que le sigue del Mac al iPhone a mitad de párrafo.',
     'family.cr.label': 'Elíjalo si',
@@ -5005,7 +5005,7 @@ const translations = {
 
     // ---------- The family page ----------
     'nav.family': 'Famille',
-    'family.cr.closing': 'Celui vers lequel on se tourne quand lire n’est pas une activité occasionnelle.',
+    'family.cr.closing': 'Celui que l’on utilise quand lire n’est pas une occupation occasionnelle mais une part importante de la vie.',
     'family.cr.eyebrow': 'ContinuousReader · 19,99 $ une fois',
     'family.cr.intro': 'Tout est là, et une place pour tout : dossiers, couleurs, genres et séries, recherche dans tous les livres à la fois, et des veilles qui guettent les nouveautés des catalogues OPDS. Et une position de lecture qui vous suit du Mac à l’iPhone en plein paragraphe.',
     'family.cr.label': 'À prendre si',
@@ -6008,7 +6008,7 @@ const translations = {
 
     // ---------- The family page ----------
     'nav.family': 'Familie',
-    'family.cr.closing': 'Der, zu dem man greift, wenn Lesen keine gelegentliche Sache ist.',
+    'family.cr.closing': 'Das, was man benutzt, wenn Lesen keine gelegentliche Beschäftigung ist, sondern ein wichtiger Teil des Lebens.',
     'family.cr.eyebrow': 'ContinuousReader · 19,99 $ einmalig',
     'family.cr.intro': 'Hier ist alles, und ein Platz dafür: Ordner, Farben, Genres und Reihen, Suche über alle Bücher zugleich, und Beobachter, die OPDS-Kataloge auf Neuzugänge im Auge behalten. Und eine Leseposition, die Ihnen mitten im Absatz vom Mac aufs iPhone folgt.',
     'family.cr.label': 'Nehmen Sie ihn, wenn',
