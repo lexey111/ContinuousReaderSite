@@ -2970,6 +2970,10 @@ code {
 @media (max-width: 1100px) {
   .paths-grid { grid-template-columns: 1fr; gap: 48px; }
   .two-apps-grid { grid-template-columns: 1fr; gap: 40px; }
+  /* Just above the hamburger the row is tight in the longer languages —
+     German and Russian spend a third more on the same four words. The
+     rhythm gives way before the words have to. */
+  .nav-links, .nav-menu { gap: 24px; }
 }
 
 @media (max-width: 900px) {
@@ -3017,7 +3021,12 @@ code {
   .callout { font-size: 22px; padding-left: 24px; margin: 32px 0; }
 }
 
-@media (max-width: 600px) {
+/* The nav collapses at 900, not 600 (user: "the menu is cut off at a small
+   size"). Three destinations fitted beside the wordmark down to a phone;
+   the fourth — Family — does not, and German and Russian run wider than
+   the English this used to be measured in. `js/main.js` shares this number
+   for the resize guard; move both together. */
+@media (max-width: 900px) {
   .nav-toggle { display: flex; }
   /* nav-links stays an inline row: language button + hamburger side by side. */
   .nav-links { gap: 14px; }
@@ -3042,6 +3051,9 @@ code {
   .nav-menu a:hover { background: var(--bg-deeper); color: var(--ink); }
   .nav-menu a.active { background: var(--bg-deeper); }
   .nav-menu a.active::after { display: none; }
+}
+
+@media (max-width: 600px) {
   .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; }
   .reading-strip-inner { flex-wrap: wrap; gap: 12px; }
   .reading-strip-caption { width: 100%; margin-left: 0; }

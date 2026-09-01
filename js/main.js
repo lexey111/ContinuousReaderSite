@@ -230,7 +230,9 @@
 
   // ----------------------------------------------------------
   // Mobile nav — inject a hamburger that toggles the destination links
-  // (<=600px). The links are wrapped in `.nav-menu` so the hamburger
+  // (<=900px, the width where four of them stop fitting beside the
+  // wordmark — the number lives in css/style.css too, move both
+  // together). The links are wrapped in `.nav-menu` so the hamburger
   // toggles ONLY them; the language button stays visible beside the
   // hamburger. Done in JS so it lands on every page.
   // ----------------------------------------------------------
@@ -284,7 +286,7 @@
     // Tapping a destination link closes the menu (harmless on navigation).
     menu.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
     // Resizing back up to desktop should never leave it stuck open.
-    window.addEventListener('resize', () => { if (window.innerWidth > 600) close(); }, { passive: true });
+    window.addEventListener('resize', () => { if (window.innerWidth > 900) close(); }, { passive: true });
   }
 
   // ----------------------------------------------------------
