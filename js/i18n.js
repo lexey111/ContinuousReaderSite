@@ -744,7 +744,7 @@ const translations = {
     'download.jr.name':       'JustReader',
     'download.jr.price':      'Free',
     'download.jr.priceSub':   'truly free, no tricks',
-    'download.jr.desc':       'A single-book reader with the same engine underneath — same typography, the same 41 themes, same translation, same Read Aloud. <strong>No library, no sync, no bookmarks</strong>: you open a file, read it, and move on. On Mac, iPad, and iPhone.',
+    'download.jr.desc':       'A single-book reader with the same engine underneath — same typography, the same 41 themes, same translation, same Read Aloud. <strong>No library, no sync</strong>: you open a file, read it, and move on. What you made stays — your place, your coloured bookmarks and your note come back with the book, and the last five books are one tap away. On Mac, iPad, and iPhone.',
     'download.jr.button':     'Download on the App Store',
     'download.jr.note':       'Scan with your iPhone or iPad',
 
@@ -1336,7 +1336,7 @@ const translations = {
     'download.jr.name':       'JustReader',
     'download.jr.price':      'Бесплатно',
     'download.jr.priceSub':   'по-настоящему бесплатно, без подвоха',
-    'download.jr.desc':       'Читалка на одну книгу — с тем же движком внутри: та же типографика, тот же набор из 41 темы, тот же перевод, то же «Чтение вслух». <strong>Без библиотеки, без синхронизации, без закладок</strong>: открыли файл, прочитали, пошли дальше. На Mac, iPad и iPhone.',
+    'download.jr.desc':       'Читалка на одну книгу — с тем же движком внутри: та же типографика, тот же набор из 41 темы, тот же перевод, то же «Чтение вслух». <strong>Без библиотеки и без синхронизации</strong>: открыли файл, прочитали, пошли дальше. Сделанное вами остаётся: место, цветные закладки и заметка возвращаются вместе с книгой, а последние пять книг — в один тап. На Mac, iPad и iPhone.',
     'download.jr.button':     'Скачать в App Store',
     'download.jr.note':       'Сканируйте с iPhone или iPad',
 
@@ -2340,7 +2340,7 @@ const translations = {
     'download.jr.name':       'JustReader',
     'download.jr.price':      'Безкоштовно',
     'download.jr.priceSub':   'по-справжньому безкоштовно, без підступу',
-    'download.jr.desc':       'Читалка на одну книгу — з тим самим рушієм усередині: та сама типографіка, той самий набір із 41 теми, той самий переклад, те саме «Читання вголос». <strong>Без бібліотеки, без синхронізації, без закладок</strong>: відкрили файл, прочитали, пішли далі. На Mac, iPad та iPhone.',
+    'download.jr.desc':       'Читалка на одну книгу — з тим самим рушієм усередині: та сама типографіка, той самий набір із 41 теми, той самий переклад, те саме «Читання вголос». <strong>Без бібліотеки й без синхронізації</strong>: відкрили файл, прочитали, пішли далі. Зроблене вами лишається: місце, кольорові закладки й нотатка повертаються разом із книжкою, а останні п’ять книжок — в один тап. На Mac, iPad та iPhone.',
     'download.jr.button':     'Завантажити з App Store',
     'download.jr.note':       'Скануйте з iPhone або iPad',
 
@@ -3342,7 +3342,7 @@ const translations = {
     'download.jr.name':       'JustReader',
     'download.jr.price':      'Gratis',
     'download.jr.priceSub':   'de verdad gratis, sin trucos',
-    'download.jr.desc':       'Un lector de un solo libro con el mismo motor por debajo — la misma tipografía, los mismos 41 temas, la misma traducción, la misma Lectura en voz alta. <strong>Sin biblioteca, sin sincronización, sin marcadores</strong>: abres un archivo, lo lees y sigues adelante. En Mac, iPad e iPhone.',
+    'download.jr.desc':       'Un lector de un solo libro con el mismo motor por debajo — la misma tipografía, los mismos 41 temas, la misma traducción, la misma Lectura en voz alta. <strong>Sin biblioteca y sin sincronización</strong>: abres un archivo, lo lees y sigues adelante. Lo que hiciste se queda: tu punto, tus marcadores de colores y tu nota vuelven con el libro, y los últimos cinco libros están a un toque. En Mac, iPad e iPhone.',
     'download.jr.button':     'Descargar en App Store',
     'download.jr.note':       'Escanéalo con tu iPhone o iPad',
 
@@ -4346,7 +4346,7 @@ const translations = {
     'download.jr.name':       'JustReader',
     'download.jr.price':      'Gratuit',
     'download.jr.priceSub':   'vraiment gratuit, sans piège',
-    'download.jr.desc':       'Un lecteur d’un seul livre, avec le même moteur en dessous — la même typographie, les mêmes 41 thèmes, la même traduction, la même Lecture à voix haute. <strong>Pas de bibliothèque, pas de synchronisation, pas de signets</strong> : vous ouvrez un fichier, vous le lisez, et vous passez à autre chose. Sur Mac, iPad et iPhone.',
+    'download.jr.desc':       'Un lecteur d’un seul livre, avec le même moteur en dessous — la même typographie, les mêmes 41 thèmes, la même traduction, la même Lecture à voix haute. <strong>Pas de bibliothèque, pas de synchronisation</strong> : vous ouvrez un fichier, vous le lisez, et vous passez à autre chose. Ce que vous avez fait reste : votre place, vos signets en couleurs et votre note reviennent avec le livre, et les cinq derniers livres sont à un geste. Sur Mac, iPad et iPhone.',
     'download.jr.button':     'Télécharger sur l’App Store',
     'download.jr.note':       'Scannez avec votre iPhone ou iPad',
 
@@ -5349,7 +5349,7 @@ const translations = {
     'download.jr.name':       'JustReader',
     'download.jr.price':      'Kostenlos',
     'download.jr.priceSub':   'wirklich kostenlos, keine Tricks',
-    'download.jr.desc':       'Ein Reader für ein einzelnes Buch mit derselben Engine darunter — dieselbe Typografie, dieselben 41 Themes, dieselbe Übersetzung, dasselbe Vorlesen. <strong>Keine Bibliothek, keine Synchronisation, keine Lesezeichen</strong>: Du öffnest eine Datei, liest sie und gehst weiter. Auf Mac, iPad und iPhone.',
+    'download.jr.desc':       'Ein Reader für ein einzelnes Buch mit derselben Engine darunter — dieselbe Typografie, dieselben 41 Themes, dieselbe Übersetzung, dasselbe Vorlesen. <strong>Keine Bibliothek, keine Synchronisation</strong>: Du öffnest eine Datei, liest sie und gehst weiter. Was du gemacht hast, bleibt: deine Stelle, deine farbigen Lesezeichen und deine Notiz kommen mit dem Buch zurück, und die letzten fünf Bücher sind einen Tipp entfernt. Auf Mac, iPad und iPhone.',
     'download.jr.button':     'Aus dem App Store laden',
     'download.jr.note':       'Mit iPhone oder iPad scannen',
 
