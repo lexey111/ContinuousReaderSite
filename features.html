@@ -106,12 +106,12 @@
                     <li><a href="#s1-typo" data-i18n="features.s1.typo.h"></a></li>
                     <li><a href="#s1-modes" data-i18n="features.s1.modes.h"></a></li>
                     <li><a href="#s1-position" data-i18n="features.s1.position.h"></a></li>
-                    <li><a href="#s1-progress" data-i18n="features.s1.progress.h"></a></li>
-                    <li><a href="#s1-chapters" data-i18n="features.s1.chapters.h"></a></li>
+                    <li><a href="#s1-progress" data-i18n="features.s1.progress.h">Position and progress</a></li>
+                    <li><a href="#s1-chapters" data-i18n="features.s1.chapters.h">Chapters and pictures</a></li>
                     <li><a href="#s1-bookmarks" data-i18n="features.s1.bookmarks.h"></a></li>
                     <li><a href="#s1-search" data-i18n="features.s1.search.h"></a></li>
                     <li><a href="#s1-notes" data-i18n="features.s1.notes.h"></a></li>
-                    <li><a href="#s1-fullscreen" data-i18n="features.s1.fullscreen.h"></a></li>
+                    <li><a href="#s1-fullscreen" data-i18n="features.s1.fullscreen.h">Full screen <em>(iOS)</em></a></li>
                 </ul>
             </li>
             <li data-section="s2"><a href="#s2" data-i18n="features.s2.h2"></a>
@@ -123,7 +123,7 @@
             </li>
             <li data-section="s3"><a href="#s3" data-i18n="features.s3.h2"></a>
                 <ul>
-                    <li><a href="#s3-tabs" data-i18n="features.s3.tabs.h"></a></li>
+                    <li><a href="#s3-tabs" data-i18n="features.s3.tabs.h">Library tabs</a></li>
                     <li><a href="#s3-views" data-i18n="features.s3.views.h"></a></li>
                     <li><a href="#s3-search" data-i18n="features.s3.search.h"></a></li>
                     <li><a href="#s3-colors" data-i18n="features.s3.colors.h"></a></li>
@@ -143,7 +143,7 @@
                     <li><a href="#s4-dialog" data-i18n="features.s4.dialog.h"></a></li>
                     <li><a href="#s4-size" data-i18n="features.s4.size.h"></a></li>
                     <li><a href="#s4-opds" data-i18n="features.s4.opds.h"></a></li>
-                    <li><a href="#s4-watch" data-i18n="features.s4.watch.h"></a></li>
+                    <li><a href="#s4-watch" data-i18n="features.s4.watch.h">Shortcuts, watchers and the download basket</a></li>
                 </ul>
             </li>
             <li data-section="s5"><a href="#s5" data-i18n="features.s5.h2"></a>
@@ -404,6 +404,33 @@
             </div>
         </div>
 
+        <div id="s1-docks" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s1.docks.h">Panels and docks</h3>
+                <span class="badge-group">
+                    <span class="badge cr">CR</span>
+                    <span class="badge pr">PR</span>
+                    <span class="badge jr">JR</span>
+                </span>
+            </div>
+            <div class="feature-body">
+                <p data-i18n="features.s1.docks.p1">Bookmarks, notes, search, translation, chapters and pictures are panels. Each one lives where you put it, and the whole frame around the page is yours to arrange — for any screen size and any habit:</p>
+                <ul class="feature-list">
+                    <li data-i18n="features.s1.docks.li1"><strong>Dock to any edge</strong>Bottom, top, left or right — several panels share a dock as tabs</li>
+                    <li data-i18n="features.s1.docks.li2"><strong>Floating panel</strong>A panel in its own window, over the page or beside it</li>
+                    <li data-i18n="features.s1.docks.li3"><strong>Hidden until its key</strong>A panel you never use leaves no tab behind — its key brings it back</li>
+                    <li data-i18n="features.s1.docks.li4"><strong>Ready-made layouts</strong>Everything along the bottom, everything down one side, or navigation on the right — one choice moves every panel; three slots keep your own</li>
+                    <li data-i18n="features.s1.docks.li5"><strong>Pin a dock</strong>The page gives it the room for good; a panel is always open there</li>
+                </ul>
+                <p style="margin-top: 24px;" data-i18n="features.s1.docks.p2">Quick settings (F9) open as a panel with named sections — font, reading mode, the page sheet — and a Panels tab where you switch a panel off, move it to another dock or apply a layout.</p>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-docks.webp"
+                     alt="Mac reader with chapters, search and bookmarks docked around the page">
+            </div>
+        </div>
+
         <div id="s1-position" class="feature">
             <div class="feature-head">
                 <h3 class="feature-h3" data-i18n="features.s1.position.h">Position that survives anything</h3>
@@ -455,11 +482,7 @@
         </span>
             </div>
             <div class="feature-body">
-                <p data-i18n="features.s1.progress.p1">
-                    A slim progress bar along the bottom expands on hover (Mac) or tap
-                    (iOS) to reveal reading position. Click or double-tap to open the
-                    progress drawer:
-                </p>
+                <p data-i18n="features.s1.progress.p1">The navigation panel shows your place the way you like: a full progress line, just the percent, a segmented bar or a dial. The reading line itself can sit on any edge of the page, float on the desk, or separate the pages of a spread. Click or tap it to open the drawer:</p>
                 <ul class="feature-list">
                     <li data-i18n="features.s1.progress.li1"><strong>Tapered slider</strong>A custom track that’s thick
                         for the part you’ve read and hair-thin for what’s ahead, with a smooth S-curve at your current
@@ -472,9 +495,7 @@
                         chapters, images, bookmarks, or nothing. Chapter markers show titles on hover. Image markers
                         show thumbnail previews.
                     </li>
-                    <li data-i18n="features.s1.progress.li5"><strong>Go To</strong>Direct jump to a page or percent —
-                        just enter the value
-                    </li>
+                    <li data-i18n="features.s1.progress.li5"><strong>Go To</strong>A page or a percent — and the text at that place shows before you jump, as it does for chapters and bookmarks</li>
                 </ul>
                 <p style="margin-top: 24px;" data-i18n="features.s1.progress.p2">
                     In ContinuousReader, bookmark markers are
@@ -504,11 +525,7 @@
                     priority and scene-break separator filtering
                     (<code>* * *</code>, <code>---</code>, etc.).
                 </p>
-                <p data-i18n="features.s1.chapters.p2">
-                    The <strong>Chapters</strong> tab in the side panel lets you jump
-                    to any chapter with one click. On Mac, you can switch between two
-                    display modes:
-                </p>
+                <p data-i18n="features.s1.chapters.p2">The <strong>Chapters</strong> panel (F3) jumps to any chapter with one click. It has three shapes:</p>
                 <ul class="feature-list">
                     <li data-i18n="features.s1.chapters.li1"><strong>Chapter list</strong>A static list with the current
                         chapter highlighted and bolded
@@ -522,11 +539,9 @@
                         track, a sliding thumb, and a viewport-proportional indicator. Page numbers are hidden in map
                         mode for a cleaner spatial view.
                     </li>
+                    <li data-i18n="features.s1.chapters.li3"><strong>Filmstrip</strong>Chapters as frames along the dock or a column at its side, the part you have read tinted; arrow keys move along them, Return opens the chapter</li>
                 </ul>
-                <p style="margin-top: 24px;" data-i18n="features.s1.chapters.p3">
-                    If you’ve used the minimap in a code editor, you’ll recognize the
-                    shape.
-                </p>
+                <p style="margin-top: 24px;" data-i18n="features.s1.chapters.p3">And the <strong>Pictures</strong> panel (F12) lines every illustration up along the dock: Space shows one at full size, Return takes you to it in the text.</p>
             </div>
         </div>
 
@@ -584,28 +599,14 @@
         </span>
             </div>
             <div class="feature-body">
-                <p><span data-i18n="features.s1.search.p1">
-                    Open in-book search from the <strong>Search</strong> tab in the
-                    reader’s bottom toolbar, or press <code>Cmd+F</code>. Match counter,
-                    previous/next navigation, case-sensitive toggle, and yellow/orange
-                    highlights in the text. Position markers appear along the scrollbar
-                    so you can see matches at a glance.
-                </span>
+                <p><span data-i18n="features.s1.search.p1">Open in-book search from the <strong>Search</strong> panel or press <code>Cmd+F</code>. The results are a numbered list beside the field, the ones visible on the page highlighted — you always know where you are among them. Case-sensitive toggle, yellow/orange highlights in the text, markers along the scrollbar.</span>
                     <button class="callout-dot section-callout" type="button"
                             data-screenshot="img/screenshots/features-search.webp"
                             data-alt="In-book search on Mac — match highlights across the page and scrollbar markers"
                             aria-label="View in-book search screenshot"></button>
                 </p>
-                <p data-i18n="features.s1.search.p2">
-                    Search works the same way as translation, settings, and navigation
-                    — as a tab in the reader’s bottom toolbar, <em>not a floating
-                    window that covers the text.</em>
-                </p>
-                <p data-i18n="features.s1.search.p3">
-          On iPhone, in fullscreen, the combined <strong>Go to…</strong>
-          sheet wraps search with page-number and percent navigation behind
-          one segmented control — type a value, pick a mode, jump.
-        </p>
+                <p data-i18n="features.s1.search.p2">Search is a panel like the others — docked to an edge, floating, or hidden until its key — <em>not a window that covers the text.</em></p>
+                <p data-i18n="features.s1.search.p3">On iPhone search is a full-screen sheet with the same list of results, and it keeps them while you read on.</p>
             </div>
         </div>
 
@@ -649,31 +650,14 @@
         </span>
             </div>
             <div class="feature-body">
-                <p data-i18n="features.s1.fullscreen.p1">
-                    Tap the center of the reading area to hide the bottom bar and enter
-                    fullscreen. In scroll mode, only the physical edges of the device
-                    remain — text flows under the Dynamic Island or camera housing.
-                    In paged mode, the safe area is respected so each page reads as
-                    a clean rectangle. Tap the center again to exit.
-                </p>
-                <p><span data-i18n="features.s1.fullscreen.settings">
-          In fullscreen, <strong>quick settings</strong> are reachable
-          without leaving — a left bottom tap zone on iPhone, a
-          tap-the-clock menu on iPad. Adjust theme, font, size, brightness
-          without losing the page.
-        </span>
+                <p data-i18n="features.s1.fullscreen.p1">On iPhone the page is always full screen: text flows under the Dynamic Island in scroll mode, and each page is a clean rectangle in paged mode. The bar with the clock, the progress and the battery is a setting, on by default. On iPad, tap the centre of the page to enter or leave full screen.</p>
+                <p><span data-i18n="features.s1.fullscreen.settings">Two <strong>active corners</strong>: the bottom-left opens the quick settings — theme, font, size, the page sheet — and the bottom-right opens navigation: bookmarks, chapters, search, pictures and notes as tiles. Neither leaves the page.</span>
                     <button class="callout-dot section-callout" type="button"
                             data-screenshot="img/screenshots/features-fs-quick-settings.webp"
                             data-alt="Fullscreen quick-settings menu on iPhone left tap zone and iPad clock menu"
                             aria-label="View fullscreen quick settings screenshot"></button>
                 </p>
-                <p><span data-i18n="features.s1.fullscreen.nav">
-          <strong>Precise navigation</strong> is available too — both a full
-          marker-rich panel (chapters, images, bookmarks) and a quick
-          drag-and-search sheet. Both work in fullscreen on iPhone and
-          iPad. The mode auto-exits only when you open the side panel;
-          translation stays in fullscreen via a floating panel.
-        </span>
+                <p><span data-i18n="features.s1.fullscreen.nav">Going to a page or a percent shows the text at that place before you jump. The strip along the top edge starts <strong>text selection</strong>: page turning pauses, and a panel offers a bookmark, a translation, a search in the book or a note for what you selected.</span>
                     <button class="callout-dot section-callout" type="button"
                             data-screenshot="img/screenshots/features-fs-quick-nav.webp"
                             data-alt="Fullscreen precise-navigation panel on iPhone right tap zone and iPad menu"
@@ -896,7 +880,7 @@
                 <h3 class="feature-h3" data-i18n="features.s3.tabs.h">Three tabs</h3>
             </div>
             <div class="feature-body">
-                <p data-i18n="features.s3.tabs.p1">The library is organized into four tabs. Library holds everything; the other three are shortcuts into it:</p>
+                <p data-i18n="features.s3.tabs.p1">The library is organized into tabs. Library holds everything; the others are views into it or doors out of it:</p>
                 <ul class="feature-list">
                     <li data-i18n="features.s3.tabs.li1"><strong>Library</strong>The complete collection, with all
                         filtering, sorting, and folder scoping applied
@@ -910,6 +894,10 @@
                     <li data-i18n="features.s3.tabs.li3"><strong>Pinned</strong>Your favorites, also ignoring folder
                         filters
                     </li>
+                    <li data-i18n="features.s3.tabs.li4"><strong>Search</strong>The whole library or one folder — text, titles, authors, series — and a jump to the book or straight to the place in the text</li>
+                    <li data-i18n="features.s3.tabs.li5"><strong>OPDS</strong>The catalog browser, right in the library</li>
+                    <li data-i18n="features.s3.tabs.li6"><strong>Watchers</strong>What each watcher found, what you already have and what you chose to ignore — as a table or as cards, with filters that reach into the books</li>
+                    <li data-i18n="features.s3.tabs.li7"><strong>Downloads</strong>A basket for a whole list of links, fetched one after another</li>
                 </ul>
                 <p style="margin-top: 24px;"><span data-i18n="features.s3.tabs.p2">
           Latest and Pinned work as shortcuts — the books you want fast
@@ -946,20 +934,13 @@
                         double-click to open, frosted glass selection checkboxes. On iPhone, switchable 2- or 3-column
                         grid; on Mac and iPad, a 4-tier size picker from Big to Tiny.
                     </li>
-                    <li data-i18n="features.s3.views.li3"><strong>Table view</strong>
+                    <li data-i18n="features.s3.views.li3"><strong>Table view</strong>(Mac and iPad) Sortable columns that fit the window — nothing scrolls sideways — column customization, two-level hierarchy, inline color dots in the title column, and a full-width actions toolbar above the table.
                         <button class="callout-dot" type="button"
                                 data-screenshot="img/screenshots/features-view-table.webp"
                                 data-alt="Table view (Mac only) — sortable columns with two-level hierarchy"
-                                aria-label="View table-mode screenshot"></button>
-                        (Mac only) Sortable columns, column customization, two-level hierarchy, inline color dots in the
-                        title column, annotation sheet, and a full-width actions toolbar above the table.
-                    </li>
+                                aria-label="View table-mode screenshot"></button></li>
                 </ul>
-                <p style="margin-top: 24px;" data-i18n="features.s3.views.p">
-                    All of them support <strong>multi-mode grouping</strong>: none,
-                    author, series, author &amp; series, genres, or date added — with
-                    collapsible sections and shared section headers.
-                </p>
+                <p style="margin-top: 24px;" data-i18n="features.s3.views.p">All of them support <strong>multi-mode grouping</strong>: none, author, series, author &amp; series, genres, or date added — with collapsible sections and shared section headers. An optional tint gives every cover a hint of your reading theme, like tinted paper.</p>
             </div>
             <div class="screenshot">
                 <img width="2000" height="1312" loading="lazy" decoding="async"
@@ -1002,10 +983,7 @@
                                 data-alt="Mac search window with highlighted snippets across three books and jump arrows"
                                 aria-label="View global search screenshot"></button>
                     </li>
-                    <li data-i18n="features.s3.gsearch.li3"><strong>Its own window on the Mac</strong>Search stays
-                        reachable while you read: the window survives opening a book, keeps search history, and travels
-                        with the library. On iPad and iPhone it is a sheet one tap away.
-                    </li>
+                    <li data-i18n="features.s3.gsearch.li3"><strong>Its own tab</strong>Search is a library tab: start from the whole library or from the folder you are in, keep the results while you read, and come back to them — the same on Mac, iPad and iPhone.</li>
                 </ul>
             </div>
         </div>
@@ -1089,11 +1067,10 @@
                     <li data-i18n="features.s3.folders.li5"><strong>Keyboard navigation</strong>On Mac — arrow keys move
                         through the tree and expand or collapse folders
                     </li>
+                    <li data-i18n="features.s3.folders.li6"><strong>Management windows</strong>Folders and Genres each get one: a tree with multi-selection, filters, and delete from the keyboard; drop a folder onto another with the same name and the app offers to merge them</li>
+                    <li data-i18n="features.s3.folders.li7"><strong>Everything inside</strong>One command shows a folder and all its subfolders as a single list — all your fantasy at once, not subfolder by subfolder</li>
                 </ul>
-                <p style="margin-top: 24px;"><span data-i18n="features.s3.folders.p2">
-          Deleting a folder or a book doesn’t erase it — books move to the Trash,
-          where you can restore them, or empty the Trash to delete for good.
-        </span>
+                <p style="margin-top: 24px;"><span data-i18n="features.s3.folders.p2">Deleting a folder or a book doesn’t erase it — books move to the Trash and remember where they were. Restore them and the folders come back, subfolders included; or empty the Trash to delete for good.</span>
                     <button class="callout-dot section-callout" type="button"
                             data-screenshot="img/screenshots/features-folders.webp"
                             data-alt="Nested folder sidebar with Trash" aria-label="View folders screenshot"></button>
@@ -1431,7 +1408,7 @@
         </span>
             </div>
             <div class="feature-body">
-                <p data-i18n="features.s4.opds.p">Browse online book catalogs with a native interface.</p>
+                <p data-i18n="features.s4.opds.p">Browse online book catalogs in a tab of the library on the Mac and the iPad, or a sheet on the iPhone.</p>
                 <ul class="feature-list">
                     <li data-i18n="features.s4.opds.li1"><strong>Default catalogs</strong>Project Gutenberg, Ebooks libres et gratuits and textos.info are ready to use — add any other OPDS server yourself</li>
                     <li data-i18n="features.s4.opds.li2"><strong>Custom catalogs</strong>Add your own OPDS server with Basic Auth support</li>
@@ -1478,16 +1455,13 @@
         </span>
             </div>
             <div class="feature-body">
-                <p data-i18n="features.s4.watch.p">Two features that make OPDS browsing more than a one-time lookup.</p>
+                <p data-i18n="features.s4.watch.p">Three features that make OPDS browsing more than a one-time lookup.</p>
                 <ul class="feature-list">
                     <li data-i18n="features.s4.watch.li1"><strong>Shortcuts</strong>Bookmark any feed for one-click
                         navigation. Useful for favorite author pages, series, or collections.
                     </li>
-                    <li data-i18n="features.s4.watch.li2"><strong>Watchers</strong>Track series or author feeds for new
-                        entries. Toggle an eye icon on any acquisition feed to start watching. "Check" detects new
-                        additions manually. Color-coded status: green when all entries are in your library, orange when
-                        new ones appear. Delete a catalog, and all its shortcuts and watchers are cleaned up.
-                    </li>
+                    <li data-i18n="features.s4.watch.li2"><strong>Watchers</strong>Track series or author feeds for new entries — toggle an eye on any acquisition feed. The Watchers tab shows what each one found, what you already have and what you chose to ignore, as a table or as cards, with filters that reach into the books; import the new ones from there.</li>
+                    <li data-i18n="features.s4.watch.li3"><strong>Download basket</strong>Drop or paste a list of links into File ▸ Mass Download from URLs. The app fetches them one after another, tries again after a failure or a dropped connection, and imports each book into the folder you choose.</li>
                 </ul>
             </div>
         </div>
