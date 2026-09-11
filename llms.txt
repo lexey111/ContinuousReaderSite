@@ -9,7 +9,7 @@ ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB
 One picture explains the family: JustReader is the book on your nightstand, PlainReader is the bookshelf, ContinuousReader is the library.
 
 - **ContinuousReader** ($19.99, one-time) — full reading workspace: library with folders and global full-text search, iCloud sync, OPDS catalogs with watchers, mass import, reading statistics
-- **PlainReader** ($6.99, one-time) — up to 25 books open in parallel, each in its own place with its own position; no collection to manage. OPDS browser, shared searchable history of the last 25 books, colour tags
+- **PlainReader** ($6.99, one-time) — a shelf of books in named, coloured, foldable categories, each book in its own place with its own position; no collection to manage. OPDS browser, shared searchable history of the last 25 books, colour tags
 - **JustReader** (free) — one book at a time, with the same engine, typography, themes, translation and Read Aloud
 
 All three share the ReaderCore engine (local Swift Package), so the reading experience — themes, typography, navigation modes, translation, Read Aloud, bookmarks, per-book notes, reading statistics and the Book Card — is the same in all of them. What differs is how much collection management sits on top.
@@ -19,7 +19,6 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 ### Reading engine
 - WKWebView-based renderer with PositionTracker.js for precise position tracking
 - Three navigation modes: continuous scroll, single page, two-page spread (Mac, iPad in landscape)
-- 41 reading themes (5 palette families x 7 tones + 3 featured themes — Typewriter, Terminal, Norton — + 3 custom slots); the Typewriter theme adopts a quiet steampunk styling for its bottom bar (brass dashboard speedometer with a rolling needle on wider bars, vintage radio-dial carriage with a lit red pointer on narrower bars, copper keycaps, mechanical drum-counter read-outs); Norton is a retro file-manager-style frame with an NC-blue bar
 - 9 system fonts (serif, sans, monospace), full typography control
 - Day & Night mode (automatic theme switching based on system appearance)
 - Reading position survives font changes, window resizes, device switches, mode switches
@@ -34,8 +33,8 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 - Adjustable rate, pitch, volume
 - Seamless handoff between reading and listening (same position)
 
-### Library (ContinuousReader only; PlainReader has a 25-place shelf instead)
-- Three view modes: list, cards (4 sizes), table (native on Mac)
+### Library (ContinuousReader only; PlainReader has a categorised shelf instead)
+- Three view modes: list, cards (continuous size slider), table (native on Mac)
 - Nested virtual folders, color tags (7 colors), genres, Trash with soft delete
 - OPDS catalog browser with shortcuts and watchers (watchers diff feeds against the library and flag books you don't own yet)
 - Mass import walking folder trees, deduplicating, and replicating the source structure as folders (Mac)
@@ -54,7 +53,7 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 - Sync panel reachable by tapping the cloud status badge — shows transport state, library stats (books / downloaded / size with on-demand exact disk scan), and Apple-Settings-style list of connected devices with last-activity timestamps. Foreground-only heartbeat (no fake "online" from a backgrounded Mac or locked iPhone). Forget a peer device via context menu (Mac) or swipe (iPhone).
 
 ### Platform adaptations
-- **Mac**: keyboard shortcuts (F1-F10), floating panels, island design, drag-and-drop, two-page spread
+- **Mac**: keyboard shortcuts (F1-F12), panels that dock to any edge, float or pin, island design, drag-and-drop, two-page spread
 - **iPad**: swipe gestures, native sheets, external keyboard support
 - **iPhone**: one-hand-friendly, bottom tap zones, compact layouts, notch/Dynamic Island-aware fullscreen
 
@@ -66,7 +65,7 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 - **Book storage**: Clean HTML files on disk with readable slug-based folder names
 - **Shipped version**: 1.5 "Brimstone" (September 2026) for ContinuousReader, JustReader and PlainReader — the number tracks the shared engine generation, not each app
 - **Privacy**: No analytics, no telemetry, no tracking. Translation is on-device.
-- **Localization**: English + Russian, Ukrainian, Spanish, French, German (930+ keys)
+- **Localization**: English + Russian, Ukrainian, Spanish, French, German (1000+ keys)
 - **Bundle IDs**: com.lexey111.ContinuousReader, com.lexey111.PlainReader, com.lexey111.JustReader
 
 ## Formats supported
