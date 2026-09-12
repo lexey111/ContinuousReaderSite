@@ -64,6 +64,7 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 - **Storage**: SwiftData (local), iCloud KV Store + iCloud Drive (sync)
 - **Book storage**: Clean HTML files on disk with readable slug-based folder names
 - **Shipped version**: 1.5 "Brimstone" (September 12, 2026) for ContinuousReader, JustReader and PlainReader — the number tracks the shared engine generation, not each app
+- **Release highlights** (what changed in 1.5, with pictures): https://continuousreader.app/whats-new.html
 - **Privacy**: No analytics, no telemetry, no tracking. Translation is on-device.
 - **Localization**: English + Russian, Ukrainian, Spanish, French, German (1000+ keys)
 - **Bundle IDs**: com.lexey111.ContinuousReader, com.lexey111.PlainReader, com.lexey111.JustReader

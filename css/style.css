@@ -3491,3 +3491,27 @@ code {
   color: var(--accent);
   white-space: nowrap;
 }
+
+/* Release highlights page (whats-new.html) */
+.wn-title-row { display: flex; align-items: center; gap: 28px; }
+.wn-title-row .release-butterfly { height: 110px; }
+.wn-section { padding: 56px 0; }
+.wn-h { margin-bottom: 20px; }
+.wn-section .screenshot { margin: 28px 0; }
+.wn-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; margin: 28px 0; }
+.wn-pair .screenshot { margin: 0; }
+.wn-close { text-align: center; }
+.wn-links { display: flex; gap: 32px; justify-content: center; flex-wrap: wrap; margin-top: 8px; }
+@media (max-width: 720px) {
+  .wn-title-row { gap: 16px; }
+  .wn-title-row .release-butterfly { height: 72px; }
+  .wn-pair { grid-template-columns: 1fr; }
+}
+.page-subtitle a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(196, 93, 56, 0.35); }
+.page-subtitle a:hover { border-bottom-color: var(--accent); }
+
+/* The release line under the hero buttons (user, 2026-09-12): a quiet
+   pointer to the current release's highlights. */
+.hero-release { margin-top: 18px; font-family: var(--sans); font-size: 14px; }
+.hero-release a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--rule-strong); transition: color 180ms ease, border-color 180ms ease; }
+.hero-release a:hover { color: var(--ink); border-bottom-color: var(--ink); }
