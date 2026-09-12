@@ -57,7 +57,15 @@ for `img/screenshots/*.webp` → 0 missing.
   info-panel, bulk-ops, quick-preview, book-card-mac / -ipad / -iphone,
   import-dialog, import-ways, opds-browser, opds-filter, opds-single-import,
   opds-batch-import, location, sync-insights,
-  sync-wizard, welcome-wizard, feature-toggles, notes.
+  sync-wizard, welcome-wizard, feature-toggles, notes, and the 1.5 set —
+  `features-docks` (Mac reader with three panels docked), `features-opds-tab`
+  (the OPDS tab with the watchers pane), `features-iphone-fullscreen` (framed
+  iPhone, the navigation tiles), `features-shelf` (PlainReader on the Mac, the
+  shelf with dividers beside the book) — also used as changelog callouts.
+- **1.5 shots come from the release shoot** (`ContinuousReader/RELEASE.md`,
+  the `--shot-*` hooks): the Mac window at 1440×900 captured by window id
+  (`screencapture -l`), then `cwebp -resize 1600 0` and `round-corners.sh`;
+  iPhone frames through `frame-device.py`.
 
 ## Callouts intentionally removed (minor features, no good/safe shot)
 

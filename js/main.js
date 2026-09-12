@@ -405,11 +405,14 @@
       });
     });
 
-    document.querySelectorAll('.callout-dot[data-screenshot]').forEach((dot) => {
-      dot.addEventListener('click', (e) => {
-        e.preventDefault();
-        openLightbox(dot.dataset.screenshot, dot.dataset.alt);
-      });
+    // Delegated, not bound per dot: switching the language re-renders the
+    // translated elements' innerHTML, and dots inside them are new nodes —
+    // per-node listeners died with the old ones (seen in ru, 2026-09-11).
+    document.addEventListener('click', (e) => {
+      const dot = e.target.closest && e.target.closest('.callout-dot[data-screenshot]');
+      if (!dot) return;
+      e.preventDefault();
+      openLightbox(dot.dataset.screenshot, dot.dataset.alt);
     });
   }
 
