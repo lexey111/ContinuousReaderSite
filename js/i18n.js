@@ -146,7 +146,7 @@ const translations = {
     'common.cta.getCR':         'Get ContinuousReader',
     'common.cta.getPR':         'Get PlainReader',
     'common.cta.getJR':         'Get JustReader, free',
-    'common.cta.tryJR':         'Or try PlainReader or JustReader',
+    'common.cta.tryJR':         'Or try PlainReader ($6.99) or JustReader (free)',
 
     // ============================================================
     // INDEX (landing)
@@ -1189,7 +1189,7 @@ const translations = {
     'common.cta.getCR':         'Загрузить ContinuousReader',
     'common.cta.getPR':         'Загрузить PlainReader',
     'common.cta.getJR':         'Загрузить JustReader, бесплатно',
-    'common.cta.tryJR':         'Или попробуйте PlainReader либо JustReader',
+    'common.cta.tryJR':         'Или попробуйте PlainReader ($6.99) либо JustReader (бесплатно)',
 
     // ---------- Meta (index) ----------
     'meta.index.title':    'ContinuousReader — Книга — продолжается.',
@@ -2223,7 +2223,7 @@ const translations = {
     'common.cta.getCR':         'Завантажити ContinuousReader',
     'common.cta.getPR':         'Завантажити PlainReader',
     'common.cta.getJR':         'Завантажити JustReader, безкоштовно',
-    'common.cta.tryJR':         'Або спробуйте PlainReader чи JustReader',
+    'common.cta.tryJR':         'Або спробуйте PlainReader ($6.99) чи JustReader (безкоштовно)',
 
     // ---------- Meta (index) ----------
     'meta.index.title':    'ContinuousReader — Книга — продовжується.',
@@ -3255,7 +3255,7 @@ const translations = {
     'common.cta.getCR':         'Obtén ContinuousReader',
     'common.cta.getPR':         'Obtén PlainReader',
     'common.cta.getJR':         'Obtén JustReader, gratis',
-    'common.cta.tryJR':         'O prueba PlainReader o JustReader',
+    'common.cta.tryJR':         'O prueba PlainReader ($6.99) o JustReader (gratis)',
 
     // ---------- Meta (index) ----------
     'meta.index.title':    'ContinuousReader — Un libro, continuará.',
@@ -4289,7 +4289,7 @@ const translations = {
     'common.cta.getCR':         'Obtenir ContinuousReader',
     'common.cta.getPR':         'Obtenir PlainReader',
     'common.cta.getJR':         'Obtenir JustReader, gratuit',
-    'common.cta.tryJR':         'Ou essayez PlainReader ou JustReader',
+    'common.cta.tryJR':         'Ou essayez PlainReader (6,99 $) ou JustReader (gratuit)',
 
     // ---------- Meta (index) ----------
     'meta.index.title':    'ContinuousReader — Un livre, à suivre.',
@@ -5322,7 +5322,7 @@ const translations = {
     'common.cta.getCR':         'ContinuousReader laden',
     'common.cta.getPR':         'PlainReader laden',
     'common.cta.getJR':         'JustReader laden, kostenlos',
-    'common.cta.tryJR':         'Oder probier PlainReader oder JustReader',
+    'common.cta.tryJR':         'Oder probier PlainReader (6,99 $) oder JustReader (kostenlos)',
 
     // ---------- Meta (index) ----------
     'meta.index.title':    'ContinuousReader — Ein Buch, Fortsetzung folgt.',
