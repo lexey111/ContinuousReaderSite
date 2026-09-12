@@ -219,6 +219,20 @@ a { color: inherit; }
 
 .nav-logo svg { display: block; width: 100%; height: 100%; }
 
+/* The shipped version under the wordmark (user, 2026-09-12): a small
+   line, so the brand keeps its width; the text is the changelog's own
+   release title, so a release updates it in one place. */
+.nav-wordmark { display: flex; flex-direction: column; line-height: 1.05; }
+.nav-version {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  opacity: 0.55;
+  margin-top: 3px;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
