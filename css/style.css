@@ -3246,6 +3246,29 @@ code {
   width: auto;
   flex-shrink: 0;
 }
+/* The release's motto — a line under the codename (user, 2026-09-23),
+   kept in English in every language: it is a name, like the codename. */
+.release-motto {
+  margin: 4px 0 14px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ink-soft);
+}
+.wn-title-row + .release-motto { margin-top: -4px; }
+
+/* A thank-you plate under a release's list (#874: a reader's letters). */
+.release-thanks {
+  margin: 18px 0 0;
+  padding: 14px 18px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-deeper);
+  border-radius: 0 10px 10px 0;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink);
+}
+
 @media (max-width: 640px) {
   .release-divider { gap: 16px; margin-top: 44px; }
   .release-divider h3 { font-size: 24px; }
