@@ -911,7 +911,7 @@ const translations = {
 
     'download.included.eyebrow':  'In the box',
     'download.included.title':    'What’s <em>included</em>.',
-    'download.included.intro':    'Two of the three are paid, and each is a single purchase. Here is what that buys — and which part of it only ContinuousReader has.',
+    'download.included.intro': 'Two of the three are paid, but each is a single purchase. Here is what you get for your money.',
     'download.included.li1':      '<strong>Universal Purchase</strong> — buy on any platform, use on all three (Mac, iPad, iPhone), on as many of your devices as you own.',
     'download.included.li2':      '<strong>One payment, then nothing</strong> — no subscription, no in-app purchases, no upsells inside the app you bought.',
     'download.included.li3':      '<strong>Free updates for the lifetime of the current major version</strong> — bug fixes, new themes, new features.',
@@ -1637,7 +1637,7 @@ const translations = {
 
     'download.included.eyebrow':  'В комплекте',
     'download.included.title':    '<em>Что входит</em>.',
-    'download.included.intro':    'Два приложения из трёх платные, и каждое — разовая покупка. Вот что вы за неё получаете — и что из этого умеет только ContinuousReader.',
+    'download.included.intro': 'Два приложения из трёх платные, но каждое — разовая покупка. Вот что вы получаете за свои деньги.',
     'download.included.li1':      '<strong>Универсальная покупка</strong> — покупаете на любой платформе, пользуетесь на всех трёх (Mac, iPad, iPhone), на скольких угодно своих устройствах.',
     'download.included.li2':      '<strong>Один платёж — и всё</strong>: ни подписки, ни встроенных покупок, ни допродаж внутри купленного приложения.',
     'download.included.li3':      '<strong>Бесплатные обновления в пределах текущей мажорной версии</strong> — исправления, новые темы, новые возможности.',
@@ -2802,7 +2802,7 @@ const translations = {
 
     'download.included.eyebrow':  'У комплекті',
     'download.included.title':    '<em>Що входить</em>.',
-    'download.included.intro':    'Два застосунки з трьох платні, і кожен — разова покупка. Ось що ви за неї отримуєте — і що з цього вміє лише ContinuousReader.',
+    'download.included.intro': 'Два застосунки з трьох платні, але кожен — разова покупка. Ось що ви отримуєте за свої гроші.',
     'download.included.li1':      '<strong>Універсальна покупка</strong> — купуєте на будь-якій платформі, користуєтесь на всіх трьох (Mac, iPad, iPhone), на скількох завгодно своїх пристроях.',
     'download.included.li2':      '<strong>Один платіж — і все</strong>: ні передплати, ні вбудованих покупок, ні допродажів усередині купленого застосунку.',
     'download.included.li3':      '<strong>Безкоштовні оновлення в межах поточної мажорної версії</strong> — виправлення, нові теми, нові можливості.',
@@ -3965,7 +3965,7 @@ const translations = {
 
     'download.included.eyebrow':  'En la caja',
     'download.included.title':    '<em>Qué incluye</em>.',
-    'download.included.intro':    'Dos de las tres son de pago, y cada una es una compra única. Esto es lo que obtienes con ella, y qué parte solo la tiene ContinuousReader.',
+    'download.included.intro': 'Dos de las tres son de pago, pero cada una es una compra única. Esto es lo que obtienes por tu dinero.',
     'download.included.li1':      '<strong>Compra universal</strong>: compra en cualquier plataforma y úsala en las tres (Mac, iPad, iPhone), en tantos dispositivos tuyos como quieras.',
     'download.included.li2':      '<strong>Un pago y ya está</strong>: sin suscripción, sin compras dentro de la app, sin ventas adicionales en lo que ya compraste.',
     'download.included.li3':      '<strong>Actualizaciones gratuitas durante toda la versión principal actual</strong>: correcciones, temas nuevos, funciones nuevas.',
@@ -5130,7 +5130,7 @@ const translations = {
 
     'download.included.eyebrow':  'Inclus',
     'download.included.title':    'Ce qui est <em>inclus</em>.',
-    'download.included.intro':    'Deux des trois sont payantes, et chacune est un achat unique. Voici ce que vous obtenez — et ce que seul ContinuousReader sait faire.',
+    'download.included.intro': 'Deux des trois sont payantes, mais chacune est un achat unique. Voici ce que vous obtenez pour votre argent.',
     'download.included.li1':      '<strong>Achat universel</strong> — achetez sur n’importe quelle plateforme, utilisez sur les trois (Mac, iPad, iPhone), sur autant de vos appareils que vous voulez.',
     'download.included.li2':      '<strong>Un paiement, puis plus rien</strong> : pas d’abonnement, pas d’achats intégrés, pas de relances dans l’app que vous avez achetée.',
     'download.included.li3':      '<strong>Mises à jour gratuites pendant toute la version majeure en cours</strong> — corrections, nouveaux thèmes, nouvelles fonctions.',
@@ -6294,7 +6294,7 @@ const translations = {
 
     'download.included.eyebrow':  'Im Paket',
     'download.included.title':    'Was <em>enthalten</em> ist.',
-    'download.included.intro':    'Zwei der drei sind kostenpflichtig, und jede ist ein einmaliger Kauf. Das bekommst du dafür — und das kann nur ContinuousReader.',
+    'download.included.intro': 'Zwei der drei sind kostenpflichtig, aber jede ist ein einmaliger Kauf. Das bekommst du für dein Geld.',
     'download.included.li1':      '<strong>Universalkauf</strong> — auf einer Plattform kaufen, auf allen dreien nutzen (Mac, iPad, iPhone), auf beliebig vielen eigenen Geräten.',
     'download.included.li2':      '<strong>Eine Zahlung, dann nichts mehr</strong> — kein Abo, keine In-App-Käufe, keine Verkaufshinweise in der App, die du gekauft hast.',
     'download.included.li3':      '<strong>Kostenlose Updates für die gesamte aktuelle Hauptversion</strong> — Fehlerbehebungen, neue Themen, neue Funktionen.',
