@@ -657,7 +657,7 @@ const translations = {
     'features.s5.label':          'Section five',
     'features.s5.h2':             'Sync and <em>data</em>.',
     'features.s5.intro':          'How your library travels between devices, where it sits on disk, and what happens the day you want to move it, back it up, or leave it behind entirely.',
-    'features.s5.banner':         'Sync, backup, and library management require ContinuousReader. JustReader has no library to sync.',
+    'features.s5.banner':         'Sync, backup, and library management require ContinuousReader. Neither JustReader nor PlainReader has a library to sync — their books live on the device they were opened on.',
 
     'features.s5.icloud.h':       'iCloud sync',
     'features.s5.icloud.p1':      'Included in ContinuousReader, works across <strong>every Apple device signed into the same Apple ID</strong> — home Mac, work Mac, travel laptop, iPad, iPhone.',
@@ -2088,7 +2088,7 @@ const translations = {
     'features.s5.label':          'Раздел пятый',
     'features.s5.h2':             'Синхронизация и <em>данные</em>.',
     'features.s5.intro':          'Как ваша библиотека путешествует между устройствами, где она лежит на диске и что будет в тот день, когда вы захотите её перенести, забэкапить или уйти совсем.',
-    'features.s5.banner':         'Синхронизация, бэкап и управление библиотекой требуют ContinuousReader. У JustReader нет библиотеки, которую можно синхронизировать.',
+    'features.s5.banner':         'Синхронизация, бэкап и управление библиотекой требуют ContinuousReader. Ни у JustReader, ни у PlainReader нет библиотеки, которую можно синхронизировать: их книги живут на том устройстве, где были открыты.',
 
     'features.s5.icloud.h':       'Синхронизация iCloud',
     'features.s5.icloud.p1':      'Входит в ContinuousReader, работает на <strong>любом устройстве Apple, вошедшем в один и тот же Apple ID</strong> — домашнем Mac, рабочем Mac, дорожном ноутбуке, iPad, iPhone.',
@@ -3245,7 +3245,7 @@ const translations = {
     'features.s5.label':          'Розділ пʼятий',
     'features.s5.h2':             'Синхронізація та <em>дані</em>.',
     'features.s5.intro':          'Як ваша бібліотека мандрує між пристроями, де вона лежить на диску і що буде того дня, коли ви схочете її перенести, забекапити чи піти зовсім.',
-    'features.s5.banner':         'Синхронізація, бекап і керування бібліотекою потребують ContinuousReader. У JustReader немає бібліотеки для синхронізації.',
+    'features.s5.banner':         'Синхронізація, бекап і керування бібліотекою потребують ContinuousReader. Ні в JustReader, ні в PlainReader немає бібліотеки для синхронізації: їхні книжки живуть на тому пристрої, де їх відкрили.',
 
     'features.s5.icloud.h':       'iCloud-синхронізація',
     'features.s5.icloud.p1':      'Входить до ContinuousReader, працює на <strong>кожному пристрої Apple, де ввійдено той самий Apple ID</strong> — домашній Mac, робочий Mac, дорожній ноутбук, iPad, iPhone.',
@@ -4400,7 +4400,7 @@ const translations = {
     'features.s5.label':          'Sección cinco',
     'features.s5.h2':             'Sincronización y <em>datos</em>.',
     'features.s5.intro':          'Cómo viaja tu biblioteca entre dispositivos, dónde se asienta en el disco y qué ocurre el día en que quieras moverla, respaldarla o dejarla atrás por completo.',
-    'features.s5.banner':         'La sincronización, las copias de seguridad y la gestión de la biblioteca requieren ContinuousReader. JustReader no tiene biblioteca que sincronizar.',
+    'features.s5.banner':         'La sincronización, las copias de seguridad y la gestión de la biblioteca requieren ContinuousReader. Ni JustReader ni PlainReader tienen una biblioteca que sincronizar: sus libros viven en el dispositivo donde se abrieron.',
 
     'features.s5.icloud.h':       'Sincronización con iCloud',
     'features.s5.icloud.p1':      'Incluida en ContinuousReader, funciona en <strong>todos los dispositivos Apple conectados al mismo Apple ID</strong>: el Mac de casa, el Mac del trabajo, el portátil de viaje, el iPad y el iPhone.',
@@ -5557,7 +5557,7 @@ const translations = {
     'features.s5.label':          'Section cinq',
     'features.s5.h2':             'Synchronisation et <em>données</em>.',
     'features.s5.intro':          'Comment votre bibliothèque voyage entre les appareils, où elle se trouve sur le disque, et ce qui se passe le jour où vous voulez la déplacer, la sauvegarder ou la quitter entièrement.',
-    'features.s5.banner':         'La synchronisation, la sauvegarde et la gestion de bibliothèque nécessitent ContinuousReader. JustReader n’a aucune bibliothèque à synchroniser.',
+    'features.s5.banner':         'La synchronisation, la sauvegarde et la gestion de bibliothèque nécessitent ContinuousReader. Ni JustReader ni PlainReader n’ont de bibliothèque à synchroniser : leurs livres vivent sur l’appareil où ils ont été ouverts.',
 
     'features.s5.icloud.h':       'Synchronisation iCloud',
     'features.s5.icloud.p1':      'Incluse dans ContinuousReader, fonctionne sur <strong>tous les appareils Apple connectés au même identifiant Apple</strong> — Mac de la maison, Mac du bureau, portable de voyage, iPad, iPhone.',
@@ -6713,7 +6713,7 @@ const translations = {
     'features.s5.label':          'Abschnitt fünf',
     'features.s5.h2':             'Sync und <em>Daten</em>.',
     'features.s5.intro':          'Wie deine Bibliothek zwischen Geräten reist, wo sie auf der Festplatte liegt und was an dem Tag passiert, an dem du sie umziehen, sichern oder ganz hinter dir lassen willst.',
-    'features.s5.banner':         'Sync, Backup und Bibliotheksverwaltung erfordern ContinuousReader. JustReader hat keine Bibliothek zum Synchronisieren.',
+    'features.s5.banner':         'Sync, Backup und Bibliotheksverwaltung erfordern ContinuousReader. Weder JustReader noch PlainReader haben eine Bibliothek zum Synchronisieren: Ihre Bücher leben auf dem Gerät, auf dem sie geöffnet wurden.',
 
     'features.s5.icloud.h':       'iCloud-Sync',
     'features.s5.icloud.p1':      'In ContinuousReader enthalten — funktioniert über <strong>alle Apple-Geräte, die mit derselben Apple-ID angemeldet sind</strong>: Heim-Mac, Arbeits-Mac, Reise-Laptop, iPad, iPhone.',
