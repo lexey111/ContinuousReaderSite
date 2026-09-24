@@ -722,11 +722,13 @@ const translations = {
     // Section 7 — Interface that fits
     'features.s7.label':          'Closing',
     'features.s7.h2':             'Interface that <em>fits</em>.',
-    'features.s7.intro':          'Not every reader needs every feature. ContinuousReader is built to adapt — <em>twice</em>.',
+    'features.s7.intro': 'Not every reader needs every feature. ContinuousReader is built to adapt — <em>three times</em>.',
     'features.s7.wizard.h':       'On first launch — the <em>Welcome wizard</em>.',
     'features.s7.wizard.p':       'Before you import your first book, a short setup walks you through the choices that matter — starting with <strong>where your library should live</strong>: in iCloud (synced across your devices), on this device only, or in a folder you pick (the books survive uninstall). Then language, interface theme, library view (list, cards, or table), and which features you want visible. Seven screens, all skippable, all changeable later. <strong>You start with an app that already looks the way you want and stores your books exactly where you want them.</strong>',
     'features.s7.toggles.h':      'Any time after — the <em>Features panel</em>.',
     'features.s7.toggles.p':      'If you never use Read Aloud, turn it off and its button disappears from the bottom toolbar. Same for OPDS, Translation, and Statistics — all in Settings → Features. Switching one off removes it from the interface cleanly, with <strong>no dimmed buttons or leftover menu items hanging around for a feature you don’t use.</strong>',
+    'features.s7.modes.h': 'And at any moment — <em>two readers</em>.',
+    'features.s7.modes.p': 'The biggest adaptation of all is a switch. <strong>Comfort</strong> is a reader for reading: it sets the page up for you — margins, spacing, the paper — and shows one slim bar with the progress; one small popup holds colour, face and size. <strong>Professional</strong> is the full reader: panels in docks and in windows of their own, feature themes, translation, Read Aloud, fine-grained settings. The app asks once, on the first open of a book; each mode keeps its own settings and has a door to the other, so you can read in Comfort by evening and work in Professional by day.',
     'features.s7.outro':          'Change your mind, relaunch the wizard from Settings. Your app, your preferences.',
 
     // ============================================================
@@ -2152,11 +2154,13 @@ const translations = {
     // Section 7 — Interface that fits
     'features.s7.label':          'Завершение',
     'features.s7.h2':             'Интерфейс, который <em>подстраивается</em>.',
-    'features.s7.intro':          'Не каждому читателю нужны все возможности сразу. ContinuousReader спроектирован так, чтобы адаптироваться — <em>дважды</em>.',
+    'features.s7.intro': 'Не каждому читателю нужны все возможности сразу. ContinuousReader спроектирован так, чтобы адаптироваться — <em>трижды</em>.',
     'features.s7.wizard.h':       'При первом запуске — <em>мастер приветствия</em>.',
     'features.s7.wizard.p':       'Прежде чем вы импортируете первую книгу, короткая настройка проведёт вас по важным выборам — начиная с того, <strong>где будет жить ваша библиотека</strong>: в iCloud (синхронизация между устройствами), только на этом устройстве или в папке, которую вы сами выберете (книги переживут удаление приложения). Затем язык, тема интерфейса, вид библиотеки (список, карточки или таблица) и какие возможности хотите видеть. Семь экранов, все можно пропустить, всё меняется потом. <strong>Вы начинаете с приложением, которое уже выглядит так, как вы хотите, и хранит книги именно там, где вам нужно.</strong>',
     'features.s7.toggles.h':      'В любой момент после — <em>панель возможностей</em>.',
     'features.s7.toggles.p':      'Если вы никогда не пользуетесь «Чтением вслух», выключите его — и кнопка пропадёт из нижней панели. То же с OPDS, Переводом и Статистикой, всё в Настройки → Возможности. Выключенная возможность убирается из интерфейса начисто — <strong>без потускневших кнопок и без зависших пунктов меню от того, чем вы не пользуетесь.</strong>',
+    'features.s7.modes.h': 'И в любой момент — <em>два режима чтения</em>.',
+    'features.s7.modes.p': 'Самая большая адаптация — один переключатель. <strong>Comfort</strong> — читалка для чтения: она сама ставит страницу — поля, интервалы, бумагу — и показывает одну тонкую полосу с прогрессом; цвет, шрифт и размер — в одном небольшом окне. <strong>Professional</strong> — полная читалка: панели в доках и отдельных окнах, специальные темы, перевод, чтение вслух, тонкая настройка. Приложение спрашивает один раз, при первом открытии книги; у каждого режима свои настройки и переход в другой, так что вечером можно читать в Comfort, а днём работать в Professional.',
     'features.s7.outro':          'Передумали — перезапустите мастер из настроек. Ваше приложение — ваши предпочтения.',
 
     'meta.platforms.title':   'Платформы — ContinuousReader',
@@ -3309,11 +3313,13 @@ const translations = {
     // Section 7 — Interface that fits
     'features.s7.label':          'Завершення',
     'features.s7.h2':             'Інтерфейс, що <em>пасує</em>.',
-    'features.s7.intro':          'Не кожному читачеві потрібна кожна можливість. ContinuousReader збудований так, щоб адаптуватися — <em>двічі</em>.',
+    'features.s7.intro': 'Не кожному читачеві потрібна кожна можливість. ContinuousReader збудований так, щоб адаптуватися — <em>тричі</em>.',
     'features.s7.wizard.h':       'При першому запуску — <em>майстер привітання</em>.',
     'features.s7.wizard.p':       'Перш ніж ви імпортуєте першу книгу, короткий майстер проводить вас через важливі рішення — починаючи з того, <strong>де житиме ваша бібліотека</strong>: в iCloud (синхронізована між пристроями), лише на цьому пристрої або в теці, яку ви оберете самі (книги переживуть видалення застосунку). Далі мова, тема інтерфейсу, режим перегляду бібліотеки (список, картки чи таблиця) і те, які можливості мають бути видимими. Сім екранів, усі можна пропустити, усі можна змінити пізніше. <strong>Ви починаєте з застосунком, що вже виглядає так, як ви хочете, і зберігає книги саме там, де вам потрібно.</strong>',
     'features.s7.toggles.h':      'Будь-коли потім — <em>панель можливостей</em>.',
     'features.s7.toggles.p':      'Якщо ви ніколи не користуєтеся «Читанням вголос», вимкніть його — і кнопка зникне з нижньої панелі. Те саме з OPDS, перекладом і статистикою, усе в Налаштування → Можливості. Вимкнена можливість прибирається з інтерфейсу начисто — <strong>без притлумлених кнопок і без завислих пунктів меню від того, чим ви не користуєтеся.</strong>',
+    'features.s7.modes.h': 'І будь-якої миті — <em>два режими читання</em>.',
+    'features.s7.modes.p': 'Найбільша адаптація — один перемикач. <strong>Comfort</strong> — читалка для читання: вона сама ставить сторінку — поля, інтервали, папір — і показує одну тонку смугу з прогресом; колір, шрифт і розмір — в одному невеликому вікні. <strong>Professional</strong> — повна читалка: панелі в доках і окремих вікнах, спеціальні теми, переклад, читання вголос, тонке налаштування. Застосунок питає один раз, при першому відкритті книжки; у кожного режиму свої налаштування і перехід в інший, тож увечері можна читати в Comfort, а вдень працювати в Professional.',
     'features.s7.outro':          'Передумали — запустіть майстер з Налаштувань знову. Ваш застосунок — ваші уподобання.',
 
     'meta.platforms.title':   'Платформи — ContinuousReader',
@@ -4464,11 +4470,13 @@ const translations = {
     // Section 7 — Interface that fits
     'features.s7.label':          'Cierre',
     'features.s7.h2':             'Una interfaz a tu <em>medida</em>.',
-    'features.s7.intro':          'No todos los lectores necesitan todas las funciones. ContinuousReader está pensado para adaptarse: <em>dos veces</em>.',
+    'features.s7.intro': 'No todos los lectores necesitan todas las funciones. ContinuousReader está pensado para adaptarse: <em>tres veces</em>.',
     'features.s7.wizard.h':       'En el primer arranque, el <em>asistente de bienvenida</em>.',
     'features.s7.wizard.p':       'Antes de que importes tu primer libro, una configuración breve te guía por las decisiones que importan — empezando por <strong>dónde debería vivir tu biblioteca</strong>: en iCloud (sincronizada entre tus dispositivos), solo en este dispositivo, o en una carpeta que tú elijas (los libros sobreviven a la desinstalación). Después: idioma, tema de la interfaz, vista de la biblioteca (lista, tarjetas o tabla) y qué funciones quieres ver. Siete pantallas, todas omitibles y modificables luego. <strong>Empiezas con una app que ya tiene el aspecto que querías y guarda los libros exactamente donde tú quieres.</strong>',
     'features.s7.toggles.h':      'En cualquier momento, el <em>panel de Funciones</em>.',
     'features.s7.toggles.p':      'Si nunca usas la Lectura en voz alta, desactívala y su botón desaparecerá de la barra inferior. Lo mismo con OPDS, la Traducción y las Estadísticas — todo en Ajustes → Funciones. Desactivar una la retira limpiamente de la interfaz, <strong>sin botones atenuados ni elementos de menú sobrantes rondando por una función que no usas.</strong>',
+    'features.s7.modes.h': 'Y en cualquier momento, <em>dos lectores</em>.',
+    'features.s7.modes.p': 'La mayor adaptación es un interruptor. <strong>Comfort</strong> es un lector para leer: prepara la página por usted —márgenes, espaciado, el papel— y muestra una sola barra fina con el progreso; color, tipo y tamaño viven en una ventana pequeña. <strong>Professional</strong> es el lector completo: paneles en docks y en ventanas propias, temas especiales, traducción, lectura en voz alta, ajustes finos. La app pregunta una vez, al abrir el primer libro; cada modo conserva sus propios ajustes y tiene un paso al otro, así que puede leer en Comfort por la noche y trabajar en Professional de día.',
     'features.s7.outro':          'Si cambias de opinión, vuelve a lanzar el asistente desde Ajustes. Tu app, tus preferencias.',
 
     'meta.platforms.title':   'Plataformas — ContinuousReader',
@@ -5621,11 +5629,13 @@ const translations = {
     // Section 7 — Interface that fits
     'features.s7.label':          'Conclusion',
     'features.s7.h2':             'Une interface qui <em>s’adapte</em>.',
-    'features.s7.intro':          'Tous les lecteurs n’ont pas besoin de toutes les fonctions. ContinuousReader est conçu pour s’adapter — <em>deux fois</em>.',
+    'features.s7.intro': 'Tous les lecteurs n’ont pas besoin de toutes les fonctions. ContinuousReader est conçu pour s’adapter — <em>trois fois</em>.',
     'features.s7.wizard.h':       'Au premier lancement — l’<em>assistant de bienvenue</em>.',
     'features.s7.wizard.p':       'Avant d’importer votre premier livre, une courte configuration vous guide à travers les choix qui comptent — en commençant par <strong>où votre bibliothèque doit vivre</strong> : dans iCloud (synchronisée entre vos appareils), uniquement sur cet appareil, ou dans un dossier que vous choisissez (les livres survivent à la désinstallation). Puis langue, thème d’interface, vue de bibliothèque (liste, cartes ou tableau) et fonctionnalités à afficher. Sept écrans, tous facultatifs, tous modifiables ensuite. <strong>Vous démarrez avec une application qui vous ressemble déjà et qui range vos livres exactement où vous le souhaitez.</strong>',
     'features.s7.toggles.h':      'À tout moment ensuite — le <em>panneau Fonctionnalités</em>.',
     'features.s7.toggles.p':      'Si vous n’utilisez jamais la Lecture à voix haute, désactivez-la et son bouton disparaît de la barre d’outils du bas. Pareil pour OPDS, la Traduction et les Statistiques — le tout dans Réglages → Fonctionnalités. Désactiver l’une la retire proprement de l’interface, <strong>sans bouton grisé ni élément de menu résiduel qui traînerait pour une fonction que vous n’utilisez pas.</strong>',
+    'features.s7.modes.h': 'Et à tout moment — <em>deux lecteurs</em>.',
+    'features.s7.modes.p': 'La plus grande adaptation tient en un commutateur. <strong>Comfort</strong> est un lecteur pour lire : il met la page en forme pour vous — marges, interlignes, le papier — et n’affiche qu’une fine barre de progression ; couleur, caractère et taille tiennent dans un petit popup. <strong>Professional</strong> est le lecteur complet : des panneaux dans des docks et dans leurs propres fenêtres, les thèmes spéciaux, la traduction, la lecture à voix haute, des réglages fins. L’app pose la question une fois, à la première ouverture d’un livre ; chaque mode garde ses réglages et a une porte vers l’autre — Comfort le soir, Professional le jour.',
     'features.s7.outro':          'Changé d’avis ? Relancez l’assistant depuis les Réglages. Votre app, vos préférences.',
 
     'meta.platforms.title':   'Plateformes — ContinuousReader',
@@ -6777,11 +6787,13 @@ const translations = {
     // Section 7 — Interface that fits
     'features.s7.label':          'Abschluss',
     'features.s7.h2':             'Oberfläche, die <em>passt</em>.',
-    'features.s7.intro':          'Nicht jeder Reader braucht jede Funktion. ContinuousReader ist zum Anpassen gebaut — <em>zweimal</em>.',
+    'features.s7.intro': 'Nicht jeder Reader braucht jede Funktion. ContinuousReader ist zum Anpassen gebaut — <em>dreimal</em>.',
     'features.s7.wizard.h':       'Beim ersten Start — der <em>Willkommens-Assistent</em>.',
     'features.s7.wizard.p':       'Bevor du dein erstes Buch importierst, führt dich ein kurzes Setup durch die Entscheidungen, die zählen — beginnend mit der Frage, <strong>wo deine Bibliothek leben soll</strong>: in iCloud (über deine Geräte hinweg synchronisiert), nur auf diesem Gerät oder in einem Ordner deiner Wahl (die Bücher überstehen die Deinstallation). Danach Sprache, Theme, Bibliotheksansicht (Liste, Karten oder Tabelle) und welche Funktionen sichtbar sein sollen. Sieben Bildschirme, alle überspringbar, alle später änderbar. <strong>Du startest mit einer App, die schon so aussieht, wie du es willst, und deine Bücher genau dort speichert, wo du sie haben möchtest.</strong>',
     'features.s7.toggles.h':      'Jederzeit später — das <em>Funktionen-Panel</em>.',
     'features.s7.toggles.p':      'Wenn du Vorlesen nie nutzt, schalt es aus, und sein Button verschwindet aus der unteren Werkzeugleiste. Dasselbe gilt für OPDS, Übersetzung und Statistik — alles unter Einstellungen → Funktionen. Eine Funktion abzuschalten entfernt sie sauber aus der Oberfläche, <strong>ohne ausgegraute Buttons oder übrig gebliebene Menüpunkte, die für eine Funktion herumhängen, die du nicht nutzt.</strong>',
+    'features.s7.modes.h': 'Und jederzeit — <em>zwei Reader</em>.',
+    'features.s7.modes.p': 'Die größte Anpassung ist ein Schalter. <strong>Comfort</strong> ist ein Reader zum Lesen: Er richtet die Seite für Sie ein — Ränder, Abstände, das Papier — und zeigt eine einzige schmale Leiste mit dem Fortschritt; Farbe, Schrift und Größe stehen in einem kleinen Popup. <strong>Professional</strong> ist der volle Reader: Leisten in Docks und in eigenen Fenstern, die speziellen Themen, Übersetzung, Vorlesen, Feineinstellungen. Die App fragt einmal, beim ersten Öffnen eines Buchs; jeder Modus behält seine Einstellungen und hat eine Tür zum anderen — abends Comfort, tagsüber Professional.',
     'features.s7.outro':          'Wenn du es dir anders überlegst, starte den Assistenten aus den Einstellungen neu. Deine App, deine Vorlieben.',
 
     'meta.platforms.title':   'Plattformen — ContinuousReader',
