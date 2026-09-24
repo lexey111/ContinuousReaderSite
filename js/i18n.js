@@ -777,7 +777,7 @@ const translations = {
 
     'platforms.iph.eyebrow':    'iOS',
     'platforms.iph.title':      'The pocket <em>reader</em>.',
-    'platforms.iph.intro': 'The iPhone version is <strong>streamlined, not stripped</strong>. Everything that earns its place on a small screen is here; the table view and the floating panels sit it out, because cramming them in would only make the app worse. In their place: full-screen reading with active corners, tiles instead of panels, native sheets — and the library’s tabs, browsers included, laid out for a phone.',
+    'platforms.iph.intro': 'The iPhone version is <strong>adapted, not stripped</strong>. Everything that earns its place on a small screen is here; the table view and the floating panels sit it out, because cramming them in would only make the app worse. In their place: full-screen reading with active corners, tiles instead of panels, native sheets — and the library’s tabs, browsers included, laid out for a phone.',
     'platforms.iph.label':      'What iPhone does differently',
     'platforms.iph.li1': '<strong>One-hand friendly</strong>Controls within thumb’s reach. Two page-turn layouts — top/bottom for one thumb or left/right for two — and a “Show tap zones” overlay that draws them onto the page so you never have to guess',
     'platforms.iph.li2': '<strong>Native sheets</strong>Folders, settings, filters, the browsers — sheets of the right height instead of separate windows',
@@ -2211,7 +2211,7 @@ const translations = {
 
     'platforms.iph.eyebrow':    'iOS',
     'platforms.iph.title':      'Карманная <em>читалка</em>.',
-    'platforms.iph.intro': 'Версия для iPhone <strong>упрощена, а не урезана</strong>. Всё, что заслуживает места на маленьком экране, здесь; табличный вид и плавающие панели остаются за бортом — впихнуть их значило бы сделать приложение хуже. Вместо них: полноэкранное чтение с активными углами, плитки вместо панелей, нативные диалоги — и вкладки библиотеки, браузеры включительно, переложенные под телефон.',
+    'platforms.iph.intro': 'Версия для iPhone <strong>адаптирована, а не урезана</strong>. Всё, что заслуживает места на маленьком экране, здесь; табличный вид и плавающие панели остаются за бортом — впихнуть их значило бы сделать приложение хуже. Вместо них: полноэкранное чтение с активными углами, плитки вместо панелей, нативные диалоги — и вкладки библиотеки, браузеры включительно, переложенные под телефон.',
     'platforms.iph.label':      'Что iPhone делает иначе',
     'platforms.iph.li1': '<strong>Удобно одной рукой</strong>Управление в пределах большого пальца. Две раскладки листания — верх/низ для одного пальца или лево/право для двух — и «Показать зоны касания», которая рисует их прямо на странице, чтобы не гадать',
     'platforms.iph.li2': '<strong>Нативные диалоги</strong>Папки, настройки, фильтры, браузеры — диалоги нужной высоты вместо отдельных окон',
@@ -3375,7 +3375,7 @@ const translations = {
 
     'platforms.iph.eyebrow':    'iOS',
     'platforms.iph.title':      'Кишенькова <em>читалка</em>.',
-    'platforms.iph.intro': 'Версія для iPhone <strong>спрощена, а не урізана</strong>. Усе, що заслуговує на місце на малому екрані, тут; табличний вигляд і плаваючі панелі лишаються за бортом — втиснути їх означало б зробити застосунок гіршим. Замість них: повноекранне читання з активними кутами, плитки замість панелей, нативні діалоги — і вкладки бібліотеки, браузери включно, перекладені під телефон.',
+    'platforms.iph.intro': 'Версія для iPhone <strong>адаптована, а не урізана</strong>. Усе, що заслуговує на місце на малому екрані, тут; табличний вигляд і плаваючі панелі лишаються за бортом — втиснути їх означало б зробити застосунок гіршим. Замість них: повноекранне читання з активними кутами, плитки замість панелей, нативні діалоги — і вкладки бібліотеки, браузери включно, перекладені під телефон.',
     'platforms.iph.label':      'Що iPhone робить інакше',
     'platforms.iph.li1': '<strong>Зручно однією рукою</strong>Керування в межах великого пальця. Дві розкладки гортання — верх/низ для одного пальця або ліво/право для двох — і «Показати зони дотику», що малює їх просто на сторінці, щоб не вгадувати',
     'platforms.iph.li2': '<strong>Нативні діалоги</strong>Теки, налаштування, фільтри, браузери — діалоги потрібної висоти замість окремих вікон',
@@ -4537,7 +4537,7 @@ const translations = {
 
     'platforms.iph.eyebrow':    'iOS',
     'platforms.iph.title':      'El <em>lector</em> de bolsillo.',
-    'platforms.iph.intro': 'La versión para iPhone está <strong>simplificada, no recortada</strong>. Todo lo que merece un sitio en una pantalla pequeña está aquí; la vista de tabla y los paneles flotantes se quedan fuera, porque meterlos a la fuerza solo empeoraría la app. En su lugar: lectura a pantalla completa con esquinas activas, baldosas en vez de paneles, hojas nativas, y las pestañas de la biblioteca, exploradores incluidos, adaptadas a un teléfono.',
+    'platforms.iph.intro': 'La versión para iPhone está <strong>adaptada, no recortada</strong>. Todo lo que merece un sitio en una pantalla pequeña está aquí; la vista de tabla y los paneles flotantes se quedan fuera, porque meterlos a la fuerza solo empeoraría la app. En su lugar: lectura a pantalla completa con esquinas activas, baldosas en vez de paneles, hojas nativas, y las pestañas de la biblioteca, exploradores incluidos, adaptadas a un teléfono.',
     'platforms.iph.label':      'Lo que iPhone hace diferente',
     'platforms.iph.li1': '<strong>Cómodo con una mano</strong>Controles al alcance del pulgar. Dos disposiciones de paso de página —arriba/abajo para un pulgar o izquierda/derecha para dos— y una capa «Mostrar zonas de toque» que las dibuja sobre la página para no adivinar',
     'platforms.iph.li2': '<strong>Hojas nativas</strong>Carpetas, ajustes, filtros, exploradores: hojas de la altura justa en lugar de ventanas separadas',
@@ -5701,7 +5701,7 @@ const translations = {
 
     'platforms.iph.eyebrow':    'iOS',
     'platforms.iph.title':      'Le <em>lecteur</em> de poche.',
-    'platforms.iph.intro': 'La version iPhone est <strong>épurée, pas amputée</strong>. Tout ce qui mérite sa place sur un petit écran est là ; la vue tableau et les panneaux flottants restent de côté, parce que les y caser rendrait l’app moins bonne. À leur place : la lecture plein écran avec des coins actifs, des tuiles au lieu de panneaux, des feuilles natives — et les onglets de la bibliothèque, navigateurs compris, mis en page pour un téléphone.',
+    'platforms.iph.intro': 'La version iPhone est <strong>adaptée, pas amputée</strong>. Tout ce qui mérite sa place sur un petit écran est là ; la vue tableau et les panneaux flottants restent de côté, parce que les y caser rendrait l’app moins bonne. À leur place : la lecture plein écran avec des coins actifs, des tuiles au lieu de panneaux, des feuilles natives — et les onglets de la bibliothèque, navigateurs compris, mis en page pour un téléphone.',
     'platforms.iph.label':      'Ce que l’iPhone fait différemment',
     'platforms.iph.li1': '<strong>Pratique à une main</strong>Les commandes à portée du pouce. Deux dispositions de changement de page — haut/bas pour un pouce ou gauche/droite pour deux — et une option « Afficher les zones de toucher » qui les dessine sur la page pour ne jamais deviner',
     'platforms.iph.li2': '<strong>Feuilles natives</strong>Dossiers, réglages, filtres, navigateurs — des feuilles à la bonne hauteur plutôt que des fenêtres séparées',
@@ -6864,7 +6864,7 @@ const translations = {
 
     'platforms.iph.eyebrow':    'iOS',
     'platforms.iph.title':      'Der <em>Reader für die Hosentasche</em>.',
-    'platforms.iph.intro': 'Die iPhone-Version ist <strong>verschlankt, nicht beschnitten</strong>. Alles, was sich seinen Platz auf einem kleinen Bildschirm verdient, ist da; die Tabellenansicht und die schwebenden Leisten bleiben draußen, weil sie hineinzuquetschen die App nur schlechter machen würde. An ihrer Stelle: Vollbild-Lesen mit aktiven Ecken, Kacheln statt Leisten, native Sheets — und die Tabs der Bibliothek, Browser eingeschlossen, fürs Telefon gesetzt.',
+    'platforms.iph.intro': 'Die iPhone-Version ist <strong>angepasst, nicht beschnitten</strong>. Alles, was sich seinen Platz auf einem kleinen Bildschirm verdient, ist da; die Tabellenansicht und die schwebenden Leisten bleiben draußen, weil sie hineinzuquetschen die App nur schlechter machen würde. An ihrer Stelle: Vollbild-Lesen mit aktiven Ecken, Kacheln statt Leisten, native Sheets — und die Tabs der Bibliothek, Browser eingeschlossen, fürs Telefon gesetzt.',
     'platforms.iph.label':      'Was das iPhone anders macht',
     'platforms.iph.li1': '<strong>Einhändig bequem</strong>Bedienelemente in Daumenreichweite. Zwei Blätter-Layouts — oben/unten für einen Daumen oder links/rechts für zwei — und ein „Tippzonen zeigen“, das sie auf die Seite zeichnet, damit Sie nie raten müssen',
     'platforms.iph.li2': '<strong>Native Sheets</strong>Ordner, Einstellungen, Filter, die Browser — Sheets in der passenden Höhe statt getrennter Fenster',
