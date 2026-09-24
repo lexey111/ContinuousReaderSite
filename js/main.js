@@ -304,7 +304,10 @@
             }
           });
         },
-        { threshold: 0.05, rootMargin: '0px 0px -50px 0px' }
+        // threshold 0, not 0.05: a share of a TALL section (the changelog is
+        // one section, thousands of pixels) is never in the viewport at load,
+        // and the page opened blank until the reader scrolled (2026-09-24).
+        { threshold: 0, rootMargin: '0px 0px -50px 0px' }
       );
       reveals.forEach((el) => io.observe(el));
     } else {
