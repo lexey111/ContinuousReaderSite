@@ -557,6 +557,7 @@ const translations = {
     'features.s3.folders.li5':    '<strong>Keyboard navigation</strong>On Mac — arrow keys move through the tree and expand or collapse folders',
     'features.s3.folders.li6': '<strong>Management windows</strong>Folders and Genres each get one: a tree with multi-selection, filters, and delete from the keyboard; drop a folder onto another with the same name and the app offers to merge them',
     'features.s3.folders.li7': '<strong>Everything inside</strong>One command shows a folder and all its subfolders as a single list — all your fantasy at once, not subfolder by subfolder',
+    'features.s3.folders.li8': '<strong>Colour and a note</strong>A folder takes one of the seven colours — its icon, its band in the tree, and, with the switch on, a wash under its books; and a note of its own: where the books came from, the order to read them in, links that stay live on the info panel',
     'features.s3.folders.p2': 'Deleting a folder or a book doesn’t erase it — books move to the Trash and remember where they were. Restore them and the folders come back, subfolders included; or empty the Trash to delete for good.',
 
     'features.s3.info.h':         'Info panel',
@@ -1987,6 +1988,7 @@ const translations = {
     'features.s3.folders.li5':    '<strong>Навигация с клавиатуры</strong>На Mac — стрелки перемещают по дереву и разворачивают или сворачивают папки',
     'features.s3.folders.li6': '<strong>Окна управления</strong>У папок и жанров — своё: дерево с множественным выделением, фильтры и удаление с клавиатуры; перетащите папку на одноимённую — приложение предложит их объединить',
     'features.s3.folders.li7': '<strong>Всё внутри</strong>Одна команда показывает папку со всеми вложенными одним списком — вся фантастика разом, а не по подпапкам',
+    'features.s3.folders.li8': '<strong>Цвет и заметка</strong>Папке назначается один из семи цветов — её значок, полоса в дереве и, если включить, подсветка под её книгами; и своя заметка: откуда книги, в каком порядке читать, ссылки, живые на информационной панели',
     'features.s3.folders.p2': 'Удаление папки или книги ничего не стирает — книги уходят в корзину и помнят, где были. Восстановите их, и папки вернутся вместе с вложенными; или очистите корзину, чтобы удалить окончательно.',
 
     'features.s3.info.h':         'Информационная панель',
@@ -3143,6 +3145,7 @@ const translations = {
     'features.s3.folders.li5':    '<strong>Навігація з клавіатури</strong>На Mac — стрілки переміщують деревом і розгортають або згортають теки',
     'features.s3.folders.li6': '<strong>Вікна керування</strong>У тек і жанрів — своє: дерево з множинним виділенням, фільтри й видалення з клавіатури; перетягніть теку на однойменну — програма запропонує їх об’єднати',
     'features.s3.folders.li7': '<strong>Усе всередині</strong>Одна команда показує теку з усіма вкладеними одним списком — уся фантастика разом, а не по підтеках',
+    'features.s3.folders.li8': '<strong>Колір і нотатка</strong>Теці призначається один із семи кольорів — її значок, смуга в дереві й, якщо ввімкнути, підсвітка під її книжками; і власна нотатка: звідки книжки, в якому порядку читати, посилання, живі на інформаційній панелі',
     'features.s3.folders.p2': 'Видалення теки чи книги нічого не стирає — книги йдуть у кошик і пам’ятають, де були. Відновіть їх, і теки повернуться разом із вкладеними; або спорожніть кошик, щоб видалити остаточно.',
 
     'features.s3.info.h':         'Інформаційна панель',
@@ -4297,6 +4300,7 @@ const translations = {
     'features.s3.folders.li5':    '<strong>Navegación con teclado</strong>En Mac: las flechas recorren el árbol y expanden o contraen carpetas',
     'features.s3.folders.li6': '<strong>Ventanas de gestión</strong>Carpetas y géneros tienen la suya: un árbol con selección múltiple, filtros y borrado desde el teclado; suelta una carpeta sobre otra con el mismo nombre y la app propone fusionarlas',
     'features.s3.folders.li7': '<strong>Todo lo de dentro</strong>Una orden muestra una carpeta y todas sus subcarpetas como una sola lista: toda tu fantasía de una vez, no subcarpeta por subcarpeta',
+    'features.s3.folders.li8': '<strong>Color y nota</strong>Una carpeta toma uno de los siete colores —su icono, su banda en el árbol y, con el interruptor activado, un tinte bajo sus libros— y una nota propia: de dónde vienen los libros, en qué orden leerlos, enlaces activos en el panel de información',
     'features.s3.folders.p2': 'Borrar una carpeta o un libro no lo elimina: los libros van a la papelera y recuerdan dónde estaban. Restáuralos y las carpetas vuelven, subcarpetas incluidas; o vacía la papelera para borrar definitivamente.',
 
     'features.s3.info.h':         'Panel de información',
@@ -5453,6 +5457,7 @@ const translations = {
     'features.s3.folders.li5':    '<strong>Navigation au clavier</strong>Sur Mac — les flèches parcourent l’arborescence et déplient ou replient les dossiers',
     'features.s3.folders.li6': '<strong>Fenêtres de gestion</strong>Dossiers et genres ont la leur : un arbre à sélection multiple, des filtres, la suppression au clavier ; déposez un dossier sur son homonyme et l’app propose de les fusionner',
     'features.s3.folders.li7': '<strong>Tout ce qu’il y a dedans</strong>Une commande montre un dossier et tous ses sous-dossiers en une seule liste — toute votre fantasy d’un coup, pas sous-dossier par sous-dossier',
+    'features.s3.folders.li8': '<strong>Couleur et note</strong>Un dossier prend l’une des sept couleurs — son icône, sa bande dans l’arborescence et, l’option activée, une teinte sous ses livres — et une note à lui : d’où viennent les livres, dans quel ordre les lire, des liens actifs dans le panneau d’informations',
     'features.s3.folders.p2': 'Supprimer un dossier ou un livre n’efface rien — les livres vont à la corbeille et se souviennent d’où ils viennent. Restaurez-les et les dossiers reviennent, sous-dossiers compris ; ou videz la corbeille pour supprimer pour de bon.',
 
     'features.s3.info.h':         'Panneau d’information',
@@ -6608,6 +6613,7 @@ const translations = {
     'features.s3.folders.li5':    '<strong>Tastaturnavigation</strong>Auf Mac — Pfeiltasten bewegen durch den Baum und klappen Ordner auf oder zu',
     'features.s3.folders.li6': '<strong>Verwaltungsfenster</strong>Ordner und Genres bekommen je eines: ein Baum mit Mehrfachauswahl, Filter, Löschen per Tastatur; zieh einen Ordner auf einen gleichnamigen, und die App bietet an, sie zu verschmelzen',
     'features.s3.folders.li7': '<strong>Alles darin</strong>Ein Befehl zeigt einen Ordner mit allen Unterordnern als eine Liste – die ganze Fantasy auf einmal, nicht Unterordner für Unterordner',
+    'features.s3.folders.li8': '<strong>Farbe und Notiz</strong>Ein Ordner nimmt eine der sieben Farben — sein Symbol, sein Band im Baum und, wenn eingeschaltet, eine Tönung unter seinen Büchern — und eine eigene Notiz: woher die Bücher stammen, in welcher Reihenfolge man sie liest, Links, die in der Infoleiste aktiv bleiben',
     'features.s3.folders.p2': 'Das Löschen eines Ordners oder Buchs löscht nichts – Bücher wandern in den Papierkorb und merken sich ihren Ort. Stelle sie wieder her, und die Ordner kommen zurück, Unterordner eingeschlossen; oder leere den Papierkorb, um endgültig zu löschen.',
 
     'features.s3.info.h':         'Info-Panel',
