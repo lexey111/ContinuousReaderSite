@@ -329,9 +329,9 @@ const translations = {
 
     'index.s6.eyebrow': 'Your library',
     'index.s6.h2':      '<em>Your</em> library',
-    'index.s6.p1':      'The library is a list: covers or rows, folders, tags, search. New, Latest, Pinned, Search, OPDS, Watchers and Downloads each get a tab of their own. And the reader is yours to build: bookmarks, notes, chapters and search are panels you dock to any edge, float or pin.',
+    'index.s6.p1':      'The library is a list: covers or rows, folders, tags, search. Authors, Journal, Statistics, Notes, New, Latest, Pinned, Search, OPDS, Watchers and Downloads each get a tab of their own. And the reader is yours to build: bookmarks, notes, chapters and search are panels you dock to any edge, float or pin.',
     'index.s6.p2':      'Three ways to look at it: compact rows when you know what you want, a wall of covers for browsing, or a sortable table when you want to see everything at once.',
-    'index.s6.p3': 'Track your reading time book by book: every sitting goes into the Reading Journal, the book card shows it as a timeline, and the Statistics tab draws it by book, author and genre. Export it all as HTML, Markdown or CSV.',
+    'index.s6.p3': 'Track your reading time book by book: every sitting goes into the Reading Journal, the book card shows it as a timeline, and the Statistics tab charts it by book, author and genre. Export it all as HTML, Markdown or CSV.',
     'index.s6.p3b':     'Bookmarks come in seven colors, with notes and highlighted text. Each book gets its own rich-text notes. Everything is searchable, and everything can be exported.',
     'index.s6.p4':      'Every book is stored on disk as plain HTML, in folders named so you can actually read them. No proprietary container, no DRM, nothing locked to a cloud you can’t walk away from. Copy or zip the whole library folder whenever you like. It all lives in your own iCloud — or, if you’d rather skip sync, point the app at any local folder and move it whenever you want.',
     'index.s6.callout': 'Your library is a folder of files. Read it with <code>cat</code> if you want to.',
@@ -1519,9 +1519,9 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Библиотека',
     'index.s6.h2':      '<em>Ваша</em> библиотека',
-    'index.s6.p1':      'Библиотека — это список: обложки или строки, папки, метки, поиск. У «Нового», «Последних», «Закреплённых», «Поиска», OPDS, «Наблюдателей» и «Загрузок» — по своей вкладке. А читалку вы собираете сами: закладки, заметки, главы и поиск — панели, которые прилипают к любому краю, плавают или закрепляются.',
+    'index.s6.p1':      'Библиотека — это список: обложки или строки, папки, метки, поиск. У «Авторов», «Дневника», «Статистики», «Заметок», «Нового», «Последних», «Закреплённых», «Поиска», OPDS, «Наблюдателей» и «Загрузок» — по своей вкладке. А читалку вы собираете сами: закладки, заметки, главы и поиск — панели, которые прилипают к любому краю, плавают или закрепляются.',
     'index.s6.p2':      'Три способа на это смотреть: компактные строки, когда вы знаете, что ищете; стена обложек, когда хочется полистать; сортируемая таблица, когда нужно увидеть всё сразу.',
-    'index.s6.p3': 'Считайте время чтения по каждой книге: каждый сеанс попадает в дневник чтения, карточка книги показывает его лентой, а вкладка «Статистика» рисует по книгам, авторам и жанрам. Всё выгружается в HTML, Markdown или CSV.',
+    'index.s6.p3': 'Считайте время чтения по каждой книге: каждый сеанс попадает в дневник чтения, карточка книги показывает его лентой, а вкладка «Статистика» рисует графики по книгам, авторам и жанрам. Всё выгружается в HTML, Markdown или CSV.',
     'index.s6.p3b':     'Закладки бывают семи цветов, с заметками и подсветкой текста. У каждой книги — свои заметки с форматированием. Всё ищется, и всё можно экспортировать.',
     'index.s6.p4':      'Каждая книга лежит на диске как обычный HTML, в папках с человекочитаемыми именами. Никакого проприетарного контейнера, никакого DRM, ничего привязанного к облаку, из которого не уйти. Копируйте или архивируйте всю папку библиотеки, когда захотите. Всё хранится в вашем собственном iCloud — или, если синхронизация не нужна, укажите любую локальную папку и переносите её куда угодно.',
     'index.s6.callout': 'Ваша библиотека — это папка с файлами. Прочитайте её хоть через <code>cat</code>, если захочется.',
@@ -2695,9 +2695,9 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Бібліотека',
     'index.s6.h2':      '<em>Ваша</em> бібліотека',
-    'index.s6.p1':      'Бібліотека — це список: обкладинки або рядки, папки, мітки, пошук. У «Нового», «Останніх», «Закріплених», «Пошуку», OPDS, «Спостерігачів» і «Завантажень» — по своїй вкладці. А читалку ви збираєте самі: закладки, нотатки, розділи й пошук — панелі, що прилипають до будь-якого краю, плавають або закріплюються.',
+    'index.s6.p1':      'Бібліотека — це список: обкладинки або рядки, папки, мітки, пошук. У «Авторів», «Щоденника», «Статистики», «Нотаток», «Нового», «Останніх», «Закріплених», «Пошуку», OPDS, «Спостерігачів» і «Завантажень» — по своїй вкладці. А читалку ви збираєте самі: закладки, нотатки, розділи й пошук — панелі, що прилипають до будь-якого краю, плавають або закріплюються.',
     'index.s6.p2':      'Три способи на це дивитися: компактні рядки, коли ви знаєте, що шукаєте; стіна обкладинок, коли хочеться погортати; сортована таблиця, коли треба побачити все одразу.',
-    'index.s6.p3': 'Рахуйте час читання по кожній книжці: кожен сеанс потрапляє до щоденника читання, картка книжки показує його стрічкою, а вкладка «Статистика» малює за книжками, авторами й жанрами. Усе вивантажується в HTML, Markdown або CSV.',
+    'index.s6.p3': 'Рахуйте час читання по кожній книжці: кожен сеанс потрапляє до щоденника читання, картка книжки показує його стрічкою, а вкладка «Статистика» малює графіки за книжками, авторами й жанрами. Усе вивантажується в HTML, Markdown або CSV.',
     'index.s6.p3b':     'Закладки бувають семи кольорів, із нотатками й підсвіткою тексту. У кожної книги — свої нотатки з форматуванням. Усе шукається, і все можна експортувати.',
     'index.s6.p4':      'Кожна книга лежить на диску як звичайний HTML, у папках із людиночитаними іменами. Жодного пропрієтарного контейнера, жодного DRM, нічого привʼязаного до хмари, з якої не вийти. Копіюйте або архівуйте всю папку бібліотеки, коли захочете. Усе зберігається у вашому власному iCloud — або, якщо синхронізація не потрібна, вкажіть будь-яку локальну папку та переносьте її куди завгодно.',
     'index.s6.callout': 'Ваша бібліотека — це папка з файлами. Прочитайте її хоч через <code>cat</code>, якщо захочеться.',
@@ -3869,7 +3869,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Tu biblioteca',
     'index.s6.h2':      '<em>Tu</em> biblioteca',
-    'index.s6.p1':      'La biblioteca es una lista: portadas o filas, carpetas, etiquetas, búsqueda. «Nuevos», «Recientes», «Fijados», «Búsqueda», OPDS, «Vigilantes» y «Descargas» tienen cada uno su propia pestaña. Y el lector lo construyes tú: marcadores, notas, capítulos y búsqueda son paneles que acoplas a cualquier borde, dejas flotando o fijas.',
+    'index.s6.p1':      'La biblioteca es una lista: portadas o filas, carpetas, etiquetas, búsqueda. «Autores», «Diario», «Estadísticas», «Notas», «Nuevos», «Recientes», «Fijados», «Búsqueda», OPDS, «Vigilantes» y «Descargas» tienen cada uno su propia pestaña. Y el lector lo construyes tú: marcadores, notas, capítulos y búsqueda son paneles que acoplas a cualquier borde, dejas flotando o fijas.',
     'index.s6.p2':      'Tres maneras de mirarla: filas compactas cuando sabes lo que buscas, un muro de portadas para curiosear, o una tabla ordenable cuando quieres verlo todo a la vez.',
     'index.s6.p3': 'Siga su tiempo de lectura libro a libro: cada sesión entra en el diario de lectura, la ficha del libro la muestra como línea de tiempo y la pestaña Estadísticas la dibuja por libro, autor y género. Exporte todo en HTML, Markdown o CSV.',
     'index.s6.p3b':     'Los marcadores vienen en siete colores, con notas y texto resaltado. Cada libro tiene sus propias notas con formato. Todo se puede buscar, y todo se puede exportar.',
@@ -5045,7 +5045,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Votre bibliothèque',
     'index.s6.h2':      '<em>Votre</em> bibliothèque',
-    'index.s6.p1':      'La bibliothèque est une liste : couvertures ou lignes, dossiers, étiquettes, recherche. « Nouveaux », « Récents », « Épinglés », « Recherche », OPDS, « Veilleurs » et « Téléchargements » ont chacun leur onglet. Et le lecteur, c’est vous qui le composez : signets, notes, chapitres et recherche sont des panneaux que vous ancrez à n’importe quel bord, laissez flotter ou épinglez.',
+    'index.s6.p1':      'La bibliothèque est une liste : couvertures ou lignes, dossiers, étiquettes, recherche. « Auteurs », « Journal », « Statistiques », « Notes », « Nouveaux », « Récents », « Épinglés », « Recherche », OPDS, « Veilleurs » et « Téléchargements » ont chacun leur onglet. Et le lecteur, c’est vous qui le composez : signets, notes, chapitres et recherche sont des panneaux que vous ancrez à n’importe quel bord, laissez flotter ou épinglez.',
     'index.s6.p2':      'Trois façons de la regarder : des lignes compactes quand vous savez ce que vous cherchez, un mur de couvertures pour flâner, ou un tableau triable quand vous voulez tout voir d’un coup.',
     'index.s6.p3': 'Suivez votre temps de lecture livre par livre : chaque séance entre dans le journal de lecture, la fiche du livre la montre en frise, et l’onglet Statistiques la dessine par livre, auteur et genre. Exportez le tout en HTML, Markdown ou CSV.',
     'index.s6.p3b':     'Les signets existent en sept couleurs, avec notes et texte surligné. Chaque livre dispose de ses propres notes en texte enrichi. Tout se recherche, et tout s’exporte.',
@@ -6220,7 +6220,7 @@ const translations = {
     // ---------- Section 6 — Library ----------
     'index.s6.eyebrow': 'Deine Bibliothek',
     'index.s6.h2':      '<em>Deine</em> Bibliothek',
-    'index.s6.p1':      'Die Bibliothek ist eine Liste: Cover oder Zeilen, Ordner, Etiketten, Suche. „Neu“, „Zuletzt“, „Angeheftet“, „Suche“, OPDS, „Beobachter“ und „Downloads“ haben je einen eigenen Tab. Und den Reader baust du dir selbst: Lesezeichen, Notizen, Kapitel und Suche sind Panels, die du an jede Kante andockst, schweben lässt oder anheftest.',
+    'index.s6.p1':      'Die Bibliothek ist eine Liste: Cover oder Zeilen, Ordner, Etiketten, Suche. „Autoren“, „Tagebuch“, „Statistik“, „Notizen“, „Neu“, „Zuletzt“, „Angeheftet“, „Suche“, OPDS, „Beobachter“ und „Downloads“ haben je einen eigenen Tab. Und den Reader baust du dir selbst: Lesezeichen, Notizen, Kapitel und Suche sind Panels, die du an jede Kante andockst, schweben lässt oder anheftest.',
     'index.s6.p2':      'Drei Arten, sie anzusehen: kompakte Zeilen, wenn du weißt, was du suchst, eine Wand aus Covern zum Stöbern, oder eine sortierbare Tabelle, wenn du alles auf einmal sehen willst.',
     'index.s6.p3': 'Verfolgen Sie Ihre Lesezeit Buch für Buch: Jede Sitzung landet im Lesetagebuch, die Buchkarte zeigt sie als Zeitleiste, und der Statistik-Tab zeichnet sie nach Buch, Autor und Genre. Exportieren Sie alles als HTML, Markdown oder CSV.',
     'index.s6.p3b':     'Lesezeichen gibt es in sieben Farben, mit Notizen und hervorgehobenem Text. Jedes Buch bekommt seine eigenen formatierten Notizen. Alles ist durchsuchbar, und alles lässt sich exportieren.',
