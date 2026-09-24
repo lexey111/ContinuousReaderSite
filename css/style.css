@@ -3271,7 +3271,7 @@ code {
 
 /* A thank-you plate under a release's list (#874: a reader's letters). */
 .release-thanks {
-  margin: 18px 0 0;
+  margin: 8px 0 18px;
   padding: 14px 18px;
   border-left: 3px solid var(--accent);
   background: var(--bg-deeper);
