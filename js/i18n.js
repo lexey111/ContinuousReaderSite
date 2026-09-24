@@ -463,10 +463,12 @@ const translations = {
     'features.s1.fullscreen.h': 'Full screen <em>(iOS)</em>',
     'features.s1.fullscreen.p1': 'On iPhone the page is always full screen: text flows under the Dynamic Island in scroll mode, and each page is a clean rectangle in paged mode. The bar with the clock, the progress and the battery is a setting, on by default. On iPad, tap the centre of the page to enter or leave full screen.',
     'features.s1.fullscreen.settings': 'Two <strong>active corners</strong>: the bottom-left opens the quick settings — theme, font, size, the page sheet — and the bottom-right opens navigation: bookmarks, chapters, search, pictures and notes as tiles. Neither leaves the page.',
+    'features.s1.fullscreen.comfort': 'In the <strong>Comfort reader</strong> the phone keeps things simpler: one corner, one menu with the navigation and settings tiles together, one settings screen — and the Comfort | Professional switch at its foot.',
     'features.s1.fullscreen.nav': 'Going to a page or a percent shows the text at that place before you jump. The strip along the top edge starts <strong>text selection</strong>: page turning pauses, and a panel offers a bookmark, a translation, a search in the book or a note for what you selected.',
     'features.s1.fullscreen.p2':  'Optional <strong>pixel-art clock</strong> shows the time as dotted numerals on the background of the page — adjustable position and contrast, visible enough to check at a glance, unobtrusive enough to ignore while reading. <em>For anyone who’s ever lost track of time in a book and missed their stop.</em>',
     'features.s1.fullscreen.clock_island':'Or a small <strong>island indicator</strong> floating at the bottom — clock and reading progress over a darker pill background.',
-    'features.s1.fullscreen.clock_bar':'Or a thin <strong>bottom bar</strong> version — clock and progress across the full width of the screen.',
+    'features.s1.fullscreen.clock_bar': 'Or a thin <strong>bottom bar</strong> version — clock and progress across the full width of the screen. The clock comes in the style you pick — a seven-segment one included.',
+    'features.s1.fullscreen.builder': 'The bar is <strong>yours to assemble</strong>: a builder for the island and the bar with a set of readings for every slot — session time, four kinds of clock, four of battery, four of position in the book — and a live preview.',
 
     // Section 2 — Translation & Read Aloud
     'features.s2.label':          'Section two',
@@ -1891,10 +1893,12 @@ const translations = {
     'features.s1.fullscreen.h': 'Полный экран <em>(iOS)</em>',
     'features.s1.fullscreen.p1': 'На iPhone страница всегда занимает весь экран: в режиме прокрутки текст течёт под Dynamic Island, в постраничном каждая страница — чистый прямоугольник. Нижняя полоса с часами, прогрессом и батареей — настройка, включена по умолчанию. На iPad тап в центр страницы включает и выключает полный экран.',
     'features.s1.fullscreen.settings': 'Два <strong>активных угла</strong>: левый нижний открывает быстрые настройки — тему, шрифт, размер, лист страницы, — правый нижний — навигацию: закладки, главы, поиск, картинки и заметки плитками. Ни тот, ни другой не уводит со страницы.',
+    'features.s1.fullscreen.comfort': 'В <strong>режиме Comfort</strong> на телефоне всё проще: один угол, одно меню, где плитки навигации и настроек вместе, один экран настроек — и переключатель Comfort | Professional внизу.',
     'features.s1.fullscreen.nav': 'Переход к странице или проценту сначала показывает текст в том месте. Полоса у верхнего края включает <strong>выделение текста</strong>: листание останавливается, а панель предлагает закладку, перевод, поиск по книге или заметку к выделенному.',
     'features.s1.fullscreen.p2':  'Опциональные <strong>пиксельные часы</strong> показывают время точечными цифрами на фоне страницы — с настраиваемой позицией и контрастом; их видно, чтобы взглянуть мельком, но не настолько, чтобы они мешали чтению. <em>Для всех, кто хоть раз терял счёт времени в книге и проезжал свою остановку.</em>',
     'features.s1.fullscreen.clock_island':'Или маленький <strong>островок</strong> внизу — часы и прогресс чтения на более тёмном фоне-пилюле.',
-    'features.s1.fullscreen.clock_bar':'Или тонкая <strong>нижняя полоса</strong> — часы и прогресс на всю ширину экрана.',
+    'features.s1.fullscreen.clock_bar': 'Или тонкая <strong>нижняя полоса</strong> — часы и прогресс на всю ширину экрана. Часы — в том стиле, какой выберете, семисегментные в том числе.',
+    'features.s1.fullscreen.builder': 'Полосу <strong>собираете вы сами</strong>: конструктор для островка и полосы с набором показаний для каждого места — время сеанса, четыре вида часов, четыре вида заряда, четыре вида положения в книге — и живой предпросмотр.',
 
     // Section 2 — Translation & Read Aloud
     'features.s2.label':          'Раздел второй',
@@ -3045,10 +3049,12 @@ const translations = {
     'features.s1.fullscreen.h': 'Повний екран <em>(iOS)</em>',
     'features.s1.fullscreen.p1': 'На iPhone сторінка завжди займає весь екран: у режимі прокручування текст тече під Dynamic Island, у посторінковому кожна сторінка — чистий прямокутник. Нижня смуга з годинником, прогресом і батареєю — налаштування, увімкнена за замовчуванням. На iPad дотик у центр сторінки вмикає й вимикає повний екран.',
     'features.s1.fullscreen.settings': 'Два <strong>активні кути</strong>: лівий нижній відкриває швидкі налаштування — тему, шрифт, розмір, аркуш сторінки, — правий нижній — навігацію: закладки, розділи, пошук, зображення й нотатки плитками. Жоден не відводить зі сторінки.',
+    'features.s1.fullscreen.comfort': 'У <strong>режимі Comfort</strong> на телефоні все простіше: один кут, одне меню, де плитки навігації й налаштувань разом, один екран налаштувань — і перемикач Comfort | Professional унизу.',
     'features.s1.fullscreen.nav': 'Перехід до сторінки чи відсотка спершу показує текст у тому місці. Смуга біля верхнього краю вмикає <strong>виділення тексту</strong>: перегортання зупиняється, а панель пропонує закладку, переклад, пошук по книзі або нотатку до виділеного.',
     'features.s1.fullscreen.p2':  'Опціональний <strong>піксельний годинник</strong> показує час крапковими цифрами на тлі сторінки — регульована позиція й контраст, достатньо помітні, щоб глянути мимохідь, і достатньо непомітні, щоб ігнорувати під час читання. <em>Для тих, хто колись втрачав лік часу за книгою і пропускав свою зупинку.</em>',
     'features.s1.fullscreen.clock_island':'Або маленький <strong>острівець</strong> унизу — годинник і прогрес читання на темнішому тлі-пігулці.',
-    'features.s1.fullscreen.clock_bar':'Або тонка <strong>нижня смуга</strong> — годинник і прогрес на всю ширину екрана.',
+    'features.s1.fullscreen.clock_bar': 'Або тонка <strong>нижня смуга</strong> — годинник і прогрес на всю ширину екрана. Годинник — у тому стилі, який оберете, семисегментний зокрема.',
+    'features.s1.fullscreen.builder': 'Смугу <strong>збираєте ви самі</strong>: конструктор для острівця і смуги з набором показань для кожного місця — час сеансу, чотири види годинника, чотири види заряду, чотири види положення в книжці — і живий передперегляд.',
 
     // Section 2 — Translation & Read Aloud
     'features.s2.label':          'Розділ другий',
@@ -4197,10 +4203,12 @@ const translations = {
     'features.s1.fullscreen.h': 'Pantalla completa <em>(iOS)</em>',
     'features.s1.fullscreen.p1': 'En el iPhone la página siempre ocupa toda la pantalla: en modo desplazamiento el texto fluye bajo la Dynamic Island y en modo paginado cada página es un rectángulo limpio. La barra con reloj, progreso y batería es un ajuste, activado por defecto. En el iPad, un toque en el centro de la página entra y sale de la pantalla completa.',
     'features.s1.fullscreen.settings': 'Dos <strong>esquinas activas</strong>: la inferior izquierda abre los ajustes rápidos —tema, tipografía, tamaño, la hoja— y la inferior derecha la navegación: marcadores, capítulos, búsqueda, imágenes y notas en mosaico. Ninguna te saca de la página.',
+    'features.s1.fullscreen.comfort': 'En el <strong>lector Comfort</strong> el teléfono lo simplifica: una esquina, un menú con las baldosas de navegación y ajustes juntas, una pantalla de ajustes, y el interruptor Comfort | Professional al pie.',
     'features.s1.fullscreen.nav': 'Ir a una página o un porcentaje muestra primero el texto de ese lugar. La franja del borde superior activa la <strong>selección de texto</strong>: el paso de página se detiene y un panel ofrece marcador, traducción, búsqueda en el libro o nota sobre lo seleccionado.',
     'features.s1.fullscreen.p2':  'Un <strong>reloj de píxel art</strong> opcional muestra la hora con dígitos punteados sobre el fondo de la página: posición y contraste ajustables, lo bastante visible para echar un vistazo y lo bastante discreto para ignorarlo mientras lees. <em>Para quien alguna vez se ha perdido en un libro y se ha pasado de parada.</em>',
     'features.s1.fullscreen.clock_island':'O un pequeño <strong>indicador en isla</strong> flotando abajo — reloj y progreso de lectura sobre un fondo más oscuro en forma de pastilla.',
-    'features.s1.fullscreen.clock_bar':'O una fina <strong>barra inferior</strong> — reloj y progreso a lo ancho de toda la pantalla.',
+    'features.s1.fullscreen.clock_bar': 'O una fina <strong>barra inferior</strong> — reloj y progreso a lo ancho de toda la pantalla. El reloj, en el estilo que elija, incluido uno de siete segmentos.',
+    'features.s1.fullscreen.builder': 'La barra <strong>la monta usted</strong>: un constructor para la isla y la barra con un conjunto de lecturas para cada hueco —tiempo de sesión, cuatro tipos de reloj, cuatro de batería, cuatro de posición en el libro— y una vista previa en vivo.',
 
     // Section 2 — Translation & Read Aloud
     'features.s2.label':          'Sección dos',
@@ -5351,10 +5359,12 @@ const translations = {
     'features.s1.fullscreen.h': 'Plein écran <em>(iOS)</em>',
     'features.s1.fullscreen.p1': 'Sur iPhone, la page occupe toujours tout l’écran : en défilement le texte passe sous la Dynamic Island, en mode paginé chaque page est un rectangle net. La barre avec l’horloge, la progression et la batterie est un réglage, activé par défaut. Sur iPad, touchez le centre de la page pour entrer ou sortir du plein écran.',
     'features.s1.fullscreen.settings': 'Deux <strong>coins actifs</strong> : en bas à gauche les réglages rapides — thème, police, taille, feuille — en bas à droite la navigation : signets, chapitres, recherche, images et notes en tuiles. Aucun ne quitte la page.',
+    'features.s1.fullscreen.comfort': 'Dans le <strong>lecteur Comfort</strong>, le téléphone fait plus simple : un coin, un menu où les tuiles de navigation et de réglages sont réunies, un écran de réglages — et le commutateur Comfort | Professional en bas.',
     'features.s1.fullscreen.nav': 'Aller à une page ou un pourcentage affiche d’abord le texte de l’endroit. La bande du bord supérieur lance la <strong>sélection de texte</strong> : le tournage de page s’arrête et un panneau propose un signet, une traduction, une recherche dans le livre ou une note sur la sélection.',
     'features.s1.fullscreen.p2':  'En option, une <strong>horloge en pixel art</strong> affiche l’heure en chiffres pointillés sur le fond de la page — position et contraste réglables, assez lisible pour un coup d’œil, assez discrète pour ne pas perturber la lecture. <em>Pour quiconque a déjà perdu la notion du temps dans un livre et raté son arrêt.</em>',
     'features.s1.fullscreen.clock_island':'Ou un petit <strong>indicateur en îlot</strong> flottant en bas — heure et progression de lecture sur un fond plus sombre en forme de pastille.',
-    'features.s1.fullscreen.clock_bar':'Ou une fine <strong>barre inférieure</strong> — heure et progression sur toute la largeur de l’écran.',
+    'features.s1.fullscreen.clock_bar': 'Ou une fine <strong>barre inférieure</strong> — heure et progression sur toute la largeur de l’écran. L’horloge, dans le style de votre choix — sept segments compris.',
+    'features.s1.fullscreen.builder': 'La barre, <strong>c’est vous qui la composez</strong> : un assembleur pour l’îlot et la barre avec un choix de lectures pour chaque emplacement — durée de la séance, quatre horloges, quatre batteries, quatre positions dans le livre — et un aperçu en direct.',
 
     // Section 2 — Translation & Read Aloud
     'features.s2.label':          'Section deux',
@@ -6504,10 +6514,12 @@ const translations = {
     'features.s1.fullscreen.h': 'Vollbild <em>(iOS)</em>',
     'features.s1.fullscreen.p1': 'Auf dem iPhone füllt die Seite immer den ganzen Bildschirm: im Scrollmodus fließt der Text unter der Dynamic Island, im Seitenmodus ist jede Seite ein sauberes Rechteck. Die Leiste mit Uhr, Fortschritt und Batterie ist eine Einstellung, standardmäßig an. Auf dem iPad wechselt ein Tipp in die Seitenmitte in den Vollbild und zurück.',
     'features.s1.fullscreen.settings': 'Zwei <strong>aktive Ecken</strong>: unten links die Schnelleinstellungen – Thema, Schrift, Größe, Blatt – unten rechts die Navigation: Lesezeichen, Kapitel, Suche, Bilder und Notizen als Kacheln. Keine verlässt die Seite.',
+    'features.s1.fullscreen.comfort': 'Im <strong>Comfort-Reader</strong> hält es das Telefon einfacher: eine Ecke, ein Menü mit den Kacheln für Navigation und Einstellungen zusammen, ein Einstellungsbildschirm — und der Schalter Comfort | Professional am Fuß.',
     'features.s1.fullscreen.nav': 'Der Sprung zu einer Seite oder einem Prozentwert zeigt zuerst den Text an der Stelle. Der Streifen an der Oberkante startet die <strong>Textauswahl</strong>: das Umblättern pausiert, und ein Panel bietet Lesezeichen, Übersetzung, Suche im Buch oder Notiz zur Auswahl.',
     'features.s1.fullscreen.p2':  'Optionale <strong>Pixelart-Uhr</strong> zeigt die Uhrzeit als gepunktete Ziffern auf dem Seitenhintergrund — Position und Kontrast einstellbar, sichtbar genug für einen Blick, dezent genug zum Ignorieren beim Lesen. <em>Für alle, die schon einmal die Zeit über einem Buch vergessen und ihre Haltestelle verpasst haben.</em>',
     'features.s1.fullscreen.clock_island':'Oder ein kleiner <strong>Insel-Indikator</strong>, der unten schwebt — Uhrzeit und Lesefortschritt auf einem dunkleren Pillen-Hintergrund.',
-    'features.s1.fullscreen.clock_bar':'Oder eine schmale <strong>untere Leiste</strong> — Uhrzeit und Fortschritt über die volle Bildschirmbreite.',
+    'features.s1.fullscreen.clock_bar': 'Oder eine schmale <strong>untere Leiste</strong> — Uhrzeit und Fortschritt über die volle Bildschirmbreite. Die Uhr im Stil Ihrer Wahl — eine Siebensegmentanzeige eingeschlossen.',
+    'features.s1.fullscreen.builder': 'Die Leiste <strong>stellen Sie selbst zusammen</strong>: ein Baukasten für die Insel und die Leiste mit einer Auswahl an Anzeigen für jeden Platz — Sitzungszeit, vier Uhren, vier Akkuanzeigen, vier Positionen im Buch — und eine Live-Vorschau.',
 
     // Section 2 — Translation & Read Aloud
     'features.s2.label':          'Abschnitt zwei',
