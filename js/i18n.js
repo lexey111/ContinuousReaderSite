@@ -709,7 +709,7 @@ const translations = {
     // Section 6 — Platform details
     'features.s6.label':          'Section six',
     'features.s6.h2':             'Platform <em>details</em>.',
-    'features.s6.intro':          'Mac, iPad, and iPhone each bend the same app to their own habits. For the full side-by-side of what lives where, see the platforms page.',
+    'features.s6.intro':          'One app, three devices — and on each it behaves the way that device is used. The full side-by-side of what lives where is on the platforms page.',
     'features.s6.mac.h':          'Mac',
     'features.s6.mac.p':          'The most feature-rich. <strong>Table view</strong>, keyboard shortcuts, panels that dock to any edge, float or pin, island design, drag-and-drop everywhere.',
     'features.s6.ipad.h':         'iPad',
@@ -2139,7 +2139,7 @@ const translations = {
     // Section 6 — Platform details
     'features.s6.label':          'Раздел шестой',
     'features.s6.h2':             'Особенности <em>платформ</em>.',
-    'features.s6.intro':          'Mac, iPad и iPhone гнут одно и то же приложение под свои привычки. Полное сравнение, что где живёт, — на странице платформ.',
+    'features.s6.intro':          'Одно приложение на трёх устройствах — и на каждом оно ведёт себя так, как на этом устройстве принято. Полное сравнение, что где есть, — на странице платформ.',
     'features.s6.mac.h':          'Mac',
     'features.s6.mac.p':          'Самая богатая. <strong>Табличный вид</strong>, шорткаты, панели у любого края, плавающие или закреплённые, островной дизайн, drag-and-drop везде.',
     'features.s6.ipad.h':         'iPad',
@@ -3296,7 +3296,7 @@ const translations = {
     // Section 6 — Platform details
     'features.s6.label':          'Розділ шостий',
     'features.s6.h2':             'Деталі <em>платформ</em>.',
-    'features.s6.intro':          'Mac, iPad та iPhone гнуть один і той самий застосунок під свої звички. Повне порівняння, що де живе, — на сторінці платформ.',
+    'features.s6.intro':          'Один застосунок на трьох пристроях — і на кожному він поводиться так, як на цьому пристрої заведено. Повне порівняння, що де є, — на сторінці платформ.',
     'features.s6.mac.h':          'Mac',
     'features.s6.mac.p':          'Найбагатша. <strong>Табличний вигляд</strong>, шорткати, панелі біля будь-якого краю, плаваючі або закріплені, острівний дизайн, drag-and-drop усюди.',
     'features.s6.ipad.h':         'iPad',
@@ -4451,7 +4451,7 @@ const translations = {
     // Section 6 — Platform details
     'features.s6.label':          'Sección seis',
     'features.s6.h2':             '<em>Detalles</em> por plataforma.',
-    'features.s6.intro':          'Mac, iPad e iPhone adaptan cada uno la misma app a sus propias costumbres. Para la comparación completa lado a lado de qué vive dónde, consulta la página de plataformas.',
+    'features.s6.intro':          'Una app en tres dispositivos, y en cada uno se comporta como es costumbre en ese dispositivo. La comparación completa de qué hay dónde está en la página de plataformas.',
     'features.s6.mac.h':          'Mac',
     'features.s6.mac.p':          'La más completa. <strong>Vista de tabla</strong>, atajos de teclado, paneles acoplables a cualquier borde, flotantes o fijados, diseño de islas, arrastrar y soltar en todas partes.',
     'features.s6.ipad.h':         'iPad',
@@ -5608,7 +5608,7 @@ const translations = {
     // Section 6 — Platform details
     'features.s6.label':          'Section six',
     'features.s6.h2':             '<em>Détails</em> par plateforme.',
-    'features.s6.intro':          'Mac, iPad et iPhone plient chacun la même app à ses propres habitudes. Pour le comparatif complet de ce qui se trouve où, voir la page Plateformes.',
+    'features.s6.intro':          'Une app, trois appareils — et sur chacun elle se comporte comme on a l’habitude sur cet appareil. Le comparatif complet de ce qui se trouve où est sur la page Plateformes.',
     'features.s6.mac.h':          'Mac',
     'features.s6.mac.p':          'La plus riche. <strong>Vue tableau</strong>, raccourcis clavier, panneaux ancrés à n’importe quel bord, flottants ou épinglés, design en îlots, glisser-déposer partout.',
     'features.s6.ipad.h':         'iPad',
@@ -6764,7 +6764,7 @@ const translations = {
     // Section 6 — Platform details
     'features.s6.label':          'Abschnitt sechs',
     'features.s6.h2':             'Plattform-<em>Details</em>.',
-    'features.s6.intro':          'Mac, iPad und iPhone passen dieselbe App jeweils an ihre eigenen Gewohnheiten an. Für den vollständigen Vergleich, was wo lebt, siehe die Plattform-Seite.',
+    'features.s6.intro':          'Eine App, drei Geräte — und auf jedem verhält sie sich so, wie man es auf diesem Gerät gewohnt ist. Der vollständige Vergleich, was wo ist, steht auf der Plattform-Seite.',
     'features.s6.mac.h':          'Mac',
     'features.s6.mac.p':          'Die umfangreichste. <strong>Tabellenansicht</strong>, Tastenkürzel, Panels an jeder Kante, schwebend oder angeheftet, Insel-Design, Drag-and-drop überall.',
     'features.s6.ipad.h':         'iPad',
