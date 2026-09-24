@@ -571,9 +571,9 @@ const translations = {
     'features.s3.bulk.p1':        'Select multiple books and apply operations to all of them at once: color tag, genre assignment, author / series bulk edit, move to folder, delete.',
     'features.s3.bulk.p2':        'Available in all view modes on all platforms. Swipe actions and the Read button are disabled during selection mode to prevent accidents.',
 
-    'features.s3.preview.h':      'Quick preview',
-    'features.s3.preview.p1': 'Press <code>Space</code> in any view to see 2–3 paragraphs from your current reading position in a sheet, with async loading. Skips title-page content. Dismiss with Space or <code>Esc</code>.',
-    'features.s3.preview.p2':     'Useful when scrolling through the library and wondering <em>"where was I in this one"</em> without opening the book.',
+    'features.s3.preview.h': 'Quick preview — and quick navigation',
+    'features.s3.preview.p1': 'Press <code>Space</code> on any book: a card with its progress and the time of the last sitting, and three tabs — Info with the cover, the numbers and the annotation; Chapters; Bookmarks. A click on a chapter or a bookmark opens the book right there. Dismiss with <code>Space</code> or <code>Esc</code>.',
+    'features.s3.preview.p2': 'Useful when scrolling through the library and wondering <em>“where was I in this one”</em> — or where to jump to — without opening the book first.',
 
     'features.s3.bookcard.h':     'Unified Book Card',
     'features.s3.bookcard.p1':    'A tab-based modal that consolidates every piece of data about a book.',
@@ -2002,9 +2002,9 @@ const translations = {
     'features.s3.bulk.p1':        'Выделите несколько книг и применяйте операции сразу ко всем: цветовая метка, назначение жанров, массовое редактирование автора / серии, перемещение в папку, удаление.',
     'features.s3.bulk.p2':        'Доступно во всех режимах отображения на всех платформах. Свайпы и кнопка «Читать» отключаются в режиме выделения, чтобы избежать случайных действий.',
 
-    'features.s3.preview.h':      'Быстрый просмотр',
-    'features.s3.preview.p1': 'Нажмите <code>Space</code> в любом режиме, чтобы увидеть 2–3 абзаца с вашей текущей позиции чтения в панели с асинхронной загрузкой. Титульное содержимое пропускается. Закрытие — Space или <code>Esc</code>.',
-    'features.s3.preview.p2':     'Полезно, когда листаете библиотеку и думаете <em>«где я остановился вот тут?»</em>, не открывая книгу.',
+    'features.s3.preview.h': 'Быстрый просмотр — и быстрая навигация',
+    'features.s3.preview.p1': 'Нажмите <code>Space</code> на любой книге: карточка с её прогрессом и временем последнего сеанса и три вкладки — Info с обложкой, цифрами и аннотацией; Главы; Закладки. Клик по главе или закладке открывает книгу прямо там. Закрытие — <code>Space</code> или <code>Esc</code>.',
+    'features.s3.preview.p2': 'Полезно, когда листаете библиотеку и думаете <em>«где я остановился вот тут?»</em> — или куда перейти, — не открывая книгу.',
 
     'features.s3.bookcard.h':     'Единая Карточка книги',
     'features.s3.bookcard.p1':    'Окно с вкладками, в котором собраны все данные о книге.',
@@ -3159,9 +3159,9 @@ const translations = {
     'features.s3.bulk.p1':        'Виберіть кілька книг і застосуйте операції до всіх одразу: кольорова мітка, призначення жанру, масове редагування автора / серії, переміщення в теку, видалення.',
     'features.s3.bulk.p2':        'Доступно в усіх режимах перегляду на всіх платформах. Свайп-дії та кнопка «Читати» вимкнені в режимі вибору, щоб уникнути помилкових натискань.',
 
-    'features.s3.preview.h':      'Швидкий перегляд',
-    'features.s3.preview.p1': 'Натисніть <code>Space</code> у будь-якому режимі, щоб побачити 2–3 абзаци з вашої поточної позиції читання на панелі, з асинхронним завантаженням. Вміст титульної сторінки пропускається. Закривайте через Space або <code>Esc</code>.',
-    'features.s3.preview.p2':     'Зручно, коли гортаєш бібліотеку й думаєш <em>«а на чому я тут зупинився»</em> — не відкриваючи саму книгу.',
+    'features.s3.preview.h': 'Швидкий перегляд — і швидка навігація',
+    'features.s3.preview.p1': 'Натисніть <code>Space</code> на будь-якій книжці: картка з її прогресом і часом останнього сеансу та три вкладки — Info з обкладинкою, цифрами й анотацією; Розділи; Закладки. Клік по розділу чи закладці відкриває книжку просто там. Закриття — <code>Space</code> або <code>Esc</code>.',
+    'features.s3.preview.p2': 'Корисно, коли гортаєте бібліотеку й думаєте <em>«де я зупинився отут?»</em> — або куди перейти, — не відкриваючи книжку.',
 
     'features.s3.bookcard.h':     'Єдина Картка книги',
     'features.s3.bookcard.p1':    'Вікно з вкладками, що зводить усі дані про книгу.',
@@ -4314,9 +4314,9 @@ const translations = {
     'features.s3.bulk.p1':        'Selecciona varios libros y aplícales operaciones a todos a la vez: etiqueta de color, asignación de género, edición masiva de autor o serie, mover a carpeta o eliminar.',
     'features.s3.bulk.p2':        'Disponible en todos los modos de visualización en todas las plataformas. Las acciones por deslizamiento y el botón Leer se desactivan durante el modo de selección para evitar accidentes.',
 
-    'features.s3.preview.h':      'Vista previa rápida',
-    'features.s3.preview.p1': 'Pulsa <code>Space</code> en cualquier vista para ver 2 o 3 párrafos desde tu posición actual de lectura en una hoja, con carga asíncrona. Omite el contenido de las páginas de título. Descártala con Space o <code>Esc</code>.',
-    'features.s3.preview.p2':     'Útil cuando recorres la biblioteca y te preguntas <em>«¿por dónde iba en este?»</em> sin necesidad de abrir el libro.',
+    'features.s3.preview.h': 'Vista rápida, y navegación rápida',
+    'features.s3.preview.p1': 'Pulse <code>Space</code> sobre cualquier libro: una ficha con su progreso y la hora de la última sesión, y tres pestañas: Info con la portada, los números y la anotación; Capítulos; Marcadores. Un clic en un capítulo o un marcador abre el libro justo ahí. Se cierra con <code>Space</code> o <code>Esc</code>.',
+    'features.s3.preview.p2': 'Útil cuando recorre la biblioteca y se pregunta <em>«¿por dónde iba en este?»</em>, o adónde saltar, sin abrir antes el libro.',
 
     'features.s3.bookcard.h':     'Book Card unificada',
     'features.s3.bookcard.p1':    'Un modal por pestañas que reúne toda la información de un libro.',
@@ -5471,9 +5471,9 @@ const translations = {
     'features.s3.bulk.p1':        'Sélectionnez plusieurs livres et appliquez-leur des opérations d’un seul coup : étiquette de couleur, attribution de genres, édition groupée auteur ou série, déplacement vers un dossier, suppression.',
     'features.s3.bulk.p2':        'Disponible dans tous les modes d’affichage, sur toutes les plateformes. Les actions par balayage et le bouton Lire sont désactivés en mode sélection pour éviter les accidents.',
 
-    'features.s3.preview.h':      'Aperçu rapide',
-    'features.s3.preview.p1': 'Appuyez sur <code>Espace</code> dans n’importe quelle vue pour voir 2 à 3 paragraphes depuis votre position de lecture actuelle dans une feuille, avec chargement asynchrone. Saute la page de titre. Refermez avec Espace ou <code>Esc</code>.',
-    'features.s3.preview.p2':     'Pratique quand on parcourt la bibliothèque en se demandant <em>« où en étais-je dans celui-ci »</em> sans ouvrir le livre.',
+    'features.s3.preview.h': 'Aperçu rapide — et navigation rapide',
+    'features.s3.preview.p1': 'Appuyez sur <code>Space</code> sur n’importe quel livre : une fiche avec sa progression et l’heure de la dernière séance, et trois onglets — Info avec la couverture, les chiffres et l’annotation ; Chapitres ; Signets. Un clic sur un chapitre ou un signet ouvre le livre juste là. On ferme avec <code>Space</code> ou <code>Esc</code>.',
+    'features.s3.preview.p2': 'Utile quand on parcourt la bibliothèque en se demandant <em>« où en étais-je dans celui-ci »</em> — ou où sauter — sans ouvrir le livre d’abord.',
 
     'features.s3.bookcard.h':     'Book Card unifiée',
     'features.s3.bookcard.p1':    'Une modale à onglets qui regroupe toutes les données d’un livre.',
@@ -6627,9 +6627,9 @@ const translations = {
     'features.s3.bulk.p1':        'Wähle mehrere Bücher aus und wende Operationen auf alle auf einmal an: Farbmarkierung, Genrezuweisung, Massenbearbeitung von Autor / Reihe, In Ordner verschieben, Löschen.',
     'features.s3.bulk.p2':        'In allen Ansichten auf allen Plattformen verfügbar. Wischgesten und der Lesen-Button sind im Auswahlmodus deaktiviert, um versehentliche Aktionen zu vermeiden.',
 
-    'features.s3.preview.h':      'Schnelle Vorschau',
-    'features.s3.preview.p1': 'Drücke <code>Space</code> in jeder Ansicht, um 2–3 Absätze ab deiner aktuellen Leseposition in einem Sheet zu sehen — asynchron geladen. Titelseiten-Inhalt wird übersprungen. Schließen mit Space oder <code>Esc</code>.',
-    'features.s3.preview.p2':     'Hilfreich, wenn du durch die Bibliothek scrollst und dich fragst <em>„Wo war ich in diesem hier?“</em>, ohne das Buch zu öffnen.',
+    'features.s3.preview.h': 'Schnellvorschau — und schnelle Navigation',
+    'features.s3.preview.p1': 'Drücken Sie <code>Space</code> auf einem beliebigen Buch: eine Karte mit seinem Fortschritt und der Zeit der letzten Sitzung und drei Tabs — Info mit Cover, Zahlen und Annotation; Kapitel; Lesezeichen. Ein Klick auf ein Kapitel oder ein Lesezeichen öffnet das Buch genau dort. Schließen mit <code>Space</code> oder <code>Esc</code>.',
+    'features.s3.preview.p2': 'Nützlich, wenn man durch die Bibliothek scrollt und sich fragt <em>„wo war ich in diesem hier“</em> — oder wohin springen —, ohne das Buch erst zu öffnen.',
 
     'features.s3.bookcard.h':     'Einheitliche Book Card',
     'features.s3.bookcard.p1':    'Ein tab-basierter modaler Dialog, der alle Daten zu einem Buch zusammenfasst.',
