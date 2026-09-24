@@ -425,7 +425,7 @@ const translations = {
     'features.s1.position.p2':    'When you return to a book, the reader fades in at the <em>exact paragraph</em> you left, not the nearest chapter.',
     'features.s1.position.p3':    'One caveat: settings that change how many pages a book has — font size, line height, paragraph spacing, two-page spread — can nudge the exact spot by a line or two. The reader anchors to the <em>first paragraph visible on screen</em>, so you keep your place even when the page count shifts under it.',
 
-    'features.s1.progress.h': 'Position and progress',
+    'features.s1.progress.h': 'Reading progress',
     'features.s1.progress.p1': 'The navigation panel shows your place the way you like: a full progress line, just the percent, a segmented bar or a dial. The reading line itself can sit on any edge of the page, float on the desk, or separate the pages of a spread. Click or tap it to open the drawer:',
     'features.s1.progress.li1':   '<strong>Tapered slider</strong>A custom track that’s thick for the part you’ve read and hair-thin for what’s ahead, with a smooth S-curve at your current position',
     'features.s1.progress.li3':   '<strong>Entry marker</strong>A dot with a dashed ring showing where you started this session',
@@ -1853,7 +1853,7 @@ const translations = {
     'features.s1.position.p2':    'Закройте книгу на одном устройстве, откройте на другом — приложение восстановит позицию на том самом абзаце, где вы остановились, а не на ближайшей главе.',
     'features.s1.position.p3':    'Одна оговорка: параметры, меняющие число страниц в книге — размер шрифта, высота строки, межабзацный отступ, двухстраничный разворот — могут сместить точную позицию на строку-другую. Читалка привязывается к <em>первому абзацу, видимому на экране</em>, поэтому вы не теряете место, даже когда число страниц меняется.',
 
-    'features.s1.progress.h': 'Позиция и прогресс',
+    'features.s1.progress.h': 'Прогресс чтения',
     'features.s1.progress.p1': 'Панель навигации показывает место так, как вам удобно: полной линией прогресса, одним процентом, сегментной полоской или шкалой. Сама линия чтения может стоять у любого края страницы, плавать над столом или разделять страницы разворота. Клик или тап открывает ящик:',
     'features.s1.progress.li1':   '<strong>Сужающийся слайдер</strong>Особый трек — толстый там, где уже прочитано, и тонкий как волос на том, что впереди, с плавной S-кривой в текущей позиции',
     'features.s1.progress.li3':   '<strong>Точка входа</strong>Точка в пунктирном кольце показывает, где вы начали эту сессию',
@@ -3007,7 +3007,7 @@ const translations = {
     'features.s1.position.p2':    'Коли ви повертаєтеся до книги, читач плавно зʼявляється на <em>точному абзаці</em>, де ви зупинилися, а не на найближчому розділі.',
     'features.s1.position.p3':    'Одне застереження: параметри, що змінюють кількість сторінок у книзі — розмір шрифту, висота рядка, відступ між абзацами, двосторінковий розворот — можуть зсунути точну позицію на рядок-другий. Читач привʼязується до <em>першого абзацу, видимого на екрані</em>, тож ви не втрачаєте місце, навіть коли кількість сторінок змінюється.',
 
-    'features.s1.progress.h': 'Позиція і прогрес',
+    'features.s1.progress.h': 'Прогрес читання',
     'features.s1.progress.p1': 'Панель навігації показує місце так, як вам зручно: повною лінією прогресу, самим відсотком, сегментною смужкою або шкалою. Сама лінія читання може стояти біля будь-якого краю сторінки, плавати над столом або розділяти сторінки розвороту. Клік чи дотик відкриває шухляду:',
     'features.s1.progress.li1':   '<strong>Звужений повзунок</strong>Власна доріжка — товста для прочитаного і тонка, мов волосина, для того, що попереду, з плавним S-вигином у вашій поточній позиції',
     'features.s1.progress.li3':   '<strong>Маркер старту</strong>Крапка з пунктирним кільцем, що показує, звідки ви розпочали цю сесію',
@@ -4159,7 +4159,7 @@ const translations = {
     'features.s1.position.p2':    'Cuando vuelves a un libro, el lector reaparece en el <em>párrafo exacto</em> donde lo dejaste, no en el capítulo más cercano.',
     'features.s1.position.p3':    'Una salvedad: los ajustes que cambian cuántas páginas tiene un libro — tamaño de fuente, interlineado, espaciado entre párrafos, doble página — pueden desplazar el punto exacto una línea o dos. El lector se ancla al <em>primer párrafo visible en pantalla</em>, así que no pierdes tu lugar aunque cambie el número de páginas.',
 
-    'features.s1.progress.h': 'Posición y progreso',
+    'features.s1.progress.h': 'Progreso de lectura',
     'features.s1.progress.p1': 'El panel de navegación muestra tu posición como prefieras: línea de progreso completa, solo el porcentaje, barra segmentada o dial. La propia línea de lectura puede estar en cualquier borde de la página, flotar sobre el escritorio o separar las páginas de una doble página. Un clic o un toque abre el cajón:',
     'features.s1.progress.li1':   '<strong>Control deslizante afinado</strong>Una pista personalizada que es gruesa en la parte ya leída y casi filiforme en lo que queda por delante, con una curva en S suave en tu posición actual',
     'features.s1.progress.li3':   '<strong>Marca de inicio</strong>Un punto con un anillo discontinuo que muestra dónde empezaste esta sesión',
@@ -5313,7 +5313,7 @@ const translations = {
     'features.s1.position.p2':    'Quand vous revenez à un livre, le lecteur réapparaît au <em>paragraphe exact</em> que vous aviez quitté, pas au chapitre le plus proche.',
     'features.s1.position.p3':    'Une réserve : les réglages qui modifient le nombre de pages d’un livre — taille de police, interligne, espacement des paragraphes, double page — peuvent décaler l’endroit exact d’une ligne ou deux. Le lecteur s’ancre au <em>premier paragraphe visible à l’écran</em>, vous gardez donc votre place même quand le nombre de pages change.',
 
-    'features.s1.progress.h': 'Position et progression',
+    'features.s1.progress.h': 'Progression de lecture',
     'features.s1.progress.p1': 'Le panneau de navigation montre votre place comme vous voulez : ligne de progression complète, pourcentage seul, barre segmentée ou cadran. La ligne de lecture elle-même peut se poser sur n’importe quel bord de la page, flotter sur le bureau ou séparer les pages d’une double page. Un clic ou une touche ouvre le tiroir :',
     'features.s1.progress.li1':   '<strong>Glissière effilée</strong>Une piste sur mesure, épaisse pour la portion déjà lue et fine comme un cheveu pour ce qui reste, avec une courbe en S au niveau de votre position actuelle',
     'features.s1.progress.li3':   '<strong>Marqueur d’entrée</strong>Un point cerclé d’un pointillé, indiquant où vous avez commencé cette session',
@@ -6466,7 +6466,7 @@ const translations = {
     'features.s1.position.p2':    'Wenn du zu einem Buch zurückkehrst, blendet der Reader exakt am <em>Absatz</em> ein, an dem du aufgehört hast — nicht am nächstgelegenen Kapitel.',
     'features.s1.position.p3':    'Eine Einschränkung: Einstellungen, die ändern, wie viele Seiten ein Buch hat — Schriftgröße, Zeilenhöhe, Absatzabstand, Doppelseite — können die genaue Stelle um eine Zeile oder zwei verschieben. Der Reader verankert sich am <em>ersten auf dem Bildschirm sichtbaren Absatz</em>, sodass du deine Stelle behältst, auch wenn sich die Seitenzahl darunter ändert.',
 
-    'features.s1.progress.h': 'Position und Fortschritt',
+    'features.s1.progress.h': 'Lesefortschritt',
     'features.s1.progress.p1': 'Das Navigationspanel zeigt deine Stelle, wie du willst: volle Fortschrittslinie, nur Prozent, segmentierter Balken oder Skala. Die Leselinie selbst kann an jedem Seitenrand stehen, über dem Schreibtisch schweben oder die Seiten einer Doppelseite trennen. Klick oder Tipp öffnet die Schublade:',
     'features.s1.progress.li1':   '<strong>Sich verjüngender Regler</strong>Eine eigene Spur, die im bereits gelesenen Bereich dick und im Verbleibenden haardünn ist — mit einer sanften S-Kurve an deiner aktuellen Position',
     'features.s1.progress.li3':   '<strong>Einstiegsmarker</strong>Ein Punkt mit gestricheltem Ring — zeigt, wo du diese Sitzung begonnen hast',
