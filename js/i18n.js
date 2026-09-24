@@ -757,7 +757,8 @@ const translations = {
     'platforms.mac.li7': '<strong>Portable library</strong>The whole library is one self-contained folder — copy it anywhere for a backup, or import a Calibre library as it is',
     'platforms.mac.li8': '<strong>Browsers in windows</strong>Authors, series, notes &amp; highlights, the reading journal and statistics open as library tabs or in windows of their own, beside the book',
     'platforms.mac.closing': 'The version to use when you have a keyboard, a chair, and time.',
-    'platforms.mac.shotCap':    'UI: <span class="lang-tag">Українська</span>',
+    'platforms.mac.shotCap':    'Professional reader · UI: <span class="lang-tag">English</span>',
+    'platforms.mac.shotCap2':   'Library · UI: <span class="lang-tag">English</span>',
 
     'platforms.ipad.eyebrow':   'iPadOS',
     'platforms.ipad.title':     'The reading <em>surface</em>.',
@@ -2190,7 +2191,8 @@ const translations = {
     'platforms.mac.li7': '<strong>Переносимая библиотека</strong>Вся библиотека — одна самодостаточная папка: скопируйте её куда угодно для бэкапа или импортируйте библиотеку Calibre как есть',
     'platforms.mac.li8': '<strong>Браузеры в окнах</strong>Авторы, серии, заметки и закладки, дневник чтения и статистика открываются вкладками библиотеки или отдельными окнами рядом с книгой',
     'platforms.mac.closing': 'Версия для случая, когда у вас есть клавиатура, кресло и время.',
-    'platforms.mac.shotCap':    'UI: <span class="lang-tag">Українська</span>',
+    'platforms.mac.shotCap':    'Читалка Professional · UI: <span class="lang-tag">English</span>',
+    'platforms.mac.shotCap2':   'Библиотека · UI: <span class="lang-tag">English</span>',
 
     'platforms.ipad.eyebrow':   'iPadOS',
     'platforms.ipad.title':     'Поверхность для <em>чтения</em>.',
@@ -3353,7 +3355,8 @@ const translations = {
     'platforms.mac.li7': '<strong>Переносна бібліотека</strong>Уся бібліотека — одна самодостатня тека: скопіюйте її куди завгодно для бекапу або імпортуйте бібліотеку Calibre як є',
     'platforms.mac.li8': '<strong>Браузери у вікнах</strong>Автори, серії, нотатки й закладки, щоденник читання і статистика відкриваються вкладками бібліотеки або окремими вікнами поруч із книжкою',
     'platforms.mac.closing': 'Версія для випадку, коли у вас є клавіатура, крісло і час.',
-    'platforms.mac.shotCap':    'UI: <span class="lang-tag">Українська</span>',
+    'platforms.mac.shotCap':    'Читалка Professional · UI: <span class="lang-tag">English</span>',
+    'platforms.mac.shotCap2':   'Бібліотека · UI: <span class="lang-tag">English</span>',
 
     'platforms.ipad.eyebrow':   'iPadOS',
     'platforms.ipad.title':     'Поверхня для <em>читання</em>.',
@@ -4514,7 +4517,8 @@ const translations = {
     'platforms.mac.li7': '<strong>Biblioteca portátil</strong>Toda la biblioteca es una sola carpeta autónoma: cópiela a cualquier sitio como copia de seguridad, o importe una biblioteca de Calibre tal cual',
     'platforms.mac.li8': '<strong>Exploradores en ventanas</strong>Autores, series, notas y marcadores, el diario de lectura y las estadísticas se abren como pestañas de la biblioteca o en ventanas propias, junto al libro',
     'platforms.mac.closing': 'La versión para cuando tiene un teclado, una silla y tiempo.',
-    'platforms.mac.shotCap':    'UI: <span class="lang-tag">Українська</span>',
+    'platforms.mac.shotCap':    'Lector Professional · UI: <span class="lang-tag">English</span>',
+    'platforms.mac.shotCap2':   'Biblioteca · UI: <span class="lang-tag">English</span>',
 
     'platforms.ipad.eyebrow':   'iPadOS',
     'platforms.ipad.title':     'La <em>superficie</em> de lectura.',
@@ -5677,7 +5681,8 @@ const translations = {
     'platforms.mac.li7': '<strong>Bibliothèque portable</strong>Toute la bibliothèque tient dans un seul dossier autonome : copiez-le où vous voulez pour une sauvegarde, ou importez une bibliothèque Calibre telle quelle',
     'platforms.mac.li8': '<strong>Des navigateurs en fenêtres</strong>Auteurs, séries, notes et signets, journal de lecture et statistiques s’ouvrent en onglets de la bibliothèque ou dans leurs propres fenêtres, à côté du livre',
     'platforms.mac.closing': 'La version à utiliser quand on a un clavier, une chaise et du temps.',
-    'platforms.mac.shotCap':    'UI: <span class="lang-tag">Українська</span>',
+    'platforms.mac.shotCap':    'Lecteur Professional · UI: <span class="lang-tag">English</span>',
+    'platforms.mac.shotCap2':   'Bibliothèque · UI: <span class="lang-tag">English</span>',
 
     'platforms.ipad.eyebrow':   'iPadOS',
     'platforms.ipad.title':     'La <em>surface</em> de lecture.',
@@ -6839,7 +6844,8 @@ const translations = {
     'platforms.mac.li7': '<strong>Portable Bibliothek</strong>Die ganze Bibliothek ist ein einziger in sich geschlossener Ordner — kopieren Sie ihn irgendwohin als Backup, oder importieren Sie eine Calibre-Bibliothek, wie sie ist',
     'platforms.mac.li8': '<strong>Browser in Fenstern</strong>Autoren, Reihen, Notizen und Lesezeichen, Lesetagebuch und Statistik öffnen sich als Bibliotheks-Tabs oder in eigenen Fenstern neben dem Buch',
     'platforms.mac.closing': 'Die Version für den Fall, dass Sie eine Tastatur, einen Stuhl und Zeit haben.',
-    'platforms.mac.shotCap':    'UI: <span class="lang-tag">Українська</span>',
+    'platforms.mac.shotCap':    'Professional-Reader · UI: <span class="lang-tag">English</span>',
+    'platforms.mac.shotCap2':   'Bibliothek · UI: <span class="lang-tag">English</span>',
 
     'platforms.ipad.eyebrow':   'iPadOS',
     'platforms.ipad.title':     'Die Lese-<em>Oberfläche</em>.',

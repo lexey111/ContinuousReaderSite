@@ -1868,6 +1868,10 @@ code {
 .platform-block.reverse .platform-text { order: 2; }
 .platform-block.reverse .platform-visual { order: 1; }
 
+/* Two Mac shots stacked in one visual column: compact frames, no fixed ratio. */
+.platform-visual.stacked { display: flex; flex-direction: column; gap: 20px; }
+.platform-visual.stacked .screenshot-frame { aspect-ratio: auto; padding: 24px 20px 16px; margin: 0; }
+
 .platform-eyebrow {
   font-family: var(--sans);
   font-size: 11px;
