@@ -907,7 +907,7 @@ const translations = {
     'download.jr.button':     'Download on the App Store',
     'download.jr.note':       'Scan with your iPhone or iPad',
 
-    'download.room.caption': 'One room, three ways to read in it — and the dot beside each price says which is which.',
+    'download.room.caption': 'One room, three ways to read.',
 
     'download.included.eyebrow':  'In the box',
     'download.included.title':    'What’s <em>included</em>.',
@@ -1633,7 +1633,7 @@ const translations = {
     'download.jr.button':     'Скачать в App Store',
     'download.jr.note':       'Сканируйте с iPhone или iPad',
 
-    'download.room.caption': 'Одна комната, три способа читать в ней — а точка рядом с ценой говорит, что есть что.',
+    'download.room.caption': 'Одна комната, три способа читать.',
 
     'download.included.eyebrow':  'В комплекте',
     'download.included.title':    '<em>Что входит</em>.',
@@ -2798,7 +2798,7 @@ const translations = {
     'download.jr.button':     'Завантажити з App Store',
     'download.jr.note':       'Скануйте з iPhone або iPad',
 
-    'download.room.caption': 'Одна кімната, три способи читати в ній — а крапка поряд із ціною каже, що є що.',
+    'download.room.caption': 'Одна кімната, три способи читати.',
 
     'download.included.eyebrow':  'У комплекті',
     'download.included.title':    '<em>Що входить</em>.',
@@ -3961,7 +3961,7 @@ const translations = {
     'download.jr.button':     'Descargar en App Store',
     'download.jr.note':       'Escanéalo con tu iPhone o iPad',
 
-    'download.room.caption': 'Una habitación, tres formas de leer en ella; el punto junto a cada precio dice cuál es cuál.',
+    'download.room.caption': 'Una habitación, tres formas de leer.',
 
     'download.included.eyebrow':  'En la caja',
     'download.included.title':    '<em>Qué incluye</em>.',
@@ -5126,7 +5126,7 @@ const translations = {
     'download.jr.button':     'Télécharger sur l’App Store',
     'download.jr.note':       'Scannez avec votre iPhone ou iPad',
 
-    'download.room.caption': 'Une pièce, trois façons d’y lire — et le point à côté de chaque prix dit laquelle est laquelle.',
+    'download.room.caption': 'Une pièce, trois façons de lire.',
 
     'download.included.eyebrow':  'Inclus',
     'download.included.title':    'Ce qui est <em>inclus</em>.',
@@ -6290,7 +6290,7 @@ const translations = {
     'download.jr.button':     'Aus dem App Store laden',
     'download.jr.note':       'Mit iPhone oder iPad scannen',
 
-    'download.room.caption': 'Ein Zimmer, drei Arten darin zu lesen — und der Punkt neben jedem Preis sagt, welche welche ist.',
+    'download.room.caption': 'Ein Zimmer, drei Arten zu lesen.',
 
     'download.included.eyebrow':  'Im Paket',
     'download.included.title':    'Was <em>enthalten</em> ist.',
