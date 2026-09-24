@@ -715,7 +715,7 @@ const translations = {
     'features.s6.ipad.h':         'iPad',
     'features.s6.ipad.p': '<strong>The best of both.</strong> The Mac’s panels, docks and keys with a keyboard attached — and the iPhone’s full-screen reading with its active corners when you put it down and read.',
     'features.s6.iphone.h':       'iPhone',
-    'features.s6.iphone.p': '<strong>Made for one hand.</strong> Full-screen reading with two active corners, tabs and browsers laid out for a phone, a bottom bar you assemble yourself.',
+    'features.s6.iphone.p': '<strong>Made for one hand.</strong> Full-screen reading with active corners, tabs and browsers laid out for a phone, a bottom bar you assemble yourself.',
     'features.s6.outro':          'All three share the same reader, same themes, same typography controls, same translation and Read Aloud.',
     'features.s6.link':           'See the full platforms page',
 
@@ -2145,7 +2145,7 @@ const translations = {
     'features.s6.ipad.h':         'iPad',
     'features.s6.ipad.p': '<strong>Лучшее из двух.</strong> Панели, доки и клавиши мака — с подключённой клавиатурой, и полноэкранное чтение айфона с активными углами — когда откладываете клавиатуру и просто читаете.',
     'features.s6.iphone.h':       'iPhone',
-    'features.s6.iphone.p': '<strong>Для одной руки.</strong> Полноэкранное чтение с двумя активными углами, вкладки и браузеры, переложенные под телефон, нижняя полоса, которую собираете сами.',
+    'features.s6.iphone.p': '<strong>Для одной руки.</strong> Полноэкранное чтение с активными углами, вкладки и браузеры, переложенные под телефон, нижняя полоса, которую собираете сами.',
     'features.s6.outro':          'Все три используют одну и ту же читалку, одни и те же темы, типографику, перевод и Чтение вслух.',
     'features.s6.link':           'Перейти на страницу платформ',
 
@@ -3302,7 +3302,7 @@ const translations = {
     'features.s6.ipad.h':         'iPad',
     'features.s6.ipad.p': '<strong>Найкраще з двох.</strong> Панелі, доки й клавіші мака — з підключеною клавіатурою, і повноекранне читання айфона з активними кутами — коли відкладаєте клавіатуру й просто читаєте.',
     'features.s6.iphone.h':       'iPhone',
-    'features.s6.iphone.p': '<strong>Для однієї руки.</strong> Повноекранне читання з двома активними кутами, вкладки й браузери, перекладені під телефон, нижня смуга, яку збираєте самі.',
+    'features.s6.iphone.p': '<strong>Для однієї руки.</strong> Повноекранне читання з активними кутами, вкладки й браузери, перекладені під телефон, нижня смуга, яку збираєте самі.',
     'features.s6.outro':          'У всіх трьох — один і той самий читач, ті ж теми, той самий контроль типографіки, той самий переклад і Читання вголос.',
     'features.s6.link':           'Перейти до повної сторінки платформ',
 
@@ -4457,7 +4457,7 @@ const translations = {
     'features.s6.ipad.h':         'iPad',
     'features.s6.ipad.p': '<strong>Lo mejor de ambos.</strong> Los paneles, docks y teclas del Mac con un teclado conectado, y la lectura a pantalla completa del iPhone con sus esquinas activas cuando lo apoya y simplemente lee.',
     'features.s6.iphone.h':       'iPhone',
-    'features.s6.iphone.p': '<strong>Para una sola mano.</strong> Lectura a pantalla completa con dos esquinas activas, pestañas y exploradores adaptados a un teléfono, una barra inferior que monta usted mismo.',
+    'features.s6.iphone.p': '<strong>Para una sola mano.</strong> Lectura a pantalla completa con esquinas activas, pestañas y exploradores adaptados a un teléfono, una barra inferior que monta usted mismo.',
     'features.s6.outro':          'Las tres comparten el mismo lector, los mismos temas, los mismos controles tipográficos y la misma Traducción y Lectura en voz alta.',
     'features.s6.link':           'Ver la página completa de plataformas',
 
@@ -5614,7 +5614,7 @@ const translations = {
     'features.s6.ipad.h':         'iPad',
     'features.s6.ipad.p': '<strong>Le meilleur des deux.</strong> Les panneaux, docks et touches du Mac avec un clavier branché — et la lecture plein écran de l’iPhone avec ses coins actifs quand vous le posez et lisez, simplement.',
     'features.s6.iphone.h':       'iPhone',
-    'features.s6.iphone.p': '<strong>Pour une seule main.</strong> La lecture plein écran avec deux coins actifs, des onglets et des navigateurs mis en page pour un téléphone, une barre du bas que vous composez vous-même.',
+    'features.s6.iphone.p': '<strong>Pour une seule main.</strong> La lecture plein écran avec des coins actifs, des onglets et des navigateurs mis en page pour un téléphone, une barre du bas que vous composez vous-même.',
     'features.s6.outro':          'Les trois partagent le même lecteur, les mêmes thèmes, les mêmes contrôles typographiques, la même traduction et la même Lecture à voix haute.',
     'features.s6.link':           'Voir la page Plateformes complète',
 
@@ -6770,7 +6770,7 @@ const translations = {
     'features.s6.ipad.h':         'iPad',
     'features.s6.ipad.p': '<strong>Das Beste aus beiden.</strong> Die Leisten, Docks und Tasten des Mac mit angeschlossener Tastatur — und das Vollbild-Lesen des iPhone mit seinen aktiven Ecken, wenn Sie es ablegen und einfach lesen.',
     'features.s6.iphone.h':       'iPhone',
-    'features.s6.iphone.p': '<strong>Für eine Hand.</strong> Vollbild-Lesen mit zwei aktiven Ecken, Tabs und Browser fürs Telefon gesetzt, eine untere Leiste, die Sie selbst zusammenstellen.',
+    'features.s6.iphone.p': '<strong>Für eine Hand.</strong> Vollbild-Lesen mit aktiven Ecken, Tabs und Browser fürs Telefon gesetzt, eine untere Leiste, die Sie selbst zusammenstellen.',
     'features.s6.outro':          'Alle drei teilen denselben Reader, dieselben Themes, dieselben Typografie-Optionen, dieselbe Übersetzung und dasselbe Vorlesen.',
     'features.s6.link':           'Zur vollständigen Plattform-Seite',
 
