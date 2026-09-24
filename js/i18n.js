@@ -772,7 +772,7 @@ const translations = {
     'platforms.ipad.li8': '<strong>Real settings, real status bar</strong>The full settings form, Reader Appearance on six tabs, and a status bar that carries the active view’s controls',
     'platforms.ipad.li6': '<strong>The library’s tabs</strong>Authors, Journal, Statistics and Notes &amp; Highlights on the tab row; OPDS at full page size',
     'platforms.ipad.li7': '<strong>Full screen when you want it</strong>A tap in the centre hides the chrome; the bar with the clock, progress and battery is yours to assemble',
-    'platforms.ipad.closing': 'Same island design as the Mac, same fonts, same themes. The library looks like it belongs to the same app — because it does.',
+    'platforms.ipad.closing': 'The same design as on the Mac, the same fonts, the same themes: on the iPad this is not a separate edition but the same app on another screen.',
     'platforms.ipad.shotCap':   'UI: <span class="lang-tag">English</span>',
 
     'platforms.iph.eyebrow':    'iOS',
@@ -2206,7 +2206,7 @@ const translations = {
     'platforms.ipad.li8': '<strong>Настоящие настройки, настоящая строка состояния</strong>Полная форма настроек, Reader Appearance на шести вкладках и строка состояния с элементами активного вида',
     'platforms.ipad.li6': '<strong>Вкладки библиотеки</strong>Авторы, Дневник, Статистика и Заметки в ряду вкладок; OPDS на весь экран',
     'platforms.ipad.li7': '<strong>Полный экран, когда хочется</strong>Тап по центру прячет всё, кроме текста; полосу с часами, прогрессом и зарядом собираете сами',
-    'platforms.ipad.closing': 'То же оформление, что на Mac, те же шрифты, те же темы. Библиотека выглядит частью того же приложения — потому что так и есть.',
+    'platforms.ipad.closing': 'То же оформление, что на Mac, те же шрифты, те же темы: на iPad это не отдельная версия, а то же приложение на другом экране.',
     'platforms.ipad.shotCap':   'UI: <span class="lang-tag">English</span>',
 
     'platforms.iph.eyebrow':    'iOS',
@@ -3370,7 +3370,7 @@ const translations = {
     'platforms.ipad.li8': '<strong>Справжні налаштування, справжній рядок стану</strong>Повна форма налаштувань, Reader Appearance на шести вкладках і рядок стану з елементами активного вигляду',
     'platforms.ipad.li6': '<strong>Вкладки бібліотеки</strong>Автори, Щоденник, Статистика й Нотатки в ряду вкладок; OPDS на весь екран',
     'platforms.ipad.li7': '<strong>Повний екран, коли хочеться</strong>Тап по центру ховає все, крім тексту; смугу з годинником, прогресом і зарядом збираєте самі',
-    'platforms.ipad.closing': 'Те саме оформлення, що на Mac, ті самі шрифти, ті самі теми. Бібліотека виглядає частиною того самого застосунку — бо так і є.',
+    'platforms.ipad.closing': 'Те саме оформлення, що на Mac, ті самі шрифти, ті самі теми: на iPad це не окрема версія, а той самий застосунок на іншому екрані.',
     'platforms.ipad.shotCap':   'UI: <span class="lang-tag">English</span>',
 
     'platforms.iph.eyebrow':    'iOS',
@@ -4532,7 +4532,7 @@ const translations = {
     'platforms.ipad.li8': '<strong>Ajustes de verdad, barra de estado de verdad</strong>El formulario completo de ajustes, Reader Appearance en seis pestañas y una barra de estado con los controles de la vista activa',
     'platforms.ipad.li6': '<strong>Las pestañas de la biblioteca</strong>Autores, Diario, Estadísticas y Notas y marcadores en la fila de pestañas; OPDS a pantalla completa',
     'platforms.ipad.li7': '<strong>Pantalla completa cuando la quiera</strong>Un toque en el centro oculta la interfaz; la barra con el reloj, el progreso y la batería la monta usted',
-    'platforms.ipad.closing': 'El mismo diseño de islas que el Mac, las mismas fuentes, los mismos temas. La biblioteca parece de la misma app, porque lo es.',
+    'platforms.ipad.closing': 'El mismo diseño que en el Mac, las mismas fuentes, los mismos temas: en el iPad no es una edición aparte, sino la misma app en otra pantalla.',
     'platforms.ipad.shotCap':   'UI: <span class="lang-tag">English</span>',
 
     'platforms.iph.eyebrow':    'iOS',
@@ -5696,7 +5696,7 @@ const translations = {
     'platforms.ipad.li8': '<strong>De vrais réglages, une vraie barre d’état</strong>Le formulaire complet des réglages, Reader Appearance sur six onglets et une barre d’état qui porte les commandes de la vue active',
     'platforms.ipad.li6': '<strong>Les onglets de la bibliothèque</strong>Auteurs, Journal, Statistiques et Notes et signets sur la rangée d’onglets ; OPDS en pleine page',
     'platforms.ipad.li7': '<strong>Le plein écran quand vous le voulez</strong>Un toucher au centre masque l’interface ; la barre avec l’horloge, la progression et la batterie se compose à votre goût',
-    'platforms.ipad.closing': 'Le même design en îlots que sur Mac, les mêmes polices, les mêmes thèmes. La bibliothèque a l’air d’appartenir à la même app — parce que c’est le cas.',
+    'platforms.ipad.closing': 'Le même design que sur Mac, les mêmes polices, les mêmes thèmes : sur iPad, ce n’est pas une édition à part, mais la même app sur un autre écran.',
     'platforms.ipad.shotCap':   'UI: <span class="lang-tag">English</span>',
 
     'platforms.iph.eyebrow':    'iOS',
@@ -6859,7 +6859,7 @@ const translations = {
     'platforms.ipad.li8': '<strong>Echte Einstellungen, echte Statusleiste</strong>Das volle Einstellungsformular, Reader Appearance auf sechs Tabs und eine Statusleiste mit den Bedienelementen der aktiven Ansicht',
     'platforms.ipad.li6': '<strong>Die Tabs der Bibliothek</strong>Autoren, Tagebuch, Statistik und Notizen und Lesezeichen in der Tab-Leiste; OPDS in voller Seitengröße',
     'platforms.ipad.li7': '<strong>Vollbild, wenn Sie es wollen</strong>Ein Tipp in die Mitte blendet die Oberfläche aus; die Leiste mit Uhr, Fortschritt und Akku stellen Sie selbst zusammen',
-    'platforms.ipad.closing': 'Dasselbe Insel-Design wie auf dem Mac, dieselben Schriften, dieselben Themen. Die Bibliothek sieht aus, als gehöre sie zur selben App — weil sie es tut.',
+    'platforms.ipad.closing': 'Dasselbe Design wie auf dem Mac, dieselben Schriften, dieselben Themen: Auf dem iPad ist das keine eigene Ausgabe, sondern dieselbe App auf einem anderen Bildschirm.',
     'platforms.ipad.shotCap':   'UI: <span class="lang-tag">English</span>',
 
     'platforms.iph.eyebrow':    'iOS',
