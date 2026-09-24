@@ -915,7 +915,7 @@ const translations = {
     'download.included.li1':      '<strong>Universal Purchase</strong> — buy on any platform, use on all three (Mac, iPad, iPhone), on as many of your devices as you own.',
     'download.included.li2':      '<strong>One payment, then nothing</strong> — no subscription, no in-app purchases, no upsells inside the app you bought.',
     'download.included.li3':      '<strong>Free updates for the lifetime of the current major version</strong> — bug fixes, new themes, new features.',
-    'download.included.li4':      '<strong>No ads, no telemetry, no analytics</strong> sold to anyone. Nothing about your reading leaves your device unless you turn on sync.',
+    'download.included.li4': '<strong>No ads, no telemetry, no analytics</strong> — and nothing sold to anyone. Nothing about your reading leaves your device; with sync on, it travels only between your own devices, through your iCloud.',
     'download.included.li6':  '<strong>iCloud sync</strong> <em>(ContinuousReader)</em> — positions, bookmarks, notes and library metadata follow every device on your Apple ID; book files ride iCloud Drive. Neither the “shelf” nor the “nightstand” syncs — see the <a href="#faq">FAQ</a> for how much storage it needs.',
     'download.included.note':     'When a major version requires a paid upgrade (<em>not planned for a long time</em>), <strong>you’ll know well in advance</strong> and it will be optional — your current version keeps working.',
 
@@ -1641,7 +1641,7 @@ const translations = {
     'download.included.li1':      '<strong>Универсальная покупка</strong> — покупаете на любой платформе, пользуетесь на всех трёх (Mac, iPad, iPhone), на скольких угодно своих устройствах.',
     'download.included.li2':      '<strong>Один платёж — и всё</strong>: ни подписки, ни встроенных покупок, ни допродаж внутри купленного приложения.',
     'download.included.li3':      '<strong>Бесплатные обновления в пределах текущей мажорной версии</strong> — исправления, новые темы, новые возможности.',
-    'download.included.li4':      '<strong>Ни рекламы, ни телеметрии, ни аналитики</strong> — и ничего никому не продаётся. Про ваше чтение с устройства не уходит ничего, пока вы сами не включите синхронизацию.',
+    'download.included.li4': '<strong>Ни рекламы, ни телеметрии, ни аналитики</strong> — и ничего никому не продаётся. Про ваше чтение с устройства не уходит ничего; с включённой синхронизацией данные ходят только между вашими устройствами, через ваш iCloud.',
     'download.included.li6':  '<strong>Синхронизация iCloud</strong> <em>(ContinuousReader)</em> — позиции, закладки, заметки и метаданные библиотеки следуют за каждым устройством с вашим Apple ID; файлы книг едут через iCloud Drive. Ни «полка», ни «тумбочка» не синхронизируются — сколько нужно места, смотрите в <a href="#faq">FAQ</a>.',
     'download.included.note':     'Когда мажорная версия потребует платного апгрейда (<em>ещё долго не планируется</em>), <strong>вы узнаете об этом заранее</strong>, и решение будет добровольным — текущая версия продолжит работать.',
 
@@ -2806,7 +2806,7 @@ const translations = {
     'download.included.li1':      '<strong>Універсальна покупка</strong> — купуєте на будь-якій платформі, користуєтесь на всіх трьох (Mac, iPad, iPhone), на скількох завгодно своїх пристроях.',
     'download.included.li2':      '<strong>Один платіж — і все</strong>: ні передплати, ні вбудованих покупок, ні допродажів усередині купленого застосунку.',
     'download.included.li3':      '<strong>Безкоштовні оновлення в межах поточної мажорної версії</strong> — виправлення, нові теми, нові можливості.',
-    'download.included.li4':      '<strong>Ні реклами, ні телеметрії, ні аналітики</strong> — і нічого нікому не продається. Про ваше читання з пристрою не йде нічого, доки ви самі не увімкнете синхронізацію.',
+    'download.included.li4': '<strong>Ні реклами, ні телеметрії, ні аналітики</strong> — і нічого нікому не продається. Про ваше читання з пристрою не йде нічого; з увімкненою синхронізацією дані ходять лише між вашими пристроями, через ваш iCloud.',
     'download.included.li6':  '<strong>Синхронізація iCloud</strong> <em>(ContinuousReader)</em> — позиції, закладки, нотатки й метадані бібліотеки йдуть за кожним пристроєм з вашим Apple ID; файли книг їдуть через iCloud Drive. Ні «полиця», ні «тумбочка» не синхронізуються — скільки потрібно місця, дивіться у <a href="#faq">FAQ</a>.',
     'download.included.note':     'Коли мажорна версія потребуватиме платного апґрейду (<em>найближчим часом не планується</em>), <strong>ви дізнаєтеся про це заздалегідь</strong>, і рішення буде добровільним — поточна версія продовжить працювати.',
 
@@ -3969,7 +3969,7 @@ const translations = {
     'download.included.li1':      '<strong>Compra universal</strong>: compra en cualquier plataforma y úsala en las tres (Mac, iPad, iPhone), en tantos dispositivos tuyos como quieras.',
     'download.included.li2':      '<strong>Un pago y ya está</strong>: sin suscripción, sin compras dentro de la app, sin ventas adicionales en lo que ya compraste.',
     'download.included.li3':      '<strong>Actualizaciones gratuitas durante toda la versión principal actual</strong>: correcciones, temas nuevos, funciones nuevas.',
-    'download.included.li4':      '<strong>Sin anuncios, sin telemetría, sin analíticas</strong> vendidas a nadie. Nada sobre tu lectura sale del dispositivo salvo que actives la sincronización.',
+    'download.included.li4': '<strong>Sin anuncios, sin telemetría, sin analíticas</strong> — y nada se vende a nadie. Nada sobre tu lectura sale del dispositivo; con la sincronización activa, los datos viajan solo entre tus propios dispositivos, por tu iCloud.',
     'download.included.li6':  '<strong>Sincronización con iCloud</strong> <em>(ContinuousReader)</em>: posiciones, marcadores, notas y metadatos de la biblioteca siguen a todos los dispositivos de tu Apple ID; los archivos viajan por iCloud Drive. Ni la «estantería» ni la «mesilla» se sincronizan; consulta las <a href="#faq">preguntas frecuentes</a> para saber cuánto espacio necesita.',
     'download.included.note':     'Cuando una versión principal requiera una actualización de pago (<em>no previsto a corto plazo</em>), <strong>lo sabrás con bastante antelación</strong> y será opcional — tu versión actual seguirá funcionando.',
 
@@ -5134,7 +5134,7 @@ const translations = {
     'download.included.li1':      '<strong>Achat universel</strong> — achetez sur n’importe quelle plateforme, utilisez sur les trois (Mac, iPad, iPhone), sur autant de vos appareils que vous voulez.',
     'download.included.li2':      '<strong>Un paiement, puis plus rien</strong> : pas d’abonnement, pas d’achats intégrés, pas de relances dans l’app que vous avez achetée.',
     'download.included.li3':      '<strong>Mises à jour gratuites pendant toute la version majeure en cours</strong> — corrections, nouveaux thèmes, nouvelles fonctions.',
-    'download.included.li4':      '<strong>Pas de publicité, pas de télémétrie, pas d’analytique</strong> vendue à qui que ce soit. Rien de votre lecture ne quitte l’appareil tant que vous n’activez pas la synchronisation.',
+    'download.included.li4': '<strong>Pas de publicité, pas de télémétrie, pas d’analytique</strong> — et rien n’est vendu à qui que ce soit. Rien de votre lecture ne quitte l’appareil ; avec la synchronisation, les données ne circulent qu’entre vos propres appareils, via votre iCloud.',
     'download.included.li6':  '<strong>Synchronisation iCloud</strong> <em>(ContinuousReader)</em> — positions, signets, notes et métadonnées de la bibliothèque suivent chaque appareil de votre identifiant Apple ; les fichiers passent par iCloud Drive. Ni « l’étagère » ni « la table de nuit » ne se synchronisent — voir la <a href="#faq">FAQ</a> pour l’espace nécessaire.',
     'download.included.note':     'Quand une version majeure nécessitera une mise à niveau payante (<em>pas prévu avant longtemps</em>), <strong>vous serez prévenu bien à l’avance</strong> et ce sera optionnel — votre version actuelle continuera de fonctionner.',
 
@@ -6298,7 +6298,7 @@ const translations = {
     'download.included.li1':      '<strong>Universalkauf</strong> — auf einer Plattform kaufen, auf allen dreien nutzen (Mac, iPad, iPhone), auf beliebig vielen eigenen Geräten.',
     'download.included.li2':      '<strong>Eine Zahlung, dann nichts mehr</strong> — kein Abo, keine In-App-Käufe, keine Verkaufshinweise in der App, die du gekauft hast.',
     'download.included.li3':      '<strong>Kostenlose Updates für die gesamte aktuelle Hauptversion</strong> — Fehlerbehebungen, neue Themen, neue Funktionen.',
-    'download.included.li4':      '<strong>Keine Werbung, keine Telemetrie, keine Analytik</strong>, an niemanden verkauft. Nichts über dein Lesen verlässt das Gerät, solange du die Synchronisierung nicht einschaltest.',
+    'download.included.li4': '<strong>Keine Werbung, keine Telemetrie, keine Analytik</strong> — und nichts wird an irgendwen verkauft. Nichts über dein Lesen verlässt das Gerät; mit Synchronisierung wandern die Daten nur zwischen deinen eigenen Geräten, über deine iCloud.',
     'download.included.li6':  '<strong>iCloud-Synchronisierung</strong> <em>(ContinuousReader)</em> — Positionen, Lesezeichen, Notizen und Bibliotheks-Metadaten folgen jedem Gerät deiner Apple-ID; Buchdateien laufen über iCloud Drive. Weder „Regal“ noch „Nachttisch“ synchronisieren — wie viel Speicher es braucht, steht in den <a href="#faq">FAQ</a>.',
     'download.included.note':     'Wenn eine Hauptversion ein kostenpflichtiges Upgrade erfordert (<em>auf lange Sicht nicht geplant</em>), <strong>wirst du es rechtzeitig erfahren</strong>, und es wird optional sein — deine aktuelle Version funktioniert weiter.',
 
