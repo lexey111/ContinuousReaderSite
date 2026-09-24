@@ -512,7 +512,7 @@ const translations = {
     'features.s3.banner':         'JustReader reads one book at a time; PlainReader keeps a shelf — as many books as you keep coming back to, in named, coloured categories with a filter, a shared history and its own book card — but no collection to organize. Folders, genres and series, collection-wide search and the rest of the library belong to ContinuousReader.',
 
     'features.s3.tabs.h': 'Library tabs',
-    'features.s3.tabs.p1': 'The library is organized into tabs. Library holds everything; the others are views into it or doors out of it:',
+    'features.s3.tabs.p1': 'The library is organized into tabs. Library is the whole collection; the other tabs show a part of it or lead outside:',
     'features.s3.tabs.li1':       '<strong>Library</strong>The complete collection, with all filtering, sorting, and folder scoping applied',
     'features.s3.tabs.li_new': '<strong>New</strong>Books you haven’t started yet, with its own folder tree, per-folder counts, and Mark as Read to clear the badge without opening the book',
     'features.s3.tabs.li2':       '<strong>Latest</strong>Recently opened or recently imported books (switchable), ignoring folder filters',
@@ -1942,7 +1942,7 @@ const translations = {
     'features.s3.banner':         'JustReader читает одну книгу за раз; PlainReader держит полку — столько книг, к скольким вы возвращаетесь, в именованных цветных категориях с фильтром, общей историей и своей карточкой книги, — но без коллекции, которую надо вести. Папки, жанры и серии, поиск по всей коллекции и остальная библиотека — это ContinuousReader.',
 
     'features.s3.tabs.h': 'Вкладки библиотеки',
-    'features.s3.tabs.p1': 'Библиотека организована вкладками. «Библиотека» держит всё; остальные — взгляды внутрь неё или двери наружу:',
+    'features.s3.tabs.p1': 'Библиотека организована вкладками. «Библиотека» — это вся коллекция; остальные вкладки показывают её часть или ведут наружу:',
     'features.s3.tabs.li1':       '<strong>Библиотека</strong>Полная коллекция со всеми применёнными фильтрами, сортировками и выбранной папкой',
     'features.s3.tabs.li_new': '<strong>Новое</strong>Книги, которые вы ещё не начали: своё дерево папок, счётчики по папкам и «Отметить прочитанным», чтобы снять отметку, не открывая книгу',
     'features.s3.tabs.li2':       '<strong>Последние</strong>Недавно открытые или недавно импортированные книги (переключается), без учёта фильтров папок',
@@ -3098,7 +3098,7 @@ const translations = {
     'features.s3.banner':         'JustReader читає одну книгу за раз; PlainReader тримає полицю — стільки книжок, до скількох ви повертаєтесь, в іменованих кольорових категоріях із фільтром, спільною історією та власною карткою книги, — але без колекції, яку треба вести. Папки, жанри й серії, пошук по всій колекції та решта бібліотеки — це ContinuousReader.',
 
     'features.s3.tabs.h': 'Вкладки бібліотеки',
-    'features.s3.tabs.p1': 'Бібліотека організована вкладками. «Бібліотека» тримає все; решта — погляди всередину неї або двері назовні:',
+    'features.s3.tabs.p1': 'Бібліотека організована вкладками. «Бібліотека» — це вся колекція; решта вкладок показують її частину або ведуть назовні:',
     'features.s3.tabs.li1':       '<strong>Бібліотека</strong>Повна колекція, із застосованою фільтрацією, сортуванням і обмеженням за текою',
     'features.s3.tabs.li_new': '<strong>Нове</strong>Книги, які ви ще не почали: своє дерево тек, лічильники по теках і «Позначити прочитаним», щоб зняти позначку, не відкриваючи книгу',
     'features.s3.tabs.li2':       '<strong>Останні</strong>Нещодавно відкриті або нещодавно імпортовані книги (перемикається), ігнорує фільтри тек',
@@ -4252,7 +4252,7 @@ const translations = {
     'features.s3.banner':         'JustReader lee un libro a la vez; PlainReader mantiene una estantería — tantos libros como sigas retomando, en categorías con nombre y color, con filtro, historial compartido y su propia ficha del libro — pero sin colección que organizar. Carpetas, géneros y series, búsqueda en toda la colección y el resto de la biblioteca pertenecen a ContinuousReader.',
 
     'features.s3.tabs.h': 'Pestañas de la biblioteca',
-    'features.s3.tabs.p1': 'La biblioteca se organiza en pestañas. «Biblioteca» lo contiene todo; las demás son vistas hacia dentro o puertas hacia fuera:',
+    'features.s3.tabs.p1': 'La biblioteca se organiza en pestañas. «Biblioteca» es la colección completa; las demás pestañas muestran una parte de ella o llevan fuera:',
     'features.s3.tabs.li1':       '<strong>Biblioteca</strong>La colección completa, con todos los filtros, la ordenación y el ámbito de carpetas aplicados',
     'features.s3.tabs.li_new': '<strong>Nuevo</strong>Libros que aún no has empezado: su propio árbol de carpetas, recuentos por carpeta y Marcar como leído para quitar la insignia sin abrir el libro',
     'features.s3.tabs.li2':       '<strong>Recientes</strong>Libros abiertos hace poco o importados hace poco (se puede alternar), ignorando los filtros de carpeta',
@@ -5408,7 +5408,7 @@ const translations = {
     'features.s3.banner':         'JustReader lit un livre à la fois ; PlainReader tient une étagère — autant de livres que vous y revenez, dans des catégories nommées et colorées, avec un filtre, un historique partagé et sa propre fiche du livre — mais sans collection à organiser. Dossiers, genres et séries, recherche dans toute la collection et le reste de la bibliothèque appartiennent à ContinuousReader.',
 
     'features.s3.tabs.h': 'Les onglets de la bibliothèque',
-    'features.s3.tabs.p1': 'La bibliothèque s’organise en onglets. « Bibliothèque » contient tout ; les autres sont des vues sur elle ou des portes vers l’extérieur :',
+    'features.s3.tabs.p1': 'La bibliothèque s’organise en onglets. « Bibliothèque », c’est toute la collection ; les autres onglets en montrent une partie ou mènent à l’extérieur :',
     'features.s3.tabs.li1':       '<strong>Bibliothèque</strong>La collection complète, avec tous les filtres, tris et restrictions de dossier appliqués',
     'features.s3.tabs.li_new': '<strong>Nouveau</strong>Les livres pas encore commencés : sa propre arborescence de dossiers, des compteurs par dossier et Marquer comme lu pour retirer le badge sans ouvrir le livre',
     'features.s3.tabs.li2':       '<strong>Récents</strong>Les livres récemment ouverts ou récemment importés (au choix), sans tenir compte des filtres de dossier',
@@ -6563,7 +6563,7 @@ const translations = {
     'features.s3.banner':         'JustReader liest ein Buch auf einmal; PlainReader führt ein Regal — so viele Bücher, wie du immer wieder aufschlägst, in benannten, farbigen Kategorien mit Filter, gemeinsamer Chronik und eigener Buchkarte — aber ohne Sammlung, die gepflegt werden muss. Ordner, Genres und Reihen, Suche über die ganze Sammlung und der Rest der Bibliothek gehören ContinuousReader.',
 
     'features.s3.tabs.h': 'Die Tabs der Bibliothek',
-    'features.s3.tabs.p1': 'Die Bibliothek ist in Tabs gegliedert. „Bibliothek“ hält alles; die anderen sind Blicke hinein oder Türen nach draußen:',
+    'features.s3.tabs.p1': 'Die Bibliothek ist in Tabs gegliedert. „Bibliothek“ ist die ganze Sammlung; die anderen Tabs zeigen einen Teil davon oder führen nach draußen:',
     'features.s3.tabs.li1':       '<strong>Bibliothek</strong>Die vollständige Sammlung mit allen Filtern, Sortierungen und Ordnerfiltern',
     'features.s3.tabs.li_new': '<strong>Neu</strong>Bücher, die du noch nicht begonnen hast: eigener Ordnerbaum, Zähler je Ordner und „Als gelesen markieren“, um das Abzeichen zu entfernen, ohne das Buch zu öffnen',
     'features.s3.tabs.li2':       '<strong>Neueste</strong>Zuletzt geöffnete oder kürzlich importierte Bücher (umschaltbar), Ordnerfilter werden ignoriert',
