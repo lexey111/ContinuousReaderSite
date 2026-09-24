@@ -143,6 +143,7 @@
                     <li data-new="1.6"><a href="#s3-authors" title="New in 1.6" data-i18n="features.s3.authors.h"></a></li>
                     <li data-new="1.6"><a href="#s3-series" title="New in 1.6" data-i18n="features.s3.series.h"></a></li>
                     <li data-new="1.6"><a href="#s3-notesbrowser" title="New in 1.6" data-i18n="features.s3.notesbrowser.h"></a></li>
+                    <li data-new="1.6"><a href="#s3-readingstats" title="New in 1.6" data-i18n="features.s5.rstats.h"></a></li>
                     <li data-new="1.6"><a href="#s3-journal" title="New in 1.6" data-i18n="features.s3.journal.h"></a></li>
                 </ul>
             </li>
@@ -161,7 +162,6 @@
                 <ul>
                     <li><a href="#s5-icloud" data-i18n="features.s5.icloud.h"></a></li>
                     <li><a href="#s5-devicelist" data-i18n="features.s5.devicelist.h"></a></li>
-                    <li data-new="1.6"><a href="#s5-readingstats" title="New in 1.6" data-i18n="features.s5.rstats.h"></a></li>
                     <li><a href="#s5-storage" data-i18n="features.s5.storage.h"></a></li>
                     <li><a href="#s5-backup" data-i18n="features.s5.backup.h"></a></li>
                     <li><a href="#s5-location" data-i18n="features.s5.location.h"></a></li>
@@ -1304,6 +1304,45 @@
                      alt="The Notes & Highlights tab: a book’s notebook and its coloured bookmarks">
             </div>
         </div>
+        <div id="s3-readingstats" class="feature">
+            <div class="feature-head">
+                <h3 class="feature-h3" data-i18n="features.s5.rstats.h">Reading statistics</h3>
+                <span class="badge-group">
+          <span class="badge cr">CR</span>
+          <span class="badge pr">PR</span>
+          <span class="badge jr">JR</span>
+        </span>
+            </div>
+            <div class="feature-body">
+                <p><span data-i18n="features.s5.rstats.p1">
+          The library keeps score, quietly: reading time, pages, sessions,
+          day streaks, monthly activity, top authors and genres, and a
+          completed / in-progress / not-started breakdown — computed from
+          your own library, stored on your device.
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-stats-dashboard.webp"
+                            data-alt="Reading statistics dashboard — totals, streaks, monthly activity, top authors"
+                            aria-label="View reading statistics screenshot"></button>
+                </p>
+                <p><span data-i18n="features.s5.rstats.p2">
+          One click turns the dashboard into a self-contained HTML report —
+          the whole picture in a single file you can keep or share.
+        </span>
+                    <button class="callout-dot section-callout" type="button"
+                            data-screenshot="img/screenshots/features-stats-report.webp"
+                            data-alt="Exported reading statistics report"
+                            aria-label="View statistics report screenshot"></button>
+                </p>
+                <p data-i18n="features.s5.rstats.p3">In 1.6 the dashboard gained charts by book, author and genre for a chosen period — a month, a year, all time — the sittings and the pace, and the report exports as Markdown or CSV as well as HTML.</p>
+            </div>
+            <div class="screenshot">
+                <img width="1600" height="1000" loading="lazy" decoding="async"
+                     src="img/screenshots/features-stats-tab.webp"
+                     alt="The Statistics tab: numbers, insights and activity charts">
+            </div>
+        </div>
+
         <div id="s3-journal" class="feature">
             <div class="feature-head">
                 <h3 class="feature-h3" data-i18n="features.s3.journal.h">Reading Journal</h3>
@@ -1674,44 +1713,6 @@
             </div>
         </div>
 
-        <div id="s5-readingstats" class="feature">
-            <div class="feature-head">
-                <h3 class="feature-h3" data-i18n="features.s5.rstats.h">Reading statistics</h3>
-                <span class="badge-group">
-          <span class="badge cr">CR</span>
-          <span class="badge pr">PR</span>
-          <span class="badge jr">JR</span>
-        </span>
-            </div>
-            <div class="feature-body">
-                <p><span data-i18n="features.s5.rstats.p1">
-          The library keeps score, quietly: reading time, pages, sessions,
-          day streaks, monthly activity, top authors and genres, and a
-          completed / in-progress / not-started breakdown — computed from
-          your own library, stored on your device.
-        </span>
-                    <button class="callout-dot section-callout" type="button"
-                            data-screenshot="img/screenshots/features-stats-dashboard.webp"
-                            data-alt="Reading statistics dashboard — totals, streaks, monthly activity, top authors"
-                            aria-label="View reading statistics screenshot"></button>
-                </p>
-                <p><span data-i18n="features.s5.rstats.p2">
-          One click turns the dashboard into a self-contained HTML report —
-          the whole picture in a single file you can keep or share.
-        </span>
-                    <button class="callout-dot section-callout" type="button"
-                            data-screenshot="img/screenshots/features-stats-report.webp"
-                            data-alt="Exported reading statistics report"
-                            aria-label="View statistics report screenshot"></button>
-                </p>
-                <p data-i18n="features.s5.rstats.p3">In 1.6 the dashboard gained charts by book, author and genre for a chosen period — a month, a year, all time — the sittings and the pace, and the report exports as Markdown or CSV as well as HTML.</p>
-            </div>
-            <div class="screenshot">
-                <img width="1600" height="1000" loading="lazy" decoding="async"
-                     src="img/screenshots/features-stats-tab.webp"
-                     alt="The Statistics tab: numbers, insights and activity charts">
-            </div>
-        </div>
 
         <div id="s5-storage" class="feature">
             <div class="feature-head">
