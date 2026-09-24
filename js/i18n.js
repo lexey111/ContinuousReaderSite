@@ -431,7 +431,7 @@ const translations = {
     'features.s1.progress.li3':   '<strong>Entry marker</strong>A dot with a dashed ring showing where you started this session',
     'features.s1.progress.li4':   '<strong>Marker modes</strong>Switch the track to show chapters, images, bookmarks, or nothing. Chapter markers show titles on hover. Image markers show thumbnail previews.',
     'features.s1.progress.li5': '<strong>Go To</strong>A page or a percent — and the text at that place shows before you jump, as it does for chapters and bookmarks',
-    'features.s1.progress.p2':    'In ContinuousReader, bookmark markers are <strong>color-coded</strong> and show preview text and page number on hover.',
+    'features.s1.progress.p2':    'Bookmark markers are <strong>color-coded</strong> and show preview text and page number on hover.',
 
     'features.s1.chapters.h': 'Chapters and pictures',
     'features.s1.chapters.p1':    'Chapter structure is extracted on import — with proper heading priority and scene-break separator filtering (<code>* * *</code>, <code>---</code>, etc.).',
@@ -1859,7 +1859,7 @@ const translations = {
     'features.s1.progress.li3':   '<strong>Точка входа</strong>Точка в пунктирном кольце показывает, где вы начали эту сессию',
     'features.s1.progress.li4':   '<strong>Настраиваемые маркеры</strong>Показывать главы, изображения, закладки — или ничего.',
     'features.s1.progress.li5': '<strong>Перейти</strong>К странице или проценту — и текст того места виден до перехода, как у глав и закладок',
-    'features.s1.progress.p2':    'В ContinuousReader маркеры закладок несут <strong>цветовую кодировку</strong> и показывают превью-текст и номер страницы при наведении.',
+    'features.s1.progress.p2':    'Маркеры закладок несут <strong>цветовую кодировку</strong> и показывают превью-текст и номер страницы при наведении.',
 
     'features.s1.chapters.h': 'Главы и картинки',
     'features.s1.chapters.p1':    'Структура глав извлекается при импорте — с правильной иерархией заголовков и отбрасыванием разделителей-сцен (<code>* * *</code>, <code>---</code> и т. п.).',
@@ -3013,7 +3013,7 @@ const translations = {
     'features.s1.progress.li3':   '<strong>Маркер старту</strong>Крапка з пунктирним кільцем, що показує, звідки ви розпочали цю сесію',
     'features.s1.progress.li4':   '<strong>Режими маркерів</strong>Переведіть доріжку на показ розділів, зображень, закладок — або вимкніть зовсім. Маркери розділів показують назви на наведення. Маркери зображень показують превʼю-мініатюри.',
     'features.s1.progress.li5': '<strong>Перейти</strong>До сторінки чи відсотка — і текст того місця видно до переходу, як у розділів і закладок',
-    'features.s1.progress.p2':    'У ContinuousReader маркери закладок мають <strong>кольорове кодування</strong> і показують превʼю-текст і номер сторінки на наведення.',
+    'features.s1.progress.p2':    'Маркери закладок мають <strong>кольорове кодування</strong> і показують превʼю-текст і номер сторінки на наведення.',
 
     'features.s1.chapters.h': 'Розділи й зображення',
     'features.s1.chapters.p1':    'Структура розділів витягується при імпорті — з належним пріоритетом заголовків і фільтрацією роздільників сцен (<code>* * *</code>, <code>---</code> тощо).',
@@ -4165,7 +4165,7 @@ const translations = {
     'features.s1.progress.li3':   '<strong>Marca de inicio</strong>Un punto con un anillo discontinuo que muestra dónde empezaste esta sesión',
     'features.s1.progress.li4':   '<strong>Modos de marcado</strong>Cambia la pista para mostrar capítulos, imágenes, marcadores o nada. Las marcas de capítulo muestran los títulos al pasar el cursor. Las de imagen muestran miniaturas como vista previa.',
     'features.s1.progress.li5': '<strong>Ir a</strong>Una página o un porcentaje, y el texto de ese lugar se ve antes de saltar, igual que con capítulos y marcadores',
-    'features.s1.progress.p2':    'En ContinuousReader, las marcas de los marcadores en la barra tienen <strong>código de color</strong> y muestran texto de previsualización y número de página al pasar el cursor.',
+    'features.s1.progress.p2':    'Las marcas de los marcadores en la barra tienen <strong>código de color</strong> y muestran texto de previsualización y número de página al pasar el cursor.',
 
     'features.s1.chapters.h': 'Capítulos e imágenes',
     'features.s1.chapters.p1':    'La estructura de capítulos se extrae durante la importación — respetando la jerarquía de títulos y filtrando los separadores de escena (<code>* * *</code>, <code>---</code>, etc.).',
@@ -5319,7 +5319,7 @@ const translations = {
     'features.s1.progress.li3':   '<strong>Marqueur d’entrée</strong>Un point cerclé d’un pointillé, indiquant où vous avez commencé cette session',
     'features.s1.progress.li4':   '<strong>Modes de marquage</strong>Affichez sur la piste les chapitres, les images, les signets ou rien. Les marqueurs de chapitres affichent leur titre au survol. Les marqueurs d’images affichent des vignettes en aperçu.',
     'features.s1.progress.li5': '<strong>Aller à</strong>Une page ou un pourcentage — et le texte de l’endroit s’affiche avant le saut, comme pour les chapitres et les signets',
-    'features.s1.progress.p2':    'Dans ContinuousReader, les marqueurs de signets sont <strong>colorés</strong> et affichent leur texte d’aperçu et leur numéro de page au survol.',
+    'features.s1.progress.p2':    'Les marqueurs de signets sont <strong>colorés</strong> et affichent leur texte d’aperçu et leur numéro de page au survol.',
 
     'features.s1.chapters.h': 'Chapitres et images',
     'features.s1.chapters.p1':    'La structure des chapitres est extraite à l’importation — avec une bonne priorité de titres et un filtrage des séparateurs de scènes (<code>* * *</code>, <code>---</code>, etc.).',
@@ -6472,7 +6472,7 @@ const translations = {
     'features.s1.progress.li3':   '<strong>Einstiegsmarker</strong>Ein Punkt mit gestricheltem Ring — zeigt, wo du diese Sitzung begonnen hast',
     'features.s1.progress.li4':   '<strong>Markermodi</strong>Schalte die Spur auf Kapitel, Bilder, Lesezeichen oder nichts um. Kapitelmarker zeigen Titel beim Überfahren mit dem Mauszeiger; Bildmarker zeigen Vorschau-Thumbnails.',
     'features.s1.progress.li5': '<strong>Gehe zu</strong>Eine Seite oder ein Prozentwert – und der Text an der Stelle erscheint vor dem Sprung, wie bei Kapiteln und Lesezeichen',
-    'features.s1.progress.p2':    'In ContinuousReader sind die Lesezeichen-Marker <strong>farbcodiert</strong> und zeigen Vorschautext und Seitenzahl beim Überfahren mit dem Mauszeiger.',
+    'features.s1.progress.p2':    'Die Lesezeichen-Marker sind <strong>farbcodiert</strong> und zeigen Vorschautext und Seitenzahl beim Überfahren mit dem Mauszeiger.',
 
     'features.s1.chapters.h': 'Kapitel und Bilder',
     'features.s1.chapters.p1':    'Die Kapitelstruktur wird beim Import extrahiert — mit korrekter Überschriftspriorität und Filterung von Szenentrennzeichen (<code>* * *</code>, <code>---</code>, usw.).',
