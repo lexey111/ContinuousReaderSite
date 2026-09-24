@@ -3257,6 +3257,18 @@ code {
 }
 .wn-title-row + .release-motto { margin-top: -4px; }
 
+/* A group heading inside a release's list (1.6: Reading · Library · …). */
+.changelog-group {
+  margin: 22px 0 6px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.changelog-group + .changelog-list { margin-top: 0; }
+
 /* A thank-you plate under a release's list (#874: a reader's letters). */
 .release-thanks {
   margin: 18px 0 0;
