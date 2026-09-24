@@ -3227,6 +3227,23 @@ code {
 .badge.mac { color: var(--ink-soft); }
 .badge.mac::before { background: var(--ink-ghost); }
 
+/* A square after a TOC entry that is new in the current release (user,
+   2026-09-24: not a chip — no room; not a dot — the dot means a screenshot).
+   `data-new="1.6"` on the <li>; RELEASE.md moves the marks each release. */
+.features-toc li[data-new] > a::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  background: var(--accent);
+  border-radius: 1px;
+  opacity: 0.85;
+}
+
 /* Changelog release dividers — the codename butterflies */
 .release-divider {
   display: flex;
