@@ -1568,6 +1568,10 @@ code {
 .screenshot-frame.tall {
   aspect-ratio: 3 / 4;
 }
+/* A phone in the family grid (JustReader = the phone of the row): the
+   frame keeps the column's width and lets the tall picture set the height. */
+.screenshot-frame.phone-shot { aspect-ratio: auto; padding: 32px 24px; }
+.screenshot-frame.phone-shot img { max-height: 640px; width: auto; }
 
 .screenshot-label {
   font-family: var(--sans);
