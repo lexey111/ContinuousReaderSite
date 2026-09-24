@@ -541,7 +541,7 @@ const translations = {
     'features.s3.search.li3':     '<strong>One filter popover</strong>Colour and genre in one place, and whatever you have filtered by stays visible on the button — so you always know why a book is missing from the list',
 
     'features.s3.colors.h':       'Color tags',
-    'features.s3.colors.p':       'Seven Finder-style colored dots that can be assigned to any book via context menu, edit dialog, import dialog, or info panel. Optional color highlighting shows faint background tints in list and card views, and inline colored dots in table view.',
+    'features.s3.colors.p':       'Seven Finder-style colored dots that can be assigned to any book or folder via context menu, edit dialog, import dialog, or info panel. Optional color highlighting shows faint background tints in list and card views, and inline colored dots in table view.',
 
     'features.s3.genres.h':       'Genres and tags',
     'features.s3.genres.p1':      'Genre tags are auto-extracted from FB2 genre codes (158 of them mapped) and EPUB <code>dc:subject</code> metadata. A <strong>genre chip picker</strong> allows manual editing per book, and a full <strong>genre management sheet</strong> handles bulk operations across the library.',
@@ -1971,7 +1971,7 @@ const translations = {
     'features.s3.search.li3':     '<strong>Один поповер фильтров</strong>Цвет и жанр в одном месте, а то, по чему вы отфильтровали, остаётся видно на кнопке — чтобы всегда было понятно, почему книги нет в списке',
 
     'features.s3.colors.h':       'Цветовые метки',
-    'features.s3.colors.p':       'Семь цветных точек в стиле Finder назначаются любой книге через контекстное меню, диалог редактирования, диалог импорта или информационную панель. Опциональная цветовая подсветка показывает лёгкие фоновые оттенки в списке и в карточках, а в таблице — цветные точки рядом с названием.',
+    'features.s3.colors.p':       'Семь цветных точек в стиле Finder назначаются любой книге и папке через контекстное меню, диалог редактирования, диалог импорта или информационную панель. Опциональная цветовая подсветка показывает лёгкие фоновые оттенки в списке и в карточках, а в таблице — цветные точки рядом с названием.',
 
     'features.s3.genres.h':       'Жанры и теги',
     'features.s3.genres.p1':      'Жанровые метки извлекаются автоматически из кодов жанров FB2 (158 сопоставленных) и метаданных <code>dc:subject</code> в EPUB. <strong>Пикер жанровых чипов</strong> позволяет править их вручную для каждой книги, а полноценный <strong>лист управления жанрами</strong> — массово по всей библиотеке.',
@@ -3127,7 +3127,7 @@ const translations = {
     'features.s3.search.li3':     '<strong>Один поповер фільтрів</strong>Колір і жанр в одному місці, а те, за чим ви відфільтрували, лишається видно на кнопці — щоб завжди було зрозуміло, чому книги немає в списку',
 
     'features.s3.colors.h':       'Кольорові мітки',
-    'features.s3.colors.p':       'Сім кольорових крапок у стилі Finder, які можна призначити будь-якій книзі через контекстне меню, діалог редагування, діалог імпорту чи інформаційну панель. Опційне колірне підсвічування показує ледь помітні фонові відтінки у списку й картках, а в таблиці — кольорові крапки поруч із назвою.',
+    'features.s3.colors.p':       'Сім кольорових крапок у стилі Finder, які можна призначити будь-якій книзі чи теці через контекстне меню, діалог редагування, діалог імпорту чи інформаційну панель. Опційне колірне підсвічування показує ледь помітні фонові відтінки у списку й картках, а в таблиці — кольорові крапки поруч із назвою.',
 
     'features.s3.genres.h':       'Жанри й мітки',
     'features.s3.genres.p1':      'Жанрові мітки видобуваються автоматично з кодів жанрів FB2 (158 зіставлених) і метаданих <code>dc:subject</code> в EPUB. <strong>Пікер жанрових чипів</strong> дозволяє правити їх вручну для кожної книги, а повноцінний <strong>аркуш керування жанрами</strong> — масово по всій бібліотеці.',
@@ -4281,7 +4281,7 @@ const translations = {
     'features.s3.search.li3':     '<strong>Un único popover de filtros</strong>Color y género en un mismo sitio, y lo que hayas filtrado sigue a la vista en el botón, así que siempre sabes por qué falta un libro de la lista',
 
     'features.s3.colors.h':       'Etiquetas de color',
-    'features.s3.colors.p':       'Siete puntos de color al estilo Finder que puedes asignar a cualquier libro desde el menú contextual, el diálogo de edición, el diálogo de importación o el panel de información. El resaltado de color opcional muestra fondos teñidos suavemente en la vista de lista y de tarjetas, y puntos de color junto al título en la vista de tabla.',
+    'features.s3.colors.p':       'Siete puntos de color al estilo Finder que puedes asignar a cualquier libro o carpeta desde el menú contextual, el diálogo de edición, el diálogo de importación o el panel de información. El resaltado de color opcional muestra fondos teñidos suavemente en la vista de lista y de tarjetas, y puntos de color junto al título en la vista de tabla.',
 
     'features.s3.genres.h':       'Géneros y etiquetas',
     'features.s3.genres.p1':      'Las etiquetas de género se extraen automáticamente de los códigos de género de FB2 (158 mapeados) y de los metadatos <code>dc:subject</code> de EPUB. Un <strong>selector de chips de género</strong> permite editarlos libro a libro, y una <strong>hoja de gestión de géneros</strong> completa se encarga de las operaciones masivas.',
@@ -5437,7 +5437,7 @@ const translations = {
     'features.s3.search.li3':     '<strong>Un seul popover de filtres</strong>Couleur et genre au même endroit, et ce par quoi vous avez filtré reste visible sur le bouton — vous savez toujours pourquoi un livre manque à la liste',
 
     'features.s3.colors.h':       'Étiquettes de couleur',
-    'features.s3.colors.p':       'Sept pastilles de couleur façon Finder, attribuables à tout livre via le menu contextuel, le dialogue d’édition, le dialogue d’importation ou le panneau d’information. Un surlignage optionnel ajoute des teintes de fond légères dans les vues Liste et Cartes, et des pastilles de couleur en regard du titre en vue Tableau.',
+    'features.s3.colors.p':       'Sept pastilles de couleur façon Finder, attribuables à tout livre ou dossier via le menu contextuel, le dialogue d’édition, le dialogue d’importation ou le panneau d’information. Un surlignage optionnel ajoute des teintes de fond légères dans les vues Liste et Cartes, et des pastilles de couleur en regard du titre en vue Tableau.',
 
     'features.s3.genres.h':       'Genres et étiquettes',
     'features.s3.genres.p1':      'Les étiquettes de genre sont extraites automatiquement des codes de genre FB2 (158 correspondances) et des métadonnées <code>dc:subject</code> des EPUB. Un <strong>sélecteur de puces de genre</strong> permet de les modifier livre par livre, et une <strong>feuille de gestion des genres</strong> complète gère les opérations en masse.',
@@ -6592,7 +6592,7 @@ const translations = {
     'features.s3.search.li3':     '<strong>Ein Filter-Popover</strong>Farbe und Genre an einem Ort, und wonach du gefiltert hast, bleibt auf dem Knopf sichtbar — so weißt du immer, warum ein Buch in der Liste fehlt',
 
     'features.s3.colors.h':       'Farbmarkierungen',
-    'features.s3.colors.p':       'Sieben farbige Punkte im Finder-Stil, die jedem Buch über Kontextmenü, Bearbeitungs-Dialog, Import-Dialog oder Info-Panel zugewiesen werden können. Eine optionale Farbhervorhebung zeigt dezente Hintergrundtöne in Listen- und Kartenansicht sowie farbige Punkte neben dem Titel in der Tabellenansicht.',
+    'features.s3.colors.p':       'Sieben farbige Punkte im Finder-Stil, die jedem Buch und Ordner über Kontextmenü, Bearbeitungs-Dialog, Import-Dialog oder Info-Panel zugewiesen werden können. Eine optionale Farbhervorhebung zeigt dezente Hintergrundtöne in Listen- und Kartenansicht sowie farbige Punkte neben dem Titel in der Tabellenansicht.',
 
     'features.s3.genres.h':       'Genres und Tags',
     'features.s3.genres.p1':      'Genre-Etiketten werden automatisch aus den FB2-Genrecodes (158 davon zugeordnet) und den <code>dc:subject</code>-Metadaten von EPUB gewonnen. Ein <strong>Genre-Chip-Picker</strong> erlaubt die Bearbeitung pro Buch, und ein vollständiges <strong>Genre-Verwaltungsblatt</strong> übernimmt Massenoperationen.',
