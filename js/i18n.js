@@ -880,6 +880,7 @@ const translations = {
     'platforms.purchase.title':    'Buy once. <em>Use everywhere.</em>',
     'platforms.purchase.body1':    'Everything above is included in ContinuousReader for <strong>$19.99</strong>. Universal Purchase — buy once on any platform, install on all three, sync turned on.',
     'platforms.purchase.body2':    'Or start smaller: <a href="download.html">PlainReader</a> at $6.99 keeps a shelf of books in coloured categories without a library to maintain, and <a href="download.html">JustReader</a> is free for one book at a time. Same engine, same themes, same translation — all on three platforms.',
+    'platforms.purchase.roomCaption': 'A book, a shelf, a library — <a href="family.html">the three apps side by side</a>.',
 
     // ============================================================
     // DOWNLOAD
@@ -2312,6 +2313,7 @@ const translations = {
     'platforms.purchase.title':    'Купите один раз. <em>Пользуйтесь везде.</em>',
     'platforms.purchase.body1':    'Всё перечисленное выше входит в ContinuousReader за <strong>$19.99</strong>. Универсальная покупка — купите на любой платформе, установите на все три, включите синхронизацию.',
     'platforms.purchase.body2':    'Или начните с меньшего: <a href="download.html">PlainReader</a> за $6.99 держит полку книг в цветных категориях без библиотеки, которую надо вести, а <a href="download.html">JustReader</a> бесплатен для одной книги за раз. Тот же движок, те же темы, тот же перевод — на всех трёх платформах.',
+    'platforms.purchase.roomCaption': 'Книга, полка, библиотека — <a href="family.html">три приложения рядом</a>.',
 
     // ---------- The family page ----------
     'nav.family': 'Семейство',
@@ -3476,6 +3478,7 @@ const translations = {
     'platforms.purchase.title':    'Купіть один раз. <em>Користуйтеся всюди.</em>',
     'platforms.purchase.body1':    'Усе перелічене вище входить у ContinuousReader за <strong>$19.99</strong>. Універсальна купівля — купіть на будь-якій платформі, встановіть на всі три, увімкніть синхронізацію.',
     'platforms.purchase.body2':    'Або почніть із меншого: <a href="download.html">PlainReader</a> за $6.99 тримає полицю книжок у кольорових категоріях без бібліотеки, яку треба вести, а <a href="download.html">JustReader</a> безкоштовний для однієї книги за раз. Той самий рушій, ті самі теми, той самий переклад — на всіх трьох платформах.',
+    'platforms.purchase.roomCaption': 'Книжка, полиця, бібліотека — <a href="family.html">три застосунки поруч</a>.',
 
     // ---------- The family page ----------
     'nav.family': 'Сімейство',
@@ -4638,6 +4641,7 @@ const translations = {
     'platforms.purchase.title':    'Compra una vez. <em>Úsalo en todas partes.</em>',
     'platforms.purchase.body1':    'Todo lo anterior está incluido en ContinuousReader por <strong>$19.99</strong>. Compra Universal — compra en cualquier plataforma, instala en las tres, sincronización activada.',
     'platforms.purchase.body2':    'O empieza por algo más pequeño: <a href="download.html">PlainReader</a>, por $6.99, mantiene una estantería de libros en categorías de colores sin una biblioteca que mantener, y <a href="download.html">JustReader</a> es gratis para un libro a la vez. El mismo motor, los mismos temas, la misma traducción — en las tres plataformas.',
+    'platforms.purchase.roomCaption': 'Un libro, un estante, una biblioteca: <a href="family.html">las tres apps, una junto a otra</a>.',
 
     // ---------- The family page ----------
     'nav.family': 'Familia',
@@ -5802,6 +5806,7 @@ const translations = {
     'platforms.purchase.title':    'Achetez une fois. <em>Utilisez partout.</em>',
     'platforms.purchase.body1':    'Tout ce qui précède est inclus dans ContinuousReader pour <strong>$19.99</strong>. Achat Universel — achetez sur n’importe quelle plateforme, installez sur les trois, synchronisation activée.',
     'platforms.purchase.body2':    'Ou commencez plus petit : <a href="download.html">PlainReader</a>, à 6,99 $, tient une étagère de livres en catégories colorées sans bibliothèque à entretenir, et <a href="download.html">JustReader</a> est gratuit pour un livre à la fois. Même moteur, mêmes thèmes, même traduction — sur les trois plateformes.',
+    'platforms.purchase.roomCaption': 'Un livre, une étagère, une bibliothèque — <a href="family.html">les trois apps côte à côte</a>.',
 
     // ---------- The family page ----------
     'nav.family': 'Famille',
@@ -6965,6 +6970,7 @@ const translations = {
     'platforms.purchase.title':    'Einmal kaufen. <em>Überall nutzen.</em>',
     'platforms.purchase.body1':    'Alles oben Genannte ist in ContinuousReader für <strong>$19.99</strong> enthalten. Universal Purchase — kaufe auf einer Plattform, installiere auf allen drei, mit aktiviertem Sync.',
     'platforms.purchase.body2':    'Oder fang kleiner an: <a href="download.html">PlainReader</a> für 6,99 $ führt ein Regal voller Bücher in farbigen Kategorien ohne Bibliothek, die gepflegt werden muss, und <a href="download.html">JustReader</a> ist kostenlos für ein Buch auf einmal. Dieselbe Engine, dieselben Themes, dieselbe Übersetzung — auf allen drei Plattformen.',
+    'platforms.purchase.roomCaption': 'Ein Buch, ein Regal, eine Bibliothek — <a href="family.html">die drei Apps nebeneinander</a>.',
 
     // ---------- The family page ----------
     'nav.family': 'Familie',

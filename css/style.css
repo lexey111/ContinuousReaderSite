@@ -2211,6 +2211,12 @@ code {
 }
 .purchase-body a:hover { border-bottom-color: var(--accent); }
 
+/* The family room inside the purchase card: the picture answers "or start smaller". */
+.purchase-card .purchase-room { max-width: 520px; margin: 40px 0 0; }
+.purchase-card .purchase-room figcaption { text-align: left; }
+.purchase-card .purchase-room figcaption a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); }
+.purchase-card .purchase-room figcaption a:hover { border-bottom-color: var(--accent); }
+
 /* ==========================================================
    DOWNLOAD PAGE
    ========================================================== */
