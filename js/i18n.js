@@ -530,7 +530,7 @@ const translations = {
     'features.s3.views.p': 'All of them support <strong>multi-mode grouping</strong>: none, author, series, author &amp; series, genres, or date added — with collapsible sections and shared section headers. An optional tint gives every cover a hint of your reading theme, like tinted paper.',
 
     'features.s3.depth.h': 'Interface depth',
-    'features.s3.depth.p': 'One appearance dial with three steps — <strong>Flat</strong>, <strong>Standard</strong>, and <strong>Deep</strong> — from a quiet, even surface to banded chrome with pronounced layers. It works with your accent color, which now reaches every window and sheet on the Mac as well: the folder tree, counts, selection, and dialogs all follow it.',
+    'features.s3.depth.p': 'One appearance dial with three steps — <strong>Flat</strong>, <strong>Standard</strong>, and <strong>Deep</strong> — from a quiet, even surface to banded chrome with pronounced layers. It works with your accent color, which reaches every window and sheet, on the Mac too: the folder tree, counts, selection, and dialogs all follow it.',
     'features.s3.gsearch.h': 'Global search',
     'features.s3.gsearch.li1': '<strong>Every book at once</strong>Search the full text of your whole library — plus titles, authors, series, annotations, comments, and origins. No index to build or maintain: a fast raw scan answers a thousand-book library in moments.',
     'features.s3.gsearch.li2': '<strong>Land on the hit</strong>Results group by book, with highlighted snippets and hit counts; the jump arrow opens the book right at the found place — even a book you have never opened before.',
@@ -1960,7 +1960,7 @@ const translations = {
     'features.s3.views.p': 'Все три поддерживают <strong>группировку</strong>: без неё, по автору, серии, автору и серии, жанрам или дате добавления — со сворачиваемыми секциями и общими заголовками. Необязательная подкраска даёт каждой обложке оттенок вашей темы чтения, как тонированная бумага.',
 
     'features.s3.depth.h': 'Глубина интерфейса',
-    'features.s3.depth.p': 'Один регулятор оформления с тремя ступенями — <strong>Flat</strong>, <strong>Standard</strong> и <strong>Deep</strong> — от спокойной ровной поверхности до полосного хрома с выраженными слоями. Работает вместе с акцентным цветом, который теперь доходит до каждого окна и диалога и на Mac: дерево папок, счётчики, выделение и диалоги следуют ему.',
+    'features.s3.depth.p': 'Один регулятор оформления с тремя ступенями — <strong>Flat</strong>, <strong>Standard</strong> и <strong>Deep</strong> — от спокойной ровной поверхности до полосного хрома с выраженными слоями. Работает вместе с акцентным цветом, который доходит до каждого окна и диалога, и на Mac тоже: дерево папок, счётчики, выделение и диалоги следуют ему.',
     'features.s3.gsearch.h': 'Глобальный поиск',
     'features.s3.gsearch.li1': '<strong>Все книги сразу</strong>Поиск по полному тексту всей библиотеки — плюс названия, авторы, серии, аннотации, комментарии и происхождение. Ни индекса, ни его обслуживания: быстрый прямой скан отвечает по библиотеке в тысячу книг за считанные мгновения.',
     'features.s3.gsearch.li2': '<strong>Прямо к найденному</strong>Результаты сгруппированы по книгам, с подсвеченными фрагментами и числом совпадений; стрелка перехода открывает книгу прямо на найденном месте — даже книгу, которую вы ещё ни разу не открывали.',
@@ -3116,7 +3116,7 @@ const translations = {
     'features.s3.views.p': 'Усі три підтримують <strong>групування</strong>: без нього, за автором, серією, автором і серією, жанрами або датою додавання — зі згортаними секціями й спільними заголовками. Необов’язкове підфарбування надає кожній обкладинці відтінок вашої теми читання, як тонований папір.',
 
     'features.s3.depth.h': 'Глибина інтерфейсу',
-    'features.s3.depth.p': 'Один регулятор оформлення з трьома щаблями — <strong>Flat</strong>, <strong>Standard</strong> і <strong>Deep</strong> — від спокійної рівної поверхні до смугастого хрому з виразними шарами. Працює разом з акцентним кольором, який тепер сягає кожного вікна й діалогу і на Mac: дерево папок, лічильники, виділення й діалоги слідують йому.',
+    'features.s3.depth.p': 'Один регулятор оформлення з трьома щаблями — <strong>Flat</strong>, <strong>Standard</strong> і <strong>Deep</strong> — від спокійної рівної поверхні до смугастого хрому з виразними шарами. Працює разом з акцентним кольором, який сягає кожного вікна й діалогу, і на Mac також: дерево папок, лічильники, виділення й діалоги слідують йому.',
     'features.s3.gsearch.h': 'Глобальний пошук',
     'features.s3.gsearch.li1': '<strong>Усі книги одразу</strong>Пошук за повним текстом усієї бібліотеки — плюс назви, автори, серії, анотації, коментарі та походження. Без індексу та його обслуговування: швидке пряме сканування відповідає по бібліотеці в тисячу книг за лічені миті.',
     'features.s3.gsearch.li2': '<strong>Просто до знайденого</strong>Результати згруповано за книгами, з підсвіченими фрагментами та кількістю збігів; стрілка переходу відкриває книгу просто на знайденому місці — навіть книгу, якої ви ще жодного разу не відкривали.',
@@ -4270,7 +4270,7 @@ const translations = {
     'features.s3.views.p': 'Las tres admiten <strong>agrupación</strong>: ninguna, autor, serie, autor y serie, géneros o fecha de adición, con secciones plegables y encabezados compartidos. Un tinte opcional da a cada portada un matiz de tu tema de lectura, como papel teñido.',
 
     'features.s3.depth.h': 'Profundidad de la interfaz',
-    'features.s3.depth.p': 'Un solo control de apariencia con tres pasos — <strong>Flat</strong>, <strong>Standard</strong> y <strong>Deep</strong> — desde una superficie tranquila y uniforme hasta un cromo con bandas y capas marcadas. Funciona con tu color de acento, que ahora llega a cada ventana y hoja también en el Mac: el árbol de carpetas, los contadores, la selección y los diálogos lo siguen.',
+    'features.s3.depth.p': 'Un solo control de apariencia con tres pasos — <strong>Flat</strong>, <strong>Standard</strong> y <strong>Deep</strong> — desde una superficie tranquila y uniforme hasta un cromo con bandas y capas marcadas. Funciona con tu color de acento, que llega a cada ventana y hoja, también en el Mac: el árbol de carpetas, los contadores, la selección y los diálogos lo siguen.',
     'features.s3.gsearch.h': 'Búsqueda global',
     'features.s3.gsearch.li1': '<strong>Todos los libros a la vez</strong>Busca en el texto completo de toda tu biblioteca — además de títulos, autores, series, anotaciones, comentarios y orígenes. Sin índice que construir ni mantener: un escaneo directo y rápido responde en instantes con mil libros.',
     'features.s3.gsearch.li2': '<strong>Aterriza en el hallazgo</strong>Los resultados se agrupan por libro, con fragmentos resaltados y número de coincidencias; la flecha abre el libro justo en el lugar encontrado — incluso un libro que nunca has abierto.',
@@ -5426,7 +5426,7 @@ const translations = {
     'features.s3.views.p': 'Toutes trois acceptent le <strong>regroupement</strong> : aucun, auteur, série, auteur et série, genres ou date d’ajout — avec sections repliables et en-têtes communs. Une teinte optionnelle donne à chaque couverture une nuance de votre thème de lecture, comme du papier teinté.',
 
     'features.s3.depth.h': 'Profondeur de l’interface',
-    'features.s3.depth.p': 'Un seul réglage d’apparence à trois crans — <strong>Flat</strong>, <strong>Standard</strong> et <strong>Deep</strong> — d’une surface calme et unie à un chrome en bandes aux couches marquées. Il fonctionne avec votre couleur d’accent, qui atteint désormais chaque fenêtre et panneau aussi sur Mac : l’arborescence des dossiers, les compteurs, la sélection et les dialogues la suivent.',
+    'features.s3.depth.p': 'Un seul réglage d’apparence à trois crans — <strong>Flat</strong>, <strong>Standard</strong> et <strong>Deep</strong> — d’une surface calme et unie à un chrome en bandes aux couches marquées. Il fonctionne avec votre couleur d’accent, qui atteint chaque fenêtre et panneau, sur Mac aussi : l’arborescence des dossiers, les compteurs, la sélection et les dialogues la suivent.',
     'features.s3.gsearch.h': 'Recherche globale',
     'features.s3.gsearch.li1': '<strong>Tous les livres à la fois</strong>Cherchez dans le texte intégral de toute votre bibliothèque — plus les titres, auteurs, séries, annotations, commentaires et provenances. Aucun index à construire ni à entretenir : un balayage direct et rapide répond en un instant sur mille livres.',
     'features.s3.gsearch.li2': '<strong>Atterrissez sur l’occurrence</strong>Les résultats sont groupés par livre, avec extraits surlignés et nombre d’occurrences ; la flèche ouvre le livre à l’endroit exact — même un livre jamais ouvert.',
@@ -6581,7 +6581,7 @@ const translations = {
     'features.s3.views.p': 'Alle drei unterstützen <strong>Gruppierung</strong>: keine, Autor, Serie, Autor und Serie, Genres oder Hinzufügedatum – mit einklappbaren Abschnitten und gemeinsamen Kopfzeilen. Eine optionale Tönung gibt jedem Cover einen Hauch deines Lesethemas, wie getöntes Papier.',
 
     'features.s3.depth.h': 'Oberflächentiefe',
-    'features.s3.depth.p': 'Ein Darstellungsregler mit drei Stufen — <strong>Flat</strong>, <strong>Standard</strong> und <strong>Deep</strong> — von einer ruhigen, ebenen Fläche bis zu Chrom mit Bändern und ausgeprägten Ebenen. Er arbeitet mit der eigenen Akzentfarbe zusammen, die jetzt auch auf dem Mac jedes Fenster und jeden Dialog erreicht: Ordnerbaum, Zähler, Auswahl und Dialoge folgen ihr.',
+    'features.s3.depth.p': 'Ein Darstellungsregler mit drei Stufen — <strong>Flat</strong>, <strong>Standard</strong> und <strong>Deep</strong> — von einer ruhigen, ebenen Fläche bis zu Chrom mit Bändern und ausgeprägten Ebenen. Er arbeitet mit der eigenen Akzentfarbe zusammen, die jedes Fenster und jeden Dialog erreicht, auch auf dem Mac: Ordnerbaum, Zähler, Auswahl und Dialoge folgen ihr.',
     'features.s3.gsearch.h': 'Globale Suche',
     'features.s3.gsearch.li1': '<strong>Alle Bücher auf einmal</strong>Durchsuche den Volltext deiner ganzen Bibliothek — dazu Titel, Autoren, Reihen, Anmerkungen, Kommentare und Herkunft. Kein Index, keine Pflege: ein schneller direkter Scan beantwortet eine Bibliothek mit tausend Büchern in Augenblicken.',
     'features.s3.gsearch.li2': '<strong>Direkt zur Fundstelle</strong>Ergebnisse sind nach Büchern gruppiert, mit hervorgehobenen Ausschnitten und Trefferzahl; der Sprungpfeil öffnet das Buch genau an der Fundstelle — selbst ein nie geöffnetes Buch.',
