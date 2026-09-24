@@ -735,13 +735,13 @@ const translations = {
     // PLATFORMS
     // ============================================================
     'meta.platforms.title':   'Platforms — ContinuousReader',
-    'meta.platforms.desc':    'One app across Mac, iPad, and iPhone — adapted to each, not mediocre on all three.',
+    'meta.platforms.desc': 'One app across Mac, iPad, and iPhone — adapted to each device.',
     'meta.platforms.ogTitle': 'Platforms — ContinuousReader',
-    'meta.platforms.ogDesc':  'One app across Mac, iPad, and iPhone — adapted to each, not mediocre on all three.',
+    'meta.platforms.ogDesc': 'One app across Mac, iPad, and iPhone — adapted to each device.',
 
     'platforms.header.eyebrow':  'Mac · iPad · iPhone',
     'platforms.header.title':    'Three platforms, three <em>experiences</em>.',
-    'platforms.header.subtitle': 'One app across Mac, iPad, and iPhone — adapted to each device’s way of working, not mediocre on all three.',
+    'platforms.header.subtitle': 'One app across Mac, iPad, and iPhone — adapted to each device.',
     'platforms.header.intro1':   'Cross-platform apps usually land in one of two places. Either they look the same everywhere — which means they look wrong somewhere. Or they’re three separate apps held together by the same name and a cloud icon.',
     'platforms.header.intro2': 'ContinuousReader is neither. <strong>The reading engine, the library, the typography, the themes, translation, Read Aloud — one shared codebase, and it behaves the same on every device.</strong> What changes is how you reach it: keyboard and trackpad on the Mac, taps and swipes on the iPad, a single thumb on the iPhone — and two readers to choose from on all three, Comfort and Professional.',
 
@@ -2170,13 +2170,13 @@ const translations = {
     'features.s7.outro':          'Передумали — перезапустите мастер из настроек. Ваше приложение — ваши предпочтения.',
 
     'meta.platforms.title':   'Платформы — ContinuousReader',
-    'meta.platforms.desc':    'Одно приложение на Mac, iPad и iPhone — адаптировано под каждое устройство, а не посредственное на всех трёх.',
+    'meta.platforms.desc': 'Одно приложение на Mac, iPad и iPhone — адаптировано под каждое устройство.',
     'meta.platforms.ogTitle': 'Платформы — ContinuousReader',
-    'meta.platforms.ogDesc':  'Одно приложение на Mac, iPad и iPhone — адаптировано под каждое устройство, а не посредственное на всех трёх.',
+    'meta.platforms.ogDesc': 'Одно приложение на Mac, iPad и iPhone — адаптировано под каждое устройство.',
 
     'platforms.header.eyebrow':  'Mac · iPad · iPhone',
     'platforms.header.title':    'Три платформы, три <em>характера</em>.',
-    'platforms.header.subtitle': 'Одно приложение на Mac, iPad и iPhone — адаптировано под то, как работает каждое устройство, а не посредственное на всех трёх.',
+    'platforms.header.subtitle': 'Одно приложение на Mac, iPad и iPhone — адаптировано под каждое устройство.',
     'platforms.header.intro1':   'Кросс-платформенные приложения обычно скатываются в одну из двух крайностей. Или выглядят одинаково везде — а значит, где-то выглядят неправильно. Или это три разных приложения, склеенные одним именем и облачным значком.',
     'platforms.header.intro2': 'ContinuousReader — ни то, ни другое. <strong>Движок чтения, библиотека, типографика, темы, перевод, чтение вслух — одна общая кодовая база, и ведёт она себя одинаково на каждом устройстве.</strong> Меняется способ доступа: клавиатура и трекпад на Mac, касания и свайпы на iPad, один большой палец на iPhone — и на всех трёх на выбор два режима чтения, Comfort и Professional.',
 
@@ -3335,13 +3335,13 @@ const translations = {
     'features.s7.outro':          'Передумали — запустіть майстер з Налаштувань знову. Ваш застосунок — ваші уподобання.',
 
     'meta.platforms.title':   'Платформи — ContinuousReader',
-    'meta.platforms.desc':    'Один застосунок на Mac, iPad та iPhone — адаптовано до кожного пристрою, а не посередній на всіх трьох.',
+    'meta.platforms.desc': 'Один застосунок на Mac, iPad та iPhone — адаптовано до кожного пристрою.',
     'meta.platforms.ogTitle': 'Платформи — ContinuousReader',
-    'meta.platforms.ogDesc':  'Один застосунок на Mac, iPad та iPhone — адаптовано до кожного пристрою, а не посередній на всіх трьох.',
+    'meta.platforms.ogDesc': 'Один застосунок на Mac, iPad та iPhone — адаптовано до кожного пристрою.',
 
     'platforms.header.eyebrow':  'Mac · iPad · iPhone',
     'platforms.header.title':    'Три платформи, три <em>досвіди</em>.',
-    'platforms.header.subtitle': 'Один застосунок на Mac, iPad та iPhone — адаптовано до того, як працює кожен пристрій, а не посередній на всіх трьох.',
+    'platforms.header.subtitle': 'Один застосунок на Mac, iPad та iPhone — адаптовано до кожного пристрою.',
     'platforms.header.intro1':   'Кросплатформні застосунки зазвичай скочуються до однієї з двох крайностей. Або виглядають однаково всюди — а отже, на котромусь із них виглядають неправильно. Або це три різні застосунки, склеєні одним іменем і хмарним значком.',
     'platforms.header.intro2': 'ContinuousReader — ні те, ні інше. <strong>Рушій читання, бібліотека, типографіка, теми, переклад, читання вголос — одна спільна кодова база, і поводиться вона однаково на кожному пристрої.</strong> Змінюється спосіб доступу: клавіатура й трекпад на Mac, дотики й свайпи на iPad, один великий палець на iPhone — і на всіх трьох на вибір два режими читання, Comfort і Professional.',
 
@@ -4498,13 +4498,13 @@ const translations = {
     'features.s7.outro':          'Si cambias de opinión, vuelve a lanzar el asistente desde Ajustes. Tu app, tus preferencias.',
 
     'meta.platforms.title':   'Plataformas — ContinuousReader',
-    'meta.platforms.desc':    'Una app para Mac, iPad e iPhone — adaptada a cada uno, no mediocre en las tres.',
+    'meta.platforms.desc': 'Una app para Mac, iPad e iPhone — adaptada a cada dispositivo.',
     'meta.platforms.ogTitle': 'Plataformas — ContinuousReader',
-    'meta.platforms.ogDesc':  'Una app para Mac, iPad e iPhone — adaptada a cada uno, no mediocre en las tres.',
+    'meta.platforms.ogDesc': 'Una app para Mac, iPad e iPhone — adaptada a cada dispositivo.',
 
     'platforms.header.eyebrow':  'Mac · iPad · iPhone',
     'platforms.header.title':    'Tres plataformas, tres <em>experiencias</em>.',
-    'platforms.header.subtitle': 'Una app para Mac, iPad e iPhone — adaptada a la forma de trabajar de cada dispositivo, no mediocre en las tres.',
+    'platforms.header.subtitle': 'Una app para Mac, iPad e iPhone — adaptada a cada dispositivo.',
     'platforms.header.intro1':   'Las apps multiplataforma suelen acabar en uno de dos sitios. O se ven igual en todas partes — lo que significa que se ven mal en alguna. O son tres apps separadas unidas por el mismo nombre y un icono de nube.',
     'platforms.header.intro2': 'ContinuousReader no es ninguna de las dos. <strong>El motor de lectura, la biblioteca, la tipografía, los temas, la traducción, la lectura en voz alta: una sola base de código, y se comporta igual en todos los dispositivos.</strong> Lo que cambia es cómo se llega a ella: teclado y trackpad en el Mac, toques y deslizamientos en el iPad, un solo pulgar en el iPhone; y en los tres, dos lectores a elegir, Comfort y Professional.',
 
@@ -5663,13 +5663,13 @@ const translations = {
     'features.s7.outro':          'Changé d’avis ? Relancez l’assistant depuis les Réglages. Votre app, vos préférences.',
 
     'meta.platforms.title':   'Plateformes — ContinuousReader',
-    'meta.platforms.desc':    'Une seule app pour Mac, iPad et iPhone — adaptée à chacun, pas médiocre sur les trois.',
+    'meta.platforms.desc': 'Une seule app pour Mac, iPad et iPhone — adaptée à chaque appareil.',
     'meta.platforms.ogTitle': 'Plateformes — ContinuousReader',
-    'meta.platforms.ogDesc':  'Une seule app pour Mac, iPad et iPhone — adaptée à chacun, pas médiocre sur les trois.',
+    'meta.platforms.ogDesc': 'Une seule app pour Mac, iPad et iPhone — adaptée à chaque appareil.',
 
     'platforms.header.eyebrow':  'Mac · iPad · iPhone',
     'platforms.header.title':    'Trois plateformes, trois <em>expériences</em>.',
-    'platforms.header.subtitle': 'Une seule app pour Mac, iPad et iPhone — adaptée à la façon de travailler de chaque appareil, pas médiocre sur les trois.',
+    'platforms.header.subtitle': 'Une seule app pour Mac, iPad et iPhone — adaptée à chaque appareil.',
     'platforms.header.intro1':   'Les apps multiplateformes tombent généralement dans l’un de deux travers. Soit elles se ressemblent partout — ce qui veut dire qu’elles ont l’air fausses quelque part. Soit ce sont trois apps séparées tenues ensemble par le même nom et une icône de nuage.',
     'platforms.header.intro2': 'ContinuousReader n’est ni l’un ni l’autre. <strong>Le moteur de lecture, la bibliothèque, la typographie, les thèmes, la traduction, la lecture à voix haute — une seule base de code, qui se comporte de la même façon sur chaque appareil.</strong> Ce qui change, c’est la manière d’y accéder : clavier et trackpad sur Mac, toucher et gestes sur iPad, un seul pouce sur iPhone — et sur les trois, deux lecteurs au choix, Comfort et Professional.',
 
@@ -6827,13 +6827,13 @@ const translations = {
     'features.s7.outro':          'Wenn du es dir anders überlegst, starte den Assistenten aus den Einstellungen neu. Deine App, deine Vorlieben.',
 
     'meta.platforms.title':   'Plattformen — ContinuousReader',
-    'meta.platforms.desc':    'Eine App für Mac, iPad und iPhone — angepasst an jedes Gerät, nicht mittelmäßig auf allen dreien.',
+    'meta.platforms.desc': 'Eine App für Mac, iPad und iPhone — angepasst an jedes Gerät.',
     'meta.platforms.ogTitle': 'Plattformen — ContinuousReader',
-    'meta.platforms.ogDesc':  'Eine App für Mac, iPad und iPhone — angepasst an jedes Gerät, nicht mittelmäßig auf allen dreien.',
+    'meta.platforms.ogDesc': 'Eine App für Mac, iPad und iPhone — angepasst an jedes Gerät.',
 
     'platforms.header.eyebrow':  'Mac · iPad · iPhone',
     'platforms.header.title':    'Drei Plattformen, drei <em>Erlebnisse</em>.',
-    'platforms.header.subtitle': 'Eine App für Mac, iPad und iPhone — angepasst an die Arbeitsweise jedes Geräts, nicht mittelmäßig auf allen dreien.',
+    'platforms.header.subtitle': 'Eine App für Mac, iPad und iPhone — angepasst an jedes Gerät.',
     'platforms.header.intro1':   'Plattformübergreifende Apps landen meist an einem von zwei Orten. Entweder sehen sie überall gleich aus — was bedeutet, dass sie irgendwo falsch aussehen. Oder es sind drei separate Apps, zusammengehalten vom selben Namen und einem Wolken-Symbol.',
     'platforms.header.intro2': 'ContinuousReader ist keins von beiden. <strong>Die Lese-Engine, die Bibliothek, die Typografie, die Themen, Übersetzung, Vorlesen — eine gemeinsame Codebasis, und sie verhält sich auf jedem Gerät gleich.</strong> Was sich ändert, ist der Zugang: Tastatur und Trackpad auf dem Mac, Tippen und Wischen auf dem iPad, ein einzelner Daumen auf dem iPhone — und auf allen dreien zwei Reader zur Wahl, Comfort und Professional.',
 
