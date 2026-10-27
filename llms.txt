@@ -2,7 +2,7 @@
 
 > A native multiplatform reading app for macOS, iPadOS, and iPhone. One codebase, three platform-adapted experiences. Built in Swift and SwiftUI.
 
-ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB, FB2, MOBI, HTML, TXT, RTF and — on Mac — DOC/DOCX files (and their ZIP variants). The core value proposition is seamless reading position sync across all Apple devices via iCloud.
+ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB (fixed-layout included), FB2, MOBI, AZW3, Markdown, HTML, TXT, RTF, PDF (as text or as pages), comics and manga in CBZ and CBR, and — on Mac — DOC/DOCX files (and their ZIP variants). The core value proposition is seamless reading position sync across all Apple devices via iCloud.
 
 ## Three products
 
@@ -63,8 +63,9 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 - **Minimum OS**: iOS 17.0, macOS 14.0
 - **Storage**: SwiftData (local), iCloud KV Store + iCloud Drive (sync)
 - **Book storage**: Clean HTML files on disk with readable slug-based folder names
-- **Shipped version**: 1.6 "Peacock" (September 2026) for ContinuousReader, JustReader and PlainReader — the number tracks the shared engine generation, not each app
-- **Release highlights** (what changed in 1.6, with pictures): https://continuousreader.app/whats-new.html
+- **Shipped version**: 1.7 "Emperor" (October 2026) for ContinuousReader, JustReader and PlainReader — the number tracks the shared engine generation, not each app
+- **Release highlights** (what changed in 1.7, with pictures): https://continuousreader.app/whats-new.html
+- **1.6 highlights**: https://continuousreader.app/whats-new-1-6.html
 - **1.5 highlights**: https://continuousreader.app/whats-new-1-5.html
 - **Privacy**: No analytics, no telemetry, no tracking. Translation is on-device.
 - **Localization**: English + Russian, Ukrainian, Spanish, French, German (1000+ keys)
@@ -72,8 +73,8 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 
 ## Formats supported
 
-EPUB, FB2, FB2.ZIP, MOBI, HTML, TXT, RTF, DOC/DOCX (Mac only), and ZIP variants of HTML/TXT/RTF/DOC.
-Footnote extraction from EPUB and FB2. Chapter extraction. Cover detection. Encoding auto-detection.
+EPUB (fixed-layout EPUB reads as pages), FB2, FB2.ZIP, MOBI, AZW3 (Kindle without DRM), Markdown, HTML, TXT, RTF, PDF (text extraction with a preview wizard, or pages as pictures), CBZ and CBR (comics and manga, right to left in spreads), DOC/DOCX (Mac only), and ZIP variants of HTML/TXT/RTF/DOC. An archive of several books opens a chooser with a folder tree and a preview.
+Footnote extraction from EPUB and FB2. Chapter extraction. Cover detection. Encoding auto-detection, Chinese (GB18030, Big5) and Japanese (Shift_JIS, EUC-JP, Aozora Bunko markup, furigana) included. Interface in English, Russian, Ukrainian, Spanish, French, German, Simplified Chinese and Japanese.
 
 ## Links
 
