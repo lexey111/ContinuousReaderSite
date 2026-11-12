@@ -106,7 +106,12 @@
         // period in the heading itself — but a trailing period reads wrong in a
         // nav list. Strip it for TOC links only (headings keep theirs).
         if (el.closest('.features-toc')) html = html.replace(/\.\s*$/, '');
+        // A screenshot's callout dot is the element's own child, not part
+        // of the translated text: replacing the HTML dropped it, and the
+        // changelog stood with two dots of its twelve (2026-11-12).
+        const dot = el.querySelector(':scope > .callout-dot');
         el.innerHTML = html;
+        if (dot) el.appendChild(dot);
       }
     });
 
