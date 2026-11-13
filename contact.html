@@ -86,6 +86,19 @@
         <input type="email" id="cf-email" name="email" required autocomplete="email">
       </div>
       <div class="form-field">
+        <label for="cf-app" data-i18n="contact.form.app">App</label>
+        <!-- Which reader the message is about; ?app= presets it (WebReader's
+             Feedback link sends ?app=webreader). It goes into the mail's
+             subject too, «Bug report · WebReader». -->
+        <select id="cf-app" name="app">
+          <option value="ContinuousReader">ContinuousReader</option>
+          <option value="PlainReader">PlainReader</option>
+          <option value="JustReader">JustReader</option>
+          <option value="WebReader">WebReader</option>
+          <option value="Not about one app" selected data-i18n="contact.form.app.none">Not about one app</option>
+        </select>
+      </div>
+      <div class="form-field">
         <label for="cf-subject" data-i18n="contact.form.subject">Subject</label>
         <!-- name="subject" → Web3Forms uses it as the email subject line; the
              value is the (English) subject text, the visible label stays
@@ -180,17 +193,46 @@
 </footer>
 
 <script>
-// Preset the form subject from the app's Help-menu links (#158):
-// contact.html?mode=bug -> Bug report, ?mode=idea -> Feature request.
-// Unknown/missing values leave the form at its default.
+// Preset the form from the links into it: ?mode=bug -> Bug report,
+// ?mode=idea -> Feature request (the apps' Help menus, #158); ?app= -> the
+// reader. Unknown/missing values leave the form at its default.
 (function () {
-    var mode = new URLSearchParams(window.location.search).get('mode');
-    var subject = { bug: 'Bug report', idea: 'Feature request' }[mode];
-    if (!subject) return;
-    var select = document.getElementById('cf-subject');
-    if (select) select.value = subject;
-    var message = document.getElementById('cf-message');
-    if (message) message.focus();
+    var asked = new URLSearchParams(window.location.search);
+    // ?app= names the reader (WebReader's Feedback link): the app's name or
+    // its two letters.
+    var app = {
+        continuousreader: 'ContinuousReader', cr: 'ContinuousReader',
+        plainreader: 'PlainReader', pr: 'PlainReader',
+        justreader: 'JustReader', jr: 'JustReader',
+        webreader: 'WebReader', wr: 'WebReader'
+    }[(asked.get('app') || '').toLowerCase()];
+    if (app) document.getElementById('cf-app').value = app;
+    var subject = { bug: 'Bug report', idea: 'Feature request' }[asked.get('mode')];
+    if (subject) document.getElementById('cf-subject').value = subject;
+    if (app || subject) {
+        var message = document.getElementById('cf-message');
+        if (message) message.focus();
+    }
+})();
+
+// The mail's subject names the reader: «Bug report · WebReader». The
+// select keeps its own value; a hidden field carries the subject sent.
+(function () {
+    var form = document.querySelector('.contact-form');
+    if (!form) return;
+    form.addEventListener('submit', function () {
+        var topic = document.getElementById('cf-subject');
+        var app = document.getElementById('cf-app').value;
+        var sent = form.querySelector('input[name="subject"]');
+        if (!sent) {
+            sent = document.createElement('input');
+            sent.type = 'hidden';
+            sent.name = 'subject';
+            form.appendChild(sent);
+        }
+        topic.removeAttribute('name');
+        sent.value = app === 'Not about one app' ? topic.value : topic.value + ' · ' + app;
+    });
 })();
 </script>
 <script src="js/i18n.js"></script>
