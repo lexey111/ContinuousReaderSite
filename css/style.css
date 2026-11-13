@@ -134,6 +134,48 @@
   --serif:    "Source Serif 4", Georgia, Cambria, Times, serif;
   --sans:     "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono:     "JetBrains Mono", "Menlo", "Courier New", monospace;
+  --nav-bg:         rgba(247, 242, 232, 0.78);
+  --plate:          rgba(255, 255, 255, 0.82);
+  color-scheme: light;
+}
+
+/* Night: the family by lamplight. Auto follows the system; the key in the
+   nav pins day or night (html[data-theme], set before the first paint). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="day"]) {
+  --bg:             #141A20;
+  --bg-deeper:      #1A2129;
+  --bg-darker:      #222B34;
+  --ink:            #ECE5D8;
+  --ink-soft:       #B5C0CA;
+  --ink-fade:       #8593A1;
+  --ink-ghost:      #4C5967;
+  --accent:         #E8845A;
+  --accent-deep:    #F09A6A;
+  --accent-soft:    #5C3A2A;
+  --rule:           rgba(236, 229, 216, 0.12);
+  --rule-strong:    rgba(236, 229, 216, 0.26);
+  --nav-bg:         rgba(20, 26, 32, 0.8);
+  --plate:          rgba(20, 26, 32, 0.86);
+  color-scheme: dark;
+  }
+}
+:root[data-theme="night"] {
+  --bg:             #141A20;
+  --bg-deeper:      #1A2129;
+  --bg-darker:      #222B34;
+  --ink:            #ECE5D8;
+  --ink-soft:       #B5C0CA;
+  --ink-fade:       #8593A1;
+  --ink-ghost:      #4C5967;
+  --accent:         #E8845A;
+  --accent-deep:    #F09A6A;
+  --accent-soft:    #5C3A2A;
+  --rule:           rgba(236, 229, 216, 0.12);
+  --rule-strong:    rgba(236, 229, 216, 0.26);
+  --nav-bg:         rgba(20, 26, 32, 0.8);
+  --plate:          rgba(20, 26, 32, 0.86);
+  color-scheme: dark;
 }
 
 /* ==========================================================
@@ -182,7 +224,7 @@ a { color: inherit; }
   z-index: 100;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: rgba(247, 242, 232, 0.78);
+  background: var(--nav-bg);
   border-bottom: 1px solid transparent;
   transition: border-color 200ms ease;
 }
@@ -325,6 +367,16 @@ a { color: inherit; }
   position: relative;
 }
 .nav-lang:hover { border-color: var(--rule-strong); }
+.nav-theme {
+  display: inline-grid; place-items: center;
+  width: 32px; height: 30px; padding: 0;
+  color: var(--ink-soft); background: transparent;
+  border: 1px solid var(--rule); border-radius: 100px;
+  cursor: pointer; transition: border-color 180ms ease, color 180ms ease;
+}
+.nav-theme:hover { border-color: var(--rule-strong); color: var(--ink); }
+.nav-theme svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.nav-theme svg .fill { fill: currentColor; stroke: none; }
 .nav-lang[aria-expanded="true"] { border-color: var(--rule-strong); }
 
 /* Language dropdown panel */
@@ -3408,7 +3460,7 @@ code {
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.82);
+  background: var(--plate);
   padding: 4px 9px;
   border-radius: 100px;
 }
@@ -3416,6 +3468,7 @@ code {
 .pin-cr i, .dot-cr { background: #2D5573; }
 .pin-pr i, .dot-pr { background: #41789E; }
 .pin-jr i, .dot-jr { background: #A84B28; }
+.dot-wr { background: #7FB8E0; }
 
 .cta-choices {
   display: flex;
@@ -3623,5 +3676,16 @@ code {
 /* The release line under the hero buttons (user, 2026-09-12): a quiet
    pointer to the current release's highlights. */
 .hero-release { margin-top: 18px; font-family: var(--sans); font-size: 14px; }
+.hero-web a::after { content: "\00a0→"; color: var(--accent); }
 .hero-release a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--rule-strong); transition: color 180ms ease, border-color 180ms ease; }
 .hero-release a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+/* Night for the pieces that carry their own colours. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="day"]) .badge.cr, :root:not([data-theme="day"]) .legend .badge-inline.cr { background: #1F3346; color: #B8CCDD; border-color: #2D4A63; }
+  :root:not([data-theme="day"]) .badge.pr, :root:not([data-theme="day"]) .legend .badge-inline.pr { background: #2A2A26; color: #CFC4B0; border-color: #45413A; }
+  :root:not([data-theme="day"]) .badge.jr, :root:not([data-theme="day"]) .legend .badge-inline.jr { background: #3A2419; color: #F0B596; border-color: #5C3A2A; }
+}
+:root[data-theme="night"] .badge.cr, :root[data-theme="night"] .legend .badge-inline.cr { background: #1F3346; color: #B8CCDD; border-color: #2D4A63; }
+:root[data-theme="night"] .badge.pr, :root[data-theme="night"] .legend .badge-inline.pr { background: #2A2A26; color: #CFC4B0; border-color: #45413A; }
+:root[data-theme="night"] .badge.jr, :root[data-theme="night"] .legend .badge-inline.jr { background: #3A2419; color: #F0B596; border-color: #5C3A2A; }

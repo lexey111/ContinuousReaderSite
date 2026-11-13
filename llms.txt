@@ -12,6 +12,8 @@ One picture explains the family: JustReader is the book on your nightstand, Plai
 - **PlainReader** ($6.99, one-time) — a shelf of books in named, coloured, foldable categories, each book in its own place with its own position; no collection to manage. OPDS browser, shared searchable history of the last 25 books, colour tags
 - **JustReader** (free) — one book at a time, with the same engine, typography, themes, translation and Read Aloud
 
+Before the three, a step zero: **WebReader** (free, https://read.continuousreader.app) — the same page engine in any modern browser, on any system. EPUB, FB2, CBZ, Markdown, TXT and HTML (and their ZIPs); palettes, typefaces, columns, paper; eight interface languages; installable and offline. Books are read on the device and never uploaded.
+
 All three share the ReaderCore engine (local Swift Package), so the reading experience — themes, typography, navigation modes, translation, Read Aloud, bookmarks, per-book notes, reading statistics and the Book Card — is the same in all of them. What differs is how much collection management sits on top.
 
 ## Key features
@@ -80,5 +82,6 @@ Footnote extraction from EPUB and FB2. Chapter extraction. Cover detection. Enco
 
 - Website: https://continuousreader.app
 - The family, app by app: https://continuousreader.app/family.html
+- WebReader, in the browser: https://read.continuousreader.app
 - Contact: hello@continuousreader.app
 - Developer: Oleksii Koshkin
