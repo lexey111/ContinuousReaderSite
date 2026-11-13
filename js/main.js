@@ -23,8 +23,9 @@
   //     on those elements too — convention: data-i18n="meta.<page>.title"
   //     on <title>, data-i18n-attr="content:meta.<page>.desc" on
   //     <meta name="description">.
-  //   - User selection persists in localStorage; otherwise we sniff
-  //     navigator.language; otherwise English.
+  //   - A ?lang= the link brought (WebReader's Feedback) is taken as the
+  //     reader's choice and kept; a user selection persists in
+  //     localStorage; otherwise we sniff navigator.language; otherwise English.
   // ----------------------------------------------------------
 
   const STORAGE_KEY = 'cr-lang';
@@ -36,6 +37,16 @@
   function detectLanguage() {
     if (!i18nReady()) return 'en';
     const supported = window.CR_I18N.supported;
+
+    // 0. Asked by the link that brought the reader here (WebReader's
+    //    Feedback sends its own language): taken as the reader's choice.
+    try {
+      const asked = new URLSearchParams(window.location.search).get('lang');
+      if (asked && supported.includes(asked)) {
+        try { localStorage.setItem(STORAGE_KEY, asked); } catch (_) { /* unavailable */ }
+        return asked;
+      }
+    } catch (_) { /* no URL API */ }
 
     // 1. Saved choice
     try {
