@@ -133,6 +133,7 @@
     });
 
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (_) { /* */ }
+    dressReaderLinks();
   }
 
   function setupLanguagePicker() {
@@ -553,6 +554,20 @@
     const t = currentTheme();
     return t === 'night' || (t === 'auto' && systemNight.matches);
   }
+  // WebReader opens in the site's language and light: its links carry
+  // them (?lang=ru&light=night); the reader takes them and drops them
+  // from its address.
+  function dressReaderLinks() {
+    const lang = document.documentElement.getAttribute('lang') || 'en';
+    const light = currentTheme();
+    document.querySelectorAll('a[href^="https://read.continuousreader.app"]').forEach((a) => {
+      const url = new URL(a.getAttribute('href'));
+      url.searchParams.set('lang', lang);
+      url.searchParams.set('light', light);
+      a.setAttribute('href', url.toString());
+    });
+  }
+
   function dressRooms() {
     const night = isNight();
     document.querySelectorAll('img[src*="img/rooms/library-"]').forEach((img) => {
@@ -583,6 +598,7 @@
       } catch (_) { /* */ }
       show();
       dressRooms();
+      dressReaderLinks();
     });
     systemNight.addEventListener('change', dressRooms);
     lang.parentNode.insertBefore(key, lang);
