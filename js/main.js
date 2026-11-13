@@ -533,6 +533,64 @@
   }
 
   // ----------------------------------------------------------
+  // Light: Auto (the system's), Day or Night. The head's snippet sets
+  // html[data-theme] before the first paint; this key cycles it. The
+  // reading room has a night picture of its own.
+  // ----------------------------------------------------------
+  const THEME_KEY = 'cr-theme';
+  const THEME_ICONS = {
+    auto: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.5"/><path class="fill" d="M12 4.5a7.5 7.5 0 0 1 0 15z"/></svg>',
+    day: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.5 1.5M17.2 17.2l1.5 1.5M5.3 18.7l1.5-1.5M17.2 6.8l1.5-1.5"/></svg>',
+    night: '<svg viewBox="0 0 24 24"><path d="M19.5 14.6A8 8 0 0 1 9.4 4.5a8 8 0 1 0 10.1 10.1z"/></svg>',
+  };
+  const systemNight = window.matchMedia('(prefers-color-scheme: dark)');
+
+  function currentTheme() {
+    const t = document.documentElement.dataset.theme;
+    return t === 'day' || t === 'night' ? t : 'auto';
+  }
+  function isNight() {
+    const t = currentTheme();
+    return t === 'night' || (t === 'auto' && systemNight.matches);
+  }
+  function dressRooms() {
+    const night = isNight();
+    document.querySelectorAll('img[src*="img/rooms/library-"]').forEach((img) => {
+      const want = night ? 'library-dark' : 'library-sepia';
+      img.src = img.getAttribute('src').replace(/library-(sepia|dark|light)/, want);
+    });
+  }
+  function setupTheme() {
+    const lang = document.querySelector('.nav-lang');
+    if (!lang) return;
+    const key = document.createElement('button');
+    key.type = 'button';
+    key.className = 'nav-theme';
+    function show() {
+      const t = currentTheme();
+      key.innerHTML = THEME_ICONS[t];
+      key.setAttribute('data-i18n-attr', `title:nav.theme.${t},aria-label:nav.theme.${t}`);
+      const words = i18nReady() ? lookup(document.documentElement.lang || 'en', `nav.theme.${t}`) : null;
+      if (words) { key.title = stripTags(words); key.setAttribute('aria-label', stripTags(words)); }
+    }
+    key.addEventListener('click', () => {
+      const next = { auto: 'day', day: 'night', night: 'auto' }[currentTheme()];
+      if (next === 'auto') delete document.documentElement.dataset.theme;
+      else document.documentElement.dataset.theme = next;
+      try {
+        if (next === 'auto') localStorage.removeItem(THEME_KEY);
+        else localStorage.setItem(THEME_KEY, next);
+      } catch (_) { /* */ }
+      show();
+      dressRooms();
+    });
+    systemNight.addEventListener('change', dressRooms);
+    lang.parentNode.insertBefore(key, lang);
+    show();
+    dressRooms();
+  }
+
+  // ----------------------------------------------------------
   // Boot
   // ----------------------------------------------------------
   function boot() {
@@ -540,6 +598,7 @@
     const lang = detectLanguage();
     if (i18nReady()) applyLanguage(lang);
     setupLanguagePicker();
+    setupTheme();
     // Re-run once more so the freshly-built dropdown items pick up
     // the .is-current marker and label.
     if (i18nReady()) applyLanguage(lang);
