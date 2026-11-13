@@ -1314,7 +1314,7 @@ const translations = {
 
     'privacy.header.eyebrow':  'Your data, your devices',
     'privacy.header.title':    'Privacy <em>Policy</em>',
-    'privacy.header.subtitle': 'Last updated: August 2026',
+    'privacy.header.subtitle': 'Last updated: November 2026',
 
     'privacy.short.h':         'The short version',
     'privacy.short.p':         'ContinuousReader, PlainReader and JustReader do not collect, analyze, or sell any personal data. <strong>No analytics, no telemetry, no tracking, no advertising.</strong> Your data stays with you — on your own devices, in your own iCloud account if you turn on sync, and briefly in transit between your devices when sync hands a fresh reading position from one to another. Nothing else, nowhere else.',
@@ -1338,6 +1338,8 @@ const translations = {
     'privacy.net.p2':          'During the act of reading, the only traffic is the position sync covered above — and that carries only a hashed book ID, a paragraph anchor, and a progress percentage, never any content. Translation is on-device through Apple’s Translation framework — <strong>nothing about the book itself ever leaves your device</strong>.',
     'privacy.third.h':         'Third-party services',
     'privacy.third.p':         'The apps do not integrate any third-party analytics, crash reporting, advertising, or tracking services. The external dependencies are Apple’s own frameworks (iCloud, Translation), and — only when you turn on sync — Ably (an encrypted realtime relay for your reading position) and a Cloudflare Worker (which mints short-lived tokens that let your devices connect to that relay). Both see only a random identifier we keep in your iCloud Keychain — never your name, email, or anything tied to your real identity — and neither retains the messages flowing through.',
+    'privacy.web.h':           'This website and WebReader',
+    'privacy.web.p':           'This website and WebReader, the reader in the browser at read.continuousreader.app, count visits with Cloudflare Web Analytics: how many there were, from which countries and browsers, to which pages. It sets no cookies and keeps nothing that tells who you are. The books you open in WebReader are read in your browser and never uploaded: they reach neither us nor Cloudflare.',
     'privacy.kids.h':          'Children’s privacy',
     'privacy.kids.p':          'The apps do not collect personal information from anyone, including children under 13.',
     'privacy.changes.h':       'Changes to this policy',
@@ -1966,7 +1968,7 @@ const translations = {
 
     'privacy.header.eyebrow':  'Ваши данные, ваши устройства',
     'privacy.header.title':    'Политика <em>конфиденциальности</em>',
-    'privacy.header.subtitle': 'Обновлено: май 2026',
+    'privacy.header.subtitle': 'Обновлено: ноябрь 2026',
 
     'privacy.short.h':         'Коротко',
     'privacy.short.p':         'ContinuousReader, PlainReader и JustReader не собирают, не анализируют и не продают никаких персональных данных. <strong>Никакой аналитики, никакой телеметрии, никакого трекинга, никакой рекламы.</strong> Ваши данные остаются с вами — на ваших собственных устройствах, в вашем собственном iCloud-аккаунте, если вы включили синхронизацию, и кратковременно «в полёте» между вашими устройствами, когда синхронизация передаёт свежую позицию чтения с одного устройства на другое. Больше нигде и ничего.',
@@ -1994,6 +1996,8 @@ const translations = {
 
     'privacy.third.h':         'Сторонние сервисы',
     'privacy.third.p':         'Приложения не интегрируют сторонней аналитики, отчётов о падениях, рекламы и трекинга. Внешние зависимости — собственные Apple-фреймворки (iCloud, Translation), и — только при включённой синхронизации — Ably (зашифрованный realtime-канал для вашей позиции чтения) и Cloudflare Worker (выпускающий короткоживущие токены, чтобы ваши устройства могли подключаться к этому каналу). Оба видят только случайный идентификатор, хранящийся в вашем iCloud Keychain — никогда ваше имя, email или что-либо привязанное к вашей реальной личности — и ни один из них не сохраняет проходящие сообщения.',
+    'privacy.web.h':           'Этот сайт и WebReader',
+    'privacy.web.p':           'Этот сайт и WebReader, читалка в браузере на read.continuousreader.app, считают визиты через Cloudflare Web Analytics: сколько их было, из каких стран и браузеров, на какие страницы. Счётчик не ставит cookies и не хранит ничего, по чему можно узнать, кто вы. Книги, которые вы открываете в WebReader, читаются в вашем браузере и никуда не загружаются: ни к нам, ни в Cloudflare.',
 
     'privacy.kids.h':          'Конфиденциальность детей',
     'privacy.kids.p':          'Приложения не собирают персональную информацию ни от кого, включая детей до 13 лет.',
@@ -3345,7 +3349,7 @@ const translations = {
 
     'privacy.header.eyebrow':  'Ваші дані, ваші пристрої',
     'privacy.header.title':    'Політика <em>конфіденційності</em>',
-    'privacy.header.subtitle': 'Оновлено: травень 2026',
+    'privacy.header.subtitle': 'Оновлено: листопад 2026',
 
     'privacy.short.h':         'Коротко',
     'privacy.short.p':         'ContinuousReader, PlainReader і JustReader не збирають, не аналізують і не продають жодних персональних даних. <strong>Жодної аналітики, жодної телеметрії, жодного трекінгу, жодної реклами.</strong> Ваші дані залишаються з вами — на ваших власних пристроях, у вашому власному iCloud-акаунті, якщо ви ввімкнули синхронізацію, і коротко «в польоті» між вашими пристроями, коли синхронізація передає свіжу позицію читання з одного на інший. Більше ніде і нічого.',
@@ -3373,6 +3377,8 @@ const translations = {
 
     'privacy.third.h':         'Сторонні сервіси',
     'privacy.third.p':         'Застосунки не інтегрують сторонньої аналітики, звітів про збої, реклами і трекінгу. Зовнішні залежності — власні Apple-фреймворки (iCloud, Translation), і — лише при ввімкненій синхронізації — Ably (зашифрований realtime-канал для вашої позиції читання) та Cloudflare Worker (що випускає короткоживучі токени, аби ваші пристрої могли підключатися до цього ретранслятора). Обидва бачать лише випадковий ідентифікатор, що зберігається у вашому iCloud Keychain — ніколи ваше імʼя, email або щось привʼязане до вашої реальної особистості — і жоден з них не зберігає повідомлення, що проходять.',
+    'privacy.web.h':           'Цей сайт і WebReader',
+    'privacy.web.p':           'Цей сайт і WebReader, читалка в браузері на read.continuousreader.app, рахують візити через Cloudflare Web Analytics: скільки їх було, з яких країн і браузерів, на які сторінки. Лічильник не ставить cookies і не зберігає нічого, за чим можна дізнатися, хто ви. Книги, які ви відкриваєте у WebReader, читаються у вашому браузері й нікуди не завантажуються: ні до нас, ні в Cloudflare.',
 
     'privacy.kids.h':          'Конфіденційність дітей',
     'privacy.kids.p':          'Застосунки не збирають персональну інформацію ні від кого, включно з дітьми до 13 років.',
@@ -4722,7 +4728,7 @@ const translations = {
 
     'privacy.header.eyebrow':  'Tus datos, tus dispositivos',
     'privacy.header.title':    'Política de <em>privacidad</em>',
-    'privacy.header.subtitle': 'Última actualización: agosto de 2026',
+    'privacy.header.subtitle': 'Última actualización: noviembre de 2026',
 
     'privacy.short.h':         'La versión corta',
     'privacy.short.p':         'ContinuousReader, PlainReader y JustReader no recopilan, analizan ni venden ningún dato personal. <strong>Sin analíticas, sin telemetría, sin rastreo, sin publicidad.</strong> Tus datos se quedan contigo: en tus dispositivos, en tu propia cuenta de iCloud si activas la sincronización, y brevemente en tránsito entre tus dispositivos cuando la sincronización pasa una posición nueva.',
@@ -4750,6 +4756,8 @@ const translations = {
 
     'privacy.third.h':         'Servicios de terceros',
     'privacy.third.p':         'Las apps no integran ningún servicio de terceros de analíticas, informes de fallos, publicidad o rastreo. Las dependencias externas son los frameworks de Apple (iCloud, Translation), y — solo cuando activas la sincronización — Ably (un relay en tiempo real cifrado para tu posición de lectura) y un Cloudflare Worker (que emite tokens de corta duración que permiten a tus dispositivos conectarse a ese relay). Ambos ven solo un identificador aleatorio que guardamos en tu iCloud Keychain — nunca tu nombre, email o nada vinculado a tu identidad real — y ninguno conserva los mensajes que pasan por ellos.',
+    'privacy.web.h':           'Esta web y WebReader',
+    'privacy.web.p':           'Esta web y WebReader, el lector en el navegador de read.continuousreader.app, cuentan las visitas con Cloudflare Web Analytics: cuántas hubo, desde qué países y navegadores, a qué páginas. No usa cookies ni guarda nada que diga quién eres. Los libros que abres en WebReader se leen en tu navegador y nunca se suben: no llegan ni a nosotros ni a Cloudflare.',
 
     'privacy.kids.h':          'Privacidad de menores',
     'privacy.kids.p':          'Las apps no recopilan información personal de nadie, incluidos menores de 13 años.',
@@ -6101,7 +6109,7 @@ const translations = {
 
     'privacy.header.eyebrow':  'Vos données, vos appareils',
     'privacy.header.title':    'Politique de <em>confidentialité</em>',
-    'privacy.header.subtitle': 'Dernière mise à jour : août 2026',
+    'privacy.header.subtitle': 'Dernière mise à jour : novembre 2026',
 
     'privacy.short.h':         'La version courte',
     'privacy.short.p':         'ContinuousReader, PlainReader et JustReader ne collectent, n’analysent et ne vendent aucune donnée personnelle. <strong>Pas d’analytique, pas de télémétrie, pas de pistage, pas de publicité.</strong> Vos données restent chez vous : sur vos appareils, dans votre propre compte iCloud si vous activez la synchronisation, et brièvement en transit entre vos appareils quand la synchronisation transmet une position fraîche.',
@@ -6129,6 +6137,8 @@ const translations = {
 
     'privacy.third.h':         'Services tiers',
     'privacy.third.p':         'Les apps n’intègrent aucun service tiers d’analytique, de rapport de crash, de publicité ou de tracking. Les dépendances externes sont les frameworks d’Apple (iCloud, Translation), et — uniquement quand vous activez la synchronisation — Ably (un relais temps réel chiffré pour votre position de lecture) et un Cloudflare Worker (qui émet des tokens de courte durée permettant à vos appareils de se connecter à ce relais). Les deux ne voient qu’un identifiant aléatoire que nous gardons dans votre iCloud Keychain — jamais votre nom, email ou quoi que ce soit lié à votre identité réelle — et ni l’un ni l’autre ne conserve les messages qui transitent.',
+    'privacy.web.h':           'Ce site et WebReader',
+    'privacy.web.p':           'Ce site et WebReader, le lecteur dans le navigateur sur read.continuousreader.app, comptent les visites avec Cloudflare Web Analytics : combien, depuis quels pays et navigateurs, vers quelles pages. Aucun cookie n’est posé, et rien n’est gardé qui dise qui vous êtes. Les livres que vous ouvrez dans WebReader sont lus dans votre navigateur et jamais envoyés : ni à nous, ni à Cloudflare.',
 
     'privacy.kids.h':          'Confidentialité des enfants',
     'privacy.kids.p':          'Les apps ne collectent d’informations personnelles auprès de personne, y compris les enfants de moins de 13 ans.',
@@ -7479,7 +7489,7 @@ const translations = {
 
     'privacy.header.eyebrow':  'Deine Daten, deine Geräte',
     'privacy.header.title':    '<em>Datenschutz</em>erklärung',
-    'privacy.header.subtitle': 'Stand: August 2026',
+    'privacy.header.subtitle': 'Stand: November 2026',
 
     'privacy.short.h':         'Die Kurzfassung',
     'privacy.short.p':         'ContinuousReader, PlainReader und JustReader sammeln, analysieren und verkaufen keine personenbezogenen Daten. <strong>Keine Analytik, keine Telemetrie, kein Tracking, keine Werbung.</strong> Deine Daten bleiben bei dir — auf deinen Geräten, in deinem eigenen iCloud-Account, wenn du die Synchronisierung einschaltest, und kurz unterwegs zwischen deinen Geräten, wenn die Synchronisierung eine frische Position weiterreicht.',
@@ -7507,6 +7517,8 @@ const translations = {
 
     'privacy.third.h':         'Drittanbieter-Dienste',
     'privacy.third.p':         'Die Apps integrieren keine Drittanbieter-Dienste für Analyse, Crash-Reports, Werbung oder Tracking. Die externen Abhängigkeiten sind Apples eigene Frameworks (iCloud, Translation) und — nur wenn du Sync aktivierst — Ably (ein verschlüsseltes Echtzeit-Relay für deine Leseposition) und ein Cloudflare Worker (der kurzlebige Tokens erstellt, mit denen sich deine Geräte mit diesem Relay verbinden können). Beide sehen nur eine zufällige Kennung, die wir in deinem iCloud-Schlüsselbund ablegen — niemals deinen Namen, deine E-Mail oder etwas, das mit deiner echten Identität verknüpft ist — und keiner von beiden speichert die Nachrichten, die durchlaufen.',
+    'privacy.web.h':           'Diese Website und WebReader',
+    'privacy.web.p':           'Diese Website und WebReader, der Reader im Browser unter read.continuousreader.app, zählen Besuche mit Cloudflare Web Analytics: wie viele, aus welchen Ländern und Browsern, auf welche Seiten. Es werden keine Cookies gesetzt und nichts gespeichert, woran man erkennt, wer Sie sind. Die Bücher, die Sie in WebReader öffnen, werden in Ihrem Browser gelesen und nie hochgeladen: sie erreichen weder uns noch Cloudflare.',
 
     'privacy.kids.h':          'Datenschutz für Kinder',
     'privacy.kids.p':          'Die Apps erheben von niemandem personenbezogene Daten — auch nicht von Kindern unter 13 Jahren.',
