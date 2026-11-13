@@ -735,7 +735,7 @@ a { color: inherit; }
   opacity: 0.85;
   padding-left: 12px;
   margin-left: 4px;
-  border-left: 1px solid rgba(247, 242, 232, 0.25);
+  border-left: 1px solid color-mix(in srgb, currentColor 28%, transparent);
 }
 
 .cta-secondary {
@@ -3163,6 +3163,8 @@ code {
 
 @media (max-width: 600px) {
   .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .hero-alts { padding-left: 18px; }
+  .hero-release { flex-direction: column; gap: 6px; margin-top: 36px; }
   .reading-strip-inner { flex-wrap: wrap; gap: 12px; }
   .reading-strip-caption { width: 100%; margin-left: 0; }
   .final-cta-buttons { flex-direction: column; align-items: center; gap: 20px; }
@@ -3675,8 +3677,40 @@ code {
 
 /* The release line under the hero buttons (user, 2026-09-12): a quiet
    pointer to the current release's highlights. */
-.hero-release { margin-top: 18px; font-family: var(--sans); font-size: 14px; }
-.hero-web a::after { content: "\00a0→"; color: var(--accent); }
+/* Beside the main call, the family's other doors: one line each, the
+   dot of its colour, a quiet note; the arrow comes under the pointer. */
+.hero-alts {
+  list-style: none; margin: 0; padding: 2px 0 2px 28px;
+  border-left: 1px solid var(--rule);
+  display: grid; gap: 7px;
+  font-family: var(--sans); font-size: 14px; line-height: 1.4;
+}
+.hero-alts a { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 500; text-decoration: none; }
+.hero-alts .alt-note { color: var(--ink-fade); font-weight: 400; }
+.hero-alts .alt-note::before { content: "·"; margin-right: 10px; }
+.hero-alts a::after { content: "→"; color: var(--accent); opacity: 0; transform: translateX(-4px); transition: opacity 180ms ease, transform 180ms ease; }
+.hero-alts a:hover::after, .hero-alts a:focus-visible::after { opacity: 1; transform: none; }
+.hero-alts a:hover .alt-note { color: var(--ink-soft); }
+
+/* «New», for one release beside what is new (WebReader, off at 1.9). */
+.badge-new {
+  display: inline-block; margin-left: 10px; padding: 2px 8px 2px;
+  font-family: var(--sans); font-size: 10px; font-weight: 600; line-height: 1.5;
+  letter-spacing: 0.12em; text-transform: uppercase; vertical-align: 1px;
+  color: var(--accent-deep); background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border-radius: 100px;
+}
+.hero-alts a:hover .badge-new { color: var(--accent-deep); }
+
+/* The news, apart from the calls: under a hairline, with its own label. */
+.hero-release {
+  margin-top: 48px; padding-top: 18px; max-width: 38em;
+  border-top: 1px solid var(--rule);
+  display: flex; align-items: baseline; gap: 16px;
+  font-family: var(--sans); font-size: 14px; line-height: 1.5;
+  opacity: 0; animation: fadeIn 900ms ease 800ms forwards;
+}
+.hero-release-label { flex: none; font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
 .hero-release a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--rule-strong); transition: color 180ms ease, border-color 180ms ease; }
 .hero-release a:hover { color: var(--ink); border-bottom-color: var(--ink); }
 

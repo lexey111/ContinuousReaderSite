@@ -440,7 +440,10 @@ const translations = {
     'common.cta.getCR':         'Get ContinuousReader',
     'common.cta.getPR':         'Get PlainReader',
     'common.cta.getJR':         'Get JustReader, free',
-    'common.cta.tryJR':         'Or try PlainReader ($6.99) or JustReader (free)',
+    'common.cta.free':          "free",
+    'common.new':               "New",
+    'common.cta.inBrowser':     "in the browser",
+    'common.cta.releaseLabel':  "Release",
     'common.cta.release': 'Current version — 1.8 “Map”. The release’s motto is “Dress code”: can you guess why? What’s new in it?',
 
     // ============================================================
@@ -1366,7 +1369,6 @@ const translations = {
     'family.jr.closing': 'Free, with no trial period and the reader complete: every reading feature here is exactly the one the bigger apps have.',
     'family.jr.eyebrow': 'JustReader · free',
     'family.jr.intro': 'One book at a time. Open a file, read it, close it. There is no library, no shelf and nothing to file — the book you are reading is the whole app.',
-    "common.cta.web": "Or read in the browser right now, nothing to install",
     "common.cta.openWR": "Read in the browser: WebReader",
     "family.wr.eyebrow": "WebReader · free, in the browser",
     "family.wr.title": "A book <em>in hand</em>.",
@@ -1824,7 +1826,10 @@ const translations = {
     'common.cta.getCR':         'Загрузить ContinuousReader',
     'common.cta.getPR':         'Загрузить PlainReader',
     'common.cta.getJR':         'Загрузить JustReader, бесплатно',
-    'common.cta.tryJR':         'Или попробуйте PlainReader ($6.99) либо JustReader (бесплатно)',
+    'common.cta.free':          "бесплатно",
+    'common.new':               "Новинка",
+    'common.cta.inBrowser':     "в браузере",
+    'common.cta.releaseLabel':  "Релиз",
     'common.cta.release': 'Актуальная версия — 1.8 «Пестрокрыльница». Девиз релиза — «Dress code»: догадаетесь, почему? Что в ней нового?',
 
     // ---------- Meta (index) ----------
@@ -2749,7 +2754,6 @@ const translations = {
     'family.jr.closing': 'Бесплатно, без пробного периода, с полноценной читалкой: все возможности чтения здесь ровно такие же, как в старших программах семейства.',
     'family.jr.eyebrow': 'JustReader · бесплатно',
     'family.jr.intro': 'Одна книга за раз. Открыли файл, прочитали, закрыли. Ни библиотеки, ни полки, раскладывать нечего — книга, которую вы читаете, и есть всё приложение.',
-    "common.cta.web": "Или читайте прямо в браузере, ничего не устанавливая",
     "common.cta.openWR": "Читать в браузере: WebReader",
     "family.wr.eyebrow": "WebReader · бесплатно, в браузере",
     "family.wr.title": "Книга <em>в руках</em>.",
@@ -3199,7 +3203,10 @@ const translations = {
     'common.cta.getCR':         'Завантажити ContinuousReader',
     'common.cta.getPR':         'Завантажити PlainReader',
     'common.cta.getJR':         'Завантажити JustReader, безкоштовно',
-    'common.cta.tryJR':         'Або спробуйте PlainReader ($6.99) чи JustReader (безкоштовно)',
+    'common.cta.free':          "безкоштовно",
+    'common.new':               "Новинка",
+    'common.cta.inBrowser':     "у браузері",
+    'common.cta.releaseLabel':  "Реліз",
     'common.cta.release': 'Актуальна версія — 1.8 «Рябокрилка». Девіз релізу — «Dress code»: здогадаєтеся, чому? Що в ній нового?',
 
     // ---------- Meta (index) ----------
@@ -4124,7 +4131,6 @@ const translations = {
     'family.jr.closing': 'Безкоштовно, без пробного періоду, з повноцінною читалкою: усі можливості читання тут точно такі самі, як у старших застосунках сімейства.',
     'family.jr.eyebrow': 'JustReader · безкоштовно',
     'family.jr.intro': 'Одна книжка за раз. Відкрили файл, прочитали, закрили. Ні бібліотеки, ні полиці, розкладати нічого — книжка, яку ви читаєте, і є весь застосунок.',
-    "common.cta.web": "Або читайте просто в браузері, нічого не встановлюючи",
     "common.cta.openWR": "Читати в браузері: WebReader",
     "family.wr.eyebrow": "WebReader · безкоштовно, у браузері",
     "family.wr.title": "Книга <em>в руках</em>.",
@@ -4572,7 +4578,10 @@ const translations = {
     'common.cta.getCR':         'Obtén ContinuousReader',
     'common.cta.getPR':         'Obtén PlainReader',
     'common.cta.getJR':         'Obtén JustReader, gratis',
-    'common.cta.tryJR':         'O prueba PlainReader ($6.99) o JustReader (gratis)',
+    'common.cta.free':          "gratis",
+    'common.new':               "Nuevo",
+    'common.cta.inBrowser':     "en el navegador",
+    'common.cta.releaseLabel':  "Versión",
     'common.cta.release': 'Versión actual: 1.8 “Prótea”. El lema de la versión es “Dress code”: ¿adivinas por qué? ¿Qué hay de nuevo?',
 
     // ---------- Meta (index) ----------
@@ -5497,7 +5506,6 @@ const translations = {
     'family.jr.closing': 'Gratis, sin periodo de prueba y con el lector completo: todas las funciones de lectura son exactamente las de sus hermanos mayores.',
     'family.jr.eyebrow': 'JustReader · gratis',
     'family.jr.intro': 'Un libro cada vez. Abra el archivo, léalo, ciérrelo. No hay biblioteca ni estante, no hay nada que ordenar: el libro que está leyendo es toda la app.',
-    "common.cta.web": "O lee ahora mismo en el navegador, sin instalar nada",
     "common.cta.openWR": "Leer en el navegador: WebReader",
     "family.wr.eyebrow": "WebReader · gratis, en el navegador",
     "family.wr.title": "Un libro <em>en la mano</em>.",
@@ -5947,7 +5955,10 @@ const translations = {
     'common.cta.getCR':         'Obtenir ContinuousReader',
     'common.cta.getPR':         'Obtenir PlainReader',
     'common.cta.getJR':         'Obtenir JustReader, gratuit',
-    'common.cta.tryJR':         'Ou essayez PlainReader (6,99 $) ou JustReader (gratuit)',
+    'common.cta.free':          "gratuit",
+    'common.new':               "Nouveau",
+    'common.cta.inBrowser':     "dans le navigateur",
+    'common.cta.releaseLabel':  "Version",
     'common.cta.release': 'Version actuelle — 1.8 “Carte géographique”. La devise de la version : « Dress code ». Devinez pourquoi ? Quoi de neuf ?',
 
     // ---------- Meta (index) ----------
@@ -6872,7 +6883,6 @@ const translations = {
     'family.jr.closing': 'Gratuit, sans période d’essai et avec le lecteur au complet : toutes les fonctions de lecture y sont exactement celles des grands frères.',
     'family.jr.eyebrow': 'JustReader · gratuit',
     'family.jr.intro': 'Un livre à la fois. Ouvrez le fichier, lisez-le, refermez-le. Pas de bibliothèque, pas d’étagère, rien à classer : le livre que vous lisez, c’est toute l’application.',
-    "common.cta.web": "Ou lisez tout de suite dans le navigateur, sans rien installer",
     "common.cta.openWR": "Lire dans le navigateur : WebReader",
     "family.wr.eyebrow": "WebReader · gratuit, dans le navigateur",
     "family.wr.title": "Un livre <em>en main</em>.",
@@ -7321,7 +7331,10 @@ const translations = {
     'common.cta.getCR':         'ContinuousReader laden',
     'common.cta.getPR':         'PlainReader laden',
     'common.cta.getJR':         'JustReader laden, kostenlos',
-    'common.cta.tryJR':         'Oder probier PlainReader (6,99 $) oder JustReader (kostenlos)',
+    'common.cta.free':          "kostenlos",
+    'common.new':               "Neu",
+    'common.cta.inBrowser':     "im Browser",
+    'common.cta.releaseLabel':  "Version",
     'common.cta.release': 'Aktuelle Version — 1.8 „Landkärtchen“. Das Motto der Version ist „Dress code“: Erraten Sie, warum? Was ist neu?',
 
     // ---------- Meta (index) ----------
@@ -8246,7 +8259,6 @@ const translations = {
     'family.jr.closing': 'Kostenlos, ohne Testphase und mit dem vollständigen Leseprogramm: Alle Lesefunktionen sind hier genau dieselben wie in den größeren Programmen.',
     'family.jr.eyebrow': 'JustReader · kostenlos',
     'family.jr.intro': 'Ein Buch nach dem anderen. Datei öffnen, lesen, schließen. Keine Bibliothek, kein Regal, nichts einzusortieren — das Buch, das Sie lesen, ist die ganze App.',
-    "common.cta.web": "Oder gleich im Browser lesen, ohne etwas zu installieren",
     "common.cta.openWR": "Im Browser lesen: WebReader",
     "family.wr.eyebrow": "WebReader · kostenlos, im Browser",
     "family.wr.title": "Ein Buch <em>in der Hand</em>.",
