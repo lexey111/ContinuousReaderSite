@@ -3667,6 +3667,16 @@ code {
 .hero-alts a:hover::after, .hero-alts a:focus-visible::after { opacity: 1; transform: none; }
 .hero-alts a:hover .alt-note { color: var(--ink-soft); }
 
+/* «New», for one release beside what is new (WebReader, off at 1.9). */
+.badge-new {
+  display: inline-block; margin-left: 10px; padding: 2px 8px 2px;
+  font-family: var(--sans); font-size: 10px; font-weight: 600; line-height: 1.5;
+  letter-spacing: 0.12em; text-transform: uppercase; vertical-align: 1px;
+  color: var(--accent-deep); background: color-mix(in srgb, var(--accent) 14%, transparent);
+  border-radius: 100px;
+}
+.hero-alts a:hover .badge-new { color: var(--accent-deep); }
+
 /* The news, apart from the calls: under a hairline, with its own label. */
 .hero-release {
   margin-top: 48px; padding-top: 18px; max-width: 38em;
