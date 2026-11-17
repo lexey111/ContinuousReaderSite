@@ -1,3 +1,6 @@
 
 # Source screenshots — only the optimized .webp are served/committed
 img/screenshots/*.png
+
+# Claude Code: local permissions, this machine only
+.claude/settings.local.json
