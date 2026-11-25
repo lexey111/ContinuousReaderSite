@@ -95,6 +95,7 @@
           <option value="PlainReader">PlainReader</option>
           <option value="JustReader">JustReader</option>
           <option value="WebReader">WebReader</option>
+          <option value="NanoReader">NanoReader</option>
           <option value="Not about one app" selected data-i18n="contact.form.app.none">Not about one app</option>
         </select>
       </div>
@@ -198,13 +199,14 @@
 // reader. Unknown/missing values leave the form at its default.
 (function () {
     var asked = new URLSearchParams(window.location.search);
-    // ?app= names the reader (WebReader's Feedback link): the app's name or
+    // ?app= names the reader (WebReader's and NanoReader's Feedback links): the app's name or
     // its two letters.
     var app = {
         continuousreader: 'ContinuousReader', cr: 'ContinuousReader',
         plainreader: 'PlainReader', pr: 'PlainReader',
         justreader: 'JustReader', jr: 'JustReader',
-        webreader: 'WebReader', wr: 'WebReader'
+        webreader: 'WebReader', wr: 'WebReader',
+        nanoreader: 'NanoReader', nr: 'NanoReader'
     }[(asked.get('app') || '').toLowerCase()];
     if (app) document.getElementById('cf-app').value = app;
     var subject = { bug: 'Bug report', idea: 'Feature request' }[asked.get('mode')];
