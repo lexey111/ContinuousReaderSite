@@ -1303,6 +1303,14 @@ const translations = {
     'thanks.header.title': 'Thank <em>you</em>.',
     'thanks.header.subtitle': 'Your message landed in my inbox. I answer every one myself, which usually takes a day or two.',
     'thanks.back': 'Back to home',
+    'meta.nano.title': "NanoReader for Windows, Linux and Mac",
+    'meta.nano.desc': "A free book reader for Windows, Linux and Mac. The beta is coming to this page.",
+    'nano.eyebrow': "NanoReader · free",
+    'nano.title': "Coming <em>soon</em>.",
+    'nano.subtitle': "NanoReader is a book reader for Windows, Linux and Mac on the engine the whole family shares. The beta will appear on this page.",
+    'nano.p1': "Until then a book opens in the browser: nothing to install, and the book never leaves your device.",
+    'nano.family': "The whole family",
+    'nano.alt': "An old computer with a butterfly on its screen and a botanical book open before it",
 
     // ============================================================
     // PRIVACY
@@ -1959,6 +1967,14 @@ const translations = {
     'thanks.header.title': 'Спасибо за <em>письмо</em>.',
     'thanks.header.subtitle': 'Ваше письмо дошло. Я отвечаю на каждое сам — обычно это занимает день-два.',
     'thanks.back': 'На главную',
+    'meta.nano.title': "NanoReader для Windows, Linux и Mac",
+    'meta.nano.desc': "Бесплатная читалка для Windows, Linux и Mac. Бета появится на этой странице.",
+    'nano.eyebrow': "NanoReader · бесплатно",
+    'nano.title': "Скоро <em>здесь</em>.",
+    'nano.subtitle': "NanoReader — читалка для Windows, Linux и Mac на том же движке, что и у всего семейства. Бета появится на этой странице.",
+    'nano.p1': "А пока книгу можно открыть в браузере: ничего не нужно устанавливать, и книга не покидает ваше устройство.",
+    'nano.family': "Всё семейство",
+    'nano.alt': "Старый компьютер с бабочкой на экране, перед ним раскрытая ботаническая книга",
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Политика конфиденциальности — ContinuousReader',
@@ -3340,6 +3356,14 @@ const translations = {
     'thanks.header.title': 'Дякую за <em>лист</em>.',
     'thanks.header.subtitle': 'Ваш лист дійшов. Я відповідаю на кожен сам — зазвичай це займає день-два.',
     'thanks.back': 'На головну',
+    'meta.nano.title': "NanoReader для Windows, Linux і Mac",
+    'meta.nano.desc': "Безкоштовна читалка для Windows, Linux і Mac. Бета з’явиться на цій сторінці.",
+    'nano.eyebrow': "NanoReader · безкоштовно",
+    'nano.title': "Скоро <em>тут</em>.",
+    'nano.subtitle': "NanoReader — читалка для Windows, Linux і Mac на тому самому рушії, що й у всього сімейства. Бета з’явиться на цій сторінці.",
+    'nano.p1': "А поки книгу можна відкрити в браузері: нічого не треба встановлювати, і книга не залишає ваш пристрій.",
+    'nano.family': "Усе сімейство",
+    'nano.alt': "Старий комп’ютер із метеликом на екрані, перед ним розгорнута ботанічна книга",
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Політика конфіденційності — ContinuousReader',
@@ -4719,6 +4743,14 @@ const translations = {
     'thanks.header.title': 'Gracias por tu <em>mensaje</em>.',
     'thanks.header.subtitle': 'Tu mensaje ha llegado a mi bandeja. Respondo yo mismo a todos, y suele llevarme un día o dos.',
     'thanks.back': 'Volver al inicio',
+    'meta.nano.title': "NanoReader para Windows, Linux y Mac",
+    'meta.nano.desc': "Un lector gratuito para Windows, Linux y Mac. La beta llegará a esta página.",
+    'nano.eyebrow': "NanoReader · gratis",
+    'nano.title': "Muy <em>pronto</em>.",
+    'nano.subtitle': "NanoReader es un lector para Windows, Linux y Mac con el mismo motor que toda la familia. La beta aparecerá en esta página.",
+    'nano.p1': "Mientras tanto, el libro se abre en el navegador: no hay que instalar nada y el libro no sale de tu dispositivo.",
+    'nano.family': "Toda la familia",
+    'nano.alt': "Un ordenador antiguo con una mariposa en la pantalla y un libro de botánica abierto delante",
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Política de privacidad — ContinuousReader',
@@ -6100,6 +6132,14 @@ const translations = {
     'thanks.header.title': 'Merci pour votre <em>message</em>.',
     'thanks.header.subtitle': 'Votre message est arrivé dans ma boîte. Je réponds moi-même à chacun, ce qui prend en général un jour ou deux.',
     'thanks.back': 'Retour à l’accueil',
+    'meta.nano.title': "NanoReader pour Windows, Linux et Mac",
+    'meta.nano.desc': "Un lecteur gratuit pour Windows, Linux et Mac. La bêta arrive sur cette page.",
+    'nano.eyebrow': "NanoReader · gratuit",
+    'nano.title': "Bientôt <em>ici</em>.",
+    'nano.subtitle': "NanoReader est un lecteur pour Windows, Linux et Mac, avec le même moteur que toute la famille. La bêta paraîtra sur cette page.",
+    'nano.p1': "En attendant, le livre s’ouvre dans le navigateur : rien à installer, et le livre ne quitte pas votre appareil.",
+    'nano.family': "Toute la famille",
+    'nano.alt': "Un vieil ordinateur, un papillon à l’écran et un livre de botanique ouvert devant",
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Politique de confidentialité — ContinuousReader',
@@ -7480,6 +7520,14 @@ const translations = {
     'thanks.header.title': 'Danke für deine <em>Nachricht</em>.',
     'thanks.header.subtitle': 'Deine Nachricht ist in meinem Postfach gelandet. Ich beantworte jede selbst, das dauert meist ein bis zwei Tage.',
     'thanks.back': 'Zurück zur Startseite',
+    'meta.nano.title': "NanoReader für Windows, Linux und Mac",
+    'meta.nano.desc': "Ein kostenloser Reader für Windows, Linux und Mac. Die Beta erscheint auf dieser Seite.",
+    'nano.eyebrow': "NanoReader · kostenlos",
+    'nano.title': "Bald <em>hier</em>.",
+    'nano.subtitle': "NanoReader ist ein Reader für Windows, Linux und Mac mit demselben Motor wie die ganze Familie. Die Beta erscheint auf dieser Seite.",
+    'nano.p1': "Bis dahin öffnet sich ein Buch im Browser: nichts zu installieren, und das Buch verlässt Ihr Gerät nicht.",
+    'nano.family': "Die ganze Familie",
+    'nano.alt': "Ein alter Computer mit einem Schmetterling auf dem Bildschirm, davor ein aufgeschlagenes Botanikbuch",
 
     // ---------- Privacy page ----------
     'meta.privacy.title':   'Datenschutz — ContinuousReader',
