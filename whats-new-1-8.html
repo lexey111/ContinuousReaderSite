@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>try{var t=localStorage.getItem('cr-theme');if(t==='day'||t==='night')document.documentElement.dataset.theme=t}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.whatsnew.title">1.8 “Map” — Release highlights — ContinuousReader</title>
+<meta name="description" data-i18n-attr="content:meta.whatsnew.desc" content="What changed in ContinuousReader, PlainReader and JustReader 1.8, with pictures: skins for the home screen and the shelf, a library in three columns, marks on the pages of manga and PDF.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<meta property="og:title" data-i18n-attr="content:meta.whatsnew.title" content="1.8 “Map” — Release highlights — ContinuousReader">
+<meta property="og:description" data-i18n-attr="content:meta.whatsnew.desc" content="What changed in ContinuousReader, PlainReader and JustReader 1.8, with pictures: skins for the home screen and the shelf, a library in three columns, marks on the pages of manga and PDF.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://continuousreader.app/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ContinuousReader — a native reader for Mac, iPad, and iPhone">
+<meta property="og:site_name" content="ContinuousReader">
+<meta property="og:url" content="https://continuousreader.app/whats-new-1-8.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://continuousreader.app/img/og-image.png">
+<link rel="canonical" href="https://continuousreader.app/whats-new-1-8.html">
+<link rel="preload" href="fonts/source-serif-4-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-logo" aria-hidden="true">
+        <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+      </span>
+      <span class="nav-wordmark">ContinuousReader<small class="nav-version" data-i18n="changelog.v19.title">1.9 “Painted Lady”</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="features.html" data-i18n="nav.features">Features</a>
+      <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
+      <a href="family.html" data-i18n="nav.family">Family</a>
+      <a href="download.html" data-i18n="nav.download">Download</a>
+      <button class="nav-lang" type="button">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header wn-header">
+  <div class="container-narrow">
+    <div class="page-eyebrow" data-i18n="whatsnew.header.eyebrow">Release highlights</div>
+    <div class="wn-title-row">
+      <img class="release-butterfly" src="img/butterfly-map.webp" alt="" aria-hidden="true">
+      <h1 class="page-title" data-i18n="whatsnew.header.title">1.8 <em>“Map”</em></h1>
+    </div>
+    <p class="release-motto">“Dress code” <span class="release-motto-note" data-i18n="changelog.v18.motto">— one butterfly in its spring and its summer dress: a new look and skins</span></p>
+    <p class="page-subtitle" data-i18n="whatsnew.header.subtitle">November 2026. Many fixes and improvements, but the main things are skins, text books that read right to left, and marks in books of pictures. Below are the key changes; the full list is in the <a href="changelog.html">changelog</a>.</p>
+    <nav class="wn-archive" aria-label="Earlier releases">
+      <span class="wn-archive-h" data-i18n="whatsnew.archive.h">Earlier releases</span>
+      <a href="whats-new-1-7.html" data-i18n="whatsnew.archive.v17">Highlights of 1.7 “Orient Express”</a>
+      <a href="whats-new-1-6.html" data-i18n="whatsnew.archive.v16">Highlights of 1.6 “Make yourself comfortable”</a>
+      <a href="whats-new-1-5.html" data-i18n="whatsnew.archive.v15">Highlights of 1.5 “I like to move it”</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section wn-section reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew.s1.h">Skins for JustReader</h2>
+      <p data-i18n="whatsnew.s1.p1">The home screen comes in seven skins on the Mac, the iPad and the iPhone. System follows the platform’s own style: its toolbar, its buttons, its colours. Default comes in two depths, and Flat is minimalism, nothing extra.</p>
+      <div class="screenshot">
+        <img width="1600" height="780" loading="lazy" decoding="async" src="img/screenshots/wn18-jr-skins.webp" alt="Five of JustReader’s seven skins on the Mac, in tall windows: System, Default, Retro, Terminal and Compact">
+      </div>
+      <p data-i18n="whatsnew.s1.p2">Three more add no functions and are there for the mood: Retro is a tape deck with keys and a glowing display, Terminal looks back to Norton Commander, and Compact is a powder compact with pearls. Dialogs, the history and the book card wear the skin you chose.</p>
+    </div>
+  </div>
+</section>
+<section class="section wn-section alt-bg reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew.s2.h">Skins for PlainReader</h2>
+      <p data-i18n="whatsnew.s2.p1">The shelf has six skins: System, Default in two depths, Flat, Retro and the Bookcase. The iPhone has five of them. Import, OPDS, the history and the book card follow the skin.</p>
+      <div class="screenshot">
+        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/wn18-pr-skins.webp" alt="Four of PlainReader’s six skins on the Mac: Default, Flat, Retro and the Bookcase">
+      </div>
+      <p data-i18n="whatsnew.s2.p2">The Bookcase is the one with a touch of steampunk. Books stand spine out on wooden shelves, each spine in its cover’s colour. The open book lies on a desk with a catalogue card tucked into it, and brass plates show how far you have read.</p>
+      <div class="screenshot">
+        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/wn18-bookcase.webp" alt="PlainReader’s Bookcase skin on the Mac: spines on wooden shelves, the open book on a desk with its catalogue card">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section wn-section reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew.s3.h">Windows that know where they are</h2>
+      <p data-i18n="whatsnew.s3.p1">The shelf and the page can look nothing alike: a Bookcase shelf and a Rose page, for one. The book card and the settings windows follow the place. Opened from the shelf they wear its skin; opened beside a book they take the page’s theme, paper and ink. Change the theme and the open windows change with it.</p>
+      <div class="screenshot">
+        <img width="1600" height="850" loading="lazy" decoding="async" src="img/screenshots/wn18-windows.webp" alt="PlainReader on the Mac: Settings and the book card over the Bookcase shelf, then the same two beside a book on a Rose page">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section wn-section alt-bg reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew.s4.h">Reading, shared by all</h2>
+      <p data-i18n="whatsnew.s4.p1">In a book of pictures — manga, a comic, a PDF kept as pages — you can highlight part of a page like a marker and add a note. On the Mac mark the area with the mouse, on the iPad and iPhone with a long press. The mark stands in the list of bookmarks together with its fragment.</p>
+      <div class="screenshot">
+        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/wn18-marks.webp" alt="A book of paintings in the reader on the Mac: three marks on the page and the bookmarks panel with their fragments">
+      </div>
+      <p data-i18n="whatsnew.s4.p2">Text books in Hebrew and Arabic turn their pages right to left; the direction is detected on import and can be changed on the book card. Comfort has bookmarks: add and edit them from the selection menu, and open the list from the strip. On the iPad a button on the bar takes the reader full screen, and Comfort goes full screen too.</p>
+    </div>
+  </div>
+</section>
+<section class="section wn-section reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew.s5.h">The ContinuousReader library</h2>
+      <p data-i18n="whatsnew.s5.p1">The sidebar shows more than folders. Turn it to authors, co-authors, series, genres or colours, and a pick shows books from the whole library. An author’s page opens right there, in the books’ column.</p>
+      <div class="screenshot">
+        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/wn18-sidebar.webp" alt="The ContinuousReader library on the Mac with the sidebar turned to authors">
+      </div>
+      <p data-i18n="whatsnew.s5.p2">The library is built of three columns the full height of the window: the sidebar, the books and the info panel. The info panel has pages for a book’s details, notes, bookmarks and statistics. On the iPhone the sidebar slides out from the left edge.</p>
+    </div>
+  </div>
+</section>
+<section class="section wn-section alt-bg reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew.s6.h">Book card and covers</h2>
+      <p data-i18n="whatsnew.s6.p1">The card’s tabs can stand in a column down its side, and the card opens on the tab it was closed on. On the iPhone the tabs slide out as a list from the edge of the screen.</p>
+      <div class="screenshot">
+        <img width="1600" height="1200" loading="lazy" decoding="async" src="img/screenshots/wn18-card.webp" alt="The book card on the iPad with its tabs in a column down the side, on the Stats tab">
+      </div>
+      <p data-i18n="whatsnew.s6.p2">In ContinuousReader and PlainReader the card can generate a cover: several designs to choose from. Any picture from the book can become its cover too. Each author has a field of their own, so a book by two authors stands under each of them. Thanks to Victoria for the letter this began with.</p>
+    </div>
+  </div>
+</section>
+<section class="section wn-section reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew.s7.h">JustReader and PlainReader</h2>
+      <p data-i18n="whatsnew.s7.p1">JustReader’s history opens as a table with covers, and a switch loads a book without opening it. A quick menu on the home screen holds the skin, the labels, the cover and the mode switch. JustReader stays free; if you like it, you can buy the author a coffee. The tip unlocks nothing, it is simply a thank-you.</p>
+      <p data-i18n="whatsnew.s7.p2">PlainReader’s shelf groups by categories, authors, series, genres or colours, and a filter picks out books not started, started or read. On the Mac and the iPad a quick switcher finds a book by its title or author. The card of a book on the shelf can be edited.</p>
+    </div>
+  </div>
+</section>
+<section class="section reveal">
+  <div class="container-narrow">
+    <div class="feature-body wn-close">
+      <p data-i18n="whatsnew.close.p">That is the picture. The full list, item by item, is in the <a href="changelog.html">changelog</a>.</p>
+      <p class="wn-links">
+        <a href="changelog.html" class="cta-secondary" data-i18n="whatsnew.close.changelog">Read the changelog</a>
+        <a href="download.html" class="cta-secondary" data-i18n="whatsnew.close.download">Get the apps</a>
+      </p>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-line">
+        <span class="nav-logo" aria-hidden="true">
+          <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+        </span>
+        <span>ContinuousReader</span>
+      </div>
+      <p class="footer-tagline" data-i18n="foot.tagline">Built for readers who don’t just browse.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.product">Product</h5>
+      <ul class="feature-list feature-list--inline">
+        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+        <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+        <li><a href="family.html" data-i18n="nav.family">Family</a></li>
+        <li><a href="download.html" data-i18n="nav.download">Download</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.info">Info</h5>
+      <ul class="feature-list feature-list--inline">
+        <li><a href="whats-new.html" data-i18n="foot.link.highlights">Release highlights</a></li>
+        <li><a href="changelog.html" data-i18n="foot.link.changelog">What’s New</a></li>
+        <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
+        <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
+        <li><a href="https://www.reddit.com/r/ContinuousReader/" target="_blank" rel="noopener" data-i18n="foot.link.devlog">Dev log on Reddit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.language">Language</h5>
+      <ul class="feature-list feature-list--inline">
+        <li><a href="#" data-lang="en">English</a></li>
+        <li><a href="#" data-lang="ru">Русский</a></li>
+        <li><a href="#" data-lang="uk">Українська</a></li>
+        <li><a href="#" data-lang="es">Español</a></li>
+        <li><a href="#" data-lang="fr">Français</a></li>
+        <li><a href="#" data-lang="de">Deutsch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="foot.copy">© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span data-i18n="foot.signoff">A reader’s reader.</span>
+    <span class="footer-mt-note" data-i18n="foot.mtNote"></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e1030353e074be59240a656f79267da"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
