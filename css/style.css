@@ -3723,3 +3723,14 @@ code {
 :root[data-theme="night"] .badge.cr, :root[data-theme="night"] .legend .badge-inline.cr { background: #1F3346; color: #B8CCDD; border-color: #2D4A63; }
 :root[data-theme="night"] .badge.pr, :root[data-theme="night"] .legend .badge-inline.pr { background: #2A2A26; color: #CFC4B0; border-color: #45413A; }
 :root[data-theme="night"] .badge.jr, :root[data-theme="night"] .legend .badge-inline.jr { background: #3A2419; color: #F0B596; border-color: #5C3A2A; }
+
+/* NanoReader's page: three downloads, then what is in it. */
+.nano-downloads .path-card { display: flex; flex-direction: column; gap: 10px; }
+.nano-downloads .path-store-button { align-self: flex-start; margin-top: 6px; }
+.nano-downloads .path-store-button-note { margin: 4px 0 0; line-height: 1.5; }
+.nano-downloads .path-store-button-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.nano-h2 { font-family: var(--serif, Georgia, serif); font-size: 1.6rem; font-weight: 500; margin: 0 0 16px; }
+.nano-list { margin: 0 0 24px; padding-left: 1.2em; line-height: 1.7; }
+.nano-list li { margin: 4px 0; }
+.nano-three { color: var(--ink-soft, inherit); margin: 0 0 32px; }
+.nano-downloads .path-store-button .dev { color: inherit; }

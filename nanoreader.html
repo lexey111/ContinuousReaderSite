@@ -4,12 +4,11 @@
 <meta charset="UTF-8">
 <script>try{var t=localStorage.getItem('cr-theme');if(t==='day'||t==='night')document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="meta.nano.title">NanoReader for Windows, Linux and Mac</title>
-<meta name="description" data-i18n-attr="content:meta.nano.desc" content="A free book reader for Windows, Linux and Mac. The beta is coming to this page.">
-<meta name="robots" content="noindex">
+<title data-i18n="meta.nanodl.title">NanoReader, a free reader for Windows, Linux and Mac</title>
+<meta name="description" data-i18n-attr="content:meta.nanodl.desc" content="Three books at hand on any computer: marks and notes, a journal and statistics, books by a link. Free, a beta.">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <meta property="og:title" data-i18n-attr="content:meta.nano.title" content="NanoReader for Windows, Linux and Mac">
-<meta property="og:description" data-i18n-attr="content:meta.nano.desc" content="A free book reader for Windows, Linux and Mac. The beta is coming to this page.">
+<meta property="og:description" data-i18n-attr="content:meta.nanodl.desc" content="Three books at hand on any computer: marks and notes, a journal and statistics, books by a link. Free, a beta.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://continuousreader.app/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -62,21 +61,56 @@
 
 <header class="page-header">
   <div class="container-narrow">
-    <div class="page-eyebrow" data-i18n="nano.eyebrow">NanoReader · free</div>
-    <h1 class="page-title" data-i18n="nano.title">Coming <em>soon</em>.</h1>
-    <p class="page-subtitle" data-i18n="nano.subtitle">
-      NanoReader is a book reader for Windows, Linux and Mac on the engine the
-      whole family shares. The beta will appear on this page.
+    <div class="page-eyebrow" data-i18n="nanodl.eyebrow">NanoReader · free · beta</div>
+    <h1 class="page-title" data-i18n="nanodl.title">A reader for <em>Windows, Linux and Mac</em>.</h1>
+    <p class="page-subtitle" data-i18n="nanodl.subtitle">
+      Three books at hand in a program of its own, on the engine the whole
+      family shares. Free. A beta for now.
     </p>
   </div>
 </header>
 
-<section class="section" style="padding-top: 0;">
+<section class="two-paths nano-downloads">
+  <div class="container">
+    <div class="paths-grid">
+      <div class="path-card">
+        <div class="path-name" data-i18n="nanodl.mac.name">Mac</div>
+        <div class="path-price-sub" data-i18n="nanodl.mac.sub">Apple silicon and Intel</div>
+        <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-mac.dmg" class="path-store-button" data-i18n="nanodl.mac.button">Download for Mac</a>
+        <p class="path-store-button-note" data-i18n="nanodl.mac.note">A disk image, notarized by Apple.</p>
+      </div>
+      <div class="path-card">
+        <div class="path-name" data-i18n="nanodl.win.name">Windows</div>
+        <div class="path-price-sub" data-i18n="nanodl.win.sub">Windows 10 and 11, 64-bit</div>
+        <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-windows-setup.exe" class="path-store-button" data-i18n="nanodl.win.button">Download for Windows</a>
+        <p class="path-store-button-note" data-i18n="nanodl.win.note">The installer is not signed yet: Windows may warn about an unknown publisher. More info, then Run anyway.</p>
+      </div>
+      <div class="path-card">
+        <div class="path-name" data-i18n="nanodl.linux.name">Linux</div>
+        <div class="path-price-sub" data-i18n="nanodl.linux.sub">64-bit</div>
+        <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.AppImage" class="path-store-button" data-i18n="nanodl.linux.button">Download AppImage</a>
+        <p class="path-store-button-note"><span data-i18n="nanodl.linux.note">Or a package:</span> <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.deb">.deb</a> · <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.rpm">.rpm</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 24px;">
   <div class="container-narrow">
+    <h2 class="nano-h2" data-i18n="nanodl.what">What is in it</h2>
+    <ul class="nano-list">
+      <li data-i18n="nanodl.f1">Three books at hand, and the closed ones in the history, to load again.</li>
+      <li data-i18n="nanodl.f2">Marks in seven colours, notes, a comment on the book; exported to Markdown, CSV, JSON and RIS for Zotero.</li>
+      <li data-i18n="nanodl.f3">A journal of every sitting, and statistics by week, month and year.</li>
+      <li data-i18n="nanodl.f4">Contents, search, marks and pictures in a window of their own, beside the book.</li>
+      <li data-i18n="nanodl.f5">Day, twilight and night; five palettes, paper, frames, one to four columns.</li>
+      <li data-i18n="nanodl.f6">EPUB, FB2, MOBI, AZW3, PDF, CBZ, Markdown, TXT and HTML, from a file or a link.</li>
+      <li data-i18n="nanodl.f7">Eight languages.</li>
+    </ul>
+    <p class="nano-three" data-i18n="nanodl.three">Three books is a deliberate limit: these are books without a library. For a library there are <a href="family.html">PlainReader and ContinuousReader</a> on Apple’s devices.</p>
     <figure class="room-figure room-standalone">
-      <img src="img/family-nano.webp" width="1000" height="914" decoding="async"
+      <img src="img/family-nano.webp" width="1000" height="914" decoding="async" loading="lazy"
            alt="An old computer with a butterfly on its screen and a botanical book open before it" data-i18n-attr="alt:nano.alt">
-      <figcaption data-i18n="nano.p1">Until then a book opens in the browser: nothing to install, and the book never leaves your device.</figcaption>
     </figure>
     <p style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; margin-top: 40px;">
       <a href="https://read.continuousreader.app/" class="cta-primary"><span data-i18n="family.wr.open">Open WebReader</span></a>
