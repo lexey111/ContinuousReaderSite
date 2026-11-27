@@ -3164,6 +3164,11 @@ code {
 @media (max-width: 600px) {
   .hero-ctas { flex-direction: column; align-items: flex-start; gap: 20px; }
   .hero-alts { padding-left: 18px; }
+  /* A long note (NanoReader's) wraps under the name, not into a column. */
+  .hero-ctas .hero-alts a { display: block; padding-left: 18px; text-indent: -18px; }
+  .hero-ctas .hero-alts .cta-dot { display: inline-block; margin-right: 8px; vertical-align: 0.08em; }
+  .hero-ctas .hero-alts .alt-note::before { margin: 0 8px; }
+  .hero-ctas .hero-alts .badge-new { text-indent: 0; margin-left: 8px; }
   .hero-release { flex-direction: column; gap: 6px; margin-top: 36px; }
   .reading-strip-inner { flex-wrap: wrap; gap: 12px; }
   .reading-strip-caption { width: 100%; margin-left: 0; }
@@ -3471,6 +3476,8 @@ code {
 .pin-pr i, .dot-pr { background: #41789E; }
 .pin-jr i, .dot-jr { background: #A84B28; }
 .dot-wr { background: #7FB8E0; }
+/* NanoReader is JustReader beyond Apple: JustReader's rust, lighter. */
+.dot-nr { background: #E8845A; }
 
 .cta-choices {
   display: flex;
@@ -3691,6 +3698,7 @@ code {
 .hero-alts a::after { content: "→"; color: var(--accent); opacity: 0; transform: translateX(-4px); transition: opacity 180ms ease, transform 180ms ease; }
 .hero-alts a:hover::after, .hero-alts a:focus-visible::after { opacity: 1; transform: none; }
 .hero-alts a:hover .alt-note { color: var(--ink-soft); }
+.hero-alts .alt-note .dev { color: inherit; }
 
 /* «New», for one release beside what is new (WebReader, off at 1.9). */
 .badge-new {
@@ -3734,3 +3742,303 @@ code {
 .nano-list li { margin: 4px 0; }
 .nano-three { color: var(--ink-soft, inherit); margin: 0 0 32px; }
 .nano-downloads .path-store-button .dev { color: inherit; }
+
+/* ==========================================================
+   FAMILY HUB (family.html): the map, which one suits, side by side
+   ========================================================== */
+
+/* The family's colours, one a reader (the hero's dots). Night lifts the
+   two dark blues off the dark ground. */
+.fmap-section, .wiz, .fsub-nav {
+  --c-wr: #7FB8E0; --c-jr: #A84B28; --c-pr: #41789E; --c-cr: #2D5573; --c-nr: #E8845A;
+}
+:root[data-theme="night"] :is(.fmap-section, .wiz, .fsub-nav) { --c-cr: #6F9BC2; --c-pr: #8DB4D6; --c-jr: #D9774F; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="day"]) :is(.fmap-section, .wiz, .fsub-nav) { --c-cr: #6F9BC2; --c-pr: #8DB4D6; --c-jr: #D9774F; }
+}
+
+/* MARK: The map (the apps' About map, CR #1142) */
+
+.fmap-section { padding-top: 0; }
+.fmap-island {
+  container-type: inline-size;
+  background: var(--bg-deeper); border: 1px solid var(--rule); border-radius: 18px;
+  padding: 26px 32px 32px;
+}
+.fmap-head .section-eyebrow { margin-bottom: 6px; }
+.fmap-lead { margin: 0; font-family: var(--sans); font-size: 15px; line-height: 1.5; color: var(--ink-soft); }
+.fmap { position: relative; height: 220px; margin: 18px 0 8px; }
+.fmap-lines { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.fmap-divide { stroke: var(--rule-strong); stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 2 7; vector-effect: non-scaling-stroke; }
+.fmap-way { fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.fmap-place {
+  --c: var(--accent);
+  position: absolute; left: var(--x); top: var(--y); width: 46px; height: 46px; margin: -23px 0 0 -23px;
+  padding: 0; border: 0; border-radius: 50%; background: none; color: var(--c); cursor: pointer;
+  display: grid; place-items: center;
+}
+.fmap-place.wr { --c: var(--c-wr); } .fmap-place.jr { --c: var(--c-jr); } .fmap-place.pr { --c: var(--c-pr); }
+.fmap-place.cr { --c: var(--c-cr); } .fmap-place.nr { --c: var(--c-nr); }
+/* The pointer's room round a dot. */
+.fmap-place::after { content: ''; position: absolute; inset: -14px; border-radius: 50%; }
+.fmap-place:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.fmap-place > i { grid-area: 1 / 1; border-radius: 50%; pointer-events: none; }
+/* A disc of the island under every dot: the line stops at it. */
+.fmap-place .halo { width: 40px; height: 40px; background: var(--bg-deeper); box-shadow: 0 0 0 0 transparent; transition: background-color 0.18s; }
+.fmap-place .orbit { width: 32px; height: 32px; border: 2px solid currentColor; opacity: 0; transform: scale(0.6); transition: opacity 0.18s ease-out, transform 0.18s ease-out; }
+.fmap-place .spot { width: 16px; height: 16px; background: currentColor; }
+.fmap-place .trio { position: relative; width: 18px; height: 18px; }
+.fmap-place .trio b { position: absolute; width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.fmap-place .trio b:nth-child(1) { left: 0; top: 5px; }
+.fmap-place .trio b:nth-child(2) { left: 9px; top: 0; }
+.fmap-place .trio b:nth-child(3) { left: 9px; top: 10px; }
+.fmap-place.chosen .halo { background: color-mix(in srgb, var(--c) 16%, var(--bg-deeper)); }
+.fmap-place.chosen .orbit { opacity: 1; transform: none; }
+.fmap-place:hover:not(.chosen) .orbit { opacity: 0.4; transform: none; border-width: 1.5px; }
+.fmap-name {
+  position: absolute; left: 50%; bottom: calc(100% - 2px); transform: translateX(-50%); white-space: nowrap;
+  font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--ink); pointer-events: none;
+}
+.fmap-place.chosen .fmap-name { font-weight: 700; }
+.fmap-name .short { display: none; }
+.fmap-cap {
+  position: absolute; left: var(--x); top: calc(var(--y) + 30px); transform: translate(-50%, -50%);
+  white-space: nowrap; font-family: var(--sans); font-size: 12px; color: var(--ink-fade); pointer-events: none;
+}
+.fmap-cap.beside { left: calc(var(--x) + 30px); top: var(--y); transform: translateY(-50%); }
+
+/* The chosen place's card: every card in one cell, the tallest sets the
+   height and a click does not make the page jump. */
+.fmap-deck { display: grid; margin-top: 14px; }
+.fmap-card {
+  grid-area: 1 / 1; min-width: 0; display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 0 28px; align-items: start;
+}
+.js .fmap-card { opacity: 0; visibility: hidden; transition: opacity 0.2s ease-out, visibility 0.2s; }
+.js .fmap-card.shown { opacity: 1; visibility: visible; }
+html:not(.js) .fmap-deck { gap: 32px; }
+html:not(.js) .fmap-card { grid-area: auto; }
+.fmap-pic {
+  margin: 0; width: 180px; aspect-ratio: 1; border-radius: 14px; overflow: hidden; position: relative;
+  display: grid; place-items: center; background: var(--paper, #fdf1db);
+}
+.fmap-pic.room img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.fmap-pic.emblem img { width: 46%; aspect-ratio: 1; border-radius: 23%; box-shadow: 0 8px 22px rgba(31, 58, 82, 0.28), 0 1px 3px rgba(31, 58, 82, 0.2); }
+:root[data-theme="night"] .fmap-pic { filter: brightness(0.85); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="day"]) .fmap-pic { filter: brightness(0.85); } }
+.fmap-say h3 { display: flex; align-items: center; gap: 10px; margin: 2px 0 2px; font-family: var(--sans); font-size: 21px; font-weight: 650; color: var(--ink); }
+.fmap-icon { width: 30px; height: 30px; border-radius: 7px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14); }
+.fmap-terms { margin: 0 0 12px; font-family: var(--sans); font-size: 13px; color: var(--ink-fade); }
+.fmap-terms .dev { color: inherit; }
+.fmap-pitch { margin: 0 0 10px; font-size: 16px; line-height: 1.6; color: var(--ink-soft); }
+.fmap-small { margin: 0 0 14px; font-family: var(--sans); font-size: 13px; line-height: 1.55; color: var(--ink-fade); }
+.fmap-doors, .wiz-doors { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin: 0; font-family: var(--sans); font-size: 14px; }
+.fmap-doors a, .wiz-doors a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.fmap-doors a:hover, .wiz-doors a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.fmap-doors a.fmap-go, .wiz-doors a.fmap-go {
+  padding: 8px 16px; border-radius: 100px; background: var(--ink); color: var(--bg); font-weight: 500;
+}
+.fmap-doors a.fmap-go:hover, .wiz-doors a.fmap-go:hover { text-decoration: none; background: var(--accent-deep); }
+
+/* A narrow map names its places short; a narrow card stands its picture
+   over the words. */
+@container (max-width: 600px) {
+  .fmap-name .full { display: none; }
+  .fmap-name .short { display: inline; }
+  .fmap-cap.beside { left: var(--x); top: calc(var(--y) + 30px); transform: translate(-50%, -50%); }
+  .fmap-card { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .fmap-pic { width: 100%; height: 170px; aspect-ratio: auto; }
+  .fmap-pic.room img { inset: 0 auto; left: 50%; width: 170px; transform: translateX(-50%); }
+  .fmap-pic.emblem img { width: 84px; }
+}
+@media (max-width: 600px) { .fmap-island { padding: 20px 18px 24px; } }
+
+/* MARK: Which one suits */
+
+.wiz { max-width: 680px; }
+.wiz-q { margin: 0 0 18px; font-family: var(--serif); font-size: 24px; font-weight: 500; color: var(--ink); }
+.wiz-options { display: grid; gap: 10px; }
+.wiz-opt {
+  display: grid; gap: 3px; width: 100%; padding: 16px 22px; text-align: left; cursor: pointer;
+  border: 1px solid var(--rule-strong); border-radius: 14px; background: var(--bg); color: var(--ink);
+  font-family: var(--sans); transition: border-color 0.15s, background-color 0.15s, transform 0.15s;
+}
+.wiz-opt strong { font-size: 16px; font-weight: 600; }
+.wiz-opt span { font-size: 13.5px; color: var(--ink-fade); line-height: 1.45; }
+.wiz-opt:hover { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 5%, var(--bg)); }
+.wiz-opt:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.wiz-opt .dev, .wiz-q .dev { font: inherit; color: inherit; letter-spacing: inherit; }
+.wiz-answer { display: none; padding: 26px 30px; border-radius: 16px; background: var(--bg); border: 1px solid var(--rule-strong); }
+.wiz-answer.shown { display: block; }
+.wiz-yours { margin: 0 0 4px; font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-fade); }
+.wiz-answer h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; font-family: var(--sans); font-size: 24px; font-weight: 650; color: var(--ink); }
+.wiz-answer h3 .cta-dot { width: 12px; height: 12px; }
+.wiz-answer p { margin: 0 0 12px; line-height: 1.6; color: var(--ink-soft); }
+.wiz-answer .wiz-next { font-family: var(--sans); font-size: 14px; color: var(--ink-fade); margin-bottom: 18px; }
+.wiz-nav { display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 10px 22px; margin: 22px 0 0; font-family: var(--sans); font-size: 14px; }
+.wiz-nav button { padding: 0; border: 0; background: none; color: var(--ink-soft); font: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--rule-strong); }
+.wiz-nav button:hover { color: var(--accent); }
+.wiz-nav a { color: var(--accent); text-decoration: none; }
+.wiz-nav a:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* Without scripts the questions stand as a list of the answers. */
+html:not(.js) .wiz-step:not([data-q="where"]), html:not(.js) .wiz-nav button { display: none; }
+html:not(.js) .wiz-result[hidden] { display: block; }
+html:not(.js) .wiz-answer { display: block; margin-top: 14px; }
+
+/* MARK: Side by side: two tables, a switch between them */
+
+.cmp-tabs { display: flex; justify-content: center; gap: 8px; margin: 0 auto 28px; flex-wrap: wrap; }
+.cmp-tab {
+  display: grid; gap: 2px; padding: 10px 20px; border-radius: 12px; cursor: pointer; text-align: center;
+  border: 1px solid var(--rule-strong); background: transparent; color: var(--ink-soft); font-family: var(--sans);
+}
+.cmp-tab span { font-size: 15px; font-weight: 600; }
+.cmp-tab small { font-size: 11.5px; color: var(--ink-fade); }
+.cmp-tab[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.cmp-tab[aria-selected="true"] small { color: color-mix(in srgb, var(--bg) 72%, transparent); }
+.cmp-tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+html:not(.js) .cmp-tabs { display: none; }
+html:not(.js) .cmp-pane[hidden] { display: block; margin-top: 40px; }
+
+/* MARK: The family's pages: a row of the readers under the nav, the
+   reader's own page (justreader.html and the rest). */
+
+.fsub-nav { position: relative; z-index: 3; border-bottom: 1px solid var(--rule); background: var(--bg); }
+.fsub-inner {
+  display: flex; align-items: center; gap: 4px 6px; flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px;
+  font-family: var(--sans); font-size: 13.5px;
+}
+.fsub-home, .fsub-item {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 100px;
+  color: var(--ink-soft); text-decoration: none; white-space: nowrap;
+}
+.fsub-home { font-weight: 600; color: var(--ink); margin-right: 6px; }
+.fsub-home::after { content: "›"; margin-left: 10px; color: var(--ink-fade); font-weight: 400; }
+.fsub-item .cta-dot { width: 8px; height: 8px; }
+.fsub-home:hover, .fsub-item:hover { background: var(--bg-deeper); color: var(--ink); }
+.fsub-item[aria-current="page"] { background: var(--bg-darker); color: var(--ink); font-weight: 600; }
+.fsub-home[aria-current="page"] { text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--accent); }
+.fsub-header .page-eyebrow { display: flex; align-items: center; gap: 10px; }
+.fsub-header .page-eyebrow::before { display: none; }
+.fsub-header .page-eyebrow .cta-dot { width: 10px; height: 10px; }
+.fsub-header .page-subtitle { max-width: 40em; }
+.fsub-ctas { margin-top: 32px; }
+
+/* The reader on its devices: a wide picture, then a tablet (or a second
+   wide one) beside a phone. */
+.fsub-gallery-section .section-eyebrow { text-align: center; margin-bottom: 28px; }
+.fsub-gallery { display: grid; grid-template-columns: minmax(0, 2.6fr) minmax(0, 1fr); gap: 36px 40px; align-items: end; }
+.fsub-gallery .fsub-shot { margin: 0; }
+.fsub-gallery .fsub-shot.wide img, .fsub-gallery .fsub-shot.tablet img[src*="wr-"], .platform-block .screenshot-frame img[src*="family-wr"] { border-radius: 10px; box-shadow: 0 14px 36px rgba(31, 58, 82, 0.14), 0 0 0 1px var(--rule); }
+.fsub-gallery .fsub-shot.wide { grid-column: 1 / -1; max-width: 1100px; justify-self: center; width: 100%; }
+.fsub-gallery .fsub-shot.phone img { max-height: 560px; width: auto; margin: 0 auto; }
+.fsub-gallery figcaption { text-align: center; }
+.fsub-gallery.desk { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+.fsub-gallery.desk .fsub-shot img { border-radius: 10px; box-shadow: 0 14px 36px rgba(31, 58, 82, 0.14), 0 0 0 1px var(--rule); }
+@media (max-width: 760px) {
+  .fsub-gallery, .fsub-gallery.desk { grid-template-columns: minmax(0, 1fr); }
+  .fsub-gallery .fsub-shot.phone img { max-height: 480px; }
+}
+
+.fsub-new-head { padding-bottom: 0; }
+.fsub-new-head .section-eyebrow { margin-bottom: 0; }
+.fsub-new-more { padding-top: 8px; }
+
+.fsub-next { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin-top: 18px; }
+.fsub-next-card {
+  display: grid; gap: 4px; padding: 18px 20px; border-radius: 14px; text-decoration: none;
+  background: var(--bg); border: 1px solid var(--rule); transition: border-color 0.15s, transform 0.15s;
+}
+.fsub-next-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.fsub-next-name { display: flex; align-items: center; gap: 9px; font-family: var(--sans); font-size: 17px; font-weight: 650; color: var(--ink); }
+.fsub-next-name .cta-dot { width: 9px; height: 9px; }
+.fsub-next-kind { font-family: var(--sans); font-size: 12px; color: var(--ink-fade); }
+.fsub-next-why { margin-top: 6px; font-size: 15px; line-height: 1.5; color: var(--ink-soft); }
+.fsub-next-why .dev, .fsub-next-kind .dev { color: inherit; font-weight: inherit; }
+.fsub-next-more { margin: 22px 0 0; font-family: var(--sans); font-size: 14px; color: var(--ink-fade); }
+.fsub-next-more a { color: var(--accent); text-decoration: none; }
+.fsub-next-more a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.fsub-end { text-align: left; }
+.fsub-header { padding-bottom: 32px; }
+.fsub-header + .platform-block { padding-top: 40px; }
+
+/* Phones: the library's pin (right of centre) puts its label to the left
+   of its dot, or it ran past the screen's edge; the readers' row scrolls
+   sideways instead of wrapping under the sticky nav. */
+@media (max-width: 600px) {
+  .room-standalone .room-pin.pin-cr { flex-direction: row-reverse; transform: translate(calc(-100% + 5.5px), -50%); }
+  .fsub-inner { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding-top: 6px; padding-bottom: 6px; }
+  .fsub-inner::-webkit-scrollbar { display: none; }
+  .fsub-home, .fsub-item { flex: none; }
+}
+@media (max-width: 600px) {
+  /* The theme rows' dots stood 36 px past the row, off a phone's edge:
+     there they sit at the row's end. */
+  .theme-row .callout-dot { left: auto; right: -22px; }
+  .theme-row .callout-dot::before { display: none; }
+}
+@media (max-width: 420px) {
+  /* «конфиденциальности» in one word: the title steps down a little on a
+     phone, and a word longer still breaks rather than running off. */
+  .page-title { font-size: clamp(34px, 9.5vw, 48px); overflow-wrap: anywhere; }
+}
+/* A long release name («Пестрокрыльница») breaks rather than running off
+   a phone's edge. */
+.release-divider h3 { overflow-wrap: anywhere; min-width: 0; }
+
+/* The tabs name their apps in columns, each with its line under it
+   (how many books; where it runs). */
+.cmp-tab-apps { display: grid; grid-template-columns: repeat(3, auto); justify-content: center; gap: 0 14px; margin-top: 2px; }
+.cmp-tab-apps i { font-style: normal; font-size: 11.5px; color: var(--ink-fade); display: grid; gap: 1px; }
+.cmp-tab-apps b { font-weight: 600; font-size: 11px; color: var(--ink-soft); }
+.cmp-tab[aria-selected="true"] .cmp-tab-apps i { color: color-mix(in srgb, var(--bg) 72%, transparent); }
+.cmp-tab[aria-selected="true"] .cmp-tab-apps b { color: var(--bg); }
+@media (max-width: 480px) { .cmp-tab-apps { gap: 0 8px; } .cmp-tab-apps i { font-size: 10.5px; } .cmp-tab { padding: 10px 12px; } }
+
+/* The wizard's ruler: a tick a question, the one asked now in the accent. */
+.wiz-progress { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; font-family: var(--sans); font-size: 12.5px; color: var(--ink-fade); }
+.wiz-progress[hidden] { display: none; }
+.wiz-bar { display: flex; gap: 4px; }
+.wiz-bar i { width: 28px; height: 4px; border-radius: 2px; background: var(--rule-strong); }
+.wiz-bar i.done { background: color-mix(in srgb, var(--accent) 45%, var(--rule-strong)); }
+.wiz-bar i.now { background: var(--accent); }
+.wiz-count b { font-weight: 600; color: var(--ink-soft); }
+.wiz-trail { margin: 0 0 14px; font-family: var(--sans); font-size: 13px; color: var(--ink-fade); }
+.wiz-trail .dev { color: inherit; }
+html:not(.js) .wiz-progress { display: none; }
+
+/* NanoReader's downloads: the file's size under its button; the beta's
+   note under the three. */
+.nano-downloads .path-size { margin: -4px 0 0; font-family: var(--sans); font-size: 12.5px; color: var(--ink-fade); }
+.nano-downloads .path-size-inline { font-family: var(--sans); font-size: 12px; color: var(--ink-fade); }
+.nano-beta { max-width: 640px; margin: 28px auto 0; text-align: center; font-family: var(--sans); font-size: 14px; line-height: 1.55; color: var(--ink-fade); }
+.nano-beta a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+
+/* Under the three Apple cards: the two readers beyond Apple, in a line. */
+.apps-others { max-width: 640px; margin: 28px auto 0; text-align: center; font-family: var(--sans); font-size: 15px; line-height: 1.6; color: var(--ink-soft); }
+.apps-others a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.apps-others a:hover { text-decoration: underline; text-underline-offset: 3px; }
+/* Device names stay in the text's ink beside links and on buttons. */
+.apps-others .dev, .cta-app .dev { color: inherit; }
+/* The ladder's free readers take a row of their own under the two paid. */
+.final-cta-buttons.ladder .cta-break { flex-basis: 100%; height: 0; }
+.final-cta-buttons.ladder .cta-break + .cta-quiet { margin-left: 0; }
+@media (max-width: 760px) { .final-cta-buttons.ladder .cta-break { display: none; } }
+
+/* The closing pick on Features and Platforms: the hero's own shape (user,
+   27.11.2026) — the library's button, the other four in a list beside it. */
+.cta-pick { display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 8px; text-align: left; }
+@media (max-width: 600px) {
+  .cta-pick { flex-direction: column; gap: 20px; }
+  .cta-pick .hero-alts a { display: block; padding-left: 18px; text-indent: -18px; }
+  .cta-pick .hero-alts .cta-dot { display: inline-block; margin-right: 8px; vertical-align: 0.08em; }
+  .cta-pick .hero-alts .alt-note::before { margin: 0 8px; }
+}
+
+/* Requirements by reader: a quiet band names the apps a group of rows is for. */
+.requirements-table .dev { color: inherit; font-weight: inherit; }
+.requirements-table tbody tr.req-group td {
+  padding: 12px 24px 10px; width: auto; background: var(--bg-deeper);
+  font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--ink);
+}
+.requirements-table tr.req-group .cta-dot { display: inline-block; margin-right: 7px; vertical-align: 0.05em; }
+.requirements-table { max-width: 620px; }

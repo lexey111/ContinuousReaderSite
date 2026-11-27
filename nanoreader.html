@@ -5,10 +5,10 @@
 <script>try{var t=localStorage.getItem('cr-theme');if(t==='day'||t==='night')document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="meta.nanodl.title">NanoReader, a free reader for Windows, Linux and Mac</title>
-<meta name="description" data-i18n-attr="content:meta.nanodl.desc" content="JustReader for Windows, Linux and Mac: three active books, marks and notes, a journal and statistics, books by a link. Free, a beta.">
+<meta name="description" data-i18n-attr="content:meta.nanodl.desc" content="NanoReader, a free reader for Windows, Linux and Mac. Three books at once, with marks and a reading journal.">
 <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 <meta property="og:title" data-i18n-attr="content:meta.nano.title" content="NanoReader for Windows, Linux and Mac">
-<meta property="og:description" data-i18n-attr="content:meta.nanodl.desc" content="JustReader for Windows, Linux and Mac: three active books, marks and notes, a journal and statistics, books by a link. Free, a beta.">
+<meta property="og:description" data-i18n-attr="content:meta.nanodl.desc" content="NanoReader, a free reader for Windows, Linux and Mac. Three books at once, with marks and a reading journal.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://continuousreader.app/img/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -52,49 +52,72 @@
     <div class="nav-links">
       <a href="features.html" data-i18n="nav.features">Features</a>
       <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
-      <a href="family.html" data-i18n="nav.family">Family</a>
+      <a href="family.html" class="active" data-i18n="nav.family">Family</a>
       <a href="download.html" data-i18n="nav.download">Download</a>
       <button class="nav-lang" type="button">EN</button>
     </div>
   </div>
 </nav>
+<!-- The family's pages: the map, then a page a reader -->
+<nav class="fsub-nav" aria-label="The family" data-i18n-attr="aria-label:family.map.eyebrow">
+  <div class="container fsub-inner">
+    <a class="fsub-home" href="family.html" data-i18n="nav.family">Family</a>
+    <a class="fsub-item" href="web-reader.html"><i class="cta-dot dot-wr" aria-hidden="true"></i>WebReader</a>
+    <a class="fsub-item" href="justreader.html"><i class="cta-dot dot-jr" aria-hidden="true"></i>JustReader</a>
+    <a class="fsub-item" href="plainreader.html"><i class="cta-dot dot-pr" aria-hidden="true"></i>PlainReader</a>
+    <a class="fsub-item" href="continuousreader.html"><i class="cta-dot dot-cr" aria-hidden="true"></i>ContinuousReader</a>
+    <a class="fsub-item" href="nanoreader.html" aria-current="page"><i class="cta-dot dot-nr" aria-hidden="true"></i>NanoReader</a>
+  </div>
+</nav>
 
-<header class="page-header">
+
+<header class="page-header fsub-header">
   <div class="container-narrow">
-    <div class="page-eyebrow" data-i18n="nanodl.eyebrow">NanoReader · free · beta</div>
+    <div class="page-eyebrow"><i class="cta-dot dot-nr" aria-hidden="true"></i><span data-i18n="nanodl.eyebrow">NanoReader · free · beta</span></div>
     <h1 class="page-title" data-i18n="nanodl.title">A reader for <em>Windows, Linux and Mac</em>.</h1>
-    <p class="page-subtitle" data-i18n="nanodl.subtitle">
-      Its place in the family is JustReader on other platforms, on the engine
-      the whole family shares. Free. A beta for now.
-    </p>
+    <p class="page-subtitle" data-i18n="nanodl.subtitle">For three books at once. Free.</p>
   </div>
 </header>
 
-<section class="two-paths nano-downloads">
+<section class="two-paths nano-downloads" id="download">
   <div class="container">
     <div class="paths-grid">
       <div class="path-card">
         <div class="path-name" data-i18n="nanodl.mac.name">Mac</div>
         <div class="path-price-sub" data-i18n="nanodl.mac.sub">Apple silicon and Intel</div>
         <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-mac.dmg" class="path-store-button" data-i18n="nanodl.mac.button">Download for Mac</a>
+        <p class="path-size" data-i18n="nanodl.size.mac">DMG, 17 MB</p>
         <p class="path-store-button-note" data-i18n="nanodl.mac.note">A disk image, notarized by Apple.</p>
       </div>
       <div class="path-card">
         <div class="path-name" data-i18n="nanodl.win.name">Windows</div>
         <div class="path-price-sub" data-i18n="nanodl.win.sub">Windows 10 and 11, 64-bit</div>
         <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-windows-setup.exe" class="path-store-button" data-i18n="nanodl.win.button">Download for Windows</a>
+        <p class="path-size" data-i18n="nanodl.size.win">EXE, 7 MB</p>
         <p class="path-store-button-note" data-i18n="nanodl.win.note">The installer is not signed yet: Windows may warn about an unknown publisher. More info, then Run anyway.</p>
       </div>
       <div class="path-card">
         <div class="path-name" data-i18n="nanodl.linux.name">Linux</div>
         <div class="path-price-sub" data-i18n="nanodl.linux.sub">64-bit</div>
         <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.AppImage" class="path-store-button" data-i18n="nanodl.linux.button">Download AppImage</a>
-        <p class="path-store-button-note"><span data-i18n="nanodl.linux.note">Or a package:</span> <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.deb">.deb</a> · <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.rpm">.rpm</a></p>
+        <p class="path-size" data-i18n="nanodl.size.appimage">AppImage, 88 MB</p>
+        <p class="path-store-button-note"><span data-i18n="nanodl.linux.note">Or a package:</span> <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.deb">.deb</a> <span class="path-size-inline" data-i18n="nanodl.size.pkg">10 MB</span> · <a href="https://github.com/lexey111/read/releases/latest/download/NanoReader-linux.rpm">.rpm</a> <span class="path-size-inline" data-i18n="nanodl.size.pkg">10 MB</span></p>
       </div>
     </div>
+    <p class="nano-beta" data-i18n="nanodl.beta">This is a beta. NanoReader is ready for reading, but something may still go wrong. If you notice it, <a href="contact.html">write to us</a>.</p>
   </div>
 </section>
 
+<section class="section fsub-gallery-section reveal">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="family.sub.devices.nr">On three systems</div>
+    <div class="fsub-gallery desk">
+      <figure class="screenshot-frame fsub-shot wide"><img width="1600" height="1031" loading="lazy" decoding="async" src="img/family/nr-mac.webp" alt="NanoReader on the Mac: a book in four columns, its reading settings open" data-i18n-attr="alt:family.sub.nr.mac"><figcaption class="screenshot-caption">Mac · <span class="lang-tag">English</span></figcaption></figure>
+      <figure class="screenshot-frame fsub-shot half"><img width="1600" height="1000" loading="lazy" decoding="async" src="img/family/nr-windows.webp" alt="NanoReader on Windows 11: three active books as cards" data-i18n-attr="alt:family.sub.nr.windows"><figcaption class="screenshot-caption">Windows 11 · <span class="lang-tag">English</span></figcaption></figure>
+      <figure class="screenshot-frame fsub-shot half"><img width="1600" height="1000" loading="lazy" decoding="async" src="img/family/nr-linux.webp" alt="NanoReader on Ubuntu in Twilight: Treasure Island in three columns, its marks in a window of their own" data-i18n-attr="alt:family.sub.nr.linux"><figcaption class="screenshot-caption">Ubuntu · <span class="lang-tag">English</span></figcaption></figure>
+    </div>
+  </div>
+</section>
 <section class="section" style="padding-top: 24px;">
   <div class="container-narrow">
     <h2 class="nano-h2" data-i18n="nanodl.what">What is in it</h2>
@@ -104,7 +127,7 @@
       <li data-i18n="nanodl.f3">A journal of every sitting, and statistics by week, month and year.</li>
       <li data-i18n="nanodl.f4">Contents, search, marks and pictures in a window of their own, beside the book.</li>
       <li data-i18n="nanodl.f5">Day, twilight and night; five palettes, paper, frames, one to four columns.</li>
-      <li data-i18n="nanodl.f6">EPUB, FB2, MOBI, AZW3, PDF, CBZ, Markdown, TXT and HTML, from a file or a link.</li>
+      <li data-i18n="nanodl.f6">EPUB, FB2, MOBI, AZW3, PDF, CBZ, Markdown, TXT and HTML. A book opens from the disk, or downloads by its address.</li>
       <li data-i18n="nanodl.f7">Eight languages.</li>
     </ul>
     <p class="nano-three" data-i18n="nanodl.three">Three books is a deliberate limit: these are books without a library. For a library there are <a href="family.html">PlainReader and ContinuousReader</a> on Apple’s devices.</p>
@@ -116,6 +139,17 @@
       <a href="https://read.continuousreader.app/" class="cta-primary"><span data-i18n="family.wr.open">Open WebReader</span></a>
       <a href="family.html" class="cta-secondary" data-i18n="nano.family">The whole family</a>
     </p>
+  </div>
+</section>
+
+<section class="section alt-bg reveal fsub-next-section">
+  <div class="container-narrow">
+    <div class="section-eyebrow" data-i18n="family.sub.next">Next to it in the family</div>
+    <div class="fsub-next">
+      <a class="fsub-next-card" href="web-reader.html"><span class="fsub-next-name"><i class="cta-dot dot-wr" aria-hidden="true"></i>WebReader</span><span class="fsub-next-kind" data-i18n="family.map.kind.wr">In a browser</span><span class="fsub-next-why" data-i18n="family.sub.rel.nr-wr">In a browser tab, with nothing to install.</span></a>
+      <a class="fsub-next-card" href="justreader.html"><span class="fsub-next-name"><i class="cta-dot dot-jr" aria-hidden="true"></i>JustReader</span><span class="fsub-next-kind" data-i18n="family.map.kind.jr">The nightstand</span><span class="fsub-next-why" data-i18n="family.sub.rel.nr-jr">The same three books, on Mac, iPad and iPhone.</span></a>
+    </div>
+    <p class="fsub-next-more"><a href="family.html#compare" data-i18n="family.wiz.compare">Compare them side by side</a> · <a href="family.html#which" data-i18n="family.sub.which">Which one suits me?</a></p>
   </div>
 </section>
 

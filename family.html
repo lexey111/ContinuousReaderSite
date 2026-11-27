@@ -82,33 +82,310 @@
     </div>
   </div>
 </nav>
+<!-- The family's pages: the map, then a page a reader -->
+<nav class="fsub-nav" aria-label="The family" data-i18n-attr="aria-label:family.map.eyebrow">
+  <div class="container fsub-inner">
+    <a class="fsub-home" href="family.html" aria-current="page" data-i18n="nav.family">Family</a>
+    <a class="fsub-item" href="web-reader.html"><i class="cta-dot dot-wr" aria-hidden="true"></i>WebReader</a>
+    <a class="fsub-item" href="justreader.html"><i class="cta-dot dot-jr" aria-hidden="true"></i>JustReader</a>
+    <a class="fsub-item" href="plainreader.html"><i class="cta-dot dot-pr" aria-hidden="true"></i>PlainReader</a>
+    <a class="fsub-item" href="continuousreader.html"><i class="cta-dot dot-cr" aria-hidden="true"></i>ContinuousReader</a>
+    <a class="fsub-item" href="nanoreader.html"><i class="cta-dot dot-nr" aria-hidden="true"></i>NanoReader</a>
+  </div>
+</nav>
+
 
 <header class="page-header">
   <div class="container-narrow">
-    <div class="page-eyebrow" data-i18n="family.header.eyebrow">Three apps, one reading engine</div>
+    <div class="page-eyebrow" data-i18n="family.header.eyebrow">Five readers, one reading engine</div>
     <h1 class="page-title" data-i18n="family.header.title">A nightstand, a <em>shelf</em>, a library.</h1>
-    <p class="page-subtitle" data-i18n="family.header.subtitle">
-      One reader, three ways to keep your books.
-    </p>
+    <p class="page-subtitle" data-i18n="family.header.subtitle">One reader, different furniture around it.</p>
     <div class="page-intro">
-      <p data-i18n="family.header.intro1">
-        What you choose here is not the reading — that part is the same in
-        all three — but what stands around it. So the question is not which
-        app reads better. It is how many books you keep, and what you do
-        with them.
-      </p>
-      <p data-i18n="family.header.intro2">
-        Reading a book or two at a time, downloading the next when you have
-        finished one? <strong>JustReader</strong>. Keeping a month ahead on a shelf and
-        finding the next one in an OPDS catalogue? <strong>PlainReader</strong>.
-        A real collection — hundreds or thousands of volumes, read across
-        several devices, and proper work with books, folders, authors and
-        series? <strong>ContinuousReader</strong>. The reading core
-        is the same in all of them; what changes is how the books are kept.
-      </p>
+      <p data-i18n="family.header.intro2">Reading a book or two and downloading the next when you finish? <strong>JustReader</strong>. Keeping a shelf a month ahead and finding the next book in an OPDS catalogue? <strong>PlainReader</strong>. Hundreds or thousands of books that you read on several devices? <strong>ContinuousReader</strong>. Not on Apple’s devices? <strong>NanoReader</strong> for Windows, Linux and Mac, or <strong>WebReader</strong> in any browser.</p>
     </div>
   </div>
 </header>
+
+<!-- ============================================================ -->
+<!-- THE MAP: the apps' About map (CR #1142), a card a place       -->
+<!-- ============================================================ -->
+<section class="section fmap-section reveal" id="map">
+  <div class="container-narrow">
+    <div class="fmap-island">
+      <div class="fmap-head">
+        <div class="section-eyebrow" data-i18n="family.map.eyebrow">The family</div>
+        <p class="fmap-lead" data-i18n="family.map.lead">One reading engine: in a browser, on Apple’s devices and on other computers.</p>
+      </div>
+      <div class="fmap" role="group" aria-label="The family" data-i18n-attr="aria-label:family.map.eyebrow">
+        <svg class="fmap-lines" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true">
+          <line class="fmap-divide" x1="215" x2="215" y1="12" y2="294" />
+          <path class="fmap-way" d="M70 96H880M70 96H110C180 96 190 252 270 252H352" />
+        </svg>
+        <button type="button" class="fmap-place wr" data-place="wr" style="--x:7%;--y:32%" aria-pressed="false"><i class="halo"></i><i class="orbit"></i><i class="spot"></i><span class="fmap-name"><span class="full">WebReader</span><span class="short">WR</span></span></button>
+        <button type="button" class="fmap-place jr" data-place="jr" style="--x:36%;--y:32%" aria-pressed="false"><i class="halo"></i><i class="orbit"></i><i class="spot"></i><span class="fmap-name"><span class="full">JustReader</span><span class="short">JR</span></span></button>
+        <button type="button" class="fmap-place pr" data-place="pr" style="--x:62%;--y:32%" aria-pressed="false"><i class="halo"></i><i class="orbit"></i><i class="spot"></i><span class="fmap-name"><span class="full">PlainReader</span><span class="short">PR</span></span></button>
+        <button type="button" class="fmap-place cr" data-place="cr" style="--x:88%;--y:32%" aria-pressed="false"><i class="halo"></i><i class="orbit"></i><i class="spot"></i><span class="fmap-name"><span class="full">ContinuousReader</span><span class="short">CR</span></span></button>
+        <button type="button" class="fmap-place nr" data-place="nr" style="--x:36%;--y:84%" aria-pressed="false"><i class="halo"></i><i class="orbit"></i><i class="trio"><b></b><b></b><b></b></i><span class="fmap-name"><span class="full">NanoReader</span><span class="short">NR</span></span></button>
+        <span class="fmap-cap" style="--x:7%;--y:32%" data-i18n="family.map.web" aria-hidden="true">Web</span>
+        <span class="fmap-cap" style="--x:36%;--y:32%" aria-hidden="true">Apple</span>
+        <span class="fmap-cap beside" style="--x:36%;--y:84%" aria-hidden="true">Windows · Linux · Mac</span>
+      </div>
+
+      <div class="fmap-deck">
+        <article class="fmap-card" data-place="wr">
+          <figure class="fmap-pic emblem"><img src="img/family/icon-wr.svg" alt="" loading="lazy"></figure>
+          <div class="fmap-say">
+            <h3>WebReader</h3>
+            <p class="fmap-terms"><span data-i18n="family.map.kind.wr">In a browser</span> · <span data-i18n="family.map.free">Free</span></p>
+            <p class="fmap-pitch" data-i18n="family.map.pitch.wr">The reader in a browser tab, simpler than in the apps. Works on any device, with nothing to install. The book is stored and processed locally, on the device you opened it on.</p>
+            <p class="fmap-small" data-i18n="family.map.three">Three books is a deliberate limit: these are books without a library. For a library there are PlainReader (the advanced level) and ContinuousReader (the professional one).</p>
+            <p class="fmap-doors"><a class="fmap-go" href="https://read.continuousreader.app/" data-i18n="family.wr.open">Open WebReader</a><a href="web-reader.html" data-i18n="family.map.about">About it</a></p>
+          </div>
+        </article>
+        <article class="fmap-card" data-place="jr">
+          <figure class="fmap-pic room" style="--paper:#fdf1db"><img src="img/family/room-jr.webp" alt="" loading="lazy"></figure>
+          <div class="fmap-say">
+            <h3><img class="fmap-icon" src="img/family/icon-jr.svg" alt="">JustReader</h3>
+            <p class="fmap-terms"><span data-i18n="family.map.kind.jr">The nightstand</span> · <span data-i18n="family.map.free">Free</span> · iPhone, iPad, Mac</p>
+            <p class="fmap-pitch" data-i18n="family.map.pitch.jr">Three active books: open a file and read.</p>
+            <p class="fmap-small" data-i18n="family.map.three">Three books is a deliberate limit: these are books without a library. For a library there are PlainReader (the advanced level) and ContinuousReader (the professional one).</p>
+            <p class="fmap-doors"><a class="fmap-go" href="https://apps.apple.com/app/justreader/id6781187067">App Store</a><a href="justreader.html" data-i18n="family.map.about">About it</a></p>
+          </div>
+        </article>
+        <article class="fmap-card" data-place="pr">
+          <figure class="fmap-pic room" style="--paper:#fcefd9"><img src="img/family/room-pr.webp" alt="" loading="lazy"></figure>
+          <div class="fmap-say">
+            <h3><img class="fmap-icon" src="img/family/icon-pr.svg" alt="">PlainReader</h3>
+            <p class="fmap-terms"><span data-i18n="family.map.kind.pr">The bookshelf</span> · <span data-i18n="family.map.once">One-time purchase</span> · iPhone, iPad, Mac</p>
+            <p class="fmap-pitch" data-i18n="family.map.pitch.pr">For reading several books at once, or keeping them on a shelf to come back to later. Every book keeps its bookmarks and notes. Not a library like ContinuousReader, but a really long shelf, with coloured sections and filters.</p>
+            <p class="fmap-small" data-i18n="family.map.bought">One reading engine for all. Bought once for Mac, iPad and iPhone, no subscription, with Family Sharing.</p>
+            <p class="fmap-doors"><a class="fmap-go" href="https://apps.apple.com/app/plainreader/id6801140208">App Store</a><a href="plainreader.html" data-i18n="family.map.about">About it</a></p>
+          </div>
+        </article>
+        <article class="fmap-card" data-place="cr">
+          <figure class="fmap-pic room" style="--paper:#f4e3cb"><img src="img/family/room-cr.webp" alt="" loading="lazy"></figure>
+          <div class="fmap-say">
+            <h3><img class="fmap-icon" src="img/family/icon-cr.svg" alt="">ContinuousReader</h3>
+            <p class="fmap-terms"><span data-i18n="family.map.kind.cr">The library</span> · <span data-i18n="family.map.once">One-time purchase</span> · iPhone, iPad, Mac</p>
+            <p class="fmap-pitch" data-i18n="family.map.pitch.cr">A library for thousands of books: folders inside folders, tags, authors and series, search through the text of every book. OPDS catalogs watch for new arrivals. And the cherry on top: the library syncs between devices, and your place in the book in real time.</p>
+            <p class="fmap-small" data-i18n="family.map.bought">One reading engine for all. Bought once for Mac, iPad and iPhone, no subscription, with Family Sharing.</p>
+            <p class="fmap-doors"><a class="fmap-go" href="https://apps.apple.com/app/continuousreader/id6783733436">App Store</a><a href="continuousreader.html" data-i18n="family.map.about">About it</a></p>
+          </div>
+        </article>
+        <article class="fmap-card" data-place="nr">
+          <figure class="fmap-pic emblem"><img src="img/family/icon-nr.png" alt="" loading="lazy"></figure>
+          <div class="fmap-say">
+            <h3>NanoReader</h3>
+            <p class="fmap-terms"><span data-i18n="family.map.kind.nr">For Windows, Linux and Mac</span> · <span data-i18n="family.map.free">Free</span></p>
+            <p class="fmap-pitch" data-i18n="family.map.pitch.nr">A simple reader as a program of its own: open a book and read. A beta for now.</p>
+            <p class="fmap-small" data-i18n="family.map.three">Three books is a deliberate limit: these are books without a library. For a library there are PlainReader (the advanced level) and ContinuousReader (the professional one).</p>
+            <p class="fmap-doors"><a class="fmap-go" href="nanoreader.html#download" data-i18n="family.map.download">Download the beta</a><a href="nanoreader.html" data-i18n="family.map.about">About it</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- WHICH ONE: three questions at most (user, 26.11.2026)         -->
+<!-- ============================================================ -->
+<section class="section alt-bg reveal" id="which">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow" data-i18n="family.wiz.eyebrow">Two or three questions</div>
+      <h2 class="section-title" data-i18n="family.wiz.title">Which one <em>suits me</em>?</h2>
+    </div>
+    <div class="wiz" data-at="where">
+      <div class="wiz-progress" aria-live="polite">
+        <span class="wiz-bar" aria-hidden="true"></span>
+        <span class="wiz-count"><span data-i18n="family.wiz.step.q">Question</span> <b class="wiz-n">1</b> <span data-i18n="family.wiz.step.of">of</span> <b class="wiz-t">3</b></span>
+      </div>
+      <p class="wiz-trail" hidden></p>
+      <div class="wiz-step" data-q="where">
+        <h3 class="wiz-q" data-i18n="family.wiz.where.q">Where do you read?</h3>
+        <div class="wiz-options">
+          <button type="button" class="wiz-opt" data-go="books"><strong data-i18n="family.wiz.where.apple">On a Mac, an iPad or an iPhone</strong></button>
+          <button type="button" class="wiz-opt" data-go="=nr"><strong data-i18n="family.wiz.where.other">On Windows or Linux</strong></button>
+          <button type="button" class="wiz-opt" data-go="=wr"><strong data-i18n="family.wiz.where.web">Anywhere, installing nothing</strong><span data-i18n="family.wiz.where.web.sub">Android, a borrowed laptop, a computer at work</span></button>
+        </div>
+      </div>
+      <div class="wiz-step" data-q="books" hidden>
+        <h3 class="wiz-q" data-i18n="family.wiz.books.q">How many books do you keep?</h3>
+        <div class="wiz-options">
+          <button type="button" class="wiz-opt" data-go="=jr"><strong data-i18n="family.wiz.books.none">I don’t keep them</strong><span data-i18n="family.wiz.books.none.sub">I download a book or open it from the disk, read it and move on</span></button>
+          <button type="button" class="wiz-opt" data-go="sync"><strong data-i18n="family.wiz.books.shelf">A shelf</strong><span data-i18n="family.wiz.books.shelf.sub">Dozens or hundreds of books I come back to</span></button>
+          <button type="button" class="wiz-opt" data-go="=cr"><strong data-i18n="family.wiz.books.big">A big collection</strong><span data-i18n="family.wiz.books.big.sub">Thousands, in folders and series</span></button>
+        </div>
+      </div>
+      <div class="wiz-step" data-q="sync" hidden>
+        <h3 class="wiz-q" data-i18n="family.wiz.sync.q">Do you read one book on several devices?</h3>
+        <div class="wiz-options">
+          <button type="button" class="wiz-opt" data-go="=cr"><strong data-i18n="family.wiz.sync.yes">Yes, the place should come with me</strong><span data-i18n="family.wiz.sync.yes.sub">From the Mac to the iPhone, at the same paragraph</span></button>
+          <button type="button" class="wiz-opt" data-go="=pr"><strong data-i18n="family.wiz.sync.no">No, one device is enough</strong></button>
+        </div>
+      </div>
+      <div class="wiz-result" hidden>
+        <article class="wiz-answer" data-app="wr">
+          <p class="wiz-yours" data-i18n="family.wiz.yours">Yours is</p>
+          <h3><span class="cta-dot dot-wr" aria-hidden="true"></span>WebReader</h3>
+          <p data-i18n="family.wiz.r.wr">A reader right in a browser tab. Nothing to install, and the book stays with you. Free.</p>
+          <p class="wiz-next" data-i18n="family.wiz.n.wr">Marks and a reading journal are in NanoReader, a program for your computer.</p>
+          <p class="wiz-doors"><a class="fmap-go" href="https://read.continuousreader.app/" data-i18n="family.wr.open">Open WebReader</a><a href="web-reader.html" data-i18n="family.map.about">About it</a></p>
+        </article>
+        <article class="wiz-answer" data-app="nr">
+          <p class="wiz-yours" data-i18n="family.wiz.yours">Yours is</p>
+          <h3><span class="cta-dot dot-nr" aria-hidden="true"></span>NanoReader</h3>
+          <p data-i18n="family.wiz.r.nr">Like JustReader, only for Windows, Linux and Mac. Free. Currently a beta.</p>
+          <p class="wiz-next" data-i18n="family.wiz.n.nr">With nothing to install at all, there is WebReader in a browser.</p>
+          <p class="wiz-doors"><a class="fmap-go" href="nanoreader.html#download" data-i18n="family.map.download">Download the beta</a><a href="nanoreader.html" data-i18n="family.map.about">About it</a></p>
+        </article>
+        <article class="wiz-answer" data-app="jr">
+          <p class="wiz-yours" data-i18n="family.wiz.yours">Yours is</p>
+          <h3><span class="cta-dot dot-jr" aria-hidden="true"></span>JustReader</h3>
+          <p data-i18n="family.wiz.r.jr">Open a file and read. Three books stay open at once, and the closed ones wait in the history. Free.</p>
+          <p class="wiz-next" data-i18n="family.wiz.n.jr">When books start to stay, PlainReader keeps them on a shelf.</p>
+          <p class="wiz-doors"><a class="fmap-go" href="https://apps.apple.com/app/justreader/id6781187067">App Store</a><a href="justreader.html" data-i18n="family.map.about">About it</a></p>
+        </article>
+        <article class="wiz-answer" data-app="pr">
+          <p class="wiz-yours" data-i18n="family.wiz.yours">Yours is</p>
+          <h3><span class="cta-dot dot-pr" aria-hidden="true"></span>PlainReader</h3>
+          <p data-i18n="family.wiz.r.pr">A bookshelf for the books you come back to. Bought once, $6.99.</p>
+          <p class="wiz-next" data-i18n="family.wiz.n.pr">Folders and sync between devices are in ContinuousReader.</p>
+          <p class="wiz-doors"><a class="fmap-go" href="https://apps.apple.com/app/plainreader/id6801140208">App Store</a><a href="plainreader.html" data-i18n="family.map.about">About it</a></p>
+        </article>
+        <article class="wiz-answer" data-app="cr">
+          <p class="wiz-yours" data-i18n="family.wiz.yours">Yours is</p>
+          <h3><span class="cta-dot dot-cr" aria-hidden="true"></span>ContinuousReader</h3>
+          <p data-i18n="family.wiz.r.cr">A library for thousands of books. It syncs between your devices, and so does your place in the book. Bought once, $19.99.</p>
+          <p class="wiz-next" data-i18n="family.wiz.n.cr">A shelf is enough? Then PlainReader.</p>
+          <p class="wiz-doors"><a class="fmap-go" href="https://apps.apple.com/app/continuousreader/id6783733436">App Store</a><a href="continuousreader.html" data-i18n="family.map.about">About it</a></p>
+        </article>
+      </div>
+      <p class="wiz-nav">
+        <button type="button" class="wiz-back" hidden data-i18n="family.wiz.back">Back</button>
+        <button type="button" class="wiz-again" hidden data-i18n="family.wiz.again">Start over</button>
+        <a class="wiz-compare" href="#compare" data-i18n="family.wiz.compare">Compare them side by side</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SIDE BY SIDE: Apple's three, and the three of three books     -->
+<!-- ============================================================ -->
+<section class="section reveal" id="compare">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow" data-i18n="download.cmp.eyebrow">Side by side</div>
+      <h2 class="section-title" data-i18n="family.cmp.title">What each <em>one has</em>.</h2>
+    </div>
+    <div class="cmp-tabs" role="tablist">
+      <button type="button" role="tab" class="cmp-tab" data-pane="apple" aria-selected="true"><span data-i18n="family.cmp.tab.apple">Apple only</span><span class="cmp-tab-apps"><i>JustReader<b data-i18n="family.cmp.count.jr">3 books</b></i><i>PlainReader<b data-i18n="family.cmp.count.pr">1,000 books</b></i><i>ContinuousReader<b data-i18n="family.cmp.count.cr">10,000+ books</b></i></span></button>
+      <button type="button" role="tab" class="cmp-tab" data-pane="three" aria-selected="false"><span data-i18n="family.cmp.tab.three">Apple and others</span><span class="cmp-tab-apps"><i>WebReader<b data-i18n="family.cmp.on.wr">in a browser</b></i><i>NanoReader<b>Windows, Linux, Mac</b></i><i>JustReader<b>Apple</b></i></span></button>
+    </div>
+    <div class="cmp-pane" data-pane="apple" role="tabpanel">
+      <div class="comparison-wrap">
+      <table class="comparison-table three">
+        <thead>
+          <tr><th data-i18n="download.cmp.col.feature">Feature</th><th data-i18n="download.cmp.col.jr">JustReader</th><th data-i18n="download.cmp.col.pr">PlainReader</th><th data-i18n="download.cmp.col.cr">ContinuousReader</th></tr>
+        </thead>
+        <tbody>
+          <tr class="intro-row"><td data-i18n="download.cmp.r.price">Price</td><td data-i18n="download.cmp.r.price.jr"><strong>Free</strong></td><td data-i18n="download.cmp.r.price.pr"><strong>$6.99</strong> once</td><td data-i18n="download.cmp.r.price.cr"><strong>$19.99</strong> once</td></tr>
+          <tr class="intro-row"><td data-i18n="download.cmp.r.shape">What it is</td><td data-i18n="download.cmp.r.shape.jr">A book on the nightstand</td><td data-i18n="download.cmp.r.shape.pr">A bookshelf</td><td data-i18n="download.cmp.r.shape.cr">A library</td></tr>
+          <tr class="intro-row"><td data-i18n="download.cmp.r.platforms">Platforms</td><td data-i18n="download.cmp.r.platforms.v">Mac, iPad, iPhone</td><td data-i18n="download.cmp.r.platforms.v">Mac, iPad, iPhone</td><td data-i18n="download.cmp.r.platforms.v">Mac, iPad, iPhone</td></tr>
+          <tr class="divider"><td colspan="4" data-i18n="download.cmp.divider.shared">The reading itself — the same in all three</td></tr>
+          <tr><td data-i18n="download.cmp.r.readers"><strong>Two readers</strong> — Comfort sets the page up by itself; Professional has every panel, dock and setting</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.themes">All 42 themes</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.fonts">All 9 typefaces</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.typo">Full typography control</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.modes">Scroll or Pages — up to four columns on the Mac, three on the iPad</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.turns">Page turns — Slide, Flip, Cards, Sink</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.paper">Paper — lined, squared, graph, sand or your own picture; desk coverings; a frame around the text</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.translate">Translation — inline as you read, plus a manual mode for any text</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.tts">Read Aloud with word highlighting</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.chapters">Chapter navigation</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.docks"><strong>Panels</strong> that dock to any edge, float or pin (Mac, iPad)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.search">In-book search</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.full">Full screen — active corners; a bottom bar you assemble (iPad, iPhone)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.gallery">Image gallery with save/export</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.formats">Every format: EPUB, FB2, MOBI, AZW3, PDF, CBZ, CBR, Markdown, TXT, HTML, RTF; DOC and DOCX on the Mac</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.url">Drag URL from browser to open a book</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.bm">Bookmarks with colors and notes</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.notes">A note per book, in rich text</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.rstats">Reading statistics — charts by book, author and genre; export to Markdown or CSV</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.journal">Reading journal — every session, by day and by book; export</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.notesbrowser">Notes &amp; highlights browser — every note from every book, even removed ones; search, recolour, export</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.export">Reader settings export/import (.crsettings)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.toggles">Feature toggles — hide what you do not use</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.keys">On the Mac: Quiet mode (<code>H</code>), the panel selector (double <code>Esc</code>), the settings navigator (double <code>F9</code>)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.outlive">Position, marks and notes outlive the file on disk</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp.r.system"><strong>System interface</strong> — the app in the system’s own look (Mac, iPad)</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp.r.skins"><strong>Skins</strong> — the whole app in another look</td><td data-i18n="family.cmp.r.skins.jr">Retro, BookCommander, Compact</td><td data-i18n="family.cmp.r.skins.pr">Retro, BookCommander, Bookcase</td><td><span class="dash">—</span></td></tr>
+          <tr class="divider"><td colspan="4" data-i18n="download.cmp.divider.shelf">From the bookshelf up (PlainReader)</td></tr>
+          <tr><td data-i18n="download.cmp.r.parallel"><strong>How many books, and how they are kept</strong></td><td data-i18n="download.cmp.r.parallel.jr">three active books</td><td data-i18n="download.cmp.r.parallel.pr"><strong>a whole shelf</strong> — no hierarchy, but ten facets: author, series, tag…</td><td data-i18n="download.cmp.r.parallel.cr"><strong>a full library</strong> — nested folders, authors, series, genres, tags</td></tr>
+          <tr><td data-i18n="download.cmp.r.switch">Switch between the books you are reading in one tap</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td data-i18n="download.cmp.r.switch.cr">through the library</td></tr>
+          <tr><td data-i18n="download.cmp.r.history">Shared history that reopens a book in place</td><td data-i18n="download.cmp.r.history.jr">last 10</td><td data-i18n="download.cmp.r.history.pr">last 25, searchable</td><td data-i18n="download.cmp.r.history.cr">the whole library</td></tr>
+          <tr><td data-i18n="download.cmp.r.card"><strong>Book Card</strong> — cover, images, info, notes, bookmarks, stats</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp.r.labels"><strong>Labels</strong> — several colours on a book, tags and a rating</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp.r.facets"><strong>Facets</strong> — ten ways to look at the books: by category or folder, author, series, genre, colour, tag, language, what is recent</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp.r.query">Conditions — several colours or tags at once, with “and”, “or” and “not”</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp.r.readfilter">Reading filter — not started, reading, finished</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.depth">Interface depth — Flat / Standard / Deep</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.opds"><strong>OPDS</strong> catalogs with shortcuts</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.lib"><strong>Library</strong> — search, sort and filters; tabs you arrange and hide</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.authors"><strong>Authors browser</strong> — every author with their books, series by series</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.series"><strong>Series browser</strong> — every series, its volumes in order</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr class="divider"><td colspan="4" data-i18n="download.cmp.divider">Only in ContinuousReader</td></tr>
+          <tr><td data-i18n="family.cmp.r.authorpage"><strong>Author pages</strong> — a note, the numbers, series management, merging name variants</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp.r.table"><strong>Table</strong> with the columns you choose (Mac, iPad)</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.gsearch"><strong>Global search</strong> — the full text of every book you own</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.icloud"><strong>iCloud sync</strong> across devices</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.org"><strong>Nested folders</strong> — in the sidebar and among the books, with colours, notes and drag-and-drop</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.trash"><strong>Trash</strong> — restore deleted books or empty it</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.edit">Edit a book’s own details — title, author, series, cover; ISBN read from the file</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.genres">Genre management</td><td><span class="dash">—</span></td><td data-i18n="download.cmp.r.genres.pr">shown, not edited</td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.watch">OPDS <strong>watchers</strong> that fetch new arrivals</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.basket"><strong>Download basket</strong> — paste a list of links, the app fetches them one by one</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.mass"><strong>Mass import</strong> of folders and files; a Calibre library with its metadata (Mac)</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.tstats">Translation statistics and reports</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.wizard">Welcome wizard</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.backup">Self-contained library folder (one-copy backup)</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="download.cmp.r.loc">Custom library location (Mac)</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="cmp-pane" data-pane="three" role="tabpanel" hidden>
+      <div class="comparison-wrap">
+      <table class="comparison-table three">
+        <thead>
+          <tr><th data-i18n="download.cmp.col.feature">Feature</th><th>WebReader</th><th>NanoReader</th><th>JustReader</th></tr>
+        </thead>
+        <tbody>
+          <tr class="intro-row"><td data-i18n="family.cmp3.where">Where it runs</td><td data-i18n="family.cmp3.where.wr">any browser, any device</td><td>Windows, Linux, Mac</td><td>Mac, iPad, iPhone</td></tr>
+          <tr class="intro-row"><td data-i18n="family.cmp3.install">What to install</td><td data-i18n="family.cmp3.install.wr">nothing</td><td data-i18n="family.cmp3.install.nr">a program</td><td data-i18n="family.cmp3.install.jr">from the App Store</td></tr>
+          <tr class="intro-row"><td data-i18n="download.cmp.r.price">Price</td><td data-i18n="download.cmp.r.price.jr"><strong>Free</strong></td><td data-i18n="download.cmp.r.price.jr"><strong>Free</strong></td><td data-i18n="download.cmp.r.price.jr"><strong>Free</strong></td></tr>
+          <tr><td data-i18n="family.cmp3.books">Books</td><td data-i18n="download.cmp.r.parallel.jr">three active books</td><td data-i18n="download.cmp.r.parallel.jr">three active books</td><td data-i18n="download.cmp.r.parallel.jr">three active books</td></tr>
+          <tr><td data-i18n="family.cmp3.history">Closed books, to load again in one click</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td data-i18n="download.cmp.r.history.jr">last 10</td></tr>
+          <tr><td data-i18n="family.cmp3.link">Download a book by its address</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp3.formats">Formats</td><td>EPUB, FB2, MOBI, AZW3, PDF, CBZ, Markdown, TXT, HTML</td><td>EPUB, FB2, MOBI, AZW3, PDF, CBZ, Markdown, TXT, HTML</td><td data-i18n="family.cmp3.formats.jr">the same, and RTF and CBR; DOC and DOCX on the Mac</td></tr>
+          <tr><td data-i18n="family.cmp3.columns">Columns</td><td data-i18n="family.cmp3.columns.web">one to four</td><td data-i18n="family.cmp3.columns.web">one to four</td><td data-i18n="family.cmp3.columns.jr">up to four on the Mac, three on the iPad</td></tr>
+          <tr><td data-i18n="family.cmp3.look">The look</td><td data-i18n="family.cmp3.look.wr">5 palettes, 4 typefaces</td><td data-i18n="family.cmp3.look.nr">5 palettes, 4 typefaces, day, night and Twilight</td><td data-i18n="family.cmp3.look.jr">42 themes, 9 typefaces, 7 skins</td></tr>
+          <tr><td data-i18n="family.cmp3.paper">Paper, frames and borders round the text</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp3.contents">Contents and search in the book</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp3.marks">Marks in seven colours, notes, a comment on the book</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp3.export">Notes exported</td><td><span class="dash">—</span></td><td>Markdown, CSV, JSON, RIS</td><td>Markdown, CSV, JSON, RIS</td></tr>
+          <tr><td data-i18n="family.cmp3.journal">Reading journal and statistics</td><td><span class="dash">—</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp3.voice">Translation and Read Aloud</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp3.readers">Two readers, Comfort and Professional</td><td><span class="dash">—</span></td><td><span class="dash">—</span></td><td><span class="check">✓</span></td></tr>
+          <tr><td data-i18n="family.cmp3.langs">Languages of the interface</td><td>8</td><td>8</td><td>8</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section room-section reveal">
   <div class="container-narrow">
@@ -120,7 +397,7 @@
         <span class="room-pin pin-pr" style="left:31.5%; top:23%"><i></i><b><span data-i18n="common.room.shelf">A shelf</span><em data-i18n="download.pr.price">$6.99</em></b></span>
         <span class="room-pin pin-cr" style="left:70%; top:40%"><i></i><b><span data-i18n="common.room.library">A library</span><em data-i18n="download.cr.price">$19.99</em></b></span>
       </div>
-      <figcaption data-i18n="family.room.caption">One room, three ways to read in it. Each app does only what it is meant to do, and does not try to compete with the other two on their own ground.</figcaption>
+      <figcaption data-i18n="family.room.caption">One room, three ways to read in it. Each app does its own job and stays off the others’ ground.</figcaption>
     </figure>
   </div>
 </section>
@@ -141,152 +418,21 @@
   </div>
 </div>
 
-<section class="platform-block reverse reveal" id="webreader">
-  <div class="container">
-    <div class="platform-grid">
-      <div class="platform-text">
-        <div class="platform-eyebrow"><span data-i18n="family.wr.eyebrow">WebReader · free, in the browser</span></div>
-        <h2 class="platform-title" data-i18n="family.wr.title">A book <em>in hand</em>.</h2>
-        <p class="platform-intro" data-i18n="family.wr.intro">Before any furniture, there is the book itself. Open a file in the browser and read it: nothing to install, no account, and the book never leaves your device.</p>
-        <div class="platform-list-label" data-i18n="family.jr.label">Pick it if</div>
-        <ul class="platform-list">
-          <li data-i18n="family.wr.li1"><strong>You are not on a Mac</strong>Windows, Linux, Android, a borrowed laptop: any modern browser will do.</li>
-          <li data-i18n="family.wr.li2"><strong>You want to try first</strong>The page is the family’s own engine, with its palettes, typefaces, columns and paper.</li>
-          <li data-i18n="family.wr.li3"><strong>A book came by mail</strong>EPUB, FB2, CBZ, Markdown, TXT, HTML, zipped or not.</li>
-        </ul>
-        <p class="platform-closing" data-i18n="family.wr.closing">Free, in a tab. When you want a book to stay, the nightstand is the next step.</p>
-        <p class="platform-closing">
-          <a href="https://read.continuousreader.app/" data-i18n="family.wr.open">Open WebReader</a>
-        </p>
-      </div>
-      <div class="platform-visual">
-        <div class="screenshot-frame">
-          <img width="1600" height="1000" loading="lazy" decoding="async" src="img/family-wr.webp" alt="WebReader in a browser: the cover-like home, the button to open a book, the book one was reading, a band of ornament on the right" data-i18n-attr="alt:family.wr.alt">
-          <div class="screenshot-caption" data-i18n="family.wr.shotCap">Any browser · <span class="lang-tag">English</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="platform-block reveal">
-  <div class="container">
-    <div class="platform-grid">
-      <div class="platform-text">
-        <div class="platform-eyebrow" data-i18n="family.jr.eyebrow">JustReader · free</div>
-        <h2 class="platform-title" data-i18n="family.jr.title">The <em>nightstand</em>.</h2>
-        <p class="platform-intro" data-i18n="family.jr.intro">
-          Three books at hand. Open a file and read. There is no library, no shelf and nothing to file — the books you are reading are the whole app.
-        </p>
-        <div class="platform-list-label" data-i18n="family.jr.label">Pick it if</div>
-        <ul class="platform-list">
-          <li data-i18n="family.jr.li1"><strong>Three books at hand</strong>No shelf, no library — and nothing to file.</li>
-          <li data-i18n="family.jr.li2"><strong>Someone sent you an EPUB</strong>It opens straight away and reads properly.</li>
-          <li data-i18n="family.jr.li3"><strong>Trying the engine</strong>It is all here. If you later want more room, there is a level up — and only if you decide it is worth it.</li>
-          <li data-i18n="family.jr.li4"><strong>You come back to books</strong>A week later, a month later — the book opens where you closed it.</li>
-          <li data-i18n="family.jr.li5"><strong>A look to your taste</strong>Seven skins for the home screen, from the system’s own style to a tape deck and a powder compact.</li>
-        </ul>
-        <p class="platform-closing" data-i18n="family.jr.closing">
-          Free, with no trial period and the reader complete: every reading feature here is exactly the one the bigger apps have.
-        </p>
-        <p class="platform-closing">
-          <a href="https://apps.apple.com/app/justreader/id6781187067" target="_blank" rel="noopener" data-i18n="family.jr.store">JustReader on the App Store</a>
-        </p>
-      </div>
-      <div class="platform-visual">
-        <div class="screenshot-frame phone-shot">
-          <img width="1648" height="3196" loading="lazy" decoding="async" src="img/family-jr.webp" alt="JustReader on iPhone: one book on the home screen — its cover, progress, and the statistics, journal and notes buttons below">
-          <div class="screenshot-caption" data-i18n="family.jr.shotCap">iPhone · <span class="lang-tag">English</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="platform-block reverse reveal">
-  <div class="container">
-    <div class="platform-grid">
-      <div class="platform-text">
-        <div class="platform-eyebrow" data-i18n="family.pr.eyebrow">PlainReader · $6.99 once</div>
-        <h2 class="platform-title" data-i18n="family.pr.title">The <em>shelf</em>.</h2>
-        <p class="platform-intro" data-i18n="family.pr.intro">A shelf with dividers: up to 999 books in named, coloured, foldable categories. Not a library to maintain — and every book remembers where you stopped, so you can read several at once and each opens at its place.</p>
-        <div class="platform-list-label" data-i18n="family.pr.label">Pick it if</div>
-        <ul class="platform-list">
-          <li data-i18n="family.pr.li1"><strong>Several books at once</strong>A novel, a manual and the one you fell asleep in — each in its own place, with its own open page.</li>
-          <li data-i18n="family.pr.li2"><strong>Just enough order</strong>Named, coloured dividers, a filter over the whole shelf, and the shelf regrouped by author, series, genre or colour — no folders inside folders and no sync: that is what a library adds.</li>
-          <li data-i18n="family.pr.li3"><strong>The whole reader</strong>Every theme, every mode, translation and Read Aloud — nothing withheld.</li>
-          <li data-i18n="family.pr.li4"><strong>Books from catalogues</strong>OPDS is built in: found and downloaded with one button. An author worth following? A series still running? Leave a shortcut in the catalogue and come back to it.</li>
-          <li data-i18n="family.pr.li5"><strong>A look to your taste</strong>Six skins for the shelf, the Bookcase among them: spines on wooden shelves and a desk for the open book.</li>
-        </ul>
-        <p class="platform-closing" data-i18n="family.pr.closing">
-          A shelf answers a question a nightstand never raises: what am I reading tomorrow, and what am I coming back to after that?
-        </p>
-        <p class="platform-closing">
-          <a href="https://apps.apple.com/app/plainreader/id6801140208" target="_blank" rel="noopener" data-i18n="family.pr.store">PlainReader on the App Store</a>
-        </p>
-      </div>
-      <div class="platform-visual">
-        <div class="screenshot-frame">
-          <img width="3278" height="2590" loading="lazy" decoding="async" src="img/family-pr.webp" alt="PlainReader on iPad: the shelf down the side in coloured categories, the chosen book beside it">
-          <div class="screenshot-caption" data-i18n="family.pr.shotCap">iPad · <span class="lang-tag">English</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="platform-block reveal">
-  <div class="container">
-    <div class="platform-grid">
-      <div class="platform-text">
-        <div class="platform-eyebrow" data-i18n="family.cr.eyebrow">ContinuousReader · $19.99 once</div>
-        <h2 class="platform-title" data-i18n="family.cr.title">The <em>library</em>.</h2>
-        <p class="platform-intro" data-i18n="family.cr.intro">
-          Everything is here, and somewhere to put it: folders, colours, genres and series, search across every book at once, and watchers that keep an eye on OPDS catalogues for new arrivals. And a reading position that follows you from the Mac to the iPhone mid-paragraph.
-        </p>
-        <div class="platform-list-label" data-i18n="family.cr.label">Pick it if</div>
-        <ul class="platform-list">
-          <li data-i18n="family.cr.li1"><strong>Hundreds of books</strong>Folders, colours, genres, series — a page for every author, any series as a tab — and a global search through the full text of every book, its annotations and your notes. The one you want takes a second.</li>
-          <li data-i18n="family.cr.li2"><strong>More than one device</strong>The same book and the same paragraph on Mac, iPad and iPhone, both ways.</li>
-          <li data-i18n="family.cr.li3"><strong>An old collection of a thousand books</strong>Mass import takes the whole folder in one go: every candidate is shown before a byte is written, and duplicates come marked in advance.</li>
-          <li data-i18n="family.cr.li4"><strong>You read seriously</strong>Build the reader you want: notes on the left, bookmarks on the right, navigation across the top. Panels that dock, windows that float, a key for everything.</li>
-        </ul>
-        <p class="platform-closing" data-i18n="family.cr.closing">
-          The one to use when reading is not an occasional pastime but a real part of your life.
-        </p>
-        <p class="platform-closing">
-          <a href="https://apps.apple.com/app/continuousreader/id6783733436" target="_blank" rel="noopener" data-i18n="family.cr.store">ContinuousReader on the App Store</a>
-        </p>
-      </div>
-      <div class="platform-visual">
-        <div class="screenshot-frame mac-shot">
-          <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/features-library-list.webp" alt="ContinuousReader on the Mac: the library as a sortable table, the folder tree beside it, the info panel and a book card open" data-i18n-attr="alt:family.cr.shotAlt">
-          <div class="screenshot-caption" data-i18n="family.cr.shotCap">Mac · <span class="lang-tag">English</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section alt-bg reveal">
   <div class="container-narrow">
     <div class="section-header">
-      <div class="section-eyebrow" data-i18n="family.shared.eyebrow">In all three</div>
+      <div class="section-eyebrow" data-i18n="family.shared.eyebrow">In the three apps for Apple</div>
       <h2 class="section-title" data-i18n="family.shared.title">The same <em>reading</em>.</h2>
-      <p class="section-intro" data-i18n="family.shared.intro">
-        The part you actually spend your evening in is literally the same in all three — not three similar readers but one. Whichever you start with, and whenever you change the shell around it, there is nothing to get used to again.
-      </p>
+      <p class="section-intro" data-i18n="family.shared.intro">The reader you spend your evening in is the same one in all three. Wherever you start, and wherever you move later, there is nothing to get used to again.</p>
     </div>
     <ul class="platform-list">
-      <li data-i18n="family.shared.li1"><strong>The page</strong>Scroll or pages, up to four columns, real typography, hyphenation and justification, paper and frames — and two readers to read it in, Comfort and Professional</li>
-      <li data-i18n="family.shared.li2"><strong>The look</strong>Forty-two themes, day and night, including two that dress the whole page — Typewriter, and Terminal in its Norton frame.</li>
-      <li data-i18n="family.shared.li3"><strong>The words</strong>Translation of a selected fragment, Read Aloud with the line lit as it goes, and search inside the book</li>
-      <li data-i18n="family.shared.li4"><strong>What the book keeps</strong>Bookmarks with colours, notes, the place you stopped and every sitting in the reading journal — held for the book, not for the copy on disk; statistics, the journal and all the notes have browsers of their own.</li>
-      <li data-i18n="family.shared.li5"><strong>Every device</strong>Native on Mac, iPad and iPhone, bought once for all three — and no subscription anywhere in the family</li>
+      <li data-i18n="family.shared.li1"><strong>The page</strong>Scroll or pages, up to four columns, real typography with hyphenation and justification, paper, frames and borders. And two readers to choose from, Comfort and Professional.</li>
+      <li data-i18n="family.shared.li2"><strong>The look</strong>Forty-two themes, day and night, including two that dress the whole page — Typewriter, and BookCommander in its Norton frame.</li>
+      <li data-i18n="family.shared.li3"><strong>The words</strong>Translation of a selected fragment, Read Aloud with each word lit as it goes, and search inside the book</li>
+      <li data-i18n="family.shared.li4"><strong>What the book keeps</strong>Bookmarks with colours, notes, the place you stopped and every sitting in the reading journal. They belong to the book, not to its copy on the disk. Statistics, the journal and the notes have windows of their own.</li>
+      <li data-i18n="family.shared.li5"><strong>Every device</strong>Native on Mac, iPad and iPhone, bought once for all three. No subscriptions anywhere in the family.</li>
     </ul>
-    <p class="section-note" data-i18n="family.shared.note">
-      Changing the shell means moving books, not learning an app. There is no upgrade path between them: each is its own purchase, and each is bought once. Your reading settings do travel, though — all of them, in one .crsettings file.
-    </p>
+    <p class="section-note" data-i18n="family.shared.note">Changing apps means moving your books, nothing more. There is no upgrade between them: each is bought on its own, and once. Your reading settings move whole, in one .crsettings file.</p>
   </div>
 </section>
 
@@ -294,13 +440,10 @@
   <div class="container-narrow">
     <div class="section-header">
       <h2 class="section-title" data-i18n="family.cta.title">Which one is <em>yours</em>?</h2>
-      <p class="section-intro" data-i18n="family.cta.body">
-        The prices, the full comparison and the App Store links are all on one
-        page.
-      </p>
+      <p class="section-intro" data-i18n="family.cta.body">Prices, App Store links and answers to common questions are on one page.</p>
     </div>
     <div class="hero-ctas">
-      <a href="download.html" class="cta-primary"><span data-i18n="family.cta.button">See all three</span></a>
+      <a href="download.html" class="cta-primary"><span data-i18n="family.cta.button">Download</span></a>
       <a href="features.html" class="cta-secondary" data-i18n="family.cta.secondary">Or read what the engine does</a>
     </div>
   </div>
@@ -338,6 +481,7 @@
       <ul>
         <li><a href="features.html" data-i18n="nav.features">Features</a></li>
         <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+        <li><a href="family.html" data-i18n="nav.family">Family</a></li>
         <li><a href="download.html" data-i18n="nav.download">Download</a></li>
       </ul>
     </div>
@@ -372,6 +516,7 @@
 
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+<script src="js/family.js"></script>
 
   <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e1030353e074be59240a656f79267da"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

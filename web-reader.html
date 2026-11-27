@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>try{var t=localStorage.getItem('cr-theme');if(t==='day'||t==='night')document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.sub.wr.title">WebReader — a book reader in the browser</title>
+<meta name="description" data-i18n-attr="content:meta.sub.wr.desc" content="WebReader: the family’s reader in a browser tab. Nothing to install, free.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<meta property="og:title" data-i18n-attr="content:meta.sub.wr.title" content="WebReader — a book reader in the browser">
+<meta property="og:description" data-i18n-attr="content:meta.sub.wr.desc" content="WebReader: the family’s reader in a browser tab. Nothing to install, free.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://continuousreader.app/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ContinuousReader — a native reader for Mac, iPad, and iPhone">
+<meta property="og:site_name" content="ContinuousReader">
+<meta property="og:url" content="https://continuousreader.app/web-reader.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://continuousreader.app/img/og-image.png">
+<link rel="canonical" href="https://continuousreader.app/web-reader.html">
+<link rel="preload" href="fonts/source-serif-4-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- Reusable butterfly symbol for the section divider below.
+     Defined once, referenced via <use href="#cr-butterfly" />. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cr-butterfly" viewBox="-120 -97 240 164">
+    <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+    <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+    <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+    <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+    <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+  </symbol>
+</svg>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-logo" aria-hidden="true">
+        <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+      </span>
+      <span class="nav-wordmark">ContinuousReader<small class="nav-version" data-i18n="changelog.v19.title">1.9 “Painted Lady”</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="features.html" data-i18n="nav.features">Features</a>
+      <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
+      <a href="family.html" class="active" data-i18n="nav.family">Family</a>
+      <a href="download.html" data-i18n="nav.download">Download</a>
+      <button class="nav-lang" type="button">EN</button>
+    </div>
+  </div>
+</nav>
+<!-- The family's pages: the map, then a page a reader -->
+<nav class="fsub-nav" aria-label="The family" data-i18n-attr="aria-label:family.map.eyebrow">
+  <div class="container fsub-inner">
+    <a class="fsub-home" href="family.html" data-i18n="nav.family">Family</a>
+    <a class="fsub-item" href="web-reader.html" aria-current="page"><i class="cta-dot dot-wr" aria-hidden="true"></i>WebReader</a>
+    <a class="fsub-item" href="justreader.html"><i class="cta-dot dot-jr" aria-hidden="true"></i>JustReader</a>
+    <a class="fsub-item" href="plainreader.html"><i class="cta-dot dot-pr" aria-hidden="true"></i>PlainReader</a>
+    <a class="fsub-item" href="continuousreader.html"><i class="cta-dot dot-cr" aria-hidden="true"></i>ContinuousReader</a>
+    <a class="fsub-item" href="nanoreader.html"><i class="cta-dot dot-nr" aria-hidden="true"></i>NanoReader</a>
+  </div>
+</nav>
+
+<header class="page-header fsub-header">
+  <div class="container-narrow">
+    <div class="page-eyebrow"><i class="cta-dot dot-wr" aria-hidden="true"></i><span data-i18n="family.wr.eyebrow"></span></div>
+    <h1 class="page-title" data-i18n="family.wr.title">A book <em>in hand</em>.</h1>
+    <p class="page-subtitle" data-i18n="family.wr.intro">Open a file in the browser and read, with nothing to install and no account. The book stays on your device.</p>
+    <div class="hero-ctas fsub-ctas">
+      <a href="https://read.continuousreader.app/" class="cta-primary"><span data-i18n="family.wr.open">Open WebReader</span></a>
+      <a href="family.html#compare-three" class="cta-secondary" data-i18n="family.sub.compare">Compare with the others</a>
+    </div>
+  </div>
+</header>
+<section class="platform-block reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-list-label" data-i18n="family.jr.label">Pick it if</div>
+        <ul class="platform-list">
+          <li data-i18n="family.wr.li1"><strong>You are not on a Mac</strong>Windows, Linux, Android, a borrowed laptop: any modern browser will do.</li>
+          <li data-i18n="family.wr.li2"><strong>You want to try first</strong>The page here is the same as in the family’s apps.</li>
+          <li data-i18n="family.wr.li3"><strong>A book came by mail</strong>EPUB, FB2, MOBI, AZW3, PDF, CBZ, Markdown, TXT, HTML, zipped or not.</li>
+        </ul>
+        <p class="platform-closing" data-i18n="family.wr.closing">Free, in a tab. Marks, notes and the journal are in NanoReader and JustReader.</p>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame">
+          <img width="1600" height="1000" loading="lazy" decoding="async" src="img/family-wr.webp" alt="WebReader in a browser: the home with three active books, each with its cover and how far it is read, a band of pattern on the right" data-i18n-attr="alt:family.wr.alt">
+          <div class="screenshot-caption" data-i18n="family.wr.shotCap">Any browser · <span class="lang-tag">English</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section fsub-gallery-section reveal">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="family.sub.devices.wr">In any browser</div>
+    <div class="fsub-gallery">
+      <figure class="screenshot-frame fsub-shot wide"><img width="1600" height="1000" loading="lazy" decoding="async" src="img/family/wr-read.webp" alt="WebReader in a browser: The War of the Worlds in two columns, a border above and under the text" data-i18n-attr="alt:family.sub.wr.read"><figcaption class="screenshot-caption">Chrome · <span class="lang-tag">English</span></figcaption></figure>
+      <figure class="screenshot-frame fsub-shot tablet"><img width="1600" height="1000" loading="lazy" decoding="async" src="img/family/wr-settings.webp" alt="WebReader’s reading settings: light, palette, paper, frame and pattern, typeface, columns" data-i18n-attr="alt:family.sub.wr.settings"><figcaption class="screenshot-caption">Chrome · <span class="lang-tag">English</span></figcaption></figure>
+      <figure class="screenshot-frame fsub-shot phone"><img width="826" height="1600" loading="lazy" decoding="async" src="img/family/wr-iphone.webp" alt="WebReader on a phone: a book in one column under a border" data-i18n-attr="alt:family.sub.wr.iphone"><figcaption class="screenshot-caption">iPhone · <span class="lang-tag">English</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section reveal fsub-app" id="app">
+  <div class="container-narrow">
+    <div class="section-header">
+      <div class="section-eyebrow" data-i18n="family.sub.wr.app.eyebrow">As an app</div>
+      <h2 class="section-title" data-i18n="family.sub.wr.app.title">A window <em>of its own</em>.</h2>
+      <p class="section-intro" data-i18n="family.sub.wr.app.intro">WebReader can be installed. It gets an icon, and a book opens in a window of its own, with no address bar. Installed, it works offline too.</p>
+    </div>
+    <ul class="platform-list">
+      <li data-i18n="family.sub.wr.app.li1"><strong>iPhone and iPad</strong>In Safari: Share → Add to Home Screen.</li>
+      <li data-i18n="family.sub.wr.app.li2"><strong>Mac</strong>In Safari: File → Add to Dock. In Chrome and Edge: the install button in the address bar.</li>
+      <li data-i18n="family.sub.wr.app.li3"><strong>Windows, Linux, Android</strong>Chrome and Edge offer to install it themselves, and WebReader’s home has an “Install as an app” link.</li>
+      <li data-i18n="family.sub.wr.app.li4"><strong>Books from other apps</strong>On Android the installed WebReader is in the Share menu. On a computer, Chrome and Edge open a book file in it through Open With.</li>
+    </ul>
+    <p class="platform-closing" data-i18n="family.sub.wr.app.closing">A new version comes by itself: WebReader’s home says “A new version is ready · Reload”.</p>
+  </div>
+</section>
+<section class="section alt-bg reveal fsub-next-section">
+  <div class="container-narrow">
+    <div class="section-eyebrow" data-i18n="family.sub.next">Next to it in the family</div>
+    <div class="fsub-next">
+      <a class="fsub-next-card" href="nanoreader.html"><span class="fsub-next-name"><i class="cta-dot dot-nr" aria-hidden="true"></i>NanoReader</span><span class="fsub-next-kind" data-i18n="family.map.kind.nr">For Windows, Linux and Mac</span><span class="fsub-next-why" data-i18n="family.sub.rel.wr-nr">The same as a program on your computer. It keeps marks and a journal.</span></a>
+      <a class="fsub-next-card" href="justreader.html"><span class="fsub-next-name"><i class="cta-dot dot-jr" aria-hidden="true"></i>JustReader</span><span class="fsub-next-kind" data-i18n="family.map.kind.jr">The nightstand</span><span class="fsub-next-why" data-i18n="family.sub.rel.wr-jr">On Apple’s devices: the family’s whole reader, free.</span></a>
+    </div>
+    <p class="fsub-next-more"><a href="family.html#compare" data-i18n="family.wiz.compare">Compare them side by side</a> · <a href="family.html#which" data-i18n="family.sub.which">Which one suits me?</a></p>
+  </div>
+</section>
+<section class="section reveal fsub-end">
+  <div class="container-narrow">
+    <div class="hero-ctas">
+      <a href="https://read.continuousreader.app/" class="cta-primary"><span data-i18n="family.wr.open">Open WebReader</span></a>
+      <a href="family.html" class="cta-secondary" data-i18n="family.sub.whole">The whole family</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-line">
+        <span class="nav-logo" aria-hidden="true">
+          <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+        </span>
+        <span>ContinuousReader</span>
+      </div>
+      <p class="footer-tagline" data-i18n="foot.tagline">Built for readers who don’t just browse.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.product">Product</h5>
+      <ul>
+        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+        <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+        <li><a href="family.html" data-i18n="nav.family">Family</a></li>
+        <li><a href="download.html" data-i18n="nav.download">Download</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.info">Info</h5>
+      <ul>
+        <li><a href="whats-new.html" data-i18n="foot.link.highlights">Release highlights</a></li>
+        <li><a href="changelog.html" data-i18n="foot.link.changelog">What’s New</a></li>
+        <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
+        <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
+        <li><a href="https://www.reddit.com/r/ContinuousReader/" target="_blank" rel="noopener" data-i18n="foot.link.devlog">Dev log on Reddit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.language">Language</h5>
+      <ul>
+        <li><a href="#" data-lang="en">English</a></li>
+        <li><a href="#" data-lang="ru">Русский</a></li>
+        <li><a href="#" data-lang="uk">Українська</a></li>
+        <li><a href="#" data-lang="es">Español</a></li>
+        <li><a href="#" data-lang="fr">Français</a></li>
+        <li><a href="#" data-lang="de">Deutsch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="foot.copy">© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span data-i18n="foot.signoff">A reader’s reader.</span>
+    <span class="footer-mt-note" data-i18n="foot.mtNote"></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e1030353e074be59240a656f79267da"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

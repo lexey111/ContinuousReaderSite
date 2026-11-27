@@ -74,9 +74,7 @@
     <div class="feature-body">
 
       <h3 data-i18n="privacy.short.h">The short version</h3>
-      <p data-i18n="privacy.short.p">
-        ContinuousReader, PlainReader and JustReader do not collect, analyze, or sell any personal data. <strong>No analytics, no telemetry, no tracking, no advertising.</strong> Your data stays with you — on your own devices, in your own iCloud account if you turn on sync, and briefly in transit between your devices when sync hands a fresh reading position from one to another. Nothing else, nowhere else.
-      </p>
+      <p data-i18n="privacy.short.p">ContinuousReader, PlainReader and JustReader do not collect, analyze, or sell any personal data. <strong>No analytics, no telemetry, no tracking, no advertising.</strong> Your data stays with you — on your own devices, in your own iCloud account if you turn on sync, and briefly in transit between your devices when sync hands a fresh reading position or a changed bookmark from one to another. Nothing else, nowhere else.</p>
 
       <h3 data-i18n="privacy.local.h">Data stored on your device</h3>
       <p data-i18n="privacy.local.p">
@@ -104,22 +102,8 @@
         <li data-i18n="privacy.cloud.li1"><strong>Your own devices</strong>, locally — the same content stored
           on each device the app is installed on. This is also exactly what
           you have when sync is off.</li>
-        <li data-i18n="privacy.cloud.li2"><strong>Your iCloud account</strong>, under your Apple ID. Apple
-          hosts it; the developer has no access. Specifically: book files
-          (converted HTML, cover images, per-book metadata) go to iCloud
-          Drive; bookmarks, notes, library metadata, folders, OPDS catalogs,
-          and a backup of your latest reading position go to iCloud
-          Key-Value Store; translation records, if you opted into tracking,
-          go to iCloud Drive.</li>
-        <li data-i18n="privacy.cloud.li3"><strong>In flight, between your devices</strong> — when you turn a
-          page, the new position is relayed to your other devices through an
-          encrypted realtime channel. The payload contains a hashed book
-          identifier, a paragraph anchor inside the book, and a progress
-          percentage — no titles, no content, no names. Messages pass
-          through and are not retained on the channel. The relay is
-          operated by Ably; tokens that let your devices connect to it are
-          minted by a small Cloudflare Worker. Both see only a randomly
-          generated user identifier we keep in your iCloud Keychain.</li>
+        <li data-i18n="privacy.cloud.li2"><strong>Your iCloud account</strong>, under your Apple ID. Apple hosts it; the developer has no access. Specifically: book files (converted HTML, cover images, per-book metadata and bookmarks), the library’s structure (folders, OPDS catalogs, tags) and translation records, if you opted into tracking, go to iCloud Drive; a copy of the books’ metadata with your notes, the list of your devices and a backup of your latest reading position go to iCloud Key-Value Store.</li>
+        <li data-i18n="privacy.cloud.li3"><strong>In flight, between your devices</strong> — when you turn a page, the new position is relayed to your other devices through a realtime channel, encrypted in transit. A position message contains a hashed book identifier, a paragraph anchor inside the book, and a progress percentage. When you add, change or remove a bookmark, it travels the same way, so that it shows on your other device in a second rather than in minutes: the name of the book’s folder (its author and title), the place, the colour, the marked passage and your note to it. Messages pass through and are not kept on the channel beyond the short time a reconnection needs. The relay is operated by Ably; tokens that let your devices connect to it are minted by a small Cloudflare Worker. Your account is known to both only as a randomly generated identifier we keep in your iCloud Keychain.</li>
       </ul>
       <p data-i18n="privacy.cloud.p2">
         You can disable sync at any time; your library continues to work
@@ -131,36 +115,16 @@
         JustReader has essentially no network footprint — only URL import touches the network. PlainReader adds OPDS browsing, and nothing else. ContinuousReader uses the network for sync and OPDS browsing when those are enabled. Specifically:
       </p>
       <ul class="feature-list feature-list--inline">
-        <li data-i18n="privacy.net.li1"><strong>Sync</strong> is enabled (ContinuousReader only) — book files
-          go through Apple iCloud Drive, bookmarks and metadata through
-          Apple iCloud Key-Value Store, and live position updates through
-          an encrypted realtime channel between your devices (see Sync,
-          above, for what each path carries)</li>
+        <li data-i18n="privacy.net.li1"><strong>Sync</strong> is enabled (ContinuousReader only) — book files with their bookmarks go through Apple iCloud Drive, metadata through Apple iCloud Key-Value Store, and live updates of your position and bookmarks through a realtime channel between your devices, encrypted in transit (see Sync, above, for what each path carries)</li>
         <li data-i18n="privacy.net.li2"><strong>OPDS catalog browsing</strong> (ContinuousReader and PlainReader) — you
           connect to third-party book catalogs you configure yourself</li>
         <li data-i18n="privacy.net.li3"><strong>URL import</strong> (all three apps) — when you drag a URL into
           the import dialog to download a book file</li>
       </ul>
-      <p data-i18n="privacy.net.p2">
-        During the act of reading, the only traffic is the position sync
-        covered above — and that carries only a hashed book ID, a paragraph
-        anchor, and a progress percentage, never any content. Translation
-        is on-device through Apple’s Translation framework —
-        <strong>nothing about the book itself ever leaves your device</strong>.
-      </p>
+      <p data-i18n="privacy.net.p2">During the act of reading, the only traffic is the sync of your position and bookmarks covered above. A position carries only a hashed book ID, a paragraph anchor, and a progress percentage; a bookmark carries the passage you marked and your note as well. Translation is on-device through Apple’s Translation framework — <strong>for translation, nothing ever leaves your device</strong>.</p>
 
       <h3 data-i18n="privacy.third.h">Third-party services</h3>
-      <p data-i18n="privacy.third.p">
-        The apps do not integrate any third-party analytics, crash reporting,
-        advertising, or tracking services. The external dependencies are
-        Apple’s own frameworks (iCloud, Translation), and — only when you
-        turn on sync — Ably (an encrypted realtime relay for your reading
-        position) and a Cloudflare Worker (which mints short-lived tokens
-        that let your devices connect to that relay). Both see only a
-        random identifier we keep in your iCloud Keychain — never your
-        name, email, or anything tied to your real identity — and neither
-        retains the messages flowing through.
-      </p>
+      <p data-i18n="privacy.third.p">The apps do not integrate any third-party analytics, crash reporting, advertising, or tracking services. The external dependencies are Apple’s own frameworks (iCloud, Translation), and — only when you turn on sync — Ably (a realtime relay for your reading position and bookmarks, encrypted in transit) and a Cloudflare Worker (which mints short-lived tokens that let your devices connect to that relay). Both know your account only as a random identifier we keep in your iCloud Keychain — never your name, email, or anything tied to your real identity. A bookmark’s message does carry the book’s folder name and the passage you marked; neither service keeps the messages flowing through.</p>
 
       <h3 data-i18n="privacy.web.h">This website and WebReader</h3>
       <p data-i18n="privacy.web.p">
@@ -171,6 +135,9 @@
         you open in WebReader are read in your browser and never uploaded: they
         reach neither us nor Cloudflare.
       </p>
+
+      <h3 data-i18n="privacy.nano.h">NanoReader</h3>
+      <p data-i18n="privacy.nano.p">NanoReader, the program for Windows, Linux and Mac, counts nothing and sends nothing. It goes to the network only for a book you give it a link to. Your books and everything you marked in them stay on your computer.</p>
 
       <h3 data-i18n="privacy.kids.h">Children’s privacy</h3>
       <p data-i18n="privacy.kids.p">

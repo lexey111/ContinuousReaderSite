@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>try{var t=localStorage.getItem('cr-theme');if(t==='day'||t==='night')document.documentElement.dataset.theme=t}catch(e){}</script>
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.sub.jr.title">JustReader — three active books, free</title>
+<meta name="description" data-i18n-attr="content:meta.sub.jr.desc" content="JustReader for Mac, iPad and iPhone: three books at once, no shelf and no library. Free.">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<meta property="og:title" data-i18n-attr="content:meta.sub.jr.title" content="JustReader — three active books, free">
+<meta property="og:description" data-i18n-attr="content:meta.sub.jr.desc" content="JustReader for Mac, iPad and iPhone: three books at once, no shelf and no library. Free.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://continuousreader.app/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ContinuousReader — a native reader for Mac, iPad, and iPhone">
+<meta property="og:site_name" content="ContinuousReader">
+<meta property="og:url" content="https://continuousreader.app/justreader.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://continuousreader.app/img/og-image.png">
+<link rel="canonical" href="https://continuousreader.app/justreader.html">
+<link rel="preload" href="fonts/source-serif-4-latin-opsz.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- Reusable butterfly symbol for the section divider below.
+     Defined once, referenced via <use href="#cr-butterfly" />. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cr-butterfly" viewBox="-120 -97 240 164">
+    <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+    <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+    <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+    <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+    <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+    <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+    <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+    <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+    <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+    <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+  </symbol>
+</svg>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-logo" aria-hidden="true">
+        <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+      </span>
+      <span class="nav-wordmark">ContinuousReader<small class="nav-version" data-i18n="changelog.v19.title">1.9 “Painted Lady”</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="features.html" data-i18n="nav.features">Features</a>
+      <a href="platforms.html" data-i18n="nav.platforms">Platforms</a>
+      <a href="family.html" class="active" data-i18n="nav.family">Family</a>
+      <a href="download.html" data-i18n="nav.download">Download</a>
+      <button class="nav-lang" type="button">EN</button>
+    </div>
+  </div>
+</nav>
+<!-- The family's pages: the map, then a page a reader -->
+<nav class="fsub-nav" aria-label="The family" data-i18n-attr="aria-label:family.map.eyebrow">
+  <div class="container fsub-inner">
+    <a class="fsub-home" href="family.html" data-i18n="nav.family">Family</a>
+    <a class="fsub-item" href="web-reader.html"><i class="cta-dot dot-wr" aria-hidden="true"></i>WebReader</a>
+    <a class="fsub-item" href="justreader.html" aria-current="page"><i class="cta-dot dot-jr" aria-hidden="true"></i>JustReader</a>
+    <a class="fsub-item" href="plainreader.html"><i class="cta-dot dot-pr" aria-hidden="true"></i>PlainReader</a>
+    <a class="fsub-item" href="continuousreader.html"><i class="cta-dot dot-cr" aria-hidden="true"></i>ContinuousReader</a>
+    <a class="fsub-item" href="nanoreader.html"><i class="cta-dot dot-nr" aria-hidden="true"></i>NanoReader</a>
+  </div>
+</nav>
+
+<header class="page-header fsub-header">
+  <div class="container-narrow">
+    <div class="page-eyebrow"><i class="cta-dot dot-jr" aria-hidden="true"></i><span data-i18n="family.jr.eyebrow">JustReader · free</span></div>
+    <h1 class="page-title" data-i18n="family.jr.title">The <em>nightstand</em>.</h1>
+    <p class="page-subtitle" data-i18n="family.jr.intro">Three active books. Open a file and read. There is nothing to file: the books you are reading are the whole app.</p>
+    <div class="hero-ctas fsub-ctas">
+      <a href="https://apps.apple.com/app/justreader/id6781187067" class="cta-primary" target="_blank" rel="noopener"><span data-i18n="family.jr.store">JustReader on the App Store</span></a>
+      <a href="family.html#compare-three" class="cta-secondary" data-i18n="family.sub.compare">Compare with the others</a>
+    </div>
+  </div>
+</header>
+<section class="platform-block reveal">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-text">
+        <div class="platform-list-label" data-i18n="family.jr.label">Pick it if</div>
+        <ul class="platform-list">
+          <li data-i18n="family.jr.li1"><strong>Three active books</strong>No shelf and no library.</li>
+          <li data-i18n="family.jr.li2"><strong>Someone sent you an EPUB</strong>It opens straight away and reads properly.</li>
+          <li data-i18n="family.jr.li3"><strong>Trying the engine</strong>It is all here. If it gets crowded, there is PlainReader.</li>
+          <li data-i18n="family.jr.li4"><strong>You come back to books</strong>A week later, a month later — the book opens where you closed it.</li>
+          <li data-i18n="family.jr.li5"><strong>A look to your taste</strong>Seven skins for the home screen, from the system’s own style to a tape deck and a powder compact.</li>
+        </ul>
+        <p class="platform-closing" data-i18n="family.jr.closing">Free, and no trial period. The reader is the bigger apps’ own, with everything it can do.</p>
+      </div>
+      <div class="platform-visual">
+        <div class="screenshot-frame phone-shot">
+          <img width="1648" height="3196" loading="lazy" decoding="async" src="img/family-jr.webp" data-i18n-attr="alt:family.jr.shotAlt" alt="JustReader on iPhone: three active books as cards, each with its cover, progress, the book card and the contents">
+          <div class="screenshot-caption" data-i18n="family.jr.shotCap">iPhone · <span class="lang-tag">English</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section fsub-gallery-section reveal">
+  <div class="container">
+    <div class="section-eyebrow" data-i18n="family.sub.devices.jr">On every device</div>
+    <div class="fsub-gallery">
+      <figure class="screenshot-frame fsub-shot wide"><img width="1600" height="1000" loading="lazy" decoding="async" src="img/family/jr-mac.webp" alt="JustReader on the Mac: the three books down the side, the chosen one beside them with its card" data-i18n-attr="alt:family.sub.jr.mac"><figcaption class="screenshot-caption">Mac · <span class="lang-tag">English</span></figcaption></figure>
+      <figure class="screenshot-frame fsub-shot tablet"><img width="1600" height="1264" loading="lazy" decoding="async" src="img/family/jr-ipad.webp" alt="JustReader on the iPad: a book in two columns under a border, its reading settings open" data-i18n-attr="alt:family.sub.jr.ipad"><figcaption class="screenshot-caption">iPad · <span class="lang-tag">English</span></figcaption></figure>
+      <figure class="screenshot-frame fsub-shot phone"><img width="825" height="1600" loading="lazy" decoding="async" src="img/family/jr-iphone.webp" alt="JustReader on the iPhone: reading statistics — books, pages, time and streaks" data-i18n-attr="alt:family.sub.jr.iphone"><figcaption class="screenshot-caption">iPhone · <span class="lang-tag">English</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+<section class="section fsub-new-head">
+  <div class="container-narrow">
+    <div class="section-eyebrow" data-i18n="family.sub.new19">New in 1.9</div>
+  </div>
+</section>
+<section class="section wn-section reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew19.s1.h">Three books in JustReader</h2>
+      <p data-i18n="whatsnew19.s1.p1">JustReader keeps three active books now. They show as cards or as a grid, side by side or one under another, depending on the device; on the iPhone they are pages you swipe between.</p>
+      <div class="screenshot">
+        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/wn19-jr-three.webp" alt="JustReader on the Mac: three books as cards side by side" data-i18n-attr="alt:whatsnew19.s1.alt">
+      </div>
+      <p data-i18n="whatsnew19.s1.p2">Paste an address, and JustReader fetches the book and opens it. The history remembers ten books now, and downloads a fetched one again when needed.</p>
+    </div>
+  </div>
+</section>
+<section class="section wn-section alt-bg reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew19.s6.h">Borders, and Comfort</h2>
+      <p data-i18n="whatsnew19.s6.p1">A patterned strip above the text and under it: vine, scrolls, lozenges, braid, meander, guilloche or laurel. Comfort has paper textures now and reads right to left.</p>
+      <div class="screenshot">
+        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/wn19-border.webp" alt="A book in Comfort on the Mac with a border above and below the text" data-i18n-attr="alt:whatsnew19.s6.alt">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section wn-section reveal">
+  <div class="container-narrow">
+    <div class="feature-body">
+      <h2 class="section-h2 wn-h" data-i18n="whatsnew19.s7.h">BookCommander</h2>
+      <p data-i18n="whatsnew19.s7.p1">The Terminal skin is called BookCommander now, and PlainReader has it too. If you have a keyboard, there is a small Easter egg in it: click the command line and type help.</p>
+      <div class="screenshot">
+        <img width="1600" height="1000" loading="lazy" decoding="async" src="img/screenshots/wn19-commander.webp" alt="PlainReader on the Mac in BookCommander, with its command line" data-i18n-attr="alt:whatsnew19.s7.alt">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section fsub-new-more">
+  <div class="container-narrow">
+    <p><a href="whats-new.html" class="cta-secondary" data-i18n="family.sub.allnew">Everything new in 1.9</a></p>
+  </div>
+</section>
+<section class="section alt-bg reveal fsub-next-section">
+  <div class="container-narrow">
+    <div class="section-eyebrow" data-i18n="family.sub.next">Next to it in the family</div>
+    <div class="fsub-next">
+      <a class="fsub-next-card" href="nanoreader.html"><span class="fsub-next-name"><i class="cta-dot dot-nr" aria-hidden="true"></i>NanoReader</span><span class="fsub-next-kind" data-i18n="family.map.kind.nr">For Windows, Linux and Mac</span><span class="fsub-next-why" data-i18n="family.sub.rel.jr-nr">JustReader for Windows, Linux and Mac, as a program of its own.</span></a>
+      <a class="fsub-next-card" href="plainreader.html"><span class="fsub-next-name"><i class="cta-dot dot-pr" aria-hidden="true"></i>PlainReader</span><span class="fsub-next-kind" data-i18n="family.map.kind.pr">The bookshelf</span><span class="fsub-next-why" data-i18n="family.sub.rel.jr-pr">A step up: a shelf for the books that stay.</span></a>
+      <a class="fsub-next-card" href="web-reader.html"><span class="fsub-next-name"><i class="cta-dot dot-wr" aria-hidden="true"></i>WebReader</span><span class="fsub-next-kind" data-i18n="family.map.kind.wr">In a browser</span><span class="fsub-next-why" data-i18n="family.sub.rel.jr-wr">In a browser tab, with nothing to install.</span></a>
+    </div>
+    <p class="fsub-next-more"><a href="family.html#compare" data-i18n="family.wiz.compare">Compare them side by side</a> · <a href="family.html#which" data-i18n="family.sub.which">Which one suits me?</a></p>
+  </div>
+</section>
+<section class="section reveal fsub-end">
+  <div class="container-narrow">
+    <div class="hero-ctas">
+      <a href="https://apps.apple.com/app/justreader/id6781187067" class="cta-primary" target="_blank" rel="noopener"><span data-i18n="family.jr.store">JustReader on the App Store</span></a>
+      <a href="family.html" class="cta-secondary" data-i18n="family.sub.whole">The whole family</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-line">
+        <span class="nav-logo" aria-hidden="true">
+          <svg viewBox="-120 -97 240 164" xmlns="http://www.w3.org/2000/svg">
+          <path d="M -8,4 C -16,44 -62,60 -74,38 C -86,16 -66,-14 -46,-12 C -28,-10 -14,-4 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,3 C -13,38 -52,52 -62,32 C -72,14 -54,-10 -38,-9 C -22,-8 -10,-3 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,2 C -9,30 -42,44 -50,26 C -58,10 -44,-7 -30,-5 C -18,-4 -8,-2 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,4 C 16,44 62,60 74,38 C 86,16 66,-14 46,-12 C 28,-10 14,-4 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,3 C 13,38 52,52 62,32 C 72,14 54,-10 38,-9 C 22,-8 10,-3 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,2 C 9,30 42,44 50,26 C 58,10 44,-7 30,-5 C 18,-4 8,-2 4,0 Z" fill="#E8845A"/>
+          <path d="M -8,-2 C -24,-70 -98,-96 -112,-58 C -125,-20 -98,38 -66,33 C -42,28 -18,12 -8,0 Z" fill="#2D5573"/>
+          <path d="M -6,-2 C -20,-60 -84,-82 -98,-48 C -110,-14 -86,34 -58,28 C -36,24 -14,10 -6,0 Z" fill="#3A6A8E"/>
+          <path d="M -4,-2 C -15,-48 -70,-66 -82,-36 C -92,-8 -72,26 -48,22 C -30,18 -12,8 -4,0 Z" fill="#4A7FA5"/>
+          <path d="M 8,-2 C 24,-70 98,-96 112,-58 C 125,-20 98,38 66,33 C 42,28 18,12 8,0 Z" fill="#C05C38"/>
+          <path d="M 6,-2 C 20,-60 84,-82 98,-48 C 110,-14 86,34 58,28 C 36,24 14,10 6,0 Z" fill="#D4704A"/>
+          <path d="M 4,-2 C 15,-48 70,-66 82,-36 C 92,-8 72,26 48,22 C 30,18 12,8 4,0 Z" fill="#E8845A"/>
+          <path d="M 4,-2 C 2,-14 0,-20 0,-22 C -2,-14 -4,-6 -4,-2 C -2,-1 0,0 4,-2 Z" fill="#E8845A"/>
+          <path d="M -4,2 C -2,14 0,20 0,22 C 2,14 4,6 4,2 C 2,1 0,0 -4,2 Z" fill="#4A7FA5"/>
+          <ellipse cx="0" cy="0" rx="3" ry="3" fill="#1A1A2E"/>
+        </svg>
+        </span>
+        <span>ContinuousReader</span>
+      </div>
+      <p class="footer-tagline" data-i18n="foot.tagline">Built for readers who don’t just browse.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.product">Product</h5>
+      <ul>
+        <li><a href="features.html" data-i18n="nav.features">Features</a></li>
+        <li><a href="platforms.html" data-i18n="nav.platforms">Platforms</a></li>
+        <li><a href="family.html" data-i18n="nav.family">Family</a></li>
+        <li><a href="download.html" data-i18n="nav.download">Download</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.info">Info</h5>
+      <ul>
+        <li><a href="whats-new.html" data-i18n="foot.link.highlights">Release highlights</a></li>
+        <li><a href="changelog.html" data-i18n="foot.link.changelog">What’s New</a></li>
+        <li><a href="privacy.html" data-i18n="foot.link.privacy">Privacy</a></li>
+        <li><a href="contact.html" data-i18n="foot.link.contact">Contact</a></li>
+        <li><a href="https://www.reddit.com/r/ContinuousReader/" target="_blank" rel="noopener" data-i18n="foot.link.devlog">Dev log on Reddit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.col.language">Language</h5>
+      <ul>
+        <li><a href="#" data-lang="en">English</a></li>
+        <li><a href="#" data-lang="ru">Русский</a></li>
+        <li><a href="#" data-lang="uk">Українська</a></li>
+        <li><a href="#" data-lang="es">Español</a></li>
+        <li><a href="#" data-lang="fr">Français</a></li>
+        <li><a href="#" data-lang="de">Deutsch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="foot.copy">© 2026 ContinuousReader. Developed by Oleksii Koshkin.</span>
+    <span data-i18n="foot.signoff">A reader’s reader.</span>
+    <span class="footer-mt-note" data-i18n="foot.mtNote"></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "3e1030353e074be59240a656f79267da"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

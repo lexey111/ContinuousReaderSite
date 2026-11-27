@@ -4,17 +4,20 @@
 
 ContinuousReader is an independent reading app by Oleksii Koshkin. It reads EPUB (fixed-layout included), FB2, MOBI, AZW3, Markdown, HTML, TXT, RTF, PDF (as text or as pages), comics and manga in CBZ and CBR, and — on Mac — DOC/DOCX files (and their ZIP variants). The core value proposition is seamless reading position sync across all Apple devices via iCloud.
 
-## Three products
+## Five readers, one engine
 
-One picture explains the family: JustReader is the book on your nightstand, PlainReader is the bookshelf, ContinuousReader is the library.
+One picture explains the family: JustReader is the nightstand, PlainReader is the bookshelf, ContinuousReader is the whole library. WebReader and NanoReader take the family's reader beyond Apple.
 
 - **ContinuousReader** ($19.99, one-time) — full reading workspace: library with folders and global full-text search, iCloud sync, OPDS catalogs with watchers, mass import, reading statistics
-- **PlainReader** ($6.99, one-time) — a shelf of books in named, coloured, foldable categories, each book in its own place with its own position; no collection to manage. OPDS browser, shared searchable history of the last 25 books, colour tags
-- **JustReader** (free) — one book at a time, with the same engine, typography, themes, translation and Read Aloud
+- **PlainReader** ($6.99, one-time) — a long shelf in named, coloured categories that fold away, each book in its own place with its own position; no collection to manage. Tags, a rating and several colours per book, ten facets (category, author, series, genre, colour, tag, language, recent…), conditions with and / or / not, OPDS browser, a searchable history
+- **JustReader** (free) — three active books; the closed ones go to a history of ten and load again in one tap. Books from a link. The same engine, typography, themes, translation and Read Aloud
 
-Before the three, a step zero: **WebReader** (free, https://read.continuousreader.app) — the same page engine in any modern browser, on any system. EPUB, FB2, CBZ, Markdown, TXT and HTML (and their ZIPs); palettes, typefaces, columns, paper; eight interface languages; installable and offline. Books are read on the device and never uploaded.
+Beyond Apple:
 
-All three share the ReaderCore engine (local Swift Package), so the reading experience — themes, typography, navigation modes, translation, Read Aloud, bookmarks, per-book notes, reading statistics and the Book Card — is the same in all of them. What differs is how much collection management sits on top.
+- **WebReader** (free, https://read.continuousreader.app) — the same page engine in any modern browser, on any system. Three active books; EPUB, FB2, MOBI, AZW3, PDF, CBZ, Markdown, TXT and HTML (and their ZIPs); palettes, typefaces, one to four columns, paper and borders; eight interface languages; installable and offline. Books are read on the device and never uploaded.
+- **NanoReader** (free, beta; https://continuousreader.app/nanoreader.html) — JustReader for Windows, Linux and Mac as a program of its own: three active books and a history, marks in seven colours, notes and a comment on the book, export to Markdown, CSV, JSON and RIS (Zotero), a reading journal and statistics, contents and search in a window of their own, day, Twilight and night.
+
+The three Apple apps share the ReaderCore engine (local Swift Package), so the reading experience — themes, typography, navigation modes, translation, Read Aloud, bookmarks, per-book notes, reading statistics and the Book Card — is the same in all of them. What differs is how much collection management sits on top.
 
 ## Key features
 
@@ -37,7 +40,9 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 
 ### Library (ContinuousReader only; PlainReader has a categorised shelf instead)
 - Three view modes: list, cards (continuous size slider), table (native on Mac)
-- Nested virtual folders, color tags (7 colors), genres, Trash with soft delete
+- Nested virtual folders, several colours per book (7), tags and a rating, genres, Trash with soft delete
+- Ten facets in the sidebar (folders, recent, authors, co-authors, series, genres, colours, languages, tags, rating) and conditions built of several picks with and / or / not
+- A reading filter (not started, reading, finished) wherever you are; a System interface on Mac and iPad (split view, inspector)
 - OPDS catalog browser with shortcuts and watchers (watchers diff feeds against the library and flag books you don't own yet)
 - Mass import walking folder trees, deduplicating, and replicating the source structure as folders (Mac)
 - Book Card with tabs (Cover/Images/Info/Notes/Bookmarks/Stats) — shared by all three apps; only ContinuousReader can edit a book's own details
@@ -65,11 +70,13 @@ All three share the ReaderCore engine (local Swift Package), so the reading expe
 - **Minimum OS**: iOS 17.0, macOS 14.0
 - **Storage**: SwiftData (local), iCloud KV Store + iCloud Drive (sync)
 - **Book storage**: Clean HTML files on disk with readable slug-based folder names
-- **Shipped version**: 1.7 "Emperor" (October 2026) for ContinuousReader, JustReader and PlainReader — the number tracks the shared engine generation, not each app
-- **Release highlights** (what changed in 1.7, with pictures): https://continuousreader.app/whats-new.html
+- **Shipped version**: 1.9 "Painted Lady" (November 2026) for ContinuousReader, JustReader and PlainReader — the number tracks the shared engine generation, not each app
+- **Release highlights** (what changed in 1.9, with pictures): https://continuousreader.app/whats-new.html
+- **1.8 highlights**: https://continuousreader.app/whats-new-1-8.html
+- **1.7 highlights**: https://continuousreader.app/whats-new-1-7.html
 - **1.6 highlights**: https://continuousreader.app/whats-new-1-6.html
 - **1.5 highlights**: https://continuousreader.app/whats-new-1-5.html
-- **Privacy**: No analytics, no telemetry, no tracking. Translation is on-device.
+- **Privacy**: The apps have no analytics, telemetry or tracking. This website and WebReader count visits (Cloudflare Web Analytics, no cookies). Translation is on-device.
 - **Localization**: English + Russian, Ukrainian, Spanish, French, German (1000+ keys)
 - **Bundle IDs**: com.lexey111.ContinuousReader, com.lexey111.PlainReader, com.lexey111.JustReader
 
@@ -81,7 +88,8 @@ Footnote extraction from EPUB and FB2. Chapter extraction. Cover detection. Enco
 ## Links
 
 - Website: https://continuousreader.app
-- The family, app by app: https://continuousreader.app/family.html
+- The family: the map, which one suits, side by side: https://continuousreader.app/family.html
+- A page per reader: https://continuousreader.app/justreader.html, https://continuousreader.app/plainreader.html, https://continuousreader.app/continuousreader.html, https://continuousreader.app/web-reader.html, https://continuousreader.app/nanoreader.html
 - WebReader, in the browser: https://read.continuousreader.app
 - Contact: hello@continuousreader.app
 - Developer: Oleksii Koshkin
