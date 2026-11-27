@@ -2588,18 +2588,23 @@ code {
 /* Three apps: the feature column keeps the room it needs, the three
    answer columns share what is left evenly. */
 .comparison-table.three thead th:not(:first-child) { width: 15%; }
+/* Two apps (NanoReader or JustReader on the Mac). */
+.comparison-table.two thead th:not(:first-child) { width: 30%; }
 
 /* Word answers ("up to 25", "read-only") sit in the same cells as the
    ticks — they take the label voice so a phrase never reads as a value
    in the tick's monospace. */
-.comparison-table.three tbody td:not(:first-child) {
+.comparison-table.three tbody td:not(:first-child),
+.comparison-table.two tbody td:not(:first-child) {
   font-family: var(--sans);
   font-size: 13px;
   color: var(--ink-soft);
 }
 
 .comparison-table.three tbody td:not(:first-child) .check,
-.comparison-table.three tbody td:not(:first-child) .dash {
+.comparison-table.three tbody td:not(:first-child) .dash,
+.comparison-table.two tbody td:not(:first-child) .check,
+.comparison-table.two tbody td:not(:first-child) .dash {
   font-family: var(--mono);
   font-size: 16px;
 }
@@ -4141,3 +4146,14 @@ html:not(.js) .wiz-progress { display: none; }
 .footer-col { min-width: 0; }
 @media (max-width: 380px) { .footer-inner { gap: 28px 20px; } }
 :lang(zh) :is(h1, h2, h3, .h2, .page-title, .section-title, .hero-headline) { overflow-wrap: anywhere; }
+
+/* NanoReader's Mac block: JustReader is there too, and how they differ. */
+.path-alt {
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 14px 0 0;
+  max-width: 30ch;
+}
+.path-alt a { color: var(--accent); white-space: nowrap; }
