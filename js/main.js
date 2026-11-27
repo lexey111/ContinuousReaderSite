@@ -278,6 +278,17 @@
       Array.from(links.querySelectorAll(':scope > a')).forEach((a) => menu.appendChild(a));
       links.insertBefore(menu, links.firstChild);
     }
+    // On a phone the brand's second line is hidden: the WebReader door
+    // moves into the menu, last (the wide screen hides this copy).
+    const read = nav.querySelector('.nav-read');
+    if (read && !menu.querySelector('.nav-read-menu')) {
+      // A menu item says the name alone, like its neighbours.
+      const door = document.createElement('a');
+      door.href = read.getAttribute('href');
+      door.className = 'nav-read nav-read-menu';
+      door.textContent = 'WebReader';
+      menu.appendChild(door);
+    }
 
     const btn = document.createElement('button');
     btn.className = 'nav-toggle';
@@ -590,9 +601,43 @@
     document.querySelectorAll('a[href^="https://read.continuousreader.app"]').forEach((a) => {
       const url = new URL(a.getAttribute('href'));
       url.searchParams.set('lang', lang);
-      url.searchParams.set('light', light);
+      // The site's night is twilight; WebReader's is black (its twilight
+      // is «dusk»).
+      url.searchParams.set('light', light === 'night' ? 'dusk' : light);
       a.setAttribute('href', url.toString());
+      // The reader in a window of its own: the site stays where it was
+      // (user, 27.11.2026).
+      a.target = '_blank';
+      a.rel = 'noopener';
     });
+  }
+
+  // Books open in WebReader? A hidden frame of the reader's own (peek.html)
+  // answers with a number, inside the browser; then the header's door
+  // reads «Back to your reading?» (user, 27.11.2026). Nothing is sent.
+  function askReader() {
+    const door = document.querySelector('.nav-read [data-i18n]');
+    if (!door) return;
+    const local = /^(127\.0\.0\.1|localhost)$/.test(location.hostname);
+    const reader = local ? 'http://127.0.0.1:8643' : 'https://read.continuousreader.app';
+    const frame = document.createElement('iframe');
+    frame.src = reader + '/peek.html';
+    frame.hidden = true;
+    frame.setAttribute('aria-hidden', 'true');
+    frame.tabIndex = -1;
+    const done = () => { window.removeEventListener('message', heard); frame.remove(); };
+    function heard(event) {
+      if (event.origin !== reader || event.data?.type !== 'webreader-books') return;
+      if (event.data.count > 0) {
+        door.setAttribute('data-i18n', 'nav.readOn');
+        const words = i18nReady() ? lookup(pageLang(), 'nav.readOn') : null;
+        if (words) door.innerHTML = words;
+      }
+      done();
+    }
+    window.addEventListener('message', heard);
+    setTimeout(done, 8000);
+    document.body.appendChild(frame);
   }
 
   function dressRooms() {
@@ -602,21 +647,33 @@
       img.src = img.getAttribute('src').replace(/library-(sepia|dark|light)/, want);
     });
   }
+  // Three keys side by side, the chosen one lit: a single key that cycled
+  // auto → day → night changed nothing on its first press when auto was
+  // already day (user, 27.11.2026).
   function setupTheme() {
     const lang = document.querySelector('.nav-lang');
     if (!lang) return;
-    const key = document.createElement('button');
-    key.type = 'button';
-    key.className = 'nav-theme';
-    function show() {
-      const t = currentTheme();
+    const group = document.createElement('div');
+    group.className = 'nav-theme';
+    group.setAttribute('role', 'radiogroup');
+    const keys = ['auto', 'day', 'night'].map((t) => {
+      const key = document.createElement('button');
+      key.type = 'button';
+      key.dataset.theme = t;
+      key.setAttribute('role', 'radio');
       key.innerHTML = THEME_ICONS[t];
       key.setAttribute('data-i18n-attr', `title:nav.theme.${t},aria-label:nav.theme.${t}`);
       const words = i18nReady() ? lookup(pageLang(), `nav.theme.${t}`) : null;
       if (words) { key.title = stripTags(words); key.setAttribute('aria-label', stripTags(words)); }
+      key.addEventListener('click', () => choose(t));
+      group.appendChild(key);
+      return key;
+    });
+    function show() {
+      const now = currentTheme();
+      for (const key of keys) key.setAttribute('aria-checked', String(key.dataset.theme === now));
     }
-    key.addEventListener('click', () => {
-      const next = { auto: 'day', day: 'night', night: 'auto' }[currentTheme()];
+    function choose(next) {
       if (next === 'auto') delete document.documentElement.dataset.theme;
       else document.documentElement.dataset.theme = next;
       try {
@@ -626,9 +683,9 @@
       show();
       dressRooms();
       dressReaderLinks();
-    });
+    }
     systemNight.addEventListener('change', dressRooms);
-    lang.parentNode.insertBefore(key, lang);
+    lang.parentNode.insertBefore(group, lang);
     show();
     dressRooms();
   }
@@ -637,6 +694,7 @@
   // Boot
   // ----------------------------------------------------------
   function boot() {
+    (window.requestIdleCallback || ((f) => setTimeout(f, 600)))(askReader);
     // Re-apply language now that all elements are parsed
     const lang = detectLanguage();
     if (i18nReady()) applyLanguage(lang);

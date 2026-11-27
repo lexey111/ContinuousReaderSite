@@ -136,45 +136,82 @@
   --mono:     "JetBrains Mono", "Menlo", "Courier New", monospace;
   --nav-bg:         rgba(247, 242, 232, 0.78);
   --plate:          rgba(255, 255, 255, 0.82);
+  /* What changes its colour with the light beyond the palette itself:
+     the main button, device names in the text, the hero's drawing. */
+  --cta-bg:         var(--ink);
+  --cta-ink:        var(--bg);
+  --cta-hover:      var(--accent-deep);
+  --cta-line:       var(--ink);
+  --dev:            var(--accent);
+  --hero-screen:    #F0E5D0;
+  --hero-frame:     #1F3A52;
+  --hero-line:      #C45D38;
+  --accent-title:   var(--accent);
   color-scheme: light;
 }
 
-/* Night: the family by lamplight. Auto follows the system; the key in the
-   nav pins day or night (html[data-theme], set before the first paint). */
+/* Night: twilight rather than black, the grey of NanoReader's dusk with a
+   little of the site's blue (user, 27.11.2026). Auto follows the system;
+   the switch in the nav pins day or night (html[data-theme], set before
+   the first paint). */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="day"]) {
-  --bg:             #141A20;
-  --bg-deeper:      #1A2129;
-  --bg-darker:      #222B34;
-  --ink:            #ECE5D8;
-  --ink-soft:       #B5C0CA;
-  --ink-fade:       #8593A1;
-  --ink-ghost:      #4C5967;
-  --accent:         #E8845A;
-  --accent-deep:    #F09A6A;
-  --accent-soft:    #5C3A2A;
-  --rule:           rgba(236, 229, 216, 0.12);
-  --rule-strong:    rgba(236, 229, 216, 0.26);
-  --nav-bg:         rgba(20, 26, 32, 0.8);
-  --plate:          rgba(20, 26, 32, 0.86);
+  --bg:             #3A3D44;
+  --bg-deeper:      #34373E;
+  --bg-darker:      #2E3138;
+  --ink:            #F1EEE8;
+  --ink-soft:       #CDD1D8;
+  --ink-fade:       #A3AAB4;
+  --ink-ghost:      #717883;
+  --accent:         #F2976F;
+  --accent-deep:    #F7B091;
+  --accent-soft:    #6A4A3C;
+  --rule:           rgba(241, 238, 232, 0.14);
+  --rule-strong:    rgba(241, 238, 232, 0.28);
+  --nav-bg:         rgba(58, 61, 68, 0.84);
+  --plate:          rgba(58, 61, 68, 0.9);
+  --cta-bg:         #CC8A6E;
+  --cta-ink:        #22252B;
+  --cta-hover:      #D99A80;
+  --cta-line:       rgba(241, 238, 232, 0.5);
+  --dev:            #E3B7A1;
+  --hero-screen:    #4D5159;
+  --hero-frame:     #747B86;
+  --hero-line:      #D98E6E;
+  --accent-title:   #DDA084;
+  --banner-bg:      #4A4E56;
+  --banner-ink:     #F1EEE8;
+  --qr-bg:          #E4E0D8;
   color-scheme: dark;
   }
 }
 :root[data-theme="night"] {
-  --bg:             #141A20;
-  --bg-deeper:      #1A2129;
-  --bg-darker:      #222B34;
-  --ink:            #ECE5D8;
-  --ink-soft:       #B5C0CA;
-  --ink-fade:       #8593A1;
-  --ink-ghost:      #4C5967;
-  --accent:         #E8845A;
-  --accent-deep:    #F09A6A;
-  --accent-soft:    #5C3A2A;
-  --rule:           rgba(236, 229, 216, 0.12);
-  --rule-strong:    rgba(236, 229, 216, 0.26);
-  --nav-bg:         rgba(20, 26, 32, 0.8);
-  --plate:          rgba(20, 26, 32, 0.86);
+  --bg:             #3A3D44;
+  --bg-deeper:      #34373E;
+  --bg-darker:      #2E3138;
+  --ink:            #F1EEE8;
+  --ink-soft:       #CDD1D8;
+  --ink-fade:       #A3AAB4;
+  --ink-ghost:      #717883;
+  --accent:         #F2976F;
+  --accent-deep:    #F7B091;
+  --accent-soft:    #6A4A3C;
+  --rule:           rgba(241, 238, 232, 0.14);
+  --rule-strong:    rgba(241, 238, 232, 0.28);
+  --nav-bg:         rgba(58, 61, 68, 0.84);
+  --plate:          rgba(58, 61, 68, 0.9);
+  --cta-bg:         #CC8A6E;
+  --cta-ink:        #22252B;
+  --cta-hover:      #D99A80;
+  --cta-line:       rgba(241, 238, 232, 0.5);
+  --dev:            #E3B7A1;
+  --hero-screen:    #4D5159;
+  --hero-frame:     #747B86;
+  --hero-line:      #D98E6E;
+  --accent-title:   #DDA084;
+  --banner-bg:      #4A4E56;
+  --banner-ink:     #F1EEE8;
+  --qr-bg:          #E4E0D8;
   color-scheme: dark;
 }
 
@@ -254,8 +291,8 @@ a { color: inherit; }
 /* Real butterfly logo SVG inlined; dimensions controlled here */
 .nav-logo {
   display: inline-block;
-  width: 28px;
-  height: 19px;
+  width: 56px;
+  height: 38px;
   flex-shrink: 0;
 }
 
@@ -264,7 +301,8 @@ a { color: inherit; }
 /* The shipped version under the wordmark (user, 2026-09-12): a small
    line, so the brand keeps its width; the text is the changelog's own
    release title, so a release updates it in one place. */
-.nav-wordmark { display: flex; flex-direction: column; line-height: 1.05; }
+.nav-wordmark { display: flex; flex-direction: column; gap: 3px; line-height: 1.1; }
+.nav-name { display: flex; align-items: baseline; gap: 8px; color: var(--ink); text-decoration: none; }
 .nav-version {
   font-family: var(--sans);
   font-size: 10px;
@@ -272,8 +310,20 @@ a { color: inherit; }
   letter-spacing: 0.06em;
   color: var(--ink);
   opacity: 0.55;
-  margin-top: 3px;
 }
+/* The second line (user, 27.11.2026): someone who came only to read goes
+   straight to WebReader. */
+.nav-read {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--sans); font-size: 12.5px; font-weight: 500; letter-spacing: 0;
+  color: var(--ink-soft); text-decoration: none;
+}
+.nav-read::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--c-wr, #7FB8E0); flex: none; }
+.nav-read::after { content: "→"; color: var(--accent); transition: transform 180ms ease; }
+.nav-read:hover { color: var(--accent); }
+.nav-read:hover::after { transform: translateX(2px); }
+.nav-read .dev { color: inherit; }
+@media (max-width: 1180px) { .nav-version { display: none; } }
 
 .nav-links {
   display: flex;
@@ -370,14 +420,19 @@ a { color: inherit; }
 .nav-lang { display: inline-flex; align-items: center; gap: 6px; }
 .nav-lang svg { width: 14px; height: 14px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
 .nav-theme {
-  display: inline-grid; place-items: center;
-  width: 32px; height: 30px; padding: 0;
-  color: var(--ink-soft); background: transparent;
+  display: inline-flex; align-items: center; gap: 1px; padding: 2px;
   border: 1px solid var(--rule); border-radius: 100px;
-  cursor: pointer; transition: border-color 180ms ease, color 180ms ease;
 }
-.nav-theme:hover { border-color: var(--rule-strong); color: var(--ink); }
-.nav-theme svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.nav-theme button {
+  display: inline-grid; place-items: center;
+  width: 26px; height: 24px; padding: 0;
+  color: var(--ink-fade); background: transparent; border: 0; border-radius: 100px;
+  cursor: pointer; transition: color 180ms ease, background-color 180ms ease;
+}
+.nav-theme button:hover { color: var(--ink); }
+.nav-theme button[aria-checked="true"] { color: var(--ink); background: var(--bg-darker); }
+.nav-theme button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.nav-theme svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .nav-theme svg .fill { fill: currentColor; stroke: none; }
 .nav-lang[aria-expanded="true"] { border-color: var(--rule-strong); }
 
@@ -495,7 +550,7 @@ a { color: inherit; }
 
 .page-title em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 300;
 }
 
@@ -553,6 +608,10 @@ a { color: inherit; }
 .hero-content { min-width: 0; }
 .hero-devices { width: 100%; max-width: 320px; justify-self: end; }
 .hero-devices svg { width: 100%; height: auto; display: block; }
+.hero-devices g[fill="#F0E5D0"] { fill: var(--hero-screen); }
+.hero-devices g[stroke="#1F3A52"] { stroke: var(--hero-frame); }
+.hero-devices path[stroke="#C45D38"] { stroke: var(--hero-line); }
+.hero-devices circle[fill="#C45D38"] { fill: var(--hero-line); }
 
 @media (max-width: 920px) {
   .hero-grid {
@@ -599,16 +658,16 @@ a { color: inherit; }
 .hero-headline em {
   font-style: italic;
   font-weight: 300;
-  color: var(--accent);
+  color: var(--accent-title);
 }
 .hero-headline .punct {
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 400;
 }
 .dropcap {
   font-family: var(--serif);
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-title);
 }
 
 .hero-subtitle {
@@ -680,7 +739,7 @@ a { color: inherit; }
    the visual collision between Latin "Mac" and Cyrillic "Мас", and gives
    device names a consistent visual presence across all six languages. */
 .dev {
-  color: var(--accent);
+  color: var(--dev);
   font-weight: 500;
 }
 
@@ -721,8 +780,8 @@ a { color: inherit; }
   align-items: center;
   gap: 10px;
   padding: 16px 28px;
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--cta-bg);
+  color: var(--cta-ink);
   font-family: var(--sans);
   font-size: 15px;
   font-weight: 500;
@@ -731,7 +790,7 @@ a { color: inherit; }
   transition: background 200ms ease, transform 200ms ease;
 }
 .cta-primary:hover {
-  background: var(--accent-deep);
+  background: var(--cta-hover);
   transform: translateY(-1px);
 }
 .cta-primary .price {
@@ -800,7 +859,7 @@ section { position: relative; z-index: 2; }
 
 .h2 em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 300;
 }
 
@@ -1303,7 +1362,7 @@ section.feature-section { padding: 80px 0; }
 
 .section-h2 em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 300;
 }
 
@@ -1321,8 +1380,8 @@ section.feature-section { padding: 80px 0; }
 .cr-only-banner {
   margin-top: 32px;
   padding: 16px 24px;
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--banner-bg, var(--ink));
+  color: var(--banner-ink, var(--bg));
   font-family: var(--sans);
   font-size: 14px;
   font-weight: 500;
@@ -1382,7 +1441,7 @@ section.feature-section { padding: 80px 0; }
 
 .feature-h3 em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 500;
 }
 
@@ -1826,7 +1885,7 @@ code {
 
 .interface-fits-block h4 em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 500;
 }
 
@@ -1950,7 +2009,7 @@ code {
 
 .platform-title em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 300;
 }
 
@@ -2056,7 +2115,7 @@ code {
 
 .shared-title em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 300;
 }
 
@@ -2121,7 +2180,7 @@ code {
 
 .table-title em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 300;
 }
 
@@ -2246,7 +2305,7 @@ code {
 
 .purchase-title em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 400;
 }
 
@@ -2327,7 +2386,7 @@ code {
 }
 
 .path-price.free {
-  color: var(--accent);
+  color: var(--accent-title);
   font-style: italic;
 }
 
@@ -2352,8 +2411,8 @@ code {
 .path-store-button {
   display: inline-block;
   padding: 14px 24px;
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--cta-bg);
+  color: var(--cta-ink);
   font-family: var(--sans);
   font-size: 14px;
   font-weight: 500;
@@ -2363,7 +2422,7 @@ code {
 }
 
 .path-store-button:hover {
-  background: var(--accent-deep);
+  background: var(--cta-hover);
   transform: translateY(-1px);
 }
 
@@ -2384,7 +2443,7 @@ code {
 
 .path-qr img {
   display: block;
-  background: #fff;
+  background: var(--qr-bg, #fff);
   border: 1px solid var(--rule);
   border-radius: 8px;
   padding: 6px;
@@ -2650,7 +2709,7 @@ code {
 
 .faq-question em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 500;
 }
 
@@ -2705,7 +2764,7 @@ code {
 
 .about-title em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 400;
 }
 
@@ -2747,7 +2806,7 @@ code {
 
 .final-cta h2 em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--accent-title);
   font-weight: 300;
 }
 
@@ -3191,7 +3250,14 @@ code {
 }
 
 @media (max-width: 480px) {
-  .nav-brand span:last-child { display: none; }
+  .nav-brand .nav-wordmark { display: none; }
+  .nav-logo { width: 42px; height: 29px; }
+}
+.nav-read-menu { display: none; }
+@media (max-width: 480px) { .nav-menu .nav-read-menu { display: flex; justify-content: flex-start; gap: 8px; padding: 11px 14px; font-size: 15px; } }
+@media (max-width: 380px) {
+  .nav-logo { width: 32px; height: 22px; }
+  .nav-theme button { width: 23px; }
 }
 
 /* Features-page right-side TOC. Fixed sticky position, hidden below 1280px
@@ -3516,14 +3582,14 @@ code {
   color: var(--ink);
   text-decoration: none;
   padding: 16px 28px;
-  border: 1.5px solid var(--ink);
+  border: 1.5px solid var(--cta-line);
   border-radius: 100px;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .cta-outline:hover {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--cta-bg);
+  color: var(--cta-ink);
 }
 
 .cta-outline:hover .cta-dot { box-shadow: 0 0 0 2px rgba(255,255,255,0.35); }
@@ -3728,13 +3794,13 @@ code {
 
 /* Night for the pieces that carry their own colours. */
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="day"]) .badge.cr, :root:not([data-theme="day"]) .legend .badge-inline.cr { background: #1F3346; color: #B8CCDD; border-color: #2D4A63; }
-  :root:not([data-theme="day"]) .badge.pr, :root:not([data-theme="day"]) .legend .badge-inline.pr { background: #2A2A26; color: #CFC4B0; border-color: #45413A; }
-  :root:not([data-theme="day"]) .badge.jr, :root:not([data-theme="day"]) .legend .badge-inline.jr { background: #3A2419; color: #F0B596; border-color: #5C3A2A; }
+  :root:not([data-theme="day"]) .badge.cr, :root:not([data-theme="day"]) .legend .badge-inline.cr { background: #2F4459; color: #CFDDEA; border-color: #44607A; }
+  :root:not([data-theme="day"]) .badge.pr, :root:not([data-theme="day"]) .legend .badge-inline.pr { background: #45443E; color: #E2D9C7; border-color: #5C5950; }
+  :root:not([data-theme="day"]) .badge.jr, :root:not([data-theme="day"]) .legend .badge-inline.jr { background: #553629; color: #F6C4A9; border-color: #74503E; }
 }
-:root[data-theme="night"] .badge.cr, :root[data-theme="night"] .legend .badge-inline.cr { background: #1F3346; color: #B8CCDD; border-color: #2D4A63; }
-:root[data-theme="night"] .badge.pr, :root[data-theme="night"] .legend .badge-inline.pr { background: #2A2A26; color: #CFC4B0; border-color: #45413A; }
-:root[data-theme="night"] .badge.jr, :root[data-theme="night"] .legend .badge-inline.jr { background: #3A2419; color: #F0B596; border-color: #5C3A2A; }
+:root[data-theme="night"] .badge.cr, :root[data-theme="night"] .legend .badge-inline.cr { background: #2F4459; color: #CFDDEA; border-color: #44607A; }
+:root[data-theme="night"] .badge.pr, :root[data-theme="night"] .legend .badge-inline.pr { background: #45443E; color: #E2D9C7; border-color: #5C5950; }
+:root[data-theme="night"] .badge.jr, :root[data-theme="night"] .legend .badge-inline.jr { background: #553629; color: #F6C4A9; border-color: #74503E; }
 
 /* NanoReader's page: three downloads, then what is in it. */
 .nano-downloads .path-card { display: flex; flex-direction: column; gap: 10px; }
@@ -3756,9 +3822,9 @@ code {
 .fmap-section, .wiz, .fsub-nav {
   --c-wr: #7FB8E0; --c-jr: #A84B28; --c-pr: #41789E; --c-cr: #2D5573; --c-nr: #E8845A;
 }
-:root[data-theme="night"] :is(.fmap-section, .wiz, .fsub-nav) { --c-cr: #6F9BC2; --c-pr: #8DB4D6; --c-jr: #D9774F; }
+:root[data-theme="night"] :is(.fmap-section, .wiz, .fsub-nav) { --c-cr: #8DB3D6; --c-pr: #A9C8E2; --c-jr: #F08E66; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="day"]) :is(.fmap-section, .wiz, .fsub-nav) { --c-cr: #6F9BC2; --c-pr: #8DB4D6; --c-jr: #D9774F; }
+  :root:not([data-theme="day"]) :is(.fmap-section, .wiz, .fsub-nav) { --c-cr: #8DB3D6; --c-pr: #A9C8E2; --c-jr: #F08E66; }
 }
 
 /* MARK: The map (the apps' About map, CR #1142) */
@@ -3839,9 +3905,9 @@ html:not(.js) .fmap-card { grid-area: auto; }
 .fmap-doors a, .wiz-doors a { color: var(--accent); text-decoration: none; font-weight: 500; }
 .fmap-doors a:hover, .wiz-doors a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .fmap-doors a.fmap-go, .wiz-doors a.fmap-go {
-  padding: 8px 16px; border-radius: 100px; background: var(--ink); color: var(--bg); font-weight: 500;
+  padding: 8px 16px; border-radius: 100px; background: var(--cta-bg); color: var(--cta-ink); font-weight: 500;
 }
-.fmap-doors a.fmap-go:hover, .wiz-doors a.fmap-go:hover { text-decoration: none; background: var(--accent-deep); }
+.fmap-doors a.fmap-go:hover, .wiz-doors a.fmap-go:hover { text-decoration: none; background: var(--cta-hover); }
 
 /* A narrow map names its places short; a narrow card stands its picture
    over the words. */
@@ -3897,7 +3963,7 @@ html:not(.js) .wiz-answer { display: block; margin-top: 14px; }
 }
 .cmp-tab span { font-size: 15px; font-weight: 600; }
 .cmp-tab small { font-size: 11.5px; color: var(--ink-fade); }
-.cmp-tab[aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.cmp-tab[aria-selected="true"] { background: var(--cta-bg); border-color: var(--cta-bg); color: var(--cta-ink); }
 .cmp-tab[aria-selected="true"] small { color: color-mix(in srgb, var(--bg) 72%, transparent); }
 .cmp-tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 html:not(.js) .cmp-tabs { display: none; }
@@ -4070,3 +4136,8 @@ html:not(.js) .wiz-progress { display: none; }
    still breaks (overflow-wrap above). */
 :lang(zh) .page-title { font-size: clamp(36px, 4.6vw, 60px); }
 :lang(zh) .page-title, :lang(zh) .h2, :lang(zh) .section-title, :lang(zh) .hero-headline, :lang(zh) h1, :lang(zh) h2 { word-break: keep-all; }
+/* Narrow phones: the footer's two columns may shrink, and a Han headline
+   too long for the line breaks rather than running off. */
+.footer-col { min-width: 0; }
+@media (max-width: 380px) { .footer-inner { gap: 28px 20px; } }
+:lang(zh) :is(h1, h2, h3, .h2, .page-title, .section-title, .hero-headline) { overflow-wrap: anywhere; }

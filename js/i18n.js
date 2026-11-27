@@ -52,6 +52,8 @@ const translations = {
   // ENGLISH — source of truth
   // ============================================================
   en: {
+    'nav.readOn': 'Back to your reading? WebReader',
+    'nav.read': 'Just here to read? WebReader',
     'download.req.nr.mac': '11 Big Sur or later, Apple silicon and Intel',
     'download.req.nr.win': '10 or 11, 64-bit; the installer adds WebView2 if it is missing',
     'download.req.nr.linux': '64-bit: AppImage for most distributions; .deb for Ubuntu 22.04 and Debian 12 or newer; .rpm for Fedora',
@@ -685,7 +687,7 @@ const translations = {
     'common.cta.inBrowser':     "in the browser",
     'common.cta.desktopBeta':   "beta for Windows, Linux and Mac",
     'common.cta.releaseLabel':  "Release",
-    'common.cta.release': 'Current version — 1.9 “Painted Lady”. The release’s motto is “Show your colours”. What’s new in it?',
+    'common.cta.release': 'Current version — 1.9 “Painted Lady”. Its motto is “Show your colours”. What’s new in it?',
 
     // ============================================================
     // INDEX (landing)
@@ -1715,6 +1717,8 @@ const translations = {
   //   Universal Purchase → «Универсальная покупка» (Apple-canonical)
   // ============================================================
   ru: {
+    'nav.readOn': 'Пришли продолжить чтение? WebReader',
+    'nav.read': 'Пришли просто почитать? WebReader',
     'download.req.nr.mac': '11 Big Sur или новее, Apple silicon и Intel',
     'download.req.nr.win': '10 или 11, 64 бита; установщик сам добавит WebView2, если его нет',
     'download.req.nr.linux': '64 бита: AppImage для большинства дистрибутивов; .deb для Ubuntu 22.04 и Debian 12 или новее; .rpm для Fedora',
@@ -2348,7 +2352,7 @@ const translations = {
     'common.cta.inBrowser':     "в браузере",
     'common.cta.desktopBeta':   "бета для Windows, Linux и Mac",
     'common.cta.releaseLabel':  "Релиз",
-    'common.cta.release': 'Актуальная версия — 1.9 «Репейница». Девиз релиза — «Show your colours». Что в ней нового?',
+    'common.cta.release': 'Актуальная версия — 1.9 «Репейница». Её девиз — «Show your colours». Что в ней нового?',
 
     // ---------- Meta (index) ----------
     'meta.index.title':    'ContinuousReader — Книга — продолжается.',
@@ -3369,6 +3373,8 @@ const translations = {
   // use U+02BC per the 2019 Ukrainian orthography.
   // ============================================================
   uk: {
+    'nav.readOn': 'Прийшли продовжити читання? WebReader',
+    'nav.read': 'Прийшли просто почитати? WebReader',
     'changelog.v19.date': '— листопад 2026',
     'changelog.v19.g.both': 'PlainReader і ContinuousReader',
     'changelog.v19.g.cr': 'ContinuousReader',
@@ -4028,7 +4034,7 @@ const translations = {
     'common.new':               "Новинка",
     'common.cta.inBrowser':     "у браузері",
     'common.cta.releaseLabel':  "Реліз",
-    'common.cta.release': 'Актуальна версія — 1.9 «Сонцевик будяковий». Девіз релізу — «Show your colours». Що в ній нового?',
+    'common.cta.release': 'Актуальна версія — 1.9 «Сонцевик будяковий». Її девіз — «Show your colours». Що в ній нового?',
 
     // ---------- Meta (index) ----------
     'meta.index.title':    'ContinuousReader — Книга — продовжується.',
@@ -5021,6 +5027,8 @@ const translations = {
   // «Compartir en Familia». Question marks open with «¿».
   // ============================================================
   es: {
+    'nav.readOn': '¿Vienes a seguir leyendo? WebReader',
+    'nav.read': '¿Vienes solo a leer? WebReader',
     'changelog.v19.date': '— noviembre de 2026',
     'changelog.v19.g.both': 'PlainReader y ContinuousReader',
     'changelog.v19.g.cr': 'ContinuousReader',
@@ -6675,6 +6683,8 @@ const translations = {
   // be continued" (TV serials, serial fiction).
   // ============================================================
   fr: {
+    'nav.readOn': 'Envie de reprendre votre lecture ? WebReader',
+    'nav.read': 'Juste envie de lire ? WebReader',
     'changelog.v19.date': '— novembre 2026',
     'changelog.v19.g.both': 'PlainReader et ContinuousReader',
     'changelog.v19.g.cr': 'ContinuousReader',
@@ -8328,6 +8338,8 @@ const translations = {
   // (TV serials, comics, serial fiction).
   // ============================================================
   de: {
+    'nav.readOn': 'Weiterlesen? WebReader',
+    'nav.read': 'Nur zum Lesen hier? WebReader',
     'changelog.v19.date': '— November 2026',
     'changelog.v19.g.both': 'PlainReader und ContinuousReader',
     'changelog.v19.g.cr': 'ContinuousReader',
@@ -9976,6 +9988,8 @@ const translations = {
   // Platforms, privacy, contact, the 1.9 overview and changelog. The rest of the
   // site falls back to English.
   zh: {
+    'nav.readOn': '回来接着读？WebReader',
+    'nav.read': '只想读书？WebReader',
     'changelog.header.eyebrow': '版本历史',
     'changelog.header.subtitle': '应用家族的每个版本，最新的在前。ContinuousReader、PlainReader 和 JustReader 的界面各有各的变化，而阅读引擎全家族共用一个。所以凡是与阅读有关的，三款应用几乎总是同时更新。',
     'changelog.header.title': '<em>新</em>功能',
