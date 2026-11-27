@@ -367,6 +367,8 @@ a { color: inherit; }
   position: relative;
 }
 .nav-lang:hover { border-color: var(--rule-strong); }
+.nav-lang { display: inline-flex; align-items: center; gap: 6px; }
+.nav-lang svg { width: 14px; height: 14px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; }
 .nav-theme {
   display: inline-grid; place-items: center;
   width: 32px; height: 30px; padding: 0;
@@ -417,7 +419,9 @@ a { color: inherit; }
 }
 .nav-lang-menu .nav-lang-code {
   display: inline-block;
-  width: 22px;
+  /* Two Latin capitals or «中文»: one line, one column width. */
+  width: 30px;
+  white-space: nowrap;
   font-weight: 600;
   letter-spacing: 0.04em;
   font-variant-numeric: tabular-nums;
@@ -4042,3 +4046,27 @@ html:not(.js) .wiz-progress { display: none; }
 }
 .requirements-table tr.req-group .cta-dot { display: inline-block; margin-right: 7px; vertical-align: 0.05em; }
 .requirements-table { max-width: 620px; }
+
+/* ==========================================================
+   SIMPLIFIED CHINESE (1.9)
+   The site's faces carry no Han glyphs: each stack gets the platforms'
+   Simplified fonts after the Latin one, so English words in a Chinese
+   sentence keep Inter or Source Serif. Han has no italic — an <em> is the
+   accent colour alone, upright; and letter-spacing that suits Latin caps
+   spreads Han apart, so it goes.
+   ========================================================== */
+:root:lang(zh) {
+  --serif: "Source Serif 4", "Songti SC", "STSong", "Noto Serif CJK SC", "Noto Serif SC", "SimSun", serif;
+  --sans:  "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+:lang(zh) em, :lang(zh) i:not(.cta-dot) { font-style: normal; }
+:lang(zh) .eyebrow, :lang(zh) .section-eyebrow, :lang(zh) .page-eyebrow,
+:lang(zh) .platform-list-label, :lang(zh) .wiz-yours,
+:lang(zh) .platform-list li strong, :lang(zh) .feature-list li strong { letter-spacing: 0.02em; }
+:lang(zh) body { line-height: 1.75; }
+:lang(zh) .page-title, :lang(zh) .h2, :lang(zh) .section-title { line-height: 1.3; }
+/* Han headlines: a size that suits square glyphs, and lines broken at the
+   punctuation, not inside a word («书 / 库»); a run too long for a phone
+   still breaks (overflow-wrap above). */
+:lang(zh) .page-title { font-size: clamp(36px, 4.6vw, 60px); }
+:lang(zh) .page-title, :lang(zh) .h2, :lang(zh) .section-title, :lang(zh) .hero-headline, :lang(zh) h1, :lang(zh) h2 { word-break: keep-all; }

@@ -98,10 +98,18 @@
     return html.replace(/<[^>]+>/g, '');
   }
 
+  // The page's language as the site names it: <html lang> says zh-Hans for
+  // Chinese (the glyphs), the translations and the labels are keyed zh.
+  function pageLang() {
+    const tag = document.documentElement.getAttribute('lang') || 'en';
+    return tag.toLowerCase().startsWith('zh') ? 'zh' : tag;
+  }
+
   function applyLanguage(lang) {
     if (!i18nReady()) return;
 
-    document.documentElement.setAttribute('lang', lang);
+    // Chinese is Simplified: zh-Hans picks the right glyphs and fonts.
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-Hans' : lang);
 
     // Replace innerHTML (or document.title for <title>) for all marked
     // elements. Wrap device names so they get the brand accent everywhere.
@@ -166,8 +174,10 @@
       btn.dataset.langWired = 'true';
       btn.setAttribute('aria-haspopup', 'listbox');
       btn.setAttribute('aria-expanded', 'false');
-      btn.setAttribute('data-lang-current', '');
-      btn.textContent = labels[document.documentElement.lang] || 'EN';
+      // The usual globe before the label, so the pill reads as «language»
+      // whatever language it is showing (user, 27.11.2026).
+      btn.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M1.5 8h13"/><path d="M8 1.5c1.9 1.8 2.9 4 2.9 6.5S9.9 12.7 8 14.5C6.1 12.7 5.1 10.5 5.1 8S6.1 3.3 8 1.5z"/></svg><span class="nav-lang-label" data-lang-current></span>';
+      btn.querySelector('.nav-lang-label').textContent = labels[pageLang()] || 'EN';
 
       // Build the dropdown panel
       const panel = document.createElement('ul');
@@ -574,6 +584,7 @@
   // them (?lang=ru&light=night); the reader takes them and drops them
   // from its address.
   function dressReaderLinks() {
+    // The tag itself: WebReader knows Chinese as zh-Hans.
     const lang = document.documentElement.getAttribute('lang') || 'en';
     const light = currentTheme();
     document.querySelectorAll('a[href^="https://read.continuousreader.app"]').forEach((a) => {
@@ -601,7 +612,7 @@
       const t = currentTheme();
       key.innerHTML = THEME_ICONS[t];
       key.setAttribute('data-i18n-attr', `title:nav.theme.${t},aria-label:nav.theme.${t}`);
-      const words = i18nReady() ? lookup(document.documentElement.lang || 'en', `nav.theme.${t}`) : null;
+      const words = i18nReady() ? lookup(pageLang(), `nav.theme.${t}`) : null;
       if (words) { key.title = stripTags(words); key.setAttribute('aria-label', stripTags(words)); }
     }
     key.addEventListener('click', () => {
